@@ -1,0 +1,12 @@
+os: linux
+language: node_js
+node_js:
+  - '10'
+script:
+  - npm run test
+deploy:
+  provider: heroku
+  api_key: $HEROKU_APIKEY
+  app: corvo-astral
+  on:
+    branch: master

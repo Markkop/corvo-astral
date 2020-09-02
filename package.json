@@ -1,0 +1,21 @@
+{
+  "name": "corvo-astral",
+  "version": "0.0.1",
+  "description": "A Discord Bot that serves as an Wakfu helper",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"test me plz0\""
+  },
+  "keywords": [
+    "wakfu",
+    "discord",
+    "nodejs"
+  ],
+  "author": "Mark Kop",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0"
+  }
+}
