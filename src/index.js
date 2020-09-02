@@ -1,5 +1,6 @@
-import Discord from 'discord.js'
-import { getAlmanaxBonus } from './helpers'
+const Discord = require('discord.js')
+const { getAlmanaxBonus } = require('./helpers')
+require('dotenv').config()
 
 const client = new Discord.Client()
 const prefix = '.'
@@ -17,5 +18,4 @@ client.on('message', function (message) {
     message.reply(`o bônus do alma de hoje é ${almanaxBonus.text}`)
   }
 })
-
 client.login(process.env.DISCORD_BOT_TOKEN)

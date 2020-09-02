@@ -9,7 +9,7 @@
  * Calculate today's Almanax Bonus
  * @returns { AlmanaxEvent }
  */
-export function getAlmanaxBonus() {
+function getAlmanaxBonus() {
   const qtdColheita = {
     firstDate: '08/25/2020',
     name: 'Quantidade em Colheita',
@@ -35,4 +35,8 @@ export function getAlmanaxBonus() {
     const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
     return diffDays % 5 === 0
   })
+}
+
+module.exports = {
+  getAlmanaxBonus,
 }
