@@ -9,7 +9,7 @@ module.exports = {
     node: true,
     jest: true
   },
-  extends: 'standard',
+  extends: ['standard', 'standard-jsdoc'],
   rules: {
     'arrow-parens': 0,
     'generator-star-spacing': 0,
@@ -22,5 +22,8 @@ module.exports = {
         'no-unused-expressions': 'off'
       }
     }
-  ]
+  ],
+  settings: {
+    jsdoc: { mode: 'typescript' }
+  }
 }

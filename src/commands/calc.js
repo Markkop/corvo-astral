@@ -1,13 +1,17 @@
+import { getArguments } from '../utils'
+
 /**
- * Calculates the damage of an attack
- * @param { String[] } args
- * @returns { String } message
+ * Replies the user with the damage of a calculated attack.
+ *
+ * @param { import('discord.js').Message } message - Discord message object.
  */
-export function calculateAttackDamage (args) {
+export function calculateAttackDamage (message) {
+  const args = getArguments(message)
   const requiredArgs = ['dmg', 'base', 'res']
   const hasRequiredArgs = requiredArgs.every(requiredArg => args.includes(requiredArg))
   if (!hasRequiredArgs) {
-    return 'está faltando alguma informação aí. Tente algo tipo: .calc dmg 1700 base 27 res 70%'
+    message.reply('está faltando alguma informação aí. Tente algo tipo: .calc dmg 1700 base 27 res 70%')
+    return
   }
   const damage = args[args.indexOf('dmg') + 1]
   const base = args[args.indexOf('base') + 1]
@@ -19,5 +23,5 @@ export function calculateAttackDamage (args) {
   resist = resist.includes('%') ? resist.split('%')[0] : Math.floor((1 - Math.pow(0.8, resist / 100)) * 100)
   const attackDamage = base * backstabMultiplier * sidestabMultiplier * (1 + damage / 100) * (1 - resist / 100)
   const backstabText = hasBackArgument ? 'nas costas ' : (hasSideArgument ? 'nos lados ' : '')
-  return `atacando com domínio de ${damage} e dano base ${base} em resist ${resist}% ${backstabText}o dano é de ${Math.round(attackDamage)}`
+  message.reply(`atacando com domínio de ${damage} e dano base ${base} em resist ${resist}% ${backstabText}o dano é de ${Math.round(attackDamage)}`)
 }

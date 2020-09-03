@@ -1,20 +1,23 @@
-import config from './config'
-const { prefix } = config
+/**
+ * Get command word from user message.
+ *
+ * @param {string} commandPrefix - Command prefix.
+ * @param { import('discord.js').Message } message - Discord message object.
+ * @returns {string} Command and arguments.
+ */
+export function getCommand (commandPrefix, message) {
+  const messageContent = message.content
+  const command = messageContent.split(' ')[0]
+  return command.slice(commandPrefix.length)
+}
 
 /**
- * @typedef CommandBody
- * @param { String } command
- * @param { String[] } args
+ * Get arguments from user message.
+ *
+ * @param {object} message - Discord message object.
+ * @returns {string[]} Command and arguments.
  */
-
-/**
- * Get command and arguments from user message
- * @param { Object } message discord message object
- * @returns { CommandBody } command and arguments
- */
-export function parseCommandAndArgsFromMessage (message) {
-  const commandBody = message.content.slice(prefix.length)
-  const args = commandBody.split(' ')
-  const command = args.shift().toLowerCase()
-  return { command, args }
+export function getArguments (message) {
+  const messageContent = message.content
+  return messageContent.split(' ').slice(1)
 }
