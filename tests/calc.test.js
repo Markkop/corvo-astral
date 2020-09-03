@@ -48,6 +48,6 @@ describe('calculateAttackDamage', () => {
     }
     const replySpy = jest.spyOn(userMessage, 'reply')
     calculateAttackDamage(userMessage)
-    expect(replySpy).toHaveBeenCalledWith('está faltando alguma informação aí. Tente algo tipo: .calc dmg 1700 base 27 res 70%')
+    expect(replySpy).toHaveBeenCalledWith('tem alguma coisa errada aí. Digite `.help calc` para mais informações.')
   })
 })
