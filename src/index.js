@@ -19,7 +19,7 @@ client.on('message', function (message) {
   if (message.author.bot) return
   if (!message.content.startsWith(prefix)) return
 
-  const command = getCommand(message)
+  const command = getCommand(prefix, message)
   const action = commandActions[command]
 
   if (!action) return
