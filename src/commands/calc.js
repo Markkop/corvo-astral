@@ -10,7 +10,7 @@ export function calculateAttackDamage (message) {
   const requiredArgs = ['dmg', 'base', 'res']
   const hasRequiredArgs = requiredArgs.every(requiredArg => args.includes(requiredArg))
   if (!hasRequiredArgs) {
-    message.reply('está faltando alguma informação aí. Tente algo tipo: .calc dmg 1700 base 27 res 70%')
+    message.reply('tem alguma coisa errada aí. Digite `.help calc` para mais informações.')
     return
   }
   const damage = args[args.indexOf('dmg') + 1]

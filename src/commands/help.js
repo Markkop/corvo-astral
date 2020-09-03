@@ -24,7 +24,7 @@ export function getHelp (message) {
   const helpArgument = args[0]
   if (!hasArguments) {
     message.reply(`digite \`.help <comando>\` para obter ajuda sobre um comando específico
-            Atualmente os comandos disponíveis são: \`alma\`, \`calc\` e \`help\``)
+    Atualmente os comandos disponíveis são: \`alma\`, \`calc\` e \`help\``)
     return
   }
 

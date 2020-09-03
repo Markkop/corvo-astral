@@ -14,7 +14,7 @@ export function getCommand (commandPrefix, message) {
 /**
  * Get arguments from user message.
  *
- * @param {object} message - Discord message object.
+ * @param { import('discord.js').Message } message - Discord message object.
  * @returns {string[]} Command and arguments.
  */
 export function getArguments (message) {

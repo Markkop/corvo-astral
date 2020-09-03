@@ -1,8 +1,8 @@
 {
   "name": "corvo-astral",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A Discord Bot that serves as an Wakfu helper",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "npm run build && node dist/index.js",
     "build": "babel src -d dist",

@@ -11,7 +11,7 @@ const commandActions = {
   alma: getAlmanaxBonus,
   calc: calculateAttackDamage,
   help: getHelp,
-  time: () => new Date().toString()
+  time: (message) => message.reply(new Date().toString())
 }
 
 const client = new Discord.Client()
