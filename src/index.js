@@ -17,5 +17,10 @@ client.on('message', function (message) {
     const almanaxBonus = getAlmanaxBonus()
     message.reply(`o bônus do alma de hoje é ${almanaxBonus.text}`)
   }
+
+  if (command === 'calc') {
+    const reply = calculateAttackDamage(args)
+    message.reply(reply)
+  }
 })
 client.login(process.env.DISCORD_BOT_TOKEN)
