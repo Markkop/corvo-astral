@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const { getAlmanaxBonus } = require('./helpers')
+const { getAlmanaxBonus, calculateAttackDamage } = require('./helpers')
 require('dotenv').config()
 
 const client = new Discord.Client()
