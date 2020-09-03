@@ -1,6 +1,7 @@
-const Discord = require('discord.js')
-const { getAlmanaxBonus, calculateAttackDamage } = require('./helpers')
-require('dotenv').config()
+import Discord from 'discord.js'
+import { getAlmanaxBonus, calculateAttackDamage } from './helpers'
+import dotenv from 'dotenv'
+dotenv.config()
 
 const client = new Discord.Client()
 const prefix = '.'
@@ -21,6 +22,10 @@ client.on('message', function (message) {
   if (command === 'calc') {
     const reply = calculateAttackDamage(args)
     message.reply(reply)
+  }
+
+  if (command === 'time') {
+    message.reply(new Date().toString())
   }
 })
 client.login(process.env.DISCORD_BOT_TOKEN)
