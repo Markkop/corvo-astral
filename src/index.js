@@ -1,9 +1,11 @@
 import Discord from 'discord.js'
 import { getAlmanaxBonus, calculateAttackDamage } from './commands'
 import { parseCommandAndArgsFromMessage } from './utils'
-import { prefix } from './config'
+import config from './config'
 import dotenv from 'dotenv'
 dotenv.config()
+
+const { prefix } = config
 
 const client = new Discord.Client()
 client.on('message', function (message) {
