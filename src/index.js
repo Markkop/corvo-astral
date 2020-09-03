@@ -1,26 +1,31 @@
-const Discord = require('discord.js')
-const { getAlmanaxBonus, calculateAttackDamage } = require('./helpers')
-require('dotenv').config()
+import Discord from 'discord.js'
+import { getAlmanaxBonus, calculateAttackDamage } from './commands'
+import { parseCommandAndArgsFromMessage } from './utils'
+import config from './config'
+import dotenv from 'dotenv'
+dotenv.config()
+
+const { prefix } = config
 
 const client = new Discord.Client()
-const prefix = '.'
-
 client.on('message', function (message) {
   if (message.author.bot) return
   if (!message.content.startsWith(prefix)) return
 
-  const commandBody = message.content.slice(prefix.length)
-  const args = commandBody.split(' ')
-  const command = args.shift().toLowerCase()
+  const { command, args } = parseCommandAndArgsFromMessage(message, prefix)
 
   if (command === 'alma') {
-    const almanaxBonus = getAlmanaxBonus()
-    message.reply(`o bônus do alma de hoje é ${almanaxBonus.text}`)
+    const almanaxBonusReply = getAlmanaxBonus()
+    message.reply(almanaxBonusReply)
   }
 
   if (command === 'calc') {
     const reply = calculateAttackDamage(args)
     message.reply(reply)
+  }
+
+  if (command === 'time') {
+    message.reply(new Date().toString())
   }
 })
 client.login(process.env.DISCORD_BOT_TOKEN)
