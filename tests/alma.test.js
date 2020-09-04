@@ -7,9 +7,8 @@ describe('getAlmanaxBonus', () => {
       reply: jest.fn()
     }
     const replySpy = jest.spyOn(userMessage, 'reply')
+    jest.spyOn(Date, 'now').mockReturnValue(new Date('2020-09-02T12:00:00'))
     getAlmanaxBonus(userMessage)
-
-    jest.spyOn(Date, 'now').mockReturnValue(new Date('2020-09-03T12:00:00'))
-    expect(replySpy).toHaveBeenCalledWith('o bônus do alma de hoje é +30% EXP em Colheita e Plantação')
+    expect(replySpy).toHaveBeenCalledWith('o bônus do alma de hoje é +20% EXP e Velocidade em Fabricação')
   })
 })
