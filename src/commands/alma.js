@@ -24,7 +24,7 @@ const events = [qtdColheita, sabedoria, prospeccao, fabricacao, expColheita]
  * @param { import('discord.js').Message } message - Discord message object.
  */
 export function getAlmanaxBonus (message) {
-  const today = new Date()
+  const today = new Date(Date.now())
   const todayEvent = events.find(event => {
     const eventFirstDate = new Date(event.firstDate)
     const diffTime = Math.abs(today - eventFirstDate)
