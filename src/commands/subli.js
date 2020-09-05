@@ -1,4 +1,5 @@
 import sublimations from '../data/sublimations'
+import { commandsHelp } from './help'
 
 /**
  * Find sublimation based on their name with the query provided.
@@ -8,6 +9,7 @@ import sublimations from '../data/sublimations'
  * @returns {object|object[]}
  */
 function findSublimationByName (sublimationList, query) {
+  query = query.replace(/2|ll/g, 'ii').replace(/3|lll/g, 'iii')
   return sublimationList.filter(subli => subli.name.toLowerCase().includes(query))
 }
 
@@ -62,6 +64,10 @@ const queriesEquivalent = {
  */
 export function getSublimation (message) {
   const normalizedQuery = message.content.split(' ').slice(1).join(' ').toLowerCase()
+  if (!normalizedQuery) {
+    message.reply(commandsHelp.subli)
+    return
+  }
   const query = queriesEquivalent[normalizedQuery] || normalizedQuery
   const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|épico|relíquia/.test(query)
   let results = []

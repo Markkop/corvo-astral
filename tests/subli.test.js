@@ -1,4 +1,5 @@
 import { getSublimation } from '../src/commands'
+import { commandsHelp } from '../src/commands/help'
 
 describe('getSublimation', () => {
   it('returns a sublimation when finding only one result', () => {
@@ -115,6 +116,21 @@ Sublimações encontradas: Ambush, Dimensionality, Theory of Matter`)
     expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Brutalidade, Precisão Cirúrgica, Medida, Desenlace, Inflexibilidade, Constância, Saúde de Ferro, Arte do Posicionamento, Anatomia, Manejo: Duas Mãos, Manejo: Adaga, Manejo: Escudo, Pacto Wakfu, Concentração Elemental, Força Hercúlea')
   })
 
+  it('replaces wrong query characters when searching by name', () => {
+    const userMessage = {
+      content: '.subli frenzy 2',
+      reply: jest.fn()
+    }
+    const replySpy = jest.spyOn(userMessage, 'reply')
+    getSublimation(userMessage)
+    expect(replySpy).toHaveBeenCalledWith(`Sublimação: Frenzy II
+Slot: RGB
+Efeitos: -15% damage inflicted, 5% damage inflicted per affected entity at the start of the next turn
+MaxStack: 1
+Fonte: Badgwitch the Furiox (1%) [3 stele/estela]
+Sublimações encontradas: Frenzy II, Frenzy III`)
+  })
+
   it('returns a not found message if no sublimation was found', () => {
     const userMessage = {
       content: '.subli caracas',
@@ -123,5 +139,15 @@ Sublimações encontradas: Ambush, Dimensionality, Theory of Matter`)
     const replySpy = jest.spyOn(userMessage, 'reply')
     getSublimation(userMessage)
     expect(replySpy).toHaveBeenCalledWith('Sublimação não encontrada :c. Digite `.help subli` para mais informações')
+  })
+
+  it('returns a help message if no query was provided', () => {
+    const userMessage = {
+      content: '.subli',
+      reply: jest.fn()
+    }
+    const replySpy = jest.spyOn(userMessage, 'reply')
+    getSublimation(userMessage)
+    expect(replySpy).toHaveBeenCalledWith(commandsHelp.subli)
   })
 })
