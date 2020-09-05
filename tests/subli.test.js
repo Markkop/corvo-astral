@@ -98,12 +98,7 @@ Sublimações encontradas: Frenzy, Frenzy II, Frenzy III`)
     }
     const replySpy = jest.spyOn(userMessage, 'reply')
     getSublimation(userMessage)
-    expect(replySpy).toHaveBeenCalledWith(`Sublimação: Ambush
-Slot: BBR
-Efeitos: +5% to damage Inflicted at 1 RA
-MaxStack: 3
-Fonte: Vertox the Timeless (1%) [3 stele/estela]
-Sublimações encontradas: Ambush, Dimensionality, Theory of Matter`)
+    expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Ambush, Dimensionality, Theory of Matter')
   })
 
   it('maps correctly an argument', () => {

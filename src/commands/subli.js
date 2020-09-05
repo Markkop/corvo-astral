@@ -71,11 +71,16 @@ export function getSublimation (message) {
   const query = queriesEquivalent[normalizedQuery] || normalizedQuery
   const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|épico|relíquia/.test(query)
   let results = []
+  let hasFoundByName = true
   if (isSearchBySlot) {
     results = findSublimationByMatchingSlots(sublimations, query)
+    hasFoundByName = false
   } else {
     results = findSublimationByName(sublimations, query)
-    results = results.length ? results : findSublimationBySource(sublimations, query)
+    if (!results.length) {
+      hasFoundByName = false
+      results = findSublimationBySource(sublimations, query)
+    }
   }
 
   if (!results.length) {
@@ -86,16 +91,17 @@ export function getSublimation (message) {
   const sublimationsFoundText = results.map(subli => subli.name).join(', ').trim()
   const moreSublimationsText = `Sublimações encontradas: ${sublimationsFoundText}`
 
-  if (isSearchBySlot) {
-    message.reply(moreSublimationsText)
-    return
-  }
-
-  const reply = `Sublimação: ${results[0].name}
+  if (hasFoundByName) {
+    const sublimationText = `Sublimação: ${results[0].name}
 Slot: ${results[0].slots}
 Efeitos: ${results[0].effects}
 MaxStack: ${results[0].maxStack || '1'}
 Fonte: ${results[0].source}`
-  const hasMoreSublimations = results.length > 1
-  message.reply(reply + (hasMoreSublimations ? '\n' + moreSublimationsText : ''))
+    const hasFoundMoreThanOne = results.length > 1
+    const reply = sublimationText + (hasFoundMoreThanOne ? `\n${moreSublimationsText}` : '')
+    message.reply(reply)
+    return
+  }
+
+  message.reply(moreSublimationsText)
 }
