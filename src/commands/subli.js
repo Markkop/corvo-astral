@@ -23,6 +23,9 @@ function findSublimationByMatchingSlots (sublimationList, query) {
   if (isFourSlotsCombination) {
     const firstCombination = query.slice(0, 3)
     const secondCombination = query.slice(1, 4)
+    if (firstCombination === secondCombination) {
+      return sublimationList.filter(subli => subli.slots.toLowerCase().includes(firstCombination))
+    }
     const firstCombinationResults = sublimationList.filter(subli => subli.slots.toLowerCase().includes(firstCombination))
     const secondCombinationResults = sublimationList.filter(subli => subli.slots.toLowerCase().includes(secondCombination))
     return [...firstCombinationResults, ...secondCombinationResults]

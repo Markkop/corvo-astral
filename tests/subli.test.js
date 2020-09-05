@@ -50,6 +50,16 @@ Sublimações encontradas: Frenzy, Frenzy II, Frenzy III`)
     expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Carnage, Evasion II, Frenzy, Frenzy II')
   })
 
+  it('returns two matching sublimations when searching by 4 slots with the same combinations', () => {
+    const userMessage = {
+      content: '.subli gggg',
+      reply: jest.fn()
+    }
+    const replySpy = jest.spyOn(userMessage, 'reply')
+    getSublimation(userMessage)
+    expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Devastate, Devastate II')
+  })
+
   it('maps correctly an argument', () => {
     const userMessage = {
       content: '.subli epic',
