@@ -12,6 +12,17 @@ function findSublimationByName (sublimationList, query) {
 }
 
 /**
+ * Find sublimation based on their source with the query provided.
+ *
+ * @param {object[]} sublimationList
+ * @param {string} query
+ * @returns {object|object[]}
+ */
+function findSublimationBySource (sublimationList, query) {
+  return sublimationList.filter(subli => subli.source.toLowerCase().includes(query))
+}
+
+/**
  * Find sublimation based on matching slots with the query provided.
  *
  * @param {object[]} sublimationList
@@ -58,6 +69,7 @@ export function getSublimation (message) {
     results = findSublimationByMatchingSlots(sublimations, query)
   } else {
     results = findSublimationByName(sublimations, query)
+    results = results.length ? results : findSublimationBySource(sublimations, query)
   }
 
   if (!results.length) {
@@ -77,7 +89,7 @@ export function getSublimation (message) {
 Slot: ${results[0].slots}
 Efeitos: ${results[0].effects}
 MaxStack: ${results[0].maxStack || '1'}
-Drop: ${results[0].drop}`
+Fonte: ${results[0].source}`
   const hasMoreSublimations = results.length > 1
   message.reply(reply + (hasMoreSublimations ? '\n' + moreSublimationsText : ''))
 }

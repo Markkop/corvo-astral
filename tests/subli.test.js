@@ -12,7 +12,7 @@ describe('getSublimation', () => {
 Slot: Épico
 Efeitos: Se Domínio Zona > Domínio Corpo a Corpo, Domínio Corpo a Corpo é adicionado ao Domínio Zona (max 800) no começo do combate, perdendo a mesma quantidade em Domínio Distância.
 MaxStack: 1
-Drop: Baú de Final de Temporada de Chefe Supremo`)
+Fonte: Baú de Final de Temporada de Chefe Supremo (UB)`)
   })
 
   it('returns a sublimation and more results when finding more than one', () => {
@@ -26,7 +26,7 @@ Drop: Baú de Final de Temporada de Chefe Supremo`)
 Slot: RGB
 Efeitos: -20% damage Inflicted, 10% damage inflicted per affected enemy at the start of the next turn
 MaxStack: 1
-Drop: Aguabrial (2%)
+Fonte: Aguabrial (2%)
 Sublimações encontradas: Frenzy, Frenzy II, Frenzy III`)
   })
 
@@ -88,6 +88,21 @@ Sublimações encontradas: Frenzy, Frenzy II, Frenzy III`)
     const replySpy = jest.spyOn(userMessage, 'reply')
     getSublimation(userMessage)
     expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Devastate, Devastate II')
+  })
+
+  it('returns matching sublimations when searching by source', () => {
+    const userMessage = {
+      content: '.subli vertox',
+      reply: jest.fn()
+    }
+    const replySpy = jest.spyOn(userMessage, 'reply')
+    getSublimation(userMessage)
+    expect(replySpy).toHaveBeenCalledWith(`Sublimação: Ambush
+Slot: BBR
+Efeitos: +5% to damage Inflicted at 1 RA
+MaxStack: 3
+Fonte: Vertox the Timeless (1%) [3 stele/estela]
+Sublimações encontradas: Ambush, Dimensionality, Theory of Matter`)
   })
 
   it('maps correctly an argument', () => {
