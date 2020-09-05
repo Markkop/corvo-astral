@@ -30,7 +30,7 @@ Drop: Aguabrial (2%)
 Sublimações encontradas: Frenzy, Frenzy II, Frenzy III`)
   })
 
-  it('returns three matching sublimations when searching by 3 slots', () => {
+  it('returns matching sublimations when searching with three slots', () => {
     const userMessage = {
       content: '.subli BBR',
       reply: jest.fn()
@@ -60,7 +60,17 @@ Sublimações encontradas: Frenzy, Frenzy II, Frenzy III`)
     expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Ruin, Ambush, Determination, Solidity, Resolute, Theory of Matter, Moon Scales, Swiftness, Save, Ruin II, Spines, Distance Barrier, Tenacity II, Resolute II, Cyclothymia, Condemnation II, Frenzy III, Length, Integrity')
   })
 
-  it('returns matching sublimations when searching by 4 slots', () => {
+  it('returns non-repeated matching sublimations when searching with white slots', () => {
+    const userMessage = {
+      content: '.subli wwgw',
+      reply: jest.fn()
+    }
+    const replySpy = jest.spyOn(userMessage, 'reply')
+    getSublimation(userMessage)
+    expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Devastate, Carnage, Evasion, Condemnation, Stupefaction, Dimensionality, Return, Berserk Critical, Visibility, Devastate II, Evasion II, Berserk Dodge, Vitality Well, Influence, Wall, Return II, Influence II, Critical Hit Expert, Lone Wolf, Determination, Tenacity, Solidity, Topology, Frenzy, Theory of Matter, Distance Barrier, Close-Combat Barrier, Tenacity II, Berserk Block, Frenzy II, Cyclothymia')
+  })
+
+  it('returns matching sublimations when searching with four slots', () => {
     const userMessage = {
       content: '.subli rrgb',
       reply: jest.fn()

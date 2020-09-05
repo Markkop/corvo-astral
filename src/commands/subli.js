@@ -26,11 +26,12 @@ function findSublimationByMatchingSlots (sublimationList, query) {
     const secondCombination = query.slice(1, 4)
     const firstCombinationRegex = new RegExp(firstCombination.replace(/w/g, '[r|g|b]{1}'))
     const secondCombinationRegex = new RegExp(secondCombination.replace(/w/g, '[r|g|b]{1}'))
-    if (firstCombination === secondCombination) {
-      return sublimationList.filter(subli => firstCombinationRegex.test(subli.slots.toLowerCase()))
-    }
     const firstCombinationResults = sublimationList.filter(subli => firstCombinationRegex.test(subli.slots.toLowerCase()))
-    const secondCombinationResults = sublimationList.filter(subli => secondCombinationRegex.test(subli.slots.toLowerCase()))
+    const secondCombinationResults = sublimationList.filter(subli => {
+      const isRepeated = firstCombinationResults.includes(subli)
+      const matchesCombination = secondCombinationRegex.test(subli.slots.toLowerCase())
+      return matchesCombination && !isRepeated
+    })
     return [...firstCombinationResults, ...secondCombinationResults]
   }
   return sublimationList.filter(subli => regexQuery.test(subli.slots.toLowerCase()))
