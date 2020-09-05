@@ -20,17 +20,20 @@ function findSublimationByName (sublimationList, query) {
  */
 function findSublimationByMatchingSlots (sublimationList, query) {
   const isFourSlotsCombination = query.length === 4 && query !== 'epic'
+  const regexQuery = new RegExp(query.replace(/w/g, '[r|g|b]{1}'))
   if (isFourSlotsCombination) {
     const firstCombination = query.slice(0, 3)
     const secondCombination = query.slice(1, 4)
+    const firstCombinationRegex = new RegExp(firstCombination.replace(/w/g, '[r|g|b]{1}'))
+    const secondCombinationRegex = new RegExp(secondCombination.replace(/w/g, '[r|g|b]{1}'))
     if (firstCombination === secondCombination) {
-      return sublimationList.filter(subli => subli.slots.toLowerCase().includes(firstCombination))
+      return sublimationList.filter(subli => firstCombinationRegex.test(subli.slots.toLowerCase()))
     }
-    const firstCombinationResults = sublimationList.filter(subli => subli.slots.toLowerCase().includes(firstCombination))
-    const secondCombinationResults = sublimationList.filter(subli => subli.slots.toLowerCase().includes(secondCombination))
+    const firstCombinationResults = sublimationList.filter(subli => firstCombinationRegex.test(subli.slots.toLowerCase()))
+    const secondCombinationResults = sublimationList.filter(subli => secondCombinationRegex.test(subli.slots.toLowerCase()))
     return [...firstCombinationResults, ...secondCombinationResults]
   }
-  return sublimationList.filter(subli => subli.slots.toLowerCase().includes(query))
+  return sublimationList.filter(subli => regexQuery.test(subli.slots.toLowerCase()))
 }
 
 const queriesEquivalent = {

@@ -40,7 +40,27 @@ Sublimações encontradas: Frenzy, Frenzy II, Frenzy III`)
     expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Ambush, Spines, Integrity')
   })
 
-  it('returns four matching sublimations when searching by 4 slots', () => {
+  it('returns matching sublimations when searching with one white slot', () => {
+    const userMessage = {
+      content: '.subli wbr',
+      reply: jest.fn()
+    }
+    const replySpy = jest.spyOn(userMessage, 'reply')
+    getSublimation(userMessage)
+    expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Ambush, Resolute, Moon Scales, Spines, Resolute II, Condemnation II, Integrity')
+  })
+
+  it('returns matching sublimations when searching with two white slots', () => {
+    const userMessage = {
+      content: '.subli wwr',
+      reply: jest.fn()
+    }
+    const replySpy = jest.spyOn(userMessage, 'reply')
+    getSublimation(userMessage)
+    expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Ruin, Ambush, Determination, Solidity, Resolute, Theory of Matter, Moon Scales, Swiftness, Save, Ruin II, Spines, Distance Barrier, Tenacity II, Resolute II, Cyclothymia, Condemnation II, Frenzy III, Length, Integrity')
+  })
+
+  it('returns matching sublimations when searching by 4 slots', () => {
     const userMessage = {
       content: '.subli rrgb',
       reply: jest.fn()
@@ -50,7 +70,7 @@ Sublimações encontradas: Frenzy, Frenzy II, Frenzy III`)
     expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Carnage, Evasion II, Frenzy, Frenzy II')
   })
 
-  it('returns two matching sublimations when searching by 4 slots with the same combinations', () => {
+  it('returns matching sublimations when searching by 4 slots with the same combinations', () => {
     const userMessage = {
       content: '.subli gggg',
       reply: jest.fn()
