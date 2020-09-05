@@ -9,7 +9,7 @@ Parâmetros:
 * \`res\`: resistência do alvo. Pode ser em % ou total
 * \`on back\` ou \`on side\`: modificador para um ataque nas costas ou lados (opcional)
 Exemplo: \`.calc dmg 3000 base 55 res 60%\``,
-  subli: `Pesquise por sublimações pelo nome ou slots.
+  subli: `Pesquise por sublimações pelo nome, slots ou fonte de obtenção.
 Ex: \`.subli talho\`, \`.subli rrb\`, \`.subli epic\`,  \`.subli ggwr\`,  \`.subli quest\`,  \`.subli koko\`,  \`.subli craft\``,
   help: 'Nice try'
 }
