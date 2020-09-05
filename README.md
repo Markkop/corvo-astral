@@ -11,7 +11,9 @@ Link to add this bot to a Discord Server is not available until a further launch
 
 * `.alma`: returns the Almanax Bonus for the current day
 * `.calc`: calculates the damage for an attack given some values
+* `.subli`: search for a given sublimation name or slot combination
 * `.help`: get help for available commands
+
 
 ## How to develop
 
