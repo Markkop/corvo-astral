@@ -1,4 +1,4 @@
-import sublimations from '../../data/sublimations'
+import sublimations from '../data/sublimations'
 
 /**
  * Find sublimation based on the argument provided.
