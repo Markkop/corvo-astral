@@ -30,7 +30,7 @@ Drop: Aguabrial (2%)
 Sublimações encontradas: Frenzy, Frenzy II, Frenzy III`)
   })
 
-  it('returns three sublimations when providing slots', () => {
+  it('returns three matching sublimations when searching by 3 slots', () => {
     const userMessage = {
       content: '.subli BBR',
       reply: jest.fn()
@@ -38,6 +38,16 @@ Sublimações encontradas: Frenzy, Frenzy II, Frenzy III`)
     const replySpy = jest.spyOn(userMessage, 'reply')
     getSublimation(userMessage)
     expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Ambush, Spines, Integrity')
+  })
+
+  it('returns four matching sublimations when searching by 4 slots', () => {
+    const userMessage = {
+      content: '.subli rrgb',
+      reply: jest.fn()
+    }
+    const replySpy = jest.spyOn(userMessage, 'reply')
+    getSublimation(userMessage)
+    expect(replySpy).toHaveBeenCalledWith('Sublimações encontradas: Carnage, Evasion II, Frenzy, Frenzy II')
   })
 
   it('maps correctly an argument', () => {
