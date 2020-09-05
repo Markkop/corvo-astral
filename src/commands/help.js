@@ -23,9 +23,10 @@ export function getHelp (message) {
   const hasArguments = Boolean(args.length)
   const hasTooManyArguments = args.length > 1
   const helpArgument = args[0]
+  const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
   if (!hasArguments) {
     message.reply(`digite \`.help <comando>\` para obter ajuda sobre um comando específico
-Atualmente os comandos disponíveis são: \`alma\`, \`calc\` e \`help\``)
+Atualmente os comandos disponíveis são: ${commandsListText}`)
     return
   }
 
