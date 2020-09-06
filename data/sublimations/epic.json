@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Brutalidade",
+    "slots": "Épico",
+    "effects": "Se Domínio Zona > Domínio Corpo a Corpo, Domínio Corpo a Corpo é adicionado ao Domínio Zona (max 800) no começo do combate, perdendo a mesma quantidade em Domínio Distância.",
+    "source": "Baú de Final de Temporada de Chefe Supremo (UB)",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68325796.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/25796-brutality"
+  },
+  {
+    "name": "Precisão Cirúrgica",
+    "slots": "Épico",
+    "effects": "+20% de curas e armaduras realizadas se o usuário tiver 1 de alcance ou menos no início do combate ",
+    "source": "Baú de Final de Temporada de Calabouço",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68324133.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/consumiveis/24133-runa-epica-precisao-cirurgica"
+  },
+  {
+    "name": "Medida",
+    "slots": "Épico",
+    "effects": "10% De chance de crítico se o usuário tiver 40 de parada ou mais no inicio do combate.",
+    "source": "Baú de Final de Temporada de Calabouço",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68324134.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/consumiveis/24134-runa-epica-medida"
+  },
+  {
+    "name": "Desenlace",
+    "slots": "Épico",
+    "effects": "50% de domínio crítico é transferido para domínio elemental.",
+    "source": "Baú de Final de Temporada de Calabouço",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68324132.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/consumiveis/24132-runa-epica-desenlace"
+  },
+  {
+    "name": "Inflexibilidade",
+    "slots": "Épico",
+    "effects": "+20% de dano realizado, se o usuário tem 10 Pa ou menos no inicio do combate.",
+    "source": "Baú de Final de Temporada de Calabouço",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68324130.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/consumiveis/24130-runa-epica-inflexibilidade"
+  },
+  {
+    "name": "Constância",
+    "slots": "Épico",
+    "effects": "+10% de dano realizado se o usuário tem 10 de crítico ou menos no inicio do combate",
+    "source": "Baú de Final de Temporada de Calabouço",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68324131.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/consumiveis/24131-rune-epique-constance"
+  },
+  {
+    "name": "Saúde de Ferro",
+    "slots": "Épico",
+    "effects": "-40% HP, +30% de Curas e Armaduras recebidas no começo do combate.",
+    "source": "Baú de Final de Temporada de Chefe Supremo (UB)",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68325793.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/25793-saude-ferro"
+  },
+  {
+    "name": "Arte do Posicionamento",
+    "slots": "Épico",
+    "effects": "50 de resistência elemental, -100 de resistência costas para o usuário no inicio do combate.",
+    "source": "Baú de Final de Temporada de Chefe Supremo (UB)",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68325794.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/25794-arte-do-posicionamento"
+  },
+  {
+    "name": "Anatomia",
+    "slots": "Épico",
+    "effects": "Convert 50% de todo domínio elemental em Domínio Costas no início do combate (proporção de 1 para 1.3)",
+    "source": "Baú de Final de Temporada de Chefe Supremo (UB)",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68325795.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/consumiveis/25795-epic-rune-anatomy"
+  },
+  {
+    "name": "Manejo: Duas Mãos",
+    "slots": "Épico",
+    "effects": "-2MP max, +2AP max se o usuário tiver uma arma de duas mãos equipadas no começo do combate (max 11 AP antes do efeito)",
+    "source": "Baú de Final de Temporada de Calabouço",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68325793.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/27186-manejo-duas-maos"
+  },
+  {
+    "name": "Manejo: Adaga",
+    "slots": "Épico",
+    "effects": "+10% danos causados pela frente e -10% pelas costas caso o usuário tiver uma adaga equipada no começo do combate.",
+    "source": "Baú de Final de Temporada de Calabouço",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68325794.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/27187-wield-type-dagger"
+  },
+  {
+    "name": "Manejo: Escudo",
+    "slots": "Épico",
+    "effects": "+1MP max, alcance fixado em 0 se o usuário tiver um escudo equipado no começo do combate.",
+    "source": "Baú de Final de Temporada de Calabouço",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68325795.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/27188-maniement-bouclier"
+  },
+  {
+    "name": "Pacto Wakfu",
+    "slots": "Épico",
+    "effects": "+10 Vontade, +10% Parada se o usuário tiver 8 PW ou mais no começo do combate",
+    "source": "Baú de Final de Temporada de Calabouço",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68325796.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/27189-pacto-wakfu"
+  },
+  {
+    "name": "Concentração Elementar",
+    "slots": "Épico",
+    "effects": "Aumenta o maior elemento do usuário em 15%, diminuindo os demais em 30% no começo do combate.",
+    "source": "Baú de Final de Temporada de Calabouço",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68325797.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/27190-concentracao-elementar"
+  },
+  {
+    "name": "Força Hercúlea",
+    "slots": "Épico",
+    "effects": "150% do nível do usuário em Bloqueio e esquiva, se o usuário tem um numero ímpar de PA no inicio do combate",
+    "source": "Baú de Final de Temporada de Calabouço",
+    "image": "https://static.ankama.com/wakfu/portal/game/item/115/68325797.png",
+    "link": "https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/25797-force-herculeenne"
+  }
+]

@@ -12,9 +12,9 @@ describe('getSublimation', () => {
     }
     getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      color: '#eb00ef',
+      color: '#fd87ba',
       title: ':gem: Brutalidade',
-      url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/resources/25796-brutality',
+      url: 'https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/25796-brutality',
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/68325796.png'
       },
@@ -51,7 +51,7 @@ describe('getSublimation', () => {
     }
     getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      color: '#eb00ef',
+      color: '#fbfcac',
       title: ':scroll: Frenzy',
       url: 'https://www.wakfu.com/',
       thumbnail: {
@@ -317,7 +317,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Sublimações',
-          value: 'Brutalidade, Precisão Cirúrgica, Medida, Desenlace, Inflexibilidade, Constância, Saúde de Ferro, Arte do Posicionamento, Anatomia, Manejo: Duas Mãos, Manejo: Adaga, Manejo: Escudo, Pacto Wakfu, Concentração Elemental, Força Hercúlea'
+          value: 'Brutalidade, Precisão Cirúrgica, Medida, Desenlace, Inflexibilidade, Constância, Saúde de Ferro, Arte do Posicionamento, Anatomia, Manejo: Duas Mãos, Manejo: Adaga, Manejo: Escudo, Pacto Wakfu, Concentração Elementar, Força Hercúlea'
         }
       ]
     })
@@ -333,7 +333,7 @@ describe('getSublimation', () => {
     }
     getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      color: '#eb00ef',
+      color: '#fbfcac',
       title: ':scroll: Frenzy II',
       url: 'https://www.wakfu.com/',
       thumbnail: {
@@ -375,6 +375,7 @@ describe('getSublimation', () => {
     }
     getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
+      color: '#bb1327',
       title: ':x: Nenhuma sublimação encontrada',
       description: 'Digite `.subli help` para conferir alguns exemplos de como pesquisar.'
     })

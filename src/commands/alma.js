@@ -1,4 +1,4 @@
-import events from '../data/almanaxBonuses'
+import events from '../../data/almanaxBonuses'
 
 /**
  * Replies the user with current Almanax bonus.
@@ -20,7 +20,7 @@ export function getAlmanaxBonus (message) {
   const number = Math.floor(Math.random() * 3)
   const image = todayEvent.images[number]
   const embed = {
-    color: '#f48024',
+    color: '#40b2b5',
     title: todayEvent.name,
     description: 'Hoje o bônus do alma é: ' + todayEvent.text,
     image: { url: image },
