@@ -4,7 +4,9 @@ export default [
     slots: 'Épico',
     effects:
         'Se Domínio Zona > Domínio Corpo a Corpo, Domínio Corpo a Corpo é adicionado ao Domínio Zona (max 800) no começo do combate, perdendo a mesma quantidade em Domínio Distância.',
-    source: 'Baú de Final de Temporada de Chefe Supremo (UB)'
+    source: 'Baú de Final de Temporada de Chefe Supremo (UB)',
+    image: 'https://static.ankama.com/wakfu/portal/game/item/115/68325796.png',
+    link: 'https://www.wakfu.com/en/mmorpg/encyclopedia/resources/25796-brutality'
   },
   {
     name: 'Precisão Cirúrgica',

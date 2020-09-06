@@ -12,7 +12,9 @@ describe('getAlmanaxBonus', () => {
     jest.spyOn(Date, 'now').mockReturnValue(new Date('2020-09-02T12:00:00'))
     getAlmanaxBonus(userMessage)
     expect(botMessage.embed).toMatchObject({
-      title: ':tools: Fabricação'
+      color: '#f48024',
+      title: ':tools: Fabricação',
+      description: 'Hoje o bônus do alma é: +20% EXP e Velocidade em Fabricação'
     })
   })
 })

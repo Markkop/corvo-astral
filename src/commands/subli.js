@@ -2,6 +2,22 @@ import sublimations from '../data/sublimations'
 import { commandsHelp } from './help'
 
 /**
+ * Parses slot combination string to emojis strings.
+ *
+ * @param {string} slots
+ * @returns {string} Emojis.
+ */
+function parseSlotsToEmojis (slots) {
+  const emojiMap = {
+    g: ':green_square:',
+    b: ':blue_square:',
+    r: ':red_square:',
+    w: ':white_large_square:'
+  }
+  return Array.from(slots.toLowerCase()).map(letter => emojiMap[letter]).join(' ')
+}
+
+/**
  * Find sublimation based on their name with the query provided.
  *
  * @param {object[]} sublimationList
@@ -65,15 +81,22 @@ const queriesEquivalent = {
 export function getSublimation (message) {
   const normalizedQuery = message.content.split(' ').slice(1).join(' ').toLowerCase()
   if (!normalizedQuery) {
-    message.reply(commandsHelp.subli)
+    message.channel.send({
+      embed: {
+        title: ':grey_question: Ajuda: `.subli`',
+        description: commandsHelp.subli
+      }
+    })
     return
   }
   const query = queriesEquivalent[normalizedQuery] || normalizedQuery
   const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|épico|relíquia/.test(query)
   let results = []
   let hasFoundByName = true
+  let hasFoundBySlots = false
   if (isSearchBySlot) {
     results = findSublimationByMatchingSlots(sublimations, query)
+    hasFoundBySlots = true
     hasFoundByName = false
   } else {
     results = findSublimationByName(sublimations, query)
@@ -84,24 +107,76 @@ export function getSublimation (message) {
   }
 
   if (!results.length) {
-    message.reply('Sublimação não encontrada :c. Digite `.help subli` para mais informações')
+    message.channel.send({
+      embed: {
+        title: ':x: Nenhuma sublimação encontrada',
+        description: 'Digite `.subli help` para conferir alguns exemplos de como pesquisar.'
+      }
+    })
     return
   }
 
   const sublimationsFoundText = results.map(subli => subli.name).join(', ').trim()
-  const moreSublimationsText = `Sublimações encontradas: ${sublimationsFoundText}`
 
   if (hasFoundByName) {
-    const sublimationText = `Sublimação: ${results[0].name}
-Slot: ${results[0].slots}
-Efeitos: ${results[0].effects}
-MaxStack: ${results[0].maxStack || '1'}
-Fonte: ${results[0].source}`
+    const firstResult = results[0]
+    const isEpicOrRelic = /Épico|Relíquia/.test(firstResult.slots)
+    const icon = isEpicOrRelic ? ':gem:' : ':scroll:'
+    const sublimationEmbed = {
+      color: '#eb00ef',
+      url: firstResult.link || 'https://www.wakfu.com/',
+      title: `${icon} ${firstResult.name}`,
+      thumbnail: { url: firstResult.image || 'https://static.ankama.com/wakfu/portal/game/item/115/81227111.png' },
+      fields: [
+        {
+          name: 'Slot',
+          value: isEpicOrRelic ? firstResult.slots : parseSlotsToEmojis(firstResult.slots),
+          inline: true
+        },
+        {
+          name: 'Max Stacks',
+          value: firstResult.maxStack || '1',
+          inline: true
+        },
+        {
+          name: 'Efeitos',
+          value: firstResult.effects || 'efeitos'
+        },
+        {
+          name: 'Obtenção:',
+          value: firstResult.source || 'source'
+        }
+      ]
+    }
     const hasFoundMoreThanOne = results.length > 1
-    const reply = sublimationText + (hasFoundMoreThanOne ? `\n${moreSublimationsText}` : '')
-    message.reply(reply)
+    if (hasFoundMoreThanOne) {
+      sublimationEmbed.footer = {
+        text: `Sublimações encontradas: ${sublimationsFoundText}`
+      }
+    }
+    message.channel.send({ embed: sublimationEmbed })
     return
   }
-
-  message.reply(moreSublimationsText)
+  const isEpicOrRelic = /épico|relíquia/.test(query)
+  const queriedSlotsText = hasFoundBySlots && !isEpicOrRelic ? parseSlotsToEmojis(query) : query
+  const resultsEmbed = {
+    title: ':mag_right: Sublimações encontradas',
+    fields: [
+      {
+        name: 'Busca',
+        value: queriedSlotsText,
+        inline: true
+      },
+      {
+        name: 'Resultados',
+        value: results.length || 1,
+        inline: true
+      },
+      {
+        name: 'Sublimações',
+        value: sublimationsFoundText
+      }
+    ]
+  }
+  message.channel.send({ embed: resultsEmbed })
 }

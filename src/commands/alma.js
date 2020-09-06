@@ -19,14 +19,12 @@ export function getAlmanaxBonus (message) {
   }
   const number = Math.floor(Math.random() * 3)
   const image = todayEvent.images[number]
-  const exampleEmbed = {
+  const embed = {
     color: '#f48024',
     title: todayEvent.name,
     description: 'Hoje o bônus do alma é: ' + todayEvent.text,
     image: { url: image },
     timestamp: new Date()
   }
-  message.channel.send({
-    embed: exampleEmbed
-  })
+  message.channel.send({ embed })
 }

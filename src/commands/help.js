@@ -25,16 +25,28 @@ export function getHelp (message) {
   const hasTooManyArguments = args.length > 1
   const helpArgument = args[0]
   const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
+  const embed = {
+    title: ':grey_question: Ajuda',
+    description: 'digite `.help <comando>` para obter ajuda sobre um comando específico',
+    fields: [
+      {
+        name: 'Comandos disponíveis',
+        value: commandsListText
+      }
+    ]
+  }
   if (!hasArguments) {
-    message.reply(`digite \`.help <comando>\` para obter ajuda sobre um comando específico
-Atualmente os comandos disponíveis são: ${commandsListText}`)
+    message.channel.send({ embed })
     return
   }
 
   if (hasTooManyArguments) {
-    message.reply('você só pode pedir ajuda pra um comando u_u')
+    embed.description = 'você só pode pedir ajuda pra um comando u_u'
+    message.channel.send({ embed })
     return
   }
 
-  message.reply(commandsHelp[helpArgument])
+  embed.title = embed.title + `: \`.help ${helpArgument}\``
+  embed.description = commandsHelp[helpArgument]
+  message.channel.send({ embed })
 }
