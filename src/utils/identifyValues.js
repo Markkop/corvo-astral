@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import equipmentList from '../../data/equipment.json'
 
 /**
@@ -58,7 +59,21 @@ function identifyUseEffectsActionValues () {
   }, {})
 }
 
-console.log({
-  effectsActions: identifyActionValues(),
-  useEffectsActions: identifyUseEffectsActionValues()
-})
+/**
+ * Get all types from equipment with an example equipment name.
+ *
+ * @returns {object}
+ */
+function getAllTypes () {
+  return equipmentList.reduce((types, equip) => {
+    const currentName = equip.title
+    const currentType = equip.type
+    if (types[currentType]) {
+      return types
+    }
+    return { ...types, [currentType]: currentName }
+  }
+  , {})
+}
+
+console.log(identifyUseEffectsActionValues())
