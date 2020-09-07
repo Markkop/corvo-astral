@@ -1,4 +1,5 @@
-import { getArguments } from '../utils/message'
+import { getArguments, mapArgumentsToObject } from '../utils/message'
+import { commandsHelp } from './help'
 
 /**
  * Replies the user with the damage of a calculated attack.
@@ -6,22 +7,90 @@ import { getArguments } from '../utils/message'
  * @param { import('discord.js').Message } message - Discord message object.
  */
 export function calculateAttackDamage (message) {
-  const args = getArguments(message)
+  const rawArguments = getArguments(message)
+  const args = mapArgumentsToObject(rawArguments, '=')
   const requiredArgs = ['dmg', 'base', 'res']
-  const hasRequiredArgs = requiredArgs.every(requiredArg => args.includes(requiredArg))
+  const hasRequiredArgs = requiredArgs.every(requiredArg => Object.keys(args).includes(requiredArg))
   if (!hasRequiredArgs) {
-    message.reply('tem alguma coisa errada aí. Digite `.help calc` para mais informações.')
+    message.channel.send({
+      embed: {
+        color: '#ffffff',
+        title: ':grey_question: Ajuda: `.equip`',
+        description: commandsHelp.calc
+      }
+    })
     return
   }
-  const damage = args[args.indexOf('dmg') + 1]
-  const base = args[args.indexOf('base') + 1]
-  let resist = args[args.indexOf('res') + 1]
-  const hasBackArgument = args[args.indexOf('on') + 1] === 'back'
-  const hasSideArgument = args[args.indexOf('on') + 1] === 'side'
-  const backstabMultiplier = hasBackArgument ? 1.25 : 1
-  const sidestabMultiplier = hasSideArgument ? 1.10 : 1
-  resist = resist.includes('%') ? resist.split('%')[0] : Math.floor((1 - Math.pow(0.8, resist / 100)) * 100)
-  const attackDamage = base * backstabMultiplier * sidestabMultiplier * (1 + damage / 100) * (1 - resist / 100)
-  const backstabText = hasBackArgument ? 'nas costas ' : (hasSideArgument ? 'nos lados ' : '')
-  message.reply(`atacando com domínio de ${damage} e dano base ${base} em resist ${resist}% ${backstabText}o dano é de ${Math.round(attackDamage)}`)
+
+  const author = message.author.username || ''
+  const damage = Number(args.dmg)
+  const base = Number(args.base)
+  const resist = args.res
+  const crit = (args.crit && args.crit.split('%')[0]) || 0
+  const critChance = Number(crit)
+  const critChanceValue = critChance / 100
+
+  const isPercentageResist = resist.includes('%')
+  let percentageResist = Number(args.res.replace('%', ''))
+  let flatResist = Number(args.res)
+
+  if (isPercentageResist) {
+    flatResist = Math.ceil((100 * Math.log(1 - percentageResist / 100)) / (2 * Math.log(2) - Math.log(5)))
+  } else {
+    percentageResist = Math.floor((1 - Math.pow(0.8, flatResist / 100)) * 100)
+  }
+  let normalDamage = Math.ceil(base * (1 + damage / 100) * (1 - percentageResist / 100))
+  const critDamage = normalDamage * 1.25
+  const backstabDamage = normalDamage * 1.25
+  let averageDamage = normalDamage
+  if (critChance > 0) {
+    averageDamage = Math.ceil((normalDamage * (1 - critChanceValue)) + (critDamage * critChanceValue))
+    normalDamage = `${normalDamage}-${critDamage}`
+  }
+
+  message.channel.send({
+    embed: {
+      color: 'LIGHT_GREY',
+      title: `:crossed_swords: ${author} atacou um Papatudo!`,
+      thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/58218365.png' },
+      description: 'Tadinho...',
+      fields: [
+        {
+          name: ':boxing_glove: Domínio Total',
+          value: damage,
+          inline: true
+        },
+        {
+          name: ':pushpin: Dano Base',
+          value: base,
+          inline: true
+        },
+        {
+          name: ':shield: Resistência do Alvo',
+          value: `${percentageResist}% (${flatResist})`,
+          inline: true
+        },
+        {
+          name: ':game_die: Chance Crítica',
+          value: `${critChance}%`,
+          inline: true
+        },
+        {
+          name: ':drop_of_blood: Dano causado',
+          value: normalDamage,
+          inline: true
+        },
+        {
+          name: ':abacus: Dano médio',
+          value: averageDamage,
+          inline: true
+        },
+        {
+          name: ':dagger: Dano nas costas',
+          value: backstabDamage,
+          inline: true
+        }
+      ]
+    }
+  })
 }

@@ -1,5 +1,6 @@
 import equipmentList from '../../data/equipment.json'
 import { commandsHelp } from './help'
+import { mapArgumentsToObject } from '../utils/message'
 import config from '../config'
 const { rarityColors } = config
 
@@ -169,12 +170,7 @@ function removeLowerRarities (equipmentList) {
  * @returns {object[]}
  */
 function findEquipmentByName (equipmentList, query, filters = []) {
-  const filterMap = filters.reduce((filters, filter) => {
-    const splittedFilter = filter.split('=')
-    const filterName = splittedFilter[0]
-    const filterValue = splittedFilter[1]
-    return { ...filters, [filterName]: filterValue }
-  }, {})
+  const filterMap = mapArgumentsToObject(filters, '=')
 
   const hasRarityFilter = Boolean(filterMap.raridade)
   if (!hasRarityFilter) {
@@ -199,6 +195,23 @@ function findEquipmentByName (equipmentList, query, filters = []) {
  */
 function parseIconCodeToEmoji (text) {
   return text.split(/(\[.*?\])/).map(word => iconCodeMap[word] || word).join('')
+}
+
+/**
+ * Get the text that displays more results.
+ *
+ * @param {object[]} results
+ * @param {number} resultsLimit
+ * @returns {string}
+ */
+function getMoreEquipmentText (results, resultsLimit) {
+  if (results.length > resultsLimit) {
+    const firstResults = results.slice(0, resultsLimit)
+    const otherResults = results.slice(resultsLimit, results.length)
+    const moreResultsText = ` e outros ${otherResults.length} resultados`
+    return firstResults.map(equip => equip.title).join(', ').trim() + moreResultsText
+  }
+  return results.map(equip => equip.title).join(', ').trim()
 }
 
 /**
@@ -239,22 +252,6 @@ export async function getEquipment (message) {
     return
   }
 
-  /**
-   * Get the text that displays more results.
-   *
-   * @param {object[]} results
-   * @param {number} resultsLimit
-   * @returns {string}
-   */
-  function getMoreEquipmentText (results, resultsLimit) {
-    if (results.length > resultsLimit) {
-      const firstResults = results.slice(0, resultsLimit)
-      const otherResults = results.slice(resultsLimit, results.length)
-      const moreResultsText = ` e outros ${otherResults.length} resultados`
-      return firstResults.map(equip => equip.title).join(', ').trim() + moreResultsText
-    }
-    return results.map(equip => equip.title).join(', ').trim()
-  }
   const equipamentsFoundText = getMoreEquipmentText(results, 20)
   if (hasFoundByName) {
     const firstResult = equipDetails

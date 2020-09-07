@@ -21,3 +21,19 @@ export function getArguments (message) {
   const messageContent = message.content
   return messageContent.split(' ').slice(1)
 }
+
+/**
+ * Get arguments matching a conector.
+ *
+ * @param {string[]} userArguments
+ * @param {string} conector
+ * @returns {object}
+ */
+export function mapArgumentsToObject (userArguments, conector) {
+  return userArguments.reduce((userArguments, argument) => {
+    const splittedArgument = argument.split(conector)
+    const argumentName = splittedArgument[0]
+    const argumentValue = splittedArgument[1]
+    return { ...userArguments, [argumentName]: argumentValue }
+  }, {})
+}

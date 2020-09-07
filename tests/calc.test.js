@@ -1,53 +1,182 @@
 import { calculateAttackDamage } from '../src/commands'
+import { commandsHelp } from '../src/commands/help'
 
-describe('calculateAttackDamage', () => {
+describe.only('calculateAttackDamage', () => {
   it('calculates damage with % resist', () => {
+    let botMessage = {}
     const userMessage = {
-      content: '!calc dmg 4000 base 50 res 61%',
-      reply: jest.fn()
+      content: '!calc dmg=4000 base=50 res=61%',
+      author: {
+        username: 'Mark'
+      },
+      channel: {
+        send: jest.fn(message => {
+          botMessage = message
+        })
+      }
     }
-    const replySpy = jest.spyOn(userMessage, 'reply')
     calculateAttackDamage(userMessage)
-    expect(replySpy).toHaveBeenCalledWith('atacando com domínio de 4000 e dano base 50 em resist 61% o dano é de 800')
+    expect(botMessage.embed).toMatchObject({
+      title: ':crossed_swords: Mark atacou um Papatudo!',
+      fields: [
+        {
+          name: ':boxing_glove: Domínio Total',
+          value: 4000,
+          inline: true
+        },
+        {
+          name: ':pushpin: Dano Base',
+          value: 50,
+          inline: true
+        },
+        {
+          name: ':shield: Resistência do Alvo',
+          value: '61% (422)',
+          inline: true
+        },
+        {
+          name: ':game_die: Chance Crítica',
+          value: '0%',
+          inline: true
+        },
+        {
+          name: ':drop_of_blood: Dano causado',
+          value: 800
+        },
+        {
+          name: ':abacus: Dano médio',
+          value: 800
+        },
+        {
+          name: ':dagger: Dano nas costas',
+          value: 1000
+        }
+      ]
+    })
   })
 
   it('calculates damage with flat resist', () => {
+    let botMessage = {}
     const userMessage = {
-      content: '!calc dmg 4000 base 50 res 425',
-      reply: jest.fn()
+      content: '!calc dmg=4000 base=50 res=422',
+      author: {
+        username: 'Mark'
+      },
+      channel: {
+        send: jest.fn(message => {
+          botMessage = message
+        })
+      }
     }
-    const replySpy = jest.spyOn(userMessage, 'reply')
     calculateAttackDamage(userMessage)
-    expect(replySpy).toHaveBeenCalledWith('atacando com domínio de 4000 e dano base 50 em resist 61% o dano é de 800')
+    expect(botMessage.embed).toMatchObject({
+      title: ':crossed_swords: Mark atacou um Papatudo!',
+      fields: [
+        {
+          name: ':boxing_glove: Domínio Total',
+          value: 4000,
+          inline: true
+        },
+        {
+          name: ':pushpin: Dano Base',
+          value: 50,
+          inline: true
+        },
+        {
+          name: ':shield: Resistência do Alvo',
+          value: '61% (422)',
+          inline: true
+        },
+        {
+          name: ':game_die: Chance Crítica',
+          value: '0%',
+          inline: true
+        },
+        {
+          name: ':drop_of_blood: Dano causado',
+          value: 800
+        },
+        {
+          name: ':abacus: Dano médio',
+          value: 800
+        },
+        {
+          name: ':dagger: Dano nas costas',
+          value: 1000
+        }
+      ]
+    })
   })
 
-  it('calculates damage with backstab', () => {
+  it('calculates damage with crit chance', () => {
+    let botMessage = {}
     const userMessage = {
-      content: '!calc dmg 4000 base 50 res 425 on back',
-      reply: jest.fn()
+      content: '!calc dmg=4000 base=50 res=422 crit=10',
+      author: {
+        username: 'Mark'
+      },
+      channel: {
+        send: jest.fn(message => {
+          botMessage = message
+        })
+      }
     }
-    const replySpy = jest.spyOn(userMessage, 'reply')
     calculateAttackDamage(userMessage)
-    expect(replySpy).toHaveBeenCalledWith('atacando com domínio de 4000 e dano base 50 em resist 61% nas costas o dano é de 999')
+    expect(botMessage.embed).toMatchObject({
+      title: ':crossed_swords: Mark atacou um Papatudo!',
+      fields: [
+        {
+          name: ':boxing_glove: Domínio Total',
+          value: 4000,
+          inline: true
+        },
+        {
+          name: ':pushpin: Dano Base',
+          value: 50,
+          inline: true
+        },
+        {
+          name: ':shield: Resistência do Alvo',
+          value: '61% (422)',
+          inline: true
+        },
+        {
+          name: ':game_die: Chance Crítica',
+          value: '10%',
+          inline: true
+        },
+        {
+          name: ':drop_of_blood: Dano causado',
+          value: '800-1000'
+        },
+        {
+          name: ':abacus: Dano médio',
+          value: 820
+        },
+        {
+          name: ':dagger: Dano nas costas',
+          value: 1000
+        }
+      ]
+    })
   })
 
-  it('calculates damage with sidestab', () => {
+  it('return a help message if no query was provided', () => {
+    let botMessage = {}
     const userMessage = {
-      content: '!calc dmg 4000 base 50 res 425 on side',
-      reply: jest.fn()
+      content: '.equip',
+      author: {
+        username: 'Mark'
+      },
+      channel: {
+        send: jest.fn(message => {
+          botMessage = message
+        })
+      }
     }
-    const replySpy = jest.spyOn(userMessage, 'reply')
     calculateAttackDamage(userMessage)
-    expect(replySpy).toHaveBeenCalledWith('atacando com domínio de 4000 e dano base 50 em resist 61% nos lados o dano é de 879')
-  })
-
-  it('replies an error if not enough required arguments', () => {
-    const userMessage = {
-      content: '!calc base 50 res 425',
-      reply: jest.fn()
-    }
-    const replySpy = jest.spyOn(userMessage, 'reply')
-    calculateAttackDamage(userMessage)
-    expect(replySpy).toHaveBeenCalledWith('tem alguma coisa errada aí. Digite `.help calc` para mais informações.')
+    expect(botMessage.embed).toMatchObject({
+      description: commandsHelp.calc
+    })
   })
 })
