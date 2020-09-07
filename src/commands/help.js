@@ -7,10 +7,10 @@ Parâmetros:
 * \`dmg\`: domínio total (maior elemental + secundários)
 * \`base\`: dano base da skill
 * \`res\`: resistência do alvo. Pode ser em % ou total
-* \`crit\`: chance crítica em %
+* \`crit\`: chance crítica em % (opcional)
 Exemplos: 
 \`.calc dmg=3000 base=55 res=60%\`
-\`.calc dmg=3000 base=55 res=60% crit=30%\``,
+\`.calc dmg=5000 base=40 res=420 crit=30%\``,
   subli: `Pesquise por sublimações pelo nome, combinação de slots ou fonte de obtenção.
 Ex: \`.subli talho\`, \`.subli rrb\`, \`.subli epic\`,  \`.subli ggwr\`,  \`.subli quest\`,  \`.subli koko\`,  \`.subli craft\``,
   equip: `Pesquise pelo nome do equipamento e outros filtros.

@@ -109,7 +109,7 @@ describe('getEquipment', () => {
     }
     getEquipment(userMessage)
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
-      name: 'Em uso:',
+      name: 'Em uso',
       value: 'Dano :star2:: 46 :left_right_arrow:'
     }]))
   })

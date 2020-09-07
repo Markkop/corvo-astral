@@ -285,7 +285,7 @@ export async function getEquipment (message) {
     }
     if (firstResult.useEffects.length) {
       equipEmbed.fields.push({
-        name: 'Em uso:',
+        name: 'Em uso',
         value: firstResult.useEffects.map(effect => parseIconCodeToEmoji(effect.descriptions[0])).join('\n')
       })
     }
