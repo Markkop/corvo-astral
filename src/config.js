@@ -1,7 +1,7 @@
 export default {
   prefix: '.',
   rarityColors: {
-    Comum: '#fff',
+    Comum: '#ffffff',
     Raro: '#28f18b',
     Mítico: '#fd8e39',
     Lendário: '#fede71',

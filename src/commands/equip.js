@@ -202,22 +202,6 @@ function parseIconCodeToEmoji (text) {
 }
 
 /**
- * Truncates the text given a limit.
- *
- * @param {string} text
- * @param {number} limit
- * @returns {string}
- */
-function truncateText (text, limit) {
-  if (text.length > limit) {
-    const textArray = Array.from(text)
-    textArray.length = limit
-    return textArray.join('') + '...'
-  }
-  return text
-}
-
-/**
  * Replies the user information about the given equipment.
  *
  * @param { import('discord.js').Message } message - Discord message object.
@@ -255,7 +239,23 @@ export async function getEquipment (message) {
     return
   }
 
-  const equipamentsFoundText = results.map(equip => equip.title).join(', ').trim()
+  /**
+   * Get the text that displays more results.
+   *
+   * @param {object[]} results
+   * @param {number} resultsLimit
+   * @returns {string}
+   */
+  function getMoreEquipmentText (results, resultsLimit) {
+    if (results.length > resultsLimit) {
+      const firstResults = results.slice(0, resultsLimit)
+      const otherResults = results.slice(resultsLimit, results.length)
+      const moreResultsText = ` e outros ${otherResults.length} resultados`
+      return firstResults.map(equip => equip.title).join(', ').trim() + moreResultsText
+    }
+    return results.map(equip => equip.title).join(', ').trim()
+  }
+  const equipamentsFoundText = getMoreEquipmentText(results, 20)
   if (hasFoundByName) {
     const firstResult = equipDetails
     const equipEmbed = {
@@ -301,7 +301,7 @@ export async function getEquipment (message) {
     }
     if (results.length > 1) {
       equipEmbed.footer = {
-        text: `Equipamentos encontrados: ${truncateText(equipamentsFoundText, 400)}`
+        text: `Equipamentos encontrados: ${equipamentsFoundText}`
       }
     }
     message.channel.send({ embed: equipEmbed })

@@ -130,6 +130,22 @@ describe('getEquipment', () => {
     })
   })
 
+  it('return a footer with truncated results if there are too many', () => {
+    let botMessage = {}
+    const userMessage = {
+      content: '.equip a',
+      channel: {
+        send: jest.fn(message => {
+          botMessage = message
+        })
+      }
+    }
+    getEquipment(userMessage)
+    expect(botMessage.embed.footer).toEqual({
+      text: 'Equipamentos encontrados: Kwal Dhedo Enfraquecido, Botas do Tofu selvagem, Fatiadoras de Milobo, Fatiadoras de Milobo, Fatiadoras de Milobo, Fatiadoras de Milobo, O Amula, O Amula, O Amula, O Amula, Dragoperu de Precisão, Dragoperu de Distância, Dragoperu de Destruição, Manto do Competidor Júnior, Amuleto de Moskito, Lâmina Estrondosa, Sapeado, Vegetacinto, Anel Aventureiro, ChaPiu Azul e outros 3333 resultados'
+    })
+  })
+
   it('return a not found message if no equip was found', () => {
     let botMessage = {}
     const userMessage = {
