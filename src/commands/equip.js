@@ -3,49 +3,6 @@ import { commandsHelp } from './help'
 import config from '../config'
 const { rarityColors } = config
 
-/**
- * Remove equip with the same name and lower rarity.
- *
- * @param {object[]} equipmentList
- * @returns {object[]}
- */
-function removeLowerRarities (equipmentList) {
-  return equipmentList.filter(equip => {
-    const equipName = equip.title
-    const higherRarity = equipmentList.reduce((higherRarity, otherEquip) => {
-      const hasSameName = otherEquip.title === equipName
-      if (!hasSameName) {
-        return higherRarity
-      }
-      return Math.max(higherRarity, otherEquip.rarity, equip.rarity)
-    }, 0)
-
-    const equipRarity = equip.rarity || 0
-    return equipRarity === higherRarity
-  })
-}
-
-/**
- * Find a equipment list by matching name.
- *
- * @param {object[]} equipmentList
- * @param {string} query
- * @returns {object[]}
- */
-function findEquipmentByName (equipmentList, query) {
-  return removeLowerRarities(equipmentList).filter(equip => equip.title.toLowerCase().includes(query))
-}
-
-/**
- * Parse a text string converting icon codes to discord emojis.
- *
- * @param {string} text
- * @returns {string}
- */
-function parseIconCodeToEmoji (text) {
-  return text.split(/(\[.*?\])/).map(word => iconCodeMap[word] || word).join('')
-}
-
 const rarityEmojiMap = {
   1: ':white_circle:',
   2: ':green_circle:',
@@ -63,7 +20,8 @@ const rarityNameMap = {
   4: 'Lendário',
   5: 'Relíquia',
   6: 'Anelembrança',
-  7: 'Épico'
+  7: 'Épico',
+  10: 'Impossível'
 }
 
 const iconCodeMap = {
@@ -181,12 +139,92 @@ const typeMap = {
 }
 
 /**
+ * Remove equip with the same name and lower rarity.
+ *
+ * @param {object[]} equipmentList
+ * @returns {object[]}
+ */
+function removeLowerRarities (equipmentList) {
+  return equipmentList.filter(equip => {
+    const equipName = equip.title
+    const higherRarity = equipmentList.reduce((higherRarity, otherEquip) => {
+      const hasSameName = otherEquip.title === equipName
+      if (!hasSameName) {
+        return higherRarity
+      }
+      return Math.max(higherRarity, otherEquip.rarity, equip.rarity)
+    }, 0)
+
+    const equipRarity = equip.rarity || 0
+    return equipRarity === higherRarity
+  })
+}
+
+/**
+ * Find a equipment list by matching name.
+ *
+ * @param {object[]} equipmentList
+ * @param {string} query
+ * @param {string[]} filters
+ * @returns {object[]}
+ */
+function findEquipmentByName (equipmentList, query, filters = []) {
+  const filterMap = filters.reduce((filters, filter) => {
+    const splittedFilter = filter.split('=')
+    const filterName = splittedFilter[0]
+    const filterValue = splittedFilter[1]
+    return { ...filters, [filterName]: filterValue }
+  }, {})
+
+  const hasRarityFilter = Boolean(filterMap.raridade)
+  if (!hasRarityFilter) {
+    return removeLowerRarities(equipmentList).filter(equip => equip.title.toLowerCase().includes(query))
+  }
+
+  return equipmentList.filter(equip => {
+    let filterAssertion = true
+    const includeQuery = equip.title.toLowerCase().includes(query)
+    const hasRarity = rarityNameMap[equip.rarity].toLowerCase().includes(filterMap.raridade)
+    filterAssertion = filterAssertion && hasRarity
+
+    return includeQuery && filterAssertion
+  })
+}
+
+/**
+ * Parse a text string converting icon codes to discord emojis.
+ *
+ * @param {string} text
+ * @returns {string}
+ */
+function parseIconCodeToEmoji (text) {
+  return text.split(/(\[.*?\])/).map(word => iconCodeMap[word] || word).join('')
+}
+
+/**
+ * Truncates the text given a limit.
+ *
+ * @param {string} text
+ * @param {number} limit
+ * @returns {string}
+ */
+function truncateText (text, limit) {
+  if (text.length > limit) {
+    const textArray = Array.from(text)
+    textArray.length = limit
+    return textArray.join('') + '...'
+  }
+  return text
+}
+
+/**
  * Replies the user information about the given equipment.
  *
  * @param { import('discord.js').Message } message - Discord message object.
  */
 export async function getEquipment (message) {
-  const query = message.content.split(' ').slice(1).join(' ').toLowerCase()
+  const filters = message.content.toLowerCase().split(' ').filter(word => word.includes('='))
+  const query = message.content.split(' ').slice(1).filter(word => !word.includes('=')).join(' ').toLowerCase()
   if (!query) {
     message.channel.send({
       embed: {
@@ -201,7 +239,7 @@ export async function getEquipment (message) {
   let hasFoundByName = false
   hasFoundByName = true
 
-  results = findEquipmentByName(equipmentList, query)
+  results = findEquipmentByName(equipmentList, query, filters)
   const equipDetails = results[0]
   if (equipDetails) {
     hasFoundByName = true
@@ -263,7 +301,7 @@ export async function getEquipment (message) {
     }
     if (results.length > 1) {
       equipEmbed.footer = {
-        text: `Equipamentos encontrados: ${equipamentsFoundText}`
+        text: `Equipamentos encontrados: ${truncateText(equipamentsFoundText, 400)}`
       }
     }
     message.channel.send({ embed: equipEmbed })

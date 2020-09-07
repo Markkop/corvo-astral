@@ -44,7 +44,7 @@ describe('getEquipment', () => {
     })
   })
 
-  it('return a matching equipment by name with higher rarity', () => {
+  it('return a matching equipment by name with higher rarity by default', () => {
     let botMessage = {}
     const userMessage = {
       content: '.equip o eterno',
@@ -58,6 +58,24 @@ describe('getEquipment', () => {
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
       name: 'Raridade',
       value: 'Anelembrança',
+      inline: true
+    }]))
+  })
+
+  it('return a matching equipment by name with lower rarity with rarity argument is provided', () => {
+    let botMessage = {}
+    const userMessage = {
+      content: '.equip o eterno raridade=mítico',
+      channel: {
+        send: jest.fn(message => {
+          botMessage = message
+        })
+      }
+    }
+    getEquipment(userMessage)
+    expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
+      name: 'Raridade',
+      value: 'Mítico',
       inline: true
     }]))
   })
