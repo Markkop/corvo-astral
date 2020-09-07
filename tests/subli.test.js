@@ -377,7 +377,7 @@ describe('getSublimation', () => {
     expect(botMessage.embed).toEqual({
       color: '#bb1327',
       title: ':x: Nenhuma sublimação encontrada',
-      description: 'Digite `.subli help` para conferir alguns exemplos de como pesquisar.'
+      description: 'Digite `.help subli` para conferir alguns exemplos de como pesquisar.'
     })
   })
 

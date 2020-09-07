@@ -1,4 +1,4 @@
-import { getArguments } from '../utils'
+import { getArguments } from '../utils/message'
 
 /**
  * Replies the user with the damage of a calculated attack.

@@ -1,4 +1,4 @@
-import { getArguments } from '../utils'
+import { getArguments } from '../utils/message'
 
 export const commandsHelp = {
   alma: 'Descubra o bônus do alma para o dia atual. Em breve retornarão também o bônus para os próximos dias ;D',
@@ -11,6 +11,7 @@ Parâmetros:
 Exemplo: \`.calc dmg 3000 base 55 res 60%\``,
   subli: `Pesquise por sublimações pelo nome, slots ou fonte de obtenção.
 Ex: \`.subli talho\`, \`.subli rrb\`, \`.subli epic\`,  \`.subli ggwr\`,  \`.subli quest\`,  \`.subli koko\`,  \`.subli craft\``,
+  equip: 'Pesquisa pelo nome do equipamento. Ex: `.equip martelo de osamodas` Em breve será disponível pesquisar com filtros, fique ligado.',
   help: 'Nice try'
 }
 

@@ -2,10 +2,12 @@ import { getAlmanaxBonus } from './alma'
 import { calculateAttackDamage } from './calc'
 import { getHelp } from './help'
 import { getSublimation } from './subli'
+import { getEquipment } from './equip'
 
 export {
   getAlmanaxBonus,
   calculateAttackDamage,
   getHelp,
-  getSublimation
+  getSublimation,
+  getEquipment
 }

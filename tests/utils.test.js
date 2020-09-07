@@ -1,4 +1,4 @@
-import { getArguments, getCommand } from '../src/utils'
+import { getArguments, getCommand } from '../src/utils/message'
 
 describe('getArguments', () => {
   it('get arguments correctly', () => {

@@ -1,6 +1,6 @@
 import Discord from 'discord.js'
-import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation } from './commands'
-import { getCommand } from './utils'
+import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment } from './commands'
+import { getCommand } from './utils/message'
 import config from './config'
 import dotenv from 'dotenv'
 dotenv.config()
@@ -12,6 +12,7 @@ const commandActions = {
   calc: calculateAttackDamage,
   help: getHelp,
   subli: getSublimation,
+  equip: getEquipment,
   time: (message) => message.reply(new Date().toString())
 }
 
