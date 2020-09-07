@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "npm run build && node dist/index.js",
+    "import:equipment": "npm run build && node dist/utils/importEquipment.js",
     "build": "babel src -d dist",
     "lint": "eslint .",
     "test": "jest tests/**.test.js"
@@ -17,6 +18,7 @@
   "author": "Mark Kop",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.20.0",
     "discord.js": "^12.3.1",
     "dotenv": "^8.2.0"
   },
@@ -24,6 +26,7 @@
     "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.5",
     "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
     "@types/jest": "^26.0.13",
     "babel-jest": "^26.3.0",
