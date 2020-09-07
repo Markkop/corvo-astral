@@ -18,7 +18,7 @@
     "name": "Assolação",
     "effects": "No início do combate: Todos os domínios e resistências: +10",
     "maxStack": "2",
-    "source": "Sor'Hon, Lord of the Flame (1%) [1 stele/estela]"
+    "source": "Sor'Hon, Senhor da Chama (1%) [1 stele/estela]"
   },
   {
     "slots": "RRG",
@@ -405,8 +405,7 @@
     "slots": "RBG",
     "name": "Lobo solitário",
     "maxStack": "2",
-    "effects": 
-      "Se não há aliados a até 4 células do portador do estado: 5% de Danos causados.",
+    "effects": "Se não há aliados a até 4 células do portador do estado: 5% de Danos causados.",
     "source": "Aguabrial (2%)"
   }
 ]
