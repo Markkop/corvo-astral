@@ -26,18 +26,6 @@ function removeLowerRarities (equipmentList) {
 }
 
 /**
- * Remove duplicated equipment with the same id.
- *
- * @param {object[]} equipmentList
- * @returns {object[]}
- */
-function removeRepeated (equipmentList) {
-  return Array.from(new Set(equipmentList.map(equip => equip.id))).map(id => {
-    return equipmentList.find(equip => equip.id === id)
-  })
-}
-
-/**
  * Find a equipment list by matching name.
  *
  * @param {object[]} equipmentList
@@ -45,8 +33,7 @@ function removeRepeated (equipmentList) {
  * @returns {object[]}
  */
 function findEquipmentByName (equipmentList, query) {
-  const nonRepeated = removeRepeated(equipmentList)
-  return removeLowerRarities(nonRepeated).filter(equip => equip.title.toLowerCase().includes(query))
+  return removeLowerRarities(equipmentList).filter(equip => equip.title.toLowerCase().includes(query))
 }
 
 /**
@@ -56,7 +43,7 @@ function findEquipmentByName (equipmentList, query) {
  * @returns {string}
  */
 function parseIconCodeToEmoji (text) {
-  return text.split(' ').map(word => iconCodeMap[word] || word).join(' ')
+  return text.split(/(\[.*?\])/).map(word => iconCodeMap[word] || word).join('')
 }
 
 const rarityEmojiMap = {

@@ -79,6 +79,23 @@ describe('getEquipment', () => {
     }]))
   })
 
+  it('return the useEffect description if the resulting equipment has one', () => {
+    let botMessage = {}
+    const userMessage = {
+      content: '.equip Palito de Dente de Ogrest',
+      channel: {
+        send: jest.fn(message => {
+          botMessage = message
+        })
+      }
+    }
+    getEquipment(userMessage)
+    expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
+      name: 'Em uso:',
+      value: 'Dano :star2:: 46 :left_right_arrow:'
+    }]))
+  })
+
   it('return a footer with more equip. found if results are more than one', () => {
     let botMessage = {}
     const userMessage = {
@@ -91,7 +108,7 @@ describe('getEquipment', () => {
     }
     getEquipment(userMessage)
     expect(botMessage.embed.footer).toEqual({
-      text: 'Equipamentos encontrados: Dragonas dos Riktus de Amakna, Botas dos Riktus de Amakna, Peitoral dos Riktus de Amakna, Máscara dos Riktus de Amakna, Escudo do Capitão Amakna, Espada de Amakna, Anel de Amakna'
+      text: 'Equipamentos encontrados: Botas dos Riktus de Amakna, Peitoral dos Riktus de Amakna, Máscara dos Riktus de Amakna, Escudo do Capitão Amakna, Espada de Amakna, Anel de Amakna, Dragonas dos Riktus de Amakna'
     })
   })
 
