@@ -10,7 +10,7 @@ export function calculateAttackDamage (message) {
   const rawArguments = getArguments(message)
   const args = mapArgumentsToObject(rawArguments, '=')
   const requiredArgs = ['dmg', 'base', 'res']
-  const hasRequiredArgs = requiredArgs.every(requiredArg => Object.keys(args).includes(requiredArg))
+  const hasRequiredArgs = requiredArgs.every(requiredArg => Boolean(args[requiredArg]))
   if (!hasRequiredArgs) {
     message.channel.send({
       embed: {

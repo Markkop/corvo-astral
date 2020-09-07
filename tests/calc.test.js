@@ -164,7 +164,7 @@ describe.only('calculateAttackDamage', () => {
   it('return a help message if no query was provided', () => {
     let botMessage = {}
     const userMessage = {
-      content: '.equip',
+      content: '.calc',
       author: {
         username: 'Mark'
       },
