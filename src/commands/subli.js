@@ -2,6 +2,8 @@ import { commandsHelp } from './help'
 import epic from '../../data/sublimations/epic.json'
 import relic from '../../data/sublimations/relic.json'
 import normal from '../../data/sublimations/normal.json'
+import config from '../config'
+const { rarityColors } = config
 const sublimations = [...epic, ...relic, ...normal]
 
 /**
@@ -124,16 +126,11 @@ export function getSublimation (message) {
   const sublimationsFoundText = results.map(subli => subli.name).join(', ').trim()
 
   if (hasFoundByName) {
-    const colorMap = {
-      Épico: '#fd87ba',
-      Relíquia: '#ff47e7',
-      other: '#fbfcac'
-    }
     const firstResult = results[0]
     const isEpicOrRelic = /Épico|Relíquia/.test(firstResult.slots)
     const icon = isEpicOrRelic ? ':gem:' : ':scroll:'
     const sublimationEmbed = {
-      color: colorMap[firstResult.slots] || colorMap.other,
+      color: rarityColors[firstResult.slots] || rarityColors.other,
       url: firstResult.link || 'https://www.wakfu.com/',
       title: `${icon} ${firstResult.name}`,
       thumbnail: { url: firstResult.image || 'https://static.ankama.com/wakfu/portal/game/item/115/81227111.png' },

@@ -1,5 +1,7 @@
 import equipmentList from '../../data/equipment.json'
 import { commandsHelp } from './help'
+import config from '../config'
+const { rarityColors } = config
 
 /**
  * Remove equip with the same name and lower rarity.
@@ -171,7 +173,7 @@ const typeMap = {
   134: 'Capacete',
   136: 'Peitoral',
   138: 'Ombreira',
-  518: 'Arma de uma mão',
+  110: 'Arma de uma mão',
   519: 'Arma de duas mãos',
   520: 'Mão secundária',
   582: 'Mascote',
@@ -220,6 +222,7 @@ export async function getEquipment (message) {
   if (hasFoundByName) {
     const firstResult = equipDetails
     const equipEmbed = {
+      color: rarityColors[rarityNameMap[firstResult.rarity]] || rarityColors.other,
       title: `${rarityEmojiMap[firstResult.rarity]} ${firstResult.title}`,
       thumbnail: { url: `https://builder.methodwakfu.com/assets/icons/items/${firstResult.img}.webp` },
       fields: [

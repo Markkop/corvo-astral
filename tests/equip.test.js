@@ -14,6 +14,7 @@ describe('getEquipment', () => {
     }
     getEquipment(userMessage)
     expect(botMessage.embed).toEqual({
+      color: '#fede71',
       title: ':yellow_circle: Cinto Tentacular',
       thumbnail: {
         url: 'https://builder.methodwakfu.com/assets/icons/items/13327644.webp'
