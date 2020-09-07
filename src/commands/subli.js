@@ -88,7 +88,7 @@ export function getSublimation (message) {
   if (!normalizedQuery) {
     message.channel.send({
       embed: {
-        color: '#ffffff',
+        color: 'LIGHT_GREY',
         title: ':grey_question: Ajuda: `.subli`',
         description: commandsHelp.subli
       }

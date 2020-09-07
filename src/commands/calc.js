@@ -14,8 +14,8 @@ export function calculateAttackDamage (message) {
   if (!hasRequiredArgs) {
     message.channel.send({
       embed: {
-        color: '#ffffff',
-        title: ':grey_question: Ajuda: `.equip`',
+        color: 'LIGHT_GREY',
+        title: ':grey_question: Ajuda: `.calc`',
         description: commandsHelp.calc
       }
     })

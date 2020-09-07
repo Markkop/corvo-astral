@@ -225,7 +225,7 @@ export async function getEquipment (message) {
   if (!query) {
     message.channel.send({
       embed: {
-        color: '#ffffff',
+        color: 'LIGHT_GREY',
         title: ':grey_question: Ajuda: `.equip`',
         description: commandsHelp.equip
       }

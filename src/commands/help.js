@@ -33,7 +33,7 @@ export function getHelp (message) {
   const helpArgument = args[0]
   const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
   const embed = {
-    color: '#ffffff',
+    color: 'LIGHT_GREY',
     title: ':grey_question: Ajuda',
     description: 'digite `.help <comando>` para obter ajuda sobre um comando específico',
     fields: [
