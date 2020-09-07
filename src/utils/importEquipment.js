@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import axios from 'axios'
 import fs from 'fs'
+import equipmentList from '../../data/equipment.json'
 
 /**
  * Get and save to file equipament from an external api.
@@ -29,4 +31,67 @@ async function getEquipment () {
   }
 }
 
-getEquipment()
+/**
+ * Get a list with all equipment id, title and rarity.
+ *
+ * @returns {object[]}
+ */
+async function getLightList () {
+  const { data } = await axios.get('https://builder.methodwakfu.com/mw-api/items/lightlist?lang=pt')
+  return data
+}
+
+/**
+ * Return the same equipment list, but without repeated ids.
+ *
+ * @param {object[]} equipmentList
+ * @returns {object[]}
+ */
+function removeRepeated (equipmentList) {
+  return Array.from(new Set(equipmentList.map(equip => equip.id))).map(id => {
+    return equipmentList.find(equip => equip.id === id)
+  })
+}
+
+/**
+ * Get equipment that are missing by id.
+ *
+ * @returns {string[]}
+ */
+async function getMissingIds () {
+  const lightList = await getLightList()
+  const idLightList = lightList.map(item => item.id)
+  const equipList = removeRepeated(equipmentList)
+  const idEquipList = equipList.map(item => item.id)
+  const missingIds = idLightList.filter(item => {
+    return !idEquipList.includes(item)
+  })
+  console.log('Missing IDs quantity', missingIds.length)
+  return missingIds
+}
+
+/**
+ * Get equipments that are missing.
+ */
+async function enrichEquipListWithMissingIds () {
+  let skip = 0
+  let results = []
+  const missingIds = await getMissingIds()
+  if (!missingIds.length) {
+    return
+  }
+  const { data } = await axios.get(`https://builder.methodwakfu.com/mw-api/items/?filters={%22ids%22:[${missingIds.join(',')}],%22skip%22:${skip}}&lang=pt`)
+  const { count, items: firstItems } = data
+  results = [...results, ...firstItems]
+  const numberOfSearchs = Math.ceil(count / 24) - 1
+  for (let search = 1; search <= numberOfSearchs; search++) {
+    skip = 24 * search
+    const url = `https://builder.methodwakfu.com/mw-api/items/?filters={%22ids%22:[${missingIds.join(',')}],%22skip%22:${skip}}&lang=pt`
+    const { data: { items } } = await axios.get(url)
+    results = [...results, ...items]
+    console.log({ skip }, results.length)
+  }
+  const finalList = removeRepeated([...equipmentList, ...results])
+  console.log(finalList.length)
+  fs.writeFileSync('data/equipment.json', JSON.stringify(finalList, null, 2))
+}
