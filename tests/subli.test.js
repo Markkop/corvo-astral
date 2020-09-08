@@ -44,7 +44,7 @@ describe('getSublimation', () => {
   it('returns a sublimation and more results when finding more than one', () => {
     let botMessage = {}
     const userMessage = {
-      content: '.subli frenzy',
+      content: '.subli frenesi',
       channel: {
         send: jest.fn(message => { botMessage = message })
       }
@@ -52,7 +52,7 @@ describe('getSublimation', () => {
     getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#fbfcac',
-      title: ':scroll: Frenzy',
+      title: ':scroll: Frenesi',
       url: 'https://www.wakfu.com/',
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/81227111.png'
@@ -70,7 +70,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Efeitos',
-          value: '-20% damage Inflicted, 10% damage inflicted per affected enemy at the start of the next turn'
+          value: '-20% de Danos causados, No começo do turno: 10% dos danos infligidos por inimigo afetado no turno anterior'
         },
         {
           name: 'Obtenção:',
@@ -78,7 +78,7 @@ describe('getSublimation', () => {
         }
       ],
       footer: {
-        text: 'Sublimações encontradas: Frenzy, Frenzy II, Frenzy III'
+        text: 'Sublimações encontradas: Frenesi, Frenesi II, Frenesi III'
       }
     })
   })
@@ -107,7 +107,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Sublimações',
-          value: 'Ambush, Spines, Integrity'
+          value: 'Emboscada, Espinhos, Integridade'
         }
       ]
     })
@@ -137,7 +137,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Sublimações',
-          value: 'Ambush, Resolute, Moon Scales, Spines, Resolute II, Condemnation II, Integrity'
+          value: 'Emboscada, Firmeza, Escamas de Lua, Espinhos, Firmeza II, Reprovação II, Integridade'
         }
       ]
     })
@@ -167,7 +167,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Sublimações',
-          value: 'Ruin, Ambush, Determination, Solidity, Resolute, Theory of Matter, Moon Scales, Swiftness, Save, Ruin II, Spines, Distance Barrier, Tenacity II, Resolute II, Cyclothymia, Condemnation II, Frenzy III, Length, Integrity'
+          value: 'Ruína, Emboscada, Determinação, Solidez, Firmeza, Teoria da Matéria, Escamas de Lua, Presteza, Salvaguarda, Ruína II, Espinhos, Barreira a Distância, Tenacidade II, Firmeza II, Ciclotimia, Reprovação II, Frenesi III, Extensão, Integridade'
         }
       ]
     })
@@ -197,7 +197,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Sublimações',
-          value: 'Devastate, Carnage, Evasion, Condemnation, Stupefaction, Dimensionality, Return, Berserk Critical, Visibility, Devastate II, Evasion II, Berserk Dodge, Vitality Well, Influence, Wall, Return II, Influence II, Critical Hit Expert, Lone Wolf, Determination, Tenacity, Solidity, Topology, Frenzy, Theory of Matter, Distance Barrier, Close-Combat Barrier, Tenacity II, Berserk Block, Frenzy II, Cyclothymia'
+          value: 'Assolação, Carnificina, Evasão, Reprovação, Espanto, Dimensionalidade, Voltar, Crítico Berserk, Visibilidade, Assolação II, Evasão II, Esquiva Berserk, Poço de Vitalidade, Influência, Muralha, Retorno II, Influence II, Especialista em Golpes Críticos, Lobo solitário, Determinação, Tenacidade, Solidez, Topologia, Frenesi, Teoria da Matéria, Barreira a Distância, Barreira Corpo a Corpo, Tenacidade II, Parada Berserk, Frenesi II, Ciclotimia'
         }
       ]
     })
@@ -227,7 +227,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Sublimações',
-          value: 'Carnage, Evasion II, Frenzy, Frenzy II'
+          value: 'Carnificina, Evasão II, Frenesi, Frenesi II'
         }
       ]
     })
@@ -257,7 +257,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Sublimações',
-          value: 'Devastate, Devastate II'
+          value: 'Assolação, Assolação II'
         }
       ]
     })
@@ -287,7 +287,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Sublimações',
-          value: 'Ambush, Dimensionality, Theory of Matter'
+          value: 'Emboscada, Dimensionalidade, Teoria da Matéria'
         }
       ]
     })
@@ -326,7 +326,7 @@ describe('getSublimation', () => {
   it('replaces wrong query characters when searching by name', () => {
     let botMessage = {}
     const userMessage = {
-      content: '.subli frenzy 2',
+      content: '.subli frenesi 2',
       channel: {
         send: jest.fn(message => { botMessage = message })
       }
@@ -334,7 +334,7 @@ describe('getSublimation', () => {
     getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#fbfcac',
-      title: ':scroll: Frenzy II',
+      title: ':scroll: Frenesi II',
       url: 'https://www.wakfu.com/',
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/81227111.png'
@@ -352,15 +352,15 @@ describe('getSublimation', () => {
         },
         {
           name: 'Efeitos',
-          value: '-15% damage inflicted, 5% damage inflicted per affected entity at the start of the next turn'
+          value: '-15% de Danos causados, No começo do turno: 5% dos danos infligidos por entidade afetada no turno anterior.'
         },
         {
           name: 'Obtenção:',
-          value: 'Badgwitch the Furiox (1%) [3 stele/estela]'
+          value: 'Bruxugo de Bler, o Furioso (1%) [3 stele/estela]'
         }
       ],
       footer: {
-        text: 'Sublimações encontradas: Frenzy II, Frenzy III'
+        text: 'Sublimações encontradas: Frenesi II, Frenesi III'
       }
     })
   })
