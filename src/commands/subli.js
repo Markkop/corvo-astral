@@ -31,7 +31,14 @@ function parseSlotsToEmojis (slots) {
  */
 function findSublimationByName (sublimationList, query) {
   query = query.replace(/2|ll/g, 'ii').replace(/3|lll/g, 'iii')
-  return sublimationList.filter(subli => subli.name.toLowerCase().includes(query))
+  return sublimationList.filter(subli => {
+    const matchedName = subli.name.toLowerCase().includes(query)
+    if (matchedName) {
+      return true
+    }
+    const matchedAlias = subli.aliases && subli.aliases.some(alias => alias.toLowerCase().includes(query))
+    return matchedAlias
+  })
 }
 
 /**

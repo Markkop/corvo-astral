@@ -128,6 +128,7 @@
   {
     "slots": "BRG",
     "name": "Voltar",
+    "aliases": [ "Retorno" ],
     "effects": "Recupera 1 PA ao matar um inimigo",
     "maxStack": "2",
     "source": "Dragão de Cinzas (1%) [2 stele/estela]"
@@ -317,6 +318,7 @@
   {
     "slots": "BRG",
     "name": "Retorno II",
+    "aliases": [ "Voltar II" ],
     "effects": "Recupera 1 PM ao matar um inimigo",
     "maxStack": "2",
     "source": "Bulbruto (1%) [3 stele/estela]"
@@ -365,7 +367,7 @@
   },
   {
     "slots": "RGG",
-    "name": "Influence II",
+    "name": "Influência II",
     "effects": "2% dos golpes críticos por turno (máx. 40)",
     "maxStack": "2",
     "source": "Rapiodo, o Infrequenciável (1%) [2 stele/estela]"

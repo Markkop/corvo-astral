@@ -197,7 +197,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Sublimações',
-          value: 'Assolação, Carnificina, Evasão, Reprovação, Espanto, Dimensionalidade, Voltar, Crítico Berserk, Visibilidade, Assolação II, Evasão II, Esquiva Berserk, Poço de Vitalidade, Influência, Muralha, Retorno II, Influence II, Especialista em Golpes Críticos, Lobo solitário, Determinação, Tenacidade, Solidez, Topologia, Frenesi, Teoria da Matéria, Barreira a Distância, Barreira Corpo a Corpo, Tenacidade II, Parada Berserk, Frenesi II, Ciclotimia'
+          value: 'Assolação, Carnificina, Evasão, Reprovação, Espanto, Dimensionalidade, Voltar, Crítico Berserk, Visibilidade, Assolação II, Evasão II, Esquiva Berserk, Poço de Vitalidade, Influência, Muralha, Retorno II, Influência II, Especialista em Golpes Críticos, Lobo solitário, Determinação, Tenacidade, Solidez, Topologia, Frenesi, Teoria da Matéria, Barreira a Distância, Barreira Corpo a Corpo, Tenacidade II, Parada Berserk, Frenesi II, Ciclotimia'
         }
       ]
     })
@@ -363,6 +363,19 @@ describe('getSublimation', () => {
         text: 'Sublimações encontradas: Frenesi II, Frenesi III'
       }
     })
+  })
+
+  it('returns the correct sublimation by matching its alias', () => {
+    let botMessage = {}
+    const userMessage = {
+      content: '.subli retorno',
+      channel: {
+        send: jest.fn(message => { botMessage = message })
+      }
+    }
+    getSublimation(userMessage)
+    expect(botMessage.embed.title).toEqual(':scroll: Voltar')
+    expect(botMessage.embed.footer.text).toEqual('Sublimações encontradas: Voltar, Retorno II')
   })
 
   it('returns a not found message if no sublimation was found', () => {
