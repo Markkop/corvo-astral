@@ -58,7 +58,7 @@
   {
     "slots": "GGB",
     "name": "Tenacidade",
-    "effects": "E fim de turno, se o portador do estado estiver com pelo menos 2PA: 25 de resistência elementar (1 turno)",
+    "effects": "Em fim de turno, se o portador do estado estiver com pelo menos 2PA: 25 de resistência elementar (1 turno)",
     "maxStack": "2",
     "source": "Receita/craft de nível 50 de marceneiro/handyman"
   },
@@ -333,7 +333,7 @@
     "name": "Reprovação II",
     "effects": "-20 de Vontade. Reduz em 1 a próxima perda de PM sofrida. O efeito se reaplica a cada turno.",
     "maxStack": "3",
-    "source": "Nyl King (1%) [1 stele/estela]"
+    "source": "Rei Dunylo (1%) [1 stele/estela]"
   },
   {
     "slots": "GRR",
@@ -368,7 +368,7 @@
     "name": "Influence II",
     "effects": "2% dos golpes críticos por turno (máx. 40)",
     "maxStack": "2",
-    "source": "Rapido, o Infrequenciável (1%) [2 stele/estela]"
+    "source": "Rapiodo, o Infrequenciável (1%) [2 stele/estela]"
   },
   {
     "slots": "BGG",
@@ -384,7 +384,6 @@
     "effects": "No fim do turno: 50% dos PM não utilizados são transmitidos ao turno seguinte (Máx. 1 PM)",
     "source": "Aguabrial (2%)"
   },
-
   {
     "slots": "GBB",
     "name": "Segredo da Vida",
@@ -392,7 +391,6 @@
     "effects": "Reduz o domínio de cura a 0. 10% de Curas realizadas.",
     "source": "Aguabrial (2%)"
   },
-
   {
     "slots": "BBR",
     "name": "Integridade",
@@ -400,7 +398,6 @@
     "effects": "Ao curar um aliado, se o aliado tiver menos de 15% dos PV: cura 15% dos PV máx. do alvo",
     "source": "Aguabrial (2%)"
   },
-
   {
     "slots": "RBG",
     "name": "Lobo solitário",
