@@ -4,6 +4,7 @@ import events from '../../data/almanaxBonuses'
  * Replies the user with current Almanax bonus.
  *
  * @param { import('discord.js').Message } message - Discord message object.
+ * @returns {Promise<object>}
  */
 export function getAlmanaxBonus (message) {
   const today = new Date(Date.now())
@@ -26,5 +27,5 @@ export function getAlmanaxBonus (message) {
     image: { url: image },
     timestamp: new Date()
   }
-  message.channel.send({ embed })
+  return message.channel.send({ embed })
 }
