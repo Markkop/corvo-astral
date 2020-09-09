@@ -14,10 +14,7 @@ export function getAlmanaxBonus (message) {
     const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
     return diffDays % 5 === 0
   })
-  if (!todayEvent) {
-    message.reply('não consegui descobrir qual o alma de hoje, algo deu errado :C')
-    return
-  }
+
   const number = Math.floor(Math.random() * 3)
   const image = todayEvent.images[number]
   const embed = {

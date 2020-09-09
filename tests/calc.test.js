@@ -165,9 +165,6 @@ describe.only('calculateAttackDamage', () => {
     let botMessage = {}
     const userMessage = {
       content: '.calc',
-      author: {
-        username: 'Mark'
-      },
       channel: {
         send: jest.fn(message => {
           botMessage = message

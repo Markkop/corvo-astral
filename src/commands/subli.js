@@ -154,11 +154,11 @@ export function getSublimation (message) {
         },
         {
           name: 'Efeitos',
-          value: firstResult.effects || 'efeitos'
+          value: firstResult.effects
         },
         {
           name: 'Obtenção:',
-          value: firstResult.source || 'source'
+          value: firstResult.source
         }
       ]
     }
@@ -183,7 +183,7 @@ export function getSublimation (message) {
       },
       {
         name: 'Resultados',
-        value: results.length || 1,
+        value: results.length,
         inline: true
       },
       {

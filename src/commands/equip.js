@@ -156,7 +156,7 @@ function removeLowerRarities (equipmentList) {
       return Math.max(higherRarity, otherEquip.rarity, equip.rarity)
     }, 0)
 
-    const equipRarity = equip.rarity || 0
+    const equipRarity = equip.rarity
     return equipRarity === higherRarity
   })
 }
@@ -169,7 +169,7 @@ function removeLowerRarities (equipmentList) {
  * @param {string[]} filters
  * @returns {object[]}
  */
-function findEquipmentByName (equipmentList, query, filters = []) {
+function findEquipmentByName (equipmentList, query, filters) {
   const filterMap = mapArgumentsToObject(filters, '=')
 
   const hasRarityFilter = Boolean(filterMap.raridade)
@@ -233,14 +233,7 @@ export async function getEquipment (message) {
     return
   }
   let results = []
-  let hasFoundByName = false
-  hasFoundByName = true
-
   results = findEquipmentByName(equipmentList, query, filters)
-  const equipDetails = results[0]
-  if (equipDetails) {
-    hasFoundByName = true
-  }
   if (!results.length) {
     message.channel.send({
       embed: {
@@ -253,54 +246,52 @@ export async function getEquipment (message) {
   }
 
   const equipamentsFoundText = getMoreEquipmentText(results, 20)
-  if (hasFoundByName) {
-    const firstResult = equipDetails
-    const equipEmbed = {
-      color: rarityColors[rarityNameMap[firstResult.rarity]] || rarityColors.other,
-      title: `${rarityEmojiMap[firstResult.rarity]} ${firstResult.title}`,
-      thumbnail: { url: `https://builder.methodwakfu.com/assets/icons/items/${firstResult.img}.webp` },
-      fields: [
-        {
-          name: 'Nível',
-          value: firstResult.level,
-          inline: true
-        },
-        {
-          name: 'Tipo',
-          value: typeMap[firstResult.type],
-          inline: true
-        },
-        {
-          name: 'Raridade',
-          value: rarityNameMap[firstResult.rarity],
-          inline: true
-        }
-      ]
-    }
-    if (firstResult.effects.length) {
-      equipEmbed.fields.push({
-        name: 'Equipado',
-        value: firstResult.effects.map(effect => parseIconCodeToEmoji(effect.descriptions[0])).join('\n')
-      })
-    }
-    if (firstResult.useEffects.length) {
-      equipEmbed.fields.push({
-        name: 'Em uso',
-        value: firstResult.useEffects.map(effect => parseIconCodeToEmoji(effect.descriptions[0])).join('\n')
-      })
-    }
-    const hasCondititions = firstResult.conditions.description && firstResult.conditions.description.length
-    if (hasCondititions) {
-      equipEmbed.fields.push({
-        name: 'Condições',
-        value: firstResult.conditions.description[0]
-      })
-    }
-    if (results.length > 1) {
-      equipEmbed.footer = {
-        text: `Equipamentos encontrados: ${equipamentsFoundText}`
+  const firstResult = results[0]
+  const equipEmbed = {
+    color: rarityColors[rarityNameMap[firstResult.rarity]],
+    title: `${rarityEmojiMap[firstResult.rarity]} ${firstResult.title}`,
+    thumbnail: { url: `https://builder.methodwakfu.com/assets/icons/items/${firstResult.img}.webp` },
+    fields: [
+      {
+        name: 'Nível',
+        value: firstResult.level,
+        inline: true
+      },
+      {
+        name: 'Tipo',
+        value: typeMap[firstResult.type],
+        inline: true
+      },
+      {
+        name: 'Raridade',
+        value: rarityNameMap[firstResult.rarity],
+        inline: true
       }
-    }
-    message.channel.send({ embed: equipEmbed })
+    ]
   }
+  if (firstResult.effects.length) {
+    equipEmbed.fields.push({
+      name: 'Equipado',
+      value: firstResult.effects.map(effect => parseIconCodeToEmoji(effect.descriptions[0])).join('\n')
+    })
+  }
+  if (firstResult.useEffects.length) {
+    equipEmbed.fields.push({
+      name: 'Em uso',
+      value: firstResult.useEffects.map(effect => parseIconCodeToEmoji(effect.descriptions[0])).join('\n')
+    })
+  }
+  const hasCondititions = firstResult.conditions.description && firstResult.conditions.description.length
+  if (hasCondititions) {
+    equipEmbed.fields.push({
+      name: 'Condições',
+      value: firstResult.conditions.description[0]
+    })
+  }
+  if (results.length > 1) {
+    equipEmbed.footer = {
+      text: `Equipamentos encontrados: ${equipamentsFoundText}`
+    }
+  }
+  message.channel.send({ embed: equipEmbed })
 }

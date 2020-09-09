@@ -114,6 +114,24 @@ describe('getEquipment', () => {
     }]))
   })
 
+  it('does not return the effects for an equipment that does not have one ', () => {
+    let botMessage = {}
+    const userMessage = {
+      content: '.equip anel de brakmar',
+      channel: {
+        send: jest.fn(message => {
+          botMessage = message
+        })
+      }
+    }
+    getEquipment(userMessage)
+    expect(botMessage.embed.fields).toEqual([
+      { inline: true, name: 'Nível', value: 200 },
+      { inline: true, name: 'Tipo', value: 'Anel' },
+      { inline: true, name: 'Raridade', value: 'Épico' },
+      { name: 'Condições', value: 'Singular' }])
+  })
+
   it('return a footer with more equip. found if results are more than one', () => {
     let botMessage = {}
     const userMessage = {

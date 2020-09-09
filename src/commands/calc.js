@@ -22,7 +22,7 @@ export function calculateAttackDamage (message) {
     return
   }
 
-  const author = message.author.username || ''
+  const author = message.author.username
   const damage = Number(args.dmg)
   const base = Number(args.base)
   const resist = args.res
