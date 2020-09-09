@@ -2,6 +2,7 @@
 
 ![Repo status](https://www.repostatus.org/badges/latest/active.svg)
 [![Build Status](https://travis-ci.com/Markkop/corvo-astral.svg?branch=master)](https://travis-ci.com/Markkop/corvo-astral)
+[![codecov](https://codecov.io/gh/Markkop/corvo-astral/branch/master/graph/badge.svg)](https://codecov.io/gh/Markkop/corvo-astral)
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
 Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that serves as a helper for the [Wakfu MMORPG](https://www.wakfu.com/) game.  
