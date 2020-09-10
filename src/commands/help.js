@@ -18,6 +18,7 @@ Por enquanto o único filtro disponível é o de raridade.
 Exemplos:
 \`.equip martelo de osamodas\`
 \`.equip o eterno raridade=mítico\``,
+  about: 'Exibe informações sobre o Corvo Astral',
   help: 'Nice try'
 }
 

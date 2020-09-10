@@ -6,7 +6,8 @@
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
 Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that serves as a helper for the [Wakfu MMORPG](https://www.wakfu.com/) game.  
-Link to add this bot to a Discord Server is not available until a further launch, but if you really want it, send me a message.
+If you wish to add this bot to your server, access this [link](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=2048&scope=bot).  
+Note: currently the only language available is Brazilian Portuguese.
 
 ## Commands
 
@@ -14,7 +15,13 @@ Link to add this bot to a Discord Server is not available until a further launch
 * `.calc`: calculates the damage for an attack given some values
 * `.subli`: search for a given sublimation by name, slot combination or source
 * `.equip`: search for a given equipment by name
+* `.about`: get information about this bot
 * `.help`: get help for available commands
+
+## Almanax Bonus Notifier
+
+As configured on `almaNotifier.js` and Heroku Scheduler, this bot tries to send the same message from `.alma` command to all channels named "almanax" every day on 00:01 AM.  
+If you wish to disable this behavior, simply deny permission to this bot on that channel.
 
 
 ## How to develop
