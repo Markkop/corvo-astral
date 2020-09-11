@@ -12,7 +12,16 @@ Exemplos:
 \`.calc dmg=3000 base=55 res=60%\`
 \`.calc dmg=5000 base=40 res=420 crit=30%\``,
   subli: `Pesquise por sublimações pelo nome, combinação de slots ou fonte de obtenção.
-Ex: \`.subli talho\`, \`.subli rrb\`, \`.subli epic\`,  \`.subli ggwr\`,  \`.subli quest\`,  \`.subli koko\`,  \`.subli craft\``,
+Use a opção --any-order para obter resultados por slots em qualquer ordem.
+Exemplos: 
+\`.subli talho\`
+\`.subli rrb\`
+\`.subli ggwr\`  
+\`.subli rgb --any-order\`  
+\`.subli epic\`
+\`.subli quest\`
+\`.subli koko\`
+\`.subli craft\``,
   equip: `Pesquise pelo nome do equipamento e outros filtros.
 Por enquanto o único filtro disponível é o de raridade.
 Exemplos:
