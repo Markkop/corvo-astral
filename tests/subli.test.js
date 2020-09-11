@@ -173,6 +173,52 @@ describe('getSublimation', () => {
     })
   })
 
+  it('returns sublimations with --any-order flag', () => {
+    let botMessage = {}
+    const userMessage = {
+      content: '.subli rgb --any-order',
+      channel: {
+        send: jest.fn(message => { botMessage = message })
+      }
+    }
+    getSublimation(userMessage)
+    expect(botMessage.embed).toEqual({
+      title: ':mag_right: Sublimações encontradas',
+      fields: [
+        {
+          name: 'Busca',
+          value: ':red_square: :green_square: :blue_square: em qualquer ordem',
+          inline: true
+        },
+        { name: 'Resultados', value: 13, inline: true },
+        {
+          name: ':red_square: :green_square: :blue_square: (2)',
+          value: 'Frenesi, Frenesi II'
+        },
+        {
+          name: ':red_square: :blue_square: :green_square: (3)',
+          value: 'Dimensionalidade, Muralha, Lobo solitário'
+        },
+        {
+          name: ':green_square: :red_square: :blue_square: (2)',
+          value: 'Resistência, Resistência II'
+        },
+        {
+          name: ':green_square: :blue_square: :red_square: (2)',
+          value: 'Escamas de Lua, Reprovação II'
+        },
+        {
+          name: ':blue_square: :red_square: :green_square: (2)',
+          value: 'Voltar, Retorno II'
+        },
+        {
+          name: ':blue_square: :green_square: :red_square: (2)',
+          value: 'Teoria da Matéria, Ciclotimia'
+        }
+      ]
+    })
+  })
+
   it('returns non-repeated matching sublimations when searching with white slots', () => {
     let botMessage = {}
     const userMessage = {

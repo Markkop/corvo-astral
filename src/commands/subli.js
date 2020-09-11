@@ -2,6 +2,7 @@ import { commandsHelp } from './help'
 import epic from '../../data/sublimations/epic.json'
 import relic from '../../data/sublimations/relic.json'
 import normal from '../../data/sublimations/normal.json'
+import findPermutations from '../utils/permutateString'
 import config from '../config'
 const { rarityColors } = config
 const sublimations = [...epic, ...relic, ...normal]
@@ -115,10 +116,9 @@ function mountNotFoundEmbed () {
  * Created the embed message with the sublimations found and a footer list.
  *
  * @param {object[]} results
- * @param {string} sublimationListText
  * @returns {object}
  */
-function mountSublimationFoundEmbed (results, sublimationListText) {
+function mountSublimationFoundEmbed (results) {
   const firstResult = results[0]
   const isEpicOrRelic = /Épico|Relíquia/.test(firstResult.slots)
   const icon = isEpicOrRelic ? ':gem:' : ':scroll:'
@@ -151,7 +151,7 @@ function mountSublimationFoundEmbed (results, sublimationListText) {
   const hasFoundMoreThanOne = results.length > 1
   if (hasFoundMoreThanOne) {
     sublimationEmbed.footer = {
-      text: `Sublimações encontradas: ${sublimationListText}`
+      text: `Sublimações encontradas: ${getSublimationListText(results)}`
     }
   }
   return sublimationEmbed
@@ -161,11 +161,10 @@ function mountSublimationFoundEmbed (results, sublimationListText) {
  * Created the embed message with sublimations found list.
  *
  * @param {object[]} results
- * @param {string} sublimationListText
  * @param {string} queriedSlotsText
  * @returns {object}
  */
-function mountSublimationsFoundListEmbed (results, sublimationListText, queriedSlotsText) {
+function mountSublimationsFoundListEmbed (results, queriedSlotsText) {
   return {
     title: ':mag_right: Sublimações encontradas',
     fields: [
@@ -181,10 +180,48 @@ function mountSublimationsFoundListEmbed (results, sublimationListText, queriedS
       },
       {
         name: 'Sublimações',
-        value: sublimationListText
+        value: getSublimationListText(results)
       }
     ]
   }
+}
+
+/**
+ * Created the embed message with sublimations found list.
+ *
+ * @param {object[]} results
+ * @param {string} queriedSlotsText
+ * @returns {object}
+ */
+function mountPermutatedSublimationFoundEmbed (results, queriedSlotsText) {
+  const totalResults = results.reduce((totalResults, permutatedResult) => {
+    return totalResults + permutatedResult.results.length
+  }, 0)
+  const embed = {
+    title: ':mag_right: Sublimações encontradas',
+    fields: [
+      {
+        name: 'Busca',
+        value: `${parseSlotsToEmojis(queriedSlotsText)} em qualquer ordem`,
+        inline: true
+      },
+      {
+        name: 'Resultados',
+        value: totalResults,
+        inline: true
+      }
+    ]
+  }
+  results.forEach(permutatedResult => {
+    const slotsAsEmojis = parseSlotsToEmojis(permutatedResult.slots)
+    const namedResults = getSublimationListText(permutatedResult.results)
+    const resultsLength = permutatedResult.results.length
+    embed.fields.push({
+      name: `${slotsAsEmojis} (${resultsLength})`,
+      value: namedResults
+    })
+  })
+  return embed
 }
 
 /**
@@ -192,12 +229,27 @@ function mountSublimationsFoundListEmbed (results, sublimationListText, queriedS
  *
  * @param {object[]} sublimations
  * @param {string} query
+ * @param {boolean} hasAnyOrderArgument
  * @returns {object}
  */
-function findSublimations (sublimations, query) {
+function findSublimations (sublimations, query, hasAnyOrderArgument) {
   const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|épico|relíquia/.test(query)
   let results = []
   let foundBy = ''
+
+  if (isSearchBySlot && hasAnyOrderArgument) {
+    const queryPermutation = findPermutations(query)
+    queryPermutation.forEach((queryPerm) => {
+      const permutatedResults = findSublimationByMatchingSlots(sublimations, queryPerm)
+      results.push({
+        slots: queryPerm,
+        results: permutatedResults
+      })
+    })
+
+    return { results, foundBy: 'permutatedSlots' }
+  }
+
   if (isSearchBySlot) {
     results = findSublimationByMatchingSlots(sublimations, query)
     foundBy = 'slots'
@@ -217,33 +269,54 @@ function findSublimations (sublimations, query) {
 }
 
 /**
+ * Join all sublimation names.
+ *
+ * @param {object[]} results
+ * @returns {string}
+ */
+function getSublimationListText (results) {
+  return results.map(subli => subli.name).join(', ').trim()
+}
+
+/**
  * Replies the user information about the given sublimation.
  *
  * @param { import('discord.js').Message } message - Discord message object.
  * @returns {Promise<object>}
  */
 export function getSublimation (message) {
+  const options = {
+    anyOrder: '--any-order'
+  }
+  const hasAnyOrderArgument = message.content.includes(options.anyOrder)
+  if (hasAnyOrderArgument) {
+    message.content = message.content.replace(options.anyOrder, '').trim()
+  }
   const normalizedQuery = message.content.split(' ').slice(1).join(' ').toLowerCase()
   if (!normalizedQuery) {
     const helpEmbed = mountHelpEmbed()
     return message.channel.send({ embed: helpEmbed })
   }
   const query = queriesEquivalent[normalizedQuery] || normalizedQuery
-  const { results, foundBy } = findSublimations(sublimations, query)
+  const { results, foundBy } = findSublimations(sublimations, query, hasAnyOrderArgument)
   if (!results.length) {
     const notFoundEmbed = mountNotFoundEmbed()
     return message.channel.send({ embed: notFoundEmbed })
   }
 
-  const sublimationListText = results.map(subli => subli.name).join(', ').trim()
+  const isEpicOrRelic = /épico|relíquia/.test(query)
+  const queriedSlotsText = foundBy === 'slots' && !isEpicOrRelic ? parseSlotsToEmojis(query) : query
+
+  if (foundBy === 'permutatedSlots') {
+    const permutatedSublimationFoundEmbed = mountPermutatedSublimationFoundEmbed(results, queriedSlotsText)
+    return message.channel.send({ embed: permutatedSublimationFoundEmbed })
+  }
 
   if (foundBy === 'name') {
-    const sublimationFoundEmbed = mountSublimationFoundEmbed(results, sublimationListText)
+    const sublimationFoundEmbed = mountSublimationFoundEmbed(results)
     return message.channel.send({ embed: sublimationFoundEmbed })
   }
 
-  const isEpicOrRelic = /épico|relíquia/.test(query)
-  const queriedSlotsText = foundBy === 'slots' && !isEpicOrRelic ? parseSlotsToEmojis(query) : query
-  const sublimationsFoundListEmbed = mountSublimationsFoundListEmbed(results, sublimationListText, queriedSlotsText)
+  const sublimationsFoundListEmbed = mountSublimationsFoundListEmbed(results, queriedSlotsText)
   return message.channel.send({ embed: sublimationsFoundListEmbed })
 }
