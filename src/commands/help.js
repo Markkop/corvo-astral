@@ -28,6 +28,10 @@ Exemplos:
 \`.equip martelo de osamodas\`
 \`.equip o eterno raridade=mítico\``,
   about: 'Exibe informações sobre o Corvo Astral',
+  create: `Crie um grupo no canal de grupos fornecendo as seguintes informações: nome do grupo, data, horário, nível e vagas (se não fornecido, fica 6).
+\`.create nome=grupoSemEspaço data=21/11 hora=21:00 lvl=200\``,
+  join: `Entre em algum grupo já criado no canal de grupos informando o id do grupo e a sua classe.
+\`.join id=1 class=enu\``,
   help: 'Nice try'
 }
 
