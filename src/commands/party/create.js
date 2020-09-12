@@ -1,4 +1,3 @@
-import { getArguments, mapArgumentsToObject } from '../../utils/message'
 import { getPartyChannel, getChannelParties } from '../../utils/partyChannel'
 import { commandsHelp } from '../help'
 
@@ -7,18 +6,17 @@ import { commandsHelp } from '../help'
  * .create nome="dp" data=12/09 hora=19:15 lvl=125 vagas=6.
  *
  * @param {object} message
+ * @param {object }options
  * @returns {object}
  */
-export async function createParty (message) {
-  const args = getArguments(message)
-  const options = mapArgumentsToObject(args, '=')
+export async function createParty (message, options) {
   const hasRequiredOptions = options.nome && options.data && options.hora && options.lvl
   if (!hasRequiredOptions) {
     return message.channel.send({
       embed: {
         color: 'LIGHT_GREY',
         title: ':grey_question: Ajuda: `.create`',
-        description: commandsHelp.create
+        description: commandsHelp.party
       }
     })
   }

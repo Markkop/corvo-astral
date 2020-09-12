@@ -1,6 +1,6 @@
 import equipmentList from '../../data/equipment.json'
 import { commandsHelp } from './help'
-import { mapArgumentsToObject } from '../utils/message'
+import { getArgumentsAndOptions } from '../utils/message'
 import config from '../config'
 const { rarityColors } = config
 
@@ -170,9 +170,7 @@ function removeLowerRarities (equipmentList) {
  * @returns {object[]}
  */
 function findEquipmentByName (equipmentList, query, filters) {
-  const filterMap = mapArgumentsToObject(filters, '=')
-
-  const hasRarityFilter = Boolean(filterMap.raridade)
+  const hasRarityFilter = Boolean(filters.raridade)
   if (!hasRarityFilter) {
     return removeLowerRarities(equipmentList).filter(equip => equip.title.toLowerCase().includes(query))
   }
@@ -180,7 +178,7 @@ function findEquipmentByName (equipmentList, query, filters) {
   return equipmentList.filter(equip => {
     let filterAssertion = true
     const includeQuery = equip.title.toLowerCase().includes(query)
-    const hasRarity = rarityNameMap[equip.rarity].toLowerCase().includes(filterMap.raridade)
+    const hasRarity = rarityNameMap[equip.rarity].toLowerCase().includes(filters.raridade)
     filterAssertion = filterAssertion && hasRarity
 
     return includeQuery && filterAssertion
@@ -220,8 +218,8 @@ function getMoreEquipmentText (results, resultsLimit) {
  * @param { import('discord.js').Message } message - Discord message object.
  */
 export async function getEquipment (message) {
-  const filters = message.content.toLowerCase().split(' ').filter(word => word.includes('='))
-  const query = message.content.split(' ').slice(1).filter(word => !word.includes('=')).join(' ').toLowerCase()
+  const { args, options } = getArgumentsAndOptions(message, '=')
+  const query = args.join(' ').toLowerCase()
   if (!query) {
     message.channel.send({
       embed: {
@@ -233,7 +231,7 @@ export async function getEquipment (message) {
     return
   }
   let results = []
-  results = findEquipmentByName(equipmentList, query, filters)
+  results = findEquipmentByName(equipmentList, query, options)
   if (!results.length) {
     message.channel.send({
       embed: {

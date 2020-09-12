@@ -1,4 +1,3 @@
-import { getArguments, mapArgumentsToObject } from '../../utils/message'
 import { getChannelParties } from '../../utils/partyChannel'
 import { commandsHelp } from '../help'
 import Discord from 'discord.js'
@@ -21,18 +20,17 @@ function getMessageByEmbedName (messages, name) {
  * .join id=2 class=enu.
  *
  * @param {object} message
+ * @param options
  * @returns {object}
  */
-export async function joinParty (message) {
-  const args = getArguments(message)
-  const options = mapArgumentsToObject(args, '=')
+export async function joinParty (message, options) {
   const hasRequiredOptions = Boolean(options.class)
   if (!hasRequiredOptions) {
     return message.channel.send({
       embed: {
         color: 'LIGHT_GREY',
         title: ':grey_question: Ajuda: `.join`',
-        description: commandsHelp.join
+        description: commandsHelp.party
       }
     })
   }
@@ -43,7 +41,18 @@ export async function joinParty (message) {
     return
   }
   const partySlots = matchingParty.embeds[0].fields.find(field => field.name === 'Participantes').value.split('\n')
-  partySlots[0] = `* <@${message.author.id} | ${options.class || ''}>`
+  const freeSlot = partySlots.find(slot => !slot.includes('@'))
+  const freeSlotIndex = partySlots.indexOf(freeSlot)
+  if (freeSlotIndex < 0) {
+    return message.channel.send({
+      embed: {
+        color: '#bb1327',
+        title: ':x: Nenhuma vaga disponível',
+        description: 'Parece que você ficou de fora :c'
+      }
+    })
+  }
+  partySlots[freeSlotIndex] = `* <@${message.author.id} | ${options.class || ''}>`
   const newPartySlots = partySlots.join('\n')
   const embedFields = matchingParty.embeds[0].fields.filter(field => field.name !== 'Participantes')
   const embed = {

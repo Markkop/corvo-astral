@@ -15,25 +15,20 @@ export function getCommand (commandPrefix, message) {
  * Get arguments from user message.
  *
  * @param { import('discord.js').Message } message - Discord message object.
+ * @param {string} optionsConector
  * @returns {string[]} Command and arguments.
  */
-export function getArguments (message) {
+export function getArgumentsAndOptions (message, optionsConector) {
   const messageContent = message.content
-  return messageContent.split(' ').slice(1)
-}
-
-/**
- * Get arguments matching a conector.
- *
- * @param {string[]} userArguments
- * @param {string} conector
- * @returns {object}
- */
-export function mapArgumentsToObject (userArguments, conector) {
-  return userArguments.reduce((userArguments, argument) => {
-    const splittedArgument = argument.split(conector)
+  const args = messageContent.split(' ').slice(1).filter(arg => !arg.includes(optionsConector))
+  const options = messageContent.split(' ').reduce((options, argument) => {
+    if (!argument.includes(optionsConector)) {
+      return options
+    }
+    const splittedArgument = argument.split(optionsConector)
     const argumentName = splittedArgument[0]
     const argumentValue = splittedArgument[1]
-    return { ...userArguments, [argumentName]: argumentValue }
+    return { ...options, [argumentName]: argumentValue }
   }, {})
+  return { args, options }
 }

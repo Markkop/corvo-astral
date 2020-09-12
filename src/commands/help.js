@@ -1,4 +1,4 @@
-import { getArguments } from '../utils/message'
+import { getArgumentsAndOptions } from '../utils/message'
 
 export const commandsHelp = {
   alma: 'Descubra o bônus do alma para o dia atual. Em breve retornarão também o bônus para os próximos dias ;D',
@@ -28,10 +28,13 @@ Exemplos:
 \`.equip martelo de osamodas\`
 \`.equip o eterno raridade=mítico\``,
   about: 'Exibe informações sobre o Corvo Astral',
-  create: `Crie um grupo no canal de grupos fornecendo as seguintes informações: nome do grupo, data, horário, nível e vagas (se não fornecido, fica 6).
-\`.create nome=grupoSemEspaço data=21/11 hora=21:00 lvl=200\``,
-  join: `Entre em algum grupo já criado no canal de grupos informando o id do grupo e a sua classe.
-\`.join id=1 class=enu\``,
+  party: `Liste e participe de grupo com as funções do \`.party\`!
+  
+Crie um grupo no canal de grupos fornecendo as seguintes informações: nome do grupo, data, horário, nível e vagas (se não fornecido, fica 6).
+\`.party create nome=grupoSemEspaço data=21/11 hora=21:00 lvl=200\`
+
+Entre em algum grupo já criado no canal de grupos informando o id do grupo e a sua classe.
+\`.party join id=1 class=enu\``,
   help: 'Nice try'
 }
 
@@ -41,7 +44,7 @@ Exemplos:
  * @param { import('discord.js').Message } message - Discord message object.
  */
 export function getHelp (message) {
-  const args = getArguments(message)
+  const { args } = getArgumentsAndOptions(message, '=')
   const hasArguments = Boolean(args.length)
   const hasTooManyArguments = args.length > 1
   const helpArgument = args[0]
