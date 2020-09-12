@@ -5,20 +5,20 @@ import { commandsHelp } from './help'
  * Replies the user with the damage of a calculated attack.
  *
  * @param { import('discord.js').Message } message - Discord message object.
+ * @returns { Promise<object>}
  */
 export function calculateAttackDamage (message) {
   const { options } = getArgumentsAndOptions(message, '=')
   const requiredArgs = ['dmg', 'base', 'res']
   const hasRequiredArgs = requiredArgs.every(requiredArg => Boolean(options[requiredArg]))
   if (!hasRequiredArgs) {
-    message.channel.send({
+    return message.channel.send({
       embed: {
         color: 'LIGHT_GREY',
         title: ':grey_question: Ajuda: `.calc`',
         description: commandsHelp.calc
       }
     })
-    return
   }
 
   const author = message.author.username
@@ -47,7 +47,7 @@ export function calculateAttackDamage (message) {
     normalDamage = `${normalDamage}-${critDamage}`
   }
 
-  message.channel.send({
+  return message.channel.send({
     embed: {
       color: 'LIGHT_GREY',
       title: `:crossed_swords: ${author} atacou um Papatudo!`,

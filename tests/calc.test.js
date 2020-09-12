@@ -1,21 +1,12 @@
 import { calculateAttackDamage } from '../src/commands'
 import { commandsHelp } from '../src/commands/help'
+import { mockMessage } from './testUtils'
 
-describe.only('calculateAttackDamage', () => {
+describe('calculateAttackDamage', () => {
   it('calculates damage with % resist', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '!calc dmg=4000 base=50 res=61%',
-      author: {
-        username: 'Mark'
-      },
-      channel: {
-        send: jest.fn(message => {
-          botMessage = message
-        })
-      }
-    }
-    calculateAttackDamage(userMessage)
+    const content = '!calc dmg=4000 base=50 res=61%'
+    const userMessage = mockMessage(content)
+    const botMessage = calculateAttackDamage(userMessage)
     expect(botMessage.embed).toMatchObject({
       title: ':crossed_swords: Mark atacou um Papatudo!',
       fields: [
@@ -56,19 +47,9 @@ describe.only('calculateAttackDamage', () => {
   })
 
   it('calculates damage with flat resist', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '!calc dmg=4000 base=50 res=422',
-      author: {
-        username: 'Mark'
-      },
-      channel: {
-        send: jest.fn(message => {
-          botMessage = message
-        })
-      }
-    }
-    calculateAttackDamage(userMessage)
+    const content = '!calc dmg=4000 base=50 res=422'
+    const userMessage = mockMessage(content)
+    const botMessage = calculateAttackDamage(userMessage)
     expect(botMessage.embed).toMatchObject({
       title: ':crossed_swords: Mark atacou um Papatudo!',
       fields: [
@@ -109,19 +90,9 @@ describe.only('calculateAttackDamage', () => {
   })
 
   it('calculates damage with crit chance', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '!calc dmg=4000 base=50 res=422 crit=10',
-      author: {
-        username: 'Mark'
-      },
-      channel: {
-        send: jest.fn(message => {
-          botMessage = message
-        })
-      }
-    }
-    calculateAttackDamage(userMessage)
+    const content = '!calc dmg=4000 base=50 res=422 crit=10'
+    const userMessage = mockMessage(content)
+    const botMessage = calculateAttackDamage(userMessage)
     expect(botMessage.embed).toMatchObject({
       title: ':crossed_swords: Mark atacou um Papatudo!',
       fields: [
@@ -162,16 +133,9 @@ describe.only('calculateAttackDamage', () => {
   })
 
   it('return a help message if no query was provided', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.calc',
-      channel: {
-        send: jest.fn(message => {
-          botMessage = message
-        })
-      }
-    }
-    calculateAttackDamage(userMessage)
+    const content = '.calc'
+    const userMessage = mockMessage(content)
+    const botMessage = calculateAttackDamage(userMessage)
     expect(botMessage.embed).toMatchObject({
       description: commandsHelp.calc
     })

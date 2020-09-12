@@ -1,31 +1,22 @@
 import { getHelp } from '../src/commands'
 import { commandsHelp } from '../src/commands/help'
+import { mockMessage } from './testUtils'
 
 describe('getHelp', () => {
-  it('returns the expected help for ".help alma"', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.help alma',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getHelp(userMessage)
+  it('returns the expected help for ".help alma"', async () => {
+    const content = '.help alma'
+    const userMessage = mockMessage(content)
+    const botMessage = await getHelp(userMessage)
     expect(botMessage.embed).toMatchObject({
       title: ':grey_question: Ajuda: `.help alma`',
       description: 'Descubra o bônus do alma para o dia atual. Em breve retornarão também o bônus para os próximos dias ;D'
     })
   })
 
-  it('returns the generic help when no arguments are provided', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.help',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getHelp(userMessage)
+  it('returns the generic help when no arguments are provided', async () => {
+    const content = '.help'
+    const userMessage = mockMessage(content)
+    const botMessage = await getHelp(userMessage)
     expect(botMessage.embed).toMatchObject({
       color: 'LIGHT_GREY',
       title: ':grey_question: Ajuda',
@@ -39,15 +30,10 @@ describe('getHelp', () => {
     })
   })
 
-  it('returns a warning if more than one argument is provided', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.help calc equip',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getHelp(userMessage)
+  it('returns a warning if more than one argument is provided', async () => {
+    const content = '.help calc equip'
+    const userMessage = mockMessage(content)
+    const botMessage = await getHelp(userMessage)
     expect(botMessage.embed).toMatchObject({
       color: 'LIGHT_GREY',
       title: ':grey_question: Ajuda',

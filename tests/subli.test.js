@@ -1,16 +1,12 @@
 import { getSublimation } from '../src/commands'
 import { commandsHelp } from '../src/commands/help'
+import { mockMessage } from './testUtils'
 
 describe('getSublimation', () => {
-  it('returns a sublimation when finding only one result', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli brutalidade',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns a sublimation when finding only one result', async () => {
+    const content = '.subli brutalidade'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#fd87ba',
       title: ':gem: Brutalidade',
@@ -41,15 +37,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns a sublimation and more results when finding more than one', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli frenesi',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns a sublimation and more results when finding more than one', async () => {
+    const content = '.subli frenesi'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#fbfcac',
       title: ':scroll: Frenesi',
@@ -83,15 +74,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns matching sublimations when searching with three slots', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli BBR',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns matching sublimations when searching with three slots', async () => {
+    const content = '.subli BBR'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       title: ':mag_right: Sublimações encontradas',
       fields: [
@@ -113,15 +99,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns matching sublimations when searching with one white slot', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli wbr',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns matching sublimations when searching with one white slot', async () => {
+    const content = '.subli wbr'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       title: ':mag_right: Sublimações encontradas',
       fields: [
@@ -143,15 +124,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns matching sublimations when searching with two white slots', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli wwr',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns matching sublimations when searching with two white slots', async () => {
+    const content = '.subli wwr'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       title: ':mag_right: Sublimações encontradas',
       fields: [
@@ -173,15 +149,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns sublimations with --any-order flag', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli rgb --any-order',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns sublimations with --any-order flag', async () => {
+    const content = '.subli rgb --any-order'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       title: ':mag_right: Sublimações encontradas',
       fields: [
@@ -219,15 +190,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns non-repeated matching sublimations when searching with white slots', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli wwgw',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns non-repeated matching sublimations when searching with white slots', async () => {
+    const content = '.subli wwgw'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       title: ':mag_right: Sublimações encontradas',
       fields: [
@@ -249,15 +215,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns matching sublimations when searching with four slots', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli rrgb',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns matching sublimations when searching with four slots', async () => {
+    const content = '.subli rrgb'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       title: ':mag_right: Sublimações encontradas',
       fields: [
@@ -279,15 +240,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns matching sublimations when searching by 4 slots with the same combinations', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli gggg',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns matching sublimations when searching by 4 slots with the same combinations', async () => {
+    const content = '.subli gggg'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       title: ':mag_right: Sublimações encontradas',
       fields: [
@@ -309,15 +265,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns matching sublimations when searching by source', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli vertox',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns matching sublimations when searching by source', async () => {
+    const content = '.subli vertox'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       title: ':mag_right: Sublimações encontradas',
       fields: [
@@ -339,15 +290,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('maps correctly an argument', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli epic',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('maps correctly an argument', async () => {
+    const content = '.subli epic'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       title: ':mag_right: Sublimações encontradas',
       fields: [
@@ -369,15 +315,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('replaces wrong query characters when searching by name', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli frenesi 2',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('replaces wrong query characters when searching by name', async () => {
+    const content = '.subli frenesi 2'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#fbfcac',
       title: ':scroll: Frenesi II',
@@ -411,28 +352,18 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns the correct sublimation by matching its alias', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli retorno',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns the correct sublimation by matching its alias', async () => {
+    const content = '.subli retorno'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed.title).toEqual(':scroll: Voltar')
     expect(botMessage.embed.footer.text).toEqual('Sublimações encontradas: Voltar, Retorno II')
   })
 
-  it('returns a not found message if no sublimation was found', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli caracas',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns a not found message if no sublimation was found', async () => {
+    const content = '.subli caracas'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#bb1327',
       title: ':x: Nenhuma sublimação encontrada',
@@ -440,15 +371,10 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns a help message if no query was provided', () => {
-    let botMessage = {}
-    const userMessage = {
-      content: '.subli',
-      channel: {
-        send: jest.fn(message => { botMessage = message })
-      }
-    }
-    getSublimation(userMessage)
+  it('returns a help message if no query was provided', async () => {
+    const content = '.subli'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toMatchObject({
       description: commandsHelp.subli
     })

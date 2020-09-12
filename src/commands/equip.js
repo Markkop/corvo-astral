@@ -216,31 +216,30 @@ function getMoreEquipmentText (results, resultsLimit) {
  * Replies the user information about the given equipment.
  *
  * @param { import('discord.js').Message } message - Discord message object.
+ * @returns { Promise<object>}.
  */
 export async function getEquipment (message) {
   const { args, options } = getArgumentsAndOptions(message, '=')
   const query = args.join(' ').toLowerCase()
   if (!query) {
-    message.channel.send({
+    return message.channel.send({
       embed: {
         color: 'LIGHT_GREY',
         title: ':grey_question: Ajuda: `.equip`',
         description: commandsHelp.equip
       }
     })
-    return
   }
   let results = []
   results = findEquipmentByName(equipmentList, query, options)
   if (!results.length) {
-    message.channel.send({
+    return message.channel.send({
       embed: {
         color: '#bb1327',
         title: ':x: Nenhum equipamento encontrado',
         description: 'Digite `.help equip` para conferir alguns exemplos de como pesquisar.'
       }
     })
-    return
   }
 
   const equipamentsFoundText = getMoreEquipmentText(results, 20)
@@ -291,5 +290,5 @@ export async function getEquipment (message) {
       text: `Equipamentos encontrados: ${equipamentsFoundText}`
     }
   }
-  message.channel.send({ embed: equipEmbed })
+  return message.channel.send({ embed: equipEmbed })
 }

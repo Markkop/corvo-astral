@@ -61,17 +61,15 @@ export function getHelp (message) {
     ]
   }
   if (!hasArguments) {
-    message.channel.send({ embed })
-    return
+    return message.channel.send({ embed })
   }
 
   if (hasTooManyArguments) {
     embed.description = 'você só pode pedir ajuda pra um comando u_u'
-    message.channel.send({ embed })
-    return
+    return message.channel.send({ embed })
   }
 
   embed.title = embed.title + `: \`.help ${helpArgument}\``
   embed.description = commandsHelp[helpArgument]
-  message.channel.send({ embed })
+  return message.channel.send({ embed })
 }
