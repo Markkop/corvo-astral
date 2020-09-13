@@ -9,5 +9,27 @@ export default {
     Épico: '#fd87ba',
     Relíquia: '#ff47e7',
     other: '#fbfcac'
+  },
+  almanaxChannelName: 'almanax',
+  groupListingChannelName: 'grupos',
+  classEmoji: {
+    '🐲': 'Osa',
+    '🛡️': 'Feca',
+    '🏥': 'Eni',
+    '🕰️': 'Xel',
+    '💰': 'Enu',
+    '🌈': 'Hup',
+    '💢': 'Sac',
+    '😼': 'Eca',
+    '🐶': 'Kilorf',
+    '💀': 'Sram',
+    '🥊': 'Iop',
+    '🏹': 'Cra',
+    '🌱': 'Sadi',
+    '🐼': 'Panda',
+    '💣': 'Ladino',
+    '🎭': 'Zobal',
+    '🤖': 'Steamer',
+    '🌀': 'Elio'
   }
 }

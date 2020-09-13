@@ -1,38 +1,37 @@
-import { getArguments, mapArgumentsToObject } from '../utils/message'
+import { getArgumentsAndOptions } from '../utils/message'
 import { commandsHelp } from './help'
 
 /**
  * Replies the user with the damage of a calculated attack.
  *
  * @param { import('discord.js').Message } message - Discord message object.
+ * @returns { Promise<object>}
  */
 export function calculateAttackDamage (message) {
-  const rawArguments = getArguments(message)
-  const args = mapArgumentsToObject(rawArguments, '=')
+  const { options } = getArgumentsAndOptions(message, '=')
   const requiredArgs = ['dmg', 'base', 'res']
-  const hasRequiredArgs = requiredArgs.every(requiredArg => Boolean(args[requiredArg]))
+  const hasRequiredArgs = requiredArgs.every(requiredArg => Boolean(options[requiredArg]))
   if (!hasRequiredArgs) {
-    message.channel.send({
+    return message.channel.send({
       embed: {
         color: 'LIGHT_GREY',
         title: ':grey_question: Ajuda: `.calc`',
         description: commandsHelp.calc
       }
     })
-    return
   }
 
   const author = message.author.username
-  const damage = Number(args.dmg)
-  const base = Number(args.base)
-  const resist = args.res
-  const crit = (args.crit && args.crit.split('%')[0]) || 0
+  const damage = Number(options.dmg)
+  const base = Number(options.base)
+  const resist = options.res
+  const crit = (options.crit && options.crit.split('%')[0]) || 0
   const critChance = Number(crit)
   const critChanceValue = critChance / 100
 
   const isPercentageResist = resist.includes('%')
-  let percentageResist = Number(args.res.replace('%', ''))
-  let flatResist = Number(args.res)
+  let percentageResist = Number(options.res.replace('%', ''))
+  let flatResist = Number(options.res)
 
   if (isPercentageResist) {
     flatResist = Math.ceil((100 * Math.log(1 - percentageResist / 100)) / (2 * Math.log(2) - Math.log(5)))
@@ -48,7 +47,7 @@ export function calculateAttackDamage (message) {
     normalDamage = `${normalDamage}-${critDamage}`
   }
 
-  message.channel.send({
+  return message.channel.send({
     embed: {
       color: 'LIGHT_GREY',
       title: `:crossed_swords: ${author} atacou um Papatudo!`,

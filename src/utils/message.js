@@ -13,27 +13,32 @@ export function getCommand (commandPrefix, message) {
 
 /**
  * Get arguments from user message.
+ * For options with quotes, it replaces their spaces with underscore and then
+ * replaces them back. If you manage to find a regex that extracts them directly,
+ * please let me know.
+ * Feel free to use getArgumentsAndOptions test file to validate the suggested
+ * implementation.
  *
  * @param { import('discord.js').Message } message - Discord message object.
+ * @param {string} optionsConector
  * @returns {string[]} Command and arguments.
  */
-export function getArguments (message) {
-  const messageContent = message.content
-  return messageContent.split(' ').slice(1)
-}
-
-/**
- * Get arguments matching a conector.
- *
- * @param {string[]} userArguments
- * @param {string} conector
- * @returns {object}
- */
-export function mapArgumentsToObject (userArguments, conector) {
-  return userArguments.reduce((userArguments, argument) => {
-    const splittedArgument = argument.split(conector)
+export function getArgumentsAndOptions (message, optionsConector) {
+  let messageContent = message.content
+  const quoteOptions = messageContent.match(/(".*?")/g) || []
+  quoteOptions.forEach(quoteOption => {
+    const quoteOptionWithUnderscore = quoteOption.replace(/ /g, '_')
+    messageContent = messageContent.replace(quoteOption, quoteOptionWithUnderscore)
+  })
+  const args = messageContent.split(' ').slice(1).filter(arg => !arg.includes(optionsConector))
+  const options = messageContent.split(' ').slice(1).reduce((options, argument) => {
+    if (!argument.includes(optionsConector)) {
+      return options
+    }
+    const splittedArgument = argument.split(optionsConector)
     const argumentName = splittedArgument[0]
-    const argumentValue = splittedArgument[1]
-    return { ...userArguments, [argumentName]: argumentValue }
+    const argumentValue = splittedArgument[1].replace(/_/g, ' ').replace(/"/g, '')
+    return { ...options, [argumentName]: argumentValue }
   }, {})
+  return { args, options }
 }

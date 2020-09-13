@@ -1,4 +1,4 @@
-import { getArguments } from '../utils/message'
+import { getArgumentsAndOptions } from '../utils/message'
 
 export const commandsHelp = {
   alma: 'Descubra o bônus do alma para o dia atual. Em breve retornarão também o bônus para os próximos dias ;D',
@@ -28,6 +28,24 @@ Exemplos:
 \`.equip martelo de osamodas\`
 \`.equip o eterno raridade=mítico\``,
   about: 'Exibe informações sobre o Corvo Astral',
+  party: `Liste e participe de grupo com as funções do \`.party\`!
+  
+Crie um grupo no canal de grupos fornecendo as seguintes informações: nome do grupo, data, nível e vagas (padrão: 6, max: 50).
+\`.party create nome="up em moon" data=15/10 lvl="160-200" vagas=3\`
+\`.party create nome="dg excarnus s21" data="21/11 21:00" lvl=80\`
+
+Entre em algum grupo já criado no canal de grupos informando o id do grupo e a sua classe.
+\`.party join id=1 class=enu\`
+
+Atualize o nome, a data e o lvl de um grupo. Caso você não seja o líder, só pode atualizar a classe.
+\`.party update id=50 data="12/11 15:00"\`
+\`.party update id=32 class=feca\`
+
+Saia de um grupo.
+\`.party leave id=32\`
+
+Dica:
+Você também pode usar as reações da mensagem de grupo para entrar, sair ou adicionar/remover classes.`,
   help: 'Nice try'
 }
 
@@ -35,9 +53,10 @@ Exemplos:
  * Replies the user with a help message.
  *
  * @param { import('discord.js').Message } message - Discord message object.
+ * @returns {Promise<object>}
  */
 export function getHelp (message) {
-  const args = getArguments(message)
+  const { args } = getArgumentsAndOptions(message, '=')
   const hasArguments = Boolean(args.length)
   const hasTooManyArguments = args.length > 1
   const helpArgument = args[0]
@@ -54,17 +73,15 @@ export function getHelp (message) {
     ]
   }
   if (!hasArguments) {
-    message.channel.send({ embed })
-    return
+    return message.channel.send({ embed })
   }
 
   if (hasTooManyArguments) {
     embed.description = 'você só pode pedir ajuda pra um comando u_u'
-    message.channel.send({ embed })
-    return
+    return message.channel.send({ embed })
   }
 
   embed.title = embed.title + `: \`.help ${helpArgument}\``
   embed.description = commandsHelp[helpArgument]
-  message.channel.send({ embed })
+  return message.channel.send({ embed })
 }

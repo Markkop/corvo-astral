@@ -1,6 +1,6 @@
 import equipmentList from '../../data/equipment.json'
 import { commandsHelp } from './help'
-import { mapArgumentsToObject } from '../utils/message'
+import { getArgumentsAndOptions } from '../utils/message'
 import config from '../config'
 const { rarityColors } = config
 
@@ -170,9 +170,7 @@ function removeLowerRarities (equipmentList) {
  * @returns {object[]}
  */
 function findEquipmentByName (equipmentList, query, filters) {
-  const filterMap = mapArgumentsToObject(filters, '=')
-
-  const hasRarityFilter = Boolean(filterMap.raridade)
+  const hasRarityFilter = Boolean(filters.raridade)
   if (!hasRarityFilter) {
     return removeLowerRarities(equipmentList).filter(equip => equip.title.toLowerCase().includes(query))
   }
@@ -180,7 +178,7 @@ function findEquipmentByName (equipmentList, query, filters) {
   return equipmentList.filter(equip => {
     let filterAssertion = true
     const includeQuery = equip.title.toLowerCase().includes(query)
-    const hasRarity = rarityNameMap[equip.rarity].toLowerCase().includes(filterMap.raridade)
+    const hasRarity = rarityNameMap[equip.rarity].toLowerCase().includes(filters.raridade)
     filterAssertion = filterAssertion && hasRarity
 
     return includeQuery && filterAssertion
@@ -218,31 +216,30 @@ function getMoreEquipmentText (results, resultsLimit) {
  * Replies the user information about the given equipment.
  *
  * @param { import('discord.js').Message } message - Discord message object.
+ * @returns { Promise<object>}.
  */
 export async function getEquipment (message) {
-  const filters = message.content.toLowerCase().split(' ').filter(word => word.includes('='))
-  const query = message.content.split(' ').slice(1).filter(word => !word.includes('=')).join(' ').toLowerCase()
+  const { args, options } = getArgumentsAndOptions(message, '=')
+  const query = args.join(' ').toLowerCase()
   if (!query) {
-    message.channel.send({
+    return message.channel.send({
       embed: {
         color: 'LIGHT_GREY',
         title: ':grey_question: Ajuda: `.equip`',
         description: commandsHelp.equip
       }
     })
-    return
   }
   let results = []
-  results = findEquipmentByName(equipmentList, query, filters)
+  results = findEquipmentByName(equipmentList, query, options)
   if (!results.length) {
-    message.channel.send({
+    return message.channel.send({
       embed: {
         color: '#bb1327',
         title: ':x: Nenhum equipamento encontrado',
         description: 'Digite `.help equip` para conferir alguns exemplos de como pesquisar.'
       }
     })
-    return
   }
 
   const equipamentsFoundText = getMoreEquipmentText(results, 20)
@@ -293,5 +290,5 @@ export async function getEquipment (message) {
       text: `Equipamentos encontrados: ${equipamentsFoundText}`
     }
   }
-  message.channel.send({ embed: equipEmbed })
+  return message.channel.send({ embed: equipEmbed })
 }

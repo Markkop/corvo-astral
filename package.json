@@ -9,7 +9,7 @@
     "identify": "npm run build && node dist/utils/identifyValues.js",
     "build": "babel src -d dist",
     "lint": "eslint .",
-    "test": "jest tests/**.test.js"
+    "test": "jest tests/"
   },
   "keywords": [
     "wakfu",
@@ -45,6 +45,7 @@
   },
   "jest": {
     "coverageDirectory": "./coverage/",
-    "collectCoverage": true
+    "collectCoverage": true,
+    "testEnvironment": "node"
   }
 }
