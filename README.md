@@ -15,14 +15,25 @@ Note: currently the only language available is Brazilian Portuguese.
 * `.calc`: calculates the damage for an attack given some values
 * `.subli`: search for a given sublimation by name, slot combination or source
 * `.equip`: search for a given equipment by name
+* `.party`: create, update, join or leave a party listing
 * `.about`: get information about this bot
 * `.help`: get help for available commands
 
 ## Almanax Bonus Notifier
 
-As configured on `almaNotifier.js` and Heroku Scheduler, this bot tries to send the same message from `.alma` command to all channels named "almanax" every day on 00:01 AM.  
-If you wish to disable this behavior, simply deny permission to this bot on that channel.
+As configured on `almaNotifier.js` and Heroku Scheduler, this bot tries to send the same message from `.alma` command to all channels named "**almanax**" every day on 00:01 AM.  
+If you wish to disable this behavior, simply deny permission to this bot on that channel.  
 
+## Party Listing Feature
+
+When creating a new party listing with `.party create`, the bot will post it on a channel named "**listagem-de-grupos**" and will listen to reactions made on messages in that channel only.  
+Make sure to have a channel matching this name if you wish this feature enabled.  
+
+![Party Listing gif example](https://i.imgur.com/phx5oI2.gif)
+
+## More images
+
+![Find equipment and sublimations](https://i.imgur.com/gCNRFuQ.gif)
 
 ## How to develop
 
