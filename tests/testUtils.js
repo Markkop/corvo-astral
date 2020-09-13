@@ -32,7 +32,7 @@ export function mockMessage (content, channelMessages = []) {
       id: 111,
       username: 'Mark'
     },
-    client: {
+    guild: {
       channels: {
         cache: [
           {

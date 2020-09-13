@@ -8,7 +8,7 @@ const { groupListingChannelName } = config
  * @returns {object}
  */
 export function getPartyChannel (message) {
-  return message.client.channels.cache.find(channel => channel.name.includes(groupListingChannelName))
+  return message.guild.channels.cache.find(channel => channel.name.includes(groupListingChannelName))
 }
 
 /**
