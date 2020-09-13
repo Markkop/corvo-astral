@@ -30,7 +30,7 @@ export async function createParty (message, options) {
   }
   const maxVagas = 50
   const vagas = options.vagas >= maxVagas ? maxVagas : options.vagas
-  const memberSlots = Array(vagas || 6).fill(':small_orange_diamond:').join('\n')
+  const memberSlots = Array(Number(vagas) || 6).fill(':small_orange_diamond:').join('\n')
   const embed = {
     title: `Grupo: ${options.nome}`,
     fields: [
