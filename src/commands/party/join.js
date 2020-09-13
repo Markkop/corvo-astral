@@ -1,26 +1,12 @@
-import { getChannelParties } from '../../utils/partyChannel'
+import { getChannelParties, getMessageByEmbedNameAndValue } from '../../utils/partyChannel'
 import { commandsHelp } from '../help'
 import Discord from 'discord.js'
 
 /**
- * Get a message that matched a embed field name.
- *
- * @param {object[]} messages
- * @param {string} name
- * @returns {object}
- */
-function getMessageByEmbedName (messages, name) {
-  return messages.find(message => {
-    return message.embeds[0].fields.find(field => field.name === name)
-  })
-}
-
-/**
- * Join a party
- * .join id=2 class=enu.
+ * Join a party.
  *
  * @param {object} message
- * @param options
+ * @param {object} options
  * @returns {object}
  */
 export async function joinParty (message, options) {
@@ -29,18 +15,45 @@ export async function joinParty (message, options) {
     return message.channel.send({
       embed: {
         color: 'LIGHT_GREY',
-        title: ':grey_question: Ajuda: `.join`',
+        title: ':grey_question: Ajuda: `.party join`',
         description: commandsHelp.party
       }
     })
   }
 
   const partyMessages = await getChannelParties(message)
-  const matchingParty = getMessageByEmbedName(partyMessages, 'Identificador')
-  if (!matchingParty) {
-    return
+  if (!partyMessages.size) {
+    return message.channel.send({
+      embed: {
+        color: '#bb1327',
+        title: ':x: Erro ao usar o comando party',
+        description: 'Não foi encontrada nenhuma mensagem de grupo no canal "grupos"'
+      }
+    })
   }
-  const partySlots = matchingParty.embeds[0].fields.find(field => field.name === 'Participantes').value.split('\n')
+
+  const matchingParty = getMessageByEmbedNameAndValue(partyMessages, 'ID', options.id)
+  if (!matchingParty) {
+    return message.channel.send({
+      embed: {
+        color: '#bb1327',
+        title: ':x: Erro ao atualizar o grupo',
+        description: 'Nenhum dos últimos 100 grupos encontrado com esse id'
+      }
+    })
+  }
+  const partySlots = matchingParty.embeds[0].fields.find(field => field.name.includes('Participantes')).value.split('\n')
+  const userPartySlot = partySlots.find(slot => slot.includes(message.author.id))
+  if (userPartySlot) {
+    return message.channel.send({
+      embed: {
+        color: '#bb1327',
+        title: ':x: Erro ao entrar no grupo',
+        description: 'Você já está nele. Talvez queira dar um `.party update`?'
+      }
+    })
+  }
+
   const freeSlot = partySlots.find(slot => !slot.includes('@'))
   const freeSlotIndex = partySlots.indexOf(freeSlot)
   if (freeSlotIndex < 0) {
@@ -52,19 +65,20 @@ export async function joinParty (message, options) {
       }
     })
   }
-  partySlots[freeSlotIndex] = `* <@${message.author.id} | ${options.class || ''}>`
+  partySlots[freeSlotIndex] = `:small_orange_diamond: <@${message.author.id}> | ${options.class}`
   const newPartySlots = partySlots.join('\n')
-  const embedFields = matchingParty.embeds[0].fields.filter(field => field.name !== 'Participantes')
+  const embedFields = matchingParty.embeds[0].fields.filter(field => !field.name.includes('Participantes'))
   const embed = {
     ...matchingParty.embeds[0],
     fields: [
       ...embedFields,
       {
-        name: 'Participantes',
+        name: ':busts_in_silhouette: Participantes',
         value: newPartySlots
       }
     ]
   }
   const newEmbed = new Discord.MessageEmbed(embed)
+  message.react('✅')
   return matchingParty.edit(newEmbed)
 }

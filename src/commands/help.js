@@ -30,11 +30,22 @@ Exemplos:
   about: 'Exibe informações sobre o Corvo Astral',
   party: `Liste e participe de grupo com as funções do \`.party\`!
   
-Crie um grupo no canal de grupos fornecendo as seguintes informações: nome do grupo, data, horário, nível e vagas (se não fornecido, fica 6).
-\`.party create nome=grupoSemEspaço data=21/11 hora=21:00 lvl=200\`
+Crie um grupo no canal de grupos fornecendo as seguintes informações: nome do grupo, data, nível e vagas (padrão: 6, max: 50).
+\`.party create nome="up em moon" data=15/10 lvl="160-200" vagas=3\`
+\`.party create nome="dg excarnus s21" data="21/11 21:00" lvl=80\`
 
 Entre em algum grupo já criado no canal de grupos informando o id do grupo e a sua classe.
-\`.party join id=1 class=enu\``,
+\`.party join id=1 class=enu\`
+
+Atualize o nome, a data e o lvl de um grupo. Caso você não seja o líder, só pode atualizar a classe.
+\`.party update id=50 data="12/11 15:00"\`
+\`.party update id=32 class=feca\`
+
+Saia de um grupo.
+\`.party leave id=32\`
+
+Dica:
+Você também pode usar as reações da mensagem de grupo para entrar, sair ou adicionar/remover classes.`,
   help: 'Nice try'
 }
 
@@ -42,6 +53,7 @@ Entre em algum grupo já criado no canal de grupos informando o id do grupo e a 
  * Replies the user with a help message.
  *
  * @param { import('discord.js').Message } message - Discord message object.
+ * @returns {Promise<object>}
  */
 export function getHelp (message) {
   const { args } = getArgumentsAndOptions(message, '=')

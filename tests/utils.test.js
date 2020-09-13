@@ -2,11 +2,25 @@ import { getArgumentsAndOptions, getCommand } from '../src/utils/message'
 import findPermutations from '../src/utils/permutateString'
 
 describe('getArgumentsAndOptions', () => {
-  it('get arguments correctly', () => {
+  it('get arguments and options correctly', () => {
     const message = { content: '.equip o eterno raridade=mítico' }
     const { args, options } = getArgumentsAndOptions(message, '=')
     expect(args).toEqual(['o', 'eterno'])
     expect(options).toEqual({ raridade: 'mítico' })
+  })
+
+  it('get options with quotes', () => {
+    const message = { content: '.comando algum argumento opcao1="azul claro" opcao2="banana"' }
+    const { args, options } = getArgumentsAndOptions(message, '=')
+    expect(args).toEqual(['algum', 'argumento'])
+    expect(options).toEqual({ opcao1: 'azul claro', opcao2: 'banana' })
+  })
+
+  it('get options with and without quotes', () => {
+    const message = { content: '.comando algum argumento opcao1=azul opcao2="banana"' }
+    const { args, options } = getArgumentsAndOptions(message, '=')
+    expect(args).toEqual(['algum', 'argumento'])
+    expect(options).toEqual({ opcao1: 'azul', opcao2: 'banana' })
   })
 
   it('get command correctly', () => {

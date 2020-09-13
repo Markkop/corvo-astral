@@ -14,5 +14,4 @@ export {
   getEquipment,
   getAbout,
   partyList
-
 }

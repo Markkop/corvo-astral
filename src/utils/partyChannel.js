@@ -1,3 +1,6 @@
+import config from '../config'
+const { groupListingChannelName } = config
+
 /**
  * Get the party channel by matching its name.
  *
@@ -5,7 +8,7 @@
  * @returns {object}
  */
 export function getPartyChannel (message) {
-  return message.client.channels.cache.find(channel => channel.name.includes('grupos'))
+  return message.client.channels.cache.find(channel => channel.name.includes(groupListingChannelName))
 }
 
 /**
@@ -24,5 +27,19 @@ export async function getChannelParties (message) {
       return false
     }
     return partyEmbed.title.includes('Grupo')
+  })
+}
+
+/**
+ * Get a message that matched a embed field name.
+ *
+ * @param {object[]} messages
+ * @param {string} name
+ * @param {string} value
+ * @returns {object}
+ */
+export function getMessageByEmbedNameAndValue (messages, name, value) {
+  return messages.find(message => {
+    return message.embeds[0].fields.find(field => field.name.includes(name) && field.value === value)
   })
 }
