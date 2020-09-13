@@ -21,6 +21,7 @@ export async function joinPartyByReaction (reaction, user, members, listingGroup
   }
   if (isUserAlreadyMember) {
     const memberRow = members.split('\n').find(member => member.includes(user.id))
+    if (memberRow.includes(className)) return
     const memberClasses = memberRow.split('| ')[1].split(',').map(word => word.trim()).filter(Boolean)
     if (memberClasses.length >= 3) return
     memberClasses.push(className)

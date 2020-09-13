@@ -11,7 +11,7 @@ export default {
     other: '#fbfcac'
   },
   almanaxChannelName: 'almanax',
-  groupListingChannelName: 'grupos',
+  groupListingChannelName: 'listagem-de-grupos',
   classEmoji: {
     '🐲': 'Osa',
     '🛡️': 'Feca',
