@@ -1,5 +1,7 @@
 import { getArgumentsAndOptions, getCommand } from '../src/utils/message'
 import findPermutations from '../src/utils/permutateString'
+import { handleMessageError, handleReactionError } from '../src/utils/handleError'
+import { mockMessage } from './testUtils'
 
 describe('getArgumentsAndOptions', () => {
   it('get arguments and options correctly', () => {
@@ -44,5 +46,24 @@ describe('findPermutations', () => {
   it('returns the same string if it has one character', () => {
     const permutations = findPermutations('a')
     expect(permutations).toEqual('a')
+  })
+})
+
+describe('handleError functions', () => {
+  it('handleMessageError calls console log', () => {
+    const spy = jest.spyOn(global.console, 'log').mockImplementation()
+    const message = mockMessage('')
+    const error = { toString: jest.fn() }
+    handleMessageError(error, message)
+    expect(spy).toHaveBeenCalled()
+  })
+
+  it('handleReactionError calls console log', () => {
+    const spy = jest.spyOn(global.console, 'log').mockImplementation()
+    const reaction = { message: mockMessage('') }
+    const user = { username: '' }
+    const error = { toString: jest.fn() }
+    handleReactionError(error, reaction, user)
+    expect(spy).toHaveBeenCalled()
   })
 })

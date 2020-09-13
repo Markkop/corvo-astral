@@ -1,6 +1,9 @@
 import { partyList } from '../../src/commands'
 import { commandsHelp } from '../../src/commands/help'
 import { mockMessage } from '../testUtils'
+import { handleMessageError } from '../../src/utils/handleError'
+
+jest.mock('../../src/utils/handleError')
 
 jest.mock('discord.js', () => ({
   MessageEmbed: embed => embed
@@ -113,6 +116,12 @@ describe('partyList', () => {
       expect(botResponse.embed).toMatchObject({
         description: commandsHelp.party
       })
+    })
+
+    it("calls handleMessageError if can't send a message", async () => {
+      const content = '.party create'
+      await partyList({ content })
+      expect(handleMessageError).toHaveBeenCalled()
     })
   })
 })
