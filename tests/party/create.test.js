@@ -18,7 +18,7 @@ describe('partyList', () => {
           { name: ':label: ID', value: '1', inline: true },
           { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
           { name: ':skull: Nível', value: '200', inline: true },
-          { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
+          { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@111> | \n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
         ]
       })
     })
@@ -32,7 +32,7 @@ describe('partyList', () => {
             { name: ':label: ID', value: '2', inline: true },
             { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
             { name: ':skull: Nível', value: '200', inline: true },
-            { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
+            { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@111> | \n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
           ]
         }]
       }]
@@ -44,8 +44,46 @@ describe('partyList', () => {
           { name: ':label: ID', value: '3', inline: true },
           { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
           { name: ':skull: Nível', value: '200', inline: true },
-          { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
+          { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@111> | \n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
         ]
+      })
+    })
+
+    it('creates a party message with a description', async () => {
+      const content = '.party create nome=group3 desc="ninja tudo"'
+      const mockedUserMessage = mockMessage(content)
+      const botResponse = await partyList(mockedUserMessage)
+      expect(botResponse.embed).toMatchObject({
+        title: 'Grupo: group3',
+        description: 'ninja tudo',
+        fields: [
+          { name: ':label: ID', value: '1', inline: true },
+          { name: ':calendar_spiral: Data', value: 'A combinar', inline: true },
+          { name: ':skull: Nível', value: '1-215', inline: true },
+          { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@111> | \n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
+        ]
+      })
+    })
+
+    it('creates a party message with the author on footer', async () => {
+      const content = '.party create nome=group3'
+      const channelMessages = [{
+        embeds: [{
+          title: 'Grupo: group2',
+          fields: [
+            { name: ':label: ID', value: '2', inline: true },
+            { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
+            { name: ':skull: Nível', value: '200', inline: true },
+            { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@111> | \n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
+          ]
+        }]
+      }]
+      const mockedUserMessage = mockMessage(content, channelMessages)
+      const botResponse = await partyList(mockedUserMessage)
+      expect(botResponse.embed).toMatchObject({
+        footer: {
+          text: 'Criado por Mark'
+        }
       })
     })
 
@@ -58,7 +96,7 @@ describe('partyList', () => {
             { name: ':label: ID', value: '2', inline: true },
             { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
             { name: ':skull: Nível', value: '200', inline: true },
-            { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
+            { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@111> | \n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
           ]
         }]
       }]

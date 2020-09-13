@@ -32,6 +32,33 @@ describe('updateParty', () => {
     })
   })
 
+  it('updates a description', async () => {
+    const content = '.party update id=1 desc="test"'
+    const channelMessages = [{
+      embeds: [{
+        title: 'Grupo: group1',
+        fields: [
+          { name: ':label: ID', value: '1', inline: true },
+          { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
+          { name: ':skull: Nível', value: '200', inline: true },
+          { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@111> | enu\n:small_orange_diamond: <@222> | enu\n:small_orange_diamond: <@444> | enu\n <@555> | enu:small_orange_diamond:\n:small_orange_diamond: <@666> | enu\n:small_orange_diamond: <@777> | enu' }
+        ]
+      }]
+    }]
+    const mockedUserMessage = mockMessage(content, channelMessages)
+    const botResponse = await partyList(mockedUserMessage)
+    expect(botResponse).toMatchObject({
+      title: 'Grupo: group1',
+      description: 'test',
+      fields: [
+        { name: ':label: ID', value: '1', inline: true },
+        { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
+        { name: ':skull: Nível', value: '200', inline: true },
+        { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@111> | enu\n:small_orange_diamond: <@222> | enu\n:small_orange_diamond: <@444> | enu\n <@555> | enu:small_orange_diamond:\n:small_orange_diamond: <@666> | enu\n:small_orange_diamond: <@777> | enu' }
+      ]
+    })
+  })
+
   it('updates the party if the user is the party leader', async () => {
     const content = '.party update id=1 nome="new Name" lvl=100'
     const channelMessages = [{

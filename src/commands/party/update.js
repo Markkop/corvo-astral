@@ -60,6 +60,9 @@ export async function updateParty (message, options) {
   const isPartyLeader = userPartySlotIndex === 0
   if (isPartyLeader) {
     matchingPartyEmbed.title = options.nome ? `Grupo: ${options.nome}` : matchingPartyEmbed.title
+    if (options.desc) {
+      matchingPartyEmbed.description = options.desc
+    }
     matchingPartyEmbed.fields.find(field => field.name.includes('Nível')).value = options.lvl || matchingPartyEmbed.fields.find(field => field.name.includes('Nível')).value
     matchingPartyEmbed.fields.find(field => field.name.includes('Data')).value = options.data || matchingPartyEmbed.fields.find(field => field.name.includes('Data')).value
   }

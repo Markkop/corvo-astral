@@ -17,7 +17,8 @@ export async function leavePartyByReaction (reaction, user, members, listingGrou
     client: reaction.message.client,
     author: user,
     react: () => {},
-    channel: { send: () => {} }
+    channel: { send: () => {} },
+    guild: reaction.message.guild
   }
 
   if (!isUserAlreadyMember) return

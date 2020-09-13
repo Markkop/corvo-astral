@@ -11,7 +11,7 @@ const { classEmoji } = config
  * @returns {object}
  */
 export async function createParty (message, options) {
-  const hasRequiredOptions = options.nome && options.data && options.lvl
+  const hasRequiredOptions = options.nome
   if (!hasRequiredOptions) {
     return message.channel.send({
       embed: {
@@ -30,7 +30,8 @@ export async function createParty (message, options) {
   }
   const maxVagas = 50
   const vagas = options.vagas >= maxVagas ? maxVagas : options.vagas
-  const memberSlots = Array(Number(vagas) || 6).fill(':small_orange_diamond:').join('\n')
+  const memberSlots = Array(Number(vagas) || 6).fill(':small_orange_diamond:')
+  memberSlots[0] = `:small_orange_diamond: <@${message.author.id}> | `
   const embed = {
     title: `Grupo: ${options.nome}`,
     fields: [
@@ -41,20 +42,28 @@ export async function createParty (message, options) {
       },
       {
         name: ':calendar_spiral: Data',
-        value: options.data,
+        value: options.data || 'A combinar',
         inline: true
       },
       {
         name: ':skull: Nível',
-        value: options.lvl,
+        value: options.lvl || '1-215',
         inline: true
       },
       {
         name: ':busts_in_silhouette: Participantes',
-        value: memberSlots
+        value: memberSlots.join('\n')
       }
-    ]
+    ],
+    footer: {
+      text: `Criado por ${message.author.username}`
+    }
   }
+
+  if (options.desc) {
+    embed.description = options.desc
+  }
+
   message.react('⏳')
   const partyChannel = getPartyChannel(message)
   const sentMessage = await partyChannel.send({ embed })

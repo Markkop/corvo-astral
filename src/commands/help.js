@@ -30,9 +30,17 @@ Exemplos:
   about: 'Exibe informações sobre o Corvo Astral',
   party: `Liste e participe de grupo com as funções do \`.party\`!
   
-Crie um grupo no canal de grupos fornecendo as seguintes informações: nome do grupo, data, nível e vagas (padrão: 6, max: 50).
+Crie um grupo no canal de grupos fornecendo as seguintes informações: nome do grupo, descrição, data, nível e vagas.
+
+\`.party create nome="Flagelopardo s21 3 stele" desc="procuro corta cura, enu e danos distância" lvl="186+"\`
 \`.party create nome="up em moon" data=15/10 lvl="160-200" vagas=3\`
 \`.party create nome="dg excarnus s21" data="21/11 21:00" lvl=80\`
+**Obs: note que quando tiver espaço, é necessário usar "" em volta da opção.**
+
+Se data não for fornecido, vem como "A combinar"
+Se nível não for fornecido, vem como "1-215"
+Se vagas não for fornecido, vem como 6 (máximo 50 vagas)
+Para alterar nome, data, nível e descrição, use o comando \`.party update\`
 
 Entre em algum grupo já criado no canal de grupos informando o id do grupo e a sua classe.
 \`.party join id=1 class=enu\`

@@ -16,7 +16,8 @@ export async function joinPartyByReaction (reaction, user, members, listingGroup
     client: reaction.message.client,
     author: user,
     react: () => {},
-    channel: { send: () => {} }
+    channel: { send: () => {} },
+    guild: reaction.message.guild
   }
   if (isUserAlreadyMember) {
     const memberRow = members.split('\n').find(member => member.includes(user.id))
