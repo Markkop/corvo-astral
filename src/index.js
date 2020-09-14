@@ -22,6 +22,11 @@ const commandActions = {
 }
 
 const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION'] })
+
+client.on('ready', async function () {
+  console.log(`Online on ${client.guilds.cache.size} servers: ${client.guilds.cache.map(ch => ch.name).join(', ')}`)
+})
+
 client.on('message', async function (message) {
   try {
     if (message.author.bot) return
