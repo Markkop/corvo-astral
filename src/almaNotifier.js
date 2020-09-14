@@ -1,6 +1,6 @@
 import Discord from 'discord.js'
 import { getAlmanaxBonus } from './commands/alma'
-import config from '../src/config'
+import config from './config'
 const { almanaxChannelName } = config
 
 /**
