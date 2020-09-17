@@ -91,8 +91,10 @@ function mountRecipeEmbed (results) {
   })
 
   const moreResults = results.filter(recipe => recipe.result.productedItemId !== firstRecipe.result.productedItemId)
-  if (moreResults > 1) {
-    const otherRecipes = moreResults.map(recipe => {
+  const nonRepatedMoreResults = Array.from(new Set(moreResults.map(recipe => recipe.result.productedItemId))).map(productedItemId => moreResults.find(recipe => recipe.result.productedItemId === productedItemId))
+
+  if (nonRepatedMoreResults.length > 1) {
+    const otherRecipes = nonRepatedMoreResults.map(recipe => {
       const recipeResultRarity = recipe.result.rarity
       const rarityEmoji = recipeResultRarity ? `${rarityMap[recipeResultRarity].emoji} ` : ''
       return `${rarityEmoji}${recipe.result.title.pt}`

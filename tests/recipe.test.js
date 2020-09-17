@@ -93,7 +93,10 @@ describe('getRecipe', () => {
           name: 'Ingredientes',
           value: ':sunflower: 5x Mumusgo\n:sunflower: 5x Folha de Urtiga'
         }
-      ]
+      ],
+      footer: {
+        text: 'Aço Eterno, Óleo eterno, Tempero eterno, Cabo eterno, Couro eterno, :yellow_circle: O Eterno, :blue_circle: O Eterno'
+      }
     })
   })
 
@@ -136,7 +139,18 @@ describe('getRecipe', () => {
     })
   })
 
-  it('return a help message if no query was provided', async () => {
+  it('returns a not found message if no recipe has been found', async () => {
+    const content = '.recipe asdasd'
+    const userMessage = mockMessage(content)
+    const botMessage = await getRecipe(userMessage)
+    expect(botMessage.embed).toMatchObject({
+      color: '#bb1327',
+      title: ':x: Nenhuma receita encontrada',
+      description: 'Digite `.help recipe` para conferir alguns exemplos de como pesquisar.'
+    })
+  })
+
+  it('returns a help message if no query was provided', async () => {
     const content = '.recipe'
     const userMessage = mockMessage(content)
     const botMessage = await getRecipe(userMessage)
