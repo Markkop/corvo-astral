@@ -123,7 +123,7 @@ describe('getRecipe', () => {
     expect(botMessage.embed).toEqual({
       color: 'LIGHT_GREY',
       title: 'Receita de Couro eterno',
-      thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/71919456.png' },
+      thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/71919804.png' },
       fields: [
         {
           name: 'Profissão',

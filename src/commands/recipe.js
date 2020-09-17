@@ -3,7 +3,7 @@ import equipmentData from '../../data/equipment.json'
 import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions } from '../utils/message'
 import config from '../config'
-const { rarityMap, jobEmojis } = config
+const { rarityMap, jobsMap } = config
 
 const itemEmojis = {
   24029: ':droplet:',
@@ -92,12 +92,14 @@ function getMoreRecipesText (results, resultsLimit) {
 export function getRecipeFields (recipeResults) {
   const firstRecipe = recipeResults[0]
   const recipesWithSameResult = recipeResults.filter(recipe => recipe.result.productedItemId === firstRecipe.result.productedItemId)
-  const jobEmoji = jobEmojis[firstRecipe.job.definition.id]
+  const job = jobsMap[firstRecipe.job.definition.id]
+  const jobEmoji = job.emoji
+  const jobName = job.title.pt
 
   const fields = [
     {
       name: 'Profissão',
-      value: `${jobEmoji} ${firstRecipe.job.title.pt}`,
+      value: `${jobEmoji} ${jobName}`,
       inline: true
     },
     {
@@ -109,7 +111,8 @@ export function getRecipeFields (recipeResults) {
   recipesWithSameResult.forEach(recipe => {
     const ingredientsText = recipe.ingredients.map(ingredient => {
       const rarityEmoji = ingredient.rarity ? rarityMap[ingredient.rarity].emoji : ''
-      const jobEmoji = jobEmojis[ingredient.job]
+      const job = jobsMap[ingredient.job] || {}
+      const jobEmoji = job.emoji
       const itemEmoji = itemEmojis[ingredient.itemId]
       const ingredientEmoji = rarityEmoji || jobEmoji || itemEmoji || ':white_small_square:'
       const quantity = ingredient.quantity
@@ -144,7 +147,8 @@ function mountRecipeEmbed (results) {
   const firstRecipe = results[0]
   const recipeResultRarity = firstRecipe.result.rarity
   const equipment = equipmentData.find(equip => equip.id === firstRecipe.result.productedItemId)
-  const imageUrl = equipment ? `https://builder.methodwakfu.com/assets/icons/items/${equipment.img}.webp` : 'https://static.ankama.com/wakfu/portal/game/item/115/71919456.png'
+  const job = jobsMap[firstRecipe.job.definition.id]
+  const imageUrl = equipment ? `https://builder.methodwakfu.com/assets/icons/items/${equipment.img}.webp` : job.recipeImage
 
   const rarityEmoji = recipeResultRarity ? `${rarityMap[recipeResultRarity].emoji} ` : ''
   const embedColor = firstRecipe.result.rarity ? rarityMap[firstRecipe.result.rarity].color : 'LIGHT_GREY'

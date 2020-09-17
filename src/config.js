@@ -66,104 +66,144 @@ export default {
   },
   jobsMap: {
     40: {
-      fr: 'Boulanger',
-      en: 'Baker',
-      es: 'Panadero',
-      pt: 'Padeiro'
+      emoji: ':bread:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919456.png',
+      title: {
+        fr: 'Boulanger',
+        en: 'Baker',
+        es: 'Panadero',
+        pt: 'Padeiro'
+      }
     },
     64: {
-      fr: 'Paysan',
-      en: 'Farmer',
-      es: 'Campesino',
-      pt: 'Fazendeiro'
+      emoji: ':corn:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919456.png',
+      title: {
+        fr: 'Paysan',
+        en: 'Farmer',
+        es: 'Campesino',
+        pt: 'Fazendeiro'
+      }
     },
     71: {
-      fr: 'Forestier',
-      en: 'Lumberjack',
-      es: 'Leñador',
-      pt: 'Lenhador'
+      emoji: ':palm_tree:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919456.png',
+      title: {
+        fr: 'Forestier',
+        en: 'Lumberjack',
+        es: 'Leñador',
+        pt: 'Lenhador'
+      }
     },
     72: {
-      fr: 'Herboriste',
-      en: 'Herbalist',
-      es: 'Herbolario',
-      pt: 'Herborista'
+      emoji: ':sunflower:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919456.png',
+      title: {
+        fr: 'Herboriste',
+        en: 'Herbalist',
+        es: 'Herbolario',
+        pt: 'Herborista'
+      }
     },
     73: {
-      fr: 'Mineur',
-      en: 'Miner',
-      es: 'Minero',
-      pt: 'Mineiro'
+      emoji: ':pick:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919456.png',
+      title: {
+        fr: 'Mineur',
+        en: 'Miner',
+        es: 'Minero',
+        pt: 'Mineiro'
+      }
     },
     74: {
-      fr: 'Trappeur',
-      en: 'Trapper',
-      es: 'Peletero',
-      pt: 'Caçador'
+      emoji: ':shell:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919456.png',
+      title: {
+        fr: 'Trappeur',
+        en: 'Trapper',
+        es: 'Peletero',
+        pt: 'Caçador'
+      }
     },
     75: {
-      fr: 'Pêcheur',
-      en: 'Fisherman',
-      es: 'Pescador',
-      pt: 'Pescador'
+      emoji: ':fish:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919456.png',
+      title: {
+        fr: 'Pêcheur',
+        en: 'Fisherman',
+        es: 'Pescador',
+        pt: 'Pescador'
+      }
     },
     76: {
-      fr: 'Cuisinier',
-      en: 'Chef',
-      es: 'Cocinero',
-      pt: 'Cozinheiro'
+      emoji: ':spaghetti:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919802.png',
+      title: {
+        fr: 'Cuisinier',
+        en: 'Chef',
+        es: 'Cocinero',
+        pt: 'Cozinheiro'
+      }
     },
     77: {
-      fr: 'Armurier',
-      en: 'Armorer',
-      es: 'Armero',
-      pt: 'Armeiro'
+      emoji: ':shield:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919810.png',
+      title: {
+        fr: 'Armurier',
+        en: 'Armorer',
+        es: 'Armero',
+        pt: 'Armeiro'
+      }
     },
     78: {
-      fr: 'Bijoutier',
-      en: 'Jeweler',
-      es: 'Joyero',
-      pt: 'Joalheiro'
+      emoji: ':ring:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919811.png',
+      title: {
+        fr: 'Bijoutier',
+        en: 'Jeweler',
+        es: 'Joyero',
+        pt: 'Joalheiro'
+      }
     },
     79: {
-      fr: 'Tailleur',
-      en: 'Tailor',
-      es: 'Sastre',
-      pt: 'Alfaiate'
+      emoji: ':womans_hat:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919809.png',
+      title: {
+        fr: 'Tailleur',
+        en: 'Tailor',
+        es: 'Sastre',
+        pt: 'Alfaiate'
+      }
     },
     80: {
-      fr: 'Maroquinier',
-      en: 'Leather Dealer',
-      es: 'Marroquinero',
-      pt: 'Coureiro'
+      emoji: ':boot:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919804.png',
+      title: {
+        fr: 'Maroquinier',
+        en: 'Leather Dealer',
+        es: 'Marroquinero',
+        pt: 'Coureiro'
+      }
     },
     81: {
-      fr: 'Ebéniste',
-      en: 'Handyman',
-      es: 'Ebanista',
-      pt: 'Marceneiro'
+      emoji: ':chair:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919805.png',
+      title: {
+        fr: 'Ebéniste',
+        en: 'Handyman',
+        es: 'Ebanista',
+        pt: 'Marceneiro'
+      }
     },
     83: {
-      fr: 'Maitre d\'Armes',
-      en: 'Weapons Master',
-      es: 'Maestro de armas',
-      pt: 'Mestre de armas'
+      emoji: ':crossed_swords:',
+      recipeImage: 'https://static.ankama.com/wakfu/portal/game/item/115/71919807.png',
+      title: {
+        fr: 'Maitre d\'Armes',
+        en: 'Weapons Master',
+        es: 'Maestro de armas',
+        pt: 'Mestre de armas'
+      }
     }
-  },
-  jobEmojis: {
-    40: ':bread:',
-    64: ':corn:',
-    71: ':palm_tree:',
-    72: ':sunflower:',
-    73: ':pick:',
-    74: ':shell:',
-    75: ':fish:',
-    76: ':spaghetti:',
-    77: ':shield:',
-    78: ':ring:',
-    79: ':womans_hat:',
-    80: ':boot:',
-    81: ':chair:',
-    83: ':crossed_swords:'
   }
 }
