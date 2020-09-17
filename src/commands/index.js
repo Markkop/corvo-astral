@@ -5,6 +5,7 @@ import { getSublimation } from './subli'
 import { getEquipment } from './equip'
 import { getAbout } from './about'
 import { partyList } from './party'
+import { getRecipe } from './recipe'
 
 export {
   getAlmanaxBonus,
@@ -13,5 +14,6 @@ export {
   getSublimation,
   getEquipment,
   getAbout,
-  partyList
+  partyList,
+  getRecipe
 }

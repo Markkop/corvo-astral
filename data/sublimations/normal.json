@@ -4,7 +4,8 @@
     "name": "Ruína",
     "effects": "10% de danos indiretos (danos infligidos pelo portador do estado fora do turno dele)",
     "maxStack": "3",
-    "source": "Receita/craft de nível 30 de marceneiro/handyman"
+    "source": "Receita/craft de nível 30 de marceneiro/handyman",
+    "id": 27111
   },
   {
     "slots": "BBB",
@@ -46,7 +47,8 @@
     "name": "Evasão",
     "effects": "No início do combate: 10% de Parada (1 turno)",
     "maxStack": "3",
-    "source": "Receita/craft de nível 40 de marceneiro/handyman"
+    "source": "Receita/craft de nível 40 de marceneiro/handyman",
+    "id": 27117
   },
   {
     "slots": "GGR",
@@ -60,14 +62,16 @@
     "name": "Tenacidade",
     "effects": "Em fim de turno, se o portador do estado estiver com pelo menos 2PA: 25 de resistência elementar (1 turno)",
     "maxStack": "2",
-    "source": "Receita/craft de nível 50 de marceneiro/handyman"
+    "source": "Receita/craft de nível 50 de marceneiro/handyman",
+    "id": 27119
   },
   {
     "slots": "RGR",
     "name": "Solidez",
     "effects": "Reduz os danos diretos recebidos superiores a 20% dos PV máx. em 400% do nível (uma vez por rodada)",
     "maxStack": "1",
-    "source": "Receita/craft de nível 60 de marceneiro/handyman"
+    "source": "Receita/craft de nível 60 de marceneiro/handyman",
+    "id": 27120
   },
   {
     "slots": "RBR",
@@ -285,7 +289,8 @@
     "name": "Poço de Vitalidade",
     "effects": "Aumenta em 10% os Roubos de Vida realizados",
     "maxStack": "3",
-    "source": "Receita/craft de nível 70 de marceneiro/handyman"
+    "source": "Receita/craft de nível 70 de marceneiro/handyman",
+    "id": 27151
   },
   {
     "slots": "GBG",
@@ -313,7 +318,8 @@
     "name": "Ciclotimia",
     "effects": "Turno par: 20 de Vontade, Turno ímpar: -20 de Vontade",
     "maxStack": "1",
-    "source": "Receita/craft de nível 80 de marceneiro/handyman"
+    "source": "Receita/craft de nível 80 de marceneiro/handyman",
+    "id": 27155
   },
   {
     "slots": "BRG",
@@ -363,7 +369,8 @@
     "name": "Invólucro Rochoso",
     "effects": "5% de Armadura concedida",
     "maxStack": "3",
-    "source": "Receita/craft de nível 90 de marceneiro/handyman"
+    "source": "Receita/craft de nível 90 de marceneiro/handyman",
+    "id": 27162
   },
   {
     "slots": "RGG",

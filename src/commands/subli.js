@@ -1,10 +1,12 @@
-import { commandsHelp } from './help'
+import { mountCommandHelpEmbed } from './help'
+import { getRecipeFields } from './recipe'
+import recipesData from '../../data/recipes.json'
 import epic from '../../data/sublimations/epic.json'
 import relic from '../../data/sublimations/relic.json'
 import normal from '../../data/sublimations/normal.json'
 import findPermutations from '../utils/permutateString'
 import config from '../config'
-const { rarityColors } = config
+const { rarityMap } = config
 const sublimations = [...epic, ...relic, ...normal]
 
 /**
@@ -87,19 +89,6 @@ const queriesEquivalent = {
 }
 
 /**
- * Created the embed message with the a help message.
- *
- * @returns {object}
- */
-function mountHelpEmbed () {
-  return {
-    color: 'LIGHT_GREY',
-    title: ':grey_question: Ajuda: `.subli`',
-    description: commandsHelp.subli
-  }
-}
-
-/**
  * Created the embed message with the a sublimation not found.
  *
  * @returns {object}
@@ -122,8 +111,10 @@ function mountSublimationFoundEmbed (results) {
   const firstResult = results[0]
   const isEpicOrRelic = /Épico|Relíquia/.test(firstResult.slots)
   const icon = isEpicOrRelic ? ':gem:' : ':scroll:'
+  const rarityId = Object.keys(rarityMap).find(key => rarityMap[key].name === firstResult.slots)
+  const embedColor = isEpicOrRelic ? rarityMap[rarityId].color : 'LIGHT_GREY'
   const sublimationEmbed = {
-    color: rarityColors[firstResult.slots] || rarityColors.other,
+    color: embedColor,
     url: firstResult.link || 'https://www.wakfu.com/',
     title: `${icon} ${firstResult.name}`,
     thumbnail: { url: firstResult.image || 'https://static.ankama.com/wakfu/portal/game/item/115/81227111.png' },
@@ -146,6 +137,14 @@ function mountSublimationFoundEmbed (results) {
         name: 'Obtenção:',
         value: firstResult.source
       }
+    ]
+  }
+  const recipes = recipesData.filter(recipe => recipe.result.productedItemId === firstResult.id)
+  if (recipes.length) {
+    const recipeFields = getRecipeFields(recipes)
+    sublimationEmbed.fields = [
+      ...sublimationEmbed.fields,
+      ...recipeFields
     ]
   }
   const hasFoundMoreThanOne = results.length > 1
@@ -294,7 +293,7 @@ export function getSublimation (message) {
   }
   const normalizedQuery = message.content.split(' ').slice(1).join(' ').toLowerCase()
   if (!normalizedQuery) {
-    const helpEmbed = mountHelpEmbed()
+    const helpEmbed = mountCommandHelpEmbed(message)
     return message.channel.send({ embed: helpEmbed })
   }
   const query = queriesEquivalent[normalizedQuery] || normalizedQuery

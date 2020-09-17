@@ -1,4 +1,6 @@
-import { getArgumentsAndOptions } from '../utils/message'
+import { getArgumentsAndOptions, getCommand } from '../utils/message'
+import config from '../config'
+const { prefix } = config
 
 export const commandsHelp = {
   alma: 'Descubra o bônus do alma para o dia atual. Em breve retornarão também o bônus para os próximos dias ;D',
@@ -57,6 +59,29 @@ Você também pode usar as reações da mensagem de grupo para entrar, sair ou a
   help: 'Nice try'
 }
 
+const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
+
+/**
+ * Mounts the help message embed.
+ *
+ * @param {object|string} messageOrArgument
+ * @returns {object}
+ */
+export function mountCommandHelpEmbed (messageOrArgument) {
+  const command = typeof messageOrArgument === 'string' ? messageOrArgument : getCommand(prefix, messageOrArgument)
+  return {
+    color: 'LIGHT_GREY',
+    title: `:grey_question: Ajuda: \`.help ${command}\``,
+    description: commandsHelp[command],
+    fields: [
+      {
+        name: 'Comandos disponíveis',
+        value: commandsListText
+      }
+    ]
+  }
+}
+
 /**
  * Replies the user with a help message.
  *
@@ -68,7 +93,6 @@ export function getHelp (message) {
   const hasArguments = Boolean(args.length)
   const hasTooManyArguments = args.length > 1
   const helpArgument = args[0]
-  const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
   const embed = {
     color: 'LIGHT_GREY',
     title: ':grey_question: Ajuda',
@@ -89,7 +113,6 @@ export function getHelp (message) {
     return message.channel.send({ embed })
   }
 
-  embed.title = embed.title + `: \`.help ${helpArgument}\``
-  embed.description = commandsHelp[helpArgument]
-  return message.channel.send({ embed })
+  const helpEmbed = mountCommandHelpEmbed(helpArgument)
+  return message.channel.send({ embed: helpEmbed })
 }

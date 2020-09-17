@@ -1,5 +1,5 @@
 import Discord from 'discord.js'
-import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment, getAbout, partyList } from './commands'
+import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment, getAbout, partyList, getRecipe } from './commands'
 import { joinPartyByReaction, leavePartyByReaction } from './reactions'
 import { handleMessageError, handleReactionError } from './utils/handleError'
 import { getGroupList } from './utils/getGroupList'
@@ -18,6 +18,7 @@ const commandActions = {
   equip: getEquipment,
   about: getAbout,
   party: partyList,
+  recipe: getRecipe,
   time: (message) => message.reply(new Date().toString())
 }
 

@@ -1,29 +1,10 @@
 import equipmentList from '../../data/equipment.json'
-import { commandsHelp } from './help'
+import recipesData from '../../data/recipes.json'
+import { getRecipeFields } from './recipe'
+import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions } from '../utils/message'
 import config from '../config'
-const { rarityColors } = config
-
-const rarityEmojiMap = {
-  1: ':white_circle:',
-  2: ':green_circle:',
-  3: ':orange_circle:',
-  4: ':yellow_circle:',
-  5: ':purple_circle:',
-  6: ':blue_circle:',
-  7: ':purple_circle:'
-}
-
-const rarityNameMap = {
-  1: 'Comum',
-  2: 'Raro',
-  3: 'Mítico',
-  4: 'Lendário',
-  5: 'Relíquia',
-  6: 'Anelembrança',
-  7: 'Épico',
-  10: 'Impossível'
-}
+const { rarityMap } = config
 
 const iconCodeMap = {
   '[el1]': ':fire:',
@@ -178,7 +159,7 @@ function findEquipmentByName (equipmentList, query, filters) {
   return equipmentList.filter(equip => {
     let filterAssertion = true
     const includeQuery = equip.title.toLowerCase().includes(query)
-    const hasRarity = rarityNameMap[equip.rarity].toLowerCase().includes(filters.raridade)
+    const hasRarity = rarityMap[equip.rarity].name.toLowerCase().includes(filters.raridade)
     filterAssertion = filterAssertion && hasRarity
 
     return includeQuery && filterAssertion
@@ -222,13 +203,8 @@ export async function getEquipment (message) {
   const { args, options } = getArgumentsAndOptions(message, '=')
   const query = args.join(' ').toLowerCase()
   if (!query) {
-    return message.channel.send({
-      embed: {
-        color: 'LIGHT_GREY',
-        title: ':grey_question: Ajuda: `.equip`',
-        description: commandsHelp.equip
-      }
-    })
+    const helpEmbed = mountCommandHelpEmbed(message)
+    return message.channel.send({ embed: helpEmbed })
   }
   let results = []
   results = findEquipmentByName(equipmentList, query, options)
@@ -242,11 +218,10 @@ export async function getEquipment (message) {
     })
   }
 
-  const equipamentsFoundText = getMoreEquipmentText(results, 20)
   const firstResult = results[0]
   const equipEmbed = {
-    color: rarityColors[rarityNameMap[firstResult.rarity]],
-    title: `${rarityEmojiMap[firstResult.rarity]} ${firstResult.title}`,
+    color: rarityMap[firstResult.rarity].color,
+    title: `${rarityMap[firstResult.rarity].emoji} ${firstResult.title}`,
     thumbnail: { url: `https://builder.methodwakfu.com/assets/icons/items/${firstResult.img}.webp` },
     fields: [
       {
@@ -261,7 +236,7 @@ export async function getEquipment (message) {
       },
       {
         name: 'Raridade',
-        value: rarityNameMap[firstResult.rarity],
+        value: rarityMap[firstResult.rarity].name,
         inline: true
       }
     ]
@@ -285,6 +260,15 @@ export async function getEquipment (message) {
       value: firstResult.conditions.description[0]
     })
   }
+  const recipes = recipesData.filter(recipe => recipe.result.productedItemId === firstResult.id)
+  if (recipes.length) {
+    const recipeFields = getRecipeFields(recipes)
+    equipEmbed.fields = [
+      ...equipEmbed.fields,
+      ...recipeFields
+    ]
+  }
+  const equipamentsFoundText = getMoreEquipmentText(results, 20)
   if (results.length > 1) {
     equipEmbed.footer = {
       text: `Equipamentos encontrados: ${equipamentsFoundText}`
