@@ -56,6 +56,10 @@ Saia de um grupo.
 
 Dica:
 Você também pode usar as reações da mensagem de grupo para entrar, sair ou adicionar/remover classes.`,
+  recipe: `Consulte as receitas de items. 
+Ex: 
+\`.recipe espada de brakmar\`
+\`.recipe cachimbo raridade=mítico\``,
   help: 'Nice try'
 }
 
