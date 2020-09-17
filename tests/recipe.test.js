@@ -135,4 +135,13 @@ describe('getRecipe', () => {
       ]
     })
   })
+
+  it('return a help message if no query was provided', async () => {
+    const content = '.recipe'
+    const userMessage = mockMessage(content)
+    const botMessage = await getRecipe(userMessage)
+    expect(botMessage.embed).toMatchObject({
+      description: commandsHelp.recipe
+    })
+  })
 })

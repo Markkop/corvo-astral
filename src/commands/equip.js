@@ -1,5 +1,5 @@
 import equipmentList from '../../data/equipment.json'
-import { commandsHelp } from './help'
+import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions } from '../utils/message'
 import config from '../config'
 const { rarityMap } = config
@@ -201,13 +201,8 @@ export async function getEquipment (message) {
   const { args, options } = getArgumentsAndOptions(message, '=')
   const query = args.join(' ').toLowerCase()
   if (!query) {
-    return message.channel.send({
-      embed: {
-        color: 'LIGHT_GREY',
-        title: ':grey_question: Ajuda: `.equip`',
-        description: commandsHelp.equip
-      }
-    })
+    const helpEmbed = mountCommandHelpEmbed(message)
+    return message.channel.send({ embed: helpEmbed })
   }
   let results = []
   results = findEquipmentByName(equipmentList, query, options)

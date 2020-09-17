@@ -1,5 +1,5 @@
 import { getArgumentsAndOptions } from '../utils/message'
-import { commandsHelp } from './help'
+import { mountCommandHelpEmbed } from './help'
 
 /**
  * Replies the user with the damage of a calculated attack.
@@ -12,13 +12,8 @@ export function calculateAttackDamage (message) {
   const requiredArgs = ['dmg', 'base', 'res']
   const hasRequiredArgs = requiredArgs.every(requiredArg => Boolean(options[requiredArg]))
   if (!hasRequiredArgs) {
-    return message.channel.send({
-      embed: {
-        color: 'LIGHT_GREY',
-        title: ':grey_question: Ajuda: `.calc`',
-        description: commandsHelp.calc
-      }
-    })
+    const helpEmbed = mountCommandHelpEmbed(message)
+    return message.channel.send({ embed: helpEmbed })
   }
 
   const author = message.author.username

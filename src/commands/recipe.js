@@ -1,6 +1,6 @@
 import recipesData from '../../data/recipes.json'
 import equipmentData from '../../data/equipment.json'
-import { commandsHelp } from './help'
+import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions } from '../utils/message'
 import config from '../config'
 const { rarityMap, jobEmojis } = config
@@ -27,19 +27,6 @@ function findRecipeByName (recipeList, query, options) {
     const filterAssertion = matchesName && matchesRarity
     return filterAssertion
   })
-}
-
-/**
- * Created the embed message with the a help message.
- *
- * @returns {object}
- */
-function mountHelpEmbed () {
-  return {
-    color: 'LIGHT_GREY',
-    title: ':grey_question: Ajuda: `.recipe`',
-    description: commandsHelp.recipe
-  }
 }
 
 /**
@@ -127,7 +114,7 @@ export function getRecipe (message) {
   const { args, options } = getArgumentsAndOptions(message, '=')
   const query = args.join(' ').toLowerCase()
   if (!query) {
-    const helpEmbed = mountHelpEmbed()
+    const helpEmbed = mountCommandHelpEmbed(message)
     return message.channel.send({ embed: helpEmbed })
   }
 

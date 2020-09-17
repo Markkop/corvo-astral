@@ -1,4 +1,4 @@
-import { commandsHelp } from './help'
+import { mountCommandHelpEmbed } from './help'
 import epic from '../../data/sublimations/epic.json'
 import relic from '../../data/sublimations/relic.json'
 import normal from '../../data/sublimations/normal.json'
@@ -84,19 +84,6 @@ const queriesEquivalent = {
   epic: 'épico',
   relic: 'relíquia',
   reliquia: 'relíquia'
-}
-
-/**
- * Created the embed message with the a help message.
- *
- * @returns {object}
- */
-function mountHelpEmbed () {
-  return {
-    color: 'LIGHT_GREY',
-    title: ':grey_question: Ajuda: `.subli`',
-    description: commandsHelp.subli
-  }
 }
 
 /**
@@ -296,7 +283,7 @@ export function getSublimation (message) {
   }
   const normalizedQuery = message.content.split(' ').slice(1).join(' ').toLowerCase()
   if (!normalizedQuery) {
-    const helpEmbed = mountHelpEmbed()
+    const helpEmbed = mountCommandHelpEmbed(message)
     return message.channel.send({ embed: helpEmbed })
   }
   const query = queriesEquivalent[normalizedQuery] || normalizedQuery
