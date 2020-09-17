@@ -4,7 +4,7 @@ import relic from '../../data/sublimations/relic.json'
 import normal from '../../data/sublimations/normal.json'
 import findPermutations from '../utils/permutateString'
 import config from '../config'
-const { rarityColors } = config
+const { rarityMap } = config
 const sublimations = [...epic, ...relic, ...normal]
 
 /**
@@ -122,8 +122,10 @@ function mountSublimationFoundEmbed (results) {
   const firstResult = results[0]
   const isEpicOrRelic = /Épico|Relíquia/.test(firstResult.slots)
   const icon = isEpicOrRelic ? ':gem:' : ':scroll:'
+  const rarityId = Object.keys(rarityMap).find(key => rarityMap[key].name === firstResult.slots)
+  const embedColor = isEpicOrRelic ? rarityMap[rarityId].color : 'LIGHT_GREY'
   const sublimationEmbed = {
-    color: rarityColors[firstResult.slots] || rarityColors.other,
+    color: embedColor,
     url: firstResult.link || 'https://www.wakfu.com/',
     title: `${icon} ${firstResult.name}`,
     thumbnail: { url: firstResult.image || 'https://static.ankama.com/wakfu/portal/game/item/115/81227111.png' },

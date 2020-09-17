@@ -42,7 +42,7 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      color: '#fbfcac',
+      color: 'LIGHT_GREY',
       title: ':scroll: Frenesi',
       url: 'https://www.wakfu.com/',
       thumbnail: {
@@ -320,7 +320,7 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      color: '#fbfcac',
+      color: 'LIGHT_GREY',
       title: ':scroll: Frenesi II',
       url: 'https://www.wakfu.com/',
       thumbnail: {
