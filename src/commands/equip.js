@@ -216,7 +216,6 @@ export async function getEquipment (message) {
     })
   }
 
-  const equipamentsFoundText = getMoreEquipmentText(results, 20)
   const firstResult = results[0]
   const equipEmbed = {
     color: rarityMap[firstResult.rarity].color,
@@ -259,6 +258,7 @@ export async function getEquipment (message) {
       value: firstResult.conditions.description[0]
     })
   }
+  const equipamentsFoundText = getMoreEquipmentText(results, 20)
   if (results.length > 1) {
     equipEmbed.footer = {
       text: `Equipamentos encontrados: ${equipamentsFoundText}`

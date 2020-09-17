@@ -5,6 +5,25 @@ import { getArgumentsAndOptions } from '../utils/message'
 import config from '../config'
 const { rarityMap, jobEmojis } = config
 
+const itemEmojis = {
+  24029: ':droplet:',
+  27093: ':sparkles:',
+  20605: ':adhesive_bandage:',
+  20606: ':adhesive_bandage:',
+  21115: ':adhesive_bandage:',
+  21116: ':adhesive_bandage:',
+  21117: ':adhesive_bandage:',
+  21118: ':adhesive_bandage:',
+  21119: ':adhesive_bandage:',
+  21120: ':adhesive_bandage:',
+  21121: ':adhesive_bandage:',
+  21122: ':adhesive_bandage:',
+  21123: ':adhesive_bandage:',
+  21124: ':adhesive_bandage:',
+  21125: ':adhesive_bandage:',
+  27886: ':adhesive_bandage:'
+}
+
 /**
  * Find recipe based on their name with the query provided.
  *
@@ -43,6 +62,28 @@ function mountNotFoundEmbed () {
 }
 
 /**
+ * Get the text that displays more results.
+ *
+ * @param {object[]} results
+ * @param {number} resultsLimit
+ * @returns {string}
+ */
+function getMoreRecipesText (results, resultsLimit) {
+  const otherRecipes = results.map(recipe => {
+    const recipeResultRarity = recipe.result.rarity
+    const rarityName = recipeResultRarity ? ` (${rarityMap[recipeResultRarity].name})` : ''
+    return `${recipe.result.title.pt}${rarityName}`
+  })
+  if (results.length > resultsLimit) {
+    const firstResults = otherRecipes.slice(0, resultsLimit)
+    const otherResults = otherRecipes.slice(resultsLimit, otherRecipes.length)
+    const moreResultsText = ` e outros ${otherResults.length} resultados`
+    return firstResults.join(', ').trim() + moreResultsText
+  }
+  return otherRecipes.join(', ').trim()
+}
+
+/**
  * Mount the embed for recipes.
  *
  * @param {object[]} results
@@ -57,36 +98,47 @@ function mountRecipeEmbed (results) {
 
   const rarityEmoji = recipeResultRarity ? `${rarityMap[recipeResultRarity].emoji} ` : ''
   const embedColor = firstRecipe.result.rarity ? rarityMap[firstRecipe.result.rarity].color : 'LIGHT_GREY'
+  const jobEmoji = jobEmojis[firstRecipe.job.definition.id]
   const embed = {
     color: embedColor,
     title: `${rarityEmoji}Receita de ${firstRecipe.result.title.pt}`,
     thumbnail: { url: imageUrl },
     fields: [
       {
-        name: ':tools: Profissão',
-        value: firstRecipe.job.title.pt,
+        name: 'Profissão',
+        value: `${jobEmoji} ${firstRecipe.job.title.pt}`,
         inline: true
       },
       {
-        name: ':mortar_board: Nível',
+        name: 'Nível',
         value: firstRecipe.level,
         inline: true
       }
     ]
   }
   recipesWithSameResult.forEach(recipe => {
-    const ingredientsText = recipe.ingredients.reduce((ingredientsText, ingredient) => {
+    const ingredientsText = recipe.ingredients.map(ingredient => {
       const rarityEmoji = ingredient.rarity ? rarityMap[ingredient.rarity].emoji : ''
       const jobEmoji = jobEmojis[ingredient.job]
-      const ingredientEmoji = rarityEmoji || jobEmoji || ':white_small_square:'
+      const itemEmoji = itemEmojis[ingredient.itemId]
+      const ingredientEmoji = rarityEmoji || jobEmoji || itemEmoji || ':white_small_square:'
       const quantity = ingredient.quantity
       const name = ingredient.title.pt
-      const text = `${ingredientEmoji} ${quantity}x ${name}`
-      return `${text}\n${ingredientsText}`
-    }, '')
+      const quantityCharacters = `${quantity}x`.split('')
+      const quantityText = Array(5).fill(' ')
+      quantityText.splice(0, quantityCharacters.length, ...quantityCharacters)
+      return `${ingredientEmoji} \`${quantityText.join('')}\` ${name}`
+    })
+    const orderedByEmojiTexts = ingredientsText.sort((textA, textB) => {
+      const textAhasDefaultEmoji = textA.includes(':white_small_square:')
+      const textBhasDefaultEmoji = textB.includes(':white_small_square:')
+      if (textAhasDefaultEmoji && !textBhasDefaultEmoji) return 1
+      if (!textAhasDefaultEmoji && textBhasDefaultEmoji) return -1
+      return 0
+    })
     embed.fields.push({
       name: 'Ingredientes',
-      value: ingredientsText.trim()
+      value: orderedByEmojiTexts.join('\n')
     })
   })
 
@@ -94,13 +146,9 @@ function mountRecipeEmbed (results) {
   const nonRepatedMoreResults = Array.from(new Set(moreResults.map(recipe => recipe.result.productedItemId))).map(productedItemId => moreResults.find(recipe => recipe.result.productedItemId === productedItemId))
 
   if (nonRepatedMoreResults.length > 1) {
-    const otherRecipes = nonRepatedMoreResults.map(recipe => {
-      const recipeResultRarity = recipe.result.rarity
-      const rarityEmoji = recipeResultRarity ? `${rarityMap[recipeResultRarity].emoji} ` : ''
-      return `${rarityEmoji}${recipe.result.title.pt}`
-    })
+    const moreRecipesText = getMoreRecipesText(nonRepatedMoreResults, 20)
     embed.footer = {
-      text: otherRecipes.join(', ')
+      text: `Receitas encontradas: ${moreRecipesText}`
     }
   }
   return embed
