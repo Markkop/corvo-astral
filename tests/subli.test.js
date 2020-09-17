@@ -352,6 +352,33 @@ describe('getSublimation', () => {
     })
   })
 
+  it('return a matching sublimation with a recipe', async () => {
+    const content = '.subli solidez'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
+    expect(botMessage.embed.fields).toEqual(expect.arrayContaining([
+      {
+        inline: true,
+        name: 'Profissão',
+        value: ':chair: Marceneiro'
+      },
+      {
+        inline: true,
+        name: 'Nível',
+        value: 60
+      },
+      {
+        name: 'Ingredientes',
+        value: `:chair: \`10x  \` Suporte bruto
+:pick: \`15x  \` Ametista Coração-de-Dragão
+:sparkles: \`50x  \` Pó
+:white_small_square: \`12x  \` Chifre de Escara
+:white_small_square: \`10x  \` Canino Real
+:white_small_square: \`40x  \` Sopro de Enxofre`
+      }
+    ]))
+  })
+
   it('returns the correct sublimation by matching its alias', async () => {
     const content = '.subli retorno'
     const userMessage = mockMessage(content)

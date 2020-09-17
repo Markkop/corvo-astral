@@ -1,4 +1,6 @@
 import equipmentList from '../../data/equipment.json'
+import recipesData from '../../data/recipes.json'
+import { getRecipeFields } from './recipe'
 import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions } from '../utils/message'
 import config from '../config'
@@ -257,6 +259,14 @@ export async function getEquipment (message) {
       name: 'Condições',
       value: firstResult.conditions.description[0]
     })
+  }
+  const recipes = recipesData.filter(recipe => recipe.result.productedItemId === firstResult.id)
+  if (recipes.length) {
+    const recipeFields = getRecipeFields(recipes)
+    equipEmbed.fields = [
+      ...equipEmbed.fields,
+      ...recipeFields
+    ]
   }
   const equipamentsFoundText = getMoreEquipmentText(results, 20)
   if (results.length > 1) {

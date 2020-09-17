@@ -84,38 +84,28 @@ function getMoreRecipesText (results, resultsLimit) {
 }
 
 /**
- * Mount the embed for recipes.
+ * Get recipe fields for embed message.
  *
- * @param {object[]} results
- * @returns {object}
+ * @param {object[]} recipeResults
+ * @returns {object[]}
  */
-function mountRecipeEmbed (results) {
-  const firstRecipe = results[0]
-  const recipeResultRarity = firstRecipe.result.rarity
-  const equipment = equipmentData.find(equip => equip.id === firstRecipe.result.productedItemId)
-  const imageUrl = equipment ? `https://builder.methodwakfu.com/assets/icons/items/${equipment.img}.webp` : 'https://static.ankama.com/wakfu/portal/game/item/115/71919456.png'
-  const recipesWithSameResult = results.filter(recipe => recipe.result.productedItemId === firstRecipe.result.productedItemId)
-
-  const rarityEmoji = recipeResultRarity ? `${rarityMap[recipeResultRarity].emoji} ` : ''
-  const embedColor = firstRecipe.result.rarity ? rarityMap[firstRecipe.result.rarity].color : 'LIGHT_GREY'
+export function getRecipeFields (recipeResults) {
+  const firstRecipe = recipeResults[0]
+  const recipesWithSameResult = recipeResults.filter(recipe => recipe.result.productedItemId === firstRecipe.result.productedItemId)
   const jobEmoji = jobEmojis[firstRecipe.job.definition.id]
-  const embed = {
-    color: embedColor,
-    title: `${rarityEmoji}Receita de ${firstRecipe.result.title.pt}`,
-    thumbnail: { url: imageUrl },
-    fields: [
-      {
-        name: 'Profissão',
-        value: `${jobEmoji} ${firstRecipe.job.title.pt}`,
-        inline: true
-      },
-      {
-        name: 'Nível',
-        value: firstRecipe.level,
-        inline: true
-      }
-    ]
-  }
+
+  const fields = [
+    {
+      name: 'Profissão',
+      value: `${jobEmoji} ${firstRecipe.job.title.pt}`,
+      inline: true
+    },
+    {
+      name: 'Nível',
+      value: firstRecipe.level,
+      inline: true
+    }
+  ]
   recipesWithSameResult.forEach(recipe => {
     const ingredientsText = recipe.ingredients.map(ingredient => {
       const rarityEmoji = ingredient.rarity ? rarityMap[ingredient.rarity].emoji : ''
@@ -136,11 +126,34 @@ function mountRecipeEmbed (results) {
       if (!textAhasDefaultEmoji && textBhasDefaultEmoji) return -1
       return 0
     })
-    embed.fields.push({
+    fields.push({
       name: 'Ingredientes',
       value: orderedByEmojiTexts.join('\n')
     })
   })
+  return fields
+}
+
+/**
+ * Mount the embed for recipes.
+ *
+ * @param {object[]} results
+ * @returns {object}
+ */
+function mountRecipeEmbed (results) {
+  const firstRecipe = results[0]
+  const recipeResultRarity = firstRecipe.result.rarity
+  const equipment = equipmentData.find(equip => equip.id === firstRecipe.result.productedItemId)
+  const imageUrl = equipment ? `https://builder.methodwakfu.com/assets/icons/items/${equipment.img}.webp` : 'https://static.ankama.com/wakfu/portal/game/item/115/71919456.png'
+
+  const rarityEmoji = recipeResultRarity ? `${rarityMap[recipeResultRarity].emoji} ` : ''
+  const embedColor = firstRecipe.result.rarity ? rarityMap[firstRecipe.result.rarity].color : 'LIGHT_GREY'
+  const embed = {
+    color: embedColor,
+    title: `${rarityEmoji}Receita de ${firstRecipe.result.title.pt}`,
+    thumbnail: { url: imageUrl },
+    fields: getRecipeFields(results)
+  }
 
   const moreResults = results.filter(recipe => recipe.result.productedItemId !== firstRecipe.result.productedItemId)
   const nonRepatedMoreResults = Array.from(new Set(moreResults.map(recipe => recipe.result.productedItemId))).map(productedItemId => moreResults.find(recipe => recipe.result.productedItemId === productedItemId))

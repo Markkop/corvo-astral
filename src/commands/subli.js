@@ -1,4 +1,6 @@
 import { mountCommandHelpEmbed } from './help'
+import { getRecipeFields } from './recipe'
+import recipesData from '../../data/recipes.json'
 import epic from '../../data/sublimations/epic.json'
 import relic from '../../data/sublimations/relic.json'
 import normal from '../../data/sublimations/normal.json'
@@ -135,6 +137,14 @@ function mountSublimationFoundEmbed (results) {
         name: 'Obtenção:',
         value: firstResult.source
       }
+    ]
+  }
+  const recipes = recipesData.filter(recipe => recipe.result.productedItemId === firstResult.id)
+  if (recipes.length) {
+    const recipeFields = getRecipeFields(recipes)
+    sublimationEmbed.fields = [
+      ...sublimationEmbed.fields,
+      ...recipeFields
     ]
   }
   const hasFoundMoreThanOne = results.length > 1
