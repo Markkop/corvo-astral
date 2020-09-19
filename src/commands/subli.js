@@ -1,13 +1,12 @@
 import { mountCommandHelpEmbed } from './help'
 import { getRecipeFields } from './recipe'
 import recipesData from '../../data/recipes.json'
-import epic from '../../data/sublimations/epic.json'
-import relic from '../../data/sublimations/relic.json'
-import normal from '../../data/sublimations/normal.json'
+import itemsData from '../../data/items.json'
 import findPermutations from '../utils/permutateString'
 import config from '../config'
-const { rarityMap } = config
-const sublimations = [...epic, ...relic, ...normal]
+const { rarityMap, lang } = config
+
+const sublimations = itemsData.filter(item => Boolean(item.sublimation))
 
 /**
  * Parses slot combination string to emojis strings.
@@ -34,14 +33,7 @@ function parseSlotsToEmojis (slots) {
  */
 function findSublimationByName (sublimationList, query) {
   query = query.replace(/2|ll/g, 'ii').replace(/3|lll/g, 'iii')
-  return sublimationList.filter(subli => {
-    const matchedName = subli.name.toLowerCase().includes(query)
-    if (matchedName) {
-      return true
-    }
-    const matchedAlias = subli.aliases && subli.aliases.some(alias => alias.toLowerCase().includes(query))
-    return matchedAlias
-  })
+  return sublimationList.filter(subli => subli.title[lang].toLowerCase().includes(query))
 }
 
 /**
@@ -52,7 +44,7 @@ function findSublimationByName (sublimationList, query) {
  * @returns {object|object[]}
  */
 function findSublimationBySource (sublimationList, query) {
-  return sublimationList.filter(subli => subli.source.toLowerCase().includes(query))
+  return sublimationList.filter(subli => subli.sublimation.source[lang].toLowerCase().includes(query))
 }
 
 /**
@@ -70,22 +62,15 @@ function findSublimationByMatchingSlots (sublimationList, query) {
     const secondCombination = query.slice(1, 4)
     const firstCombinationRegex = new RegExp(firstCombination.replace(/w/g, '[r|g|b]{1}'))
     const secondCombinationRegex = new RegExp(secondCombination.replace(/w/g, '[r|g|b]{1}'))
-    const firstCombinationResults = sublimationList.filter(subli => firstCombinationRegex.test(subli.slots.toLowerCase()))
+    const firstCombinationResults = sublimationList.filter(subli => firstCombinationRegex.test(subli.sublimation.slots.toLowerCase()))
     const secondCombinationResults = sublimationList.filter(subli => {
       const isRepeated = firstCombinationResults.includes(subli)
-      const matchesCombination = secondCombinationRegex.test(subli.slots.toLowerCase())
+      const matchesCombination = secondCombinationRegex.test(subli.sublimation.slots.toLowerCase())
       return matchesCombination && !isRepeated
     })
     return [...firstCombinationResults, ...secondCombinationResults]
   }
-  return sublimationList.filter(subli => regexQuery.test(subli.slots.toLowerCase()))
-}
-
-const queriesEquivalent = {
-  epico: 'épico',
-  epic: 'épico',
-  relic: 'relíquia',
-  reliquia: 'relíquia'
+  return sublimationList.filter(subli => regexQuery.test(subli.sublimation.slots.toLowerCase()))
 }
 
 /**
@@ -109,33 +94,34 @@ function mountNotFoundEmbed () {
  */
 function mountSublimationFoundEmbed (results) {
   const firstResult = results[0]
-  const isEpicOrRelic = /Épico|Relíquia/.test(firstResult.slots)
+  const sublimation = firstResult.sublimation
+  const isEpicOrRelic = /epic|relic/.test(sublimation.slots)
+  const sublimationRarity = sublimation.slots === 'epic' ? 7 : 5
   const icon = isEpicOrRelic ? ':gem:' : ':scroll:'
-  const rarityId = Object.keys(rarityMap).find(key => rarityMap[key].name === firstResult.slots)
-  const embedColor = isEpicOrRelic ? rarityMap[rarityId].color : 'LIGHT_GREY'
+  const embedColor = isEpicOrRelic ? rarityMap[sublimationRarity].color : rarityMap[3].color
+  const maxStack = firstResult.description[lang].replace(/\D/g, '')
   const sublimationEmbed = {
     color: embedColor,
-    url: firstResult.link || 'https://www.wakfu.com/',
-    title: `${icon} ${firstResult.name}`,
-    thumbnail: { url: firstResult.image || 'https://static.ankama.com/wakfu/portal/game/item/115/81227111.png' },
+    title: `${icon} ${firstResult.title[lang]}`,
+    thumbnail: { url: `https://static.ankama.com/wakfu/portal/game/item/115/${firstResult.imageId}.png` },
     fields: [
       {
         name: 'Slot',
-        value: isEpicOrRelic ? firstResult.slots : parseSlotsToEmojis(firstResult.slots),
+        value: isEpicOrRelic ? rarityMap[sublimationRarity].name[lang] : parseSlotsToEmojis(sublimation.slots),
         inline: true
       },
       {
         name: 'Max Stacks',
-        value: firstResult.maxStack || '1',
+        value: maxStack || '1',
         inline: true
       },
       {
         name: 'Efeitos',
-        value: firstResult.effects
+        value: sublimation.effects[lang]
       },
       {
         name: 'Obtenção:',
-        value: firstResult.source
+        value: sublimation.source[lang].trim()
       }
     ]
   }
@@ -232,7 +218,7 @@ function mountPermutatedSublimationFoundEmbed (results, queriedSlotsText) {
  * @returns {object}
  */
 function findSublimations (sublimations, query, hasAnyOrderArgument) {
-  const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|épico|relíquia/.test(query)
+  const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|epic|relic/.test(query)
   let results = []
   let foundBy = ''
 
@@ -274,7 +260,22 @@ function findSublimations (sublimations, query, hasAnyOrderArgument) {
  * @returns {string}
  */
 function getSublimationListText (results) {
-  return results.map(subli => subli.name).join(', ').trim()
+  return results.map(subli => subli.title[lang]).join(', ').trim()
+}
+
+/**
+ * Find a matching equivalent query fro epic and relic sublimation rarities.
+ *
+ * @param {string} query
+ * @returns {string}
+ */
+function findEquivalentQuery (query) {
+  const epicNames = rarityMap[7].name
+  const relicNames = rarityMap[5].name
+  return [epicNames, relicNames].reduce((equivalentQuery, names) => {
+    const eq = Object.keys(names).find(key => names[key].toLowerCase() === query)
+    return eq ? names.en.toLowerCase() : equivalentQuery
+  }, '')
 }
 
 /**
@@ -292,18 +293,19 @@ export function getSublimation (message) {
     message.content = message.content.replace(options.anyOrder, '').trim()
   }
   const normalizedQuery = message.content.split(' ').slice(1).join(' ').toLowerCase()
+  const equivalentQuery = findEquivalentQuery(normalizedQuery)
   if (!normalizedQuery) {
     const helpEmbed = mountCommandHelpEmbed(message)
     return message.channel.send({ embed: helpEmbed })
   }
-  const query = queriesEquivalent[normalizedQuery] || normalizedQuery
+  const query = equivalentQuery || normalizedQuery
   const { results, foundBy } = findSublimations(sublimations, query, hasAnyOrderArgument)
   if (!results.length) {
     const notFoundEmbed = mountNotFoundEmbed()
     return message.channel.send({ embed: notFoundEmbed })
   }
 
-  const isEpicOrRelic = /épico|relíquia/.test(query)
+  const isEpicOrRelic = /epic|relic/.test(query)
   const queriedSlotsText = foundBy === 'slots' && !isEpicOrRelic ? parseSlotsToEmojis(query) : query
 
   if (foundBy === 'permutatedSlots') {

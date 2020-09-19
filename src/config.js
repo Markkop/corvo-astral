@@ -1,4 +1,5 @@
 export default {
+  lang: 'pt',
   prefix: '.',
   almanaxChannelName: 'almanax',
   groupListingChannelName: 'listagem-de-grupos',
@@ -24,42 +25,82 @@ export default {
   },
   rarityMap: {
     1: {
-      name: 'Comum',
+      name: {
+        en: 'Unusual',
+        es: 'Inhabituel',
+        fr: 'Inhabituel',
+        pt: 'Comum'
+      },
       emoji: ':white_circle:',
       color: 'LIGHT_GREY'
     },
     2: {
-      name: 'Raro',
+      name: {
+        en: 'Rare',
+        es: 'Raro',
+        fr: 'Rare',
+        pt: 'Raro'
+      },
       emoji: ':green_circle:',
       color: '#28f18b'
     },
     3: {
-      name: 'Mítico',
+      name: {
+        en: 'Mythical',
+        es: 'Mítico',
+        fr: 'Mythique',
+        pt: 'Mítico'
+      },
       emoji: ':orange_circle:',
       color: '#fd8e39'
     },
     4: {
-      name: 'Lendário',
+      name: {
+        en: 'Legendary',
+        es: 'Legendario',
+        fr: 'Légendaire',
+        pt: 'Lendário'
+      },
       emoji: ':yellow_circle:',
       color: '#fede71'
     },
     5: {
-      name: 'Relíquia',
+      name: {
+        en: 'Relic',
+        es: 'Reliquia',
+        fr: 'Relique',
+        pt: 'Relíquia'
+      },
       emoji: ':purple_circle:',
       color: '#ff47e7'
     },
     6: {
-      name: 'Anelembrança',
+      name: {
+        en: 'Souvenir',
+        es: 'Recuerdo',
+        fr: 'Souvenir',
+        pt: 'Anelembrança'
+      },
       emoji: ':blue_circle:',
       color: '#8fc7e2'
     },
     7: {
-      name: 'Épico',
+      name: {
+        en: 'Epic',
+        es: 'Epique',
+        fr: 'Epique',
+        pt: 'Épico'
+      },
       emoji: ':purple_circle:',
       color: '#fd87ba'
     },
     10: {
-      name: 'Impossível',
+      name: {
+        en: 'Impossible',
+        es: 'Impossible',
+        fr: 'Impossible',
+        pt: 'Impossível'
+      },
       emoji: ':purple_circle:',
       color: '#ff47e7'
     }

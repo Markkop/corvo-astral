@@ -10,7 +10,6 @@ describe('getSublimation', () => {
     expect(botMessage.embed).toEqual({
       color: '#fd87ba',
       title: ':gem: Brutalidade',
-      url: 'https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/25796-brutality',
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/68325796.png'
       },
@@ -42,9 +41,8 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      color: 'LIGHT_GREY',
+      color: '#fd8e39',
       title: ':scroll: Frenesi',
-      url: 'https://www.wakfu.com/',
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/81227111.png'
       },
@@ -168,7 +166,7 @@ describe('getSublimation', () => {
         },
         {
           name: ':red_square: :blue_square: :green_square: (3)',
-          value: 'Dimensionalidade, Muralha, Lobo solitário'
+          value: 'Dimensionalidade, Muralha, Lobo Solitário'
         },
         {
           name: ':green_square: :red_square: :blue_square: (2)',
@@ -209,7 +207,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Sublimações',
-          value: 'Assolação, Carnificina, Evasão, Reprovação, Espanto, Dimensionalidade, Voltar, Crítico Berserk, Visibilidade, Assolação II, Evasão II, Esquiva Berserk, Poço de Vitalidade, Influência, Muralha, Retorno II, Influência II, Especialista em Golpes Críticos, Lobo solitário, Determinação, Tenacidade, Solidez, Topologia, Frenesi, Teoria da Matéria, Barreira a Distância, Barreira Corpo a Corpo, Tenacidade II, Parada Berserk, Frenesi II, Ciclotimia'
+          value: 'Assolação, Carnificina, Evasão, Reprovação, Espanto, Dimensionalidade, Voltar, Crítico Berserk, Visibilidade, Assolação II, Evasão II, Esquiva Berserk, Poço de Vitalidade, Influência, Muralha, Retorno II, Influência II, Especialista em Golpes Críticos, Lobo Solitário, Determinação, Tenacidade, Solidez, Topologia, Frenesi, Teoria da Matéria, Barreira a Distância, Barreira Corpo a Corpo, Tenacidade II, Parada Berserk, Frenesi II, Ciclotimia'
         }
       ]
     })
@@ -299,7 +297,7 @@ describe('getSublimation', () => {
       fields: [
         {
           name: 'Busca',
-          value: 'épico',
+          value: 'epic',
           inline: true
         },
         {
@@ -309,7 +307,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Sublimações',
-          value: 'Brutalidade, Precisão Cirúrgica, Medida, Desenlace, Inflexibilidade, Constância, Saúde de Ferro, Arte do Posicionamento, Anatomia, Manejo: Duas Mãos, Manejo: Adaga, Manejo: Escudo, Pacto Wakfu, Concentração Elementar, Força Hercúlea'
+          value: 'Inflexibilidade, Constância, Desenlace, Precisão Cirúrgica, Medida, Saúde de Ferro, Arte do posicionamento, Anatomia, Brutalidade, Força Hercúlea, Manejo: Duas mãos, Manejo: Adaga, Manejo: Escudo, Pacto Wakfu, Concentração Elementar'
         }
       ]
     })
@@ -320,9 +318,8 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      color: 'LIGHT_GREY',
+      color: '#fd8e39',
       title: ':scroll: Frenesi II',
-      url: 'https://www.wakfu.com/',
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/81227111.png'
       },
@@ -343,7 +340,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Obtenção:',
-          value: 'Bruxugo de Bler, o Furioso (1%) [3 stele/estela]'
+          value: 'Bruxugo de Bler, o Furioso (1%) (3 estelas)'
         }
       ],
       footer: {
@@ -377,14 +374,6 @@ describe('getSublimation', () => {
 :white_small_square: \`40x  \` Sopro de Enxofre`
       }
     ]))
-  })
-
-  it('returns the correct sublimation by matching its alias', async () => {
-    const content = '.subli retorno'
-    const userMessage = mockMessage(content)
-    const botMessage = await getSublimation(userMessage)
-    expect(botMessage.embed.title).toEqual(':scroll: Voltar')
-    expect(botMessage.embed.footer.text).toEqual('Sublimações encontradas: Voltar, Retorno II')
   })
 
   it('returns a not found message if no sublimation was found', async () => {
