@@ -1,12 +1,10 @@
 {
   "name": "corvo-astral",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A Discord Bot that serves as an Wakfu helper",
   "main": "dist/index.js",
   "scripts": {
     "start": "npm run build && node dist/index.js",
-    "import:equipment": "npm run build && node dist/utils/importEquipment.js",
-    "identify": "npm run build && node dist/utils/identifyValues.js",
     "build": "babel src -d dist",
     "lint": "eslint .",
     "test": "jest tests/"
