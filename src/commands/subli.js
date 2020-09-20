@@ -173,7 +173,7 @@ function mountSublimationsFoundListEmbed (results, queriedSlotsText, lang) {
       },
       {
         name: capitalize(str.sublimations[lang]),
-        value: getSublimationListText(results)
+        value: getSublimationListText(results, lang)
       }
     ]
   }
@@ -208,7 +208,7 @@ function mountPermutatedSublimationFoundEmbed (results, queriedSlotsText, lang) 
   }
   results.forEach(permutatedResult => {
     const slotsAsEmojis = parseSlotsToEmojis(permutatedResult.slots)
-    const namedResults = getSublimationListText(permutatedResult.results)
+    const namedResults = getSublimationListText(permutatedResult.results, lang)
     const resultsLength = permutatedResult.results.length
     embed.fields.push({
       name: `${slotsAsEmojis} (${resultsLength})`,
@@ -275,7 +275,7 @@ function getSublimationListText (results, lang) {
 }
 
 /**
- * Find a matching equivalent query fro epic and relic sublimation rarities.
+ * Find a matching equivalent query from epic and relic sublimation rarities.
  *
  * @param {string} query
  * @returns {string}
@@ -309,7 +309,7 @@ export function getSublimation (message) {
   const normalizedQuery = args.join(' ').toLowerCase()
   const equivalentQuery = findEquivalentQuery(normalizedQuery)
   if (!normalizedQuery) {
-    const helpEmbed = mountCommandHelpEmbed(message)
+    const helpEmbed = mountCommandHelpEmbed(message, lang)
     return message.channel.send({ embed: helpEmbed })
   }
   const query = equivalentQuery || normalizedQuery

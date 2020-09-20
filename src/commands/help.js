@@ -3,6 +3,7 @@ import config from '../config'
 import commandsHelp from '../../data/helpMessages'
 import { setLanguage } from '../utils/language'
 const { defaultConfig: { prefix } } = config
+export { commandsHelp }
 
 const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
 
