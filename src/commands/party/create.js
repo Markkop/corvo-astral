@@ -13,12 +13,12 @@ const { classEmoji } = config
  */
 export async function createParty (message, options) {
   try {
-    const hasRequiredOptions = options.nome
+    const hasRequiredOptions = options.name
     if (!hasRequiredOptions) {
       return message.channel.send({
         embed: {
           color: 'LIGHT_GREY',
-          title: ':grey_question: Ajuda: `.party create`',
+          title: ':grey_question: Help: `.party create`',
           description: commandsHelp.party
         }
       })
@@ -31,11 +31,11 @@ export async function createParty (message, options) {
       identifier = Number(lastPartyMessageEmbed.value) + 1
     }
     const maxVagas = 50
-    const vagas = options.vagas >= maxVagas ? maxVagas : options.vagas
+    const vagas = options.slots >= maxVagas ? maxVagas : options.slots
     const memberSlots = Array(Number(vagas) || 6).fill(':small_orange_diamond:')
     memberSlots[0] = `:small_orange_diamond: <@${message.author.id}> | `
     const embed = {
-      title: `Grupo: ${options.nome}`,
+      title: `Party: ${options.name}`,
       fields: [
         {
           name: ':label: ID',
@@ -43,22 +43,22 @@ export async function createParty (message, options) {
           inline: true
         },
         {
-          name: ':calendar_spiral: Data',
-          value: options.data || 'A combinar',
+          name: ':calendar_spiral: Date',
+          value: options.data || 'To be combined',
           inline: true
         },
         {
-          name: ':skull: Nível',
+          name: ':skull: Level',
           value: options.lvl || '1-215',
           inline: true
         },
         {
-          name: ':busts_in_silhouette: Participantes',
+          name: ':busts_in_silhouette: Members',
           value: memberSlots.join('\n')
         }
       ],
       footer: {
-        text: `Criado por ${message.author.username}`
+        text: `Created by ${message.author.username}`
       }
     }
 

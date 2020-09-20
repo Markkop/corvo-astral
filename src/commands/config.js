@@ -25,7 +25,7 @@ export async function configGuild (message) {
     const validLangs = ['en', 'pt', 'fr', 'es']
     const isValidLang = validLangs.some(lang => options.lang === lang)
     if (!isValidLang) {
-      return message.channel.send(`${options.lang} não é um idioma válido.`)
+      return message.channel.send(`${options.lang} is not a valid language.`)
     }
 
     const guildConfig = config.guildsOptions.find(config => config.id === message.guild.id)

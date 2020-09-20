@@ -15,7 +15,7 @@ export async function leaveParty (message, options) {
     return message.channel.send({
       embed: {
         color: 'LIGHT_GREY',
-        title: ':grey_question: Ajuda: `.party leave`',
+        title: ':grey_question: Help: `.party leave`',
         description: commandsHelp.party
       }
     })
@@ -26,8 +26,8 @@ export async function leaveParty (message, options) {
     return message.channel.send({
       embed: {
         color: '#bb1327',
-        title: ':x: Erro ao usar o comando party',
-        description: 'Não foi encontrada nenhuma mensagem de grupo no canal "grupos"'
+        title: ':x: Error on using party command',
+        description: 'No party message has been found on channel "grupos"'
       }
     })
   }
@@ -37,8 +37,8 @@ export async function leaveParty (message, options) {
     return message.channel.send({
       embed: {
         color: '#bb1327',
-        title: ':x: Erro ao sair o grupo',
-        description: 'Nenhum dos últimos 100 grupos encontrado com esse id'
+        title: ':x: Error while leaving party',
+        description: 'This ID was not found in the last 100 parties'
       }
     })
   }
@@ -50,8 +50,8 @@ export async function leaveParty (message, options) {
     return message.channel.send({
       embed: {
         color: '#bb1327',
-        title: ':x: Erro ao sair o grupo',
-        description: 'Você não está nesse grupo :eyes:'
+        title: ':x: Error while leaving party',
+        description: "You're not in this party :eyes:"
       }
     })
   }
@@ -68,7 +68,7 @@ export async function leaveParty (message, options) {
     }
   }
 
-  matchingPartyEmbed.fields.find(field => field.name.includes('Participantes')).value = newPartySlots.join('\n')
+  matchingPartyEmbed.fields.find(field => field.name.includes('Members')).value = newPartySlots.join('\n')
 
   const embed = { ...matchingPartyEmbed }
   const newEmbed = new Discord.MessageEmbed(embed)

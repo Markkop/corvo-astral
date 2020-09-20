@@ -15,7 +15,7 @@ export async function updateParty (message, options) {
     return message.channel.send({
       embed: {
         color: 'LIGHT_GREY',
-        title: ':grey_question: Ajuda: `.party update`',
+        title: ':grey_question: Help: `.party update`',
         description: commandsHelp.party
       }
     })
@@ -26,8 +26,8 @@ export async function updateParty (message, options) {
     return message.channel.send({
       embed: {
         color: '#bb1327',
-        title: ':x: Erro ao usar o comando party',
-        description: 'Não foi encontrada nenhuma mensagem de grupo no canal "grupos"'
+        title: ':x: Error on using party command',
+        description: 'No party message has been found on channel "grupos"'
       }
     })
   }
@@ -37,21 +37,21 @@ export async function updateParty (message, options) {
     return message.channel.send({
       embed: {
         color: '#bb1327',
-        title: ':x: Erro ao atualizar o grupo',
-        description: 'Nenhum dos últimos 100 grupos encontrado com esse id'
+        title: ':x: Error while updating party',
+        description: 'This ID was not found in the last 100 parties'
       }
     })
   }
 
   const matchingPartyEmbed = matchingParty.embeds[0]
-  const partySlots = matchingPartyEmbed.fields.find(field => field.name.includes('Participantes')).value.split('\n')
+  const partySlots = matchingPartyEmbed.fields.find(field => field.name.includes('Members')).value.split('\n')
   const userPartySlot = partySlots.find(slot => slot.includes(message.author.id))
   if (!userPartySlot) {
     return message.channel.send({
       embed: {
         color: '#bb1327',
-        title: ':x: Erro ao atualizar o grupo',
-        description: 'Você não está nesse grupo :eyes:'
+        title: ':x: Error while updating party',
+        description: "You're not in this party :eyes:"
       }
     })
   }
@@ -59,12 +59,12 @@ export async function updateParty (message, options) {
   const userPartySlotIndex = partySlots.indexOf(userPartySlot)
   const isPartyLeader = userPartySlotIndex === 0
   if (isPartyLeader) {
-    matchingPartyEmbed.title = options.nome ? `Grupo: ${options.nome}` : matchingPartyEmbed.title
+    matchingPartyEmbed.title = options.nome ? `Party: ${options.nome}` : matchingPartyEmbed.title
     if (options.desc) {
       matchingPartyEmbed.description = options.desc
     }
-    matchingPartyEmbed.fields.find(field => field.name.includes('Nível')).value = options.lvl || matchingPartyEmbed.fields.find(field => field.name.includes('Nível')).value
-    matchingPartyEmbed.fields.find(field => field.name.includes('Data')).value = options.data || matchingPartyEmbed.fields.find(field => field.name.includes('Data')).value
+    matchingPartyEmbed.fields.find(field => field.name.includes('Level')).value = options.lvl || matchingPartyEmbed.fields.find(field => field.name.includes('Level')).value
+    matchingPartyEmbed.fields.find(field => field.name.includes('Date')).value = options.data || matchingPartyEmbed.fields.find(field => field.name.includes('Date')).value
   }
 
   const hasClassOption = Boolean(options.class)
@@ -72,15 +72,15 @@ export async function updateParty (message, options) {
     return message.channel.send({
       embed: {
         color: '#bb1327',
-        title: ':x: Erro ao atualizar o grupo',
-        description: 'Você não é o líder =/'
+        title: ':x: Error while updating party',
+        description: "You're not the leader =/"
       }
     })
   }
 
   if (hasClassOption) {
     partySlots[userPartySlotIndex] = `:small_orange_diamond: <@${message.author.id}> | ${options.class}`
-    matchingPartyEmbed.fields.find(field => field.name.includes('Participantes')).value = partySlots.join('\n')
+    matchingPartyEmbed.fields.find(field => field.name.includes('Members')).value = partySlots.join('\n')
   }
 
   const embed = { ...matchingPartyEmbed }

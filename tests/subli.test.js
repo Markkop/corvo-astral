@@ -4,40 +4,40 @@ import { mockMessage } from './testUtils'
 
 describe('getSublimation', () => {
   it('returns a sublimation when finding only one result', async () => {
-    const content = '.subli brutalidade'
+    const content = '.subli brutality'
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#fd87ba',
-      title: ':gem: Brutalidade',
+      title: ':gem: Brutality',
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/68325796.png'
       },
       fields: [
         {
-          name: 'Slot',
-          value: 'Épico',
+          name: 'Slots',
+          value: 'Epic',
           inline: true
         },
         {
-          name: 'Max Stacks',
+          name: 'Max stacking',
           value: '1',
           inline: true
         },
         {
-          name: 'Efeitos',
-          value: 'Se Domínio Zona > Domínio Corpo a Corpo, Domínio Corpo a Corpo é adicionado ao Domínio Zona (max 800) no começo do combate, perdendo a mesma quantidade em Domínio Distância.'
+          name: 'Effects',
+          value: "If the bearer has more Area Mastery than Melee Mastery, adds the bearer's Melee Mastery to their Area Mastery and removes an equal amount of Distance Mastery at the start of combat."
         },
         {
-          name: 'Obtenção:',
-          value: 'Baú de Final de Temporada de Chefe Supremo (UB)'
+          name: 'Acquiring',
+          value: 'End-of-season Ultimate Boss Chest (UB)'
         }
       ]
     })
   })
 
   it('returns a sublimation and more results when finding more than one', async () => {
-    const content = '.subli frenesi'
+    const content = '.subli frenzy'
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
@@ -48,21 +48,21 @@ describe('getSublimation', () => {
       },
       fields: [
         {
-          name: 'Slot',
+          name: 'Slots',
           value: ':red_square: :green_square: :blue_square:',
           inline: true
         },
         {
-          name: 'Max Stacks',
+          name: 'Max stacking',
           value: '1',
           inline: true
         },
         {
-          name: 'Efeitos',
+          name: 'Effects',
           value: '-20% de Danos causados, No começo do turno: 10% dos danos infligidos por inimigo afetado no turno anterior'
         },
         {
-          name: 'Obtenção:',
+          name: 'Acquiring',
           value: 'Aguabrial (2%)'
         }
       ],
@@ -325,21 +325,21 @@ describe('getSublimation', () => {
       },
       fields: [
         {
-          name: 'Slot',
+          name: 'Slots',
           value: ':red_square: :green_square: :blue_square:',
           inline: true
         },
         {
-          name: 'Max Stacks',
+          name: 'Max stacking',
           value: '1',
           inline: true
         },
         {
-          name: 'Efeitos',
+          name: 'Effects',
           value: '-15% de Danos causados, No começo do turno: 5% dos danos infligidos por entidade afetada no turno anterior.'
         },
         {
-          name: 'Obtenção:',
+          name: 'Acquiring',
           value: 'Bruxugo de Bler, o Furioso (1%) (3 estelas)'
         }
       ],

@@ -26,7 +26,7 @@ export function partyList (message) {
     return message.channel.send({
       embed: {
         color: 'LIGHT_GREY',
-        title: ':grey_question: Ajuda: `.party join`',
+        title: ':grey_question: Help: `.party join`',
         description: commandsHelp.party
       }
     })

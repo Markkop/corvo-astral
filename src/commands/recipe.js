@@ -3,6 +3,8 @@ import equipmentData from '../../data/equipment.json'
 import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
+import { capitalize } from '../utils/strings'
+import str from '../stringsLang'
 import config from '../config'
 const { rarityMap, jobsMap } = config
 
@@ -80,7 +82,7 @@ function getMoreRecipesText (results, resultsLimit, lang) {
   if (results.length > resultsLimit) {
     const firstResults = otherRecipes.slice(0, resultsLimit)
     const otherResults = otherRecipes.slice(resultsLimit, otherRecipes.length)
-    const moreResultsText = ` e outros ${otherResults.length} resultados`
+    const moreResultsText = ` ${str.andOther[lang]} ${otherResults.length} ${str.results[lang]}`
     return firstResults.join(', ').trim() + moreResultsText
   }
   return otherRecipes.join(', ').trim()
@@ -102,12 +104,12 @@ export function getRecipeFields (recipeResults, lang) {
 
   const fields = [
     {
-      name: 'Profissão',
+      name: capitalize(str.job[lang]),
       value: `${jobEmoji} ${jobName}`,
       inline: true
     },
     {
-      name: 'Nível',
+      name: capitalize(str.level[lang]),
       value: firstRecipe.level,
       inline: true
     }
@@ -134,7 +136,7 @@ export function getRecipeFields (recipeResults, lang) {
       return 0
     })
     fields.push({
-      name: 'Ingredientes',
+      name: capitalize(str.ingredients[lang]),
       value: orderedByEmojiTexts.join('\n')
     })
   })
@@ -159,7 +161,7 @@ function mountRecipeEmbed (results, lang) {
   const embedColor = firstRecipe.result.rarity ? rarityMap[firstRecipe.result.rarity].color : 'LIGHT_GREY'
   const embed = {
     color: embedColor,
-    title: `${rarityEmoji}Receita de ${firstRecipe.result.title[lang]}`,
+    title: `${rarityEmoji}${capitalize(str.recipe[lang])}: ${firstRecipe.result.title[lang]}`,
     thumbnail: { url: imageUrl },
     fields: getRecipeFields(results, lang)
   }
@@ -170,7 +172,7 @@ function mountRecipeEmbed (results, lang) {
   if (nonRepatedMoreResults.length > 1) {
     const moreRecipesText = getMoreRecipesText(nonRepatedMoreResults, 20, lang)
     embed.footer = {
-      text: `Receitas encontradas: ${moreRecipesText}`
+      text: `${capitalize(str.recipesFound[lang])}: ${moreRecipesText}`
     }
   }
   return embed

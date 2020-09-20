@@ -4,6 +4,8 @@ import { getRecipeFields } from './recipe'
 import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
+import { capitalize } from '../utils/strings'
+import str from '../stringsLang'
 import config from '../config'
 const { rarityMap, equipTypesMap } = config
 
@@ -94,7 +96,7 @@ function getMoreEquipmentText (results, resultsLimit, lang) {
   if (results.length > resultsLimit) {
     const firstResults = results.slice(0, resultsLimit)
     const otherResults = results.slice(resultsLimit, results.length)
-    const moreResultsText = ` e outros ${otherResults.length} resultados`
+    const moreResultsText = ` ${str.andOther[lang]} ${otherResults.length} ${str.results[lang]}`
     return firstResults.map(equip => equip.title[lang]).join(', ').trim() + moreResultsText
   }
   return results.map(equip => equip.title[lang]).join(', ').trim()
@@ -129,17 +131,17 @@ function mountEquipEmbed (results, lang) {
     thumbnail: { url: `https://builder.methodwakfu.com/assets/icons/items/${firstResult.imageId}.webp` },
     fields: [
       {
-        name: 'Nível',
+        name: capitalize(str.level[lang]),
         value: firstResult.level,
         inline: true
       },
       {
-        name: 'Tipo',
+        name: capitalize(str.type[lang]),
         value: equipTypesMap[firstResult.itemTypeId][lang],
         inline: true
       },
       {
-        name: 'Raridade',
+        name: capitalize(str.rarity[lang]),
         value: rarityMap[firstResult.rarity].name[lang],
         inline: true
       }
@@ -147,20 +149,20 @@ function mountEquipEmbed (results, lang) {
   }
   if (firstResult.equipEffects.length) {
     equipEmbed.fields.push({
-      name: 'Equipado',
+      name: capitalize(str.equipped[lang]),
       value: firstResult.equipEffects.map(effect => parseIconCodeToEmoji(effect.description[lang])).join('\n')
     })
   }
   if (firstResult.useEffects.length) {
     equipEmbed.fields.push({
-      name: 'Em uso',
+      name: capitalize(str.inUse[lang]),
       value: firstResult.useEffects.map(effect => parseIconCodeToEmoji(effect.description[lang])).join('\n')
     })
   }
   const hasCondititions = Boolean(firstResult.conditions.description[lang])
   if (hasCondititions) {
     equipEmbed.fields.push({
-      name: 'Condições',
+      name: capitalize(str.conditions[lang]),
       value: firstResult.conditions.description[lang]
     })
   }
@@ -175,7 +177,7 @@ function mountEquipEmbed (results, lang) {
   const equipamentsFoundText = getMoreEquipmentText(results, 20, lang)
   if (results.length > 1) {
     equipEmbed.footer = {
-      text: `Equipamentos encontrados: ${equipamentsFoundText}`
+      text: `${capitalize(str.equipmentFound[lang])}: ${equipamentsFoundText}`
     }
   }
   return equipEmbed

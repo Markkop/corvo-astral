@@ -5,6 +5,8 @@ import itemsData from '../../data/items.json'
 import findPermutations from '../utils/permutateString'
 import { getArgumentsAndOptions } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
+import { capitalize } from '../utils/strings'
+import str from '../stringsLang'
 import config from '../config'
 const { rarityMap } = config
 
@@ -111,21 +113,21 @@ function mountSublimationFoundEmbed (results, lang) {
     thumbnail: { url: `https://static.ankama.com/wakfu/portal/game/item/115/${firstResult.imageId}.png` },
     fields: [
       {
-        name: 'Slot',
+        name: capitalize(str.slots[lang]),
         value: isEpicOrRelic ? rarityMap[sublimationRarity].name[lang] : parseSlotsToEmojis(sublimation.slots),
         inline: true
       },
       {
-        name: 'Max Stacks',
+        name: capitalize(str.maxStacks[lang]),
         value: maxStack || '1',
         inline: true
       },
       {
-        name: 'Efeitos',
+        name: capitalize(str.effects[lang]),
         value: sublimation.effects[lang]
       },
       {
-        name: 'Obtenção:',
+        name: capitalize(str.acquiring[lang]),
         value: sublimation.source[lang].trim()
       }
     ]
@@ -141,7 +143,7 @@ function mountSublimationFoundEmbed (results, lang) {
   const hasFoundMoreThanOne = results.length > 1
   if (hasFoundMoreThanOne) {
     sublimationEmbed.footer = {
-      text: `Sublimações encontradas: ${getSublimationListText(results, lang)}`
+      text: `${capitalize(str.sublimationsFound[lang])}: ${getSublimationListText(results, lang)}`
     }
   }
   return sublimationEmbed
@@ -157,20 +159,20 @@ function mountSublimationFoundEmbed (results, lang) {
  */
 function mountSublimationsFoundListEmbed (results, queriedSlotsText, lang) {
   return {
-    title: ':mag_right: Sublimações encontradas',
+    title: `:mag_right: ${capitalize(str.sublimationsFound[lang])}`,
     fields: [
       {
-        name: 'Busca',
+        name: capitalize(str.query[lang]),
         value: queriedSlotsText,
         inline: true
       },
       {
-        name: 'Resultados',
+        name: capitalize(str.results[lang]),
         value: results.length,
         inline: true
       },
       {
-        name: 'Sublimações',
+        name: capitalize(str.sublimations[lang]),
         value: getSublimationListText(results)
       }
     ]
@@ -182,22 +184,23 @@ function mountSublimationsFoundListEmbed (results, queriedSlotsText, lang) {
  *
  * @param {object[]} results
  * @param {string} queriedSlotsText
+ * @param {string} lang
  * @returns {object}
  */
-function mountPermutatedSublimationFoundEmbed (results, queriedSlotsText) {
+function mountPermutatedSublimationFoundEmbed (results, queriedSlotsText, lang) {
   const totalResults = results.reduce((totalResults, permutatedResult) => {
     return totalResults + permutatedResult.results.length
   }, 0)
   const embed = {
-    title: ':mag_right: Sublimações encontradas',
+    title: `:mag_right: ${capitalize(str.sublimationsFound[lang])}`,
     fields: [
       {
-        name: 'Busca',
-        value: `${parseSlotsToEmojis(queriedSlotsText)} em qualquer ordem`,
+        name: capitalize(str.query[lang]),
+        value: `${parseSlotsToEmojis(queriedSlotsText)} ${str.inAnyOrder[lang]}`,
         inline: true
       },
       {
-        name: 'Resultados',
+        name: capitalize(str.results[lang]),
         value: totalResults,
         inline: true
       }
@@ -320,7 +323,7 @@ export function getSublimation (message) {
   const queriedSlotsText = foundBy === 'slots' && !isEpicOrRelic ? parseSlotsToEmojis(query) : query
 
   if (foundBy === 'permutatedSlots') {
-    const permutatedSublimationFoundEmbed = mountPermutatedSublimationFoundEmbed(results, queriedSlotsText)
+    const permutatedSublimationFoundEmbed = mountPermutatedSublimationFoundEmbed(results, queriedSlotsText, lang)
     return message.channel.send({ embed: permutatedSublimationFoundEmbed })
   }
 

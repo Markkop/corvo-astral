@@ -47,7 +47,6 @@ export function calculateAttackDamage (message) {
       color: 'LIGHT_GREY',
       title: `:crossed_swords: ${author} atacou um Papatudo!`,
       thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/58218365.png' },
-      description: 'Tadinho...',
       fields: [
         {
           name: ':boxing_glove: Domínio Total',
