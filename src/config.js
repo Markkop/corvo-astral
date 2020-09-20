@@ -1,8 +1,13 @@
-export default {
-  lang: 'pt',
+const defaultConfig = {
+  lang: 'en',
   prefix: '.',
   almanaxChannelName: 'almanax',
-  groupListingChannelName: 'listagem-de-grupos',
+  groupListingChannelName: 'listagem-de-grupos'
+}
+
+export default {
+  defaultConfig,
+  guildsOptions: [],
   classEmoji: {
     '🐲': 'Osa',
     '🛡️': 'Feca',
@@ -245,6 +250,194 @@ export default {
         es: 'Maestro de armas',
         pt: 'Mestre de armas'
       }
+    }
+  },
+  equipTypesMap: {
+    101: {
+      fr: 'Hache',
+      en: 'Axe',
+      es: 'Hacha',
+      pt: 'Machado'
+    },
+    103: {
+      fr: 'Anneau',
+      en: 'Ring',
+      es: 'Anillo',
+      pt: 'Anel'
+    },
+    108: {
+      fr: 'Baguette',
+      en: 'Wand',
+      es: 'Varita',
+      pt: 'Varinha'
+    },
+    110: {
+      fr: 'Epée',
+      en: 'Sword',
+      es: 'Espada',
+      pt: 'Espada'
+    },
+    111: {
+      fr: 'Pelle',
+      en: 'Shovel',
+      es: 'Pala',
+      pt: 'Pá'
+    },
+    112: {
+      fr: 'Dague',
+      en: 'Dagger',
+      es: 'Daga',
+      pt: 'Adaga'
+    },
+    113: {
+      fr: 'Bâton',
+      en: 'One-handed Staff',
+      es: 'Bastón',
+      pt: 'Bastão'
+    },
+    114: {
+      fr: 'Marteau',
+      en: 'Hammer',
+      es: 'Martillo',
+      pt: 'Martelo'
+    },
+    115: {
+      fr: 'Aiguille',
+      en: 'Hand',
+      es: 'Aguja',
+      pt: 'Ponteiro'
+    },
+    117: {
+      fr: 'Arc',
+      en: 'Bow',
+      es: 'Arco',
+      pt: 'Arco'
+    },
+    119: {
+      fr: 'Bottes',
+      en: 'Boots',
+      es: 'Botas',
+      pt: 'Botas'
+    },
+    120: {
+      fr: 'Amulette',
+      en: 'Amulet',
+      es: 'Amuleto',
+      pt: 'Amuleto'
+    },
+    132: {
+      fr: 'Cape',
+      en: 'Cloak',
+      es: 'Capa',
+      pt: 'Capa'
+    },
+    133: {
+      fr: 'Ceinture',
+      en: 'Belt',
+      es: 'Cinturón',
+      pt: 'Cinto'
+    },
+    134: {
+      fr: 'Casque',
+      en: 'Helmet',
+      es: 'Casco',
+      pt: 'Capacete'
+    },
+    136: {
+      fr: 'Plastron',
+      en: 'Breastplate',
+      es: 'Coraza',
+      pt: 'Peitoral'
+    },
+    138: {
+      fr: 'Epaulettes',
+      en: 'Epaulettes',
+      es: 'Hombreras',
+      pt: 'Dragonas'
+    },
+    189: {
+      fr: 'Bouclier',
+      en: 'Shield',
+      es: 'Escudo',
+      pt: 'Escudo'
+    },
+    219: {
+      fr: 'Poing',
+      en: 'Fist',
+      es: 'Puño',
+      pt: 'Punho '
+    },
+    223: {
+      fr: 'Epée à 2 mains',
+      en: 'Two-handed Sword',
+      es: 'Espada a dos manos',
+      pt: 'Espada de 2 mãos'
+    },
+    253: {
+      fr: 'Bâton à 2 mains',
+      en: 'Two-handed Staff',
+      es: 'Bastón a dos manos',
+      pt: 'Bastão de 2 mãos'
+    },
+    254: {
+      fr: 'Cartes',
+      en: 'Cards',
+      es: 'Cartas',
+      pt: 'Cartas'
+    },
+    480: {
+      fr: 'Torches',
+      en: 'Torches',
+      es: 'Antorchas',
+      pt: 'Tochas'
+    },
+    518: {
+      fr: 'Armes 1 Main',
+      en: 'One-Handed Weapons',
+      es: 'Armas de una mano',
+      pt: 'Armas de 1 mão'
+    },
+    519: {
+      fr: 'Armes 2 Mains',
+      en: 'Two-Handed Weapons',
+      es: 'Armas de dos manos',
+      pt: 'Armas de 2 mãos'
+    },
+    520: {
+      fr: 'Seconde Main',
+      en: 'Second Hand',
+      es: 'Segunda mano',
+      pt: 'Segunda mão'
+    },
+    537: {
+      fr: 'Outils',
+      en: 'Tools',
+      es: 'Herramientas',
+      pt: 'Ferramentas'
+    },
+    582: {
+      fr: 'Familiers',
+      en: 'Pets',
+      es: 'Mascotas',
+      pt: 'Mascotes'
+    },
+    611: {
+      fr: 'Montures',
+      en: 'Mounts',
+      es: 'Monturas',
+      pt: 'Montarias'
+    },
+    646: {
+      fr: 'Emblème',
+      en: 'Emblem',
+      es: 'Emblema',
+      pt: 'Emblema'
+    },
+    647: {
+      fr: 'Costumes',
+      en: 'Costumes',
+      es: 'Trajes',
+      pt: 'Trajes'
     }
   }
 }

@@ -71,7 +71,7 @@ describe('getEquipment', () => {
   })
 
   it('return a matching equipment by name with lower rarity with rarity argument is provided', async () => {
-    const content = '.equip o eterno raridade=mítico'
+    const content = '.equip o eterno rarity=mítico'
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
@@ -126,7 +126,7 @@ describe('getEquipment', () => {
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
       name: 'Em uso',
-      value: 'Dano :star2:: 46 :left_right_arrow:'
+      value: 'Dano :star2:: 46'
     }]))
   })
 
@@ -167,7 +167,7 @@ describe('getEquipment', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.footer).toEqual({
-      text: 'Equipamentos encontrados: Botas dos Riktus de Amakna, Peitoral dos Riktus de Amakna, Máscara dos Riktus de Amakna, Escudo do Capitão Amakna, Espada de Amakna, Anel de Amakna, Dragonas dos Riktus de Amakna'
+      text: 'Equipamentos encontrados: Botas dos Riktus de Amakna, Dragonas dos Riktus de Amakna, Máscara dos Riktus de Amakna, Peitoral dos Riktus de Amakna, Espada de Amakna, Anel de Amakna, Escudo do Capitão Amakna'
     })
   })
 
@@ -176,7 +176,7 @@ describe('getEquipment', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.footer).toEqual({
-      text: 'Equipamentos encontrados: Kwal Dhedo Enfraquecido, Botas do Tofu selvagem, Fatiadoras de Milobo, Fatiadoras de Milobo, Fatiadoras de Milobo, Fatiadoras de Milobo, O Amula, O Amula, O Amula, O Amula, Dragoperu de Precisão, Dragoperu de Distância, Dragoperu de Destruição, Manto do Competidor Júnior, Amuleto de Moskito, Lâmina Estrondosa, Sapeado, Vegetacinto, Anel Aventureiro, ChaPiu Azul e outros 3333 resultados'
+      text: 'Equipamentos encontrados: Amuleto de Papatudo, Anel de Baz Laitir, Papabotas, Capa de Papatudo, Cinto de Papatudo, Chapéu Papatudo, Papartelo, Amuleto de Tofu, Anel de Tofu, Espada de Tofu, Manto de Tofu, Botas de Tofu, Dragonas de graveto, Papascudo, Bastão de Papatudette, Dragonas de Tofu, Chapéu do Piu Real, Picareta, ChaPiu Vermelho , ChaPiu Azul e outros 3380 resultados'
     })
   })
 

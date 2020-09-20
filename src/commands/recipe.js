@@ -2,6 +2,7 @@ import recipesData from '../../data/recipes.json'
 import equipmentData from '../../data/equipment.json'
 import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions } from '../utils/message'
+import { setLanguage, isValidLang } from '../utils/language'
 import config from '../config'
 const { rarityMap, jobsMap } = config
 
@@ -30,18 +31,19 @@ const itemEmojis = {
  * @param {object[]} recipeList
  * @param {string} query
  * @param {object} options
+ * @param {string} lang
  * @returns {object|object[]}
  */
-function findRecipeByName (recipeList, query, options) {
+function findRecipeByName (recipeList, query, options, lang) {
   return recipeList.filter(recipe => {
     const recipeResult = recipe.result
     if (!recipeResult.title) {
       return false
     }
-    const matchesName = recipeResult.title.pt.toLowerCase().includes(query)
+    const matchesName = recipeResult.title[lang].toLowerCase().includes(query)
     let matchesRarity = true
-    if (options.raridade && recipeResult.rarity) {
-      matchesRarity = rarityMap[recipeResult.rarity].name.toLowerCase().includes(options.raridade)
+    if (options.rarity && recipeResult.rarity) {
+      matchesRarity = rarityMap[recipeResult.rarity].name[lang].toLowerCase().includes(options.rarity)
     }
     const filterAssertion = matchesName && matchesRarity
     return filterAssertion
@@ -66,13 +68,14 @@ function mountNotFoundEmbed () {
  *
  * @param {object[]} results
  * @param {number} resultsLimit
+ * @param {string} lang
  * @returns {string}
  */
-function getMoreRecipesText (results, resultsLimit) {
+function getMoreRecipesText (results, resultsLimit, lang) {
   const otherRecipes = results.map(recipe => {
     const recipeResultRarity = recipe.result.rarity
-    const rarityName = recipeResultRarity ? ` (${rarityMap[recipeResultRarity].name})` : ''
-    return `${recipe.result.title.pt}${rarityName}`
+    const rarityName = recipeResultRarity ? ` (${rarityMap[recipeResultRarity].name[lang]})` : ''
+    return `${recipe.result.title[lang]}${rarityName}`
   })
   if (results.length > resultsLimit) {
     const firstResults = otherRecipes.slice(0, resultsLimit)
@@ -87,14 +90,15 @@ function getMoreRecipesText (results, resultsLimit) {
  * Get recipe fields for embed message.
  *
  * @param {object[]} recipeResults
+ * @param {string} lang
  * @returns {object[]}
  */
-export function getRecipeFields (recipeResults) {
+export function getRecipeFields (recipeResults, lang) {
   const firstRecipe = recipeResults[0]
   const recipesWithSameResult = recipeResults.filter(recipe => recipe.result.productedItemId === firstRecipe.result.productedItemId)
   const job = jobsMap[firstRecipe.job.definition.id]
   const jobEmoji = job.emoji
-  const jobName = job.title.pt
+  const jobName = job.title[lang]
 
   const fields = [
     {
@@ -116,7 +120,7 @@ export function getRecipeFields (recipeResults) {
       const itemEmoji = itemEmojis[ingredient.itemId]
       const ingredientEmoji = rarityEmoji || jobEmoji || itemEmoji || ':white_small_square:'
       const quantity = ingredient.quantity
-      const name = ingredient.title.pt
+      const name = ingredient.title[lang]
       const quantityCharacters = `${quantity}x`.split('')
       const quantityText = Array(5).fill(' ')
       quantityText.splice(0, quantityCharacters.length, ...quantityCharacters)
@@ -141,9 +145,10 @@ export function getRecipeFields (recipeResults) {
  * Mount the embed for recipes.
  *
  * @param {object[]} results
+ * @param {string} lang
  * @returns {object}
  */
-function mountRecipeEmbed (results) {
+function mountRecipeEmbed (results, lang) {
   const firstRecipe = results[0]
   const recipeResultRarity = firstRecipe.result.rarity
   const equipment = equipmentData.find(equip => equip.id === firstRecipe.result.productedItemId)
@@ -154,16 +159,16 @@ function mountRecipeEmbed (results) {
   const embedColor = firstRecipe.result.rarity ? rarityMap[firstRecipe.result.rarity].color : 'LIGHT_GREY'
   const embed = {
     color: embedColor,
-    title: `${rarityEmoji}Receita de ${firstRecipe.result.title.pt}`,
+    title: `${rarityEmoji}Receita de ${firstRecipe.result.title[lang]}`,
     thumbnail: { url: imageUrl },
-    fields: getRecipeFields(results)
+    fields: getRecipeFields(results, lang)
   }
 
   const moreResults = results.filter(recipe => recipe.result.productedItemId !== firstRecipe.result.productedItemId)
   const nonRepatedMoreResults = Array.from(new Set(moreResults.map(recipe => recipe.result.productedItemId))).map(productedItemId => moreResults.find(recipe => recipe.result.productedItemId === productedItemId))
 
   if (nonRepatedMoreResults.length > 1) {
-    const moreRecipesText = getMoreRecipesText(nonRepatedMoreResults, 20)
+    const moreRecipesText = getMoreRecipesText(nonRepatedMoreResults, 20, lang)
     embed.footer = {
       text: `Receitas encontradas: ${moreRecipesText}`
     }
@@ -180,17 +185,23 @@ function mountRecipeEmbed (results) {
 export function getRecipe (message) {
   const { args, options } = getArgumentsAndOptions(message, '=')
   const query = args.join(' ').toLowerCase()
+
+  let lang = setLanguage(options, config, message.guild.id)
+
   if (!query) {
-    const helpEmbed = mountCommandHelpEmbed(message)
+    const helpEmbed = mountCommandHelpEmbed(message, lang)
     return message.channel.send({ embed: helpEmbed })
   }
 
-  const results = findRecipeByName(recipesData, query, options)
+  const results = findRecipeByName(recipesData, query, options, lang)
   if (!results.length) {
     const notFoundEmbed = mountNotFoundEmbed()
     return message.channel.send({ embed: notFoundEmbed })
   }
 
-  const recipeEmbed = mountRecipeEmbed(results)
+  if (isValidLang(options.translate)) {
+    lang = options.translate
+  }
+  const recipeEmbed = mountRecipeEmbed(results, lang)
   return message.channel.send({ embed: recipeEmbed })
 }

@@ -147,8 +147,8 @@ describe('getSublimation', () => {
     })
   })
 
-  it('returns sublimations with --any-order flag', async () => {
-    const content = '.subli rgb --any-order'
+  it('returns sublimations with "random" argument', async () => {
+    const content = '.subli rgb random'
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({

@@ -1,5 +1,5 @@
 import config from '../config'
-const { groupListingChannelName } = config
+const { defaultConfig: { groupListingChannelName } } = config
 
 /**
  * Get the party channel by matching its name.

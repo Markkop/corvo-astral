@@ -1,5 +1,5 @@
 import config from '../src/config'
-const { groupListingChannelName } = config
+const { defaultConfig: { groupListingChannelName } } = config
 
 /**
  * Mocks a channel message to match properties from a Discord Message.

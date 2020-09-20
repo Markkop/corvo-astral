@@ -3,8 +3,10 @@ import { getRecipeFields } from './recipe'
 import recipesData from '../../data/recipes.json'
 import itemsData from '../../data/items.json'
 import findPermutations from '../utils/permutateString'
+import { getArgumentsAndOptions } from '../utils/message'
+import { setLanguage, isValidLang } from '../utils/language'
 import config from '../config'
-const { rarityMap, lang } = config
+const { rarityMap } = config
 
 const sublimations = itemsData.filter(item => Boolean(item.sublimation))
 
@@ -29,9 +31,10 @@ function parseSlotsToEmojis (slots) {
  *
  * @param {object[]} sublimationList
  * @param {string} query
+ * @param {string} lang
  * @returns {object|object[]}
  */
-function findSublimationByName (sublimationList, query) {
+function findSublimationByName (sublimationList, query, lang) {
   query = query.replace(/2|ll/g, 'ii').replace(/3|lll/g, 'iii')
   return sublimationList.filter(subli => subli.title[lang].toLowerCase().includes(query))
 }
@@ -41,9 +44,10 @@ function findSublimationByName (sublimationList, query) {
  *
  * @param {object[]} sublimationList
  * @param {string} query
+ * @param {string} lang
  * @returns {object|object[]}
  */
-function findSublimationBySource (sublimationList, query) {
+function findSublimationBySource (sublimationList, query, lang) {
   return sublimationList.filter(subli => subli.sublimation.source[lang].toLowerCase().includes(query))
 }
 
@@ -90,9 +94,10 @@ function mountNotFoundEmbed () {
  * Created the embed message with the sublimations found and a footer list.
  *
  * @param {object[]} results
+ * @param {string} lang
  * @returns {object}
  */
-function mountSublimationFoundEmbed (results) {
+function mountSublimationFoundEmbed (results, lang) {
   const firstResult = results[0]
   const sublimation = firstResult.sublimation
   const isEpicOrRelic = /epic|relic/.test(sublimation.slots)
@@ -127,7 +132,7 @@ function mountSublimationFoundEmbed (results) {
   }
   const recipes = recipesData.filter(recipe => recipe.result.productedItemId === firstResult.id)
   if (recipes.length) {
-    const recipeFields = getRecipeFields(recipes)
+    const recipeFields = getRecipeFields(recipes, lang)
     sublimationEmbed.fields = [
       ...sublimationEmbed.fields,
       ...recipeFields
@@ -136,7 +141,7 @@ function mountSublimationFoundEmbed (results) {
   const hasFoundMoreThanOne = results.length > 1
   if (hasFoundMoreThanOne) {
     sublimationEmbed.footer = {
-      text: `Sublimações encontradas: ${getSublimationListText(results)}`
+      text: `Sublimações encontradas: ${getSublimationListText(results, lang)}`
     }
   }
   return sublimationEmbed
@@ -147,9 +152,10 @@ function mountSublimationFoundEmbed (results) {
  *
  * @param {object[]} results
  * @param {string} queriedSlotsText
+ * @param {string} lang
  * @returns {object}
  */
-function mountSublimationsFoundListEmbed (results, queriedSlotsText) {
+function mountSublimationsFoundListEmbed (results, queriedSlotsText, lang) {
   return {
     title: ':mag_right: Sublimações encontradas',
     fields: [
@@ -215,9 +221,10 @@ function mountPermutatedSublimationFoundEmbed (results, queriedSlotsText) {
  * @param {object[]} sublimations
  * @param {string} query
  * @param {boolean} hasAnyOrderArgument
+ * @param {string} lang
  * @returns {object}
  */
-function findSublimations (sublimations, query, hasAnyOrderArgument) {
+function findSublimations (sublimations, query, hasAnyOrderArgument, lang) {
   const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|epic|relic/.test(query)
   let results = []
   let foundBy = ''
@@ -241,14 +248,14 @@ function findSublimations (sublimations, query, hasAnyOrderArgument) {
     return { results, foundBy }
   }
 
-  results = findSublimationByName(sublimations, query)
+  results = findSublimationByName(sublimations, query, lang)
   foundBy = 'name'
 
   if (results.length) {
     return { results, foundBy }
   }
 
-  results = findSublimationBySource(sublimations, query)
+  results = findSublimationBySource(sublimations, query, lang)
   foundBy = 'source'
   return { results, foundBy }
 }
@@ -257,9 +264,10 @@ function findSublimations (sublimations, query, hasAnyOrderArgument) {
  * Join all sublimation names.
  *
  * @param {object[]} results
+ * @param {string} lang
  * @returns {string}
  */
-function getSublimationListText (results) {
+function getSublimationListText (results, lang) {
   return results.map(subli => subli.title[lang]).join(', ').trim()
 }
 
@@ -285,21 +293,24 @@ function findEquivalentQuery (query) {
  * @returns {Promise<object>}
  */
 export function getSublimation (message) {
-  const options = {
-    anyOrder: '--any-order'
-  }
-  const hasAnyOrderArgument = message.content.includes(options.anyOrder)
+  const anyOrderArgument = 'random'
+  const { args, options } = getArgumentsAndOptions(message, '=')
+
+  let lang = setLanguage(options, config, message.guild.id)
+
+  const hasAnyOrderArgument = args.includes(anyOrderArgument)
   if (hasAnyOrderArgument) {
-    message.content = message.content.replace(options.anyOrder, '').trim()
+    const anyOrderIndex = args.indexOf(anyOrderArgument)
+    args.splice(anyOrderIndex, 1)
   }
-  const normalizedQuery = message.content.split(' ').slice(1).join(' ').toLowerCase()
+  const normalizedQuery = args.join(' ').toLowerCase()
   const equivalentQuery = findEquivalentQuery(normalizedQuery)
   if (!normalizedQuery) {
     const helpEmbed = mountCommandHelpEmbed(message)
     return message.channel.send({ embed: helpEmbed })
   }
   const query = equivalentQuery || normalizedQuery
-  const { results, foundBy } = findSublimations(sublimations, query, hasAnyOrderArgument)
+  const { results, foundBy } = findSublimations(sublimations, query, hasAnyOrderArgument, lang)
   if (!results.length) {
     const notFoundEmbed = mountNotFoundEmbed()
     return message.channel.send({ embed: notFoundEmbed })
@@ -313,11 +324,14 @@ export function getSublimation (message) {
     return message.channel.send({ embed: permutatedSublimationFoundEmbed })
   }
 
+  if (isValidLang(options.translate)) {
+    lang = options.translate
+  }
   if (foundBy === 'name') {
-    const sublimationFoundEmbed = mountSublimationFoundEmbed(results)
+    const sublimationFoundEmbed = mountSublimationFoundEmbed(results, lang)
     return message.channel.send({ embed: sublimationFoundEmbed })
   }
 
-  const sublimationsFoundListEmbed = mountSublimationsFoundListEmbed(results, queriedSlotsText)
+  const sublimationsFoundListEmbed = mountSublimationsFoundListEmbed(results, queriedSlotsText, lang)
   return message.channel.send({ embed: sublimationsFoundListEmbed })
 }

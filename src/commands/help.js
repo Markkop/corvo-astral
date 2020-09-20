@@ -1,6 +1,6 @@
 import { getArgumentsAndOptions, getCommand } from '../utils/message'
 import config from '../config'
-const { prefix } = config
+const { defaultConfig: { prefix } } = config
 
 export const commandsHelp = {
   alma: 'Descubra o bônus do alma para o dia atual. Em breve retornarão também o bônus para os próximos dias ;D',

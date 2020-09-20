@@ -37,7 +37,7 @@ describe('getRecipe', () => {
   })
 
   it('return a matching recipe by name and rarity', async () => {
-    const content = '.recipe cachimbo dapais raridade=mítico'
+    const content = '.recipe cachimbo dapais rarity=mítico'
     const userMessage = mockMessage(content)
     const botMessage = await getRecipe(userMessage)
     expect(botMessage.embed).toEqual({

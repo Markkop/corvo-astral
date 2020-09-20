@@ -9,7 +9,7 @@ const GuildSchema = new mongoose.Schema({
     type: String,
     default: 'en',
     validate: {
-      validator: (lang) => ['en', 'pt'].some((validLang) => validLang === lang),
+      validator: (lang) => ['en', 'pt', 'fr', 'es'].some((validLang) => validLang === lang),
       message: props => `${props.value} is not a valid language`
     }
   }

@@ -67,3 +67,18 @@ export async function getGuildOptions (guildId) {
     console.log(error)
   }
 }
+
+/**
+ * Get all guilds config.
+ *
+ * @returns {Promise<object>}
+ */
+export async function getAllGuildsOptions () {
+  try {
+    connectMongoose()
+    const allGuildsConfig = await GuildModel.find({})
+    return allGuildsConfig
+  } catch (error) {
+    console.log(error)
+  }
+}

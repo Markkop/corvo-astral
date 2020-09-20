@@ -1,7 +1,7 @@
 import Discord from 'discord.js'
 import { getAlmanaxBonus } from './commands/alma'
 import config from './config'
-const { almanaxChannelName } = config
+const { defaultConfig: { almanaxChannelName } } = config
 
 /**
  * Send a message with today's almanax bonus to all channels named "almanax".

@@ -1,6 +1,7 @@
 import { getArgumentsAndOptions } from '../utils/message'
 import { mountCommandHelpEmbed } from './help'
 import { createOrUpdateGuild, getGuildOptions } from '../utils/mongoose'
+import config from '../config'
 
 /**
  * Configure the current guild on MongoDB.
@@ -21,12 +22,16 @@ export async function configGuild (message) {
   }
   const guildId = String(message.guild.id)
   if (arg === 'set') {
-    const validLangs = ['en', 'pt']
+    const validLangs = ['en', 'pt', 'fr', 'es']
     const isValidLang = validLangs.some(lang => options.lang === lang)
     if (!isValidLang) {
-      return message.channel.send(`${options.lang} não é um idioma válido. Apenas "en" e "pt" estão disponíveis`)
+      return message.channel.send(`${options.lang} não é um idioma válido.`)
     }
-    await createOrUpdateGuild(guildId, options)
+
+    const guildConfig = config.guildsOptions.find(config => config.id === message.guild.id)
+    const guildConfigIndex = config.guildsOptions.indexOf(guildConfig)
+    const response = await createOrUpdateGuild(guildId, options)
+    config.guildsOptions[guildConfigIndex] = response
     const optionsText = Object.keys(options).map(option => `${option}: ${options[option]}`)
     return message.channel.send({
       embed: {
@@ -38,7 +43,9 @@ export async function configGuild (message) {
 
   if (arg === 'get') {
     const [guildConfig] = await getGuildOptions(guildId)
-
+    if (!guildConfig) {
+      return message.channel.send('Not found')
+    }
     const guildConfigText = `lang: ${guildConfig.lang}`
     return message.channel.send({
       embed: {
