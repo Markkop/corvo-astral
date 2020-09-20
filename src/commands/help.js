@@ -26,6 +26,10 @@ export function mountCommandHelpEmbed (messageOrArgument, lang) {
         value: commandsHelp[command].examples.join('\n')
       },
       {
+        name: 'Internacionalization',
+        value: 'Some commands support `lang=<lang>` and `translate=<lang>` options. Available languages: en, pt, fr and es.'
+      },
+      {
         name: 'Available Commands',
         value: commandsListText
       }
@@ -50,8 +54,12 @@ export function getHelp (message) {
   const embed = {
     color: 'LIGHT_GREY',
     title: ':grey_question: Help',
-    description: 'type `.help <comando>` to get help for an specific command',
+    description: 'type `.help <command>` to get help for an specific command',
     fields: [
+      {
+        name: 'Internacionalization',
+        value: 'Some commands support `lang=<lang>` and `translate=<lang>` options. Available languages: en, pt, fr and es.'
+      },
       {
         name: 'Available Commands',
         value: commandsListText

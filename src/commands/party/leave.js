@@ -44,7 +44,7 @@ export async function leaveParty (message, options) {
   }
 
   const matchingPartyEmbed = matchingParty.embeds[0]
-  const partySlots = matchingPartyEmbed.fields.find(field => field.name.includes('Participantes')).value.split('\n')
+  const partySlots = matchingPartyEmbed.fields.find(field => field.name.includes('Members')).value.split('\n')
   const userPartySlot = partySlots.find(slot => slot.includes(message.author.id))
   if (!userPartySlot) {
     return message.channel.send({

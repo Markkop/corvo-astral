@@ -38,7 +38,7 @@ export async function joinParty (message, options) {
       embed: {
         color: '#bb1327',
         title: ':x: Error while updating party',
-        description: 'This ID was not found in the last 100 groups'
+        description: 'This ID was not found in the last 100 parties'
       }
     })
   }

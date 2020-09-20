@@ -9,8 +9,8 @@ describe('getAlmanaxBonus', () => {
     const botMessage = getAlmanaxBonus(userMessage)
     expect(botMessage.embed).toMatchObject({
       color: '#40b2b5',
-      title: ':tools: Fabricação',
-      description: 'Hoje o bônus do alma é: +20% EXP e Velocidade em Fabricação'
+      title: ':tools: Crafting',
+      description: 'Today the Almanax temple bonus is: + 20% EXP and Manufacturing Speed'
     })
   })
 })

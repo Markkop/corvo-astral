@@ -23,7 +23,7 @@ export async function getGroupList (reaction, user) {
   if (!listingGroupIdField) return {}
   const listingGroupId = listingGroupIdField.value
 
-  const listingGroupMembersField = messageEmbed.fields.find(field => field.name.includes('Participantes'))
+  const listingGroupMembersField = messageEmbed.fields.find(field => field.name.includes('Members'))
   if (!listingGroupMembersField) return {}
   const members = listingGroupMembersField.value
 

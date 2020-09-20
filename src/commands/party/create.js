@@ -30,9 +30,9 @@ export async function createParty (message, options) {
       const lastPartyMessageEmbed = lastPartyMessageSent.embeds[0].fields.find(field => field.name.includes('ID'))
       identifier = Number(lastPartyMessageEmbed.value) + 1
     }
-    const maxVagas = 50
-    const vagas = options.slots >= maxVagas ? maxVagas : options.slots
-    const memberSlots = Array(Number(vagas) || 6).fill(':small_orange_diamond:')
+    const maxSlots = 50
+    const slots = options.slots >= maxSlots ? maxSlots : options.slots
+    const memberSlots = Array(Number(slots) || 6).fill(':small_orange_diamond:')
     memberSlots[0] = `:small_orange_diamond: <@${message.author.id}> | `
     const embed = {
       title: `Party: ${options.name}`,
@@ -44,7 +44,7 @@ export async function createParty (message, options) {
         },
         {
           name: ':calendar_spiral: Date',
-          value: options.data || 'To be combined',
+          value: options.date || 'To be defined',
           inline: true
         },
         {

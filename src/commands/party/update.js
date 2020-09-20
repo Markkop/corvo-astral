@@ -59,12 +59,12 @@ export async function updateParty (message, options) {
   const userPartySlotIndex = partySlots.indexOf(userPartySlot)
   const isPartyLeader = userPartySlotIndex === 0
   if (isPartyLeader) {
-    matchingPartyEmbed.title = options.nome ? `Party: ${options.nome}` : matchingPartyEmbed.title
+    matchingPartyEmbed.title = options.name ? `Party: ${options.name}` : matchingPartyEmbed.title
     if (options.desc) {
       matchingPartyEmbed.description = options.desc
     }
     matchingPartyEmbed.fields.find(field => field.name.includes('Level')).value = options.lvl || matchingPartyEmbed.fields.find(field => field.name.includes('Level')).value
-    matchingPartyEmbed.fields.find(field => field.name.includes('Date')).value = options.data || matchingPartyEmbed.fields.find(field => field.name.includes('Date')).value
+    matchingPartyEmbed.fields.find(field => field.name.includes('Date')).value = options.date || matchingPartyEmbed.fields.find(field => field.name.includes('Date')).value
   }
 
   const hasClassOption = Boolean(options.class)

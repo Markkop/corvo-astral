@@ -26,7 +26,7 @@ export async function getChannelParties (message) {
     if (!partyEmbed) {
       return false
     }
-    return partyEmbed.title.includes('Grupo')
+    return partyEmbed.title.includes('Party')
   })
 }
 

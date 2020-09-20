@@ -1,5 +1,5 @@
 import { calculateAttackDamage } from '../src/commands'
-import { commandsHelp } from '../src/commands/help'
+import helpMessages from '../data/helpMessages'
 import { mockMessage } from './testUtils'
 
 describe('calculateAttackDamage', () => {
@@ -137,7 +137,7 @@ describe('calculateAttackDamage', () => {
     const userMessage = mockMessage(content)
     const botMessage = calculateAttackDamage(userMessage)
     expect(botMessage.embed).toMatchObject({
-      description: commandsHelp.calc
+      description: helpMessages.calc.help.en
     })
   })
 })
