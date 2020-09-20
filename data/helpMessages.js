@@ -75,7 +75,7 @@ Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.
     },
     examples: [
       '.equip martelo de osamodas lang=pt',
-      '.equip the eternal rarity=mythic'
+      '.equip the eternal rarity=mythical'
     ]
   },
   about: {
@@ -144,7 +144,7 @@ Vous pouvez également utiliser les ** réactions ** du message de groupe pour e
     examples: [
       '.recipe brakmar sword',
       '.recipe espada de brakmar lang=pt',
-      '.recipe peace pipe rarity=mythic'
+      '.recipe peace pipe rarity=mythical'
     ]
   },
   help: {

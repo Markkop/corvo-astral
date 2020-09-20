@@ -192,11 +192,12 @@ function mountEquipEmbed (results, lang) {
 export async function getEquipment (message) {
   const { args, options } = getArgumentsAndOptions(message, '=')
   const query = args.join(' ').toLowerCase()
+  let lang = setLanguage(options, config, message.guild.id)
+
   if (!query) {
-    const helpEmbed = mountCommandHelpEmbed(message)
+    const helpEmbed = mountCommandHelpEmbed(message, lang)
     return message.channel.send({ embed: helpEmbed })
   }
-  let lang = setLanguage(options, config, message.guild.id)
 
   let results = []
   results = findEquipmentByName(equipmentList, query, options, lang)
