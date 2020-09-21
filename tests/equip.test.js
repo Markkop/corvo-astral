@@ -177,7 +177,7 @@ describe('getEquipment', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.footer).toEqual({
-      text: 'Equipment found: Amakna Ring (Epic), Amakna Sword (Relic), Captain Amakna Shield (Relic), Amakna Riktus Breastplate (Mythical), Amakna Riktus Mask (Mythical), Amakna Riktus Epaulettes (Mythical), Amakna Riktus Boots (Mythical), Amakna Riktus Boots (Rare), Amakna Riktus Epaulettes (Rare)'
+      text: 'Equipment found: Amakna Ring (Epic), Amakna Sword (Relic), Captain Amakna Shield (Relic), Amakna Riktus Boots (Mythical), Amakna Riktus Epaulettes (Mythical), Amakna Riktus Mask (Mythical), Amakna Riktus Breastplate (Mythical), Amakna Riktus Boots (Rare), Amakna Riktus Epaulettes (Rare)'
     })
   })
 
@@ -186,7 +186,7 @@ describe('getEquipment', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.footer).toEqual({
-      text: "Equipment found: Reptilian Helmet (Epic), Ka-Iba Belt (Epic), Quidikarus (Epic), Caplosive (Epic), Icy Epaulettes (Epic), Doray Mifa (Epic), Dee Tracter Breastplate (Epic), Eternal Second Cape (Epic), Fannebuoy Belt (Epic), Claymore of Fhenris (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Satisfaction Boots (Epic), Dazzling Belt (Epic), Satisfaction Ring (Epic), Dathura Souvenir (Epic), Sarcophacape (Epic), Agony's Companion (Epic), Raval Breastplate (Epic), Splendocape (Epic) and other 4688 results"
+      text: "Equipment found: Dazzling Belt (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Hazieff's Helmet (Epic), Wa Wabbit's Cwown (Epic), Genetically Modified Epaulettes (Epic), Claymore of Fhenris (Epic), Bax Stab Ax (Epic), Claymus Shushu (Epic), Emiwlet Amulet (Epic), Lenald Walm Pelt (Epic), Vizion Dagger (Epic), Trool Warrior Spikes (Epic), Sanefty Belt (Epic), Happy Sram Kimono (Epic), Durable Shield (Epic), Limited Edition Cape (Epic), Dora Lagoole (Epic), Welder Mask (Epic), Viktorious Rapier (Epic) and other 4688 results"
     })
   })
 

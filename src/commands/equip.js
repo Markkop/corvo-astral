@@ -9,6 +9,9 @@ import config from '../config'
 const { rarityMap, equipTypesMap } = config
 
 const equipTypesIds = Object.keys(equipTypesMap).map(Number).filter(id => id !== 647) // Remove costumes
+const equipmentList = itemsData
+  .filter(item => equipTypesIds.includes(item.itemTypeId))
+  .sort((itemA, itemB) => itemB.rarity - itemA.rarity)
 
 const iconCodeMap = {
   '[el1]': ':fire:',
@@ -159,10 +162,6 @@ export async function getEquipment (message) {
     const helpEmbed = mountCommandHelpEmbed(message, lang)
     return message.channel.send({ embed: helpEmbed })
   }
-
-  const equipmentList = itemsData
-    .filter(item => equipTypesIds.includes(item.itemTypeId))
-    .sort((itemA, itemB) => itemB.rarity - itemA.rarity)
 
   let results = []
   results = findEquipmentByName(equipmentList, query, options, lang)
