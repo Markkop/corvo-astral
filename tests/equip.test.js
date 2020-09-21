@@ -1,5 +1,5 @@
 import { getEquipment } from '../src/commands'
-import helpMessages from '../data/helpMessages'
+import helpMessages from '../src/utils/helpMessages'
 import { mockMessage } from './testUtils'
 
 describe('getEquipment', () => {

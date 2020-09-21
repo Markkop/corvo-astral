@@ -10,48 +10,63 @@ import config from '../config'
  * @returns {Promise<object>}
  */
 export async function configGuild (message) {
-  const { args, options } = getArgumentsAndOptions(message, '=')
-  const arg = args[0]
-  const validArgs = ['get', 'set']
-  const validOptions = ['lang']
-  const isValidArgs = validArgs.some(validArg => validArg === arg)
-  const isValidOptions = Object.keys(options).every(option => validOptions.includes(option))
-  if (!isValidArgs || !isValidOptions) {
-    const helpEmbed = mountCommandHelpEmbed(message)
-    return message.channel.send({ embed: helpEmbed })
-  }
-  const guildId = String(message.guild.id)
-  if (arg === 'set') {
-    const validLangs = ['en', 'pt', 'fr', 'es']
-    const isValidLang = validLangs.some(lang => options.lang === lang)
-    if (!isValidLang) {
-      return message.channel.send(`${options.lang} is not a valid language.`)
+  try {
+    const { args, options } = getArgumentsAndOptions(message, '=')
+    const arg = args[0]
+    const validArgs = ['get', 'set']
+    const validOptions = ['lang', 'almanaxChannel', 'partyChannel']
+    const isValidArgs = validArgs.some(validArg => validArg === arg)
+    const isValidOptions = Object.keys(options).every(option => validOptions.includes(option))
+
+    if (!isValidArgs || !isValidOptions) {
+      const helpEmbed = mountCommandHelpEmbed(message)
+      return message.channel.send({ embed: helpEmbed })
+    }
+    const guildId = String(message.guild.id)
+    if (arg === 'set') {
+      if (!message.member.hasPermission('ADMINISTRATOR')) {
+        return message.channel.send('You need administrator permission for this')
+      }
+      if (options.lang) {
+        const validLangs = ['en', 'pt', 'fr', 'es']
+        const isValidLang = validLangs.some(lang => options.lang === lang)
+        if (!isValidLang) {
+          return message.channel.send(`${options.lang} is not a valid language.`)
+        }
+      }
+
+      const guildConfig = config.guildsOptions.find(config => config.id === message.guild.id)
+      const guildConfigIndex = config.guildsOptions.indexOf(guildConfig)
+
+      const newOptions = Object.assign(guildConfig, options)
+      const response = await createOrUpdateGuild(guildId, newOptions)
+
+      config.guildsOptions[guildConfigIndex] = response
+
+      const guildConfigText = JSON.stringify(options, null, 2)
+      return message.channel.send({
+        embed: {
+          title: 'Config applied correctly',
+          description: '```json\n' + guildConfigText + '\n```'
+        }
+      })
     }
 
-    const guildConfig = config.guildsOptions.find(config => config.id === message.guild.id)
-    const guildConfigIndex = config.guildsOptions.indexOf(guildConfig)
-    const response = await createOrUpdateGuild(guildId, options)
-    config.guildsOptions[guildConfigIndex] = response
-    const optionsText = Object.keys(options).map(option => `${option}: ${options[option]}`)
-    return message.channel.send({
-      embed: {
-        title: 'Config applied correctly',
-        description: optionsText.join('\n')
+    if (arg === 'get') {
+      const guildConfig = await getGuildOptions(guildId)
+      if (!guildConfig) {
+        return message.channel.send('Not found')
       }
-    })
-  }
-
-  if (arg === 'get') {
-    const [guildConfig] = await getGuildOptions(guildId)
-    if (!guildConfig) {
-      return message.channel.send('Not found')
+      const guildConfigText = JSON.stringify(guildConfig, null, 2)
+      return message.channel.send({
+        embed: {
+          title: `Config for "${message.guild.name}"`,
+          description: '```json\n' + guildConfigText + '\n```'
+        }
+      })
     }
-    const guildConfigText = `lang: ${guildConfig.lang}`
-    return message.channel.send({
-      embed: {
-        title: 'Your guild config',
-        description: guildConfigText
-      }
-    })
+  } catch (error) {
+    message.react('❌')
+    console.log(error)
   }
 }

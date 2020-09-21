@@ -1,5 +1,5 @@
-import { getChannelParties, getMessageByEmbedNameAndValue } from '../../utils/partyChannel'
-import commandsHelp from '../../../data/helpMessages'
+import { getChannelParties, getMessageByEmbedNameAndValue } from '../../utils/partyHelper'
+import commandsHelp from '../../utils/helpMessages'
 import Discord from 'discord.js'
 
 /**

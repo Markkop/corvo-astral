@@ -1,5 +1,5 @@
 import recipesData from '../../data/recipes.json'
-import equipmentData from '../../data/equipment.json'
+import itemsData from '../../data/items.json'
 import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
@@ -153,7 +153,7 @@ export function getRecipeFields (recipeResults, lang) {
 function mountRecipeEmbed (results, lang) {
   const firstRecipe = results[0]
   const recipeResultRarity = firstRecipe.result.rarity
-  const equipment = equipmentData.find(equip => equip.id === firstRecipe.result.productedItemId)
+  const equipment = itemsData.find(equip => equip.id === firstRecipe.result.productedItemId)
   const job = jobsMap[firstRecipe.job.definition.id]
   const imageUrl = equipment ? `https://builder.methodwakfu.com/assets/icons/items/${equipment.img}.webp` : job.recipeImage
 

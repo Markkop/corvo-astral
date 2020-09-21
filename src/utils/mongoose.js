@@ -41,7 +41,7 @@ export async function disconnectMongoose () {
 export async function createOrUpdateGuild (guildId, options) {
   try {
     connectMongoose()
-    const guild = await GuildModel.findOneAndUpdate({ id: guildId }, { lang: options.lang }, {
+    const guild = await GuildModel.findOneAndUpdate({ id: guildId }, options, {
       new: true,
       upsert: true
     })
@@ -61,7 +61,13 @@ export async function createOrUpdateGuild (guildId, options) {
 export async function getGuildOptions (guildId) {
   try {
     connectMongoose()
-    const guildConfig = await GuildModel.find({ id: guildId })
+    const [guildConfig] = await GuildModel.find({ id: guildId }).lean()
+    if (!guildConfig) {
+      return null
+    }
+    delete guildConfig._id
+    delete guildConfig.__v
+    delete guildConfig.id
     return guildConfig
   } catch (error) {
     console.log(error)

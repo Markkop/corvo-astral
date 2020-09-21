@@ -1,9 +1,8 @@
 import { getArgumentsAndOptions, getCommand } from '../utils/message'
 import config from '../config'
-import commandsHelp from '../../data/helpMessages'
+import commandsHelp from '../utils/helpMessages'
 import { setLanguage } from '../utils/language'
 const { defaultConfig: { prefix } } = config
-export { commandsHelp }
 
 const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
 

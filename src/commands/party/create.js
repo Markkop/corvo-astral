@@ -1,4 +1,4 @@
-import { getPartyChannel, getChannelParties } from '../../utils/partyChannel'
+import { getPartyChannel, getChannelParties } from '../../utils/partyHelper'
 import { commandsHelp } from '../help'
 import config from '../../config'
 import { handleMessageError } from '../../utils/handleError'
