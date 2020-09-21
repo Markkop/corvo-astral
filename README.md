@@ -109,6 +109,23 @@ Examples:
 
 ![Find equipment and sublimations](https://i.imgur.com/gCNRFuQ.gif)
 
+### :gear: Configurable options
+
+Some bot options can be configurable according to each server using `.config`.  
+**Options**:
+* lang: default bot language between fr, en, es and pt (default: en)
+* prefix: character to call commands (default: .)
+* almanaxChannel: channel receive the `.alma` command daily (default: almanax)
+* partyChannel: channel to receive the `.party` command (default: listagem-de-grupos)
+
+**Examples**:
+```js
+.config set lang=en
+.config set almanaxChannel=temple-bonus
+.config set partyChannel=party-listing
+.config get
+```
+
 ### :chart_with_upwards_trend: How to contribute
 
 Most translations were translated from portuguese brazilian, so they can be a little bit off.  
