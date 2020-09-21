@@ -70,6 +70,13 @@ describe('getEquipment', () => {
     }]))
   })
 
+  it('return a translated equip with "translate" option', async () => {
+    const content = '.equip peace pipe translate=pt'
+    const userMessage = mockMessage(content)
+    const botMessage = await getEquipment(userMessage)
+    expect(botMessage.embed.title).toEqual(':yellow_circle: Cachimbo Dapais')
+  })
+
   it('return a matching equipment by name with lower rarity with rarity argument is provided', async () => {
     const content = '.equip the eternal rarity=mythical'
     const userMessage = mockMessage(content)

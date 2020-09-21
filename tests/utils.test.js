@@ -1,4 +1,5 @@
 import { getArgumentsAndOptions, getCommand } from '../src/utils/message'
+import { setLanguage } from '../src/utils/language'
 import findPermutations from '../src/utils/permutateString'
 import { handleMessageError, handleReactionError } from '../src/utils/handleError'
 import { mockMessage } from './testUtils'
@@ -65,5 +66,17 @@ describe('handleError functions', () => {
     const error = { toString: jest.fn() }
     handleReactionError(error, reaction, user)
     expect(spy).toHaveBeenCalled()
+  })
+})
+
+describe('setLanguage', () => {
+  it('returns the language provided', () => {
+    const lang = setLanguage({ lang: 'pt' }, 100)
+    expect(lang).toEqual('pt')
+  })
+
+  it('returns the default language if the provided is not valid', () => {
+    const lang = setLanguage({ lang: 'idkman' }, 100)
+    expect(lang).toEqual('en')
   })
 })

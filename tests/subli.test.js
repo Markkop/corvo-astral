@@ -36,6 +36,13 @@ describe('getSublimation', () => {
     })
   })
 
+  it('return a translated subli with "translate" option', async () => {
+    const content = '.subli frenzy translate=pt'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
+    expect(botMessage.embed.title).toEqual(':scroll: Frenesi')
+  })
+
   it('returns a sublimation and more results when finding more than one', async () => {
     const content = '.subli frenzy'
     const userMessage = mockMessage(content)

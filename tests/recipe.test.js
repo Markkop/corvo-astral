@@ -36,6 +36,13 @@ describe('getRecipe', () => {
     })
   })
 
+  it('return a translated recipe with "translate" option', async () => {
+    const content = '.recipe peace pipe translate=pt'
+    const userMessage = mockMessage(content)
+    const botMessage = await getRecipe(userMessage)
+    expect(botMessage.embed.title).toEqual(':yellow_circle: Receita: Cachimbo Dapais')
+  })
+
   it('return a matching recipe by name and rarity', async () => {
     const content = '.recipe peace pipe rarity=mythical'
     const userMessage = mockMessage(content)
@@ -71,36 +78,11 @@ describe('getRecipe', () => {
   })
 
   it('return a matching recipe and more matching results on footer', async () => {
-    const content = '.recipe the eternal'
+    const content = '.recipe amakna'
     const userMessage = mockMessage(content)
     const botMessage = await getRecipe(userMessage)
-    expect(botMessage.embed).toEqual({
-      color: '#8fc7e2',
-      title: ':blue_circle: Recipe: The Eternal',
-      thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/12019145.png' },
-      fields: [
-        {
-          name: 'Profession',
-          value: ':ring: Jeweler',
-          inline: true
-        },
-        {
-          name: 'Level',
-          value: 140,
-          inline: true
-        },
-        {
-          name: 'Ingredients',
-          value: `:sparkles: \`410x \` Powder
-:yellow_circle: \`1x   \` The Eternal
-:fish: \`105x \` Grawnble
-:ring: \`54x  \` Divine Gem
-:droplet: \`400x \` Ogrest's Tear
-:white_small_square: \`11x  \` Sunsloth Tail
-:white_small_square: \`9x   \` Stompion Tail
-:white_small_square: \`107x \` Sunsloth Epicuticle`
-        }
-      ]
+    expect(botMessage.embed.footer).toEqual({
+      text: 'Recipes found: Amakna Sword (Relic), Amakna Riktus Boots (Mythical), Amakna Riktus Epaulettes (Mythical), Amakna Riktus Boots, Amakna Riktus Epaulettes, Amakna Root Beer'
     })
   })
 

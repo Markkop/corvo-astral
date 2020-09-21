@@ -15,7 +15,6 @@ export function isValidLang (lang) {
  * Set language based on default values, guild setting or option value.
  *
  * @param {object} options
- * @param {object} config
  * @param {string} guildId
  * @returns {string}
  */
