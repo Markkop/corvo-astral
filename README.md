@@ -53,6 +53,8 @@ Most commands accept `lang=<lang>` and `translate=<lang>` options.
 A server administrator can also set the default language with `.config` command.  
 Available languages are `en`, `es`, `pt` and `fr`.  
 
+![](http://i.imgur.com/HwrkX8M.png)
+
 ### :shield: Equipment search
 
 A equipment search is available with `.equip <name>` command.  
@@ -65,6 +67,8 @@ Equipment originated from crafting also displays their associated recipe.
 .equip brakmar sword translate=fr
 .equip the eternal rarity=mythical
 ```
+
+![](https://i.imgur.com/0oZzZ4W.png)
 
 ### :gem: Sublimation search
 
@@ -84,6 +88,8 @@ When searching by slots combionation, it's possible to match with white slots an
 .subli craft
 ```
 
+![](http://i.imgur.com/ViQQqRE.png)
+
 ### :scroll: Recipe search
 
 Similar to the commands above, you can search recipes by name and rarity.  
@@ -96,6 +102,8 @@ Recipes with same results are shown together.
 .recipe peace pipe rarity=mythical
 ```
 
+![](http://i.imgur.com/1IBDf5j.png)
+
 ### :boxing_glove: Damage Calculator
 
 It's possible to simulate an attack by providing some numbers to the `.calc` commands.  
@@ -107,7 +115,7 @@ Examples:
 .calc dmg=5000 base=40 res=420 crit=30%
 ```
 
-![Find equipment and sublimations](https://i.imgur.com/gCNRFuQ.gif)
+![](http://i.imgur.com/acjj1cJ.png)
 
 ### :gear: Configurable options
 
