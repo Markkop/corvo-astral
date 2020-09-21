@@ -55,7 +55,10 @@ describe('getEquipment', () => {
 :white_small_square: \`7x   \` Cerebratacean Carapace
 :white_small_square: \`8x   \` Lashing Pincer`
         }
-      ]
+      ],
+      footer: {
+        text: 'Equipment found: Tentacled Belt (Legendary), Tentacled Belt (Mythical)'
+      }
     })
   })
 
@@ -128,7 +131,7 @@ describe('getEquipment', () => {
   })
 
   it('return the useEffect description if the resulting equipment has one', async () => {
-    const content = '.equip ogrest'
+    const content = '.equip Toothpick'
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
@@ -174,7 +177,7 @@ describe('getEquipment', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.footer).toEqual({
-      text: 'Equipment found: Amakna Riktus Boots, Amakna Riktus Epaulettes, Amakna Riktus Mask, Amakna Riktus Breastplate, Amakna Sword, Amakna Ring, Captain Amakna Shield'
+      text: 'Equipment found: Amakna Ring (Epic), Amakna Sword (Relic), Captain Amakna Shield (Relic), Amakna Riktus Breastplate (Mythical), Amakna Riktus Mask (Mythical), Amakna Riktus Epaulettes (Mythical), Amakna Riktus Boots (Mythical), Amakna Riktus Boots (Rare), Amakna Riktus Epaulettes (Rare)'
     })
   })
 
@@ -183,7 +186,7 @@ describe('getEquipment', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.footer).toEqual({
-      text: "Equipment found: Gobball Amulet, Bouze Lite Yeah's Ring, Gobball Cape, Gobball Belt, Gobball Headgear, Gobbhammer, Tofu Amulet, Tofu Cloak, Twiggy Epaulettes, Gobblette Wand, Tofu Epaulettes, Little Tofu Hand, Royal Piwi Hat, Red Piwat, Blue Piwat, Purple Piwat, Green Piwat, Red Capiwin, Blue Capiwin, Purple Capiwin and other 2625 results"
+      text: "Equipment found: Reptilian Helmet (Epic), Ka-Iba Belt (Epic), Quidikarus (Epic), Caplosive (Epic), Icy Epaulettes (Epic), Doray Mifa (Epic), Dee Tracter Breastplate (Epic), Eternal Second Cape (Epic), Fannebuoy Belt (Epic), Claymore of Fhenris (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Satisfaction Boots (Epic), Dazzling Belt (Epic), Satisfaction Ring (Epic), Dathura Souvenir (Epic), Sarcophacape (Epic), Agony's Companion (Epic), Raval Breastplate (Epic), Splendocape (Epic) and other 4688 results"
     })
   })
 

@@ -9,9 +9,9 @@ import config from '../config'
 const { rarityMap, equipTypesMap } = config
 
 const equipTypesIds = Object.keys(equipTypesMap).map(Number).filter(id => id !== 647) // Remove costumes
-const equipmentList = itemsData.filter(item => {
-  return equipTypesIds.includes(item.itemTypeId)
-})
+const equipmentList = itemsData
+  .filter(item => equipTypesIds.includes(item.itemTypeId))
+  .sort((itemA, itemB) => itemB.rarity - itemA.rarity)
 
 const iconCodeMap = {
   '[el1]': ':fire:',
@@ -26,31 +26,6 @@ const iconCodeMap = {
 }
 
 /**
- * Remove equip with the same name and lower rarity.
- * TODO: Refactor this to better performance.
- * Perhaps sort items by rarity when importing.
- *
- * @param {object[]} equipmentList
- * @param {string} lang
- * @returns {object[]}
- */
-function removeLowerRarities (equipmentList, lang) {
-  return equipmentList.filter(equip => {
-    const equipName = equip.title[lang]
-    const higherRarity = equipmentList.reduce((higherRarity, otherEquip) => {
-      const hasSameName = otherEquip.title[lang] === equipName
-      if (!hasSameName) {
-        return higherRarity
-      }
-      return Math.max(higherRarity, otherEquip.rarity, equip.rarity)
-    }, 0)
-
-    const equipRarity = equip.rarity
-    return equipRarity === higherRarity
-  })
-}
-
-/**
  * Find a equipment list by matching name.
  *
  * @param {object[]} equipmentList
@@ -62,7 +37,7 @@ function removeLowerRarities (equipmentList, lang) {
 function findEquipmentByName (equipmentList, query, filters, lang) {
   const hasRarityFilter = Boolean(filters.rarity)
   if (!hasRarityFilter) {
-    return removeLowerRarities(equipmentList, lang).filter(equip => equip.title[lang].toLowerCase().includes(query))
+    return equipmentList.filter(equip => equip.title[lang].toLowerCase().includes(query))
   }
 
   return equipmentList.filter(equip => {
@@ -94,13 +69,14 @@ function parseIconCodeToEmoji (text) {
  * @returns {string}
  */
 function getMoreEquipmentText (results, resultsLimit, lang) {
+  let moreResultsText = ''
   if (results.length > resultsLimit) {
     const firstResults = results.slice(0, resultsLimit)
     const otherResults = results.slice(resultsLimit, results.length)
-    const moreResultsText = ` ${str.andOther[lang]} ${otherResults.length} ${str.results[lang]}`
-    return firstResults.map(equip => equip.title[lang]).join(', ').trim() + moreResultsText
+    moreResultsText = ` ${str.andOther[lang]} ${otherResults.length} ${str.results[lang]}`
+    results = firstResults
   }
-  return results.map(equip => equip.title[lang]).join(', ').trim()
+  return results.map(equip => `${equip.title[lang]} (${rarityMap[equip.rarity].name[lang]})`).join(', ').trim() + moreResultsText
 }
 
 /**
