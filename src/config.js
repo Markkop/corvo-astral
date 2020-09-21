@@ -1,8 +1,8 @@
 const defaultConfig = {
   lang: 'en',
   prefix: '.',
-  almanaxChannelName: 'almanax',
-  groupListingChannelName: 'listagem-de-grupos'
+  almanaxChannel: 'almanax',
+  partyChannel: 'listagem-de-grupos'
 }
 
 export default {

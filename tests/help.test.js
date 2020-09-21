@@ -24,7 +24,7 @@ describe('getHelp', () => {
       fields: [
         {
           name: 'Internacionalization',
-          value: 'Some commands support `lang=<lang>` and `translate=<lang>` options. Available languages: en, pt, fr and es.'
+          value: 'Some commands support `lang=<lang>` and `translate=<lang>` options. Available languages: `en`, `pt`, `fr` and `es`.'
         },
         {
           name: 'Available Commands',

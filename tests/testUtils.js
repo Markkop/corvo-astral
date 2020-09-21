@@ -1,5 +1,5 @@
 import config from '../src/config'
-const { defaultConfig: { groupListingChannelName } } = config
+const { defaultConfig: { partyChannel } } = config
 
 /**
  * Mocks a channel message to match properties from a Discord Message.
@@ -36,7 +36,7 @@ export function mockMessage (content, channelMessages = []) {
       channels: {
         cache: [
           {
-            name: groupListingChannelName,
+            name: partyChannel,
             messages: {
               fetch: jest.fn().mockResolvedValue(channelMessages)
             },

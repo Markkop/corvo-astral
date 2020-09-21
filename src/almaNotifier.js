@@ -4,7 +4,7 @@ import config from './config'
 
 /**
  * Send a message with today's almanax bonus to all channels named "almanax" (default)
- * or the almanaxChannelName set with config command.
+ * or the almanaxChannel set with config command.
  */
 function notifyAlmanaxBonus () {
   const client = new Discord.Client()
@@ -19,7 +19,7 @@ function notifyAlmanaxBonus () {
       const guildChannelsIds = guild.channels.cache.map(channel => channel.id)
 
       const guildConfig = config.guildsOptions.find(config => config.id === guildId) || {}
-      const almanaxChannelName = guildConfig.almanaxChannel || config.defaultConfig.almanaxChannelName
+      const almanaxChannelName = guildConfig.almanaxChannel || config.defaultConfig.almanaxChannel
 
       for (let channelIndex = 0; channelIndex < guildChannelsIds.length; channelIndex++) {
         const guildChannelId = guildChannelsIds[channelIndex]

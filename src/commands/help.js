@@ -7,6 +7,25 @@ const { defaultConfig: { prefix } } = config
 const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
 
 /**
+ * Get fields with more help information.
+ *
+ * @param {string} commandsListText
+ * @returns {object[]}
+ */
+function getMoreHelpFields (commandsListText) {
+  return [
+    {
+      name: 'Internacionalization',
+      value: 'Some commands support `lang=<lang>` and `translate=<lang>` options.\nAvailable languages: `en`, `pt`, `fr` and `es`.'
+    },
+    {
+      name: 'Available Commands',
+      value: commandsListText
+    }
+  ]
+}
+
+/**
  * Mounts the help message embed.
  *
  * @param {object|string} messageOrArgument
@@ -22,16 +41,9 @@ export function mountCommandHelpEmbed (messageOrArgument, lang) {
     fields: [
       {
         name: 'Examples',
-        value: commandsHelp[command].examples.join('\n')
+        value: commandsHelp[command].examples.map(example => `\`${example}\``).join('\n')
       },
-      {
-        name: 'Internacionalization',
-        value: 'Some commands support `lang=<lang>` and `translate=<lang>` options. Available languages: en, pt, fr and es.'
-      },
-      {
-        name: 'Available Commands',
-        value: commandsListText
-      }
+      ...getMoreHelpFields(commandsListText)
     ]
   }
 }
@@ -54,16 +66,7 @@ export function getHelp (message) {
     color: 'LIGHT_GREY',
     title: ':grey_question: Help',
     description: 'type `.help <command>` to get help for an specific command',
-    fields: [
-      {
-        name: 'Internacionalization',
-        value: 'Some commands support `lang=<lang>` and `translate=<lang>` options. Available languages: en, pt, fr and es.'
-      },
-      {
-        name: 'Available Commands',
-        value: commandsListText
-      }
-    ]
+    fields: getMoreHelpFields(commandsListText)
   }
   if (!hasArguments) {
     return message.channel.send({ embed })

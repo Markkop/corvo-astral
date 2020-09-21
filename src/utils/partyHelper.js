@@ -8,7 +8,7 @@ import config from '../config'
  */
 export function getPartyChannel (message) {
   const guildConfig = config.guildsOptions.find(config => config.id === message.guild.id) || {}
-  const partyChannelName = guildConfig.partyChannel || config.defaultConfig.groupListingChannelName
+  const partyChannelName = guildConfig.partyChannel || config.defaultConfig.partyChannel
   const partyChannel = message.guild.channels.cache.find(channel => channel.name.includes(partyChannelName))
   return partyChannel
 }

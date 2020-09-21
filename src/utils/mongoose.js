@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
 import GuildModel from '../models/guild'
+import config from '../config'
 
 /**
  * Connects mongoose to remote MongoDB.
@@ -62,13 +63,18 @@ export async function getGuildOptions (guildId) {
   try {
     connectMongoose()
     const [guildConfig] = await GuildModel.find({ id: guildId }).lean()
+    const defaultConfig = config.defaultConfig
     if (!guildConfig) {
-      return null
+      return defaultConfig
     }
     delete guildConfig._id
     delete guildConfig.__v
     delete guildConfig.id
-    return guildConfig
+    const configs = {
+      ...defaultConfig,
+      ...guildConfig
+    }
+    return configs
   } catch (error) {
     console.log(error)
   }

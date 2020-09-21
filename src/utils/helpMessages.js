@@ -156,5 +156,19 @@ Vous pouvez également utiliser les ** réactions ** du message de groupe pour e
     },
     examples: [
     ]
+  },
+  config: {
+    help: {
+      en: "Change some of this bot's configuration for your guild. You need admin permission for this.",
+      pt: '',
+      es: '',
+      fr: ''
+    },
+    examples: [
+      '.config set lang=en',
+      '.config set almanaxChannel=temple-bonus',
+      '.config set partyChannel=party-listing',
+      '.config get'
+    ]
   }
 }
