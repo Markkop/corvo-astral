@@ -7,7 +7,7 @@
 
 Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that serves as a helper for the [Wakfu MMORPG](https://www.wakfu.com/) game.  
 If you wish to add this bot to your server, access this [link](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=2048&scope=bot).  
-Note: currently the only language available is Brazilian Portuguese.
+This bot can now provide information to all four languages supported by Wakfu: en, es, pt and fr.
 
 ## Commands
 
@@ -17,25 +17,115 @@ Note: currently the only language available is Brazilian Portuguese.
 * `.equip`: search for a given equipment by name
 * `.party`: create, update, join or leave a party listing
 * `.about`: get information about this bot
+* `.config`: configure custom settings for each discord channel
 * `.help`: get help for available commands
 
-## Almanax Bonus Notifier
+## Features
 
-As configured on `almaNotifier.js` and Heroku Scheduler, this bot tries to send the same message from `.alma` command to all channels named "**almanax**" every day on 00:01 AM.  
+### :sunny: Almanax Bonus Notifier
+
+Every midnight, the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
 If you wish to disable this behavior, simply deny permission to this bot on that channel.  
 
-## Party Listing Feature
+### :busts_in_silhouette: Party Listing
 
-When creating a new party listing with `.party create`, the bot will post it on a channel named "**listagem-de-grupos**" and will listen to reactions made on messages in that channel only.  
-Make sure to have a channel matching this name if you wish this feature enabled.  
+When using `.party create` command, the bot will post a party listing message on the cannel defined by the `.config` command (`listagem-de-grupos` by default).  
+It'll also listen to reactions so members can join or leave groups.  
+To make use of this feature, make sure that the bot has enough permissions to the configured channel.  
+
+**Examples**:
+```js
+.party create name="vertox s21 3 stele" desc="looking for incurable and enutrof" lvl="186+"
+.party create name="moon leveling" date=15/10 lvl="160-200" slots=3
+.party create name="dg excarnus s21" date="21/11 21:00" lvl=80
+.party join id=1 class=enu
+.party update id=50 date="12/11 15:00"
+.party update id=32 class=feca
+.party leave id=32
+// In practice, you'll only use create command and join/leave by reacting
+```
 
 ![Party Listing gif example](https://i.imgur.com/phx5oI2.gif)
 
-## More images
+### :earth_americas: Internationalization
+
+Most commands accept `lang=<lang>` and `translate=<lang>` options.  
+A server administrator can also set the default language with `.config` command.  
+Available languages are `en`, `es`, `pt` and `fr`.  
+
+### :shield: Equipment search
+
+A equipment search is available with `.equip <name>` command.  
+It's also possible to filter them by rarity with `rarity=<rarity>` option.  
+Equipment originated from crafting also displays their associated recipe.  
+
+**Examples**:
+```js
+.equip martelo de osamodas lang=pt
+.equip brakmar sword translate=fr
+.equip the eternal rarity=mythical
+```
+
+## :gem: Sublimation search
+
+The command `.subli` can search by sublimation name, source, type and slots combination.  
+When searching by slots combionation, it's possible to match with white slots and/or by random ordering.  
+
+**Examples**:
+```js
+.subli bruta
+.subli bruta translate=fr
+.subli talho lang=pt
+.subli rwb
+.subli rgbg random
+.subli epic
+.subli quest
+.subli koko
+.subli craft
+```
+
+## :scroll: Recipe search
+
+Similar to the commands above, you can search recipes by name and rarity.  
+Recipes with same results are shown together.  
+
+**Examples**:
+```js
+.recipe brakmar sword
+.recipe espada de brakmar lang=pt
+.recipe peace pipe rarity=mythical
+```
+
+## :boxing_glove: Damage Calculator
+
+It's possible to simulate an attack by providing some numbers to the `.calc` commands.  
+Maybe in the future we can improve it.  
+
+Examples:
+```js
+.calc dmg=3000 base=55 res=60%
+.calc dmg=5000 base=40 res=420 crit=30%
+```
 
 ![Find equipment and sublimations](https://i.imgur.com/gCNRFuQ.gif)
 
-## How to develop
+## :chart_with_upwards_trend: How to contribute
+
+Most translations were translated from portuguese brazilian, so they can be a little bit off.  
+If you notice any wrong translation, feel free to open a [Pull Request](https://github.com/Markkop/corvo-astral/pulls) fixing it.  
+If you don't know how to use Github, send me a message on Twitter ([@HeyMarkKop](https://twitter.com/HeyMarkKop)) or Discord (Mark#9605).  
+
+Wakfu data is gathered from Wakfu's [CDN](https://www.wakfu.com/en/forum/332-development/236779-json-data) and [Website](https://www.wakfu.com/en/mmorpg/) and [Method](https://builder.methodwakfu.com/builder/main)'s public API.  
+The [araknomecha-scrapper](https://github.com/Markkop/araknomecha-scrapper) project contains all the code used to scrap, extract and build items and recipes data. Both projects are still not integrated, so the files generated there are copy-pasted directly here.  
+
+This project contains lots of tests to cover the code, so feel free to mess with it while running some test-watching command:  
+
+```js
+npm run test -- --watch
+jest ./tests/equip.test.js --watch // need jest installed globally
+```
+
+Also make sure to use Node v12 (`nvm use 12`) while developping or Discord.js will break on `.flat` method and some tests will break because of `.sort` unstable ordering on prior node versions.   
 
 ```
 # Install system dependencies
