@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import mongoose from 'mongoose'
 
 const GuildSchema = new mongoose.Schema({

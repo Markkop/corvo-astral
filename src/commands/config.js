@@ -1,4 +1,5 @@
 import { getArgumentsAndOptions } from '../utils/message'
+import { isValidLang } from '../utils/language'
 import { mountCommandHelpEmbed } from './help'
 import { createOrUpdateGuild, getGuildOptions } from '../utils/mongoose'
 import config from '../config'
@@ -27,22 +28,19 @@ function mountConfigEmbed (title, config) {
  * @returns {object}
  */
 async function setConfig (message, guildId, options) {
-  if (options.lang) {
-    const validLangs = ['en', 'pt', 'fr', 'es']
-    const isValidLang = validLangs.some(lang => options.lang === lang)
-    if (!isValidLang) {
-      return message.channel.send(`${options.lang} is not a valid language.`)
-    }
+  const guildConfig = config.guildsOptions.find(config => config.id === message.guild.id)
+
+  if (guildConfig) {
+    const guildConfigIndex = config.guildsOptions.indexOf(guildConfig)
+    const newOptions = Object.assign(guildConfig, options)
+    const response = await createOrUpdateGuild(guildId, newOptions)
+    config.guildsOptions[guildConfigIndex] = response
+    return options
   }
 
-  const guildConfig = config.guildsOptions.find(config => config.id === message.guild.id)
-  const guildConfigIndex = config.guildsOptions.indexOf(guildConfig)
-
-  const newOptions = Object.assign(guildConfig, options)
-  const response = await createOrUpdateGuild(guildId, newOptions)
-
-  config.guildsOptions[guildConfigIndex] = response
-  return options
+  const response = await createOrUpdateGuild(guildId, options)
+  config.guildsOptions.push(response)
+  return response
 }
 
 /**
@@ -70,19 +68,22 @@ export async function configGuild (message) {
         return message.channel.send('You need administrator permission for this')
       }
 
+      if (options.lang && !isValidLang(options.lang)) {
+        return message.channel.send(`${options.lang} is not a valid language.`)
+      }
+
       const config = await setConfig(message, guildId, options)
       const configEmbed = mountConfigEmbed('Config updated', config)
       return message.channel.send({ embed: configEmbed })
     }
 
-    if (arg === 'get') {
-      const guildConfig = await getGuildOptions(guildId)
-      if (!guildConfig) {
-        return message.channel.send('')
-      }
-      const configEmbed = mountConfigEmbed(`Config for "${message.guild.name}"`, guildConfig)
+    const guildConfig = await getGuildOptions(guildId)
+    if (!guildConfig) {
+      const configEmbed = mountConfigEmbed('No custom config found. Using default', config.defaultConfig)
       return message.channel.send({ embed: configEmbed })
     }
+    const configEmbed = mountConfigEmbed(`Config for "${message.guild.name}"`, guildConfig)
+    return message.channel.send({ embed: configEmbed })
   } catch (error) {
     message.react('❌')
     console.log(error)

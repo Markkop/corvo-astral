@@ -24,7 +24,9 @@ export function mockMessage (content, channelMessages = []) {
     content: content,
     channel: {
       send: jest.fn(message => {
-        message.react = jest.fn()
+        if (typeof message === 'object') {
+          message.react = jest.fn()
+        }
         return message
       })
     },
@@ -34,6 +36,7 @@ export function mockMessage (content, channelMessages = []) {
     },
     guild: {
       id: 100,
+      name: 'GuildName',
       channels: {
         cache: [
           {

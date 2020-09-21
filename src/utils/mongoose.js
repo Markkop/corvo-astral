@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import mongoose from 'mongoose'
 import GuildModel from '../models/guild'
 import config from '../config'
@@ -57,7 +58,7 @@ export async function createOrUpdateGuild (guildId, options) {
  * Get a guild config.
  *
  * @param {string} guildId
- * @returns {Promise<object>}
+ * @returns {Promise<object|null>}
  */
 export async function getGuildOptions (guildId) {
   try {
@@ -65,7 +66,7 @@ export async function getGuildOptions (guildId) {
     const [guildConfig] = await GuildModel.find({ id: guildId }).lean()
     const defaultConfig = config.defaultConfig
     if (!guildConfig) {
-      return defaultConfig
+      return null
     }
     delete guildConfig._id
     delete guildConfig.__v
