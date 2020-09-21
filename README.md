@@ -66,7 +66,7 @@ Equipment originated from crafting also displays their associated recipe.
 .equip the eternal rarity=mythical
 ```
 
-## :gem: Sublimation search
+### :gem: Sublimation search
 
 The command `.subli` can search by sublimation name, source, type and slots combination.  
 When searching by slots combionation, it's possible to match with white slots and/or by random ordering.  
@@ -84,7 +84,7 @@ When searching by slots combionation, it's possible to match with white slots an
 .subli craft
 ```
 
-## :scroll: Recipe search
+### :scroll: Recipe search
 
 Similar to the commands above, you can search recipes by name and rarity.  
 Recipes with same results are shown together.  
@@ -96,7 +96,7 @@ Recipes with same results are shown together.
 .recipe peace pipe rarity=mythical
 ```
 
-## :boxing_glove: Damage Calculator
+### :boxing_glove: Damage Calculator
 
 It's possible to simulate an attack by providing some numbers to the `.calc` commands.  
 Maybe in the future we can improve it.  
@@ -109,7 +109,7 @@ Examples:
 
 ![Find equipment and sublimations](https://i.imgur.com/gCNRFuQ.gif)
 
-## :chart_with_upwards_trend: How to contribute
+### :chart_with_upwards_trend: How to contribute
 
 Most translations were translated from portuguese brazilian, so they can be a little bit off.  
 If you notice any wrong translation, feel free to open a [Pull Request](https://github.com/Markkop/corvo-astral/pulls) fixing it.  
