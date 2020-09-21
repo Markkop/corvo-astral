@@ -12,7 +12,7 @@ describe('getEquipment', () => {
       title: ':yellow_circle: Tentacled Belt',
       description: "It works like a typical belt, but you can't really say it does any more than that.",
       thumbnail: {
-        url: 'https://builder.methodwakfu.com/assets/icons/items/13327644.webp'
+        url: 'https://static.ankama.com/wakfu/portal/game/item/115/13327644.png'
       },
       fields: [
         {
@@ -186,8 +186,8 @@ describe('getEquipment', () => {
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#bb1327',
-      title: ':x: Nenhum equipamento encontrado',
-      description: 'Digite `.help equip` para conferir alguns exemplos de como pesquisar.'
+      description: 'Type `.help equip` to see some examples of how to search.',
+      title: ':x: No results'
     })
   })
 

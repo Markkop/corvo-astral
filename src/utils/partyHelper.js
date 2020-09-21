@@ -1,4 +1,4 @@
-import config from '../config'
+import { getConfig } from './message'
 
 /**
  * Get the party channel by matching its name.
@@ -7,8 +7,7 @@ import config from '../config'
  * @returns {object}
  */
 export function getPartyChannel (message) {
-  const guildConfig = config.guildsOptions.find(config => config.id === message.guild.id) || {}
-  const partyChannelName = guildConfig.partyChannel || config.defaultConfig.partyChannel
+  const partyChannelName = getConfig('partyChannel', message.guild.id)
   const partyChannel = message.guild.channels.cache.find(channel => channel.name.includes(partyChannelName))
   return partyChannel
 }

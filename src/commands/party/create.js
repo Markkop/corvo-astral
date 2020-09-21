@@ -1,5 +1,5 @@
 import { getPartyChannel, getChannelParties } from '../../utils/partyHelper'
-import { commandsHelp } from '../help'
+import { mountCommandHelpEmbed } from '../help'
 import config from '../../config'
 import { handleMessageError } from '../../utils/handleError'
 const { classEmoji } = config
@@ -15,13 +15,8 @@ export async function createParty (message, options) {
   try {
     const hasRequiredOptions = options.name
     if (!hasRequiredOptions) {
-      return message.channel.send({
-        embed: {
-          color: 'LIGHT_GREY',
-          title: ':grey_question: Help: `.party create`',
-          description: commandsHelp.party
-        }
-      })
+      const helpEmbed = mountCommandHelpEmbed(message, 'en')
+      return message.channel.send({ embed: helpEmbed })
     }
     const partyMessages = await getChannelParties(message)
     let identifier = 1

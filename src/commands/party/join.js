@@ -1,5 +1,5 @@
 import { getChannelParties, getMessageByEmbedNameAndValue } from '../../utils/partyHelper'
-import commandsHelp from '../../utils/helpMessages'
+import { mountCommandHelpEmbed } from '../help'
 import Discord from 'discord.js'
 
 /**
@@ -12,13 +12,8 @@ import Discord from 'discord.js'
 export async function joinParty (message, options) {
   const hasRequiredOptions = Boolean(options.class)
   if (!hasRequiredOptions) {
-    return message.channel.send({
-      embed: {
-        color: 'LIGHT_GREY',
-        title: ':grey_question: Help: `.party join`',
-        description: commandsHelp.party
-      }
-    })
+    const helpEmbed = mountCommandHelpEmbed(message, 'en')
+    return message.channel.send({ embed: helpEmbed })
   }
 
   const partyMessages = await getChannelParties(message)

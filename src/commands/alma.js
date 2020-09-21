@@ -1,8 +1,6 @@
 import events from '../../data/almanaxBonuses'
 import { getArgumentsAndOptions } from '../utils/message'
 import { setLanguage } from '../utils/language'
-import { capitalize } from '../utils/strings'
-import config from '../config'
 import str from '../stringsLang'
 
 /**
@@ -13,7 +11,7 @@ import str from '../stringsLang'
  */
 export function getAlmanaxBonus (message) {
   const { options } = getArgumentsAndOptions(message, '=')
-  const lang = setLanguage(options, config, message.guild.id)
+  const lang = setLanguage(options, message.guild.id)
   const today = new Date(Date.now())
   const todayEvent = events.find(event => {
     const eventFirstDate = new Date(event.firstDate)
@@ -27,7 +25,7 @@ export function getAlmanaxBonus (message) {
   const embed = {
     color: '#40b2b5',
     title: todayEvent.name[lang],
-    description: `${capitalize(str.todaysAlma[lang])}: ${todayEvent.text[lang]}`,
+    description: `${str.capitalize(str.todaysAlma[lang])}: ${todayEvent.text[lang]}`,
     image: { url: image },
     timestamp: new Date()
   }

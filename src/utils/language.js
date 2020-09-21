@@ -1,3 +1,5 @@
+import { getConfig } from './message'
+
 /**
  * Check if the provided language string is valid.
  *
@@ -17,9 +19,8 @@ export function isValidLang (lang) {
  * @param {string} guildId
  * @returns {string}
  */
-export function setLanguage (options, config, guildId) {
-  const guildConfig = config.guildsOptions.find(config => config.id === guildId) || {}
-  let lang = guildConfig.lang || config.defaultConfig.lang
+export function setLanguage (options, guildId) {
+  let lang = getConfig('lang', guildId)
   if (options.lang && isValidLang(options.lang)) {
     lang = options.lang
   }

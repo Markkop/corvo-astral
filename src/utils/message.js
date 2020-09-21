@@ -1,3 +1,6 @@
+import str from '../stringsLang'
+import botConfig from '../config'
+
 /**
  * Get command word from user message.
  *
@@ -41,4 +44,33 @@ export function getArgumentsAndOptions (message, optionsConector) {
     return { ...options, [argumentName]: argumentValue }
   }, {})
   return { args, options }
+}
+
+/**
+ * Mount the not found equipment embed.
+ *
+ * @param {object} message
+ * @param {string} lang
+ * @returns {object}
+ */
+export function mountNotFoundEmbed (message, lang) {
+  const prefix = getConfig('prefix', message.guild.id)
+  const command = getCommand(prefix, message)
+  return {
+    color: '#bb1327',
+    title: `:x: ${str.capitalize(str.noResults[lang])}`,
+    description: str.capitalize(str.noResultsMessage(command)[lang])
+  }
+}
+
+/**
+ * Get a config from guild custom config or default.
+ *
+ * @param {string} configName
+ * @param {string} guildId
+ * @returns {any}
+ */
+export function getConfig (configName, guildId) {
+  const guildConfig = botConfig.guildsOptions.find(guildConfig => guildConfig.id === guildId) || {}
+  return guildConfig[configName] || botConfig.defaultConfig[configName]
 }

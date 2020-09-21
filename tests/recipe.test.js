@@ -10,7 +10,7 @@ describe('getRecipe', () => {
     expect(botMessage.embed).toEqual({
       color: '#fede71',
       title: ':yellow_circle: Recipe: Kaw Breastplate',
-      thumbnail: { url: 'https://builder.methodwakfu.com/assets/icons/items/13625074.webp' },
+      thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/13625074.png' },
       fields: [
         {
           name: 'Profession',
@@ -43,7 +43,7 @@ describe('getRecipe', () => {
     expect(botMessage.embed).toEqual({
       color: '#fd8e39',
       title: ':orange_circle: Recipe: Peace Pipe',
-      thumbnail: { url: 'https://builder.methodwakfu.com/assets/icons/items/25321811.webp' },
+      thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/25321811.png' },
       fields: [
         {
           name: 'Profession',
@@ -77,7 +77,7 @@ describe('getRecipe', () => {
     expect(botMessage.embed).toEqual({
       color: '#8fc7e2',
       title: ':blue_circle: Recipe: The Eternal',
-      thumbnail: { url: 'https://builder.methodwakfu.com/assets/icons/items/12019145.webp' },
+      thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/12019145.png' },
       fields: [
         {
           name: 'Profession',
@@ -158,8 +158,8 @@ describe('getRecipe', () => {
     const botMessage = await getRecipe(userMessage)
     expect(botMessage.embed).toMatchObject({
       color: '#bb1327',
-      title: ':x: Nenhuma receita encontrada',
-      description: 'Digite `.help recipe` para conferir alguns exemplos de como pesquisar.'
+      description: 'Type `.help recipe` to see some examples of how to search.',
+      title: ':x: No results'
     })
   })
 

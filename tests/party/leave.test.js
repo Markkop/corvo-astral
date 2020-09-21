@@ -63,7 +63,7 @@ describe('leaveParty', () => {
     const mockedUserMessage = mockMessage(content)
     const botResponse = await partyList(mockedUserMessage)
     expect(botResponse.embed).toMatchObject({
-      title: ':grey_question: Help: `.party leave`'
+      title: ':grey_question: Help: `.help party`'
     })
   })
 

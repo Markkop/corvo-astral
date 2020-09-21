@@ -1,5 +1,5 @@
 import { partyList } from '../../src/commands'
-import { commandsHelp } from '../../src/commands/help'
+import commandsHelp from '../../src/utils/helpMessages'
 import { mockMessage } from '../testUtils'
 import { handleMessageError } from '../../src/utils/handleError'
 
@@ -114,7 +114,7 @@ describe('partyList', () => {
       const mockedUserMessage = mockMessage(content, [])
       const botResponse = await partyList(mockedUserMessage)
       expect(botResponse.embed).toMatchObject({
-        description: commandsHelp.party
+        description: commandsHelp.party.help.en
       })
     })
 

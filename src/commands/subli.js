@@ -3,9 +3,8 @@ import { getRecipeFields } from './recipe'
 import recipesData from '../../data/recipes.json'
 import itemsData from '../../data/items.json'
 import findPermutations from '../utils/permutateString'
-import { getArgumentsAndOptions } from '../utils/message'
+import { getArgumentsAndOptions, mountNotFoundEmbed } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
-import { capitalize } from '../utils/strings'
 import str from '../stringsLang'
 import config from '../config'
 const { rarityMap } = config
@@ -80,19 +79,6 @@ function findSublimationByMatchingSlots (sublimationList, query) {
 }
 
 /**
- * Created the embed message with the a sublimation not found.
- *
- * @returns {object}
- */
-function mountNotFoundEmbed () {
-  return {
-    color: '#bb1327',
-    title: ':x: Nenhuma sublimação encontrada',
-    description: 'Digite `.help subli` para conferir alguns exemplos de como pesquisar.'
-  }
-}
-
-/**
  * Created the embed message with the sublimations found and a footer list.
  *
  * @param {object[]} results
@@ -113,21 +99,21 @@ function mountSublimationFoundEmbed (results, lang) {
     thumbnail: { url: `https://static.ankama.com/wakfu/portal/game/item/115/${firstResult.imageId}.png` },
     fields: [
       {
-        name: capitalize(str.slots[lang]),
+        name: str.capitalize(str.slots[lang]),
         value: isEpicOrRelic ? rarityMap[sublimationRarity].name[lang] : parseSlotsToEmojis(sublimation.slots),
         inline: true
       },
       {
-        name: capitalize(str.maxStacks[lang]),
+        name: str.capitalize(str.maxStacks[lang]),
         value: maxStack || '1',
         inline: true
       },
       {
-        name: capitalize(str.effects[lang]),
+        name: str.capitalize(str.effects[lang]),
         value: sublimation.effects[lang]
       },
       {
-        name: capitalize(str.acquiring[lang]),
+        name: str.capitalize(str.acquiring[lang]),
         value: sublimation.source[lang].trim()
       }
     ]
@@ -143,7 +129,7 @@ function mountSublimationFoundEmbed (results, lang) {
   const hasFoundMoreThanOne = results.length > 1
   if (hasFoundMoreThanOne) {
     sublimationEmbed.footer = {
-      text: `${capitalize(str.sublimationsFound[lang])}: ${getSublimationListText(results, lang)}`
+      text: `${str.capitalize(str.sublimationsFound[lang])}: ${getSublimationListText(results, lang)}`
     }
   }
   return sublimationEmbed
@@ -159,20 +145,20 @@ function mountSublimationFoundEmbed (results, lang) {
  */
 function mountSublimationsFoundListEmbed (results, queriedSlotsText, lang) {
   return {
-    title: `:mag_right: ${capitalize(str.sublimationsFound[lang])}`,
+    title: `:mag_right: ${str.capitalize(str.sublimationsFound[lang])}`,
     fields: [
       {
-        name: capitalize(str.query[lang]),
+        name: str.capitalize(str.query[lang]),
         value: queriedSlotsText,
         inline: true
       },
       {
-        name: capitalize(str.results[lang]),
+        name: str.capitalize(str.results[lang]),
         value: results.length,
         inline: true
       },
       {
-        name: capitalize(str.sublimations[lang]),
+        name: str.capitalize(str.sublimations[lang]),
         value: getSublimationListText(results, lang)
       }
     ]
@@ -192,15 +178,15 @@ function mountPermutatedSublimationFoundEmbed (results, queriedSlotsText, lang) 
     return totalResults + permutatedResult.results.length
   }, 0)
   const embed = {
-    title: `:mag_right: ${capitalize(str.sublimationsFound[lang])}`,
+    title: `:mag_right: ${str.capitalize(str.sublimationsFound[lang])}`,
     fields: [
       {
-        name: capitalize(str.query[lang]),
+        name: str.capitalize(str.query[lang]),
         value: `${parseSlotsToEmojis(queriedSlotsText)} ${str.inAnyOrder[lang]}`,
         inline: true
       },
       {
-        name: capitalize(str.results[lang]),
+        name: str.capitalize(str.results[lang]),
         value: totalResults,
         inline: true
       }
@@ -299,7 +285,7 @@ export function getSublimation (message) {
   const anyOrderArgument = 'random'
   const { args, options } = getArgumentsAndOptions(message, '=')
 
-  let lang = setLanguage(options, config, message.guild.id)
+  let lang = setLanguage(options, message.guild.id)
 
   const hasAnyOrderArgument = args.includes(anyOrderArgument)
   if (hasAnyOrderArgument) {
@@ -315,7 +301,7 @@ export function getSublimation (message) {
   const query = equivalentQuery || normalizedQuery
   const { results, foundBy } = findSublimations(sublimations, query, hasAnyOrderArgument, lang)
   if (!results.length) {
-    const notFoundEmbed = mountNotFoundEmbed()
+    const notFoundEmbed = mountNotFoundEmbed(message, lang)
     return message.channel.send({ embed: notFoundEmbed })
   }
 

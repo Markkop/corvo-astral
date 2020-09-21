@@ -401,8 +401,8 @@ describe('getSublimation', () => {
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#bb1327',
-      title: ':x: Nenhuma sublimação encontrada',
-      description: 'Digite `.help subli` para conferir alguns exemplos de como pesquisar.'
+      description: 'Type `.help subli` to see some examples of how to search.',
+      title: ':x: No results'
     })
   })
 

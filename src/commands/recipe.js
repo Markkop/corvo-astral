@@ -1,9 +1,8 @@
 import recipesData from '../../data/recipes.json'
 import itemsData from '../../data/items.json'
 import { mountCommandHelpEmbed } from './help'
-import { getArgumentsAndOptions } from '../utils/message'
+import { getArgumentsAndOptions, mountNotFoundEmbed } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
-import { capitalize } from '../utils/strings'
 import str from '../stringsLang'
 import config from '../config'
 const { rarityMap, jobsMap } = config
@@ -53,19 +52,6 @@ function findRecipeByName (recipeList, query, options, lang) {
 }
 
 /**
- * Created the embed message with the a recipe not found.
- *
- * @returns {object}
- */
-function mountNotFoundEmbed () {
-  return {
-    color: '#bb1327',
-    title: ':x: Nenhuma receita encontrada',
-    description: 'Digite `.help recipe` para conferir alguns exemplos de como pesquisar.'
-  }
-}
-
-/**
  * Get the text that displays more results.
  *
  * @param {object[]} results
@@ -104,12 +90,12 @@ export function getRecipeFields (recipeResults, lang) {
 
   const fields = [
     {
-      name: capitalize(str.job[lang]),
+      name: str.capitalize(str.job[lang]),
       value: `${jobEmoji} ${jobName}`,
       inline: true
     },
     {
-      name: capitalize(str.level[lang]),
+      name: str.capitalize(str.level[lang]),
       value: firstRecipe.level,
       inline: true
     }
@@ -136,7 +122,7 @@ export function getRecipeFields (recipeResults, lang) {
       return 0
     })
     fields.push({
-      name: capitalize(str.ingredients[lang]),
+      name: str.capitalize(str.ingredients[lang]),
       value: orderedByEmojiTexts.join('\n')
     })
   })
@@ -155,13 +141,13 @@ function mountRecipeEmbed (results, lang) {
   const recipeResultRarity = firstRecipe.result.rarity
   const equipment = itemsData.find(equip => equip.id === firstRecipe.result.productedItemId)
   const job = jobsMap[firstRecipe.job.definition.id]
-  const imageUrl = equipment ? `https://builder.methodwakfu.com/assets/icons/items/${equipment.img}.webp` : job.recipeImage
+  const imageUrl = equipment ? `https://static.ankama.com/wakfu/portal/game/item/115/${equipment.imageId}.png` : job.recipeImage
 
   const rarityEmoji = recipeResultRarity ? `${rarityMap[recipeResultRarity].emoji} ` : ''
   const embedColor = firstRecipe.result.rarity ? rarityMap[firstRecipe.result.rarity].color : 'LIGHT_GREY'
   const embed = {
     color: embedColor,
-    title: `${rarityEmoji}${capitalize(str.recipe[lang])}: ${firstRecipe.result.title[lang]}`,
+    title: `${rarityEmoji}${str.capitalize(str.recipe[lang])}: ${firstRecipe.result.title[lang]}`,
     thumbnail: { url: imageUrl },
     fields: getRecipeFields(results, lang)
   }
@@ -172,7 +158,7 @@ function mountRecipeEmbed (results, lang) {
   if (nonRepatedMoreResults.length > 1) {
     const moreRecipesText = getMoreRecipesText(nonRepatedMoreResults, 20, lang)
     embed.footer = {
-      text: `${capitalize(str.recipesFound[lang])}: ${moreRecipesText}`
+      text: `${str.capitalize(str.recipesFound[lang])}: ${moreRecipesText}`
     }
   }
   return embed
@@ -188,7 +174,7 @@ export function getRecipe (message) {
   const { args, options } = getArgumentsAndOptions(message, '=')
   const query = args.join(' ').toLowerCase()
 
-  let lang = setLanguage(options, config, message.guild.id)
+  let lang = setLanguage(options, message.guild.id)
 
   if (!query) {
     const helpEmbed = mountCommandHelpEmbed(message, lang)
@@ -197,7 +183,7 @@ export function getRecipe (message) {
 
   const results = findRecipeByName(recipesData, query, options, lang)
   if (!results.length) {
-    const notFoundEmbed = mountNotFoundEmbed()
+    const notFoundEmbed = mountNotFoundEmbed(message, lang)
     return message.channel.send({ embed: notFoundEmbed })
   }
 

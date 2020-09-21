@@ -1,18 +1,14 @@
-import { getArgumentsAndOptions, getCommand } from '../utils/message'
-import config from '../config'
+import { getArgumentsAndOptions, getCommand, getConfig } from '../utils/message'
 import commandsHelp from '../utils/helpMessages'
 import { setLanguage } from '../utils/language'
-const { defaultConfig: { prefix } } = config
-
-const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
 
 /**
  * Get fields with more help information.
  *
- * @param {string} commandsListText
  * @returns {object[]}
  */
-function getMoreHelpFields (commandsListText) {
+function getMoreHelpFields () {
+  const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
   return [
     {
       name: 'Internacionalization',
@@ -33,7 +29,13 @@ function getMoreHelpFields (commandsListText) {
  * @returns {object}
  */
 export function mountCommandHelpEmbed (messageOrArgument, lang) {
-  const command = typeof messageOrArgument === 'string' ? messageOrArgument : getCommand(prefix, messageOrArgument)
+  let command
+  if (typeof messageOrArgument === 'string') {
+    command = messageOrArgument
+  } else {
+    const prefix = getConfig('prefix', messageOrArgument.guild.id)
+    command = getCommand(prefix, messageOrArgument)
+  }
   return {
     color: 'LIGHT_GREY',
     title: `:grey_question: Help: \`.help ${command}\``,
@@ -43,7 +45,7 @@ export function mountCommandHelpEmbed (messageOrArgument, lang) {
         name: 'Examples',
         value: commandsHelp[command].examples.map(example => `\`${example}\``).join('\n')
       },
-      ...getMoreHelpFields(commandsListText)
+      ...getMoreHelpFields()
     ]
   }
 }
@@ -57,7 +59,7 @@ export function mountCommandHelpEmbed (messageOrArgument, lang) {
 export function getHelp (message) {
   const { args, options } = getArgumentsAndOptions(message, '=')
 
-  const lang = setLanguage(options, config, message.guild.id)
+  const lang = setLanguage(options, message.guild.id)
 
   const hasArguments = Boolean(args.length)
   const hasTooManyArguments = args.length > 1
@@ -66,7 +68,7 @@ export function getHelp (message) {
     color: 'LIGHT_GREY',
     title: ':grey_question: Help',
     description: 'type `.help <command>` to get help for an specific command',
-    fields: getMoreHelpFields(commandsListText)
+    fields: getMoreHelpFields()
   }
   if (!hasArguments) {
     return message.channel.send({ embed })

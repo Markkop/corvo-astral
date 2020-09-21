@@ -1,5 +1,5 @@
 import { getHelp } from '../src/commands'
-import { commandsHelp } from '../src/commands/help'
+import commandsHelp from '../src/utils/helpMessages'
 import { mockMessage } from './testUtils'
 
 describe('getHelp', () => {
@@ -24,7 +24,7 @@ describe('getHelp', () => {
       fields: [
         {
           name: 'Internacionalization',
-          value: 'Some commands support `lang=<lang>` and `translate=<lang>` options. Available languages: `en`, `pt`, `fr` and `es`.'
+          value: 'Some commands support `lang=<lang>` and `translate=<lang>` options.\nAvailable languages: `en`, `pt`, `fr` and `es`.'
         },
         {
           name: 'Available Commands',
@@ -45,7 +45,7 @@ describe('getHelp', () => {
       fields: [
         {
           name: 'Internacionalization',
-          value: 'Some commands support `lang=<lang>` and `translate=<lang>` options. Available languages: en, pt, fr and es.'
+          value: 'Some commands support `lang=<lang>` and `translate=<lang>` options.\nAvailable languages: `en`, `pt`, `fr` and `es`.'
         },
         {
           name: 'Available Commands',

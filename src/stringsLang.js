@@ -1,4 +1,14 @@
 export default {
+  /**
+   * Capitalizes a string.
+   *
+   * @param {string} str
+   * @returns {string}
+   */
+  capitalize (str) {
+    if (typeof str !== 'string') return ''
+    return str.charAt(0).toUpperCase() + str.slice(1)
+  },
   slots: {
     en: 'slots',
     es: 'engarces',
@@ -184,5 +194,17 @@ export default {
     es: 'grupo',
     fr: 'groupe',
     pt: 'grupo'
-  }
+  },
+  noResults: {
+    en: 'No results',
+    es: 'No hay resultados',
+    fr: 'Aucun résultat',
+    pt: 'Sem resultados'
+  },
+  noResultsMessage: (command) => ({
+    en: `Type \`.help ${command}\` to see some examples of how to search.`,
+    es: `Escriba \`.help ${command}\` para ver algunos ejemplos de cómo buscar.`,
+    fr: `Tapez \`.help ${command}\` pour voir quelques exemples de recherche.`,
+    pt: `Digite \`.help ${command}\` para conferir alguns exemplos de como pesquisar.`
+  })
 }

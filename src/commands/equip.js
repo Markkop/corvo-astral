@@ -2,9 +2,8 @@ import itemsData from '../../data/items.json'
 import recipesData from '../../data/recipes.json'
 import { getRecipeFields } from './recipe'
 import { mountCommandHelpEmbed } from './help'
-import { getArgumentsAndOptions } from '../utils/message'
+import { getArgumentsAndOptions, mountNotFoundEmbed } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
-import { capitalize } from '../utils/strings'
 import str from '../stringsLang'
 import config from '../config'
 const { rarityMap, equipTypesMap } = config
@@ -28,6 +27,8 @@ const iconCodeMap = {
 
 /**
  * Remove equip with the same name and lower rarity.
+ * TODO: Refactor this to better performance.
+ * Perhaps sort items by rarity when importing.
  *
  * @param {object[]} equipmentList
  * @param {string} lang
@@ -103,19 +104,6 @@ function getMoreEquipmentText (results, resultsLimit, lang) {
 }
 
 /**
- * Mount the not found equipment embed.
- *
- * @returns {object}
- */
-function mountNotFoundEmbed () {
-  return {
-    color: '#bb1327',
-    title: ':x: Nenhum equipamento encontrado',
-    description: 'Digite `.help equip` para conferir alguns exemplos de como pesquisar.'
-  }
-}
-
-/**
  * Mount equipment found embed message.
  *
  * @param {object[]} results
@@ -128,20 +116,20 @@ function mountEquipEmbed (results, lang) {
     color: rarityMap[firstResult.rarity].color,
     title: `${rarityMap[firstResult.rarity].emoji} ${firstResult.title[lang]}`,
     description: firstResult.description[lang],
-    thumbnail: { url: `https://builder.methodwakfu.com/assets/icons/items/${firstResult.imageId}.webp` },
+    thumbnail: { url: `https://static.ankama.com/wakfu/portal/game/item/115/${firstResult.imageId}.png` },
     fields: [
       {
-        name: capitalize(str.level[lang]),
+        name: str.capitalize(str.level[lang]),
         value: firstResult.level,
         inline: true
       },
       {
-        name: capitalize(str.type[lang]),
+        name: str.capitalize(str.type[lang]),
         value: equipTypesMap[firstResult.itemTypeId][lang],
         inline: true
       },
       {
-        name: capitalize(str.rarity[lang]),
+        name: str.capitalize(str.rarity[lang]),
         value: rarityMap[firstResult.rarity].name[lang],
         inline: true
       }
@@ -149,20 +137,20 @@ function mountEquipEmbed (results, lang) {
   }
   if (firstResult.equipEffects.length) {
     equipEmbed.fields.push({
-      name: capitalize(str.equipped[lang]),
+      name: str.capitalize(str.equipped[lang]),
       value: firstResult.equipEffects.map(effect => parseIconCodeToEmoji(effect.description[lang])).join('\n')
     })
   }
   if (firstResult.useEffects.length) {
     equipEmbed.fields.push({
-      name: capitalize(str.inUse[lang]),
+      name: str.capitalize(str.inUse[lang]),
       value: firstResult.useEffects.map(effect => parseIconCodeToEmoji(effect.description[lang])).join('\n')
     })
   }
   const hasCondititions = Boolean(firstResult.conditions.description[lang])
   if (hasCondititions) {
     equipEmbed.fields.push({
-      name: capitalize(str.conditions[lang]),
+      name: str.capitalize(str.conditions[lang]),
       value: firstResult.conditions.description[lang]
     })
   }
@@ -177,7 +165,7 @@ function mountEquipEmbed (results, lang) {
   const equipamentsFoundText = getMoreEquipmentText(results, 20, lang)
   if (results.length > 1) {
     equipEmbed.footer = {
-      text: `${capitalize(str.equipmentFound[lang])}: ${equipamentsFoundText}`
+      text: `${str.capitalize(str.equipmentFound[lang])}: ${equipamentsFoundText}`
     }
   }
   return equipEmbed
@@ -192,7 +180,7 @@ function mountEquipEmbed (results, lang) {
 export async function getEquipment (message) {
   const { args, options } = getArgumentsAndOptions(message, '=')
   const query = args.join(' ').toLowerCase()
-  let lang = setLanguage(options, config, message.guild.id)
+  let lang = setLanguage(options, message.guild.id)
 
   if (!query) {
     const helpEmbed = mountCommandHelpEmbed(message, lang)
@@ -202,7 +190,7 @@ export async function getEquipment (message) {
   let results = []
   results = findEquipmentByName(equipmentList, query, options, lang)
   if (!results.length) {
-    const notFoundEmbed = mountNotFoundEmbed()
+    const notFoundEmbed = mountNotFoundEmbed(message, lang)
     return message.channel.send({ embed: notFoundEmbed })
   }
 
