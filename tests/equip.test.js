@@ -1,163 +1,173 @@
 import { getEquipment } from '../src/commands'
-import { commandsHelp } from '../src/commands/help'
+import helpMessages from '../src/utils/helpMessages'
 import { mockMessage } from './testUtils'
 
 describe('getEquipment', () => {
   it('return a matching equipment by name', async () => {
-    const content = '.equip Cinto Tentacular'
+    const content = '.equip tentacled belt'
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#fede71',
-      title: ':yellow_circle: Cinto Tentacular',
+      title: ':yellow_circle: Tentacled Belt',
+      description: "It works like a typical belt, but you can't really say it does any more than that.",
       thumbnail: {
-        url: 'https://builder.methodwakfu.com/assets/icons/items/13327644.webp'
+        url: 'https://static.ankama.com/wakfu/portal/game/item/115/13327644.png'
       },
       fields: [
         {
-          name: 'Nível',
+          name: 'Level',
           value: 215,
           inline: true
         },
         {
-          name: 'Tipo',
-          value: 'Cinto',
+          name: 'Type',
+          value: 'Belt',
           inline: true
         },
         {
-          name: 'Raridade',
-          value: 'Lendário',
+          name: 'Rarity',
+          value: 'Legendary',
           inline: true
         },
         {
-          name: 'Equipado',
-          value:
-            '286 PV\n47 de esquiva\n30 de Prospecção\n6% de Golpe crítico\n218 Domínio sobre 2 elementos aleatórios\n118 de Domínio de distância\n47 Resistência a :fire:\n47 Resistência a :herb:'
+          name: 'Equipped',
+          value: '286 HP\n47 Dodge\n30 Prospecting\n6% Critical Hit\n218 Mastery of 2 random element\n118 Distance Mastery\n47 :fire: Resistance\n47 :herb: Resistance'
         },
         {
           inline: true,
-          name: 'Profissão',
-          value: ':boot: Coureiro'
+          name: 'Profession',
+          value: ':boot: Leather Dealer'
         },
         {
           inline: true,
-          name: 'Nível',
+          name: 'Level',
           value: 140
         },
         {
-          name: 'Ingredientes',
-          value: `:orange_circle: \`1x   \` Cinto Tentacular
-:boot: \`38x  \` Couro Divino
-:adhesive_bandage: \`63x  \` Bond, Super Bond Divina
-:sunflower: \`8x   \` Violeta
-:sparkles: \`287x \` Pó
-:white_small_square: \`75x  \` Pinsengraça
-:white_small_square: \`7x   \` Carapaça do Crustacérebro
-:white_small_square: \`8x   \` Pinsolação`
+          name: 'Ingredients',
+          value: `:orange_circle: \`1x   \` Tentacled Belt
+:boot: \`38x  \` Divine Leather
+:adhesive_bandage: \`63x  \` Divine Souper-Glou
+:sunflower: \`8x   \` Delphinia
+:sparkles: \`287x \` Powder
+:white_small_square: \`75x  \` Sirius Pincer
+:white_small_square: \`7x   \` Cerebratacean Carapace
+:white_small_square: \`8x   \` Lashing Pincer`
         }
-      ]
+      ],
+      footer: {
+        text: 'Equipment found: Tentacled Belt (Legendary), Tentacled Belt (Mythical)'
+      }
     })
   })
 
   it('return a matching equipment by name with higher rarity by default', async () => {
-    const content = '.equip o eterno'
+    const content = '.equip the eternal'
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
-      name: 'Raridade',
-      value: 'Anelembrança',
+      name: 'Rarity',
+      value: 'Souvenir',
       inline: true
     }]))
   })
 
+  it('return a translated equip with "translate" option', async () => {
+    const content = '.equip peace pipe translate=pt'
+    const userMessage = mockMessage(content)
+    const botMessage = await getEquipment(userMessage)
+    expect(botMessage.embed.title).toEqual(':yellow_circle: Cachimbo Dapais')
+  })
+
   it('return a matching equipment by name with lower rarity with rarity argument is provided', async () => {
-    const content = '.equip o eterno raridade=mítico'
+    const content = '.equip the eternal rarity=mythical'
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
-      name: 'Raridade',
-      value: 'Mítico',
+      name: 'Rarity',
+      value: 'Mythical',
       inline: true
     }]))
   })
 
   it('return a matching equipment with a recipe', async () => {
-    const content = '.equip espada de brakmar'
+    const content = '.equip brakmar sword'
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([
       {
-        name: 'Profissão',
-        value: ':crossed_swords: Mestre de armas',
+        name: 'Profession',
+        value: ':crossed_swords: Weapons Master',
         inline: true
       },
       {
-        name: 'Nível',
+        name: 'Level',
         value: 130,
         inline: true
       },
       {
-        name: 'Ingredientes',
-        value: `:pick: \`80x  \` Rubi Polido
-:pick: \`40x  \` Carbono Hara
-:adhesive_bandage: \`400x \` Bond, Super Bond eterna
-:sparkles: \`717x \` Pó
-:white_small_square: \`20x  \` Esterco Marrom Dourado
-:white_small_square: \`20x  \` Canino Real
-:white_small_square: \`20x  \` Essência de Blopzart
-:white_small_square: \`20x  \` Estalagmama`
+        name: 'Ingredients',
+        value: `:pick: \`80x  \` Polished Ruby
+:pick: \`40x  \` Carbon Hara
+:adhesive_bandage: \`400x \` Eternal Souper-Glou
+:sparkles: \`717x \` Powder
+:white_small_square: \`20x  \` Golden Brown Dung
+:white_small_square: \`20x  \` Royal Canine
+:white_small_square: \`20x  \` Blopzart Essence
+:white_small_square: \`20x  \` Stalagmama`
       }
     ]))
   })
 
   it('return the condition if the resulting equipment has one', async () => {
-    const content = '.equip espada de amakna'
+    const content = '.equip amakna sword'
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
-      name: 'Condições',
-      value: 'Está equipado com Anel de Amakna'
+      name: 'Conditions',
+      value: 'Have Amakna Ring equipped'
     }]))
   })
 
   it('return the useEffect description if the resulting equipment has one', async () => {
-    const content = '.equip Palito de Dente de Ogrest'
+    const content = '.equip Toothpick'
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
-      name: 'Em uso',
-      value: 'Dano :star2:: 46 :left_right_arrow:'
+      name: 'In use',
+      value: ':star2: Damage: 46'
     }]))
   })
 
   it('does not return the effects for an equipment that does not have one ', async () => {
-    const content = '.equip anel de brakmar'
+    const content = '.equip brakmar ring'
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.fields).toEqual([
-      { inline: true, name: 'Nível', value: 200 },
-      { inline: true, name: 'Tipo', value: 'Anel' },
-      { inline: true, name: 'Raridade', value: 'Épico' },
-      { name: 'Condições', value: 'Singular' },
+      { inline: true, name: 'Level', value: 200 },
+      { inline: true, name: 'Type', value: 'Ring' },
+      { inline: true, name: 'Rarity', value: 'Epic' },
+      { name: 'Conditions', value: 'Unique' },
       {
         inline: true,
-        name: 'Profissão',
-        value: ':ring: Joalheiro'
+        name: 'Profession',
+        value: ':ring: Jeweler'
       },
       {
         inline: true,
-        name: 'Nível',
+        name: 'Level',
         value: 130
       },
       {
-        name: 'Ingredientes',
-        value: `:pick: \`15x  \` Carbono Hara
-:sparkles: \`300x \` Pó
-:chair: \`25x  \` Orbe Eterno
-:droplet: \`1400x\` Lágrima de Ogrest
-:adhesive_bandage: \`300x \` Bond, Super Bond eterna
-:orange_circle: \`5x   \` Anel Furtador
-:ring: \`100x \` Gema eterna`
+        name: 'Ingredients',
+        value: `:pick: \`15x  \` Carbon Hara
+:sparkles: \`300x \` Powder
+:chair: \`25x  \` Eternal Orb
+:droplet: \`1400x\` Ogrest's Tear
+:adhesive_bandage: \`300x \` Eternal Souper-Glou
+:orange_circle: \`5x   \` Pilfer Ring
+:ring: \`100x \` Eternal Gem`
       }
     ])
   })
@@ -167,7 +177,7 @@ describe('getEquipment', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.footer).toEqual({
-      text: 'Equipamentos encontrados: Botas dos Riktus de Amakna, Peitoral dos Riktus de Amakna, Máscara dos Riktus de Amakna, Escudo do Capitão Amakna, Espada de Amakna, Anel de Amakna, Dragonas dos Riktus de Amakna'
+      text: 'Equipment found: Amakna Ring (Epic), Amakna Sword (Relic), Captain Amakna Shield (Relic), Amakna Riktus Boots (Mythical), Amakna Riktus Epaulettes (Mythical), Amakna Riktus Mask (Mythical), Amakna Riktus Breastplate (Mythical), Amakna Riktus Boots (Rare), Amakna Riktus Epaulettes (Rare)'
     })
   })
 
@@ -176,7 +186,7 @@ describe('getEquipment', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.footer).toEqual({
-      text: 'Equipamentos encontrados: Kwal Dhedo Enfraquecido, Botas do Tofu selvagem, Fatiadoras de Milobo, Fatiadoras de Milobo, Fatiadoras de Milobo, Fatiadoras de Milobo, O Amula, O Amula, O Amula, O Amula, Dragoperu de Precisão, Dragoperu de Distância, Dragoperu de Destruição, Manto do Competidor Júnior, Amuleto de Moskito, Lâmina Estrondosa, Sapeado, Vegetacinto, Anel Aventureiro, ChaPiu Azul e outros 3333 resultados'
+      text: "Equipment found: Dazzling Belt (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Hazieff's Helmet (Epic), Wa Wabbit's Cwown (Epic), Genetically Modified Epaulettes (Epic), Claymore of Fhenris (Epic), Bax Stab Ax (Epic), Claymus Shushu (Epic), Emiwlet Amulet (Epic), Lenald Walm Pelt (Epic), Vizion Dagger (Epic), Trool Warrior Spikes (Epic), Sanefty Belt (Epic), Happy Sram Kimono (Epic), Durable Shield (Epic), Limited Edition Cape (Epic), Dora Lagoole (Epic), Welder Mask (Epic), Viktorious Rapier (Epic) and other 4688 results"
     })
   })
 
@@ -186,8 +196,8 @@ describe('getEquipment', () => {
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#bb1327',
-      title: ':x: Nenhum equipamento encontrado',
-      description: 'Digite `.help equip` para conferir alguns exemplos de como pesquisar.'
+      description: 'Type `.help equip` to see some examples of how to search.',
+      title: ':x: No results'
     })
   })
 
@@ -196,7 +206,7 @@ describe('getEquipment', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed).toMatchObject({
-      description: commandsHelp.equip
+      description: helpMessages.equip.help.en
     })
   })
 })

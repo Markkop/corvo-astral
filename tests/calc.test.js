@@ -1,5 +1,5 @@
 import { calculateAttackDamage } from '../src/commands'
-import { commandsHelp } from '../src/commands/help'
+import helpMessages from '../src/utils/helpMessages'
 import { mockMessage } from './testUtils'
 
 describe('calculateAttackDamage', () => {
@@ -8,38 +8,38 @@ describe('calculateAttackDamage', () => {
     const userMessage = mockMessage(content)
     const botMessage = calculateAttackDamage(userMessage)
     expect(botMessage.embed).toMatchObject({
-      title: ':crossed_swords: Mark atacou um Papatudo!',
+      title: ':crossed_swords: Mark has attacked a gobbal!',
       fields: [
         {
-          name: ':boxing_glove: Domínio Total',
+          name: ':boxing_glove: Total Domain',
           value: 4000,
           inline: true
         },
         {
-          name: ':pushpin: Dano Base',
+          name: ':pushpin: Base Damage',
           value: 50,
           inline: true
         },
         {
-          name: ':shield: Resistência do Alvo',
+          name: ':shield: Target Resistance',
           value: '61% (422)',
           inline: true
         },
         {
-          name: ':game_die: Chance Crítica',
+          name: ':game_die: Critical chance',
           value: '0%',
           inline: true
         },
         {
-          name: ':drop_of_blood: Dano causado',
+          name: ':drop_of_blood: Damage done',
           value: 800
         },
         {
-          name: ':abacus: Dano médio',
+          name: ':abacus: Average damage',
           value: 800
         },
         {
-          name: ':dagger: Dano nas costas',
+          name: ':dagger: Back damage',
           value: 1000
         }
       ]
@@ -51,38 +51,38 @@ describe('calculateAttackDamage', () => {
     const userMessage = mockMessage(content)
     const botMessage = calculateAttackDamage(userMessage)
     expect(botMessage.embed).toMatchObject({
-      title: ':crossed_swords: Mark atacou um Papatudo!',
+      title: ':crossed_swords: Mark has attacked a gobbal!',
       fields: [
         {
-          name: ':boxing_glove: Domínio Total',
+          name: ':boxing_glove: Total Domain',
           value: 4000,
           inline: true
         },
         {
-          name: ':pushpin: Dano Base',
+          name: ':pushpin: Base Damage',
           value: 50,
           inline: true
         },
         {
-          name: ':shield: Resistência do Alvo',
+          name: ':shield: Target Resistance',
           value: '61% (422)',
           inline: true
         },
         {
-          name: ':game_die: Chance Crítica',
+          name: ':game_die: Critical chance',
           value: '0%',
           inline: true
         },
         {
-          name: ':drop_of_blood: Dano causado',
+          name: ':drop_of_blood: Damage done',
           value: 800
         },
         {
-          name: ':abacus: Dano médio',
+          name: ':abacus: Average damage',
           value: 800
         },
         {
-          name: ':dagger: Dano nas costas',
+          name: ':dagger: Back damage',
           value: 1000
         }
       ]
@@ -94,38 +94,38 @@ describe('calculateAttackDamage', () => {
     const userMessage = mockMessage(content)
     const botMessage = calculateAttackDamage(userMessage)
     expect(botMessage.embed).toMatchObject({
-      title: ':crossed_swords: Mark atacou um Papatudo!',
+      title: ':crossed_swords: Mark has attacked a gobbal!',
       fields: [
         {
-          name: ':boxing_glove: Domínio Total',
+          name: ':boxing_glove: Total Domain',
           value: 4000,
           inline: true
         },
         {
-          name: ':pushpin: Dano Base',
+          name: ':pushpin: Base Damage',
           value: 50,
           inline: true
         },
         {
-          name: ':shield: Resistência do Alvo',
+          name: ':shield: Target Resistance',
           value: '61% (422)',
           inline: true
         },
         {
-          name: ':game_die: Chance Crítica',
+          name: ':game_die: Critical chance',
           value: '10%',
           inline: true
         },
         {
-          name: ':drop_of_blood: Dano causado',
+          name: ':drop_of_blood: Damage done',
           value: '800-1000'
         },
         {
-          name: ':abacus: Dano médio',
+          name: ':abacus: Average damage',
           value: 820
         },
         {
-          name: ':dagger: Dano nas costas',
+          name: ':dagger: Back damage',
           value: 1000
         }
       ]
@@ -137,7 +137,7 @@ describe('calculateAttackDamage', () => {
     const userMessage = mockMessage(content)
     const botMessage = calculateAttackDamage(userMessage)
     expect(botMessage.embed).toMatchObject({
-      description: commandsHelp.calc
+      description: helpMessages.calc.help.en
     })
   })
 })

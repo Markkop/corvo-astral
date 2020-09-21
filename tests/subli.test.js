@@ -1,75 +1,80 @@
 import { getSublimation } from '../src/commands'
-import { commandsHelp } from '../src/commands/help'
+import helpMessages from '../src/utils/helpMessages'
 import { mockMessage } from './testUtils'
 
 describe('getSublimation', () => {
   it('returns a sublimation when finding only one result', async () => {
-    const content = '.subli brutalidade'
+    const content = '.subli brutality'
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#fd87ba',
-      title: ':gem: Brutalidade',
-      url: 'https://www.wakfu.com/pt/mmorpg/enciclopedia/recursos/25796-brutality',
+      title: ':gem: Brutality',
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/68325796.png'
       },
       fields: [
         {
-          name: 'Slot',
-          value: 'Épico',
+          name: 'Slots',
+          value: 'Epic',
           inline: true
         },
         {
-          name: 'Max Stacks',
+          name: 'Max stacking',
           value: '1',
           inline: true
         },
         {
-          name: 'Efeitos',
-          value: 'Se Domínio Zona > Domínio Corpo a Corpo, Domínio Corpo a Corpo é adicionado ao Domínio Zona (max 800) no começo do combate, perdendo a mesma quantidade em Domínio Distância.'
+          name: 'Effects',
+          value: "If the bearer has more Area Mastery than Melee Mastery, adds the bearer's Melee Mastery to their Area Mastery and removes an equal amount of Distance Mastery at the start of combat. Melee Mastery is not lost; 800 max converted."
         },
         {
-          name: 'Obtenção:',
-          value: 'Baú de Final de Temporada de Chefe Supremo (UB)'
+          name: 'Acquiring',
+          value: 'End-of-season Ultimate Boss Chest (UB)'
         }
       ]
     })
   })
 
+  it('return a translated subli with "translate" option', async () => {
+    const content = '.subli frenzy translate=pt'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
+    expect(botMessage.embed.title).toEqual(':scroll: Frenesi')
+  })
+
   it('returns a sublimation and more results when finding more than one', async () => {
-    const content = '.subli frenesi'
+    const content = '.subli frenzy'
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      color: 'LIGHT_GREY',
-      title: ':scroll: Frenesi',
-      url: 'https://www.wakfu.com/',
+      color: '#fd8e39',
+      title: ':scroll: Frenzy',
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/81227111.png'
       },
       fields: [
         {
-          name: 'Slot',
+          name: 'Slots',
           value: ':red_square: :green_square: :blue_square:',
           inline: true
         },
         {
-          name: 'Max Stacks',
+          name: 'Max stacking',
           value: '1',
           inline: true
         },
         {
-          name: 'Efeitos',
-          value: '-20% de Danos causados, No começo do turno: 10% dos danos infligidos por inimigo afetado no turno anterior'
+          name: 'Effects',
+          value: '-20% Damage inflicted At start of turn: 10% damage inflicted per enemy hit in the previous turn.'
         },
         {
-          name: 'Obtenção:',
+          name: 'Acquiring',
           value: 'Aguabrial (2%)'
         }
       ],
       footer: {
-        text: 'Sublimações encontradas: Frenesi, Frenesi II, Frenesi III'
+        text: 'Sublimations found: Frenzy, Frenzy II, Frenzy III'
       }
     })
   })
@@ -79,21 +84,21 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      title: ':mag_right: Sublimações encontradas',
+      title: ':mag_right: Sublimations found',
       fields: [
         {
-          name: 'Busca',
+          name: 'Query',
           value: ':blue_square: :blue_square: :red_square:',
           inline: true
         },
         {
-          name: 'Resultados',
+          name: 'Results',
           value: 3,
           inline: true
         },
         {
-          name: 'Sublimações',
-          value: 'Emboscada, Espinhos, Integridade'
+          name: 'Sublimations',
+          value: 'Ambush, Spines, Integrity'
         }
       ]
     })
@@ -104,21 +109,21 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      title: ':mag_right: Sublimações encontradas',
+      title: ':mag_right: Sublimations found',
       fields: [
         {
-          name: 'Busca',
+          name: 'Query',
           value: ':white_large_square: :blue_square: :red_square:',
           inline: true
         },
         {
-          name: 'Resultados',
+          name: 'Results',
           value: 7,
           inline: true
         },
         {
-          name: 'Sublimações',
-          value: 'Emboscada, Firmeza, Escamas de Lua, Espinhos, Firmeza II, Reprovação II, Integridade'
+          name: 'Sublimations',
+          value: 'Ambush, Resolute, Moon Scales, Spines, Resolute II, Condemnation II, Integrity'
         }
       ]
     })
@@ -129,62 +134,62 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      title: ':mag_right: Sublimações encontradas',
+      title: ':mag_right: Sublimations found',
       fields: [
         {
-          name: 'Busca',
+          name: 'Query',
           value: ':white_large_square: :white_large_square: :red_square:',
           inline: true
         },
         {
-          name: 'Resultados',
+          name: 'Results',
           value: 19,
           inline: true
         },
         {
-          name: 'Sublimações',
-          value: 'Ruína, Emboscada, Determinação, Solidez, Firmeza, Teoria da Matéria, Escamas de Lua, Presteza, Salvaguarda, Ruína II, Espinhos, Barreira a Distância, Tenacidade II, Firmeza II, Ciclotimia, Reprovação II, Frenesi III, Extensão, Integridade'
+          name: 'Sublimations',
+          value: 'Ruin, Ambush, Determination, Solidity, Resolute, Theory of Matter, Moon Scales, Swiftness, Save, Ruin II, Spines, Distance Barrier, Tenacity II, Resolute II, Cyclothymia, Condemnation II, Frenzy III, Length, Integrity'
         }
       ]
     })
   })
 
-  it('returns sublimations with --any-order flag', async () => {
-    const content = '.subli rgb --any-order'
+  it('returns sublimations with "random" argument', async () => {
+    const content = '.subli rgb random'
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      title: ':mag_right: Sublimações encontradas',
+      title: ':mag_right: Sublimations found',
       fields: [
         {
-          name: 'Busca',
-          value: ':red_square: :green_square: :blue_square: em qualquer ordem',
+          name: 'Query',
+          value: ':red_square: :green_square: :blue_square: in any order',
           inline: true
         },
-        { name: 'Resultados', value: 13, inline: true },
+        { name: 'Results', value: 13, inline: true },
         {
           name: ':red_square: :green_square: :blue_square: (2)',
-          value: 'Frenesi, Frenesi II'
+          value: 'Frenzy, Frenzy II'
         },
         {
           name: ':red_square: :blue_square: :green_square: (3)',
-          value: 'Dimensionalidade, Muralha, Lobo solitário'
+          value: 'Dimensionality, Wall, Lone Wolf'
         },
         {
           name: ':green_square: :red_square: :blue_square: (2)',
-          value: 'Resistência, Resistência II'
+          value: 'Endurance, Endurance II'
         },
         {
           name: ':green_square: :blue_square: :red_square: (2)',
-          value: 'Escamas de Lua, Reprovação II'
+          value: 'Moon Scales, Condemnation II'
         },
         {
           name: ':blue_square: :red_square: :green_square: (2)',
-          value: 'Voltar, Retorno II'
+          value: 'Return, Return II'
         },
         {
           name: ':blue_square: :green_square: :red_square: (2)',
-          value: 'Teoria da Matéria, Ciclotimia'
+          value: 'Theory of Matter, Cyclothymia'
         }
       ]
     })
@@ -195,21 +200,21 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      title: ':mag_right: Sublimações encontradas',
+      title: ':mag_right: Sublimations found',
       fields: [
         {
-          name: 'Busca',
+          name: 'Query',
           value: ':white_large_square: :white_large_square: :green_square: :white_large_square:',
           inline: true
         },
         {
-          name: 'Resultados',
+          name: 'Results',
           value: 31,
           inline: true
         },
         {
-          name: 'Sublimações',
-          value: 'Assolação, Carnificina, Evasão, Reprovação, Espanto, Dimensionalidade, Voltar, Crítico Berserk, Visibilidade, Assolação II, Evasão II, Esquiva Berserk, Poço de Vitalidade, Influência, Muralha, Retorno II, Influência II, Especialista em Golpes Críticos, Lobo solitário, Determinação, Tenacidade, Solidez, Topologia, Frenesi, Teoria da Matéria, Barreira a Distância, Barreira Corpo a Corpo, Tenacidade II, Parada Berserk, Frenesi II, Ciclotimia'
+          name: 'Sublimations',
+          value: 'Devastate, Carnage, Evasion, Condemnation, Stupefaction, Dimensionality, Return, Berserk Critical, Visibility, Devastate II, Evasion II, Berserk Dodge, Vitality Well, Influence, Wall, Return II, Influence II, Critical Hit Expert, Lone Wolf, Determination, Tenacity, Solidity, Topology, Frenzy, Theory of Matter, Distance Barrier, Close-Combat Barrier, Tenacity II, Berserk Block, Frenzy II, Cyclothymia'
         }
       ]
     })
@@ -220,21 +225,21 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      title: ':mag_right: Sublimações encontradas',
+      title: ':mag_right: Sublimations found',
       fields: [
         {
-          name: 'Busca',
+          name: 'Query',
           value: ':red_square: :red_square: :green_square: :blue_square:',
           inline: true
         },
         {
-          name: 'Resultados',
+          name: 'Results',
           value: 4,
           inline: true
         },
         {
-          name: 'Sublimações',
-          value: 'Carnificina, Evasão II, Frenesi, Frenesi II'
+          name: 'Sublimations',
+          value: 'Carnage, Evasion II, Frenzy, Frenzy II'
         }
       ]
     })
@@ -245,21 +250,21 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      title: ':mag_right: Sublimações encontradas',
+      title: ':mag_right: Sublimations found',
       fields: [
         {
-          name: 'Busca',
+          name: 'Query',
           value: ':green_square: :green_square: :green_square: :green_square:',
           inline: true
         },
         {
-          name: 'Resultados',
+          name: 'Results',
           value: 2,
           inline: true
         },
         {
-          name: 'Sublimações',
-          value: 'Assolação, Assolação II'
+          name: 'Sublimations',
+          value: 'Devastate, Devastate II'
         }
       ]
     })
@@ -270,121 +275,131 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      title: ':mag_right: Sublimações encontradas',
+      title: ':mag_right: Sublimations found',
       fields: [
         {
-          name: 'Busca',
+          name: 'Query',
           value: 'vertox',
           inline: true
         },
         {
-          name: 'Resultados',
+          name: 'Results',
           value: 3,
           inline: true
         },
         {
-          name: 'Sublimações',
-          value: 'Emboscada, Dimensionalidade, Teoria da Matéria'
+          name: 'Sublimations',
+          value: 'Ambush, Dimensionality, Theory of Matter'
         }
       ]
     })
   })
 
+  // TODO: map multi langue arguments
   it('maps correctly an argument', async () => {
-    const content = '.subli epic'
+    const content = '.subli épico'
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      title: ':mag_right: Sublimações encontradas',
+      title: ':mag_right: Sublimations found',
       fields: [
         {
-          name: 'Busca',
-          value: 'épico',
+          name: 'Query',
+          value: 'epic',
           inline: true
         },
         {
-          name: 'Resultados',
+          name: 'Results',
           value: 15,
           inline: true
         },
         {
-          name: 'Sublimações',
-          value: 'Brutalidade, Precisão Cirúrgica, Medida, Desenlace, Inflexibilidade, Constância, Saúde de Ferro, Arte do Posicionamento, Anatomia, Manejo: Duas Mãos, Manejo: Adaga, Manejo: Escudo, Pacto Wakfu, Concentração Elementar, Força Hercúlea'
+          name: 'Sublimations',
+          value: 'Inflexibility, Steadfast, Unraveling, Surgical Precision, Measure, Robust Health, Positioning Knowledge, Anatomy, Brutality, Herculean Strength, Wield type: Two-handed, Wield type: Dagger, Wield type: Shield, Wakfu Pact, Elemental Concentration'
         }
       ]
     })
   })
 
   it('replaces wrong query characters when searching by name', async () => {
-    const content = '.subli frenesi 2'
+    const content = '.subli frenzy 2'
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
-      color: 'LIGHT_GREY',
-      title: ':scroll: Frenesi II',
-      url: 'https://www.wakfu.com/',
+      color: '#fd8e39',
+      title: ':scroll: Frenzy II',
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/81227111.png'
       },
       fields: [
         {
-          name: 'Slot',
+          name: 'Slots',
           value: ':red_square: :green_square: :blue_square:',
           inline: true
         },
         {
-          name: 'Max Stacks',
+          name: 'Max stacking',
           value: '1',
           inline: true
         },
         {
-          name: 'Efeitos',
-          value: '-15% de Danos causados, No começo do turno: 5% dos danos infligidos por entidade afetada no turno anterior.'
+          name: 'Effects',
+          value: '-15% Damage inflicted At start of turn: 5% damage inflicted per entity hit in the previous turn.'
         },
         {
-          name: 'Obtenção:',
-          value: 'Bruxugo de Bler, o Furioso (1%) [3 stele/estela]'
+          name: 'Acquiring',
+          value: 'Badgwitch the Furiox (1%) (3 steles)'
         }
       ],
       footer: {
-        text: 'Sublimações encontradas: Frenesi II, Frenesi III'
+        text: 'Sublimations found: Frenzy II, Frenzy III'
       }
     })
   })
 
   it('return a matching sublimation with a recipe', async () => {
-    const content = '.subli solidez'
+    const content = '.subli solidity'
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([
       {
         inline: true,
-        name: 'Profissão',
-        value: ':chair: Marceneiro'
+        name: 'Slots',
+        value: ':red_square: :green_square: :red_square:'
       },
       {
         inline: true,
-        name: 'Nível',
+        name: 'Max stacking',
+        value: '1'
+      },
+      {
+        name: 'Effects',
+        value: 'Reduces direct damage received greater than 20% of max HP by 400% of level (once per round)'
+      },
+      {
+        name: 'Acquiring',
+        value: 'Handyman 60 craft'
+      },
+      {
+        inline: true,
+        name: 'Profession',
+        value: ':chair: Handyman'
+      },
+      {
+        inline: true,
+        name: 'Level',
         value: 60
       },
       {
-        name: 'Ingredientes',
-        value: `:chair: \`10x  \` Suporte bruto
-:pick: \`15x  \` Ametista Coração-de-Dragão
-:sparkles: \`50x  \` Pó
-:white_small_square: \`12x  \` Chifre de Escara
-:white_small_square: \`10x  \` Canino Real
-:white_small_square: \`40x  \` Sopro de Enxofre`
+        name: 'Ingredients',
+        value: `:chair: \`10x  \` Raw Bracket
+:pick: \`15x  \` Dragonheart Amethyst
+:sparkles: \`50x  \` Powder
+:white_small_square: \`12x  \` Scara Horn
+:white_small_square: \`10x  \` Royal Canine
+:white_small_square: \`40x  \` Sip of Sulfur`
       }
     ]))
-  })
-
-  it('returns the correct sublimation by matching its alias', async () => {
-    const content = '.subli retorno'
-    const userMessage = mockMessage(content)
-    const botMessage = await getSublimation(userMessage)
-    expect(botMessage.embed.title).toEqual(':scroll: Voltar')
-    expect(botMessage.embed.footer.text).toEqual('Sublimações encontradas: Voltar, Retorno II')
   })
 
   it('returns a not found message if no sublimation was found', async () => {
@@ -393,8 +408,8 @@ describe('getSublimation', () => {
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#bb1327',
-      title: ':x: Nenhuma sublimação encontrada',
-      description: 'Digite `.help subli` para conferir alguns exemplos de como pesquisar.'
+      description: 'Type `.help subli` to see some examples of how to search.',
+      title: ':x: No results'
     })
   })
 
@@ -403,7 +418,7 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toMatchObject({
-      description: commandsHelp.subli
+      description: helpMessages.subli.help.en
     })
   })
 })

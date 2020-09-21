@@ -1,155 +1,134 @@
 import { getRecipe } from '../src/commands'
-import { commandsHelp } from '../src/commands/help'
+import helpMessages from '../src/utils/helpMessages'
 import { mockMessage } from './testUtils'
 
 describe('getRecipe', () => {
   it('return a matching recipe by name', async () => {
-    const content = '.recipe peitoral krá'
+    const content = '.recipe kaw breastplate'
     const userMessage = mockMessage(content)
     const botMessage = await getRecipe(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#fede71',
-      title: ':yellow_circle: Receita de Peitoral Krá',
-      thumbnail: { url: 'https://builder.methodwakfu.com/assets/icons/items/13625074.webp' },
+      title: ':yellow_circle: Recipe: Kaw Breastplate',
+      thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/13625074.png' },
       fields: [
         {
-          name: 'Profissão',
-          value: ':shield: Armeiro',
+          name: 'Profession',
+          value: ':shield: Armorer',
           inline: true
         },
         {
-          name: 'Nível',
+          name: 'Level',
           value: 80,
           inline: true
         },
         {
-          name: 'Ingredientes',
-          value: `:pick: \`7x   \` Rosa do Deserto
-:green_circle: \`4x   \` Peitoral Turbilhento
-:adhesive_bandage: \`35x  \` Bond, Super Bond durável
-:white_small_square: \`4x   \` Bastão de Gelo
-:white_small_square: \`4x   \` Deschavadora
-:white_small_square: \`4x   \` Pik-tus
-:white_small_square: \`4x   \` Gelo Eterno`
+          name: 'Ingredients',
+          value: `:pick: \`7x   \` Rose of the Sands
+:green_circle: \`4x   \` Whirligig Breastplate
+:adhesive_bandage: \`35x  \` Durable Souper-Glou
+:white_small_square: \`4x   \` Ice Stick
+:white_small_square: \`4x   \` Mekeynism
+:white_small_square: \`4x   \` Ponk-tius
+:white_small_square: \`4x   \` Eternal Ice`
         }
       ]
     })
   })
 
+  it('return a translated recipe with "translate" option', async () => {
+    const content = '.recipe peace pipe translate=pt'
+    const userMessage = mockMessage(content)
+    const botMessage = await getRecipe(userMessage)
+    expect(botMessage.embed.title).toEqual(':yellow_circle: Receita: Cachimbo Dapais')
+  })
+
   it('return a matching recipe by name and rarity', async () => {
-    const content = '.recipe cachimbo dapais raridade=mítico'
+    const content = '.recipe peace pipe rarity=mythical'
     const userMessage = mockMessage(content)
     const botMessage = await getRecipe(userMessage)
     expect(botMessage.embed).toEqual({
       color: '#fd8e39',
-      title: ':orange_circle: Receita de Cachimbo Dapais',
-      thumbnail: { url: 'https://builder.methodwakfu.com/assets/icons/items/25321811.webp' },
+      title: ':orange_circle: Recipe: Peace Pipe',
+      thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/25321811.png' },
       fields: [
         {
-          name: 'Profissão',
-          value: ':crossed_swords: Mestre de armas',
+          name: 'Profession',
+          value: ':crossed_swords: Weapons Master',
           inline: true
         },
         {
-          name: 'Nível',
+          name: 'Level',
           value: 128,
           inline: true
         },
         {
-          name: 'Ingredientes',
-          value: `:palm_tree: \`2x   \` Madeira de Tabas-KO
-:adhesive_bandage: \`30x  \` Bond, Super Bond eterna
-:shell: \`9x   \` Essência Eterna
-:sparkles: \`52x  \` Pó
-:green_circle: \`1x   \` Cachimbo Dapais
-:white_small_square: \`3x   \` Fragrância Rançosa
-:white_small_square: \`21x  \` Vapor Azedo
-:white_small_square: \`3x   \` Cinzas Quentes`
+          name: 'Ingredients',
+          value: `:palm_tree: \`2x   \` Tabas'KO Wood
+:adhesive_bandage: \`30x  \` Eternal Souper-Glou
+:shell: \`9x   \` Eternal Essence
+:sparkles: \`52x  \` Powder
+:green_circle: \`1x   \` Peace Pipe
+:white_small_square: \`3x   \` Rancid Fragrance
+:white_small_square: \`21x  \` Rough Vapor
+:white_small_square: \`3x   \` Hot Ashes`
         }
       ]
     })
   })
 
   it('return a matching recipe and more matching results on footer', async () => {
-    const content = '.recipe o eterno'
+    const content = '.recipe amakna'
     const userMessage = mockMessage(content)
     const botMessage = await getRecipe(userMessage)
-    expect(botMessage.embed).toEqual({
-      color: '#8fc7e2',
-      title: ':blue_circle: Receita de O Eterno',
-      thumbnail: { url: 'https://builder.methodwakfu.com/assets/icons/items/12019145.webp' },
-      fields: [
-        {
-          name: 'Profissão',
-          value: ':ring: Joalheiro',
-          inline: true
-        },
-        {
-          name: 'Nível',
-          value: 140,
-          inline: true
-        },
-        {
-          name: 'Ingredientes',
-          value: `:sparkles: \`410x \` Pó
-:yellow_circle: \`1x   \` O Eterno
-:fish: \`105x \` Camarrento
-:ring: \`54x  \` Pedra Divina
-:droplet: \`400x \` Lágrima de Ogrest
-:white_small_square: \`11x  \` Cauda de Estorritardo
-:white_small_square: \`9x   \` Cauda de Scorpisoteio
-:white_small_square: \`107x \` Cutícula de Estorritardo`
-        }
-      ],
-      footer: {
-        text: 'Receitas encontradas: O Eterno (Lendário), Couro eterno, Cabo eterno, Tempero eterno, Óleo eterno, Aço Eterno, Fio Eterno'
-      }
+    expect(botMessage.embed.footer).toEqual({
+      text: 'Recipes found: Amakna Sword (Relic), Amakna Riktus Boots (Mythical), Amakna Riktus Epaulettes (Mythical), Amakna Riktus Boots, Amakna Riktus Epaulettes, Amakna Root Beer'
     })
   })
 
   it('return a matching recipe and a truncated more results on footer', async () => {
-    const content = '.recipe espada'
+    const content = '.recipe sword'
     const userMessage = mockMessage(content)
     const botMessage = await getRecipe(userMessage)
     expect(botMessage.embed.footer).toEqual({
-      text: 'Receitas encontradas: Espada Eterna (Relíquia), Espada de Brakmar (Relíquia), Espada de Sufokia (Relíquia), Espada de Amakna (Relíquia), Espada Neval (Lendário), Espada Enorme de Tot  (Lendário), Espada Kila (Lendário), Espada Riktus de Madeira (Lendário), Espada de Popopou (Lendário), Espada Quebrada (Lendário), Espada de Tchak Abum (Lendário), Espada Bonzólios (Lendário), Espada Riktus de Elite (Lendário), Espada Turbilária (Lendário), Espada Rústica (Lendário), Espada Enevoada (Lendário), Espada Descontínua (Lendário), Espada milenar (Lendário), Espada do Garra de Aço (Lendário), Colhespada (Lendário) e outros 46 resultados'
+      text: "Recipes found: Eternal Sword (Relic), Brakmar Sword (Relic), Sufokia Sword (Relic), Amakna Sword (Relic), Tot's Great Big Sword  (Legendary), Kila Sword (Legendary), Wooden Riktus Sword (Legendary), Pepepew Sword (Legendary), Broken Sword (Legendary), Bad Aboum's Sword (Legendary), Good Eye Sword (Legendary), Elite Riktus Sword (Legendary), Whirly Sword (Legendary), Homely Sword (Legendary), Cease Sword (Legendary), Millennium Sword (Legendary), Steel Beak Sword (Legendary), Dizia the Surreal Sword (Legendary), Relay Kamasword (Legendary), Sworden (Legendary) and other 50 results"
     })
   })
 
   it('returns a merged recipe when there are more recipes for the same result', async () => {
-    const content = '.recipe couro eterno'
+    const content = '.recipe eternal leather'
     const userMessage = mockMessage(content)
     const botMessage = await getRecipe(userMessage)
     expect(botMessage.embed).toEqual({
       color: 'LIGHT_GREY',
-      title: 'Receita de Couro eterno',
+      title: 'Recipe: Eternal Leather',
       thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/71919804.png' },
       fields: [
         {
-          name: 'Profissão',
-          value: ':boot: Coureiro',
+          name: 'Profession',
+          value: ':boot: Leather Dealer',
           inline: true
         },
         {
-          name: 'Nível',
+          name: 'Level',
           value: 120,
           inline: true
         },
         {
-          name: 'Ingredientes',
-          value: ':white_small_square: `4x   ` Vapor Azedo\n:white_small_square: `4x   ` Casca de Dragovo'
+          name: 'Ingredients',
+          value: ':white_small_square: `4x   ` Rough Vapor\n:white_small_square: `4x   ` Dreggon Shell'
         },
         {
-          name: 'Ingredientes',
-          value: ':white_small_square: `4x   ` Fanctoplasma de Pandala\n:white_small_square: `4x   ` Pelagem de Flagelopardo'
+          name: 'Ingredients',
+          value: ':white_small_square: `4x   ` Pandala Ghostoplasm\n:white_small_square: `4x   ` Blightopard Fur'
         },
         {
-          name: 'Ingredientes',
-          value: ':white_small_square: `4x   ` Brasas Magmáticas\n:white_small_square: `4x   ` Presa de Texox'
+          name: 'Ingredients',
+          value: ':white_small_square: `4x   ` Magmatic Embers\n:white_small_square: `4x   ` Badgerox Fang'
         },
         {
-          name: 'Ingredientes',
-          value: ':white_small_square: `8x   ` Pata de Strigifrent'
+          name: 'Ingredients',
+          value: ':white_small_square: `8x   ` Bubourg Claw'
         }
       ]
     })
@@ -161,8 +140,8 @@ describe('getRecipe', () => {
     const botMessage = await getRecipe(userMessage)
     expect(botMessage.embed).toMatchObject({
       color: '#bb1327',
-      title: ':x: Nenhuma receita encontrada',
-      description: 'Digite `.help recipe` para conferir alguns exemplos de como pesquisar.'
+      description: 'Type `.help recipe` to see some examples of how to search.',
+      title: ':x: No results'
     })
   })
 
@@ -171,7 +150,7 @@ describe('getRecipe', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getRecipe(userMessage)
     expect(botMessage.embed).toMatchObject({
-      description: commandsHelp.recipe
+      description: helpMessages.recipe.help.en
     })
   })
 })

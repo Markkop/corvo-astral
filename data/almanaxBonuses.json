@@ -1,8 +1,18 @@
 [
   {
     "firstDate": "08/25/2020",
-    "name": ":ear_of_rice: Quantidade em Colheita",
-    "text": "+20% Quantidade de Colheita e Sucesso ao Plantar",
+    "name": {
+      "en": ":ear_of_rice: Harvest Amound",
+      "pt": ":ear_of_rice: Quantidade em Colheita",
+      "fr": ":ear_of_rice: Récolte",
+      "es": ":ear_of_rice: Cantidad de cosecha"
+    },
+    "text": {
+      "en": "+ 20% Amount of Harvest and Success when Planting",
+      "pt": "+ 20% Quantidade de Colheita e Sucesso ao Plantar",
+      "fr": "+ 20% de récolte et de succès lors de la plantation",
+      "es": "+ 20% de cantidad de cosecha y éxito al plantar"
+    },
     "images": [
       "https://media.tenor.com/images/95fb7152831c057af73ef3a5c362c7b2/tenor.gif",
       "https://media.tenor.com/images/7ad4147fdade93d80aba4c049300606c/tenor.gif",
@@ -12,8 +22,18 @@
   },
   {
     "firstDate": "08/26/2020",
-    "name": ":bulb: Sabedoria",
-    "text": "+40 Sabedoria",
+    "name": {
+      "en": ":bulb: Wisdom",
+      "pt": ":bulb: Sabedoria",
+      "fr": ":bulb: Sagesse",
+      "es": ":bulb: Sabiduría"
+    },
+    "text": {
+      "en": "+40 Wisdom",
+      "pt": "+40 Sabedoria",
+      "fr": "+40 de sagesse",
+      "es": "+40 sabiduría"
+    },
     "images": [
       "https://media.tenor.com/images/a28ff822503503d2af916157a4115ae4/tenor.gif",
       "https://media.tenor.com/images/831df165247ace216b912d5e974829ec/tenor.gif",
@@ -23,8 +43,18 @@
   },
   {
     "firstDate": "08/27/2020",
-    "name": ":moneybag: Prospecção",
-    "text": "+40 Prospecção",
+    "name": {
+      "en": ":moneybag: Prospecting",
+      "pt": ":moneybag: Prospecção",
+      "fr": ":moneybag: Prospection",
+      "es": ":moneybag: prospección"
+    },
+    "text": {
+      "en": "+40 Prospecting",
+      "pt": "+40 Prospecção",
+      "fr": "+40 Prospection",
+      "es": "+40 prospección"
+    },
     "images": [
       "https://media.tenor.com/images/de366e4ed15c68ff9b64b0366792a745/tenor.gif",
       "https://media.tenor.com/images/5f200673e29bc12ed8b47852c0e0fd8e/tenor.gif?itemid=5498388",
@@ -34,8 +64,18 @@
   },
   {
     "firstDate": "08/28/2020",
-    "name": ":tools: Fabricação",
-    "text": "+20% EXP e Velocidade em Fabricação",
+    "name": {
+      "en": ":tools: Crafting",
+      "pt": ":tools: Fabricação",
+      "fr": ":tools: Fabrication",
+      "es": ":tools: Fabricación"
+    },
+    "text": {
+      "en": "+ 20% EXP and Manufacturing Speed",
+      "pt": "+ 20% EXP e Velocidade em Fabricação",
+      "fr": "+ 20% EXP et vitesse de fabrication",
+      "es": "+ 20% EXP y velocidad de fabricación"
+    },
     "images": [
       "https://media.tenor.com/images/575937cf4191a6b278d8db69236f854c/tenor.gif?itemid=4966996",
       "https://media.tenor.com/images/007718535cbc7d04981fcdc8019afa05/tenor.gif?itemid=17651664",
@@ -45,8 +85,18 @@
   },
   {
     "firstDate": "08/29/2020",
-    "name": ":up: Experiência em Colheita",
-    "text": "+30% EXP em Colheita e Plantação",
+    "name": {
+      "en": ":up: EXP in Harvest",
+      "pt": ":up: EXP em Colheita",
+      "fr": ":up: EXP en récolte",
+      "es": ":up: EXP en cosecha"
+    },
+    "text": {
+      "en": "+ 30% EXP in Harvest and Plantation",
+      "pt": "+ 30% EXP em Colheita e Plantação",
+      "fr": "+ 30% d'EXP en récolte et plantation",
+      "es": "+ 30% EXP en cosecha y plantación"
+    },
     "images": [
       "https://media.tenor.com/images/81c067fdb7dd81ca021458688244c943/tenor.gif?itemid=4759918",
       "https://media.tenor.com/images/627016da0d79fff0b46c468c33b57460/tenor.gif?itemid=5470696",

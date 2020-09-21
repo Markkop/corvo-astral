@@ -1,5 +1,5 @@
-import { getChannelParties, getMessageByEmbedNameAndValue } from '../../utils/partyChannel'
-import { commandsHelp } from '../help'
+import { getChannelParties, getMessageByEmbedNameAndValue } from '../../utils/partyHelper'
+import { mountCommandHelpEmbed } from '../help'
 import Discord from 'discord.js'
 
 /**
@@ -12,13 +12,8 @@ import Discord from 'discord.js'
 export async function joinParty (message, options) {
   const hasRequiredOptions = Boolean(options.class)
   if (!hasRequiredOptions) {
-    return message.channel.send({
-      embed: {
-        color: 'LIGHT_GREY',
-        title: ':grey_question: Ajuda: `.party join`',
-        description: commandsHelp.party
-      }
-    })
+    const helpEmbed = mountCommandHelpEmbed(message, 'en')
+    return message.channel.send({ embed: helpEmbed })
   }
 
   const partyMessages = await getChannelParties(message)
@@ -26,8 +21,8 @@ export async function joinParty (message, options) {
     return message.channel.send({
       embed: {
         color: '#bb1327',
-        title: ':x: Erro ao usar o comando party',
-        description: 'Não foi encontrada nenhuma mensagem de grupo no canal "grupos"'
+        title: ':x: Error on using party command',
+        description: 'No party message has been found on channel "grupos"'
       }
     })
   }
@@ -37,19 +32,19 @@ export async function joinParty (message, options) {
     return message.channel.send({
       embed: {
         color: '#bb1327',
-        title: ':x: Erro ao atualizar o grupo',
-        description: 'Nenhum dos últimos 100 grupos encontrado com esse id'
+        title: ':x: Error while updating party',
+        description: 'This ID was not found in the last 100 parties'
       }
     })
   }
-  const partySlots = matchingParty.embeds[0].fields.find(field => field.name.includes('Participantes')).value.split('\n')
+  const partySlots = matchingParty.embeds[0].fields.find(field => field.name.includes('Members')).value.split('\n')
   const userPartySlot = partySlots.find(slot => slot.includes(message.author.id))
   if (userPartySlot) {
     return message.channel.send({
       embed: {
         color: '#bb1327',
-        title: ':x: Erro ao entrar no grupo',
-        description: 'Você já está nele. Talvez queira dar um `.party update`?'
+        title: ':x: Error while joining group',
+        description: 'You are already in it. Maybe you want to `.party update`?'
       }
     })
   }
@@ -60,20 +55,20 @@ export async function joinParty (message, options) {
     return message.channel.send({
       embed: {
         color: '#bb1327',
-        title: ':x: Nenhuma vaga disponível',
-        description: 'Parece que você ficou de fora :c'
+        title: ':x: No slot available',
+        description: "It seems you're out :c"
       }
     })
   }
   partySlots[freeSlotIndex] = `:small_orange_diamond: <@${message.author.id}> | ${options.class}`
   const newPartySlots = partySlots.join('\n')
-  const embedFields = matchingParty.embeds[0].fields.filter(field => !field.name.includes('Participantes'))
+  const embedFields = matchingParty.embeds[0].fields.filter(field => !field.name.includes('Members'))
   const embed = {
     ...matchingParty.embeds[0],
     fields: [
       ...embedFields,
       {
-        name: ':busts_in_silhouette: Participantes',
+        name: ':busts_in_silhouette: Members',
         value: newPartySlots
       }
     ]

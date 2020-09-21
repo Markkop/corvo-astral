@@ -1,4 +1,7 @@
 import events from '../../data/almanaxBonuses'
+import { getArgumentsAndOptions } from '../utils/message'
+import { setLanguage } from '../utils/language'
+import str from '../stringsLang'
 
 /**
  * Replies the user with current Almanax bonus.
@@ -7,6 +10,8 @@ import events from '../../data/almanaxBonuses'
  * @returns {Promise<object>}
  */
 export function getAlmanaxBonus (message) {
+  const { options } = getArgumentsAndOptions(message, '=')
+  const lang = setLanguage(options, message.guild.id)
   const today = new Date(Date.now())
   const todayEvent = events.find(event => {
     const eventFirstDate = new Date(event.firstDate)
@@ -19,8 +24,8 @@ export function getAlmanaxBonus (message) {
   const image = todayEvent.images[number]
   const embed = {
     color: '#40b2b5',
-    title: todayEvent.name,
-    description: 'Hoje o bônus do alma é: ' + todayEvent.text,
+    title: todayEvent.name[lang],
+    description: `${str.capitalize(str.todaysAlma[lang])}: ${todayEvent.text[lang]}`,
     image: { url: image },
     timestamp: new Date()
   }

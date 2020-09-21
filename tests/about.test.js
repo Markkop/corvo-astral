@@ -9,7 +9,7 @@ describe('getAbout', () => {
     const botMessage = getAbout(userMessage)
     expect(botMessage.embed).toMatchObject({
       color: 'YELLOW',
-      title: ':crescent_moon: Sobre o Corvo Astral',
+      title: ':crescent_moon: About Corvo Astral',
       description: aboutText
     })
   })

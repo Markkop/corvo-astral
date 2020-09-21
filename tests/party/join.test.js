@@ -1,5 +1,5 @@
 import { partyList } from '../../src/commands'
-import { commandsHelp } from '../../src/commands/help'
+import commandsHelp from '../../src/utils/helpMessages'
 import { mockMessage } from '../testUtils'
 
 jest.mock('discord.js', () => ({
@@ -11,24 +11,24 @@ describe('joinParty', () => {
     const content = '.party join id=1 class=enu'
     const channelMessages = [{
       embeds: [{
-        title: 'Grupo: group1',
+        title: 'Party: group1',
         fields: [
           { name: ':label: ID', value: '1', inline: true },
-          { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
-          { name: ':skull: Nível', value: '200', inline: true },
-          { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
+          { name: ':calendar_spiral: Date', value: '10/10 21:00', inline: true },
+          { name: ':skull: Level', value: '200', inline: true },
+          { name: ':busts_in_silhouette: Members', value: ':small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
         ]
       }]
     }]
     const mockedUserMessage = mockMessage(content, channelMessages)
     const botResponse = await partyList(mockedUserMessage)
     expect(botResponse).toMatchObject({
-      title: 'Grupo: group1',
+      title: 'Party: group1',
       fields: [
         { name: ':label: ID', value: '1', inline: true },
-        { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
-        { name: ':skull: Nível', value: '200', inline: true },
-        { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@111> | enu\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
+        { name: ':calendar_spiral: Date', value: '10/10 21:00', inline: true },
+        { name: ':skull: Level', value: '200', inline: true },
+        { name: ':busts_in_silhouette: Members', value: ':small_orange_diamond: <@111> | enu\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
       ]
     })
   })
@@ -37,24 +37,24 @@ describe('joinParty', () => {
     const content = '.party join id=1 class=enu'
     const channelMessages = [{
       embeds: [{
-        title: 'Grupo: group1',
+        title: 'Party: group1',
         fields: [
           { name: ':label: ID', value: '1', inline: true },
-          { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
-          { name: ':skull: Nível', value: '200', inline: true },
-          { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@222> | enu\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
+          { name: ':calendar_spiral: Date', value: '10/10 21:00', inline: true },
+          { name: ':skull: Level', value: '200', inline: true },
+          { name: ':busts_in_silhouette: Members', value: ':small_orange_diamond: <@222> | enu\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
         ]
       }]
     }]
     const mockedUserMessage = mockMessage(content, channelMessages)
     const botResponse = await partyList(mockedUserMessage)
     expect(botResponse).toMatchObject({
-      title: 'Grupo: group1',
+      title: 'Party: group1',
       fields: [
         { name: ':label: ID', value: '1', inline: true },
-        { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
-        { name: ':skull: Nível', value: '200', inline: true },
-        { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@222> | enu\n:small_orange_diamond: <@111> | enu\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
+        { name: ':calendar_spiral: Date', value: '10/10 21:00', inline: true },
+        { name: ':skull: Level', value: '200', inline: true },
+        { name: ':busts_in_silhouette: Members', value: ':small_orange_diamond: <@222> | enu\n:small_orange_diamond: <@111> | enu\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:\n:small_orange_diamond:' }
       ]
     })
   })
@@ -63,12 +63,12 @@ describe('joinParty', () => {
     const content = '.party join id=1 class=enu'
     const channelMessages = [{
       embeds: [{
-        title: 'Grupo: group1',
+        title: 'Party: group1',
         fields: [
           { name: ':label: ID', value: '1', inline: true },
-          { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
-          { name: ':skull: Nível', value: '200', inline: true },
-          { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@222> | enu\n:small_orange_diamond: <@333> | enu\n:small_orange_diamond: <@444> | enu\n <@555> | enu:small_orange_diamond:\n:small_orange_diamond: <@666> | enu\n:small_orange_diamond: <@777> | enu' }
+          { name: ':calendar_spiral: Date', value: '10/10 21:00', inline: true },
+          { name: ':skull: Level', value: '200', inline: true },
+          { name: ':busts_in_silhouette: Members', value: ':small_orange_diamond: <@222> | enu\n:small_orange_diamond: <@333> | enu\n:small_orange_diamond: <@444> | enu\n <@555> | enu:small_orange_diamond:\n:small_orange_diamond: <@666> | enu\n:small_orange_diamond: <@777> | enu' }
         ]
       }]
     }]
@@ -76,8 +76,8 @@ describe('joinParty', () => {
     const botResponse = await partyList(mockedUserMessage)
     expect(botResponse.embed).toMatchObject({
       color: '#bb1327',
-      title: ':x: Nenhuma vaga disponível',
-      description: 'Parece que você ficou de fora :c'
+      description: "It seems you're out :c",
+      title: ':x: No slot available'
     })
   })
 
@@ -85,12 +85,12 @@ describe('joinParty', () => {
     const content = '.party join id=1 class=enu'
     const channelMessages = [{
       embeds: [{
-        title: 'Grupo: group1',
+        title: 'Party: group1',
         fields: [
           { name: ':label: ID', value: '1', inline: true },
-          { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
-          { name: ':skull: Nível', value: '200', inline: true },
-          { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@111> | enu\n:small_orange_diamond: <@333> | enu\n:small_orange_diamond: <@444> | enu\n <@555> | enu:small_orange_diamond:\n:small_orange_diamond: <@666> | enu\n:small_orange_diamond: <@777> | enu' }
+          { name: ':calendar_spiral: Date', value: '10/10 21:00', inline: true },
+          { name: ':skull: Level', value: '200', inline: true },
+          { name: ':busts_in_silhouette: Members', value: ':small_orange_diamond: <@111> | enu\n:small_orange_diamond: <@333> | enu\n:small_orange_diamond: <@444> | enu\n <@555> | enu:small_orange_diamond:\n:small_orange_diamond: <@666> | enu\n:small_orange_diamond: <@777> | enu' }
         ]
       }]
     }]
@@ -98,8 +98,8 @@ describe('joinParty', () => {
     const botResponse = await partyList(mockedUserMessage)
     expect(botResponse.embed).toMatchObject({
       color: '#bb1327',
-      title: ':x: Erro ao entrar no grupo',
-      description: 'Você já está nele. Talvez queira dar um `.party update`?'
+      description: 'You are already in it. Maybe you want to `.party update`?',
+      title: ':x: Error while joining group'
     })
   })
 
@@ -112,8 +112,8 @@ describe('joinParty', () => {
     const botResponse = await partyList(mockedUserMessage)
     expect(botResponse.embed).toMatchObject({
       color: '#bb1327',
-      title: ':x: Erro ao usar o comando party',
-      description: 'Não foi encontrada nenhuma mensagem de grupo no canal "grupos"'
+      description: 'No party message has been found on channel "grupos"',
+      title: ':x: Error on using party command'
     })
   })
 
@@ -121,12 +121,12 @@ describe('joinParty', () => {
     const content = '.party join id=2 class=eni'
     const channelMessages = [{
       embeds: [{
-        title: 'Grupo: group1',
+        title: 'Party: group1',
         fields: [
           { name: ':label: ID', value: '1', inline: true },
-          { name: ':calendar_spiral: Data', value: '10/10 21:00', inline: true },
-          { name: ':skull: Nível', value: '200', inline: true },
-          { name: ':busts_in_silhouette: Participantes', value: ':small_orange_diamond: <@111> | enu\n:small_orange_diamond: <@333> | enu\n:small_orange_diamond: <@444> | enu\n <@555> | enu:small_orange_diamond:\n:small_orange_diamond: <@666> | enu\n:small_orange_diamond: <@777> | enu' }
+          { name: ':calendar_spiral: Date', value: '10/10 21:00', inline: true },
+          { name: ':skull: Level', value: '200', inline: true },
+          { name: ':busts_in_silhouette: Members', value: ':small_orange_diamond: <@111> | enu\n:small_orange_diamond: <@333> | enu\n:small_orange_diamond: <@444> | enu\n <@555> | enu:small_orange_diamond:\n:small_orange_diamond: <@666> | enu\n:small_orange_diamond: <@777> | enu' }
         ]
       }]
     }]
@@ -134,8 +134,8 @@ describe('joinParty', () => {
     const botResponse = await partyList(mockedUserMessage)
     expect(botResponse.embed).toMatchObject({
       color: '#bb1327',
-      title: ':x: Erro ao atualizar o grupo',
-      description: 'Nenhum dos últimos 100 grupos encontrado com esse id'
+      description: 'This ID was not found in the last 100 parties',
+      title: ':x: Error while updating party'
     })
   })
 
@@ -144,7 +144,7 @@ describe('joinParty', () => {
     const mockedUserMessage = mockMessage(content, [])
     const botResponse = await partyList(mockedUserMessage)
     expect(botResponse.embed).toMatchObject({
-      description: commandsHelp.party
+      description: commandsHelp.party.help.en
     })
   })
 })

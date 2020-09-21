@@ -1,5 +1,7 @@
 import { getArgumentsAndOptions } from '../utils/message'
 import { mountCommandHelpEmbed } from './help'
+import { setLanguage } from '../utils/language'
+import str from '../stringsLang'
 
 /**
  * Replies the user with the damage of a calculated attack.
@@ -9,10 +11,12 @@ import { mountCommandHelpEmbed } from './help'
  */
 export function calculateAttackDamage (message) {
   const { options } = getArgumentsAndOptions(message, '=')
+  const lang = setLanguage(options, message.guild.id)
+
   const requiredArgs = ['dmg', 'base', 'res']
   const hasRequiredArgs = requiredArgs.every(requiredArg => Boolean(options[requiredArg]))
   if (!hasRequiredArgs) {
-    const helpEmbed = mountCommandHelpEmbed(message)
+    const helpEmbed = mountCommandHelpEmbed(message, lang)
     return message.channel.send({ embed: helpEmbed })
   }
 
@@ -45,42 +49,41 @@ export function calculateAttackDamage (message) {
   return message.channel.send({
     embed: {
       color: 'LIGHT_GREY',
-      title: `:crossed_swords: ${author} atacou um Papatudo!`,
+      title: `:crossed_swords: ${author} ${str.attackedGobbal[lang]}`,
       thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/58218365.png' },
-      description: 'Tadinho...',
       fields: [
         {
-          name: ':boxing_glove: Domínio Total',
+          name: `:boxing_glove: ${str.capitalize(str.totalDomain[lang])}`,
           value: damage,
           inline: true
         },
         {
-          name: ':pushpin: Dano Base',
+          name: `:pushpin: ${str.capitalize(str.baseDamage[lang])}`,
           value: base,
           inline: true
         },
         {
-          name: ':shield: Resistência do Alvo',
+          name: `:shield: ${str.capitalize(str.targetResistance[lang])}`,
           value: `${percentageResist}% (${flatResist})`,
           inline: true
         },
         {
-          name: ':game_die: Chance Crítica',
+          name: `:game_die: ${str.capitalize(str.criticalchance[lang])}`,
           value: `${critChance}%`,
           inline: true
         },
         {
-          name: ':drop_of_blood: Dano causado',
+          name: `:drop_of_blood: ${str.capitalize(str.damageDone[lang])}`,
           value: normalDamage,
           inline: true
         },
         {
-          name: ':abacus: Dano médio',
+          name: `:abacus: ${str.capitalize(str.averageDamage[lang])}`,
           value: averageDamage,
           inline: true
         },
         {
-          name: ':dagger: Dano nas costas',
+          name: `:dagger: ${str.capitalize(str.backDamage[lang])}`,
           value: backstabDamage,
           inline: true
         }

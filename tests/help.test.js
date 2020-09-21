@@ -1,5 +1,5 @@
 import { getHelp } from '../src/commands'
-import { commandsHelp } from '../src/commands/help'
+import commandsHelp from '../src/utils/helpMessages'
 import { mockMessage } from './testUtils'
 
 describe('getHelp', () => {
@@ -8,8 +8,8 @@ describe('getHelp', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getHelp(userMessage)
     expect(botMessage.embed).toMatchObject({
-      title: ':grey_question: Ajuda: `.help alma`',
-      description: 'Descubra o bônus do alma para o dia atual. Em breve retornarão também o bônus para os próximos dias ;D'
+      title: ':grey_question: Help: `.help alma`',
+      description: 'Discover the Almanax bonus for the current day'
     })
   })
 
@@ -19,11 +19,15 @@ describe('getHelp', () => {
     const botMessage = await getHelp(userMessage)
     expect(botMessage.embed).toMatchObject({
       color: 'LIGHT_GREY',
-      title: ':grey_question: Ajuda',
-      description: 'digite `.help <comando>` para obter ajuda sobre um comando específico',
+      title: ':grey_question: Help',
+      description: 'type `.help <command>` to get help for an specific command',
       fields: [
         {
-          name: 'Comandos disponíveis',
+          name: 'Internacionalization',
+          value: 'Some commands support `lang=<lang>` and `translate=<lang>` options.\nAvailable languages: `en`, `pt`, `fr` and `es`.'
+        },
+        {
+          name: 'Available Commands',
           value: Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
         }
       ]
@@ -36,11 +40,15 @@ describe('getHelp', () => {
     const botMessage = await getHelp(userMessage)
     expect(botMessage.embed).toMatchObject({
       color: 'LIGHT_GREY',
-      title: ':grey_question: Ajuda',
-      description: 'você só pode pedir ajuda pra um comando u_u',
+      title: ':grey_question: Help',
+      description: 'You can get help for only one command',
       fields: [
         {
-          name: 'Comandos disponíveis',
+          name: 'Internacionalization',
+          value: 'Some commands support `lang=<lang>` and `translate=<lang>` options.\nAvailable languages: `en`, `pt`, `fr` and `es`.'
+        },
+        {
+          name: 'Available Commands',
           value: Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
         }
       ]

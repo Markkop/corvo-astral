@@ -2,7 +2,7 @@ import { createParty } from './create'
 import { joinParty } from './join'
 import { updateParty } from './update'
 import { leaveParty } from './leave'
-import { commandsHelp } from '../help'
+import { mountCommandHelpEmbed } from '../help'
 import { getArgumentsAndOptions } from '../../utils/message'
 
 const partyActions = {
@@ -23,13 +23,8 @@ export function partyList (message) {
   const argument = args[0]
   const isValidArgument = Object.keys(partyActions).some(key => key === argument)
   if (!isValidArgument) {
-    return message.channel.send({
-      embed: {
-        color: 'LIGHT_GREY',
-        title: ':grey_question: Ajuda: `.party join`',
-        description: commandsHelp.party
-      }
-    })
+    const helpEmbed = mountCommandHelpEmbed(message, 'en')
+    return message.channel.send({ embed: helpEmbed })
   }
 
   const partyAction = partyActions[argument]

@@ -6,6 +6,7 @@ import { getEquipment } from './equip'
 import { getAbout } from './about'
 import { partyList } from './party'
 import { getRecipe } from './recipe'
+import { configGuild } from './config'
 
 export {
   getAlmanaxBonus,
@@ -15,5 +16,6 @@ export {
   getEquipment,
   getAbout,
   partyList,
-  getRecipe
+  getRecipe,
+  configGuild
 }
