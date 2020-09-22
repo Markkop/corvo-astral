@@ -23,7 +23,7 @@ describe('getHelp', () => {
       description: 'type `.help <command>` to get help for an specific command',
       fields: [
         {
-          name: 'Internacionalization',
+          name: 'Internationalization',
           value: 'Some commands support `lang=<lang>` and `translate=<lang>` options.\nAvailable languages: `en`, `pt`, `fr` and `es`.'
         },
         {
@@ -44,7 +44,7 @@ describe('getHelp', () => {
       description: 'You can get help for only one command',
       fields: [
         {
-          name: 'Internacionalization',
+          name: 'Internationalization',
           value: 'Some commands support `lang=<lang>` and `translate=<lang>` options.\nAvailable languages: `en`, `pt`, `fr` and `es`.'
         },
         {

@@ -3,8 +3,7 @@ import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEqu
 import { joinPartyByReaction, leavePartyByReaction } from './reactions'
 import { handleMessageError, handleReactionError } from './utils/handleError'
 import { getGroupList } from './utils/getGroupList'
-import { getCommand } from './utils/message'
-import { getAllGuildsOptions } from './utils/mongoose'
+import { getCommand, setStartupConfig } from './utils/message'
 import config from './config'
 import dotenv from 'dotenv'
 dotenv.config()
@@ -22,15 +21,6 @@ const commandActions = {
   recipe: getRecipe,
   config: configGuild,
   time: (message) => message.reply(new Date().toString())
-}
-
-/**
- * Configure commands with guilds options.
- */
-async function setStartupConfig () {
-  const guilds = await getAllGuildsOptions()
-  config.guildsOptions = guilds
-  console.log(`Configuration set for ${guilds.length} guilds (servers)`)
 }
 
 /**

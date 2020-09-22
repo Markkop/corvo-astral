@@ -1,6 +1,6 @@
 import Discord from 'discord.js'
 import { getAlmanaxBonus } from './commands/alma'
-import { getConfig } from './utils/message'
+import { getConfig, setStartupConfig } from './utils/message'
 
 /**
  * Send a message with today's almanax bonus to all channels named "almanax" (default)
@@ -10,6 +10,7 @@ function notifyAlmanaxBonus () {
   const client = new Discord.Client()
   client.login(process.env.DISCORD_BOT_TOKEN)
   client.on('ready', async () => {
+    await setStartupConfig()
     const guildsIds = client.guilds.cache.map(guild => guild.id)
 
     for (let guildIndex = 0; guildIndex < guildsIds.length; guildIndex++) {

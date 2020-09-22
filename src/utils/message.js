@@ -1,5 +1,6 @@
 import str from '../stringsLang'
 import botConfig from '../config'
+import { getAllGuildsOptions } from './mongoose'
 
 /**
  * Get command word from user message.
@@ -73,4 +74,13 @@ export function mountNotFoundEmbed (message, lang) {
 export function getConfig (configName, guildId) {
   const guildConfig = botConfig.guildsOptions.find(guildConfig => guildConfig.id === guildId) || {}
   return guildConfig[configName] || botConfig.defaultConfig[configName]
+}
+
+/**
+ * Configure commands with guilds options.
+ */
+export async function setStartupConfig () {
+  const guilds = await getAllGuildsOptions()
+  botConfig.guildsOptions = guilds
+  console.log(`Configuration set for ${guilds.length} guilds (servers)`)
 }

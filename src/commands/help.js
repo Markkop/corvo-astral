@@ -11,7 +11,7 @@ function getMoreHelpFields () {
   const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
   return [
     {
-      name: 'Internacionalization',
+      name: 'Internationalization',
       value: 'Some commands support `lang=<lang>` and `translate=<lang>` options.\nAvailable languages: `en`, `pt`, `fr` and `es`.'
     },
     {
