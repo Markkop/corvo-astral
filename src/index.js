@@ -39,6 +39,7 @@ async function init () {
     try {
       if (message.author.bot) return
       if (!message.content.startsWith(prefix)) return
+      if (!message.guild) return
 
       const command = getCommand(prefix, message)
       const action = commandActions[command]
