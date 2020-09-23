@@ -1,8 +1,12 @@
-import { getArgumentsAndOptions, getCommand } from '../src/utils/message'
+import { getArgumentsAndOptions, getCommand, setStartupConfig } from '../src/utils/message'
 import { setLanguage } from '../src/utils/language'
 import findPermutations from '../src/utils/permutateString'
 import { handleMessageError, handleReactionError } from '../src/utils/handleError'
 import { mockMessage } from './testUtils'
+
+jest.mock('../src/utils/mongoose', () => ({
+  getAllGuildsOptions: () => []
+}))
 
 describe('getArgumentsAndOptions', () => {
   it('get arguments and options correctly', () => {
@@ -78,5 +82,13 @@ describe('setLanguage', () => {
   it('returns the default language if the provided is not valid', () => {
     const lang = setLanguage({ lang: 'idkman' }, 100)
     expect(lang).toEqual('en')
+  })
+})
+
+describe('setStartupConfig', () => {
+  it('calls console log', async () => {
+    const spy = jest.spyOn(global.console, 'log').mockImplementation()
+    await setStartupConfig()
+    expect(spy).toHaveBeenCalled()
   })
 })
