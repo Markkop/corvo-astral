@@ -5,205 +5,205 @@ export default {
    * @param {string} str
    * @returns {string}
    */
-  capitalize (str) {
+  capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
   },
   slots: {
     en: 'slots',
     es: 'engarces',
     fr: 'châsses',
-    pt: 'engastes'
+    pt: 'engastes',
   },
   maxStacks: {
     en: 'max stacking',
     es: 'acumulacion máx',
     fr: 'cumul max',
-    pt: 'acúmulo máximo'
+    pt: 'acúmulo máximo',
   },
   effects: {
     en: 'effects',
     es: 'efectos',
     fr: 'effets',
-    pt: 'efeitos'
+    pt: 'efeitos',
   },
   acquiring: {
     en: 'acquiring',
     es: 'obtención',
     fr: 'obtention',
-    pt: 'obtenção'
+    pt: 'obtenção',
   },
   sublimations: {
     en: 'sublimations',
     es: 'sublimaciones',
     fr: 'sublimations',
-    pt: 'sublimações'
+    pt: 'sublimações',
   },
   sublimationsFound: {
     en: 'sublimations found',
     es: 'sublimaciones encontradas',
     fr: 'sublimations trouvées',
-    pt: 'sublimações encontradas'
+    pt: 'sublimações encontradas',
   },
   query: {
     en: 'query',
     es: 'consulta',
-    fr: 'requete',
-    pt: 'busca'
+    fr: 'requête',
+    pt: 'busca',
   },
   results: {
     en: 'results',
     es: 'resultados',
     fr: 'résultats',
-    pt: 'resultados'
+    pt: 'resultados',
   },
   inAnyOrder: {
     en: 'in any order',
     es: 'en cualquier orden',
     fr: "dans n'importe quel ordre",
-    pt: 'em qualquer ordem'
+    pt: 'em qualquer ordem',
   },
   andOther: {
     en: 'and other',
     es: 'y otros',
     fr: 'et autres',
-    pt: 'e outros'
+    pt: 'e outros',
   },
   level: {
     en: 'level',
     es: 'nivel',
     fr: 'niveau',
-    pt: 'nível'
+    pt: 'nível',
   },
   type: {
     en: 'type',
     es: 'tipo',
     fr: 'type',
-    pt: 'tipo'
+    pt: 'tipo',
   },
   rarity: {
     en: 'rarity',
-    es: 'rareté',
-    fr: 'rareza',
-    pt: 'raridade'
+    es: 'rareza',
+    fr: 'rareté',
+    pt: 'raridade',
   },
   equipped: {
     en: 'equipped',
     es: 'equipado',
     fr: 'équipé',
-    pt: 'equipado'
+    pt: 'equipado',
   },
   inUse: {
     en: 'in use',
     es: 'en uso',
     fr: 'utilisé',
-    pt: 'em uso'
+    pt: 'em uso',
   },
   conditions: {
     en: 'conditions',
     es: 'condiciones',
     fr: 'conditions',
-    pt: 'condições'
+    pt: 'condições',
   },
   equipmentFound: {
     en: 'equipment found',
     es: 'equipo encontrado',
     fr: 'équipement trouvé',
-    pt: 'equipamentos encontrados'
+    pt: 'equipamentos encontrados',
   },
   job: {
     en: 'profession',
     es: 'oficio',
-    fr: 'Métier',
-    pt: 'profissão'
+    fr: 'métier',
+    pt: 'profissão',
   },
   ingredients: {
     en: 'ingredients',
     es: 'ingredientes',
     fr: 'ingrédients',
-    pt: 'ingredients'
+    pt: 'ingredients',
   },
   recipe: {
     en: 'recipe',
     es: 'receta',
     fr: 'recette',
-    pt: 'receita'
+    pt: 'receita',
   },
   recipesFound: {
     en: 'recipes found',
     es: 'recetas encontrada',
-    fr: 'recettes trouvé',
-    pt: 'receitas encontradas'
+    fr: 'recettes trouvées',
+    pt: 'receitas encontradas',
   },
   totalDomain: {
     en: 'Total Domain',
     es: 'Dominio total',
-    fr: 'Domaine total',
-    pt: 'Domínio Total'
+    fr: 'Dégâts totaux',
+    pt: 'Domínio Total',
   },
   baseDamage: {
     en: 'Base Damage',
     es: 'Daño base',
-    fr: 'Les dégâts de base',
-    pt: 'Dano Base'
+    fr: 'Dégâts de base',
+    pt: 'Dano Base',
   },
   targetResistance: {
     en: 'Target Resistance',
     es: 'Resistencia al objetivo',
-    fr: 'Résistance à la cible',
-    pt: 'Resistência do Alvo'
+    fr: 'Résistance de la cible',
+    pt: 'Resistência do Alvo',
   },
   criticalchance: {
     en: 'Critical chance',
     es: 'Oportunidad critica',
     fr: 'Chance critique',
-    pt: 'Chance Crítica'
+    pt: 'Chance Crítica',
   },
   damageDone: {
     en: 'Damage done',
     es: 'El daño está hecho',
     fr: 'Dommages causés',
-    pt: 'Dano causado'
+    pt: 'Dano causado',
   },
   averageDamage: {
     en: 'Average damage',
     es: 'Daño medio',
     fr: 'Dégats moyens',
-    pt: 'Dano médio'
+    pt: 'Dano médio',
   },
   backDamage: {
     en: 'Back damage',
     es: 'Daño de espalda',
-    fr: 'Dommages au dos',
-    pt: 'Dano nas costas'
+    fr: 'Dommages de dos',
+    pt: 'Dano nas costas',
   },
   attackedGobbal: {
     en: 'has attacked a gobbal!',
     es: 'atacó a un jalató!',
     fr: 'a attaqué un bouftou!',
-    pt: 'atacou um papatudo!'
+    pt: 'atacou um papatudo!',
   },
   todaysAlma: {
     en: 'today the Almanax temple bonus is',
     es: 'hoy el bono del Almanax templo es',
-    fr: "aujourd'hui le bonus du Almanax temple est",
-    pt: 'hoje o bônus do templo Almanax é'
+    fr: "aujourd'hui le bonus du temple Almanax est",
+    pt: 'hoje o bônus do templo Almanax é',
   },
   party: {
     en: 'party',
     es: 'grupo',
     fr: 'groupe',
-    pt: 'grupo'
+    pt: 'grupo',
   },
   noResults: {
     en: 'No results',
     es: 'No hay resultados',
     fr: 'Aucun résultat',
-    pt: 'Sem resultados'
+    pt: 'Sem resultados',
   },
   noResultsMessage: (command) => ({
     en: `Type \`.help ${command}\` to see some examples of how to search.`,
     es: `Escriba \`.help ${command}\` para ver algunos ejemplos de cómo buscar.`,
     fr: `Tapez \`.help ${command}\` pour voir quelques exemples de recherche.`,
-    pt: `Digite \`.help ${command}\` para conferir alguns exemplos de como pesquisar.`
-  })
+    pt: `Digite \`.help ${command}\` para conferir alguns exemplos de como pesquisar.`,
+  }),
 }
