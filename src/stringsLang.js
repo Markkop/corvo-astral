@@ -10,13 +10,13 @@ export default {
   },
   slots: {
     en: 'slots',
-    es: 'engarces',
+    es: 'ajustes',
     fr: 'châsses',
     pt: 'engastes'
   },
   maxStacks: {
     en: 'max stacking',
-    es: 'acumulacion máx',
+    es: 'acumulacion máxima',
     fr: 'cumul max',
     pt: 'acúmulo máximo'
   },
@@ -82,8 +82,8 @@ export default {
   },
   rarity: {
     en: 'rarity',
-    es: 'rareté',
-    fr: 'rareza',
+    es: 'rareza',
+    fr: 'rareté',
     pt: 'raridade'
   },
   equipped: {
@@ -112,7 +112,7 @@ export default {
   },
   job: {
     en: 'profession',
-    es: 'oficio',
+    es: 'profesión',
     fr: 'Métier',
     pt: 'profissão'
   },
@@ -130,7 +130,7 @@ export default {
   },
   recipesFound: {
     en: 'recipes found',
-    es: 'recetas encontrada',
+    es: 'recetas encontradas',
     fr: 'recettes trouvé',
     pt: 'receitas encontradas'
   },
@@ -160,7 +160,7 @@ export default {
   },
   damageDone: {
     en: 'Damage done',
-    es: 'El daño está hecho',
+    es: 'Daño causado',
     fr: 'Dommages causés',
     pt: 'Dano causado'
   },
