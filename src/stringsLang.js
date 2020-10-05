@@ -47,7 +47,7 @@ export default {
   query: {
     en: 'query',
     es: 'consulta',
-    fr: 'requete',
+    fr: 'requête',
     pt: 'busca'
   },
   results: {
@@ -113,7 +113,7 @@ export default {
   job: {
     en: 'profession',
     es: 'profesión',
-    fr: 'Métier',
+    fr: 'métier',
     pt: 'profissão'
   },
   ingredients: {
@@ -131,25 +131,25 @@ export default {
   recipesFound: {
     en: 'recipes found',
     es: 'recetas encontradas',
-    fr: 'recettes trouvé',
+    fr: 'recettes trouvées',
     pt: 'receitas encontradas'
   },
   totalDomain: {
     en: 'Total Domain',
     es: 'Dominio total',
-    fr: 'Domaine total',
+    fr: 'Dégâts totaux',
     pt: 'Domínio Total'
   },
   baseDamage: {
     en: 'Base Damage',
     es: 'Daño base',
-    fr: 'Les dégâts de base',
+    fr: 'Dégâts de base',
     pt: 'Dano Base'
   },
   targetResistance: {
     en: 'Target Resistance',
     es: 'Resistencia al objetivo',
-    fr: 'Résistance à la cible',
+    fr: 'Résistance de la cible',
     pt: 'Resistência do Alvo'
   },
   criticalchance: {
@@ -173,7 +173,7 @@ export default {
   backDamage: {
     en: 'Back damage',
     es: 'Daño de espalda',
-    fr: 'Dommages au dos',
+    fr: 'Dommages de dos',
     pt: 'Dano nas costas'
   },
   attackedGobbal: {
@@ -185,7 +185,7 @@ export default {
   todaysAlma: {
     en: 'today the Almanax temple bonus is',
     es: 'hoy el bono del Almanax templo es',
-    fr: "aujourd'hui le bonus du Almanax temple est",
+    fr: "aujourd'hui le bonus du temple Almanax est",
     pt: 'hoje o bônus do templo Almanax é'
   },
   party: {

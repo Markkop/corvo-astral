@@ -6,10 +6,7 @@ export default {
       es: 'Descubra el bono Almanax para el día actual',
       fr: 'Découvrez le bonus Almanax du jour en cours'
     },
-    examples: [
-      '.alma',
-      '.alma lang=fr'
-    ]
+    examples: ['.alma', '.alma lang=fr']
   },
   calc: {
     help: {
@@ -33,10 +30,10 @@ Parámetros:
 * \`crit\`: probabilidad crítica en% (opcional)`,
       fr: `Calculez les dégâts infligés par une attaque.
 Paramètres:
-* \`dmg\`: domaine total (élémentaire majeur + secondaire)
+* \`dmg\`: dégâts totaux (élémentaire majeur + secondaire)
 * \`base\`: dégâts de base de compétences
-* \`res\`: résistance de la cible. Cela peut être en% ou au total
-* \`crit\`: chance critique en% (optionnel)`
+* \`res\`: résistance de la cible. Cela peut être en % ou au total
+* \`crit\`: chance critique en % (optionnel)`
     },
     examples: [
       '.calc dmg=3000 base=55 res=60%',
@@ -85,9 +82,7 @@ Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.
       es: 'Muestra información sobre el Corvo Astral',
       fr: 'Affiche des informations sur Corvo Astral'
     },
-    examples: [
-      '.about'
-    ]
+    examples: ['.about']
   },
   party: {
     help: {
@@ -116,13 +111,13 @@ Para cambiar el nombre, la fecha, el nivel y la descripción, use el comando \`.
 Únase a cualquier grupo ya creado en el canal del grupo, informando el ID del grupo y su clase con \`.party join\`.
 También puede usar las ** reacciones ** del mensaje grupal para ingresar, salir o agregar / eliminar clases.`,
       fr: `Répertoriez et rejoignez des groupes.
-** Remarque: notez que lorsqu'il y a de l'espace, il faut utiliser "" autour de l'option. **
-Si la date n'est pas fournie, elle apparaît comme "A convenir"
+** Remarque: notez que lorsqu'il y a des espaces, il faut utiliser "" autour de l'option. **
+Si la date n'est pas fournie, elle apparaît comme "A préciser"
 Si le niveau n'est pas fourni, il apparaît sous la forme "1-215"
 Si les places ne sont pas fournies, il s'agit de 6 (maximum 50 places)
 Pour changer le nom, la date, le niveau et la description, utilisez la commande \`.party update \`. Si vous n'êtes pas le leader, vous ne pouvez mettre à jour que la classe.
 Rejoignez n'importe quel groupe déjà créé dans le canal du groupe, en informant l'identifiant du groupe et sa classe avec \`.party join\`.
-Vous pouvez également utiliser les ** réactions ** du message de groupe pour entrer, quitter ou ajouter / supprimer des cours.`
+Vous pouvez également utiliser les ** réactions ** du message de groupe pour entrer, quitter ou ajouter / supprimer des classes.`
     },
     examples: [
       '.party create name="vertox s21 3 stele" desc="looking for incurable and enutrof" lvl="186+"',
@@ -152,14 +147,14 @@ Vous pouvez également utiliser les ** réactions ** du message de groupe pour e
       en: 'Nice try',
       pt: 'Boa tentativa',
       es: 'Buena tentativa',
-      fr: 'Bon essai'
+      fr: 'Bel tentative'
     },
-    examples: [
-    ]
+    examples: []
   },
   config: {
     help: {
-      en: "Change some of this bot's configuration for your guild. You need admin permission for this.",
+      en:
+        "Change some of this bot's configuration for your guild. You need admin permission for this.",
       pt: '',
       es: '',
       fr: ''
