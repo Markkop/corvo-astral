@@ -4,12 +4,9 @@ export default {
       en: 'Discover the Almanax bonus for the current day',
       pt: 'Descubra o bônus do Almanax para o dia atual',
       es: 'Descubra el bono Almanax para el día actual',
-      fr: 'Découvrez le bonus Almanax du jour en cours'
+      fr: 'Découvrez le bonus Almanax du jour en cours',
     },
-    examples: [
-      '.alma',
-      '.alma lang=fr'
-    ]
+    examples: ['.alma', '.alma lang=fr'],
   },
   calc: {
     help: {
@@ -33,15 +30,15 @@ Parámetros:
 * \`crit\`: probabilidad crítica en% (opcional)`,
       fr: `Calculez les dégâts infligés par une attaque.
 Paramètres:
-* \`dmg\`: domaine total (élémentaire majeur + secondaire)
+* \`dmg\`: dégâts totaux (élémentaire majeur + secondaire)
 * \`base\`: dégâts de base de compétences
-* \`res\`: résistance de la cible. Cela peut être en% ou au total
-* \`crit\`: chance critique en% (optionnel)`
+* \`res\`: résistance de la cible. Cela peut être en % ou au total
+* \`crit\`: chance critique en % (optionnel)`,
     },
     examples: [
       '.calc dmg=3000 base=55 res=60%',
-      '.calc dmg=5000 base=40 res=420 crit=30%'
-    ]
+      '.calc dmg=5000 base=40 res=420 crit=30%',
+    ],
   },
   subli: {
     help: {
@@ -52,7 +49,7 @@ Utilize "random" para procurar combinações em qualquer ordem.`,
       es: `Busque sublimaciones por nombre, combinación de ranuras o fuente de obtención.
 Utilice "random" para buscar coincidencias en cualquier orden.`,
       fr: `Recherchez les sublimations par nom, combinaison d'emplacements ou source d'obtention.
-Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.`
+Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.`,
     },
     examples: [
       '.subli bruta',
@@ -63,31 +60,29 @@ Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.
       '.subli epic',
       '.subli quest',
       '.subli koko',
-      '.subli craft'
-    ]
+      '.subli craft',
+    ],
   },
   equip: {
     help: {
       en: 'Search by equipment name and / or rarity',
       pt: 'Pesquise pelo nome do equipamento e/ou raridade',
       es: 'Buscar por nombre de equipo y / o rareza',
-      fr: "Recherche par nom d'équipement et / ou rareté"
+      fr: "Recherche par nom d'équipement et / ou rareté",
     },
     examples: [
       '.equip martelo de osamodas lang=pt',
-      '.equip the eternal rarity=mythical'
-    ]
+      '.equip the eternal rarity=mythical',
+    ],
   },
   about: {
     help: {
       en: 'Displays information about Corvo Astral',
       pt: 'Exibe informações sobre o Corvo Astral',
       es: 'Muestra información sobre el Corvo Astral',
-      fr: 'Affiche des informations sur Corvo Astral'
+      fr: 'Affiche des informations sur Corvo Astral',
     },
-    examples: [
-      '.about'
-    ]
+    examples: ['.about'],
   },
   party: {
     help: {
@@ -116,13 +111,13 @@ Para cambiar el nombre, la fecha, el nivel y la descripción, use el comando \`.
 Únase a cualquier grupo ya creado en el canal del grupo, informando el ID del grupo y su clase con \`.party join\`.
 También puede usar las ** reacciones ** del mensaje grupal para ingresar, salir o agregar / eliminar clases.`,
       fr: `Répertoriez et rejoignez des groupes.
-** Remarque: notez que lorsqu'il y a de l'espace, il faut utiliser "" autour de l'option. **
-Si la date n'est pas fournie, elle apparaît comme "A convenir"
+** Remarque: notez que lorsqu'il y a des espaces, il faut utiliser "" autour de l'option. **
+Si la date n'est pas fournie, elle apparaît comme "A préciser"
 Si le niveau n'est pas fourni, il apparaît sous la forme "1-215"
 Si les places ne sont pas fournies, il s'agit de 6 (maximum 50 places)
 Pour changer le nom, la date, le niveau et la description, utilisez la commande \`.party update \`. Si vous n'êtes pas le leader, vous ne pouvez mettre à jour que la classe.
 Rejoignez n'importe quel groupe déjà créé dans le canal du groupe, en informant l'identifiant du groupe et sa classe avec \`.party join\`.
-Vous pouvez également utiliser les ** réactions ** du message de groupe pour entrer, quitter ou ajouter / supprimer des cours.`
+Vous pouvez également utiliser les ** réactions ** du message de groupe pour entrer, quitter ou ajouter / supprimer des classes.`,
     },
     examples: [
       '.party create name="vertox s21 3 stele" desc="looking for incurable and enutrof" lvl="186+"',
@@ -131,44 +126,44 @@ Vous pouvez également utiliser les ** réactions ** du message de groupe pour e
       '.party join id=1 class=enu',
       '.party update id=50 date="12/11 15:00"',
       '.party update id=32 class=feca',
-      '.party leave id=32'
-    ]
+      '.party leave id=32',
+    ],
   },
   recipe: {
     help: {
       en: 'See recipes.',
       pt: 'Consulte as receitas de items.',
       es: 'Ver recetas.',
-      fr: 'Voir les recettes.'
+      fr: 'Voir les recettes.',
     },
     examples: [
       '.recipe brakmar sword',
       '.recipe espada de brakmar lang=pt',
-      '.recipe peace pipe rarity=mythical'
-    ]
+      '.recipe peace pipe rarity=mythical',
+    ],
   },
   help: {
     help: {
       en: 'Nice try',
       pt: 'Boa tentativa',
       es: 'Buena tentativa',
-      fr: 'Bon essai'
+      fr: 'Bel tentative',
     },
-    examples: [
-    ]
+    examples: [],
   },
   config: {
     help: {
-      en: "Change some of this bot's configuration for your guild. You need admin permission for this.",
+      en:
+        "Change some of this bot's configuration for your guild. You need admin permission for this.",
       pt: '',
       es: '',
-      fr: ''
+      fr: '',
     },
     examples: [
       '.config set lang=en',
       '.config set almanaxChannel=temple-bonus',
       '.config set partyChannel=party-listing',
-      '.config get'
-    ]
-  }
+      '.config get',
+    ],
+  },
 }
