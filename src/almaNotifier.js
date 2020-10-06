@@ -8,10 +8,10 @@ import { handleMessageError } from './utils/handleError'
  * or the almanaxChannel set with config command.
  */
 function notifyAlmanaxBonus () {
-  try {
-    const client = new Discord.Client()
-    client.login(process.env.DISCORD_BOT_TOKEN)
-    client.on('ready', async () => {
+  const client = new Discord.Client()
+  client.login(process.env.DISCORD_BOT_TOKEN)
+  client.on('ready', async () => {
+    try {
       await setStartupConfig()
       const guildsIds = client.guilds.cache.map(guild => guild.id)
 
@@ -31,12 +31,11 @@ function notifyAlmanaxBonus () {
           }
         }
       }
-
-      client.destroy()
-    })
-  } catch (error) {
-    handleMessageError(error, { react: () => {} })
-  }
+    } catch (error) {
+      handleMessageError(error)
+    }
+    client.destroy()
+  })
 }
 
 notifyAlmanaxBonus()

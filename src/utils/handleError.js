@@ -18,8 +18,11 @@ async function reactWithErrorEmoji (message) {
  * @param {object} message
  */
 export function handleMessageError (error, message) {
-  console.log(`${error.toString()} on guild "${message.guild.name}", channel "${message.channel.name}" by ${message.author.username}`)
-  reactWithErrorEmoji(message)
+  try {
+    console.log(`${error.toString()} on guild "${message.guild.name}", channel "${message.channel.name}" by ${message.author.username}`)
+    reactWithErrorEmoji(message)
+  } catch (error) {
+  }
 }
 
 /**

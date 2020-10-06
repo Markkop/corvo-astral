@@ -63,6 +63,13 @@ describe('handleError functions', () => {
     expect(spy).toHaveBeenCalled()
   })
 
+  it("handleMessageError doesn't brake if message comes without enough properties", () => {
+    const spy = jest.spyOn(global.console, 'log').mockImplementation()
+    const error = { toString: jest.fn() }
+    handleMessageError(error, {})
+    expect(spy).toHaveBeenCalled()
+  })
+
   it('handleReactionError calls console log', () => {
     const spy = jest.spyOn(global.console, 'log').mockImplementation()
     const reaction = { message: mockMessage('') }
