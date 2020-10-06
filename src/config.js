@@ -32,7 +32,7 @@ export default {
     1: {
       name: {
         en: 'Unusual',
-        es: 'Inhabituel',
+        es: 'Inusual',
         fr: 'Inhabituel',
         pt: 'Comum'
       },
@@ -92,7 +92,7 @@ export default {
     7: {
       name: {
         en: 'Epic',
-        es: 'Epique',
+        es: 'Épico',
         fr: 'Epique',
         pt: 'Épico'
       },
@@ -102,7 +102,7 @@ export default {
     10: {
       name: {
         en: 'Impossible',
-        es: 'Impossible',
+        es: 'Imposible',
         fr: 'Impossible',
         pt: 'Impossível'
       },
@@ -167,7 +167,7 @@ export default {
       title: {
         fr: 'Trappeur',
         en: 'Trapper',
-        es: 'Peletero',
+        es: 'Trampero',
         pt: 'Caçador'
       }
     },

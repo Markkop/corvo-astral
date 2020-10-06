@@ -146,7 +146,7 @@ Vous pouvez également utiliser les ** réactions ** du message de groupe pour e
     help: {
       en: 'Nice try',
       pt: 'Boa tentativa',
-      es: 'Buena tentativa',
+      es: 'Buen intento',
       fr: 'Bel tentative'
     },
     examples: []
