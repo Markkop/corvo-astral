@@ -11,28 +11,35 @@ function notifyAlmanaxBonus () {
   const client = new Discord.Client()
   client.login(process.env.DISCORD_BOT_TOKEN)
   client.on('ready', async () => {
-    try {
-      await setStartupConfig()
-      const guildsIds = client.guilds.cache.map(guild => guild.id)
+    await setStartupConfig()
+    const guildsIds = client.guilds.cache.map(guild => guild.id)
 
-      for (let guildIndex = 0; guildIndex < guildsIds.length; guildIndex++) {
-        const guildId = guildsIds[guildIndex]
-        const guild = client.guilds.cache.get(guildId)
+    for (let guildIndex = 0; guildIndex < guildsIds.length; guildIndex++) {
+      const guildId = guildsIds[guildIndex]
+      const guild = client.guilds.cache.get(guildId)
 
-        const guildChannelsIds = guild.channels.cache.map(channel => channel.id)
+      const guildChannelsIds = guild.channels.cache.map(channel => channel.id)
 
-        const almanaxChannelName = getConfig('almanaxChannel', guildId)
+      const almanaxChannelName = getConfig('almanaxChannel', guildId)
 
-        for (let channelIndex = 0; channelIndex < guildChannelsIds.length; channelIndex++) {
-          const guildChannelId = guildChannelsIds[channelIndex]
-          const guildChannel = guild.channels.cache.get(guildChannelId)
-          if (guildChannel.name.includes(almanaxChannelName)) {
-            await getAlmanaxBonus({ channel: guildChannel, content: '', guild: { id: guildId } })
-          }
+      for (let channelIndex = 0; channelIndex < guildChannelsIds.length; channelIndex++) {
+        const guildChannelId = guildChannelsIds[channelIndex]
+        const guildChannel = guild.channels.cache.get(guildChannelId)
+        if (!guildChannel.name.includes(almanaxChannelName)) {
+          continue
+        }
+        const message = {
+          channel: guildChannel,
+          content: '',
+          guild,
+          author: { username: 'almaNotifier' }
+        }
+        try {
+          await getAlmanaxBonus(message)
+        } catch (error) {
+          handleMessageError(error, message)
         }
       }
-    } catch (error) {
-      handleMessageError(error)
     }
     client.destroy()
   })
