@@ -238,7 +238,12 @@ async function getAlmanaxData (page) {
  * @returns {Promise<AlmanaxData>} AlmanaxData.
  */
 export default async function scrapAlmanax (timestamp) {
-  const browser = await puppeteer.launch()
+  const browser = await puppeteer.launch({
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox'
+    ]
+  })
   const page = await browser.newPage()
   let date = ''
   if (timestamp) {
