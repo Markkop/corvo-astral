@@ -28,7 +28,7 @@ export function getCommand (commandPrefix, message) {
  * @returns {string[]} Command and arguments.
  */
 export function getArgumentsAndOptions (message, optionsConector) {
-  let messageContent = message.content
+  let messageContent = message.content.replace(/“|”/g, '"')
   const quoteOptions = messageContent.match(/(".*?")/g) || []
   quoteOptions.forEach(quoteOption => {
     const quoteOptionWithUnderscore = quoteOption.replace(/ /g, '_')
