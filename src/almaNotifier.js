@@ -2,6 +2,7 @@ import Discord from 'discord.js'
 import { getAlmanaxBonus } from './commands/alma'
 import { getConfig, setStartupConfig } from './utils/message'
 import { handleMessageError } from './utils/handleError'
+import scrapAlmanax from './scrappers/almanax'
 
 /**
  * Send a message with today's almanax bonus to all channels named "almanax" (default)
@@ -12,6 +13,7 @@ function notifyAlmanaxBonus () {
   client.login(process.env.DISCORD_BOT_TOKEN)
   client.on('ready', async () => {
     await setStartupConfig()
+    const alma = await scrapAlmanax()
     const guildsIds = client.guilds.cache.map(guild => guild.id)
 
     for (let guildIndex = 0; guildIndex < guildsIds.length; guildIndex++) {
@@ -36,7 +38,7 @@ function notifyAlmanaxBonus () {
           react: () => ({ remove: () => {} })
         }
         try {
-          await getAlmanaxBonus(message)
+          await getAlmanaxBonus(message, alma)
         } catch (error) {
           handleMessageError(error, message)
         }

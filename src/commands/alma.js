@@ -6,12 +6,15 @@ import scrapAlmanax from '../scrappers/almanax'
  * Replies the user with current Almanax bonus.
  *
  * @param { import('discord.js').Message } message - Discord message object.
+ * @param {object} alma - Scrapped almanax data for almaNotifier.
  * @returns {Promise<object>}
  */
-export async function getAlmanaxBonus (message) {
+export async function getAlmanaxBonus (message, alma) {
   try {
     const awaitReaction = await message.react('⏳')
-    const alma = await scrapAlmanax()
+    if (!alma) {
+      alma = await scrapAlmanax()
+    }
     const stringDate = `${alma.date.day} ${alma.date.month} ${alma.date.year}`
 
     const embed = {
