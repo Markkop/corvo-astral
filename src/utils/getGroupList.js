@@ -8,14 +8,7 @@
  */
 export async function getGroupList (reaction, user) {
   if (user.bot) return {}
-  if (reaction.partial) {
-    try {
-      await reaction.fetch()
-    } catch (error) {
-      console.log('Something went wrong when fetching the message: ', error)
-      return {}
-    }
-  }
+
   const messageEmbed = reaction.message.embeds[0]
   if (!messageEmbed) return {}
 
