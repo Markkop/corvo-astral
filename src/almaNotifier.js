@@ -32,7 +32,8 @@ function notifyAlmanaxBonus () {
           channel: guildChannel,
           content: '',
           guild,
-          author: { username: 'almaNotifier' }
+          author: { username: 'almaNotifier' },
+          react: () => ({ remove: () => {} })
         }
         try {
           await getAlmanaxBonus(message)
