@@ -79,7 +79,7 @@ async function init () {
       const description = reactionEmbed.description || ''
       const isAlmanaxMessage = description.includes('Bonus:')
       if (isAlmanaxMessage) {
-        const isValidEmoji = ['🛡️', '🙏', '🌌', '🧩'].includes(reaction.emoji.name)
+        const isValidEmoji = ['🛡️', '🙏', '🌌', '🍀', '🔎', '🗓️', '🔮'].includes(reaction.emoji.name)
         if (isValidEmoji && !messagePool.includes(messageId)) {
           messagePool.push(messageId)
           await changeAlmanaxDetails(reaction)

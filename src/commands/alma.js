@@ -1,6 +1,8 @@
 import Discord from 'discord.js'
 import { handleMessageError } from '../utils/handleError'
 import scrapAlmanax from '../scrappers/almanax'
+import { capitalize } from '../utils/strings'
+import scrapAlmanaxWeek from '../scrappers/almanaxWeek'
 
 /**
  * Replies the user with current Almanax bonus.
@@ -16,24 +18,26 @@ export async function getAlmanaxBonus (message, alma) {
       alma = await scrapAlmanax()
     }
     const stringDate = `${alma.date.day} ${alma.date.month} ${alma.date.year}`
-
+    const image = alma.boss.imageUrl
     const embed = {
       color: '#40b2b5',
       title: `:partly_sunny: ${stringDate}`,
-      description: `**Season:** ${alma.date.season}
+      description: `**Season:** ${capitalize(alma.date.season)}
 **Quest:** ${alma.daily.wakfu.bonus.title}
 **Bonus:** ${alma.daily.wakfu.bonus.description}`,
-      thumbnail: { url: alma.boss.imageUrl },
+      thumbnail: { url: image },
       timestamp: new Date()
     }
 
     const sentMessage = await message.channel.send({ embed })
-    const reactions = ['🛡️', '🙏', '🌌', '🧩']
+    const reactions = ['🛡️', '🙏', '🌌', '🍀', '🔎', '🔮']
+    if (alma.event.title) {
+      reactions.push('🗓️')
+    }
     for (let index = 0; index < reactions.length; index++) {
       await sentMessage.react(reactions[index])
     }
     await awaitReaction.remove()
-    message.react('✅')
     return sentMessage
   } catch (error) {
     handleMessageError(error, message)
@@ -52,52 +56,107 @@ export async function changeAlmanaxDetails (reaction) {
   const embed = reaction.message.embeds[0]
   const timestamp = embed.timestamp
 
-  const alma = await scrapAlmanax(timestamp)
-  const fieldMap = {
-    '🛡️': {
+  let alma
+  if (reaction.emoji.name === '🔮') {
+    alma = await scrapAlmanaxWeek()
+  } else {
+    alma = await scrapAlmanax(timestamp)
+  }
+  const getFieldMap = {
+    '🛡️': (alma) => ({
       color: 'BLUE',
       imageUrl: alma.protector.imageUrl,
       field: {
         name: `Protector: ${alma.protector.title}`,
         value: alma.protector.description
       }
-    },
-    '🙏': {
+    }),
+    '🙏': (alma) => ({
       color: 'GREY',
       imageUrl: alma.boss.imageUrl,
       field: {
         name: `Meridia: ${alma.boss.title}`,
         value: alma.boss.description
       }
-    },
-    '🌌': {
+    }),
+    '🌌': (alma) => ({
       color: 'PURPLE',
       imageUrl: alma.zodiac.imageUrl,
       field: {
         name: `Zodiac: ${alma.zodiac.title}`,
         value: alma.zodiac.description
       }
-    },
-    '🧩': {
+    }),
+    '🍀': (alma) => ({
       color: 'GREEN',
-      imageUrl: 'http://static.ankama.com/krosmoz/www/img/almanax/seasons.png',
+      imageUrl: 'https://static.ankama.com/dofus/www/game/havenbags/themes/15.png',
       field: {
-        name: ':jigsaw: Triviax',
+        name: 'The Meridian Effect:',
+        value: alma.meridianEffect
+      }
+    }),
+    '🔎': (alma) => ({
+      color: 'GREY',
+      imageUrl: getRandomImage(alma.daily.wakfu.bonus.wakfuBonus.images),
+      field: {
+        name: 'Triviax:',
         value: alma.trivia
       }
-    }
+    }),
+    '🔮': (alma) => ({
+      color: 'AQUA',
+      imageUrl: 'https://static.ankama.com/wakfu/portal/game/item/115/60314168.png',
+      field: {
+        name: 'Forecast:',
+        value: alma.days.map((day) => {
+          const characters = day.date.split('')
+          const quantityText = Array(15).fill(' ')
+          quantityText.splice(0, characters.length, ...characters)
+          let bonusText = day.wakfuBonus.name.en
+          if (day.events.length) {
+            bonusText = `${bonusText} **[${day.events.join(', ')}]**`
+          }
+          return `:white_small_square: \`${quantityText.join('')}\` ${bonusText}`
+        })
+      }
+    }),
+    '🗓️': (alma) => ({
+      color: '#c29f6d',
+      imageUrl: alma.event.imageUrl,
+      field: {
+        name: `Event: ${alma.event.title}`,
+        value: alma.event.description
+      }
+    })
   }
 
-  const embedOptions = fieldMap[reaction.emoji.name]
+  const embedOptions = getFieldMap[reaction.emoji.name](alma)
   if (!embedOptions) {
+    return
+  }
+
+  const isEventEmoji = reaction.emoji.name === '🗓️'
+  const hasEvent = Boolean(alma.event && alma.event.title)
+  if (isEventEmoji && !hasEvent) {
     return
   }
 
   embed.fields = [embedOptions.field]
   embed.color = embedOptions.color
-  embed.image = { url: embedOptions.imageUrl }
+  embed.thumbnail = { url: embedOptions.imageUrl }
 
   const newEmbed = new Discord.MessageEmbed(embed)
   await awaitReaction.remove()
   return message.edit(newEmbed)
+}
+
+/**
+ * Gets a random imagem.
+ *
+ * @param {string[]} images
+ * @returns {string}
+ */
+function getRandomImage (images) {
+  const index = Math.floor(Math.random() * images.length)
+  return images[index]
 }

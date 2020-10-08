@@ -2,7 +2,7 @@
   {
     "firstDate": "08/25/2020",
     "name": {
-      "en": ":ear_of_rice: Harvest Amound",
+      "en": ":ear_of_rice: Harvest Amount",
       "pt": ":ear_of_rice: Quantidade em Colheita",
       "fr": ":ear_of_rice: Récolte",
       "es": ":ear_of_rice: Cantidad de cosecha"
@@ -98,10 +98,10 @@
       "es": "+ 30% EXP en cosecha y plantación"
     },
     "images": [
-      "https://media.tenor.com/images/81c067fdb7dd81ca021458688244c943/tenor.gif?itemid=4759918",
-      "https://media.tenor.com/images/627016da0d79fff0b46c468c33b57460/tenor.gif?itemid=5470696",
-      "https://media.tenor.com/images/a264f8fc061922fbc55069f2516378c3/tenor.gif?itemid=12990088",
-      "https://media.tenor.com/images/792989a517387b049a76c8b8140642fb/tenor.gif"
+      "https://media.tenor.com/images/21c2da12cbb9e16f52449e060376b321/tenor.gif",
+      "https://media.tenor.com/images/86ae614590d4bd31a57c747e484cc9e5/tenor.gif",
+      "https://media.tenor.com/images/20667b981a7795c99bbad2e5e6709fc1/tenor.gif",
+      "https://media.tenor.com/images/567a964f4d0fe72241de946ee9294b2c/tenor.gif"
     ]
   }
 ]
