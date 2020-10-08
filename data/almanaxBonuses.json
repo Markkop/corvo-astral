@@ -86,10 +86,10 @@
   {
     "firstDate": "08/29/2020",
     "name": {
-      "en": ":up: EXP in Harvest",
-      "pt": ":up: EXP em Colheita",
-      "fr": ":up: EXP en récolte",
-      "es": ":up: EXP en cosecha"
+      "en": ":axe: EXP in Harvest",
+      "pt": ":axe: EXP em Colheita",
+      "fr": ":axe: EXP en récolte",
+      "es": ":axe: EXP en cosecha"
     },
     "text": {
       "en": "+ 30% EXP in Harvest and Plantation",
