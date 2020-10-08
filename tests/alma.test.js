@@ -6,7 +6,7 @@ jest.mock('../src/utils/handleError', () => ({
   handleMessageError: jest.fn()
 }))
 
-describe('getAlmanaxBonus', () => {
+describe.skip('getAlmanaxBonus', () => {
   it('return the correct almanax bonus', () => {
     const content = '.alma'
     const userMessage = mockMessage(content)
