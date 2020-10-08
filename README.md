@@ -23,11 +23,17 @@ Most features support Wakfu community languages: en, es, pt and fr.
 
 ## Features
 
-### :sunny: Almanax Bonus Notifier
+### :milky_way:  Krosmoz Almanax
+
+Inspired by [wakmanax](https://github.com/elio-centrique/wakmanax), the `.alma` command scraps [Krosmoz Almanax](http://www.krosmoz.com/en/almanax) page and returns tons of cool stuff such as Protector of the Day, Zodiac, Trivia, Event and Forecast!  
+  
+![](https://i.imgur.com/BVOqE2p.gif)
+
+### :sunny: Daily Almanax Notification
 
 At 00:00 UTC, the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
 The timezone config will be available in further updates.
-If you wish to disable this behavior, simply deny permission to this bot on that channel.  
+If you wish to disable this behavior, simply deny permission to this bot on that channel.
 
 ### :busts_in_silhouette: Party Listing
 
@@ -124,7 +130,7 @@ Examples:
 Some bot options can be configurable according to each server using `.config`.  
 **Options**:
 * lang: default bot language between fr, en, es and pt (default: en)
-* prefix: character to call commands (default: .)
+* prefix: character to call commands (default: .) _(not available yet)_
 * almanaxChannel: channel receive the `.alma` command daily (default: almanax)
 * partyChannel: channel to receive the `.party` command (default: listagem-de-grupos)
 
