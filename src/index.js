@@ -2,6 +2,7 @@ import Discord from 'discord.js'
 import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment, getAbout, partyList, getRecipe, configGuild } from './commands'
 import { joinPartyByReaction, leavePartyByReaction } from './reactions'
 import { handleMessageError, handleReactionError } from './utils/handleError'
+import { changeAlmanaxDetails } from './commands/alma'
 import { getGroupList } from './utils/getGroupList'
 import { getCommand, setStartupConfig } from './utils/message'
 import config from './config'
@@ -51,17 +52,40 @@ async function init () {
     }
   })
 
+  let messagePool = []
   client.on('messageReactionAdd', async function (reaction, user) {
     try {
       if (user.bot) return
 
+      if (reaction.partial) {
+        try {
+          await reaction.fetch()
+        } catch (error) {
+          console.log('Something went wrong when fetching the message: ', error)
+          return {}
+        }
+      }
+
       const { members, listingGroupId } = await getGroupList(reaction, user)
-      if (!members || !listingGroupId) return
+      if (members && listingGroupId) {
+        const className = classEmoji[reaction.emoji.name]
+        if (!className) return
 
-      const className = classEmoji[reaction.emoji.name]
-      if (!className) return
+        return await joinPartyByReaction(reaction, user, members, listingGroupId, className)
+      }
 
-      await joinPartyByReaction(reaction, user, members, listingGroupId, className)
+      const messageId = reaction.message.id
+      const reactionEmbed = reaction.message.embeds[0] || {}
+      const description = reactionEmbed.description || ''
+      const isAlmanaxMessage = description.includes('Bonus:')
+      if (isAlmanaxMessage) {
+        const isValidEmoji = ['🛡️', '🙏', '🌌', '🧩'].includes(reaction.emoji.name)
+        if (isValidEmoji && !messagePool.includes(messageId)) {
+          messagePool.push(messageId)
+          await changeAlmanaxDetails(reaction)
+          messagePool = messagePool.filter(id => id !== messageId)
+        }
+      }
     } catch (error) {
       handleReactionError(error, reaction, user)
     }

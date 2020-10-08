@@ -1,8 +1,6 @@
-import events from '../../data/almanaxBonuses'
-import { getArgumentsAndOptions } from '../utils/message'
-import { setLanguage } from '../utils/language'
+import Discord from 'discord.js'
 import { handleMessageError } from '../utils/handleError'
-import str from '../stringsLang'
+import scrapAlmanax from '../scrappers/almanax'
 
 /**
  * Replies the user with current Almanax bonus.
@@ -10,29 +8,93 @@ import str from '../stringsLang'
  * @param { import('discord.js').Message } message - Discord message object.
  * @returns {Promise<object>}
  */
-export function getAlmanaxBonus (message) {
+export async function getAlmanaxBonus (message) {
   try {
-    const { options } = getArgumentsAndOptions(message, '=')
-    const lang = setLanguage(options, message.guild.id)
-    const today = new Date(Date.now())
-    const todayEvent = events.find(event => {
-      const eventFirstDate = new Date(event.firstDate)
-      const diffTime = Math.abs(today - eventFirstDate)
-      const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
-      return diffDays % 5 === 0
-    })
+    const awaitReaction = await message.react('⏳')
+    const alma = await scrapAlmanax()
+    const stringDate = `${alma.date.day} ${alma.date.month} ${alma.date.year}`
 
-    const number = Math.floor(Math.random() * 3)
-    const image = todayEvent.images[number]
     const embed = {
       color: '#40b2b5',
-      title: todayEvent.name[lang],
-      description: `${str.capitalize(str.todaysAlma[lang])}: ${todayEvent.text[lang]}`,
-      image: { url: image },
+      title: `:partly_sunny: ${stringDate}`,
+      description: `**Season:** ${alma.date.season}
+**Quest:** ${alma.daily.wakfu.bonus.title}
+**Bonus:** ${alma.daily.wakfu.bonus.description}`,
+      thumbnail: { url: alma.boss.imageUrl },
       timestamp: new Date()
     }
-    return message.channel.send({ embed })
+
+    const sentMessage = await message.channel.send({ embed })
+    const reactions = ['🛡️', '🙏', '🌌', '🧩']
+    for (let index = 0; index < reactions.length; index++) {
+      await sentMessage.react(reactions[index])
+    }
+    await awaitReaction.remove()
+    message.react('✅')
+    return sentMessage
   } catch (error) {
     handleMessageError(error, message)
   }
+}
+
+/**
+ * Change the details of the Almanax message by reaction.
+ *
+ * @param {object} reaction
+ * @returns {Promise<object>}
+ */
+export async function changeAlmanaxDetails (reaction) {
+  const message = reaction.message
+  const awaitReaction = await message.react('⏳')
+  const embed = reaction.message.embeds[0]
+  const timestamp = embed.timestamp
+
+  const alma = await scrapAlmanax(timestamp)
+  const fieldMap = {
+    '🛡️': {
+      color: 'BLUE',
+      imageUrl: alma.protector.imageUrl,
+      field: {
+        name: `Protector: ${alma.protector.title}`,
+        value: alma.protector.description
+      }
+    },
+    '🙏': {
+      color: 'GREY',
+      imageUrl: alma.boss.imageUrl,
+      field: {
+        name: `Meridia: ${alma.boss.title}`,
+        value: alma.boss.description
+      }
+    },
+    '🌌': {
+      color: 'PURPLE',
+      imageUrl: alma.zodiac.imageUrl,
+      field: {
+        name: `Zodiac: ${alma.zodiac.title}`,
+        value: alma.zodiac.description
+      }
+    },
+    '🧩': {
+      color: 'GREEN',
+      imageUrl: 'http://static.ankama.com/krosmoz/www/img/almanax/seasons.png',
+      field: {
+        name: ':jigsaw: Triviax',
+        value: alma.trivia
+      }
+    }
+  }
+
+  const embedOptions = fieldMap[reaction.emoji.name]
+  if (!embedOptions) {
+    return
+  }
+
+  embed.fields = [embedOptions.field]
+  embed.color = embedOptions.color
+  embed.image = { url: embedOptions.imageUrl }
+
+  const newEmbed = new Discord.MessageEmbed(embed)
+  await awaitReaction.remove()
+  return message.edit(newEmbed)
 }
