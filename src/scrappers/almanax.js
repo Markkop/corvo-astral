@@ -1,63 +1,17 @@
 import puppeteer from 'puppeteer'
-
-const events = [
-  {
-    firstDate: '08/25/2020',
-    text: {
-      en: '+ 20% Amount of Harvest and Success when Planting',
-      pt: '+ 20% Quantidade de Colheita e Sucesso ao Plantar',
-      fr: '+ 20% de récolte et de succès lors de la plantation',
-      es: '+ 20% de cantidad de cosecha y éxito al plantar'
-    }
-  },
-  {
-    firstDate: '08/26/2020',
-    text: {
-      en: '+40 Wisdom',
-      pt: '+40 Sabedoria',
-      fr: '+40 de sagesse',
-      es: '+40 sabiduría'
-    }
-  },
-  {
-    firstDate: '08/27/2020',
-    text: {
-      en: '+40 Prospecting',
-      pt: '+40 Prospecção',
-      fr: '+40 Prospection',
-      es: '+40 prospección'
-    }
-  },
-  {
-    firstDate: '08/28/2020',
-    text: {
-      en: '+ 20% EXP and Manufacturing Speed',
-      pt: '+ 20% EXP e Velocidade em Fabricação',
-      fr: '+ 20% EXP et vitesse de fabrication',
-      es: '+ 20% EXP y velocidad de fabricación'
-    }
-  },
-  {
-    firstDate: '08/29/2020',
-    text: {
-      en: '+ 30% EXP in Harvest and Plantation',
-      pt: '+ 30% EXP em Colheita e Plantação',
-      fr: "+ 30% d'EXP en récolte et plantation",
-      es: '+ 30% EXP en cosecha y plantación'
-    }
-  }
-]
+import events from '../../data/almanaxBonuses'
 
 /**
  * Get Wakfu Almanax Bonus.
  *
+ * @param day
  * @returns {object}
  */
-function getWakfuBonus () {
-  const today = new Date(Date.now())
+export function getWakfuBonus (day) {
+  day = day || new Date(Date.now())
   return events.find(event => {
     const eventFirstDate = new Date(event.firstDate)
-    const diffTime = Math.abs(today - eventFirstDate)
+    const diffTime = Math.abs(day - eventFirstDate)
     const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
     return diffDays % 5 === 0
   })
@@ -88,6 +42,22 @@ function getAlmanaxProtector () {
   return { title: protectorTitle, description: protectorDescription, imageUrl }
 }
 /**
+ * Get the Almanax Event.
+ *
+ * @returns {Entity}
+ */
+function getAlmanaEvent () {
+  const eventElement = document.querySelector('#almanax_event')
+  if (!eventElement) {
+    return {}
+  }
+  const eventText = eventElement.querySelector('#almanax_event_desc').innerText.split('\n')
+  const eventTitle = eventText[0]
+  const eventDescription = eventText[1]
+  const imageUrl = eventElement.querySelector('img').getAttribute('src')
+  return { title: eventTitle, description: eventDescription, imageUrl }
+}
+/**
  * Get the Almanax Zodiac.
  *
  * @returns {object}
@@ -102,7 +72,7 @@ function getAlmanaxZodiac () {
 /**
  * Get the Almanax Quests and Bonuses.
  *
- * @param {string} wakfuBonus
+ * @param {object} wakfuBonus
  * @returns {object}
  */
 function getAlmanaxDailies (wakfuBonus) {
@@ -122,11 +92,20 @@ function getAlmanaxDailies (wakfuBonus) {
     const questTitle = dailyInfo[2]
     const questDescription = dailyInfo[3]
 
-    const description = game === 'wakfu' ? wakfuBonus : bonusDescription
-    almanaxDailies[propertyName] = {
-      bonus: {
-        title: bonusTitle,
-        description: description
+    if (game === 'wakfu') {
+      almanaxDailies[propertyName] = {
+        bonus: {
+          title: bonusTitle,
+          description: wakfuBonus.text.en,
+          wakfuBonus
+        }
+      }
+    } else {
+      almanaxDailies[propertyName] = {
+        bonus: {
+          title: bonusTitle,
+          description: bonusDescription
+        }
       }
     }
     if (questTitle) {
@@ -147,7 +126,7 @@ function getAlmanaxDailies (wakfuBonus) {
  * @returns {object}
  */
 function getAlmanaxDate () {
-  var date = new Date()
+  const date = new Date()
   date.setFullYear(date.getFullYear() - 1043)
   const year = date.getFullYear()
   const day = document.querySelector('#almanax_day .day-number').innerText
@@ -185,7 +164,9 @@ function getAlmanaxMeridianEffect () {
  * @property {Entity} boss
  * @property {Entity} protector
  * @property {Entity} zodiac
+ * @property {Entity} event
  * @property {string} trivia
+ * @property {string} meridianEffect
  * @property {Daily} wakfu
  * @property {Daily} dofus
  * @property {Daily} dofusTouch
@@ -211,20 +192,22 @@ function getAlmanaxMeridianEffect () {
  * @returns {AlmanaxData}
  */
 async function getAlmanaxData (page) {
+  const scrappedDate = new Date().toLocaleString()
   const date = await page.evaluate(getAlmanaxDate)
   const boss = await page.evaluate(getAlmanaxBoss)
   const protector = await page.evaluate(getAlmanaxProtector)
   const zodiac = await page.evaluate(getAlmanaxZodiac)
+  const event = await page.evaluate(getAlmanaEvent)
   const trivia = await page.evaluate(getAlmanaxTrivia)
-  const scrappedDate = new Date().toLocaleString()
   const meridianEffect = await page.evaluate(getAlmanaxMeridianEffect)
-  const daily = await page.evaluate(getAlmanaxDailies, getWakfuBonus().text.en)
+  const daily = await page.evaluate(getAlmanaxDailies, getWakfuBonus())
   return {
     scrappedDate,
     date,
     boss,
     protector,
     zodiac,
+    event,
     trivia,
     meridianEffect,
     daily
