@@ -4,7 +4,7 @@ import events from '../../data/almanaxBonuses'
 /**
  * Get Wakfu Almanax Bonus.
  *
- * @param day
+ * @param {number} day - Date in miliseconds.
  * @returns {object}
  */
 export function getWakfuBonus (day) {

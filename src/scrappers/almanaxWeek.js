@@ -42,6 +42,13 @@ function getAlmanaxDays () {
 }
 
 /**
+ * @typedef AlmanaxWeekData
+ * @property {string} scrappedDate
+ * @property {string} date
+ * @property {object[]} days
+ */
+
+/**
  * Scraps almanax page.
  *
  * @param {object} page
