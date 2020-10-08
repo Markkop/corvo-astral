@@ -25,7 +25,8 @@ Most features support Wakfu community languages: en, es, pt and fr.
 
 ### :sunny: Almanax Bonus Notifier
 
-At a given time (currently -03:00 GTM), the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
+At 00:00 UTC, the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
+The timezone config will be available in further updates.
 If you wish to disable this behavior, simply deny permission to this bot on that channel.  
 
 ### :busts_in_silhouette: Party Listing

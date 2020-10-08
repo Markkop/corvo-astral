@@ -26,7 +26,9 @@ export async function getAlmanaxBonus (message, alma) {
 **Quest:** ${alma.daily.wakfu.bonus.title}
 **Bonus:** ${alma.daily.wakfu.bonus.description}`,
       thumbnail: { url: image },
-      timestamp: new Date()
+      footer: {
+        text: new Date(Date.now()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+      }
     }
 
     const sentMessage = await message.channel.send({ embed })
@@ -54,7 +56,7 @@ export async function changeAlmanaxDetails (reaction) {
   const message = reaction.message
   const awaitReaction = await message.react('⏳')
   const embed = reaction.message.embeds[0]
-  const timestamp = embed.timestamp
+  const timestamp = Number(new Date(embed.footer.text))
 
   let alma
   if (reaction.emoji.name === '🔮') {

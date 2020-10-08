@@ -4,7 +4,7 @@ import events from '../../data/almanaxBonuses'
 /**
  * Get Wakfu Almanax Bonus.
  *
- * @param day
+ * @param {number} day - Date in miliseconds.
  * @returns {object}
  */
 export function getWakfuBonus (day) {
@@ -228,10 +228,7 @@ export default async function scrapAlmanax (timestamp) {
     ]
   })
   const page = await browser.newPage()
-  let date = ''
-  if (timestamp) {
-    date = new Date(timestamp).toISOString().split('T')[0]
-  }
+  const date = new Date(timestamp || Date.now()).toISOString().split('T')[0]
   await page.goto(`http://www.krosmoz.com/en/almanax/${date}`, { waitUntil: 'load', timeout: 0 })
   const almanax = await getAlmanaxData(page)
   await browser.close()
