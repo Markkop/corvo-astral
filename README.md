@@ -6,15 +6,16 @@
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
 Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that serves as a helper for the [Wakfu MMORPG](https://www.wakfu.com/) game.  
-If you wish to add this bot to your server, access this [link](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=2048&scope=bot).  
-This bot can now provide information to all four languages supported by Wakfu: en, es, pt and fr.
+If you wish to add this bot to your server, access this [link](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=1342565456&scope=bot).  
+Most features support Wakfu community languages: en, es, pt and fr.
 
 ## Commands
 
-* `.alma`: returns the Almanax Bonus for the current day
+* `.alma`: returns the Almanax Bonus and [more info](http://www.krosmoz.com/en/almanax) for the current day
 * `.calc`: calculates the damage for an attack given some values
 * `.subli`: search for a given sublimation by name, slot combination or source
-* `.equip`: search for a given equipment by name
+* `.recipe`: search for a given recipe by name and rarity
+* `.equip`: search for a given equipment by name and rarity
 * `.party`: create, update, join or leave a party listing
 * `.about`: get information about this bot
 * `.config`: configure custom settings for each discord channel
@@ -24,7 +25,7 @@ This bot can now provide information to all four languages supported by Wakfu: e
 
 ### :sunny: Almanax Bonus Notifier
 
-Every midnight, the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
+At a given time (currently -03:00 GTM), the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
 If you wish to disable this behavior, simply deny permission to this bot on that channel.  
 
 ### :busts_in_silhouette: Party Listing
@@ -34,7 +35,7 @@ It'll also listen to reactions so members can join or leave groups.
 To make use of this feature, make sure that the bot has enough permissions to the configured channel.  
 
 **Examples**:
-```js
+```bash
 .party create name="vertox s21 3 stele" desc="looking for incurable and enutrof" lvl="186+"
 .party create name="moon leveling" date=15/10 lvl="160-200" slots=3
 .party create name="dg excarnus s21" date="21/11 21:00" lvl=80
@@ -62,7 +63,7 @@ It's also possible to filter them by rarity with `rarity=<rarity>` option.
 Equipment originated from crafting also displays their associated recipe.  
 
 **Examples**:
-```js
+```bash
 .equip martelo de osamodas lang=pt
 .equip brakmar sword translate=fr
 .equip the eternal rarity=mythical
@@ -76,7 +77,7 @@ The command `.subli` can search by sublimation name, source, type and slots comb
 When searching by slots combionation, it's possible to match with white slots and/or by random ordering.  
 
 **Examples**:
-```js
+```bash
 .subli bruta
 .subli bruta translate=fr
 .subli talho lang=pt
@@ -96,7 +97,7 @@ Similar to the commands above, you can search recipes by name and rarity.
 Recipes with same results are shown together.  
 
 **Examples**:
-```js
+```bash
 .recipe brakmar sword
 .recipe espada de brakmar lang=pt
 .recipe peace pipe rarity=mythical
@@ -110,7 +111,7 @@ It's possible to simulate an attack by providing some numbers to the `.calc` com
 Maybe in the future we can improve it.  
 
 Examples:
-```js
+```bash
 .calc dmg=3000 base=55 res=60%
 .calc dmg=5000 base=40 res=420 crit=30%
 ```
@@ -127,7 +128,7 @@ Some bot options can be configurable according to each server using `.config`.
 * partyChannel: channel to receive the `.party` command (default: listagem-de-grupos)
 
 **Examples**:
-```js
+```bash
 .config set lang=en
 .config set almanaxChannel=temple-bonus
 .config set partyChannel=party-listing
@@ -145,7 +146,7 @@ The [araknomecha-scrapper](https://github.com/Markkop/araknomecha-scrapper) proj
 
 This project contains lots of tests to cover the code, so feel free to mess with it while running some test-watching command:  
 
-```js
+```bash
 npm run test -- --watch
 jest ./tests/equip.test.js --watch // need jest installed globally
 ```
