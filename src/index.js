@@ -1,4 +1,6 @@
 import Discord from 'discord.js'
+import cron from 'node-cron'
+import notifyAlmanaxBonus from './almaNotifier'
 import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment, getAbout, partyList, getRecipe, configGuild } from './commands'
 import { joinPartyByReaction, leavePartyByReaction } from './reactions'
 import { handleMessageError, handleReactionError } from './utils/handleError'
@@ -28,6 +30,8 @@ const commandActions = {
  * Initialize this bot.
  */
 async function init () {
+  cron.schedule('1 0 * * *', notifyAlmanaxBonus)
+
   await setStartupConfig()
 
   const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION'] })

@@ -8,7 +8,7 @@ import scrapAlmanax from './scrappers/almanax'
  * Send a message with today's almanax bonus to all channels named "almanax" (default)
  * or the almanaxChannel set with config command.
  */
-function notifyAlmanaxBonus () {
+export default function notifyAlmanaxBonus () {
   const client = new Discord.Client()
   client.login(process.env.DISCORD_BOT_TOKEN)
   client.on('ready', async () => {
@@ -47,5 +47,3 @@ function notifyAlmanaxBonus () {
     client.destroy()
   })
 }
-
-notifyAlmanaxBonus()
