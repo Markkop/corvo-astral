@@ -27,7 +27,7 @@ export async function getAlmanaxBonus (message, alma) {
 **Bonus:** ${alma.daily.wakfu.bonus.description}`,
       thumbnail: { url: image },
       footer: {
-        text: new Date(Date.now()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+        text: new Date(Date.now()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false })
       }
     }
 

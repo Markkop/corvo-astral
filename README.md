@@ -31,7 +31,7 @@ Inspired by [wakmanax](https://github.com/elio-centrique/wakmanax), the `.alma` 
 
 ### :sunny: Daily Almanax Notification
 
-At 00:00 UTC, the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
+At 00:01 UTC, the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
 The timezone config will be available in further updates.
 If you wish to disable this behavior, simply deny permission to this bot on that channel.
 
