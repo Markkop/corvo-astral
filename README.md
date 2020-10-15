@@ -31,7 +31,7 @@ Inspired by [wakmanax](https://github.com/elio-centrique/wakmanax), the `.alma` 
 
 ### :sunny: Daily Almanax Notification
 
-At 00:05 Europe/France Timezone (GMT+2) (server time), the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
+At 00:01 Europe/France Timezone (GMT+2) (server time), the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
 If you wish to disable this behavior, simply deny permission to this bot on that channel.
 
 ### :busts_in_silhouette: Party Listing

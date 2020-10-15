@@ -3,6 +3,8 @@ import { getAlmanaxBonus } from './commands/alma'
 import { getConfig, setStartupConfig } from './utils/message'
 import { handleMessageError } from './utils/handleError'
 import scrapAlmanax from './scrappers/almanax'
+import dotenv from 'dotenv'
+dotenv.config()
 
 /**
  * Send a message with today's almanax bonus to all channels named "almanax" (default)
@@ -47,3 +49,5 @@ export default function notifyAlmanaxBonus () {
     client.destroy()
   })
 }
+
+notifyAlmanaxBonus()

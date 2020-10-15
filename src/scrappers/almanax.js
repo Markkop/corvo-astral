@@ -228,9 +228,25 @@ export default async function scrapAlmanax (timestamp) {
     ]
   })
   const page = await browser.newPage()
-  const date = new Date(timestamp || Date.now()).toISOString().split('T')[0]
-  await page.goto(`http://www.krosmoz.com/en/almanax/${date}`, { waitUntil: 'load', timeout: 0 })
+  const date = new Date(timestamp || Date.now())
+  const year = date.getFullYear()
+  const month = pad(date.getMonth() + 1)
+  const day = pad(date.getDate())
+  await page.goto(`http://www.krosmoz.com/en/almanax/${year}-${month}-${day}`, { waitUntil: 'load', timeout: 0 })
   const almanax = await getAlmanaxData(page)
   await browser.close()
   return almanax
+}
+
+/**
+ * Formats a number to two digits.
+ *
+ * @param {number} number
+ * @returns {string}
+ */
+function pad (number) {
+  if (number < 10) {
+    return '0' + number
+  }
+  return String(number)
 }

@@ -30,7 +30,7 @@ const commandActions = {
  * Initialize this bot.
  */
 async function init () {
-  cron.schedule('5 0 * * *', notifyAlmanaxBonus)
+  cron.schedule('1 0 * * *', notifyAlmanaxBonus)
 
   await setStartupConfig()
 
