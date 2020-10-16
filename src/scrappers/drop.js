@@ -34,7 +34,7 @@ function scrapDrop () {
  * @param {string} lang
  * @returns {Promise<object>} DropData.
  */
-export async function scraDropByTypeAndId (itemId, type, lang) {
+export async function scrapDropByTypeAndId (itemId, type, lang) {
   const categories = [
     {
       title: {
@@ -111,7 +111,7 @@ export async function scraDropByTypeAndId (itemId, type, lang) {
  * @param {string} itemName
  * @returns {Promise<object>} DropData.
  */
-export async function scraDropByName (itemName) {
+export async function scrapDropByName (itemName) {
   const browser = await puppeteer.launch({
     args: [
       '--no-sandbox',

@@ -84,3 +84,16 @@ export async function setStartupConfig () {
   botConfig.guildsOptions = guilds
   console.log(`Configuration set for ${guilds.length} guilds (servers)`)
 }
+
+/**
+ * React to a given message with an emoji list.
+ *
+ * @param {string[]} reactions
+ * @param {string} message
+ * @returns {Promise<undefined>}
+ */
+export async function reactToMessage (reactions, message) {
+  for (let index = 0; index < reactions.length; index++) {
+    await message.react(reactions[index])
+  }
+}
