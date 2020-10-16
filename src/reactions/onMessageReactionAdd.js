@@ -1,4 +1,3 @@
-
 import Discord from 'discord.js'
 import { handleReactionError } from '../utils/handleError'
 import { changeAlmanaxDetails } from '../commands/alma'
@@ -113,12 +112,9 @@ async function enrichEquipMessage (reaction) {
     const awaitReaction = await reaction.message.react('⏳')
     const drops = await scrapDropByTypeAndId(id, equip.itemTypeId, lang)
     await awaitReaction.remove()
-    if (!drops.length) {
-      return
-    }
     reactionEmbed.fields.push({
       name: 'Drop',
-      value: drops.map(drop => `${drop.monster}: ${drop.dropChance}`).join('\n')
+      value: drops.length ? drops.map(drop => `${drop.monster}: ${drop.dropChance}`).join('\n') : '---'
     })
   }
 

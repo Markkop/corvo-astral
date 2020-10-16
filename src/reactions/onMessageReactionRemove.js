@@ -1,4 +1,3 @@
-
 import { handleReactionError } from '../utils/handleError'
 import { getGroupList } from '../utils/getGroupList'
 import leavePartyByReaction from './leaveParty'
