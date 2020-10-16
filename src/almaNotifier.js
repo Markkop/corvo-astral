@@ -11,9 +11,6 @@ dotenv.config()
  * or the almanaxChannel set with config command.
  */
 export default function notifyAlmanaxBonus () {
-  if (process.env.DEV) {
-    return
-  }
   const client = new Discord.Client()
   client.login(process.env.DISCORD_BOT_TOKEN)
   client.on('ready', async () => {
@@ -52,5 +49,3 @@ export default function notifyAlmanaxBonus () {
     client.destroy()
   })
 }
-
-notifyAlmanaxBonus()
