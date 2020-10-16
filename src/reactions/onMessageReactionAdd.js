@@ -78,17 +78,15 @@ export default async function onMessageReactionAdd (reaction, user) {
     const description = reactionEmbed.description || ''
     const isAlmanaxMessage = description.includes('Bonus:')
     const isValidAlmanaxEmoji = validateEmoji(allowedEmojis.almanax, reaction.emoji.name)
-    if (isAlmanaxMessage && isValidAlmanaxEmoji && !messagePool.includes(messageId)) {
-      messagePool.push(messageId)
-      await changeAlmanaxDetails(reaction)
-      messagePool = messagePool.filter(id => id !== messageId)
+    if (isAlmanaxMessage && isValidAlmanaxEmoji) {
+      await lockMessage(messageId, () => changeAlmanaxDetails(reaction))
     }
 
     const title = reactionEmbed.title || ''
     const isEquipMessage = /:(.*?):/.test(title)
     const isValidEquipEmoji = validateEmoji(allowedEmojis.equip, reaction.emoji.name)
     if (isEquipMessage && isValidEquipEmoji) {
-      await enrichEquipMessage(reaction)
+      await lockMessage(messageId, () => enrichEquipMessage(reaction))
     }
   } catch (error) {
     handleReactionError(error, reaction, user)
@@ -141,4 +139,19 @@ async function enrichEquipMessage (reaction) {
   }
   const newEmbed = new Discord.MessageEmbed(reactionEmbed)
   await reaction.message.edit(newEmbed)
+}
+
+/**
+ * Locks a message to not trigger processes from reactions.
+ *
+ * @param {string} messageId
+ * @param {Function} unlockedFunction
+ */
+async function lockMessage (messageId, unlockedFunction) {
+  if (messagePool.includes(messageId)) {
+    return
+  }
+  messagePool.push(messageId)
+  await unlockedFunction()
+  messagePool = messagePool.filter(id => id !== messageId)
 }
