@@ -1,4 +1,5 @@
 import itemsData from '../../data/items.json'
+import recipesData from '../../data/recipes.json'
 import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions, mountNotFoundEmbed, reactToMessage } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
@@ -167,6 +168,11 @@ export async function getEquipment (message) {
   const equipEmbed = mountEquipEmbed(results, lang)
   const sentMessage = await message.channel.send({ embed: equipEmbed })
 
-  await reactToMessage(['🛠️', '💰'], sentMessage)
+  const reactions = ['💰']
+  const recipes = recipesData.filter(recipe => recipe.result.productedItemId === results[0].id)
+  if (recipes.length) {
+    reactions.unshift('🛠️')
+  }
+  await reactToMessage(reactions, sentMessage)
   return sentMessage
 }

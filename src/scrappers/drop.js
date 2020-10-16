@@ -35,74 +35,80 @@ function scrapDrop () {
  * @returns {Promise<object>} DropData.
  */
 export async function scrapDropByTypeAndId (itemId, type, lang) {
-  const categories = [
-    {
-      title: {
-        en: 'armors',
-        pt: 'armaduras',
-        es: 'armaduras',
-        fr: 'armures'
+  try {
+    const categories = [
+      {
+        title: {
+          en: 'armors',
+          pt: 'armaduras',
+          es: 'armaduras',
+          fr: 'armures'
+        },
+        types: [103, 132, 133, 134, 136, 138]
       },
-      types: [103, 132, 133, 134, 136, 138]
-    },
-    {
-      title: {
-        en: 'armors',
-        pt: 'armas',
-        es: 'armas',
-        fr: 'weapons'
+      {
+        title: {
+          en: 'armors',
+          pt: 'armas',
+          es: 'armas',
+          fr: 'weapons'
+        },
+        types: [101, 108, 110, 11, 112, 113, 114, 115, 117, 119, 120, 189, 219, 223, 253, 254, 480, 512, 519, 520]
       },
-      types: [101, 108, 110, 11, 112, 113, 114, 115, 117, 119, 120, 189, 219, 223, 253, 254, 480, 512, 519, 520]
-    },
-    {
-      title: {
-        en: 'pets',
-        pt: 'mascotes',
-        es: 'mascotas',
-        fr: 'familiers'
+      {
+        title: {
+          en: 'pets',
+          pt: 'mascotes',
+          es: 'mascotas',
+          fr: 'familiers'
+        },
+        types: [582]
       },
-      types: [582]
-    },
-    {
-      title: {
-        fr: 'montures',
-        en: 'mounts',
-        es: 'monturas',
-        pt: 'montarias'
+      {
+        title: {
+          fr: 'montures',
+          en: 'mounts',
+          es: 'monturas',
+          pt: 'montarias'
+        },
+        types: [611]
       },
-      types: [611]
-    },
-    {
-      title: {
-        fr: 'accessoires',
-        en: 'accessories',
-        es: 'accesorios',
-        pt: 'acessorios'
-      },
-      types: [646]
-    }
-  ]
-  const category = categories.find(cat => cat.types.some(catType => catType === type))
-
-  const encyclopedia = {
-    fr: 'encyclopedie',
-    pt: 'enciclopedia',
-    es: 'enciclopedia',
-    en: 'encyclopedia'
-  }
-
-  const browser = await puppeteer.launch({
-    args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox'
+      {
+        title: {
+          fr: 'accessoires',
+          en: 'accessories',
+          es: 'accesorios',
+          pt: 'acessorios'
+        },
+        types: [646]
+      }
     ]
-  })
-  const page = await browser.newPage()
-  await page.goto(`https://www.wakfu.com/${lang}/mmorpg/${encyclopedia[lang]}/${category.title[lang]}/${itemId}`)
-  await page.waitForSelector('.ak-encyclo-detail-illu img', { timeout: 60000 })
-  const drop = await page.evaluate(scrapDrop)
-  await browser.close()
-  return drop
+    const category = categories.find(cat => cat.types.some(catType => catType === type))
+
+    const encyclopedia = {
+      fr: 'encyclopedie',
+      pt: 'enciclopedia',
+      es: 'enciclopedia',
+      en: 'encyclopedia'
+    }
+
+    const browser = await puppeteer.launch({
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox'
+      ]
+    })
+    const page = await browser.newPage()
+    await page.goto(`https://www.wakfu.com/${lang}/mmorpg/${encyclopedia[lang]}/${category.title[lang]}/${itemId}`)
+    await page.waitForSelector('.ak-encyclo-detail-illu img', { timeout: 60000 })
+    const drop = await page.evaluate(scrapDrop)
+    await browser.close()
+    return drop
+  } catch (error) {
+    if (error.name === 'TimeoutError') {
+      return []
+    }
+  }
 }
 
 /**

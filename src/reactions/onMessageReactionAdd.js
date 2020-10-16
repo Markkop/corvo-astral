@@ -112,6 +112,7 @@ async function enrichEquipMessage (reaction) {
     const equip = itemsData.find(item => item.id === id)
     const awaitReaction = await reaction.message.react('⏳')
     const drops = await scrapDropByTypeAndId(id, equip.itemTypeId, lang)
+    await awaitReaction.remove()
     if (!drops.length) {
       return
     }
@@ -119,7 +120,6 @@ async function enrichEquipMessage (reaction) {
       name: 'Drop',
       value: drops.map(drop => `${drop.monster}: ${drop.dropChance}`).join('\n')
     })
-    await awaitReaction.remove()
   }
 
   if (reaction.emoji.name === '🛠️') {
