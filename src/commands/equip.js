@@ -1,8 +1,7 @@
 import itemsData from '../../data/items.json'
 import recipesData from '../../data/recipes.json'
-import { getRecipeFields } from './recipe'
 import { mountCommandHelpEmbed } from './help'
-import { getArgumentsAndOptions, mountNotFoundEmbed } from '../utils/message'
+import { getArgumentsAndOptions, mountNotFoundEmbed, reactToMessage } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
 import str from '../stringsLang'
 import config from '../config'
@@ -91,7 +90,7 @@ function mountEquipEmbed (results, lang) {
   const equipEmbed = {
     color: rarityMap[firstResult.rarity].color,
     title: `${rarityMap[firstResult.rarity].emoji} ${firstResult.title[lang]}`,
-    description: firstResult.description[lang],
+    description: `${firstResult.description[lang]}\nID: ${firstResult.id}`,
     thumbnail: { url: `https://static.ankama.com/wakfu/portal/game/item/115/${firstResult.imageId}.png` },
     fields: [
       {
@@ -130,14 +129,6 @@ function mountEquipEmbed (results, lang) {
       value: firstResult.conditions.description[lang]
     })
   }
-  const recipes = recipesData.filter(recipe => recipe.result.productedItemId === firstResult.id)
-  if (recipes.length) {
-    const recipeFields = getRecipeFields(recipes, lang)
-    equipEmbed.fields = [
-      ...equipEmbed.fields,
-      ...recipeFields
-    ]
-  }
   const equipamentsFoundText = getMoreEquipmentText(results, 20, lang)
   if (results.length > 1) {
     equipEmbed.footer = {
@@ -175,5 +166,13 @@ export async function getEquipment (message) {
   }
 
   const equipEmbed = mountEquipEmbed(results, lang)
-  return message.channel.send({ embed: equipEmbed })
+  const sentMessage = await message.channel.send({ embed: equipEmbed })
+
+  const reactions = ['💰']
+  const recipes = recipesData.filter(recipe => recipe.result.productedItemId === results[0].id)
+  if (recipes.length) {
+    reactions.unshift('🛠️')
+  }
+  await reactToMessage(reactions, sentMessage)
+  return sentMessage
 }

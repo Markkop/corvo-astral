@@ -2,9 +2,7 @@ export const aboutText = `**Corvo Astral** is a Discord Bot thar serves as a hel
 
 Made with Javascript and NodeJS and hosted on Heroku, this bot uses data gathered from Wakfu's CDN and Website as well Method's public API.
 
-**Credits**:
-[Mark Kop](https://github.com/Markkop) (Markx) - creator
-Corvos de Efrim Guild - testing
+Created by [Mark Kop](https://github.com/Markkop) (Markx)
 
 Want to contribute? This project is open source and it's available on Github
 Check it out: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)`

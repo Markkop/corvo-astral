@@ -49,5 +49,3 @@ export default function notifyAlmanaxBonus () {
     client.destroy()
   })
 }
-
-notifyAlmanaxBonus()

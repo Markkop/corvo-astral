@@ -10,7 +10,7 @@ describe('getEquipment', () => {
     expect(botMessage.embed).toEqual({
       color: '#fede71',
       title: ':yellow_circle: Tentacled Belt',
-      description: "It works like a typical belt, but you can't really say it does any more than that.",
+      description: "It works like a typical belt, but you can't really say it does any more than that.\nID: 27645",
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/13327644.png'
       },
@@ -33,27 +33,6 @@ describe('getEquipment', () => {
         {
           name: 'Equipped',
           value: '286 HP\n47 Dodge\n30 Prospecting\n6% Critical Hit\n218 Mastery of 2 random element\n118 Distance Mastery\n47 :fire: Resistance\n47 :herb: Resistance'
-        },
-        {
-          inline: true,
-          name: 'Profession',
-          value: ':boot: Leather Dealer'
-        },
-        {
-          inline: true,
-          name: 'Level',
-          value: 140
-        },
-        {
-          name: 'Ingredients',
-          value: `:orange_circle: \`1x   \` Tentacled Belt
-:boot: \`38x  \` Divine Leather
-:adhesive_bandage: \`63x  \` Divine Souper-Glou
-:sunflower: \`8x   \` Delphinia
-:sparkles: \`287x \` Powder
-:white_small_square: \`75x  \` Sirius Pincer
-:white_small_square: \`7x   \` Cerebratacean Carapace
-:white_small_square: \`8x   \` Lashing Pincer`
         }
       ],
       footer: {
@@ -91,35 +70,6 @@ describe('getEquipment', () => {
     }]))
   })
 
-  it('return a matching equipment with a recipe', async () => {
-    const content = '.equip brakmar sword'
-    const userMessage = mockMessage(content)
-    const botMessage = await getEquipment(userMessage)
-    expect(botMessage.embed.fields).toEqual(expect.arrayContaining([
-      {
-        name: 'Profession',
-        value: ':crossed_swords: Weapons Master',
-        inline: true
-      },
-      {
-        name: 'Level',
-        value: 130,
-        inline: true
-      },
-      {
-        name: 'Ingredients',
-        value: `:pick: \`80x  \` Polished Ruby
-:pick: \`40x  \` Carbon Hara
-:adhesive_bandage: \`400x \` Eternal Souper-Glou
-:sparkles: \`717x \` Powder
-:white_small_square: \`20x  \` Golden Brown Dung
-:white_small_square: \`20x  \` Royal Canine
-:white_small_square: \`20x  \` Blopzart Essence
-:white_small_square: \`20x  \` Stalagmama`
-      }
-    ]))
-  })
-
   it('return the condition if the resulting equipment has one', async () => {
     const content = '.equip amakna sword'
     const userMessage = mockMessage(content)
@@ -148,27 +98,7 @@ describe('getEquipment', () => {
       { inline: true, name: 'Level', value: 200 },
       { inline: true, name: 'Type', value: 'Ring' },
       { inline: true, name: 'Rarity', value: 'Epic' },
-      { name: 'Conditions', value: 'Unique' },
-      {
-        inline: true,
-        name: 'Profession',
-        value: ':ring: Jeweler'
-      },
-      {
-        inline: true,
-        name: 'Level',
-        value: 130
-      },
-      {
-        name: 'Ingredients',
-        value: `:pick: \`15x  \` Carbon Hara
-:sparkles: \`300x \` Powder
-:chair: \`25x  \` Eternal Orb
-:droplet: \`1400x\` Ogrest's Tear
-:adhesive_bandage: \`300x \` Eternal Souper-Glou
-:orange_circle: \`5x   \` Pilfer Ring
-:ring: \`100x \` Eternal Gem`
-      }
+      { name: 'Conditions', value: 'Unique' }
     ])
   })
 

@@ -66,7 +66,8 @@ Available languages are `en`, `es`, `pt` and `fr`.
 
 A equipment search is available with `.equip <name>` command.  
 It's also possible to filter them by rarity with `rarity=<rarity>` option.  
-Equipment originated from crafting also displays their associated recipe.  
+If a recipe is associated, it can be displayed by reacting with 🛠️
+**New:** Now you can react with 💰 to get it's drop data in real time
 
 **Examples**:
 ```bash

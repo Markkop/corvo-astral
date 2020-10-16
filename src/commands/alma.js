@@ -1,4 +1,5 @@
 import Discord from 'discord.js'
+import { reactToMessage } from '../utils/message'
 import { handleMessageError } from '../utils/handleError'
 import scrapAlmanax from '../scrappers/almanax'
 import { capitalize } from '../utils/strings'
@@ -36,9 +37,7 @@ export async function getAlmanaxBonus (message, alma) {
     if (alma.event.title) {
       reactions.push('🗓️')
     }
-    for (let index = 0; index < reactions.length; index++) {
-      await sentMessage.react(reactions[index])
-    }
+    await reactToMessage(reactions, sentMessage)
     await awaitReaction.remove()
     return sentMessage
   } catch (error) {
