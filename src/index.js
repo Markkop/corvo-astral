@@ -2,16 +2,15 @@ import Discord from 'discord.js'
 import cron from 'node-cron'
 import notifyAlmanaxBonus from './almaNotifier'
 import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment, getAbout, partyList, getRecipe, configGuild } from './commands'
-import { joinPartyByReaction, leavePartyByReaction } from './reactions'
-import { handleMessageError, handleReactionError } from './utils/handleError'
-import { changeAlmanaxDetails } from './commands/alma'
-import { getGroupList } from './utils/getGroupList'
+import onMessageReactionAdd from './reactions/onMessageReactionAdd'
+import onMessageReactionRemove from './reactions/onMessageReactionRemove'
+import { handleMessageError } from './utils/handleError'
 import { getCommand, setStartupConfig } from './utils/message'
 import config from './config'
 import dotenv from 'dotenv'
 dotenv.config()
 
-const { defaultConfig: { prefix }, classEmoji } = config
+const { defaultConfig: { prefix } } = config
 
 const commandActions = {
   alma: getAlmanaxBonus,
@@ -56,60 +55,9 @@ async function init () {
     }
   })
 
-  let messagePool = []
-  client.on('messageReactionAdd', async function (reaction, user) {
-    try {
-      if (user.bot) return
+  client.on('messageReactionAdd', onMessageReactionAdd)
 
-      if (reaction.partial) {
-        try {
-          await reaction.fetch()
-        } catch (error) {
-          console.log('Something went wrong when fetching the message: ', error)
-          return {}
-        }
-      }
-
-      const { members, listingGroupId } = await getGroupList(reaction, user)
-      if (members && listingGroupId) {
-        const className = classEmoji[reaction.emoji.name]
-        if (!className) return
-
-        return await joinPartyByReaction(reaction, user, members, listingGroupId, className)
-      }
-
-      const messageId = reaction.message.id
-      const reactionEmbed = reaction.message.embeds[0] || {}
-      const description = reactionEmbed.description || ''
-      const isAlmanaxMessage = description.includes('Bonus:')
-      if (isAlmanaxMessage) {
-        const isValidEmoji = ['🛡️', '🙏', '🌌', '🍀', '🔎', '🗓️', '🔮'].includes(reaction.emoji.name)
-        if (isValidEmoji && !messagePool.includes(messageId)) {
-          messagePool.push(messageId)
-          await changeAlmanaxDetails(reaction)
-          messagePool = messagePool.filter(id => id !== messageId)
-        }
-      }
-    } catch (error) {
-      handleReactionError(error, reaction, user)
-    }
-  })
-
-  client.on('messageReactionRemove', async function (reaction, user) {
-    try {
-      if (user.bot) return
-
-      const { members, listingGroupId } = await getGroupList(reaction, user)
-      if (!members || !listingGroupId) return
-
-      const className = classEmoji[reaction.emoji.name]
-      if (!className) return
-
-      await leavePartyByReaction(reaction, user, members, listingGroupId, className)
-    } catch (error) {
-      handleReactionError(error, reaction, user)
-    }
-  })
+  client.on('messageReactionRemove', onMessageReactionRemove)
 
   client.login(process.env.DISCORD_BOT_TOKEN)
 }
