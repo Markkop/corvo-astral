@@ -91,7 +91,7 @@ function mountEquipEmbed (results, lang) {
   const equipEmbed = {
     color: rarityMap[firstResult.rarity].color,
     title: `${rarityMap[firstResult.rarity].emoji} ${firstResult.title[lang]}`,
-    description: firstResult.description[lang],
+    description: `${firstResult.description[lang]}\nID: ${firstResult.id}`,
     thumbnail: { url: `https://static.ankama.com/wakfu/portal/game/item/115/${firstResult.imageId}.png` },
     fields: [
       {

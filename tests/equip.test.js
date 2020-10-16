@@ -10,7 +10,7 @@ describe('getEquipment', () => {
     expect(botMessage.embed).toEqual({
       color: '#fede71',
       title: ':yellow_circle: Tentacled Belt',
-      description: "It works like a typical belt, but you can't really say it does any more than that.",
+      description: "It works like a typical belt, but you can't really say it does any more than that.\nID: 27645",
       thumbnail: {
         url: 'https://static.ankama.com/wakfu/portal/game/item/115/13327644.png'
       },
