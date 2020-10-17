@@ -11,7 +11,7 @@ import { partyList } from '../commands/party'
  * @param {string} className
  * @returns {Promise<object>}
  */
-export async function leavePartyByReaction (reaction, user, members, listingGroupId, className) {
+export default async function leavePartyByReaction (reaction, user, members, listingGroupId, className) {
   const isUserAlreadyMember = members.includes(user.id)
   const message = {
     client: reaction.message.client,
