@@ -1,6 +1,5 @@
 import { getPartyChannel, getChannelParties } from '../../utils/partyHelper'
 import { askAndWait } from '../../utils/message'
-import { mountCommandHelpEmbed } from '../help'
 import config from '../../config'
 import { handleMessageError } from '../../utils/handleError'
 import { Message } from 'discord.js'
