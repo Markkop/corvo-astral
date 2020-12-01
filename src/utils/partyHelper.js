@@ -16,7 +16,7 @@ export function getPartyChannel (message) {
  * Get party messages from the party channel.
  *
  * @param {object} message
- * @returns {object[]}
+ * @returns {Promise<object[]>}
  */
 export async function getChannelParties (message) {
   const channel = getPartyChannel(message)

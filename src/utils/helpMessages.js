@@ -87,46 +87,25 @@ Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.
   party: {
     help: {
       en: `List and join groups.
-** Note: note that when there is space, it is necessary to use "" around the option. **
-If date is not provided, it comes as "To be agreed"
-If level is not provided, it comes as "1-215"
-If places are not provided, it comes as 6 (maximum 50 places)
-To change the name, date, level and description, use the command \`.party update\`. If you are not the leader, you can only update the class.
-Join any group already created in the group channel, informing the group id and its class with \`.party join\`.
-You can also use the ** reactions ** of the group message to enter, leave or add / remove classes.`,
+You can now use \`.party create\` and follow the helper's messages to create your party.
+To change the name, date, level and description, use the command \`.party update\`.
+Join and leave any group by reacting to them with your character's class.`,
       pt: `Liste e participe de grupos.
-**Obs: note que quando tiver espaço, é necessário usar "" em volta da opção.**
-Se data não for fornecido, vem como "A combinar"
-Se nível não for fornecido, vem como "1-215"
-Se vagas não for fornecido, vem como 6 (máximo 50 vagas)
-Para alterar nome, data, nível e descrição, use o comando \`.party update\`. Caso você não seja o líder, só pode atualizar a classe
-Entre em algum grupo já criado no canal de grupos informando o id do grupo e a sua classe com \`.party join\`.
-Você também pode usar as **reações** da mensagem de grupo para entrar, sair ou adicionar/remover classes.`,
+Agora você pode usar \`.party create\` e seguir as mensagens do ajudante para criar seu grupo.
+Para alterar o nome, data, nível e descrição, use o comando \`.party update\`.
+Junte-se e saia de qualquer grupo reagindo a eles com a classe de seu personagem.`,
       es: `Enumere y únase a grupos.
-** Nota: tenga en cuenta que cuando hay espacio, es necesario usar "" alrededor de la opción. **
-Si no se proporciona la fecha, aparece como "A convenir"
-Si no se proporciona el nivel, aparece como "1-215"
-Si no se proporcionan plazas, viene como 6 (máximo 50 plazas)
-Para cambiar el nombre, la fecha, el nivel y la descripción, use el comando \`.party update\`. Si no eres el líder, solo puedes actualizar la clase.
-Únase a cualquier grupo ya creado en el canal del grupo, informando el ID del grupo y su clase con \`.party join\`.
-También puede usar las ** reacciones ** del mensaje grupal para ingresar, salir o agregar / eliminar clases.`,
+Ahora puede usar \`.party create\` y seguir los mensajes del ayudante para crear su grupo.
+Para cambiar el nombre, la fecha, el nivel y la descripción, use el comando \`.party update\`.
+Únete y abandona cualquier grupo reaccionando ante ellos con la clase de tu personaje.`,
       fr: `Répertoriez et rejoignez des groupes.
-** Remarque: notez que lorsqu'il y a des espaces, il faut utiliser "" autour de l'option. **
-Si la date n'est pas fournie, elle apparaît comme "A préciser"
-Si le niveau n'est pas fourni, il apparaît sous la forme "1-215"
-Si les places ne sont pas fournies, il s'agit de 6 (maximum 50 places)
-Pour changer le nom, la date, le niveau et la description, utilisez la commande \`.party update \`. Si vous n'êtes pas le leader, vous ne pouvez mettre à jour que la classe.
-Rejoignez n'importe quel groupe déjà créé dans le canal du groupe, en informant l'identifiant du groupe et sa classe avec \`.party join\`.
-Vous pouvez également utiliser les ** réactions ** du message de groupe pour entrer, quitter ou ajouter / supprimer des classes.`
+Vous pouvez maintenant utiliser \`.party create\` et suivre les messages de l'assistant pour créer votre groupe.
+Pour changer le nom, la date, le niveau et la description, utilisez la commande \`.party update\`.
+Rejoignez et quittez n'importe quel groupe en y réagissant avec la classe de votre personnage.`
     },
     examples: [
-      '.party create name="vertox s21 3 stele" desc="looking for incurable and enutrof" lvl="186+"',
-      '.party create name="moon leveling" date=15/10 lvl="160-200" slots=3',
-      '.party create name="dg excarnus s21" date="21/11 21:00" lvl=80',
-      '.party join id=1 class=enu',
-      '.party update id=50 date="12/11 15:00"',
-      '.party update id=32 class=feca',
-      '.party leave id=32'
+      '.party create',
+      '.party update'
     ]
   },
   recipe: {
