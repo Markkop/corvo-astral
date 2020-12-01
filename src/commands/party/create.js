@@ -115,7 +115,7 @@ export async function createParty (message) {
       }
     }
 
-    if (options.description) {
+    if (!isSkip(options.description)) {
       embed.description = options.description
     }
 
