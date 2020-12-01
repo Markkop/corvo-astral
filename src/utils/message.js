@@ -1,6 +1,7 @@
 import str from '../stringsLang'
 import botConfig from '../config'
 import { getAllGuildsOptions } from './mongoose'
+import { Message } from 'discord.js'
 
 /**
  * Get command word from user message.
@@ -95,5 +96,30 @@ export async function setStartupConfig () {
 export async function reactToMessage (reactions, message) {
   for (let index = 0; index < reactions.length; index++) {
     await message.react(reactions[index])
+  }
+}
+
+/**
+ * Send a message and wait for user response.
+ *
+ * @param {string} questionText
+ * @param { Message } message
+ * @param { string } noResponseText
+ * @returns { Promise<Message> }
+ */
+export async function askAndWait (questionText, message, noResponseText) {
+  try {
+    await message.channel.send(questionText)
+    const filterMessagesByAuthorId = newMessage => newMessage.author.id === message.author.id
+    const waitConfig = {
+      max: 1,
+      time: 30000,
+      errors: ['time']
+    }
+    const awaitedMessages = await message.channel.awaitMessages(filterMessagesByAuthorId, waitConfig)
+    return awaitedMessages.first()
+  } catch (error) {
+    message.channel.send(noResponseText || 'Nevermind then')
+    return {}
   }
 }
