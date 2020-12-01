@@ -36,23 +36,17 @@ If you wish to disable this behavior, simply deny permission to this bot on that
 
 ### :busts_in_silhouette: Party Listing
 
-When using `.party create` command, the bot will post a party listing message on the cannel defined by the `.config` command (`listagem-de-grupos` by default).  
+When using `.party create` command, the bot will guide you through creating a new party list and it'll post it on the cannel defined by the `.config` command (`listagem-de-grupos` by default).  
 It'll also listen to reactions so members can join or leave groups.  
 To make use of this feature, make sure that the bot has enough permissions to the configured channel.  
 
 **Examples**:
 ```bash
-.party create name="vertox s21 3 stele" desc="looking for incurable and enutrof" lvl="186+"
-.party create name="moon leveling" date=15/10 lvl="160-200" slots=3
-.party create name="dg excarnus s21" date="21/11 21:00" lvl=80
-.party join id=1 class=enu
-.party update id=50 date="12/11 15:00"
-.party update id=32 class=feca
-.party leave id=32
-// In practice, you'll only use create command and join/leave by reacting
+.party create
+.party update
 ```
 
-![Party Listing gif example](https://i.imgur.com/phx5oI2.gif)
+![Party Listing gif example](https://i.imgur.com/bZkbz6E.gif)
 
 ### :earth_americas: Internationalization
 
