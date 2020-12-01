@@ -115,8 +115,8 @@ export async function createParty (message) {
       }
     }
 
-    if (options.desc) {
-      embed.description = options.desc
+    if (options.description) {
+      embed.description = options.description
     }
 
     const partyChannel = getPartyChannel(message)
