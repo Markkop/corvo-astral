@@ -3,12 +3,12 @@ import { getConfig } from './message'
 /**
  * Get the party channel by matching its name.
  *
- * @param {object} message
+ * @param {object} guild
  * @returns {object}
  */
-export function getPartyChannel (message) {
-  const partyChannelName = getConfig('partyChannel', message.guild.id)
-  const partyChannel = message.guild.channels.cache.find(channel => channel.name.includes(partyChannelName))
+export function getPartyChannel (guild) {
+  const partyChannelName = getConfig('partyChannel', guild.id)
+  const partyChannel = guild.channels.cache.find(channel => channel.name.includes(partyChannelName))
   return partyChannel
 }
 
@@ -19,7 +19,7 @@ export function getPartyChannel (message) {
  * @returns {Promise<object[]>}
  */
 export async function getChannelParties (message) {
-  const channel = getPartyChannel(message)
+  const channel = getPartyChannel(message.guild)
   const messages = await channel.messages.fetch({ limit: 100 })
   return messages.filter(message => {
     const embeds = message.embeds || []
