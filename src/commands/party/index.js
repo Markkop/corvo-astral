@@ -1,6 +1,6 @@
 import { createParty } from './create'
 import { joinParty } from './join'
-import { updateParty } from './update'
+import { updateParty, legacyUpdateParty } from './update'
 import { leaveParty } from './leave'
 import { mountCommandHelpEmbed } from '../help'
 import { getArgumentsAndOptions } from '../../utils/message'
@@ -25,6 +25,11 @@ export function partyList (message) {
   if (!isValidArgument) {
     const helpEmbed = mountCommandHelpEmbed(message, 'en')
     return message.channel.send({ embed: helpEmbed })
+  }
+
+  const isLegacyUpdate = argument === 'update' && options.mode === 'legacy'
+  if (isLegacyUpdate) {
+    return legacyUpdateParty(message, options)
   }
 
   const partyAction = partyActions[argument]

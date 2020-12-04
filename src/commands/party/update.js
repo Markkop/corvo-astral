@@ -82,3 +82,62 @@ export async function updateParty (message) {
   message.channel.send(`:sunglasses: All set! Check it out on ${matchingParty.channel.toString()}.`)
   return matchingParty.edit(newEmbed)
 }
+
+/**
+ * Updates a party using legacy mode to update
+ * party classes by reaction.
+ * This is to keep compatibility and shall be removed
+ * with a refactor on joinParty.js and updateParty function above.
+ *
+ * @param {object} message
+ * @param {object} options
+ * @returns {object}
+ */
+export async function legacyUpdateParty (message, options) {
+  const hasIdOption = Boolean(options.id)
+  if (!hasIdOption) {
+    return
+  }
+
+  const partyMessages = await getChannelParties(message)
+  if (!partyMessages.size) {
+    return
+  }
+
+  const matchingParty = getMessageByEmbedNameAndValue(partyMessages, 'ID', options.id)
+  if (!matchingParty) {
+    return
+  }
+
+  const matchingPartyEmbed = matchingParty.embeds[0]
+  const partySlots = matchingPartyEmbed.fields.find(field => field.name.includes('Members')).value.split('\n')
+  const userPartySlot = partySlots.find(slot => slot.includes(message.author.id))
+  if (!userPartySlot) {
+    return
+  }
+
+  const userPartySlotIndex = partySlots.indexOf(userPartySlot)
+  const isPartyLeader = userPartySlotIndex === 0
+  if (isPartyLeader) {
+    matchingPartyEmbed.title = options.name ? `Party: ${options.name}` : matchingPartyEmbed.title
+    if (options.desc) {
+      matchingPartyEmbed.description = options.desc
+    }
+    matchingPartyEmbed.fields.find(field => field.name.includes('Level')).value = options.lvl || matchingPartyEmbed.fields.find(field => field.name.includes('Level')).value
+    matchingPartyEmbed.fields.find(field => field.name.includes('Date')).value = options.date || matchingPartyEmbed.fields.find(field => field.name.includes('Date')).value
+  }
+
+  const hasClassOption = Boolean(options.class)
+  if (!isPartyLeader && !hasClassOption) {
+    return
+  }
+
+  if (hasClassOption) {
+    partySlots[userPartySlotIndex] = `:small_orange_diamond: <@${message.author.id}> | ${options.class}`
+    matchingPartyEmbed.fields.find(field => field.name.includes('Members')).value = partySlots.join('\n')
+  }
+
+  const embed = { ...matchingPartyEmbed }
+  const newEmbed = new Discord.MessageEmbed(embed)
+  return matchingParty.edit(newEmbed)
+}
