@@ -24,7 +24,7 @@ export default async function leavePartyByReaction (reaction, user, members, lis
   if (!isUserAlreadyMember) return
 
   const memberRow = members.split('\n').find(member => member.includes(user.id))
-  const memberClasses = memberRow.split('| ')[1].split(',').map(word => word.trim()).filter(Boolean)
+  const memberClasses = memberRow.split('|')[1].split(',').map(word => word.trim()).filter(Boolean)
   const memberNewClasses = memberClasses.filter(word => word !== className)
   if (!memberNewClasses.length) {
     message.content = `.party leave id=${listingGroupId}`
