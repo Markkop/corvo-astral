@@ -37,5 +37,9 @@ export function handleMessageError (error, message) {
  * @param {object} user
  */
 export function handleReactionError (error, reaction, user) {
-  console.log(`${error.toString()} on guild "${reaction.message.guild.name}", channel "${reaction.message.channel.name}" by ${user.username}`)
+  const errorText = error.toString() || ''
+  console.log(`${errorText} on guild "${reaction.message.guild.name}", channel "${reaction.message.channel.name}" by ${user.username}`)
+  if (errorText.includes('TypeError')) {
+    console.log(error)
+  }
 }
