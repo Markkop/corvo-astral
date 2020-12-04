@@ -26,7 +26,7 @@ export default async function joinPartyByReaction (reaction, user, members, list
     if (memberClasses.length >= 3) return
     memberClasses.push(className)
     const newMemberRow = memberClasses.join(', ')
-    message.content = `.party update id=${listingGroupId} class="${newMemberRow}"`
+    message.content = `.party update id=${listingGroupId} class="${newMemberRow}" mode="legacy"`
   } else {
     message.content = `.party join id=${listingGroupId} class=${className}`
   }

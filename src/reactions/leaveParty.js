@@ -30,7 +30,7 @@ export default async function leavePartyByReaction (reaction, user, members, lis
     message.content = `.party leave id=${listingGroupId}`
   } else {
     const newMemberRow = memberNewClasses.join(', ')
-    message.content = `.party update id=${listingGroupId} class="${newMemberRow}"`
+    message.content = `.party update id=${listingGroupId} class="${newMemberRow}" mode="legacy"`
   }
   return partyList(message)
 }

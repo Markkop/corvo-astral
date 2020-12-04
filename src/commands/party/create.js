@@ -119,7 +119,7 @@ export async function createParty (message) {
       embed.description = options.description
     }
 
-    const partyChannel = getPartyChannel(message)
+    const partyChannel = getPartyChannel(message.guild)
     const sentMessage = await partyChannel.send({ embed })
     message.react('⏳')
     message.channel.send(`:sunglasses: Your party has been listed on ${partyChannel.toString()}. Check it out!`)
