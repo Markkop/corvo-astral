@@ -123,3 +123,19 @@ export async function askAndWait (questionText, message, noResponseText) {
     return {}
   }
 }
+
+
+/**
+ * Convert a string to a code block string to make
+ * whitespaces visible.
+ *
+ * @param {string} text
+ * @param {number} codeBlockCharactersLength
+ * @returns {string}
+ */
+export function convertToCodeBlock (text, codeBlockCharactersLength) {
+  const textCharacters = String(text).split('')
+  const whiteSpacesCharacters = Array(codeBlockCharactersLength).fill(' ')
+  whiteSpacesCharacters.splice(0, textCharacters.length, ...textCharacters)
+  return `\`${whiteSpacesCharacters.join('')}\``
+}

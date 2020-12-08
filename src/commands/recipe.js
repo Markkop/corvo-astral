@@ -1,7 +1,7 @@
 import recipesData from '../../data/recipes.json'
 import itemsData from '../../data/items.json'
 import { mountCommandHelpEmbed } from './help'
-import { getArgumentsAndOptions, mountNotFoundEmbed } from '../utils/message'
+import { getArgumentsAndOptions, mountNotFoundEmbed, convertToCodeBlock } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
 import str from '../stringsLang'
 import config from '../config'
@@ -109,10 +109,9 @@ export function getRecipeFields (recipeResults, lang) {
       const ingredientEmoji = rarityEmoji || jobEmoji || itemEmoji || ':white_small_square:'
       const quantity = ingredient.quantity
       const name = ingredient.title[lang]
-      const quantityCharacters = `${quantity}x`.split('')
-      const quantityText = Array(5).fill(' ')
-      quantityText.splice(0, quantityCharacters.length, ...quantityCharacters)
-      return `${ingredientEmoji} \`${quantityText.join('')}\` ${name}`
+      const quantityText = `${quantity}x`
+      const quantityCodeText = convertToCodeBlock(quantityText, 5)
+      return `${ingredientEmoji} ${quantityCodeText} ${name}`
     })
     const orderedByEmojiTexts = ingredientsText.sort((textA, textB) => {
       const textAhasDefaultEmoji = textA.includes(':white_small_square:')
