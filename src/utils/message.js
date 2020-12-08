@@ -124,6 +124,18 @@ export async function askAndWait (questionText, message, noResponseText) {
   }
 }
 
+/**
+ * Truncates a field value if bigger than the max allowed characters.
+ *
+ * @param {string} value
+ * @returns {string}
+ */
+export function truncateFieldValue (value) {
+  if (value.length > 1024) {
+    value = value.substring(0, 1020) + '...'
+  }
+  return value
+}
 
 /**
  * Convert a string to a code block string to make

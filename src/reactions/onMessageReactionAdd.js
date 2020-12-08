@@ -8,6 +8,7 @@ import { guessLanguage } from '../utils/language'
 import recipesData from '../../data/recipes.json'
 import itemsData from '../../data/items.json'
 import joinPartyByReaction from './joinParty'
+import getMonster from './getMonster'
 import str from '../stringsLang'
 import config from '../config'
 
@@ -72,6 +73,13 @@ export default async function onMessageReactionAdd (reaction, user) {
     const isValidEquipEmoji = validateEmoji(allowedEmojis.equip, reaction.emoji.name)
     if (isEquipMessage && isValidEquipEmoji) {
       await lockMessage(messageId, () => enrichEquipMessage(reaction))
+    }
+
+    const validMonsterSearchMessageTitles = Object.values(str.monstersFound)
+    const isMonsterSearchMessage = validMonsterSearchMessageTitles.some(validTitle => title.includes(validTitle))
+    const isValidMonsterSearchEmoji = description.includes(reaction.emoji.name)
+    if (isMonsterSearchMessage && isValidMonsterSearchEmoji) {
+      await lockMessage(messageId, () => getMonster(reaction))
     }
   } catch (error) {
     handleReactionError(error, reaction, user)

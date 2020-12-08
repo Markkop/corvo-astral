@@ -6,6 +6,7 @@ import { getEquipment } from './equip'
 import { getAbout } from './about'
 import { partyList } from './party'
 import { getRecipe } from './recipe'
+import { getMonster } from './mob'
 import { configGuild } from './config'
 
 export {
@@ -17,5 +18,6 @@ export {
   getAbout,
   partyList,
   getRecipe,
-  configGuild
+  configGuild,
+  getMonster
 }

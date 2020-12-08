@@ -1,7 +1,7 @@
 import Discord from 'discord.js'
 import cron from 'node-cron'
 import notifyAlmanaxBonus from './almaNotifier'
-import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment, getAbout, partyList, getRecipe, configGuild } from './commands'
+import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment, getAbout, partyList, getRecipe, configGuild, getMonster } from './commands'
 import onMessageReactionAdd from './reactions/onMessageReactionAdd'
 import onMessageReactionRemove from './reactions/onMessageReactionRemove'
 import { handleMessageError } from './utils/handleError'
@@ -22,6 +22,7 @@ const commandActions = {
   party: partyList,
   recipe: getRecipe,
   config: configGuild,
+  mob: getMonster,
   time: (message) => message.reply(new Date().toString())
 }
 
