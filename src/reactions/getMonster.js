@@ -41,7 +41,7 @@ function mountMonsterEmbed (monster) {
   function splitArray (array) {
     var indexToSplit = Math.ceil(array.length / 2)
     var firstArray = array.slice(0, indexToSplit)
-    var secondArray = array.slice(indexToSplit + 1)
+    var secondArray = array.slice(indexToSplit)
     return [firstArray, secondArray]
   }
   const [firstDrops, secondDrops] = splitArray(monster.drops)
