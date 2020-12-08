@@ -80,7 +80,7 @@ function mountMonsterEmbed (monster) {
  */
 export default async function getMonster (reaction) {
   await reaction.message.reactions.removeAll()
-  const awaitReaction = await reaction.message.react('⏳')
+  await reaction.message.react('⏳')
   const embed = reaction.message.embeds[0]
   const title = embed.title
   const lang = guessLanguage(title, str.monstersFound)
@@ -92,5 +92,5 @@ export default async function getMonster (reaction) {
   const monsterEmbed = mountMonsterEmbed(monster)
   const newEmbed = new Discord.MessageEmbed(monsterEmbed)
   await reaction.message.edit(newEmbed)
-  awaitReaction.remove()
+  await reaction.message.reactions.removeAll()
 }
