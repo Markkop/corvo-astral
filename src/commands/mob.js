@@ -1,6 +1,6 @@
 import { getArgumentsAndOptions, convertToCodeBlock } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
-import { searchMonsters } from '../scrappers/monster'
+import { searchMonsters, Monster } from '../scrappers/monster'
 import str from '../stringsLang'
 import config from '../config'
 const { numberEmoji } = config
@@ -23,6 +23,18 @@ function mountMonstersFoundEmbed (monsters, lang) {
 }
 
 /**
+ * Order results by relevance using its name.
+ *
+ * @param {Monster} current
+ * @param {Monster} next
+ * @returns {1|-1}
+ */
+function sortByLessCharactersAfterQueryRemoval (current, next) {
+  const nextNameLength = next.name.toLowerCase().replace('gobball', '').length
+  return nextNameLength < current.name.length ? 1 : -1
+}
+
+/**
  * Replies the user information about the given sublimation.
  *
  * @param { import('discord.js').Message } message - Discord message object.
@@ -30,13 +42,17 @@ function mountMonstersFoundEmbed (monsters, lang) {
  */
 export async function getMonster (message) {
   const { args, options } = getArgumentsAndOptions(message, '=')
+  if (!args.length) {
+    return
+  }
 
   let lang = setLanguage(options, message.guild.id)
   const query = args.join('-')
   const waitingReaction = await message.react('⏳')
   const monstersFound = await searchMonsters(query, lang) || []
-  const maxResults = monstersFound.length > 9 ? 9 : monstersFound.length
-  monstersFound.length = maxResults
+  const monsters = monstersFound.sort(sortByLessCharactersAfterQueryRemoval)
+  const maxResults = monsters.length > 9 ? 9 : monsters.length
+  monsters.length = maxResults
 
   if (isValidLang(options.translate)) {
     lang = options.translate

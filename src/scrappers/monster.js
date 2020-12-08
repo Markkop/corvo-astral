@@ -165,7 +165,7 @@ export async function searchMonsters (query, lang) {
       ]
     })
     const page = await browser.newPage()
-    await page.goto(`https://www.wakfu.com/${lang}/mmorpg/${encyclopedia[lang]}/${monsters[lang]}?text=${query}`)
+    await page.goto(`https://www.wakfu.com/${lang}/mmorpg/${encyclopedia[lang]}/${monsters[lang]}?text=${query}&sort=3D`)
     const monstersFound = await page.evaluate(scrapMonsterSearch)
     await browser.close()
     return monstersFound || []
