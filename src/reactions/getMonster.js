@@ -32,41 +32,60 @@ function mountMonsterEmbed (monster) {
     return `${emojiElements[index]} | :crossed_swords: ${damage} | :shield: ${resist}%`
   })
 
-  const drops = monster.drops.join('\n')
-
-  const fields = [{
-    name: capitalize(monster.family.title),
-    value: monster.family.value,
-    inline: true
-  },
-  {
-    name: capitalize(monster.level.title),
-    value: monster.level.value,
-    inline: true
-  },
-  {
-    name: capitalize(monster.stats.title, true),
-    value: monster.stats.details.join('\n')
-  },
-  {
-    name: capitalize(monster.resists.title, true),
-    value: damageAndResistsText.join('\n')
-  },
-  {
-    name: 'Drops',
-    value: truncateFieldValue(drops)
-  },
-  {
-    name: 'Spells',
-    value: monster.spells.join('\n')
+  /**
+   * Split an array in two.
+   *
+   * @param {Array} array
+   * @returns {Array[]}
+   */
+  function splitArray (array) {
+    var indexToSplit = Math.ceil(array.length / 2)
+    var firstArray = array.slice(0, indexToSplit)
+    var secondArray = array.slice(indexToSplit + 1)
+    return [firstArray, secondArray]
   }
+  const [firstDrops, secondDrops] = splitArray(monster.drops)
+
+  const levelStat = `${capitalize(monster.level.title)}: ${monster.level.value}`
+  const stats = [levelStat, ...monster.stats.details]
+  const [firstStats, secondStats] = splitArray(stats)
+
+  const fields = [
+    {
+      name: capitalize(monster.stats.title, true),
+      value: firstStats.join('\n'),
+      inline: true
+    },
+    {
+      name: '\u200B',
+      value: secondStats.join('\n'),
+      inline: true
+    },
+    {
+      name: capitalize(monster.resists.title, true),
+      value: damageAndResistsText.join('\n')
+    },
+    {
+      name: 'Drops',
+      value: truncateFieldValue(firstDrops.join('\n')),
+      inline: true
+    },
+    {
+      name: '\u200B',
+      value: truncateFieldValue(secondDrops.join('\n')),
+      inline: true
+    },
+    {
+      name: 'Spells',
+      value: monster.spells.join('\n')
+    }
   ]
 
   const validFields = fields.filter(field => Boolean(field.value))
   return {
     color: '#40b2b5',
     url: monster.url,
-    title: capitalize(monster.name, true),
+    title: `${capitalize(monster.name, true)} (${monster.family.value})`,
     thumbnail: { url: monster.image },
     fields: validFields
   }
