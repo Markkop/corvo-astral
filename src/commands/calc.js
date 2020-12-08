@@ -4,6 +4,16 @@ import { setLanguage } from '../utils/language'
 import str from '../stringsLang'
 
 /**
+ * Convert flat resist to its percentage value.
+ *
+ * @param {number} flatResist
+ * @returns {number}
+ */
+export function convertFlatToPercentage (flatResist) {
+  return Math.floor((1 - Math.pow(0.8, flatResist / 100)) * 100)
+}
+
+/**
  * Replies the user with the damage of a calculated attack.
  *
  * @param { import('discord.js').Message } message - Discord message object.
@@ -35,7 +45,7 @@ export function calculateAttackDamage (message) {
   if (isPercentageResist) {
     flatResist = Math.ceil((100 * Math.log(1 - percentageResist / 100)) / (2 * Math.log(2) - Math.log(5)))
   } else {
-    percentageResist = Math.floor((1 - Math.pow(0.8, flatResist / 100)) * 100)
+    percentageResist = convertFlatToPercentage(flatResist)
   }
   let normalDamage = Math.ceil(base * (1 + damage / 100) * (1 - percentageResist / 100))
   const critDamage = normalDamage * 1.25
