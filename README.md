@@ -122,6 +122,8 @@ When using translate, you first have to select a monster from the results
 .mob papatudo lang=pt translate=fr
 ```
 
+![papatudoMob](https://user-images.githubusercontent.com/16388408/101432541-ce9e1700-38e7-11eb-8214-3a048596d944.gif)
+
 ### :boxing_glove: Damage Calculator
 
 It's possible to simulate an attack by providing some numbers to the `.calc` commands.  
