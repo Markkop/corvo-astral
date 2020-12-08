@@ -18,6 +18,13 @@ const GuildSchema = new mongoose.Schema({
   },
   partyChannel: {
     type: String
+  },
+  buildPreview: {
+    type: String,
+    validate: {
+      validator: (option) => ['enabled', 'disabled'].some((validOption) => validOption === option),
+      message: props => `${props.value} is not a valid option`
+    }
   }
 })
 

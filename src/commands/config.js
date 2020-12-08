@@ -54,7 +54,7 @@ export async function configGuild (message) {
     const { args, options } = getArgumentsAndOptions(message, '=')
     const arg = args[0]
     const validArgs = ['get', 'set']
-    const validOptions = ['lang', 'almanaxChannel', 'partyChannel']
+    const validOptions = ['lang', 'almanaxChannel', 'partyChannel', 'buildPreview']
     const isValidArgs = validArgs.some(validArg => validArg === arg)
     const isValidOptions = Object.keys(options).every(option => validOptions.includes(option))
 
