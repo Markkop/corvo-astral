@@ -29,7 +29,8 @@ describe('configGuild', () => {
   "lang": "en",
   "prefix": ".",
   "almanaxChannel": "almanax",
-  "partyChannel": "listagem-de-grupos"
+  "partyChannel": "listagem-de-grupos",
+  "buildPreview": "enabled"
 }
 \`\`\``,
       title: 'No custom config found. Using default'
@@ -46,7 +47,8 @@ describe('configGuild', () => {
   "lang": "fr",
   "prefix": ".",
   "almanaxChannel": "almanax",
-  "partyChannel": "listagem-de-grupos"
+  "partyChannel": "listagem-de-grupos",
+  "buildPreview": "enabled"
 }
 \`\`\``,
       title: 'Config for "GuildName"'

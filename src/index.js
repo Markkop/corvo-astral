@@ -6,6 +6,7 @@ import onMessageReactionAdd from './reactions/onMessageReactionAdd'
 import onMessageReactionRemove from './reactions/onMessageReactionRemove'
 import { handleMessageError } from './utils/handleError'
 import { getCommand, setStartupConfig } from './utils/message'
+import { getMethodBuildFromMessage } from './integrations/methodBuilder'
 import config from './config'
 import dotenv from 'dotenv'
 dotenv.config()
@@ -43,6 +44,11 @@ async function init () {
   client.on('message', async function (message) {
     try {
       if (message.author.bot) return
+
+      if (message.content.includes('builder.methodwakfu.com/builder/')) {
+        return getMethodBuildFromMessage(message)
+      }
+
       if (!message.content.startsWith(prefix)) return
       if (!message.guild) return
 

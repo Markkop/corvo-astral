@@ -137,6 +137,15 @@ Examples:
 
 ![](http://i.imgur.com/acjj1cJ.png)
 
+### :bricks: Builder Integration
+
+This feature is still in development, but you can already check it out
+by sending a Method's build link and the bot will access the link,
+take a printscreen and send it as a preview to the chat.  
+
+You can disable this behavior by `.config set buildPreview=disabled`  
+Feedbacks are welcome!  
+
 ### :gear: Configurable options
 
 Some bot options can be configurable according to each server using `.config`.  
@@ -145,12 +154,14 @@ Some bot options can be configurable according to each server using `.config`.
 * prefix: character to call commands (default: .) _(not available yet)_
 * almanaxChannel: channel receive the `.alma` command daily (default: almanax)
 * partyChannel: channel to receive the `.party` command (default: listagem-de-grupos)
+* buildPreview: `enabled` (default) or `disabled` to show a build printscreen and other info
 
 **Examples**:
 ```bash
 .config set lang=en
 .config set almanaxChannel=temple-bonus
 .config set partyChannel=party-listing
+.config set buildPreview=disabled
 .config get
 ```
 

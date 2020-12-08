@@ -2,7 +2,8 @@ const defaultConfig = {
   lang: 'en',
   prefix: '.',
   almanaxChannel: 'almanax',
-  partyChannel: 'listagem-de-grupos'
+  partyChannel: 'listagem-de-grupos',
+  buildPreview: 'enabled'
 }
 
 export default {
