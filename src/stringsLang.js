@@ -205,5 +205,11 @@ export default {
     es: `Escriba \`.help ${command}\` para ver algunos ejemplos de cómo buscar.`,
     fr: `Tapez \`.help ${command}\` pour voir quelques exemples de recherche.`,
     pt: `Digite \`.help ${command}\` para conferir alguns exemplos de como pesquisar.`
-  })
+  }),
+  monstersFound: {
+    en: 'Monsters found',
+    es: 'Monstruos encontrados',
+    fr: 'Monstres trouvés',
+    pt: 'Monstros encontrados'
+  }
 }

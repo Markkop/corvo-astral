@@ -13,9 +13,10 @@ Most features support Wakfu community languages: en, es, pt and fr.
 
 * `.alma`: returns the Almanax Bonus and [more info](http://www.krosmoz.com/en/almanax) for the current day
 * `.calc`: calculates the damage for an attack given some values
-* `.subli`: search for a given sublimation by name, slot combination or source
-* `.recipe`: search for a given recipe by name and rarity
-* `.equip`: search for a given equipment by name and rarity
+* `.subli`: search for sublimations by name, slot combination or source
+* `.recipe`: search for recipes by name and rarity
+* `.equip`: search for equipment by name and rarity
+* `.mob`: search for monsters by name
 * `.party`: create, update, join or leave a party listing
 * `.about`: get information about this bot
 * `.config`: configure custom settings for each discord channel
@@ -105,6 +106,21 @@ Recipes with same results are shown together.
 ```
 
 ![](http://i.imgur.com/1IBDf5j.png)
+
+### :dragon_face: Monster search
+
+You can search for monsters by typing `.mob ogrest`, for example  
+It'll show their characteristics, damage, resistances, drops and spells.  
+For monsters with huge droplist, you can click on the card title to
+open the browser in the monster's page
+When using translate, you first have to select a monster from the results 
+ 
+**Examples**:
+```bash
+.mob ogrest
+.mob gobbal lang=en
+.mob papatudo lang=pt translate=fr
+```
 
 ### :boxing_glove: Damage Calculator
 

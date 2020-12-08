@@ -123,3 +123,31 @@ export async function askAndWait (questionText, message, noResponseText) {
     return {}
   }
 }
+
+/**
+ * Truncates a field value if bigger than the max allowed characters.
+ *
+ * @param {string} value
+ * @returns {string}
+ */
+export function truncateFieldValue (value) {
+  if (value.length > 1024) {
+    value = value.substring(0, 1020) + '...'
+  }
+  return value
+}
+
+/**
+ * Convert a string to a code block string to make
+ * whitespaces visible.
+ *
+ * @param {string} text
+ * @param {number} codeBlockCharactersLength
+ * @returns {string}
+ */
+export function convertToCodeBlock (text, codeBlockCharactersLength) {
+  const textCharacters = String(text).split('')
+  const whiteSpacesCharacters = Array(codeBlockCharactersLength).fill(' ')
+  whiteSpacesCharacters.splice(0, textCharacters.length, ...textCharacters)
+  return `\`${whiteSpacesCharacters.join('')}\``
+}

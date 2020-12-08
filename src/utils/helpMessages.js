@@ -144,5 +144,19 @@ Rejoignez et quittez n'importe quel groupe en y réagissant avec la classe de vo
       '.config set partyChannel=party-listing',
       '.config get'
     ]
+  },
+  mob: {
+    help: {
+      en:
+        "Search for monsters using the Wakfu's Website monster search",
+      pt: 'Procure por monstros usando a busca de monstros do site do Wakfu',
+      es: 'Busque monstruos usando la búsqueda de monstruos en el sitio web de Wakfu',
+      fr: "Recherchez des monstres à l'aide de la recherche de monstres sur le site Web de Wakfu"
+    },
+    examples: [
+      '.mob ogrest',
+      '.mob gobbal lang=en',
+      '.mob papatudo lang=pt translate=fr'
+    ]
   }
 }
