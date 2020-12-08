@@ -4,6 +4,7 @@ import { changeAlmanaxDetails } from '../commands/alma'
 import { getGroupList } from '../utils/getGroupList'
 import { scrapDropByTypeAndId } from '../scrappers/drop'
 import { getRecipeFields } from '../commands/recipe'
+import { guessLanguage } from '../utils/language'
 import recipesData from '../../data/recipes.json'
 import itemsData from '../../data/items.json'
 import joinPartyByReaction from './joinParty'
@@ -27,21 +28,6 @@ const allowedEmojis = {
  */
 function validateEmoji (emojiList, emoji) {
   return emojiList.includes(emoji)
-}
-
-/**
- * Get the language used in the message embed.
- *
- * @param {string} levelName
- * @returns {string}
- */
-function getLanguageFromEmbed (levelName) {
-  return Object.entries(str.level).reduce((lang, [langEntry, nameEntry]) => {
-    if (nameEntry === levelName.toLowerCase()) {
-      return langEntry
-    }
-    return lang
-  }, 'en')
 }
 
 /**
@@ -101,7 +87,7 @@ async function enrichEquipMessage (reaction) {
   const reactionEmbed = reaction.message.embeds[0] || {}
   const levelField = reactionEmbed.fields.find(field => !/\D/.test(field.value))
   const levelName = levelField.name || ''
-  const lang = getLanguageFromEmbed(levelName)
+  const lang = guessLanguage(levelName, str.level)
   const id = Number(reactionEmbed.description.split('ID: ')[1])
 
   if (reaction.emoji.name === '💰') {
