@@ -39,6 +39,7 @@ async function init () {
 
   client.on('ready', async function () {
     console.log(`Online on ${client.guilds.cache.size} servers: ${client.guilds.cache.map(ch => ch.name).join(', ')}`)
+    client.user.setActivity('.about or .help', { type: 'PLAYING' })
   })
 
   client.on('message', async function (message) {
