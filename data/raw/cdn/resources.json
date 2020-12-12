@@ -1,0 +1,3299 @@
+[
+  {
+    "definition": {
+      "id": 6,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 2011718,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Pommier",
+      "en": "Api Tree",
+      "es": "Ñiamzamo",
+      "pt": "Árvore de Api"
+    }
+  },
+  {
+    "definition": {
+      "id": 8,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 10,
+      "iconGfxId": 2751719,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Bouleau",
+      "en": "Birch",
+      "es": "Abedul",
+      "pt": "Bétula"
+    }
+  },
+  {
+    "definition": {
+      "id": 15,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 2751732,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Noisetier",
+      "en": "Hazel Tree",
+      "es": "Avellano",
+      "pt": "Avelaneira"
+    }
+  },
+  {
+    "definition": {
+      "id": 18,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 30,
+      "iconGfxId": 3101750,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Orge",
+      "en": "Barley",
+      "es": "Cebada",
+      "pt": "Cevada"
+    }
+  },
+  {
+    "definition": {
+      "id": 23,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 30,
+      "iconGfxId": 3101752,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Blé",
+      "en": "Wheat",
+      "es": "Trigo",
+      "pt": "Trigo"
+    }
+  },
+  {
+    "definition": {
+      "id": 37,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Fer primitif",
+      "en": "Primitive Iron",
+      "es": "Hierro primitivo",
+      "pt": "Ferro Primitivo"
+    }
+  },
+  {
+    "definition": {
+      "id": 60,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 15,
+      "iconGfxId": 2792504,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Chardon couronné",
+      "en": "Crowned Thistle",
+      "es": "Cardo borriquero",
+      "pt": "Cardo Coroado"
+    }
+  },
+  {
+    "definition": {
+      "id": 76,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 67,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30911464,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Plant de Salace",
+      "en": "Babbage Plant",
+      "es": "Planta de enchalada",
+      "pt": "Pepolho"
+    }
+  },
+  {
+    "definition": {
+      "id": 79,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 15,
+      "iconGfxId": 3111889,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Topinambour",
+      "en": "Artichoke",
+      "es": "Topinambo",
+      "pt": "Alcachofra"
+    }
+  },
+  {
+    "definition": {
+      "id": 102,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 2791783,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Gargousier",
+      "en": "Gorsegoyle",
+      "es": "Gárgolo",
+      "pt": "Fruta de Enjuá"
+    }
+  },
+  {
+    "definition": {
+      "id": 139,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 2751723,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Frêne",
+      "en": "Ash",
+      "es": "Fresno",
+      "pt": "Freixo"
+    }
+  },
+  {
+    "definition": {
+      "id": 150,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 15,
+      "iconGfxId": 2794441,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Lin des Plaines",
+      "en": "Plain Flax",
+      "es": "Lino de las llanuras",
+      "pt": "Linho Comum"
+    }
+  },
+  {
+    "definition": {
+      "id": 151,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 3139270,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Tige de Roseau",
+      "en": "Reed Stem",
+      "es": "Tallo de caña",
+      "pt": "Caule de Junco"
+    }
+  },
+  {
+    "definition": {
+      "id": 152,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 2785440,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Trèfle parfumé",
+      "en": "Perfumed Clover",
+      "es": "Trébol perfumado",
+      "pt": "Trevo de Cheiro"
+    }
+  },
+  {
+    "definition": {
+      "id": 162,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 67,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 27513096,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Pouplier",
+      "en": "Pooplar",
+      "es": "Álamo",
+      "pt": "Pop'lar"
+    }
+  },
+  {
+    "definition": {
+      "id": 164,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 2755425,
+      "lastEvolutionStep": 0,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Cèdre",
+      "en": "Cedar",
+      "es": "Cedro",
+      "pt": "Cedro"
+    }
+  },
+  {
+    "definition": {
+      "id": 174,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 27513098,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Charme",
+      "en": "Charm",
+      "es": "Carpe",
+      "pt": "Cárpino"
+    }
+  },
+  {
+    "definition": {
+      "id": 179,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 15,
+      "iconGfxId": 3116948,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Plant d'Cawotte",
+      "en": "Cawwot Plant",
+      "es": "Zanahowia",
+      "pt": "Cenouwa"
+    }
+  },
+  {
+    "definition": {
+      "id": 242,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Fleur de Sel",
+      "en": "Finest Sea Salt",
+      "es": "Flor de sal",
+      "pt": "Sal Marinho Puríssimo"
+    }
+  },
+  {
+    "definition": {
+      "id": 243,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Cuivre éclatant",
+      "en": "Bright Copper",
+      "es": "Cobre brillante",
+      "pt": "Cobre Brilhante"
+    }
+  },
+  {
+    "definition": {
+      "id": 252,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -20,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc d'Esturgeons",
+      "en": "Shoal of Sturgeon",
+      "es": "Banco de esturiones",
+      "pt": "Cardume de Esturjões"
+    }
+  },
+  {
+    "definition": {
+      "id": 253,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -20,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Poissons Chachas",
+      "en": "Shoal of Bow Meow Fish",
+      "es": "Banco de peces miaumiau",
+      "pt": "Cardume de Miaws"
+    }
+  },
+  {
+    "definition": {
+      "id": 254,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Poissons Lune",
+      "en": "Shoal of Moonfish",
+      "es": "Banco de pescalunas",
+      "pt": "Cardume de Peixes-Lua"
+    }
+  },
+  {
+    "definition": {
+      "id": 255,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Dragocarpes",
+      "en": "Shoal of Dragocarp",
+      "es": "Banco de dragocarpas",
+      "pt": "Cardume de Dragocarpas"
+    }
+  },
+  {
+    "definition": {
+      "id": 258,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc d'Anchois grogneur",
+      "en": "Shoal of Crabby Anchovies",
+      "es": "Banco de boquerones gruñidores",
+      "pt": "Cardume de Caranchovas"
+    }
+  },
+  {
+    "definition": {
+      "id": 259,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Loutes",
+      "en": "Shoal of Loots",
+      "es": "Banco de riapes",
+      "pt": "Cardume de Saques"
+    }
+  },
+  {
+    "definition": {
+      "id": 260,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Salamons",
+      "en": "Shoal of Salamon",
+      "es": "Banco de salamones",
+      "pt": "Cardume de Salamões"
+    }
+  },
+  {
+    "definition": {
+      "id": 263,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 67,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 3068172,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Saule pleureur",
+      "en": "Weeping Willow",
+      "es": "Sauce llorón",
+      "pt": "Salgueiro Chorão"
+    }
+  },
+  {
+    "definition": {
+      "id": 296,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 31311455,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Orchidée",
+      "en": "Orchid",
+      "es": "Orquídea",
+      "pt": "Orquídea"
+    }
+  },
+  {
+    "definition": {
+      "id": 298,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 15,
+      "iconGfxId": 3119268,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Tuberbulbe",
+      "en": "Tuberbulb",
+      "es": "Tuberbulbo",
+      "pt": "Nabulbo"
+    }
+  },
+  {
+    "definition": {
+      "id": 315,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Raies velues",
+      "en": "Shoal of Hairy Rays",
+      "es": "Banco de rayas velludas",
+      "pt": "Cardume de Arraias Peludas"
+    }
+  },
+  {
+    "definition": {
+      "id": 316,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Perches",
+      "en": "Shoal of Perch",
+      "es": "Banco de percas",
+      "pt": "Cardume de Percas"
+    }
+  },
+  {
+    "definition": {
+      "id": 317,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 67,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 27510737,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Sequoiu",
+      "en": "Baby Redwood",
+      "es": "Secuoygan",
+      "pt": "Pau-brasil Jovem"
+    }
+  },
+  {
+    "definition": {
+      "id": 330,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": 20,
+      "idealTemperatureRangeMax": 30,
+      "iconGfxId": 2756162,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Bananagrumier",
+      "en": "Citronana Tree",
+      "es": "Bananaranjo",
+      "pt": "Árvore de Bananagrume"
+    }
+  },
+  {
+    "definition": {
+      "id": 334,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 67,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30622350,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Boabob",
+      "en": "Boabob",
+      "es": "Boabob",
+      "pt": "Boabob"
+    }
+  },
+  {
+    "definition": {
+      "id": 335,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 31311458,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Rhodon",
+      "en": "Dendron",
+      "es": "Rododendro",
+      "pt": "Dendro"
+    }
+  },
+  {
+    "definition": {
+      "id": 347,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30611440,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Châtaignier",
+      "en": "Chestnut Tree",
+      "es": "Castaño",
+      "pt": "Castanheiro"
+    }
+  },
+  {
+    "definition": {
+      "id": 349,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 31311451,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Irisse",
+      "en": "Iriss",
+      "es": "Irys",
+      "pt": "Íriche"
+    }
+  },
+  {
+    "definition": {
+      "id": 350,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 31311454,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Menthe Sauvage",
+      "en": "Wild Mint",
+      "es": "Menta salvaje",
+      "pt": "Menta Selvagem"
+    }
+  },
+  {
+    "definition": {
+      "id": 351,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 10,
+      "iconGfxId": 2784443,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Fougère duvet",
+      "en": "Fuzzy Fern",
+      "es": "Helecho lecho",
+      "pt": "Samambaia Felpuda"
+    }
+  },
+  {
+    "definition": {
+      "id": 352,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": 10,
+      "idealTemperatureRangeMax": 30,
+      "iconGfxId": 2785446,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Algue Narine",
+      "en": "Nostril Algae",
+      "es": "Alga narina",
+      "pt": "Alga Narina"
+    }
+  },
+  {
+    "definition": {
+      "id": 353,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30911462,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Avoine",
+      "en": "Oats",
+      "es": "Avena",
+      "pt": "Aveias"
+    }
+  },
+  {
+    "definition": {
+      "id": 354,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 31013166,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Melon",
+      "en": "Melon",
+      "es": "Melón",
+      "pt": "Melão"
+    }
+  },
+  {
+    "definition": {
+      "id": 356,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 67,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 10,
+      "iconGfxId": 30911467,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Seigle",
+      "en": "Rye",
+      "es": "Centeno",
+      "pt": "Centeio"
+    }
+  },
+  {
+    "definition": {
+      "id": 357,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 67,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 10,
+      "iconGfxId": 30920187,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Champignon Marbré",
+      "en": "Mottled Mushroom",
+      "es": "Champiñón veteado",
+      "pt": "Cogumelo Marmóreo"
+    }
+  },
+  {
+    "definition": {
+      "id": 359,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28111479,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Charbon antique",
+      "en": "Classic Carbon",
+      "es": "Carbón antiguo",
+      "pt": "Carvão Clássico"
+    }
+  },
+  {
+    "definition": {
+      "id": 360,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28111480,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Cobalt ombreux",
+      "en": "Shadowy Cobalt",
+      "es": "Cobalto oscuro",
+      "pt": "Cobalto Sombrio"
+    }
+  },
+  {
+    "definition": {
+      "id": 361,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28111481,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Pépite de Bronze",
+      "en": "Bronze Nugget",
+      "es": "Pepita de bronce",
+      "pt": "Pepita de Bronze"
+    }
+  },
+  {
+    "definition": {
+      "id": 362,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Eclat de Silex",
+      "en": "Shard of Flint",
+      "es": "Esquirla de sílex",
+      "pt": "Caco de Sílex"
+    }
+  },
+  {
+    "definition": {
+      "id": 363,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28111485,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Quartz Détouré",
+      "en": "Rugged Quartz",
+      "es": "Cuarzo tallado",
+      "pt": "Quartzo Irregular"
+    }
+  },
+  {
+    "definition": {
+      "id": 365,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Zinc entier",
+      "en": "Wholesome Zinc",
+      "es": "Zinc entero",
+      "pt": "Zinco Integral"
+    }
+  },
+  {
+    "definition": {
+      "id": 366,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28113182,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Kroum Funeste",
+      "en": "Grievous Kroomium",
+      "es": "Kromo funesto",
+      "pt": "Kromo Funesto"
+    }
+  },
+  {
+    "definition": {
+      "id": 369,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -20,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de poissons panés",
+      "en": "Shoal of Breaded Fish",
+      "es": "Banco de pescados empanados",
+      "pt": "Cardume de Jagrudas"
+    }
+  },
+  {
+    "definition": {
+      "id": 370,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Greuvettes",
+      "en": "Shoal of Grawns",
+      "es": "Banco de bamgas",
+      "pt": "Cardume de Camarrons"
+    }
+  },
+  {
+    "definition": {
+      "id": 379,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30911469,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Riz-Légion",
+      "en": "Vanilla Rice",
+      "es": "Arroz Legión",
+      "pt": "Arroz de Festa"
+    }
+  },
+  {
+    "definition": {
+      "id": 380,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30918478,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Makafé d'or",
+      "en": "Golden Makoffee",
+      "es": "Makafé dorado",
+      "pt": "Makafé Dourado"
+    }
+  },
+  {
+    "definition": {
+      "id": 381,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 31013170,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Pastèque",
+      "en": "Watermelon",
+      "es": "Sandía",
+      "pt": "Melancia"
+    }
+  },
+  {
+    "definition": {
+      "id": 382,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 31013163,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Maïs",
+      "en": "Corn",
+      "es": "Maíz",
+      "pt": "Milho"
+    }
+  },
+  {
+    "definition": {
+      "id": 384,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 10,
+      "iconGfxId": 3118288,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Fayot",
+      "en": "Beans",
+      "es": "Judía",
+      "pt": "Feijão"
+    }
+  },
+  {
+    "definition": {
+      "id": 385,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 3113474,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Pied de Boufton",
+      "en": "Funkus",
+      "es": "Lengua de muuugresa",
+      "pt": "Pé de Paparneiro"
+    }
+  },
+  {
+    "definition": {
+      "id": 386,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 27913144,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Edelweiss",
+      "en": "Edelweiss",
+      "es": "Edelweiss",
+      "pt": "Edelvais"
+    }
+  },
+  {
+    "definition": {
+      "id": 387,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 27913147,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Croton",
+      "en": "Cotton",
+      "es": "Algodonudo",
+      "pt": "Algodão"
+    }
+  },
+  {
+    "definition": {
+      "id": 388,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 31313140,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Boolet",
+      "en": "Puffball",
+      "es": "Booleto",
+      "pt": "Explosinho"
+    }
+  },
+  {
+    "definition": {
+      "id": 390,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28113178,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Minerai de Bauxit Royal",
+      "en": "Royal Bauxite Ore",
+      "es": "Mineral de bauxita real",
+      "pt": "Minério de Bauxita Real"
+    }
+  },
+  {
+    "definition": {
+      "id": 391,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 3025461,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Améthyste sanguine",
+      "en": "Blood Red Amethyst",
+      "es": "Amatista sanguina",
+      "pt": "Ametista Vermelho-Sangue"
+    }
+  },
+  {
+    "definition": {
+      "id": 392,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28119749,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Korail",
+      "en": "Koral",
+      "es": "Koral",
+      "pt": "Koral"
+    }
+  },
+  {
+    "definition": {
+      "id": 393,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Taroudium",
+      "en": "Taroudium",
+      "es": "Tarudio",
+      "pt": "Tarúdio"
+    }
+  },
+  {
+    "definition": {
+      "id": 395,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 2811853,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Plomb brumeux",
+      "en": "Hazy Lead",
+      "es": "Plomo brumoso",
+      "pt": "Chumbo Turvo"
+    }
+  },
+  {
+    "definition": {
+      "id": 396,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30612004,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Têtard",
+      "en": "Tadbole",
+      "es": "Desmochado",
+      "pt": "Girino"
+    }
+  },
+  {
+    "definition": {
+      "id": 397,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30620181,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Liane grimpante",
+      "en": "Creeping Vine",
+      "es": "Liana trepadora",
+      "pt": "Trepadeira"
+    }
+  },
+  {
+    "definition": {
+      "id": 398,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 25715957,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Bois gelé",
+      "en": "Frozen Wood",
+      "es": "Madera helada",
+      "pt": "Madeira Congelada"
+    }
+  },
+  {
+    "definition": {
+      "id": 400,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 27513110,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "If",
+      "en": "Yew",
+      "es": "Tejo",
+      "pt": "Teixo"
+    }
+  },
+  {
+    "definition": {
+      "id": 401,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31318471,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Pazinclou",
+      "en": "Nodincludid",
+      "es": "Nyunduro",
+      "pt": "Neimagino"
+    }
+  },
+  {
+    "definition": {
+      "id": 402,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Poissons Zobal",
+      "en": "Shoal of Maskerel",
+      "es": "Banco de peces zobal",
+      "pt": "Cardume de Mascarenques"
+    }
+  },
+  {
+    "definition": {
+      "id": 403,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc d'Egreuvisses",
+      "en": "Shoal of Grawfish",
+      "es": "Banco de bamgarones",
+      "pt": "Cardume de Largostins"
+    }
+  },
+  {
+    "definition": {
+      "id": 405,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Pipocampes",
+      "en": "Shoal of Chehorses",
+      "es": "Banco de titos de mar",
+      "pt": "Cardume de Che-Guevalos"
+    }
+  },
+  {
+    "definition": {
+      "id": 406,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc d'Anguilles",
+      "en": "Shoal of Eels",
+      "es": "Banco de anguilas",
+      "pt": "Cardume de Enguias"
+    }
+  },
+  {
+    "definition": {
+      "id": 407,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Piranianias",
+      "en": "Shoal of Piri Pirhianas",
+      "es": "Banco de pirañañas",
+      "pt": "Cardume de Piripiranhas"
+    }
+  },
+  {
+    "definition": {
+      "id": 523,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 15,
+      "iconGfxId": 30917369,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Plant d'Cawotte noiwe",
+      "en": "Black Cawwot Plant",
+      "es": "Zanahowia negwa",
+      "pt": "Cenouwa Pweta"
+    }
+  },
+  {
+    "definition": {
+      "id": 532,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 27513114,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Belgamète",
+      "en": "Marmalot",
+      "es": "Belgameta",
+      "pt": "Marmelote"
+    }
+  },
+  {
+    "definition": {
+      "id": 533,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30217490,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Mythwil",
+      "en": "Mythwil",
+      "es": "Mithwil",
+      "pt": "Mithwil"
+    }
+  },
+  {
+    "definition": {
+      "id": 552,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 27518107,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Cactus",
+      "en": "Cactus",
+      "es": "Cactus",
+      "pt": "Cactos"
+    }
+  },
+  {
+    "definition": {
+      "id": 553,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": 10,
+      "idealTemperatureRangeMax": 30,
+      "iconGfxId": 27518111,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Myscandelle",
+      "en": "Mosscandel",
+      "es": "Champivela",
+      "pt": "Musgovela"
+    }
+  },
+  {
+    "definition": {
+      "id": 554,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30918115,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Truffe du Désert",
+      "en": "Desert Truffle",
+      "es": "Trufa del desierto",
+      "pt": "Trufa do Deserto"
+    }
+  },
+  {
+    "definition": {
+      "id": 555,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": 10,
+      "idealTemperatureRangeMax": 30,
+      "iconGfxId": 30918117,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Champoule",
+      "en": "Mushray",
+      "es": "Luciseta",
+      "pt": "Coguvela"
+    }
+  },
+  {
+    "definition": {
+      "id": 556,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31318121,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Aloa Vero",
+      "en": "Aloa Vera",
+      "es": "Aloa vero",
+      "pt": "Aloa Vera"
+    }
+  },
+  {
+    "definition": {
+      "id": 557,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": 10,
+      "idealTemperatureRangeMax": 30,
+      "iconGfxId": 31318122,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Dionée",
+      "en": "Venutian",
+      "es": "Dionea",
+      "pt": "Dionéia"
+    }
+  },
+  {
+    "definition": {
+      "id": 558,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28118126,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Minerai des Sables",
+      "en": "Sandy Ore",
+      "es": "Mineral del desierto",
+      "pt": "Minério do Deserto"
+    }
+  },
+  {
+    "definition": {
+      "id": 559,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": 10,
+      "idealTemperatureRangeMax": 30,
+      "iconGfxId": 28118128,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Minerai d'Or Noir",
+      "en": "Black Gold Ore",
+      "es": "Mineral de oro negro",
+      "pt": "Minério de Ouro Negro"
+    }
+  },
+  {
+    "definition": {
+      "id": 560,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Scincus",
+      "en": "Shoal of Scincus",
+      "es": "Banco de peces de arena",
+      "pt": "Banco de Scincus"
+    }
+  },
+  {
+    "definition": {
+      "id": 562,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Planctois",
+      "en": "Shoal of Hydawheys",
+      "es": "Banco de planctones",
+      "pt": "Banco de Planktons"
+    }
+  },
+  {
+    "definition": {
+      "id": 569,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30618465,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Sureau sanguin",
+      "en": "Blood Elderberry",
+      "es": "Saúco sanguíneo",
+      "pt": "Sabugueiro Sangrento"
+    }
+  },
+  {
+    "definition": {
+      "id": 570,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 4558068,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Pin Sylvestre",
+      "en": "Sylvan Pine",
+      "es": "Pino Silvestre",
+      "pt": "Pinho Silvestre"
+    }
+  },
+  {
+    "definition": {
+      "id": 571,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 3025474,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Saphir double-éclat",
+      "en": "Double Carat Sapphire",
+      "es": "Zafiro de doble brillo",
+      "pt": "Safira de Quilate Duplo"
+    }
+  },
+  {
+    "definition": {
+      "id": 572,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28113180,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Minerai de Titan Souverain",
+      "en": "Sovereign Titanium Ore",
+      "es": "Mineral de titanio soberano",
+      "pt": "Minério de Titânio Soberano"
+    }
+  },
+  {
+    "definition": {
+      "id": 575,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30911474,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Chou-Chou",
+      "en": "Jollyflower",
+      "es": "Col",
+      "pt": "Couve-Florriso"
+    }
+  },
+  {
+    "definition": {
+      "id": 576,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 3101786,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Tournesol",
+      "en": "Sunflower",
+      "es": "Girasol",
+      "pt": "Girassol"
+    }
+  },
+  {
+    "definition": {
+      "id": 577,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31319170,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Eter",
+      "en": "Eterny",
+      "es": "Éter",
+      "pt": "Eterni"
+    }
+  },
+  {
+    "definition": {
+      "id": 578,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31318472,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Kamamille",
+      "en": "Kamamile",
+      "es": "Kamamila",
+      "pt": "Kamamila"
+    }
+  },
+  {
+    "definition": {
+      "id": 579,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Truithons",
+      "en": "Shoal of Troutuna",
+      "es": "Banco de truchatunes",
+      "pt": "Cardume de Trutatuns"
+    }
+  },
+  {
+    "definition": {
+      "id": 580,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 3088114,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Requin Marteau",
+      "en": "Hammer Shark",
+      "es": "Tiburón martillo",
+      "pt": "Tubarão-Martelo"
+    }
+  },
+  {
+    "definition": {
+      "id": 589,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 27510009,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Pin sec",
+      "en": "Dry Pine",
+      "es": "Pino seco",
+      "pt": "Pinho Seco"
+    }
+  },
+  {
+    "definition": {
+      "id": 590,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 27610957,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Pulsatile Soufrée",
+      "en": "Volcanic Plant",
+      "es": "Pulsatila azufrada",
+      "pt": "Planta Vulcânica"
+    }
+  },
+  {
+    "definition": {
+      "id": 591,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30918479,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Fraise",
+      "en": "Strawberry",
+      "es": "Fresa",
+      "pt": "Morango"
+    }
+  },
+  {
+    "definition": {
+      "id": 592,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28118483,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Minerai de Sryanur ",
+      "en": "Sryanide Ore ",
+      "es": "Mineral de sryanuro ",
+      "pt": "Minério de Sranureto "
+    }
+  },
+  {
+    "definition": {
+      "id": 593,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 3089232,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Vandame",
+      "en": "Vandame",
+      "es": "Vandam",
+      "pt": "Vandame"
+    }
+  },
+  {
+    "definition": {
+      "id": 599,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28111483,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Carbone obscur",
+      "en": "Dark Carbon",
+      "es": "Carbono oscuro",
+      "pt": "Carbono Negro"
+    }
+  },
+  {
+    "definition": {
+      "id": 600,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28119751,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Ambre",
+      "en": "Amber",
+      "es": "Ámbar",
+      "pt": "Âmbar"
+    }
+  },
+  {
+    "definition": {
+      "id": 601,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30619754,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Kokotier",
+      "en": "Kokonut",
+      "es": "Kokotero",
+      "pt": "Koko"
+    }
+  },
+  {
+    "definition": {
+      "id": 602,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30619757,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Divi Divi",
+      "en": "Divi Divi",
+      "es": "Divi divi",
+      "pt": "Divi Divi"
+    }
+  },
+  {
+    "definition": {
+      "id": 603,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Banc de Namo",
+      "en": "Shoal of Knemo",
+      "es": "Banco de namos",
+      "pt": "Cardume de Knemos"
+    }
+  },
+  {
+    "definition": {
+      "id": 604,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Eaux Troubles",
+      "en": "Troubled Waters",
+      "es": "Aguas turbias",
+      "pt": "Águas turbulentas"
+    }
+  },
+  {
+    "definition": {
+      "id": 605,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30919764,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Canne à Palme",
+      "en": "Palm Rod",
+      "es": "Caña de palma",
+      "pt": "Bastão da palma"
+    }
+  },
+  {
+    "definition": {
+      "id": 606,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30919768,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Maniok",
+      "en": "Maniok",
+      "es": "Yuka",
+      "pt": "Uaipim"
+    }
+  },
+  {
+    "definition": {
+      "id": 607,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31319771,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Tahitiarée",
+      "en": "Tahitiare",
+      "es": "Tahitariana",
+      "pt": "Tahitiare"
+    }
+  },
+  {
+    "definition": {
+      "id": 608,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31319774,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Grâce",
+      "en": "Grace",
+      "es": "Gracia",
+      "pt": "Graça"
+    }
+  },
+  {
+    "definition": {
+      "id": 612,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30611445,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Cerisier",
+      "en": "Cherry Tree",
+      "es": "Cerezo",
+      "pt": "Cerejeira"
+    }
+  },
+  {
+    "definition": {
+      "id": 613,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 34,
+      "idealRainRangeMax": 66,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 10,
+      "iconGfxId": 3101902,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Citrouille",
+      "en": "Pumpkin",
+      "es": "Calabaza",
+      "pt": "Abóbora"
+    }
+  },
+  {
+    "definition": {
+      "id": 614,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 33,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 27913151,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Amanite",
+      "en": "Death Cap",
+      "es": "Amanita",
+      "pt": "Píleo Mortal"
+    }
+  },
+  {
+    "definition": {
+      "id": 615,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28120176,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Mercure",
+      "en": "Mercury",
+      "es": "Mercurio",
+      "pt": "Mercúrio"
+    }
+  },
+  {
+    "definition": {
+      "id": 616,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 100,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": " Banc de Mulous de mer",
+      "en": "Shoal of Sea Boowolves",
+      "es": "Banco de milubos marinos",
+      "pt": "Cardume de Milobos Marinhos"
+    }
+  },
+  {
+    "definition": {
+      "id": 643,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Pierres Précieuses",
+      "en": "Precious Stones",
+      "es": "Piedras preciosas",
+      "pt": "Pedras Preciosas"
+    }
+  },
+  {
+    "definition": {
+      "id": 644,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 27513106,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Acajou",
+      "en": "Mahogany",
+      "es": "Maracajú",
+      "pt": "Acaju"
+    }
+  },
+  {
+    "definition": {
+      "id": 645,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 2754455,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Ronce",
+      "en": "Bramble",
+      "es": "Zarza",
+      "pt": "Sarça"
+    }
+  },
+  {
+    "definition": {
+      "id": 646,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 3125444,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Mini-jute",
+      "en": "Sweat Jute",
+      "es": "Miniyute",
+      "pt": "Juta Suarda"
+    }
+  },
+  {
+    "definition": {
+      "id": 647,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 2609761,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Piment",
+      "en": "Chili",
+      "es": "Pimiento",
+      "pt": "Pimenta"
+    }
+  },
+  {
+    "definition": {
+      "id": 648,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31320184,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Moumousse",
+      "en": "Momoss",
+      "es": "Mumusgo",
+      "pt": "Mumusgo"
+    }
+  },
+  {
+    "definition": {
+      "id": 649,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 2781832,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Ortie",
+      "en": "Nettles",
+      "es": "Ortiga",
+      "pt": "Urtiga"
+    }
+  },
+  {
+    "definition": {
+      "id": 650,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 2811856,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Veuf-argent",
+      "en": "Silver",
+      "es": "Plata vieja",
+      "pt": "Mercurioso"
+    }
+  },
+  {
+    "definition": {
+      "id": 651,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28119176,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Obsidienne",
+      "en": "Obsidian",
+      "es": "Obsidiana",
+      "pt": "Obsidiana"
+    }
+  },
+  {
+    "definition": {
+      "id": 652,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30820178,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Salamandre",
+      "en": "Salamander",
+      "es": "Salamandra",
+      "pt": "Salamandra"
+    }
+  },
+  {
+    "definition": {
+      "id": 653,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": -1,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Arête de Poisson",
+      "en": "Fish Bone",
+      "es": "Espina de pescado",
+      "pt": "Espinha de Peixe"
+    }
+  },
+  {
+    "definition": {
+      "id": 667,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30618469,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Kamaquat",
+      "en": "Kamaquat",
+      "es": "Kamaquat",
+      "pt": "Kamaquat"
+    }
+  },
+  {
+    "definition": {
+      "id": 668,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30611445,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Cerisier (bleu)",
+      "en": "Cherry Tree (blue)",
+      "es": "Cerezo (azul)",
+      "pt": "Cerejeira (azul)"
+    }
+  },
+  {
+    "definition": {
+      "id": 669,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30611445,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Cerisier (orange)",
+      "en": "Cherry Tree (orange)",
+      "es": "Cerezo (naranja)",
+      "pt": "Cerejeira (laranja)"
+    }
+  },
+  {
+    "definition": {
+      "id": 670,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30611445,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Cerisier (vert)",
+      "en": "Cherry Tree (green)",
+      "es": "Cerezo (verde)",
+      "pt": "Cerejeira (verde)"
+    }
+  },
+  {
+    "definition": {
+      "id": 671,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 27513096,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Pouplier (vert)",
+      "en": "Pooplar (green)",
+      "es": "Álamo (verde)",
+      "pt": "Pop'lar (verde)"
+    }
+  },
+  {
+    "definition": {
+      "id": 672,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 27513096,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Pouplier (orange)",
+      "en": "Pooplar (orange)",
+      "es": "Álamo (naranja)",
+      "pt": "Pop'lar (laranja)"
+    }
+  },
+  {
+    "definition": {
+      "id": 673,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 27513098,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Charme (vert)",
+      "en": "Charm (green)",
+      "es": "Carpe (verde)",
+      "pt": "Cárpino (verde)"
+    }
+  },
+  {
+    "definition": {
+      "id": 674,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 27513098,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Charme (bleu)",
+      "en": "Charm (blue)",
+      "es": "Carpe (azul)",
+      "pt": "Cárpino (azul)"
+    }
+  },
+  {
+    "definition": {
+      "id": 675,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 27513098,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Charme (orange)",
+      "en": "Charm (orange)",
+      "es": "Carpe (naranja)",
+      "pt": "Cárpino (laranja)"
+    }
+  },
+  {
+    "definition": {
+      "id": 676,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 27510009,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Pin sec (bleu)",
+      "en": "Dry Pine (blue)",
+      "es": "Pino seco (azul)",
+      "pt": "Pinho Seco (azul)"
+    }
+  },
+  {
+    "definition": {
+      "id": 678,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 27510009,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Pin sec (rouge)",
+      "en": "Dry Pine (red)",
+      "es": "Pino seco (rojo)",
+      "pt": "Pinho Seco (vermelho)"
+    }
+  },
+  {
+    "definition": {
+      "id": 679,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 2757781,
+      "lastEvolutionStep": 0,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Grand Orme",
+      "en": "Great Elm",
+      "es": "Olmo grande",
+      "pt": "Grande Olmo"
+    }
+  },
+  {
+    "definition": {
+      "id": 680,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 0,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30612004,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Têtard (orange)",
+      "en": "Tadbole (orange)",
+      "es": "Desmochado (naranja)",
+      "pt": "Girino (laranja)"
+    }
+  },
+  {
+    "definition": {
+      "id": 717,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30626395,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Sakoura Mystique",
+      "en": "Mystical Sakura",
+      "es": "Sakura mística",
+      "pt": "Sacura Mística"
+    }
+  },
+  {
+    "definition": {
+      "id": 753,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 2757781,
+      "lastEvolutionStep": 0,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Orme",
+      "en": "Elm",
+      "es": "Olmo",
+      "pt": "Olmo"
+    }
+  },
+  {
+    "definition": {
+      "id": 761,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30627846,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Carya",
+      "en": "Carya",
+      "es": "Carya",
+      "pt": "Carya"
+    }
+  },
+  {
+    "definition": {
+      "id": 762,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30627849,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Algue torsade",
+      "en": "Twisted Seaweed",
+      "es": "Algatrenza",
+      "pt": "Alga Trançada"
+    }
+  },
+  {
+    "definition": {
+      "id": 763,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 26027852,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Canneberge glacée",
+      "en": "Iced Cranberry",
+      "es": "Arándano helado",
+      "pt": "Arando Gelado"
+    }
+  },
+  {
+    "definition": {
+      "id": 764,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 26027855,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Cactousse",
+      "en": "Hactus",
+      "es": "Cactoso",
+      "pt": "Cactosse"
+    }
+  },
+  {
+    "definition": {
+      "id": 765,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31327858,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Delphes Hiniom",
+      "en": "Delphes Inium",
+      "es": "Delfhiniom",
+      "pt": "Violácea"
+    }
+  },
+  {
+    "definition": {
+      "id": 766,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31327861,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Fleur-flocon",
+      "en": "Flowerflake",
+      "es": "Flor-copo",
+      "pt": "Flocoflor"
+    }
+  },
+  {
+    "definition": {
+      "id": 767,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28127863,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Grenat glacé",
+      "en": "Frozen Garnet",
+      "es": "Granate helado",
+      "pt": "Granada Congelada"
+    }
+  },
+  {
+    "definition": {
+      "id": 768,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28127865,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Zircon",
+      "en": "Zircon",
+      "es": "Zircón",
+      "pt": "Zirconita"
+    }
+  },
+  {
+    "definition": {
+      "id": 769,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30827867,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Kraivette",
+      "en": "Schrymp",
+      "es": "Ganva",
+      "pt": "Kamarón"
+    }
+  },
+  {
+    "definition": {
+      "id": 770,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30827869,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Huître",
+      "en": "Oyster",
+      "es": "Ostra",
+      "pt": "Ostra"
+    }
+  }
+]

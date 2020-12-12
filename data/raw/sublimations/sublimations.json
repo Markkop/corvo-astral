@@ -1,0 +1,3106 @@
+[
+  {
+    "id": 14186,
+    "title": {
+      "fr": "Robuste",
+      "en": "Robust",
+      "es": "Robusto",
+      "pt": "Robusto"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 24130,
+    "title": {
+      "fr": "Inflexibilité",
+      "en": "Inflexibility",
+      "es": "Inflexibilidad",
+      "pt": "Inflexibilidade"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 24131,
+    "title": {
+      "fr": "Constance",
+      "en": "Steadfast",
+      "es": "Constancia",
+      "pt": "Constância"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 24132,
+    "title": {
+      "fr": "Dénouement",
+      "en": "Unraveling",
+      "es": "Desenlace",
+      "pt": "Desenlace"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 24133,
+    "title": {
+      "fr": "Précision chirurgicale",
+      "en": "Surgical Precision",
+      "es": "Precisión quirúrgica",
+      "pt": "Precisão Cirúrgica"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 24134,
+    "title": {
+      "fr": "Mesure",
+      "en": "Measure",
+      "es": "Medida",
+      "pt": "Medida"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 24135,
+    "title": {
+      "fr": "Fracass'carcasse",
+      "en": "Smashmouth",
+      "es": "Rompecarcasa",
+      "pt": "Kebra-Karkaça"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 24136,
+    "title": {
+      "fr": "Alternance",
+      "en": "Alternation",
+      "es": "Alternancia",
+      "pt": "Alternância"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 24137,
+    "title": {
+      "fr": "Confiance",
+      "en": "Trust",
+      "es": "Confianza",
+      "pt": "Confiança"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 24138,
+    "title": {
+      "fr": "Brasero",
+      "en": "Brazier",
+      "es": "Brasero",
+      "pt": "Braseiro"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 25793,
+    "title": {
+      "fr": "Santé de fer",
+      "en": "Robust Health",
+      "es": "Salud de hierro",
+      "pt": "Saúde de Ferro"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Ultimate Boss Chest (UB)",
+        "es": "Cofre de Final de Temporada de Jefe Supremo (UB)",
+        "fr": "Coffre Fin de Saison de Boss Ultime (UB)",
+        "pt": "Baú de Final de Temporada de Chefe Final (UB)"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 25794,
+    "title": {
+      "fr": "Science du placement",
+      "en": "Positioning Knowledge",
+      "es": "Ciencia del Posicionamiento",
+      "pt": "Arte do posicionamento"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Ultimate Boss Chest (UB)",
+        "es": "Cofre de Final de Temporada de Jefe Supremo (UB)",
+        "fr": "Coffre Fin de Saison de Boss Ultime (UB)",
+        "pt": "Baú de Final de Temporada de Chefe Final (UB)"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 25795,
+    "title": {
+      "fr": "Anatomie",
+      "en": "Anatomy",
+      "es": "Anatomía",
+      "pt": "Anatomia"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Ultimate Boss Chest (UB)",
+        "es": "Cofre de Final de Temporada de Jefe Supremo (UB)",
+        "fr": "Coffre Fin de Saison de Boss Ultime (UB)",
+        "pt": "Baú de Final de Temporada de Chefe Final (UB)"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 25796,
+    "title": {
+      "fr": "Brutalité",
+      "en": "Brutality",
+      "es": "Brutalidad",
+      "pt": "Brutalidade"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Ultimate Boss Chest (UB)",
+        "es": "Cofre de Final de Temporada de Jefe Supremo (UB)",
+        "fr": "Coffre Fin de Saison de Boss Ultime (UB)",
+        "pt": "Baú de Final de Temporada de Chefe Final (UB)"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 25797,
+    "title": {
+      "fr": "Force Herculéenne",
+      "en": "Herculean Strength",
+      "es": "Fuerza Hercúlea",
+      "pt": "Força Hercúlea"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 25798,
+    "title": {
+      "fr": "Alternance II",
+      "en": "Alternation II",
+      "es": "Alternancia II",
+      "pt": "Alternância II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 25799,
+    "title": {
+      "fr": "Excès",
+      "en": "Excess",
+      "es": "Exceso",
+      "pt": "Excesso"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Ultimate Boss Chest (UB)",
+        "es": "Cofre de Final de Temporada de Jefe Supremo (UB)",
+        "fr": "Coffre Fin de Saison de Boss Ultime (UB)",
+        "pt": "Baú de Final de Temporada de Chefe Final (UB)"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 25800,
+    "title": {
+      "fr": "Sang de la Déchirure",
+      "en": "Heartbreaking Blood",
+      "es": "Sangre del Martirio",
+      "pt": "Sangue do Talho"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Ultimate Boss Chest (UB)",
+        "es": "Cofre de Final de Temporada de Jefe Supremo (UB)",
+        "fr": "Coffre Fin de Saison de Boss Ultime (UB)",
+        "pt": "Baú de Final de Temporada de Chefe Final (UB)"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 25801,
+    "title": {
+      "fr": "Garde levée",
+      "en": "Guard Up",
+      "es": "Guardia Levantada",
+      "pt": "Guarda Baixada"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Ultimate Boss Chest (UB)",
+        "es": "Cofre de Final de Temporada de Jefe Supremo (UB)",
+        "fr": "Coffre Fin de Saison de Boss Ultime (UB)",
+        "pt": "Baú de Final de Temporada de Chefe Final (UB)"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 25802,
+    "title": {
+      "fr": "Aura de Flammes",
+      "en": "Flame Aura",
+      "es": "Aura de Llamas",
+      "pt": "Aura de Chamas"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Ultimate Boss Chest (UB)",
+        "es": "Cofre de Final de Temporada de Jefe Supremo (UB)",
+        "fr": "Coffre Fin de Saison de Boss Ultime (UB)",
+        "pt": "Baú de Final de Temporada de Chefe Final (UB)"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27111,
+    "title": {
+      "fr": "Ruine",
+      "en": "Ruin",
+      "es": "Ruina",
+      "pt": "Ruína"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27112,
+    "title": {
+      "fr": "Dévastation",
+      "en": "Devastation",
+      "es": "Devastación",
+      "pt": "Devastação"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27113,
+    "title": {
+      "fr": "Ravage",
+      "en": "Devastate",
+      "es": "Estragos",
+      "pt": "Assolação"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27114,
+    "title": {
+      "fr": "Carnage",
+      "en": "Carnage",
+      "es": "Masacre",
+      "pt": "Carnificina"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27115,
+    "title": {
+      "fr": "Cicatrisation",
+      "en": "Healing",
+      "es": "Cicatrización",
+      "pt": "Cicatrização"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27116,
+    "title": {
+      "fr": "Embuscade",
+      "en": "Ambush",
+      "es": "Emboscada",
+      "pt": "Emboscada"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27117,
+    "title": {
+      "fr": "Dérobade",
+      "en": "Evasion",
+      "es": "Escapatoria",
+      "pt": "Evasão"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27118,
+    "title": {
+      "fr": "Détermination",
+      "en": "Determination",
+      "es": "Determinación",
+      "pt": "Determinação"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27119,
+    "title": {
+      "fr": "Ténacité",
+      "en": "Tenacity",
+      "es": "Tenacidad",
+      "pt": "Tenacidade"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27120,
+    "title": {
+      "fr": "Solidité",
+      "en": "Solidity",
+      "es": "Solidez",
+      "pt": "Solidez"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27121,
+    "title": {
+      "fr": "Fermeté",
+      "en": "Resolute",
+      "es": "Firmeza",
+      "pt": "Firmeza"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27122,
+    "title": {
+      "fr": "Légèreté",
+      "en": "Lightness",
+      "es": "Ligereza",
+      "pt": "Leveza"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27123,
+    "title": {
+      "fr": "Topologie",
+      "en": "Topology",
+      "es": "Topología",
+      "pt": "Topologia"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27124,
+    "title": {
+      "fr": "Réprobation",
+      "en": "Condemnation",
+      "es": "Reprobación",
+      "pt": "Reprovação"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27125,
+    "title": {
+      "fr": "Stupéfaction",
+      "en": "Stupefaction",
+      "es": "Estupefacción",
+      "pt": "Espanto"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27126,
+    "title": {
+      "fr": "Frénésie",
+      "en": "Frenzy",
+      "es": "Frenesí",
+      "pt": "Frenesi"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27127,
+    "title": {
+      "fr": "Dimensionnalité",
+      "en": "Dimensionality",
+      "es": "Dimensionalidad",
+      "pt": "Dimensionalidade"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27128,
+    "title": {
+      "fr": "Théorie de la matière",
+      "en": "Theory of Matter",
+      "es": "Teoría de la Materia",
+      "pt": "Teoria da Matéria"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27129,
+    "title": {
+      "fr": "Retour",
+      "en": "Return",
+      "es": "Vuelta",
+      "pt": "Voltar"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27130,
+    "title": {
+      "fr": "Endurance",
+      "en": "Endurance",
+      "es": "Aguante",
+      "pt": "Resistência"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27131,
+    "title": {
+      "fr": "Ecailles de lune",
+      "en": "Moon Scales",
+      "es": "Fragmentos de Luna",
+      "pt": "Escamas de Lua"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27132,
+    "title": {
+      "fr": "Vélocité",
+      "en": "Swiftness",
+      "es": "Velocidad",
+      "pt": "Presteza"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "Quest Pandalucia lvl 186",
+        "es": "Misión Pandalucía lvl 186",
+        "fr": "Quête Pandalouise lvl 186",
+        "pt": "Missão Pandaluzia lvl 186"
+      }
+    }
+  },
+  {
+    "id": 27133,
+    "title": {
+      "fr": "Sauvegarde",
+      "en": "Save",
+      "es": "Guardado",
+      "pt": "Salvaguarda"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27134,
+    "title": {
+      "fr": "Bonne action",
+      "en": "Good Deed",
+      "es": "Buena acción",
+      "pt": "Boa Ação"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27135,
+    "title": {
+      "fr": "Vivacité",
+      "en": "Vivacity",
+      "es": "Vivacidad",
+      "pt": "Vivacidade"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "Quest Pandalucia lvl 186",
+        "es": "Misión Pandalucía lvl 186",
+        "fr": "Quête Pandalouise lvl 186",
+        "pt": "Missão Pandaluzia lvl 186"
+      }
+    }
+  },
+  {
+    "id": 27136,
+    "title": {
+      "fr": "Critique Berserk",
+      "en": "Berserk Critical",
+      "es": "Crítico Berserker",
+      "pt": "Crítico Berserk"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27137,
+    "title": {
+      "fr": "Visibilité",
+      "en": "Visibility",
+      "es": "Visibilidad",
+      "pt": "Visibilidade"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27138,
+    "title": {
+      "fr": "Ruine II",
+      "en": "Ruin II",
+      "es": "Ruina II",
+      "pt": "Ruína II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27139,
+    "title": {
+      "fr": "Tacle Berserk",
+      "en": "Berserk Lock",
+      "es": "Placaje Berserker",
+      "pt": "Bloqueio Berserk"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27140,
+    "title": {
+      "fr": "Ravage II",
+      "en": "Devastate II",
+      "es": "Estragos II",
+      "pt": "Assolação II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27141,
+    "title": {
+      "fr": "Dérobade II",
+      "en": "Evasion II",
+      "es": "Escapatoria II",
+      "pt": "Evasão II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27142,
+    "title": {
+      "fr": "Embuscade II",
+      "en": "Ambush II",
+      "es": "Emboscada II",
+      "pt": "Emboscada II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27143,
+    "title": {
+      "fr": "Epines",
+      "en": "Spines",
+      "es": "Espinas",
+      "pt": "Espinhos"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27144,
+    "title": {
+      "fr": "Esquive Berserk",
+      "en": "Berserk Dodge",
+      "es": "Esquiva Berserker",
+      "pt": "Esquiva Berserk"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27145,
+    "title": {
+      "fr": "Barrière Distance",
+      "en": "Distance Barrier",
+      "es": "Barrera a Distancia",
+      "pt": "Barreira a Distância"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27146,
+    "title": {
+      "fr": "Barrière Mêlée",
+      "en": "Close-Combat Barrier",
+      "es": "Barrera en Cuerpo a Cuerpo",
+      "pt": "Barreira Corpo a Corpo"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27147,
+    "title": {
+      "fr": "Ténacité II",
+      "en": "Tenacity II",
+      "es": "Tenacidad II",
+      "pt": "Tenacidade II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27148,
+    "title": {
+      "fr": "Fermeté II",
+      "en": "Resolute II",
+      "es": "Firmeza II",
+      "pt": "Firmeza II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27149,
+    "title": {
+      "fr": "Légèreté II",
+      "en": "Lightness II",
+      "es": "Ligereza II",
+      "pt": "Leveza II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27150,
+    "title": {
+      "fr": "Parade Berserk",
+      "en": "Berserk Block",
+      "es": "Anticipación Berserker",
+      "pt": "Parada Berserk"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27151,
+    "title": {
+      "fr": "Puits de Vitalité",
+      "en": "Vitality Well",
+      "es": "Pozo de Vitalidad",
+      "pt": "Poço de Vitalidade"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27152,
+    "title": {
+      "fr": "Influence",
+      "en": "Influence",
+      "es": "Influjo",
+      "pt": "Influência"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27153,
+    "title": {
+      "fr": "Frénésie II",
+      "en": "Frenzy II",
+      "es": "Frenesí II",
+      "pt": "Frenesi II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27154,
+    "title": {
+      "fr": "Muraille",
+      "en": "Wall",
+      "es": "Muralla",
+      "pt": "Muralha"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27155,
+    "title": {
+      "fr": "Cyclothymie",
+      "en": "Cyclothymia",
+      "es": "Ciclotimia",
+      "pt": "Ciclotimia"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27156,
+    "title": {
+      "fr": "Retour II",
+      "en": "Return II",
+      "es": "Vuelta II",
+      "pt": "Retorno II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27157,
+    "title": {
+      "fr": "Endurance II",
+      "en": "Endurance II",
+      "es": "Aguante II",
+      "pt": "Resistência II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27158,
+    "title": {
+      "fr": "Réprobation II",
+      "en": "Condemnation II",
+      "es": "Reprobación II",
+      "pt": "Reprovação II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27159,
+    "title": {
+      "fr": "Frénésie III",
+      "en": "Frenzy III",
+      "es": "Frenesí III",
+      "pt": "Frenesi III"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27160,
+    "title": {
+      "fr": "Longueur",
+      "en": "Length",
+      "es": "Longitud",
+      "pt": "Extensão"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27161,
+    "title": {
+      "fr": "Expert des Parades",
+      "en": "Blocking Expert",
+      "es": "Experto en Anticipación",
+      "pt": "Especialista em Paradas"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27162,
+    "title": {
+      "fr": "Enveloppe rocheuse",
+      "en": "Rocky Envelope",
+      "es": "Envoltorio Rocoso",
+      "pt": "Invólucro Rochoso"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27163,
+    "title": {
+      "fr": "Influence II",
+      "en": "Influence II",
+      "es": "Influjo II",
+      "pt": "Influência II"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 2
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27164,
+    "title": {
+      "fr": "Expert des Coups Critiques",
+      "en": "Critical Hit Expert",
+      "es": "Experto en Golpes Críticos",
+      "pt": "Especialista em Golpes Críticos"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 1
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27186,
+    "title": {
+      "fr": "Maniement : Deux mains",
+      "en": "Wield type: Two-handed",
+      "es": "Manejo: Dos manos",
+      "pt": "Manejo: Duas mãos"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27187,
+    "title": {
+      "fr": "Maniement : Dague",
+      "en": "Wield type: Dagger",
+      "es": "Manejo: Daga",
+      "pt": "Manejo: Adaga"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27188,
+    "title": {
+      "fr": "Maniement : Bouclier",
+      "en": "Wield type: Shield",
+      "es": "Manejo: Escudo",
+      "pt": "Manejo: Escudo"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27189,
+    "title": {
+      "fr": "Pacte Wakfu",
+      "en": "Wakfu Pact",
+      "es": "Pacto Wakfu",
+      "pt": "Pacto Wakfu"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27190,
+    "title": {
+      "fr": "Concentration Elémentaire",
+      "en": "Elemental Concentration",
+      "es": "Concentración Elemental",
+      "pt": "Concentração Elementar"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27191,
+    "title": {
+      "fr": "Brise",
+      "en": "Breeze",
+      "es": "Brisa",
+      "pt": "Brisa"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27192,
+    "title": {
+      "fr": "Directives",
+      "en": "Directives",
+      "es": "Directivas",
+      "pt": "Diretivas"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27193,
+    "title": {
+      "fr": "Wé",
+      "en": "Yeah",
+      "es": "Seh",
+      "pt": "Nhé"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27194,
+    "title": {
+      "fr": "Stasification",
+      "en": "Stasification",
+      "es": "Stasificación",
+      "pt": "Estasificação"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27195,
+    "title": {
+      "fr": "Arme de Lumière",
+      "en": "Light Weapon",
+      "es": "Arma de Luz",
+      "pt": "Arma de Luz"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "End-of-season Dungeon Chest",
+        "es": "Cofre de Final de Temporada de Mazmorra",
+        "fr": "Coffre Fin de Saison de Donjon",
+        "pt": "Baú de Final de Temporada de Calabouço"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27282,
+    "title": {
+      "fr": "Cicatrisation test (cumul 5)",
+      "en": "Healing",
+      "es": "Cicatrización",
+      "pt": "Cicatrização"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": 3
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27957,
+    "title": {
+      "fr": "Intégrité",
+      "en": "Integrity",
+      "es": "Integridad",
+      "pt": "Integridade"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27958,
+    "title": {
+      "fr": "Loup solitaire",
+      "en": "Lone Wolf",
+      "es": "Lobo solitario",
+      "pt": "Lobo Solitário"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27959,
+    "title": {
+      "fr": "Secret de la vie",
+      "en": "Secret of Life",
+      "es": "Secreto de la vida",
+      "pt": "Segredo da Vida"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 27960,
+    "title": {
+      "fr": "Tolérance",
+      "en": "Tolerance",
+      "es": "Tolerancia",
+      "pt": "Tolerância"
+    },
+    "effects": {
+      "en": "",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Aguabrial (2%)"
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 28383,
+    "title": {
+      "fr": "Furie",
+      "en": "Outrage",
+      "es": "Furia",
+      "pt": "Fúria"
+    },
+    "effects": {
+      "en": "At the start of combat, if the state bearer has less than 100% of their level as Dodge:\n15% damage inflicted as Berserk\n100% of level as Lock",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 28384,
+    "title": {
+      "fr": "Furie II",
+      "en": "Outrage II",
+      "es": "Furia II",
+      "pt": "Fúria II"
+    },
+    "effects": {
+      "en": "At the start of combat, if the state bearer has 4 Range or greater:\n15% damage inflicted as Berserk + Ranged simultaneously\n1 Range",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 28385,
+    "title": {
+      "fr": "Pilier",
+      "en": "Pillar",
+      "es": "Pilar",
+      "pt": "Pilar"
+    },
+    "effects": {
+      "en": "At the start of combat, if the state bearer has 50% Block or greater:\nBonus of +30% on the HP modifier\n-50% Armor received",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 28386,
+    "title": {
+      "fr": "Contrôle de l'espace",
+      "en": "Controlling Space",
+      "es": "Control del Espacio",
+      "pt": "Controle do Espaço"
+    },
+    "effects": {
+      "en": "At the start of combat, if the state bearer has exactly 1 Range:\n15% damage inflicted and healing performed on targets between 2 and 4 cells away from the caster",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 28387,
+    "title": {
+      "fr": "Longévité",
+      "en": "Longevity",
+      "es": "Longevidad",
+      "pt": "Longevidade"
+    },
+    "effects": {
+      "en": "When taking damage from the front and in close combat, once per turn:\n10% of missing HP as Armor\n40% Armor given (1 turn)",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 28388,
+    "title": {
+      "fr": "Énergie ancestrale",
+      "en": "Ancestral Energy",
+      "es": "Energía ancestral",
+      "pt": "Energia Ancestral"
+    },
+    "effects": {
+      "en": "At the start of the turn, with 6 WP or greater (500 QB or greater):\n5% damage inflicted and 25 Elemental Resistance.\nThe state is stackable; maximum is 15% damage inflicted and 75 Elemental Resistance.\nThe state is removed if the character starts their turn with less than 6 WP (or 500 QB).",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 28389,
+    "title": {
+      "fr": "Renaissance",
+      "en": "Rebirth",
+      "es": "Salvación",
+      "pt": "Renascimento"
+    },
+    "effects": {
+      "en": "-50 Elemental Resistance\nOnce per turn, when below 50% HP:\n15% damage inflicted, 50 Elemental Resistance, 1 MP (1 turn)",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  },
+  {
+    "id": 28390,
+    "title": {
+      "fr": "Paisible",
+      "en": "Peaceful",
+      "es": "Apacible",
+      "pt": "Pacífico"
+    },
+    "effects": {
+      "en": "Per MP used for a movement:\n+3% Block (1 turn) (max 18)\nIf the state bearer performs a block when it's not their turn:\nThis bonus is transformed into Critical Hit on the next turn",
+      "es": "",
+      "fr": "",
+      "pt": ""
+    },
+    "source": {
+      "chest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      },
+      "drop": {
+        "steles": ""
+      },
+      "quest": {
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "TREASURE",
+    "description": "Objet trésor (interface spéciale)"
+  },
+  {
+    "id": 7,
+    "name": "SHOP_ITEM",
+    "description": "Item proposé uniquement au shop"
+  },
+  {
+    "id": 8,
+    "name": "EXCLUSIVE_EQUIPMENT_ITEM",
+    "description": "[Relique] Il ne peut y avoir qu'un seul Item ayant cette propriété équipé à la fois"
+  },
+  {
+    "id": 12,
+    "name": "EXCLUSIVE_EQUIPMENT_ITEM_2",
+    "description": "[Relique2] Il ne peut y avoir qu'un seul Item ayant cette propriété équipé à la fois"
+  },
+  {
+    "id": 13,
+    "name": "NOT_RECYCLABLE",
+    "description": "L'objet ne peut pas être recyclé"
+  },
+  {
+    "id": 19,
+    "name": "EPIC_GEMMABLE",
+    "description": "Ajoute un slot de gemme épique à un objet"
+  },
+  {
+    "id": 20,
+    "name": "RELIC_GEMMABLE",
+    "description": "Ajoute un slot de gemme relique à un objet "
+  }
+]

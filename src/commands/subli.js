@@ -1,7 +1,8 @@
 import { mountCommandHelpEmbed } from './help'
 import { getRecipeFields } from './recipe'
-import recipesData from '../../data/recipes.json'
-import itemsData from '../../data/items.json'
+import recipesData from '../../data/generated/recipes.json'
+import itemsData from '../../data/generated/items.json'
+import { mountUrl } from '../scrappers/drop'
 import findPermutations from '../utils/permutateString'
 import { getArgumentsAndOptions, mountNotFoundEmbed } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
@@ -94,6 +95,7 @@ function mountSublimationFoundEmbed (results, lang) {
   const embedColor = isEpicOrRelic ? rarityMap[sublimationRarity].color : rarityMap[3].color
   const maxStack = firstResult.description[lang].replace(/\D/g, '')
   const sublimationEmbed = {
+    url: mountUrl(firstResult.id, firstResult.itemTypeId, lang),
     color: embedColor,
     title: `${icon} ${firstResult.title[lang]}`,
     thumbnail: { url: `https://static.ankama.com/wakfu/portal/game/item/115/${firstResult.imageId}.png` },
@@ -107,17 +109,26 @@ function mountSublimationFoundEmbed (results, lang) {
         name: str.capitalize(str.maxStacks[lang]),
         value: maxStack || '1',
         inline: true
-      },
-      {
-        name: str.capitalize(str.effects[lang]),
-        value: sublimation.effects[lang]
-      },
-      {
-        name: str.capitalize(str.acquiring[lang]),
-        value: sublimation.source[lang].trim()
       }
     ]
   }
+
+  const effects = sublimation.effects[lang] || sublimation.effects.en
+  if (effects) {
+    sublimationEmbed.fields.push({
+      name: str.capitalize(str.effects[lang]),
+      value: effects
+    })
+  }
+
+  const source = sublimation.source[lang] || sublimation.effects.en
+  if (source) {
+    sublimationEmbed.fields.push({
+      name: str.capitalize(str.acquiring[lang]),
+      value: source.trim()
+    })
+  }
+
   const recipes = recipesData.filter(recipe => recipe.result.productedItemId === firstResult.id)
   if (recipes.length) {
     const recipeFields = getRecipeFields(recipes, lang)
