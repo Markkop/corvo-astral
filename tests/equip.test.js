@@ -8,6 +8,7 @@ describe('getEquipment', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed).toEqual({
+      url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/armors/27645',
       color: '#fede71',
       title: ':yellow_circle: Tentacled Belt',
       description: "It works like a typical belt, but you can't really say it does any more than that.\nID: 27645",
@@ -116,7 +117,7 @@ describe('getEquipment', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.footer).toEqual({
-      text: "Equipment found: Dazzling Belt (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Hazieff's Helmet (Epic), Wa Wabbit's Cwown (Epic), Genetically Modified Epaulettes (Epic), Claymore of Fhenris (Epic), Bax Stab Ax (Epic), Claymus Shushu (Epic), Emiwlet Amulet (Epic), Lenald Walm Pelt (Epic), Vizion Dagger (Epic), Trool Warrior Spikes (Epic), Sanefty Belt (Epic), Happy Sram Kimono (Epic), Durable Shield (Epic), Limited Edition Cape (Epic), Dora Lagoole (Epic), Welder Mask (Epic), Viktorious Rapier (Epic) and other 4688 results"
+      text: "Equipment found: Dazzling Belt (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Hazieff's Helmet (Epic), Wa Wabbit's Cwown (Epic), Genetically Modified Epaulettes (Epic), Claymore of Fhenris (Epic), Bax Stab Ax (Epic), Claymus Shushu (Epic), Emiwlet Amulet (Epic), Lenald Walm Pelt (Epic), Vizion Dagger (Epic), Trool Warrior Spikes (Epic), Sanefty Belt (Epic), Happy Sram Kimono (Epic), Durable Shield (Epic), Limited Edition Cape (Epic), Dora Lagoole (Epic), Welder Mask (Epic), Viktorious Rapier (Epic) and other 4846 results"
     })
   })
 
