@@ -118,6 +118,7 @@ export async function getAndScrapMethodBuild (buildId) {
     const url = `https://builder.methodwakfu.com/builder/code/${buildId}`
     await page.goto(url)
     await page.waitForFunction(hasImagesLoaded)
+    await page.waitForTimeout(1000)
     const [shareButton] = await page.$x("//mat-icon[contains(., 'screen_share')]")
     if (shareButton) {
       await shareButton.click()

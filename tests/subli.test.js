@@ -8,6 +8,7 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
+      url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/resources/25796',
       color: '#fd87ba',
       title: ':gem: Brutality',
       thumbnail: {
@@ -26,7 +27,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Effects',
-          value: "If the bearer has more Area Mastery than Melee Mastery, adds the bearer's Melee Mastery to their Area Mastery and removes an equal amount of Distance Mastery at the start of combat. Melee Mastery is not lost; 800 max converted."
+          value: 'If the bearer has more Area Mastery than Melee Mastery: [pl]+20% damage inflicted in close combat and area of effect'
         },
         {
           name: 'Acquiring',
@@ -48,6 +49,7 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
+      url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/resources/27126',
       color: '#fd8e39',
       title: ':scroll: Frenzy',
       thumbnail: {
@@ -66,7 +68,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Effects',
-          value: '-20% Damage inflicted At start of turn: 10% damage inflicted per enemy hit in the previous turn.'
+          value: ', -20% Damage inflicted At start of turn: 10% damage inflicted per enemy hit in the previous turn.'
         },
         {
           name: 'Acquiring',
@@ -310,12 +312,12 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 15,
+          value: 19,
           inline: true
         },
         {
           name: 'Sublimations',
-          value: 'Inflexibility, Steadfast, Unraveling, Surgical Precision, Measure, Robust Health, Positioning Knowledge, Anatomy, Brutality, Herculean Strength, Wield type: Two-handed, Wield type: Dagger, Wield type: Shield, Wakfu Pact, Elemental Concentration'
+          value: 'Inflexibility, Steadfast, Unraveling, Surgical Precision, Measure, Robust Health, Positioning Knowledge, Anatomy, Brutality, Herculean Strength, Wield type: Two-handed, Wield type: Dagger, Wield type: Shield, Wakfu Pact, Elemental Concentration, Outrage, Outrage II, Pillar, Controlling Space'
         }
       ]
     })
@@ -326,6 +328,7 @@ describe('getSublimation', () => {
     const userMessage = mockMessage(content)
     const botMessage = await getSublimation(userMessage)
     expect(botMessage.embed).toEqual({
+      url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/resources/27153',
       color: '#fd8e39',
       title: ':scroll: Frenzy II',
       thumbnail: {
@@ -344,7 +347,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Effects',
-          value: '-15% Damage inflicted At start of turn: 5% damage inflicted per entity hit in the previous turn.'
+          value: ', -15% Damage inflicted At start of turn: 5% damage inflicted per entity hit in the previous turn.'
         },
         {
           name: 'Acquiring',

@@ -1,8 +1,9 @@
-import itemsData from '../../data/items.json'
-import recipesData from '../../data/recipes.json'
+import itemsData from '../../data/generated/items.json'
+import recipesData from '../../data/generated/recipes.json'
 import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions, mountNotFoundEmbed, reactToMessage } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
+import { mountUrl } from '../scrappers/drop'
 import str from '../stringsLang'
 import config from '../config'
 const { rarityMap, equipTypesMap } = config
@@ -88,6 +89,7 @@ function getMoreEquipmentText (results, resultsLimit, lang) {
 function mountEquipEmbed (results, lang) {
   const firstResult = results[0]
   const equipEmbed = {
+    url: mountUrl(firstResult.id, firstResult.itemTypeId, lang),
     color: rarityMap[firstResult.rarity].color,
     title: `${rarityMap[firstResult.rarity].emoji} ${firstResult.title[lang]}`,
     description: `${firstResult.description[lang]}\nID: ${firstResult.id}`,
