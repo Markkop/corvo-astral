@@ -60,10 +60,10 @@ Available languages are `en`, `es`, `pt` and `fr`.
 
 ### :shield: Equipment search
 
-A equipment search is available with `.equip <name>` command.  
+Am equipment search is available with `.equip <name>` command.  
 It's also possible to filter them by rarity with `rarity=<rarity>` option.  
-If a recipe is associated, it can be displayed by reacting with 🛠️
-**New:** Now you can react with 💰 to get it's drop data in real time
+If a recipe is associated, it can be displayed by reacting with 🛠️  
+You can also react with 💰 to get its drop data directly from Wakfu's website  
 
 **Examples**:
 ```bash
@@ -96,7 +96,7 @@ When searching by slots combionation, it's possible to match with white slots an
 
 ### :scroll: Recipe search
 
-Similar to the commands above, you can search recipes by name and rarity.  
+Similar to the commands above, you can search for recipes by name and rarity.  
 Recipes with same results are shown together.  
 
 **Examples**:
@@ -141,12 +141,10 @@ Examples:
 ### :bricks: Builder Integration
 
 By sending a Method's build link, the bot will access the link, take a printscreen and send it as a preview to the chat.  
-It'll also sum the highest elemental damage with all other non-negative secundary masteries and display it on the message.
+It'll also sum the highest elemental damage with all other non-negative secundary masteries and display it on the message.  
+You can disable this behavior by using `.config set buildPreview=disabled`  
 
 ![buildPreviewEx](https://user-images.githubusercontent.com/16388408/102099728-5bc0fe80-3e07-11eb-86a4-e61081ee314c.gif)
-
-You can disable this behavior by `.config set buildPreview=disabled`  
-Feedbacks are welcome!  
 
 ### :gear: Configurable options
 
