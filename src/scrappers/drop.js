@@ -6,7 +6,7 @@ import puppeteer from 'puppeteer'
  * @returns {object}
  */
 function scrapDrop () {
-  const containers = Array.from(document.querySelectorAll('.ak-container .ak-panel'))
+  const containers = Array.from(document.querySelectorAll('.ak-container .ak-panel .ak-container'))
   const droppedByContainer = containers.find(el => {
     const asideElement = el.querySelector('.ak-aside') || {}
     const dropText = asideElement.innerText || ''
@@ -27,6 +27,82 @@ function scrapDrop () {
 }
 
 /**
+ * Creates Wakfu's Website URL for the given resource.
+ *
+ * @param {string} itemId
+ * @param {string} type
+ * @param {string} lang
+ * @returns {string}
+ */
+export function mountUrl (itemId, type, lang) {
+  const categories = [
+    {
+      title: {
+        en: 'armors',
+        pt: 'armaduras',
+        es: 'armaduras',
+        fr: 'armures'
+      },
+      types: [103, 132, 133, 134, 136, 138]
+    },
+    {
+      title: {
+        en: 'armors',
+        pt: 'armas',
+        es: 'armas',
+        fr: 'weapons'
+      },
+      types: [101, 108, 110, 11, 112, 113, 114, 115, 117, 119, 120, 189, 219, 223, 253, 254, 480, 512, 519, 520]
+    },
+    {
+      title: {
+        en: 'pets',
+        pt: 'mascotes',
+        es: 'mascotas',
+        fr: 'familiers'
+      },
+      types: [582]
+    },
+    {
+      title: {
+        fr: 'montures',
+        en: 'mounts',
+        es: 'monturas',
+        pt: 'montarias'
+      },
+      types: [611]
+    },
+    {
+      title: {
+        fr: 'accessoires',
+        en: 'accessories',
+        es: 'accesorios',
+        pt: 'acessorios'
+      },
+      types: [646]
+    },
+    {
+      title: {
+        fr: 'ressources',
+        en: 'resources',
+        es: 'recursos',
+        pt: 'recursos'
+      },
+      types: [812, 134]
+    }
+  ]
+  const category = categories.find(cat => cat.types.some(catType => catType === type))
+
+  const encyclopedia = {
+    fr: 'encyclopedie',
+    pt: 'enciclopedia',
+    es: 'enciclopedia',
+    en: 'encyclopedia'
+  }
+  return `https://www.wakfu.com/${lang}/mmorpg/${encyclopedia[lang]}/${category.title[lang]}/${itemId}`
+}
+
+/**
  * Initate Drop Scrapper by item id and type.
  *
  * @param {number|string} itemId
@@ -36,62 +112,6 @@ function scrapDrop () {
  */
 export async function scrapDropByTypeAndId (itemId, type, lang) {
   try {
-    const categories = [
-      {
-        title: {
-          en: 'armors',
-          pt: 'armaduras',
-          es: 'armaduras',
-          fr: 'armures'
-        },
-        types: [103, 132, 133, 134, 136, 138]
-      },
-      {
-        title: {
-          en: 'armors',
-          pt: 'armas',
-          es: 'armas',
-          fr: 'weapons'
-        },
-        types: [101, 108, 110, 11, 112, 113, 114, 115, 117, 119, 120, 189, 219, 223, 253, 254, 480, 512, 519, 520]
-      },
-      {
-        title: {
-          en: 'pets',
-          pt: 'mascotes',
-          es: 'mascotas',
-          fr: 'familiers'
-        },
-        types: [582]
-      },
-      {
-        title: {
-          fr: 'montures',
-          en: 'mounts',
-          es: 'monturas',
-          pt: 'montarias'
-        },
-        types: [611]
-      },
-      {
-        title: {
-          fr: 'accessoires',
-          en: 'accessories',
-          es: 'accesorios',
-          pt: 'acessorios'
-        },
-        types: [646]
-      }
-    ]
-    const category = categories.find(cat => cat.types.some(catType => catType === type))
-
-    const encyclopedia = {
-      fr: 'encyclopedie',
-      pt: 'enciclopedia',
-      es: 'enciclopedia',
-      en: 'encyclopedia'
-    }
-
     const browser = await puppeteer.launch({
       args: [
         '--no-sandbox',
@@ -99,7 +119,8 @@ export async function scrapDropByTypeAndId (itemId, type, lang) {
       ]
     })
     const page = await browser.newPage()
-    await page.goto(`https://www.wakfu.com/${lang}/mmorpg/${encyclopedia[lang]}/${category.title[lang]}/${itemId}`)
+    const url = mountUrl(itemId, type, lang)
+    await page.goto(url)
     await page.waitForSelector('.ak-encyclo-detail-illu img', { timeout: 60000 })
     const drop = await page.evaluate(scrapDrop)
     await browser.close()
