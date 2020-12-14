@@ -3,7 +3,7 @@ const defaultConfig = {
   prefix: '.',
   almanaxChannel: 'almanax',
   partyChannel: 'listagem-de-grupos',
-  buildPreview: 'disabled'
+  buildPreview: 'enabled'
 }
 
 export default {
