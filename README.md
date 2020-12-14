@@ -7,7 +7,8 @@
 
 Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that serves as a helper for the [Wakfu MMORPG](https://www.wakfu.com/) game.  
 If you wish to add this bot to your server, access this [link](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=1342565456&scope=bot).  
-Most features support Wakfu community languages: en, es, pt and fr.
+Most features support Wakfu community languages: en, es, pt and fr.  
+If you need help or want to report bugs, feel free to join the bot's discord: https://discord.gg/aX6j3gM8HC  
 
 ## Commands
 
@@ -139,9 +140,10 @@ Examples:
 
 ### :bricks: Builder Integration
 
-This feature is still in development, but you can already check it out
-by sending a Method's build link and the bot will access the link,
-take a printscreen and send it as a preview to the chat.  
+By sending a Method's build link, the bot will access the link, take a printscreen and send it as a preview to the chat.  
+It'll also sum the highest elemental damage with all other non-negative secundary masteries and display it on the message.
+
+![buildPreviewEx](https://user-images.githubusercontent.com/16388408/102099728-5bc0fe80-3e07-11eb-86a4-e61081ee314c.gif)
 
 You can disable this behavior by `.config set buildPreview=disabled`  
 Feedbacks are welcome!  
@@ -169,12 +171,11 @@ Some bot options can be configurable according to each server using `.config`.
 
 Most translations were translated from portuguese brazilian, so they can be a little bit off.  
 If you notice any wrong translation, feel free to open a [Pull Request](https://github.com/Markkop/corvo-astral/pulls) fixing it.  
-If you don't know how to use Github, send me a message on Twitter ([@HeyMarkKop](https://twitter.com/HeyMarkKop)) or Discord (Mark#9605).  
+If you don't know how to use Github, join the bot's discord server: https://discord.gg/aX6j3gM8HC    
 
-Wakfu data is gathered from Wakfu's [CDN](https://www.wakfu.com/en/forum/332-development/236779-json-data) and [Website](https://www.wakfu.com/en/mmorpg/) and [Method](https://builder.methodwakfu.com/builder/main)'s public API.  
-The [araknomecha-scrapper](https://github.com/Markkop/araknomecha-scrapper) project contains all the code used to scrap, extract and build items and recipes data. Both projects are still not integrated, so the files generated there are copy-pasted directly here.  
+Wakfu data is gathered from Wakfu's [CDN](https://www.wakfu.com/en/forum/332-development/236779-json-data), [Wakfu's Website](https://www.wakfu.com/en/mmorpg/) and [Method](https://builder.methodwakfu.com/builder/main)'s API.  
 
-This project contains lots of tests to cover the code, so feel free to mess with it while running some test-watching command:  
+This project contains tests to cover some of the code, so feel free to mess with it while running some test-watching command:  
 
 ```bash
 npm run test -- --watch
