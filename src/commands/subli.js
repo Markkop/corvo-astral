@@ -121,7 +121,7 @@ function mountSublimationFoundEmbed (results, lang) {
     })
   }
 
-  const source = sublimation.source[lang] || sublimation.effects.en
+  const source = sublimation.source[lang] || sublimation.source.en
   if (source) {
     sublimationEmbed.fields.push({
       name: str.capitalize(str.acquiring[lang]),
