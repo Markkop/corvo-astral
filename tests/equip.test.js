@@ -60,6 +60,13 @@ describe('getEquipment', () => {
     expect(botMessage.embed.title).toEqual(':yellow_circle: Cachimbo Dapais')
   })
 
+  it('return the matching equipment when using query without accents', async () => {
+    const content = '.equip lemico lang=pt'
+    const userMessage = mockMessage(content)
+    const botMessage = await getEquipment(userMessage)
+    expect(botMessage.embed.title).toEqual(':yellow_circle: Chapéu Lêmico')
+  })
+
   it('return a matching equipment by name with lower rarity with rarity argument is provided', async () => {
     const content = '.equip the eternal rarity=mythical'
     const userMessage = mockMessage(content)

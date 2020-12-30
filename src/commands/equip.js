@@ -3,6 +3,7 @@ import recipesData from '../../data/generated/recipes.json'
 import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions, mountNotFoundEmbed, reactToMessage } from '../utils/message'
 import { setLanguage, isValidLang } from '../utils/language'
+import { hasTextOrNormalizedTextIncluded } from '../utils/strings'
 import { mountUrl } from '../scrappers/drop'
 import str from '../stringsLang'
 import config from '../config'
@@ -37,12 +38,12 @@ const iconCodeMap = {
 function findEquipmentByName (equipmentList, query, filters, lang) {
   const hasRarityFilter = Boolean(filters.rarity)
   if (!hasRarityFilter) {
-    return equipmentList.filter(equip => equip.title[lang].toLowerCase().includes(query))
+    return equipmentList.filter(equip => hasTextOrNormalizedTextIncluded(equip.title[lang], query))
   }
 
   return equipmentList.filter(equip => {
     let filterAssertion = true
-    const includeQuery = equip.title[lang].toLowerCase().includes(query)
+    const includeQuery = hasTextOrNormalizedTextIncluded(equip.title[lang], query)
     const hasRarity = rarityMap[equip.rarity].name[lang].toLowerCase().includes(filters.rarity)
     filterAssertion = filterAssertion && hasRarity
 

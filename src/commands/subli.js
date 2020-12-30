@@ -5,6 +5,7 @@ import itemsData from '../../data/generated/items.json'
 import { mountUrl } from '../scrappers/drop'
 import findPermutations from '../utils/permutateString'
 import { getArgumentsAndOptions, mountNotFoundEmbed } from '../utils/message'
+import { hasTextOrNormalizedTextIncluded } from '../utils/strings'
 import { setLanguage, isValidLang } from '../utils/language'
 import str from '../stringsLang'
 import config from '../config'
@@ -38,7 +39,10 @@ function parseSlotsToEmojis (slots) {
  */
 function findSublimationByName (sublimationList, query, lang) {
   query = query.replace(/2|ll/g, 'ii').replace(/3|lll/g, 'iii')
-  return sublimationList.filter(subli => subli.title[lang].toLowerCase().includes(query))
+  return sublimationList.filter(subli => {
+    const subliTitle = subli.title[lang].toLowerCase()
+    return hasTextOrNormalizedTextIncluded(subliTitle, query)
+  })
 }
 
 /**
@@ -50,7 +54,10 @@ function findSublimationByName (sublimationList, query, lang) {
  * @returns {object|object[]}
  */
 function findSublimationBySource (sublimationList, query, lang) {
-  return sublimationList.filter(subli => subli.sublimation.source[lang].toLowerCase().includes(query))
+  return sublimationList.filter(subli => {
+    const subliTitle = subli.sublimation.source[lang].toLowerCase()
+    return hasTextOrNormalizedTextIncluded(subliTitle, query)
+  })
 }
 
 /**

@@ -44,6 +44,13 @@ describe('getSublimation', () => {
     expect(botMessage.embed.title).toEqual(':scroll: Frenesi')
   })
 
+  it('returns the matching sublimation when using query without accents', async () => {
+    const content = '.subli influencia lang=pt'
+    const userMessage = mockMessage(content)
+    const botMessage = await getSublimation(userMessage)
+    expect(botMessage.embed.title).toEqual(':scroll: Influência')
+  })
+
   it('returns a sublimation and more results when finding more than one', async () => {
     const content = '.subli frenzy'
     const userMessage = mockMessage(content)
