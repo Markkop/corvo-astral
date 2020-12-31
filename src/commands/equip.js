@@ -31,20 +31,29 @@ const iconCodeMap = {
  *
  * @param {object[]} equipmentList
  * @param {string} query
- * @param {string[]} filters
+ * @param {string[]} options
  * @param {string} lang
  * @returns {object[]}
  */
-function findEquipmentByName (equipmentList, query, filters, lang) {
-  const hasRarityFilter = Boolean(filters.rarity)
-  if (!hasRarityFilter) {
+function findEquipmentByName (equipmentList, query, options, lang) {
+  const hasRarityOption = Object.values(str.rarity).some(rarityWord => {
+    const optionsKeys = Object.keys(options)
+    return optionsKeys.some(optionsKey => {
+      return hasTextOrNormalizedTextIncluded(rarityWord, optionsKey)
+    })
+  })
+
+  if (!hasRarityOption) {
     return equipmentList.filter(equip => hasTextOrNormalizedTextIncluded(equip.title[lang], query))
   }
 
   return equipmentList.filter(equip => {
     let filterAssertion = true
     const includeQuery = hasTextOrNormalizedTextIncluded(equip.title[lang], query)
-    const hasRarity = rarityMap[equip.rarity].name[lang].toLowerCase().includes(filters.rarity)
+    const equipRarity = rarityMap[equip.rarity].name[lang].toLowerCase()
+    const hasRarity = Object.values(str.rarity).some(rarityWord => {
+      return hasTextOrNormalizedTextIncluded(rarityWord, equipRarity)
+    })
     filterAssertion = filterAssertion && hasRarity
 
     return includeQuery && filterAssertion

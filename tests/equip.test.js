@@ -85,6 +85,17 @@ describe('getEquipment', () => {
     }]))
   })
 
+  it('return a matching equipment by name with lower rarity with rarity argument is provided on another language', async () => {
+    const content = '.equip o eterno raridade=mítico'
+    const userMessage = mockMessage(content)
+    const botMessage = await getEquipment(userMessage)
+    expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
+      name: 'Raridade',
+      value: 'Mítico',
+      inline: true
+    }]))
+  })
+
   it('return the condition if the resulting equipment has one', async () => {
     const content = '.equip amakna sword'
     const userMessage = mockMessage(content)
