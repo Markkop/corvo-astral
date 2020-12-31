@@ -40,5 +40,5 @@ function normalizeCharacters (str) {
  * @returns {string}
  */
 export function hasTextOrNormalizedTextIncluded (text, textToBeIncluded) {
-  return text.includes(textToBeIncluded) || normalizeCharacters(text).includes(textToBeIncluded)
+  return normalizeCharacters(text).includes(normalizeCharacters(textToBeIncluded))
 }
