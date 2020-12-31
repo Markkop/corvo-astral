@@ -74,13 +74,37 @@ describe('getEquipment', () => {
     expect(botMessage.embed.title).toEqual(':yellow_circle: Chapéu Lêmico')
   })
 
-  it('return a matching equipment by name with lower rarity with rarity argument is provided', async () => {
+  it('return a matching equipment by name and rarity with rarity argument is provided', async () => {
     const content = '.equip the eternal rarity=mythical'
     const userMessage = mockMessage(content)
     const botMessage = await getEquipment(userMessage)
     expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
       name: 'Rarity',
       value: 'Mythical',
+      inline: true
+    }]))
+  })
+
+  it('return a matching equipment by name and rarity with rarity argument is provided on another language', async () => {
+    const content = '.equip o eterno raridade=mítico lang=pt'
+    const userMessage = mockMessage(content)
+    const botMessage = await getEquipment(userMessage)
+    expect(botMessage.embed.title).toEqual(':orange_circle: O Eterno')
+    expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
+      name: 'Raridade',
+      value: 'Mítico',
+      inline: true
+    }]))
+  })
+
+  it('return a matching equipment by name and rarity with rarity argument with mixed languages', async () => {
+    const content = '.equip o eterno raridade=mythical lang=pt'
+    const userMessage = mockMessage(content)
+    const botMessage = await getEquipment(userMessage)
+    expect(botMessage.embed.title).toEqual(':orange_circle: O Eterno')
+    expect(botMessage.embed.fields).toEqual(expect.arrayContaining([{
+      name: 'Raridade',
+      value: 'Mítico',
       inline: true
     }]))
   })

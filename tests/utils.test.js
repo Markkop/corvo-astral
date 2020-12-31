@@ -1,5 +1,5 @@
 import { getArgumentsAndOptions, getCommand, setStartupConfig } from '../src/utils/message'
-import { setLanguage } from '../src/utils/language'
+import { setLanguage, getRarityIdByRarityNameInAnyLanguage } from '../src/utils/language'
 import findPermutations from '../src/utils/permutateString'
 import { handleMessageError, handleReactionError } from '../src/utils/handleError'
 import { mockMessage } from './testUtils'
@@ -97,5 +97,28 @@ describe('setStartupConfig', () => {
     const spy = jest.spyOn(global.console, 'log').mockImplementation()
     await setStartupConfig()
     expect(spy).toHaveBeenCalled()
+  })
+})
+
+describe('getRarityIdByRarityNameInAnyLanguage', () => {
+  it('gets the rarity id by rarity name in portuguese', () => {
+    const rarityName = 'mítico'
+    const expectedId = 3
+    const rarityId = getRarityIdByRarityNameInAnyLanguage(rarityName)
+    expect(rarityId).toEqual(expectedId)
+  })
+
+  it('gets the rarity id by rarity name in french', () => {
+    const rarityName = 'légendaire'
+    const expectedId = 4
+    const rarityId = getRarityIdByRarityNameInAnyLanguage(rarityName)
+    expect(rarityId).toEqual(expectedId)
+  })
+
+  it('gets the rarity id 0 if no rarity name is matched', () => {
+    const rarityName = 'tratoska'
+    const expectedId = 0
+    const rarityId = getRarityIdByRarityNameInAnyLanguage(rarityName)
+    expect(rarityId).toEqual(expectedId)
   })
 })

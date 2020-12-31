@@ -22,7 +22,7 @@ export function handleMessageError (error, message) {
   const channelName = message && message.channel && message.channel.name
   const authorName = message && message.author && message.author.username
   const errorText = error.toString() || ''
-  console.log(`${errorText} on guild "${guildName}", channel "${channelName}" by ${authorName}`)
+  console.log(`${errorText} on guild "${guildName}", channel "${channelName}" by ${authorName} with content \n${message.content}`)
   if (errorText.includes('TypeError')) {
     console.log(error)
   }
