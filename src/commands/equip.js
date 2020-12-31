@@ -2,7 +2,7 @@ import itemsData from '../../data/generated/items.json'
 import recipesData from '../../data/generated/recipes.json'
 import { mountCommandHelpEmbed } from './help'
 import { getArgumentsAndOptions, mountNotFoundEmbed, reactToMessage } from '../utils/message'
-import { setLanguage, isValidLang } from '../utils/language'
+import { setLanguage, isValidLang, getRarityIdByRarityNameInAnyLanguage } from '../utils/language'
 import { hasTextOrNormalizedTextIncluded } from '../utils/strings'
 import { mountUrl } from '../scrappers/drop'
 import str from '../stringsLang'
@@ -36,24 +36,20 @@ const iconCodeMap = {
  * @returns {object[]}
  */
 function findEquipmentByName (equipmentList, query, options, lang) {
-  const hasRarityOption = Object.values(str.rarity).some(rarityWord => {
-    const optionsKeys = Object.keys(options)
-    return optionsKeys.some(optionsKey => {
-      return hasTextOrNormalizedTextIncluded(rarityWord, optionsKey)
-    })
+  const optionsKeys = Object.keys(options)
+  const optionRarityKey = Object.values(str.rarity).find(rarityWord => {
+    return optionsKeys.some(optionsKey => hasTextOrNormalizedTextIncluded(rarityWord, optionsKey))
   })
 
-  if (!hasRarityOption) {
+  if (!optionRarityKey) {
     return equipmentList.filter(equip => hasTextOrNormalizedTextIncluded(equip.title[lang], query))
   }
 
   return equipmentList.filter(equip => {
     let filterAssertion = true
     const includeQuery = hasTextOrNormalizedTextIncluded(equip.title[lang], query)
-    const equipRarity = rarityMap[equip.rarity].name[lang].toLowerCase()
-    const hasRarity = Object.values(str.rarity).some(rarityWord => {
-      return hasTextOrNormalizedTextIncluded(rarityWord, equipRarity)
-    })
+    const rarityIdOption = getRarityIdByRarityNameInAnyLanguage(options[optionRarityKey])
+    const hasRarity = rarityIdOption === equip.rarity
     filterAssertion = filterAssertion && hasRarity
 
     return includeQuery && filterAssertion

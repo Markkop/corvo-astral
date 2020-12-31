@@ -1,4 +1,6 @@
 import { getConfig } from './message'
+import config from '../config'
+const { rarityMap } = config
 
 /**
  * Check if the provided language string is valid.
@@ -42,4 +44,18 @@ export function guessLanguage (text, strObject) {
     }
     return lang
   }, 'en')
+}
+
+/**
+ * Get the rarity number according to the name provided
+ * in any supported language.
+ *
+ * @param {string} rarityName
+ * @returns {number}
+ */
+export function getRarityIdByRarityNameInAnyLanguage (rarityName) {
+  return Object.entries(rarityMap).reduce((idDetected, [rarityId, rarityDetails]) => {
+    const names = Object.values(rarityDetails.name)
+    return names.some(name => rarityName.toLowerCase() === name.toLowerCase()) ? Number(rarityId) : idDetected
+  }, 0)
 }
