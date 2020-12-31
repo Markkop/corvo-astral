@@ -70,6 +70,7 @@ You can also react with 💰 to get its drop data directly from Wakfu's website
 .equip martelo de osamodas lang=pt
 .equip brakmar sword translate=fr
 .equip the eternal rarity=mythical
+.equip o eterno raridade=mítico
 ```
 
 ![](https://i.imgur.com/0oZzZ4W.png)

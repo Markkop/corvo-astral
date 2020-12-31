@@ -118,7 +118,8 @@ Rejoignez et quittez n'importe quel groupe en y réagissant avec la classe de vo
     examples: [
       '.recipe brakmar sword',
       '.recipe espada de brakmar lang=pt',
-      '.recipe peace pipe rarity=mythical'
+      '.recipe peace pipe rarity=mythical',
+      '.recipe o eterno raridade=mítico lang=pt'
     ]
   },
   help: {
