@@ -21,8 +21,9 @@ export function handleMessageError (error, message) {
   const guildName = message && message.guild && message.guild.name
   const channelName = message && message.channel && message.channel.name
   const authorName = message && message.author && message.author.username
+  const authorTag = message && message.author && message.author.tag
   const errorText = error.toString() || ''
-  console.log(`${errorText} on guild "${guildName}", channel "${channelName}" by ${authorName} with content \n${message.content}`)
+  console.log(`${errorText} on guild "${guildName}", channel "${channelName}" by ${authorName}(${authorTag}) with content "${message.content}"`)
   if (errorText.includes('TypeError')) {
     console.log(error)
   }
