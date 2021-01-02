@@ -79,6 +79,12 @@ export function getHelp (message) {
     return message.channel.send({ embed })
   }
 
+  const hasValidArgument = Object.keys(commandsHelp).some(command => command === helpArgument)
+  if (!hasValidArgument) {
+    embed.title = `No help found for command "${helpArgument}"`
+    return message.channel.send({ embed })
+  }
+
   const helpEmbed = mountCommandHelpEmbed(helpArgument, lang)
   return message.channel.send({ embed: helpEmbed })
 }

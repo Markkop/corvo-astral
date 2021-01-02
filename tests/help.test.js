@@ -13,6 +13,15 @@ describe('getHelp', () => {
     })
   })
 
+  it('returns an error with there is no help for the given option', async () => {
+    const content = '.help lang'
+    const userMessage = mockMessage(content)
+    const botMessage = await getHelp(userMessage)
+    expect(botMessage.embed).toMatchObject({
+      title: 'No help found for command "lang"'
+    })
+  })
+
   it('returns the generic help when no arguments are provided', async () => {
     const content = '.help'
     const userMessage = mockMessage(content)
