@@ -141,7 +141,7 @@ Examples:
 
 ### :bricks: Builder Integration
 
-By sending a Method's build link, the bot will access the link, take a printscreen and send it as a preview to the chat.  
+By sending a Method's or Zenith's build link, the bot will access the link, take a printscreen and send it as a preview to the chat.  
 It'll also sum the highest elemental damage with all other non-negative secundary masteries and display it on the message.  
 You can disable this behavior by using `.config set buildPreview=disabled`  
 
