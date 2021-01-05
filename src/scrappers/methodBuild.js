@@ -12,7 +12,7 @@ function hasImagesLoaded () {
 /**
  * Scrap build information from Method Builder.
  *
- * @returns {BuildData}
+ * @returns {MethodBuildData}
  */
 function scrapMethodBuild () {
   // const mainStats = document.querySelectorAll('app-main-characteristics div ')
@@ -90,7 +90,7 @@ function clickOnGetImageButton () {
  */
 
 /**
- * @typedef BuildData
+ * @typedef MethodBuildData
  * @param {MasteryStats} masteryStats
  * @param {number} highestElement
  * @param {SecondaryMastery[]} secondaryStats
@@ -102,7 +102,7 @@ function clickOnGetImageButton () {
  * Get build data from Methods's Builder.
  *
  * @param {string} buildId
- * @returns {Promise<BuildData>}
+ * @returns {Promise<MethodBuildData>}
  */
 export async function getAndScrapMethodBuild (buildId) {
   try {
