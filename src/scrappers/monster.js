@@ -33,7 +33,8 @@ function scrapMonsterSearch () {
   return monsterResultsElements.map(element => {
     const nameElement = element.querySelector('td:nth-child(2) a')
     const name = nameElement.innerText
-    const id = nameElement.href.replace(/\D/g, '')
+    const idMatch = nameElement.href.match(/([0-9]+)/)
+    const id = idMatch[1]
     const familyElement = element.querySelector('td:nth-child(3)')
     const family = familyElement.innerText
     const levelElement = element.querySelector('td:nth-child(5)')
