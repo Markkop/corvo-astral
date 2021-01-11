@@ -151,11 +151,17 @@ function scrapMonster () {
 }
 
 /**
+ * @typedef MonsterSearchResults
+ * @param { Monster[] } monstersFound
+ * @param { string } url
+ */
+
+/**
  * Access the Monster Search page and scrap its results.
  *
  * @param {number|string} query
  * @param {string} lang
- * @returns {Promise<Monster[]>}
+ * @returns {Promise<MonsterSearchResults>}
  */
 export async function searchMonsters (query, lang) {
   try {
@@ -166,10 +172,11 @@ export async function searchMonsters (query, lang) {
       ]
     })
     const page = await browser.newPage()
-    await page.goto(`https://www.wakfu.com/${lang}/mmorpg/${encyclopedia[lang]}/${monsters[lang]}?text=${query}&sort=3D`)
-    const monstersFound = await page.evaluate(scrapMonsterSearch)
+    const url = `https://www.wakfu.com/${lang}/mmorpg/${encyclopedia[lang]}/${monsters[lang]}?text=${query}&sort=3D`
+    await page.goto(url)
+    const monstersFound = await page.evaluate(scrapMonsterSearch) || []
     await browser.close()
-    return monstersFound || []
+    return { monstersFound, url }
   } catch (error) {
     if (error.name === 'TimeoutError') {
       return []
