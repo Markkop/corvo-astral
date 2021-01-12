@@ -1,4 +1,5 @@
-import puppeteer from 'puppeteer'
+import puppeteer from 'puppeteer-extra'
+import stealthPlugin from 'puppeteer-extra-plugin-stealth'
 import events from '../../data/almanaxBonuses'
 
 /**
@@ -221,6 +222,7 @@ async function getAlmanaxData (page) {
  * @returns {Promise<AlmanaxData>} AlmanaxData.
  */
 export default async function scrapAlmanax (timestamp) {
+  puppeteer.use(stealthPlugin())
   const browser = await puppeteer.launch({
     args: [
       '--no-sandbox',
