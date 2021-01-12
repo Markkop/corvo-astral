@@ -1,4 +1,5 @@
-import puppeteer from 'puppeteer'
+import puppeteer from 'puppeteer-extra'
+import stealthPlugin from 'puppeteer-extra-plugin-stealth'
 import { getWakfuBonus } from './almanax'
 
 /**
@@ -79,6 +80,7 @@ async function getAlmanaxWeekData (page) {
  * @returns {Promise<AlmanaxWeekData>} AlmanaxData.
  */
 export default async function scrapAlmanaxWeek () {
+  puppeteer.use(stealthPlugin())
   const browser = await puppeteer.launch({
     args: [
       '--no-sandbox',
