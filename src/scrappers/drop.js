@@ -1,4 +1,5 @@
-import puppeteer from 'puppeteer'
+import puppeteer from 'puppeteer-extra'
+import stealthPlugin from 'puppeteer-extra-plugin-stealth'
 
 /**
  * Scrap drop information from item.
@@ -112,6 +113,7 @@ export function mountUrl (itemId, type, lang) {
  */
 export async function scrapDropByTypeAndId (itemId, type, lang) {
   try {
+    puppeteer.use(stealthPlugin())
     const browser = await puppeteer.launch({
       args: [
         '--no-sandbox',
@@ -139,6 +141,7 @@ export async function scrapDropByTypeAndId (itemId, type, lang) {
  * @returns {Promise<object>} DropData.
  */
 export async function scrapDropByName (itemName) {
+  puppeteer.use(stealthPlugin())
   const browser = await puppeteer.launch({
     args: [
       '--no-sandbox',
