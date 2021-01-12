@@ -1,4 +1,5 @@
-import puppeteer from 'puppeteer'
+import puppeteer from 'puppeteer-extra'
+import stealthPlugin from 'puppeteer-extra-plugin-stealth'
 
 const encyclopedia = {
   fr: 'encyclopedie',
@@ -165,6 +166,7 @@ function scrapMonster () {
  */
 export async function searchMonsters (query, lang) {
   try {
+    puppeteer.use(stealthPlugin())
     const browser = await puppeteer.launch({
       args: [
         '--no-sandbox',
@@ -193,6 +195,7 @@ export async function searchMonsters (query, lang) {
  */
 export async function getAndScrapMonsterById (monsterId, lang) {
   try {
+    puppeteer.use(stealthPlugin())
     const browser = await puppeteer.launch({
       args: [
         '--no-sandbox',
