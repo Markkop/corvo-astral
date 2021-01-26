@@ -24,8 +24,7 @@ export async function getAlmanaxBonus (message, alma) {
       color: '#40b2b5',
       title: `:partly_sunny: ${stringDate}`,
       description: `**Season:** ${capitalize(alma.date.season)}
-**Quest:** ${alma.daily.wakfu.bonus.title}
-**Bonus:** ${alma.daily.wakfu.bonus.description}`,
+**Bonus:** ${alma.wakfuBonus.text.en}`,
       thumbnail: { url: image },
       footer: {
         text: new Date(Date.now()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false })

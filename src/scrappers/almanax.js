@@ -71,57 +71,6 @@ function getAlmanaxZodiac () {
 }
 
 /**
- * Get the Almanax Quests and Bonuses.
- *
- * @param {object} wakfuBonus
- * @returns {object}
- */
-function getAlmanaxDailies (wakfuBonus) {
-  const games = ['wakfu', 'dofus', 'dofus touch']
-  const dailies = Array.from(document.querySelectorAll('.achievement'))
-  const almanaxDailies = {}
-  for (let index = 0; index < games.length; index++) {
-    const game = games[index]
-    const daily = dailies.find(dailyElement => dailyElement.querySelector('.top h4').innerText.toLowerCase().includes(game))
-    if (!daily) {
-      continue
-    }
-    const propertyName = game === 'dofus touch' ? 'dofusTouch' : game
-    const dailyInfo = daily.querySelector('.achievement .mid').innerText.split('\n').filter(Boolean)
-    const bonusTitle = dailyInfo[0]
-    const bonusDescription = dailyInfo[1]
-    const questTitle = dailyInfo[2]
-    const questDescription = dailyInfo[3]
-
-    if (game === 'wakfu') {
-      almanaxDailies[propertyName] = {
-        bonus: {
-          title: bonusTitle,
-          description: wakfuBonus.text.en,
-          wakfuBonus
-        }
-      }
-    } else {
-      almanaxDailies[propertyName] = {
-        bonus: {
-          title: bonusTitle,
-          description: bonusDescription
-        }
-      }
-    }
-    if (questTitle) {
-      almanaxDailies[propertyName].quest = {
-        title: questTitle,
-        description: questDescription,
-        imageUrl: daily.querySelector('.achievement .mid img').getAttribute('src')
-      }
-    }
-  }
-
-  return almanaxDailies
-}
-
-/**
  * Get the Almanax Date.
  *
  * @returns {object}
@@ -168,22 +117,13 @@ function getAlmanaxMeridianEffect () {
  * @property {Entity} event
  * @property {string} trivia
  * @property {string} meridianEffect
- * @property {Daily} wakfu
- * @property {Daily} dofus
- * @property {Daily} dofusTouch
- *
+ */
+
+/**
  * @typedef Entity
  * @property {string} title
  * @property {string} description
  * @property {string} imageUrl
- *
- * @typedef Daily
- * @property {object} daily
- * @property {string} daily.title
- * @property {string} daily.description
- * @property {object} [quest]
- * @property {string} quest.title
- * @property {string} quest.description
  */
 
 /**
@@ -201,7 +141,7 @@ async function getAlmanaxData (page) {
   const event = await page.evaluate(getAlmanaEvent)
   const trivia = await page.evaluate(getAlmanaxTrivia)
   const meridianEffect = await page.evaluate(getAlmanaxMeridianEffect)
-  const daily = await page.evaluate(getAlmanaxDailies, getWakfuBonus())
+  const wakfuBonus = getWakfuBonus()
   return {
     scrappedDate,
     date,
@@ -211,7 +151,7 @@ async function getAlmanaxData (page) {
     event,
     trivia,
     meridianEffect,
-    daily
+    wakfuBonus
   }
 }
 
