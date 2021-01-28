@@ -130,7 +130,7 @@ export async function createParty (message) {
     message.react('✅')
     return sentMessage
   } catch (error) {
-    message.send.channel('Dang, something went very wrong. Try asking for help. Anyone?')
+    message.channel.send('Dang, something went very wrong. Try asking for help. Anyone?')
     handleMessageError(error, message)
   }
 }
