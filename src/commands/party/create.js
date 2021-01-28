@@ -12,6 +12,12 @@ const { classEmoji } = config
  * @returns {object} Options.
  */
 async function askOptions (message) {
+  const partyChannel = getPartyChannel(message.guild)
+  if (!partyChannel) {
+    message.channel.send("Oops, I couldn't find a Party Channel. Maybe you've forgotten to create one or misconfigured it on .config.")
+    return {}
+  }
+
   const askNameText = ':label: Hey! Tell me the **title** you want for the group that will be listed.'
   const { content: name } = await askAndWait(askNameText, message)
   if (!name) return {}
