@@ -111,9 +111,10 @@ export async function askAndWait (questionText, message, noResponseText) {
   try {
     await message.channel.send(questionText)
     const filterMessagesByAuthorId = newMessage => newMessage.author.id === message.author.id
+    const waitTime = 90 * 1000
     const waitConfig = {
       max: 1,
-      time: 30000,
+      time: waitTime,
       errors: ['time']
     }
     const awaitedMessages = await message.channel.awaitMessages(filterMessagesByAuthorId, waitConfig)
