@@ -6,7 +6,6 @@ import onMessageReactionAdd from './reactions/onMessageReactionAdd'
 import onMessageReactionRemove from './reactions/onMessageReactionRemove'
 import { handleMessageError } from './utils/handleError'
 import { getCommand, setStartupConfig } from './utils/message'
-import { getMethodBuildFromMessage, getZenithBuildFromMessage } from './integrations'
 import config from './config'
 import dotenv from 'dotenv'
 dotenv.config()
@@ -27,17 +26,6 @@ const commandActions = {
   time: (message) => message.reply(new Date().toString())
 }
 
-const builderIntegrations = [
-  {
-    identifierText: 'builder.methodwakfu.com/builder/',
-    getter: getMethodBuildFromMessage
-  },
-  {
-    identifierText: 'zenithwakfu.com/builder/',
-    getter: getZenithBuildFromMessage
-  }
-]
-
 /**
  * Initialize this bot.
  */
@@ -56,13 +44,6 @@ async function init () {
   client.on('message', async function (message) {
     try {
       if (message.author.bot) return
-
-      // Removing builder preview until further fix
-      // const matchingBuilderIntegration = builderIntegrations.find(integration => message.content.includes(integration.identifierText))
-
-      // if (matchingBuilderIntegration) {
-      //   return matchingBuilderIntegration.getter(message)
-      // }
 
       if (!message.content.startsWith(prefix)) return
       if (!message.guild) return
