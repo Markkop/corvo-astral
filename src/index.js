@@ -57,11 +57,12 @@ async function init () {
     try {
       if (message.author.bot) return
 
-      const matchingBuilderIntegration = builderIntegrations.find(integration => message.content.includes(integration.identifierText))
+      // Removing builder preview until further fix
+      // const matchingBuilderIntegration = builderIntegrations.find(integration => message.content.includes(integration.identifierText))
 
-      if (matchingBuilderIntegration) {
-        return matchingBuilderIntegration.getter(message)
-      }
+      // if (matchingBuilderIntegration) {
+      //   return matchingBuilderIntegration.getter(message)
+      // }
 
       if (!message.content.startsWith(prefix)) return
       if (!message.guild) return
