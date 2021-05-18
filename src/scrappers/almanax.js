@@ -107,16 +107,17 @@ function getAlmanaxMeridianEffect () {
 /**
  * @typedef AlmanaxData
  * @property {string} scrappedDate
- * @property {object} date
+ * @property {object} [date]
  * @property {string} date.day
  * @property {string} date.month
  * @property {string} date.season
- * @property {Entity} boss
- * @property {Entity} protector
- * @property {Entity} zodiac
- * @property {Entity} event
- * @property {string} trivia
- * @property {string} meridianEffect
+ * @property {Entity} [boss]
+ * @property {Entity} [protector]
+ * @property {Entity} [zodiac]
+ * @property {Entity} [event]
+ * @property {string} [trivia]
+ * @property {string} [meridianEffect]
+ * @property {boolean} [scrappingError]
  */
 
 /**
@@ -133,25 +134,34 @@ function getAlmanaxMeridianEffect () {
  * @returns {AlmanaxData}
  */
 async function getAlmanaxData (page) {
-  const scrappedDate = new Date().toLocaleString()
-  const date = await page.evaluate(getAlmanaxDate)
-  const boss = await page.evaluate(getAlmanaxBoss)
-  const protector = await page.evaluate(getAlmanaxProtector)
-  const zodiac = await page.evaluate(getAlmanaxZodiac)
-  const event = await page.evaluate(getAlmanaEvent)
-  const trivia = await page.evaluate(getAlmanaxTrivia)
-  const meridianEffect = await page.evaluate(getAlmanaxMeridianEffect)
-  const wakfuBonus = getWakfuBonus()
-  return {
-    scrappedDate,
-    date,
-    boss,
-    protector,
-    zodiac,
-    event,
-    trivia,
-    meridianEffect,
-    wakfuBonus
+  try {
+    const scrappedDate = new Date().toLocaleString()
+    const date = await page.evaluate(getAlmanaxDate)
+    const boss = await page.evaluate(getAlmanaxBoss)
+    const protector = await page.evaluate(getAlmanaxProtector)
+    const zodiac = await page.evaluate(getAlmanaxZodiac)
+    const event = await page.evaluate(getAlmanaEvent)
+    const trivia = await page.evaluate(getAlmanaxTrivia)
+    const meridianEffect = await page.evaluate(getAlmanaxMeridianEffect)
+    const wakfuBonus = getWakfuBonus()
+    return {
+      scrappedDate,
+      date,
+      boss,
+      protector,
+      zodiac,
+      event,
+      trivia,
+      meridianEffect,
+      wakfuBonus
+    }
+  } catch (error) {
+    console.log(error)
+    const wakfuBonus = getWakfuBonus()
+    return {
+      wakfuBonus,
+      scrappingError: true
+    }
   }
 }
 
@@ -164,6 +174,7 @@ async function getAlmanaxData (page) {
 export default async function scrapAlmanax (timestamp) {
   puppeteer.use(stealthPlugin())
   const browser = await puppeteer.launch({
+    headless: true,
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox'

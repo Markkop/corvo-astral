@@ -18,25 +18,32 @@ export async function getAlmanaxBonus (message, alma) {
     if (!alma) {
       alma = await scrapAlmanax()
     }
-    const stringDate = `${alma.date.day} ${alma.date.month} ${alma.date.year}`
-    const image = alma.boss.imageUrl
+
+    let title = "Today's Almanax"
     const embed = {
       color: '#40b2b5',
-      title: `:partly_sunny: ${stringDate}`,
-      description: `**Season:** ${capitalize(alma.date.season)}
-**Bonus:** ${alma.wakfuBonus.text.en}`,
-      thumbnail: { url: image },
+      title: `:partly_sunny: ${title}`,
+      description: `**Bonus:** ${alma.wakfuBonus.text.en}`,
       footer: {
         text: new Date(Date.now()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false })
       }
     }
 
-    const sentMessage = await message.channel.send({ embed })
-    const reactions = ['🛡️', '🙏', '🌌', '🍀', '🔎', '🔮']
-    if (alma.event.title) {
-      reactions.push('🗓️')
+    if (!alma.scrappingError) {
+      title = `${alma.date.day} ${alma.date.month} ${alma.date.year}`
+      embed.description = embed.description + `\n**Season:** ${capitalize(alma.date.season)}`
+      embed.thumbnail = { url: alma.boss.imageUrl }
     }
-    await reactToMessage(reactions, sentMessage)
+
+    const sentMessage = await message.channel.send({ embed })
+
+    if (!alma.scrappingError) {
+      const reactions = ['🛡️', '🙏', '🌌', '🍀', '🔎', '🔮']
+      if (alma.event.title) {
+        reactions.push('🗓️')
+        await reactToMessage(reactions, sentMessage)
+      }
+    }
     await awaitReaction.remove()
     return sentMessage
   } catch (error) {
