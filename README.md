@@ -28,6 +28,8 @@ If you need help or want to report bugs, feel free to join the bot's discord: ht
 ### :milky_way:  Krosmoz Almanax
 
 Inspired by [wakmanax](https://github.com/elio-centrique/wakmanax), the `.alma` command scraps [Krosmoz Almanax](http://www.krosmoz.com/en/almanax) page and returns tons of cool stuff such as Protector of the Day, Zodiac, Trivia, Event and Forecast!  
+**However, all these features are currently disabled because Ankama has protected their websites from scrapping and we can no longer retrieve this extra info.
+The Almanax Bonus is still available!**
   
 ![](https://i.imgur.com/BVOqE2p.gif)
 
@@ -153,7 +155,7 @@ Some bot options can be configurable according to each server using `.config`.
 **Options**:
 * lang: default bot language between fr, en, es and pt (default: en)
 * prefix: character to call commands (default: .) _(not available yet)_
-* almanaxChannel: channel receive the `.alma` command daily (default: almanax)
+* almanaxChannel: channel to receive the `.alma` command daily (default: almanax)
 * partyChannel: channel to receive the `.party` command (default: listagem-de-grupos)
 * buildPreview: `enabled` (default) or `disabled` to show a build printscreen and other info
 
