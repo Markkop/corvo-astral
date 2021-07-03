@@ -1,5 +1,5 @@
-import mongoose from 'mongoose'
-import ConfigManager from './config'
+import { connection, connect, disconnect } from 'mongoose'
+import ConfigManager from './ConfigManager'
 import { GuildConfig } from './types'
 import GuildModel from './models/guild'
 
@@ -15,10 +15,10 @@ export default class DatabaseManager {
     return DatabaseManager.instance;
   }
 
-  private async connect() {
+  private async connectDatabase() {
     try {
-      if (mongoose.connection.readyState === 0) {
-        mongoose.connect(`mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_URL}/test?retryWrites=true&w=majority`, {
+      if (connection.readyState === 0) {
+        connect(`mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_URL}/test?retryWrites=true&w=majority`, {
           useNewUrlParser: true,
           useUnifiedTopology: true,
           useFindAndModify: false
@@ -31,7 +31,7 @@ export default class DatabaseManager {
 
   public async createOrUpdateGuild (guildConfig: GuildConfig) {
     try {
-      await this.connect()
+      await this.connectDatabase()
       const guild = await GuildModel.findOneAndUpdate({ id: guildConfig.guildId }, guildConfig, {
         new: true,
         upsert: true
@@ -45,7 +45,7 @@ export default class DatabaseManager {
 
   public async getGuildConfig (guildId: string) {
     try {
-      await this.connect()
+      await this.connectDatabase()
       const [guildConfig] = await GuildModel.find({ id: guildId }).lean()
       const defaultConfig = ConfigManager.getDefaultConfig()
       if (!guildConfig) {
@@ -66,7 +66,7 @@ export default class DatabaseManager {
 
   public async getAllGuildsConfigs () {
     try {
-      await this.connect()
+      await this.connectDatabase()
       const allGuildsConfig = await GuildModel.find({}).lean()
       return allGuildsConfig
     } catch (error) {

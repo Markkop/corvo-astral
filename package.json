@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "npm run build && node dist/index.js",
-    "build": "babel src -d dist",
+    "build": "tsc",
     "import": "npm run build && node dist/importers",
     "lint": "eslint .",
     "test": "jest tests/ --runInBand",
@@ -38,6 +38,7 @@
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
     "@types/jest": "^26.0.13",
+    "@types/node": "^14.17.4",
     "babel-jest": "^26.3.0",
     "eslint": "^7.8.1",
     "eslint-config-standard": "^14.1.1",

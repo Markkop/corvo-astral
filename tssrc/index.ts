@@ -1,26 +1,17 @@
 import { Client, Message } from 'discord.js'
-import cron from 'node-cron'
-import notifyAlmanaxBonus from './almaNotifier'
-import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment, getAbout, partyList, getRecipe, configGuild, getMonster } from './commands'
-import onMessageReactionAdd from './reactions/onMessageReactionAdd'
-import onMessageReactionRemove from './reactions/onMessageReactionRemove'
+// import cron from 'node-cron'
+// import notifyAlmanaxBonus from './almaNotifier'
+// import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment, getAbout, partyList, getRecipe, configGuild, getMonster } from './commands'
+// import onMessageReactionAdd from './reactions/onMessageReactionAdd'
+// import onMessageReactionRemove from './reactions/onMessageReactionRemove'
 import { handleMessageError } from './utils/handleError'
-import { getCommand, setStartupConfig } from './utils/message'
-import dotenv from 'dotenv'
-import ConfigManager from './config'
-dotenv.config()
+// import { getCommand, setStartupConfig } from './utils/message'
+import ConfigManager from './ConfigManager'
+import EquipCommand from './commands/EquipCommand'
+require('dotenv').config()
 
 const commandsMap = {
-  alma: getAlmanaxBonus,
-  calc: calculateAttackDamage,
-  help: getHelp,
-  subli: getSublimation,
-  equip: getEquipment,
-  about: getAbout,
-  party: partyList,
-  recipe: getRecipe,
-  config: configGuild,
-  mob: getMonster,
+  equip: EquipCommand,
   time: (message) => message.reply(new Date().toString())
 }
 
@@ -38,9 +29,15 @@ class Bot {
   }
 
   public listen(): Promise<string> {
-    this.client.on('message', this.onMessage);
+    this.client.on('message', this.onMessage.bind(this));
+    this.client.on('ready', this.onReady.bind(this))
 
     return this.client.login(this.token);
+  }
+
+  private onReady() {
+    console.log(`Online on ${this.client.guilds.cache.size} servers: ${this.client.guilds.cache.map(ch => ch.name).join(', ')}`)
+    this.client.user.setActivity('.about or .help', { type: 'PLAYING' })
   }
 
   private async onMessage(message: Message) {
@@ -53,9 +50,11 @@ class Bot {
 
       const commandWord = this.getCommandWord(guildConfig.prefix, message)
       const command = this.getCommand(commandWord)
-
+      
       if (!command) return
-      await command(message)
+
+      const CommandClass = new command(message, commandWord, guildConfig)
+      await CommandClass.return()
     } catch (error) {
       handleMessageError(error, message)
     }

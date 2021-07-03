@@ -1,5 +1,5 @@
 import { GuildConfig, DefaultGuildConfig } from './types'
-import DatabaseManager from './databaseManager'
+import DatabaseManager from './DatabaseManager'
 
 class ConfigManager {
   private static instance: ConfigManager;
@@ -26,7 +26,12 @@ class ConfigManager {
   }
 
   public getGuildConfig(guildId: string) {
-    return this.guildsConfig.find(guildConfig => guildConfig.guildId === guildId)
+    const guildConfig = this.guildsConfig.find(config => config.guildId === guildId)
+    const defaultConfig = ConfigManager.getDefaultConfig()
+    if (!guildConfig) {
+      return defaultConfig
+    }
+    return { ...defaultConfig, ...guildConfig}
   }
 
   public static getDefaultConfig() {
