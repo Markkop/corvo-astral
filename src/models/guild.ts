@@ -1,7 +1,10 @@
 /* istanbul ignore file */
-import mongoose from 'mongoose'
+import { Schema, model, Document } from 'mongoose'
+import { GuildConfig } from '../types'
 
-const GuildSchema = new mongoose.Schema({
+interface GuildConfigModelInterface extends GuildConfig, Document {}
+
+const GuildConfigSchema = new Schema<GuildConfigModelInterface>({
   id: {
     type: String,
     required: true
@@ -28,5 +31,5 @@ const GuildSchema = new mongoose.Schema({
   }
 })
 
-const Guild = mongoose.model('Guild', GuildSchema)
-module.exports = Guild
+const GuildModel = model<GuildConfigModelInterface>('Guild', GuildConfigSchema)
+export default GuildModel
