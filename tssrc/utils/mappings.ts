@@ -50,7 +50,7 @@ export default {
         pt: 'Comum'
       },
       emoji: ':white_circle:',
-      color: 'LIGHT_GREY'
+      color: 0xBCC0C0
     },
     2: {
       name: {
@@ -60,7 +60,7 @@ export default {
         pt: 'Raro'
       },
       emoji: ':green_circle:',
-      color: '#28f18b'
+      color: 0x28f18b
     },
     3: {
       name: {
@@ -70,7 +70,7 @@ export default {
         pt: 'Mítico'
       },
       emoji: ':orange_circle:',
-      color: '#fd8e39'
+      color: 0xfd8e39
     },
     4: {
       name: {
@@ -80,7 +80,7 @@ export default {
         pt: 'Lendário'
       },
       emoji: ':yellow_circle:',
-      color: '#fede71'
+      color: 0xfede71
     },
     5: {
       name: {
@@ -90,7 +90,7 @@ export default {
         pt: 'Relíquia'
       },
       emoji: ':purple_circle:',
-      color: '#ff47e7'
+      color: 0xff47e7
     },
     6: {
       name: {
@@ -100,7 +100,7 @@ export default {
         pt: 'Anelembrança'
       },
       emoji: ':blue_circle:',
-      color: '#8fc7e2'
+      color: 0x8fc7e2
     },
     7: {
       name: {
@@ -110,7 +110,7 @@ export default {
         pt: 'Épico'
       },
       emoji: ':purple_circle:',
-      color: '#fd87ba'
+      color: 0xfd87ba
     },
     10: {
       name: {
@@ -120,7 +120,7 @@ export default {
         pt: 'Impossível'
       },
       emoji: ':purple_circle:',
-      color: '#ff47e7'
+      color: 0xff47e7
     }
   },
   jobsMap: {
@@ -452,5 +452,23 @@ export default {
       es: 'Trajes',
       pt: 'Trajes'
     }
+  },
+  itemEmojis: {
+    24029: ':droplet:',
+    27093: ':sparkles:',
+    20605: ':adhesive_bandage:',
+    20606: ':adhesive_bandage:',
+    21115: ':adhesive_bandage:',
+    21116: ':adhesive_bandage:',
+    21117: ':adhesive_bandage:',
+    21118: ':adhesive_bandage:',
+    21119: ':adhesive_bandage:',
+    21120: ':adhesive_bandage:',
+    21121: ':adhesive_bandage:',
+    21122: ':adhesive_bandage:',
+    21123: ':adhesive_bandage:',
+    21124: ':adhesive_bandage:',
+    21125: ':adhesive_bandage:',
+    27886: ':adhesive_bandage:'
   }
 }

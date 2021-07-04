@@ -35,7 +35,7 @@ const iconCodeMap = {
  * @param {string} lang
  * @returns {object[]}
  */
-function findEquipmentByName (equipmentList, query, options, lang) {
+function getItemByName (equipmentList, query, options, lang) {
   const optionsKeys = Object.keys(options)
   const optionRarityKey = Object.values(str.rarity).find(rarityWord => {
     return optionsKeys.some(optionsKey => hasTextOrNormalizedTextIncluded(rarityWord, optionsKey))
@@ -163,7 +163,7 @@ export async function getEquipment (message) {
   }
 
   let results = []
-  results = findEquipmentByName(equipmentList, query, options, lang)
+  results = getItemByName(equipmentList, query, options, lang)
   if (!results.length) {
     const notFoundEmbed = mountNotFoundEmbed(message, lang)
     return message.channel.send({ embed: notFoundEmbed })

@@ -1,5 +1,5 @@
 import { FinderCommand } from '@baseCommands'
-import { EquipmentManager, RecipesManager, MessageManager } from '@managers'
+import { ItemManager, RecipesManager, MessageManager } from '@managers'
 import { mountUrl } from '@utils/mountUrl'
 import mappings from '@utils/mappings'
 import str from '@stringsLang'
@@ -25,7 +25,7 @@ export default class EquipCommand extends FinderCommand {
       this.changeLang(options.lang)
     }
 
-    const results = EquipmentManager.findEquipmentByName(query, options, this.lang)
+    const results = ItemManager.getEquipmentByName(query, options, this.lang)
     if (!results.length) {
       this.returnNotFound()
       return
@@ -39,8 +39,7 @@ export default class EquipCommand extends FinderCommand {
     const sentMessage = await this.reply({ embed: equipEmbed })
 
     const reactions = ['💰']
-    const recipesManager = new RecipesManager()
-    const recipes = recipesManager.getRecipesByProductedItemId(results[0].id)
+    const recipes = RecipesManager.getRecipesByProductedItemId(results[0].id)
     if (recipes.length) {
       reactions.unshift('🛠️')
     }

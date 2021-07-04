@@ -1,11 +1,11 @@
 import { hasTextOrNormalizedTextIncluded } from '@utils/strings'
-import mappings from '@utils/mappings'
 import str from '@stringsLang'
-import { ItemData } from '@types'
-const itemsData = require('../../data/generated/items.json')
+import { CommandOptions, ItemData, Language } from '@types'
+import mappings from '@utils/mappings'
 const { equipTypesMap, rarityMap } = mappings
+const itemsData = require('../../data/generated/items.json')
 
-class EquipmentManager {
+class ItemManager {
   private itemsList: ItemData[]
   private equipmentList: ItemData[]
 
@@ -21,25 +21,33 @@ class EquipmentManager {
       .sort((itemA, itemB) => itemB.rarity - itemA.rarity)
   }
 
-  public findEquipmentByName (query, options, lang) {
+  public getEquipmentByName(name: string, options: CommandOptions, lang: string) {
+    return this.getItemByName(this.equipmentList, name, options, lang)
+  }
+
+  public getItemByName (itemList: ItemData[], name: string, options: CommandOptions, lang: string) {
     const optionsKeys = Object.keys(options)
     const optionRarityKey = Object.values<string>(str.rarity).find(rarityWord => {
       return optionsKeys.some(optionsKey => hasTextOrNormalizedTextIncluded(rarityWord, optionsKey))
     })
 
     if (!optionRarityKey) {
-      return this.equipmentList.filter(equip => hasTextOrNormalizedTextIncluded(equip.title[lang], query))
+      return itemList.filter(equip => hasTextOrNormalizedTextIncluded(equip.title[lang], name))
     }
 
-    return this.equipmentList.filter(equip => {
+    return itemList.filter(equip => {
       let filterAssertion = true
-      const includeQuery = hasTextOrNormalizedTextIncluded(equip.title[lang], query)
+      const includeName = hasTextOrNormalizedTextIncluded(equip.title[lang], name)
       const rarityIdOption = this.getRarityIdByRarityNameInAnyLanguage(options[optionRarityKey])
       const hasRarity = rarityIdOption === equip.rarity
       filterAssertion = filterAssertion && hasRarity
 
-      return includeQuery && filterAssertion
+      return includeName && filterAssertion
     })
+  }
+
+  public getItemById(id: number) {
+    return this.itemsList.find(equip => equip.id === id)
   }
 
   // TO Do: move this function
@@ -51,5 +59,5 @@ class EquipmentManager {
   }
 }
 
-const equipmentManager = new EquipmentManager()
-export default equipmentManager
+const itemManager = new ItemManager()
+export default itemManager

@@ -11,14 +11,16 @@ import { ConfigManager, MessageManager } from '@managers'
 import { 
   EquipCommand,
   AboutCommand,
-  CalcCommand
+  CalcCommand,
+  RecipeCommand
  } from '@commands'
 require('dotenv').config()
 
 const commandsMap = {
   equip: EquipCommand,
   about: AboutCommand,
-  calc: CalcCommand
+  calc: CalcCommand,
+  recipe: RecipeCommand
 }
 
 class Bot {

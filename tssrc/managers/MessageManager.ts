@@ -33,6 +33,13 @@ class MessageManager {
       await message.react(reactions[index])
     }
   }
+
+  public static convertToCodeBlock (text: string, codeBlockCharactersLength: number) {
+    const textCharacters = String(text).split('')
+    const whiteSpacesCharacters = Array(codeBlockCharactersLength).fill(' ')
+    whiteSpacesCharacters.splice(0, textCharacters.length, ...textCharacters)
+    return `\`${whiteSpacesCharacters.join('')}\``
+  }
 }
 
 export default MessageManager
