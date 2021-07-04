@@ -1,6 +1,6 @@
 import { hasTextOrNormalizedTextIncluded } from '@utils/strings'
 import str from '@stringsLang'
-import { CommandOptions, ItemData, Language } from '@types'
+import { CommandOptions, ItemData } from '@types'
 import mappings from '@utils/mappings'
 const { equipTypesMap, rarityMap } = mappings
 const itemsData = require('../../data/generated/items.json')
@@ -8,10 +8,12 @@ const itemsData = require('../../data/generated/items.json')
 class ItemManager {
   private itemsList: ItemData[]
   private equipmentList: ItemData[]
+  private sublimationList: ItemData[]
 
   constructor () {
     this.itemsList = itemsData
     this.setEquipmentList()
+    this.setSublimationList()
   }
 
   private setEquipmentList () {
@@ -21,8 +23,8 @@ class ItemManager {
       .sort((itemA, itemB) => itemB.rarity - itemA.rarity)
   }
 
-  public getEquipmentByName(name: string, options: CommandOptions, lang: string) {
-    return this.getItemByName(this.equipmentList, name, options, lang)
+  private setSublimationList () {
+    this.sublimationList = this.itemsList.filter(item => Boolean(item.sublimation))
   }
 
   public getItemByName (itemList: ItemData[], name: string, options: CommandOptions, lang: string) {
@@ -50,12 +52,107 @@ class ItemManager {
     return this.itemsList.find(equip => equip.id === id)
   }
 
-  // TO Do: move this function
+  public getEquipmentByName(name: string, options: CommandOptions, lang: string) {
+    return this.getItemByName(this.equipmentList, name, options, lang)
+  }
+
+  public getSublimationByName (name: string, options: CommandOptions, lang: string) {
+    name = name.replace(/2|ll/g, 'ii').replace(/3|lll/g, 'iii')
+    return this.getItemByName(this.sublimationList, name, options, lang)
+  }
+
+  public getSublimationBySource (source: string, lang: string) {
+    return this.sublimationList.filter(subli => {
+      const subliTitle = subli.sublimation.source[lang].toLowerCase()
+      return hasTextOrNormalizedTextIncluded(subliTitle, source)
+    })
+  }
+
+  public getSublimationByMatchingSlots (query: string) {
+    const isFourSlotsCombination = query.length === 4 && query !== 'epic'
+    const regexQuery = new RegExp(query.replace(/w/g, '[r|g|b]{1}'))
+    if (isFourSlotsCombination) {
+      const firstCombination = query.slice(0, 3)
+      const secondCombination = query.slice(1, 4)
+      const firstCombinationRegex = new RegExp(firstCombination.replace(/w/g, '[r|g|b]{1}'))
+      const secondCombinationRegex = new RegExp(secondCombination.replace(/w/g, '[r|g|b]{1}'))
+      const firstCombinationResults = this.sublimationList.filter(item => firstCombinationRegex.test(item.sublimation.slots.toLowerCase()))
+      const secondCombinationResults = this.sublimationList.filter(item => {
+        const isRepeated = firstCombinationResults.includes(item)
+        const matchesCombination = secondCombinationRegex.test(item.sublimation.slots.toLowerCase())
+        return matchesCombination && !isRepeated
+      })
+      return [...firstCombinationResults, ...secondCombinationResults]
+    }
+    return this.sublimationList.filter(item => regexQuery.test(item.sublimation.slots.toLowerCase()))
+  }
+
+  public getSublimations (query, options, hasAnyOrderArgument, lang) {
+    const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|epic|relic/.test(query)
+    let results = []
+    let foundBy = ''
+  
+    if (isSearchBySlot && hasAnyOrderArgument) {
+      const queryPermutation = this.findPermutations(query)
+      queryPermutation.forEach((queryPerm) => {
+        const permutatedResults = this.getSublimationByMatchingSlots(queryPerm)
+        results.push({
+          slots: queryPerm,
+          results: permutatedResults
+        })
+      })
+  
+      return { results, foundBy: 'permutatedSlots' }
+    }
+  
+    if (isSearchBySlot) {
+      results = this.getSublimationByMatchingSlots(query)
+      foundBy = 'slots'
+      return { results, foundBy }
+    }
+  
+    results = this.getSublimationByName(query, options, lang)
+    foundBy = 'name'
+  
+    if (results.length) {
+      return { results, foundBy }
+    }
+  
+    results = this.getSublimationBySource(query, lang)
+    foundBy = 'source'
+    return { results, foundBy }
+  }
+
+
+  // TO Do: move the following functions 
   private getRarityIdByRarityNameInAnyLanguage (rarityName) {
     return Object.entries(rarityMap).reduce((idDetected, [rarityId, rarityDetails]) => {
       const names = Object.values(rarityDetails.name)
       return names.some(name => rarityName.toLowerCase() === name.toLowerCase()) ? Number(rarityId) : idDetected
     }, 0)
+  }
+
+  private findPermutations (string: string) {
+    if (!string || typeof string !== 'string' || string.length > 4) {
+      return []
+    } else if (string.length < 2) {
+      return [string]
+    }
+  
+    const permutationsArray = []
+  
+    for (let i = 0; i < string.length; i++) {
+      const char = string[i]
+  
+      if (string.indexOf(char) !== i) { continue }
+  
+      const remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
+  
+      for (const permutation of this.findPermutations(remainingChars)) {
+        permutationsArray.push(char + permutation)
+      }
+    }
+    return permutationsArray
   }
 }
 

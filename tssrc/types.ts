@@ -58,6 +58,19 @@ export type ItemEffect = {
   description: LanguageStrings
 }
 
+export type SublimationSource = {
+  chest: LanguageStrings
+  drop: LanguageStrings
+  steles: number
+  quest: LanguageStrings
+}
+
+export type Sublimation = {
+  effects: LanguageStrings
+  source: LanguageStrings,
+  slots: string
+}
+
 export type ItemData = {
   id: number,
   title: LanguageStrings,
@@ -70,7 +83,8 @@ export type ItemData = {
   itemTypeId: number
   itemSetId: number
   rarity: number
-  conditions: ItemConditions
+  conditions: ItemConditions,
+  sublimation?: Sublimation
 }
 
 export type JobDefintion = {

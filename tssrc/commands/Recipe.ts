@@ -1,13 +1,13 @@
 import { FinderCommand } from '@baseCommands'
 import { ItemManager, RecipesManager, MessageManager } from '@managers'
 import { mountUrl } from '@utils/mountUrl'
-import mappings from '@utils/mappings'
 import str from '@stringsLang'
 import { GuildConfig, PartialEmbed, RecipeItemData } from '@types'
 import { Message } from 'discord.js'
+import mappings from '@utils/mappings'
 const { rarityMap, jobsMap, itemEmojis } = mappings
 
-export default class EquipCommand extends FinderCommand {
+export default class RecipeCommand extends FinderCommand {
   constructor (message: Message, guildConfig: GuildConfig) {
     super(message, guildConfig)
   }
@@ -52,7 +52,7 @@ export default class EquipCommand extends FinderCommand {
       color: embedColor,
       title: `${rarityEmoji}${str.capitalize(str.recipe[this.lang])}: ${firstRecipe.result.title[this.lang]}`,
       thumbnail: { url: imageUrl },
-      fields: this.getRecipeFields(results, this.lang)
+      fields: RecipesManager.getRecipeFields(results, this.lang)
     }
   
     const moreResults = results.filter(recipe => recipe.result.productedItemId !== firstRecipe.result.productedItemId)
@@ -80,53 +80,5 @@ export default class EquipCommand extends FinderCommand {
       return firstResults.join(', ').trim() + moreResultsText
     }
     return otherRecipes.join(', ').trim()
-  }
-
-  private getRecipeFields (recipeResults, lang) {
-    const firstRecipe = recipeResults[0]
-    const recipesWithSameResult = recipeResults.filter(recipe => recipe.result.productedItemId === firstRecipe.result.productedItemId)
-    const job = jobsMap[firstRecipe.job.definition.id]
-    const jobEmoji = job.emoji
-    const jobName = job.title[lang]
-  
-    const fields = [
-      {
-        name: str.capitalize(str.job[lang]),
-        value: `${jobEmoji} ${jobName}`,
-        inline: true
-      },
-      {
-        name: str.capitalize(str.level[lang]),
-        value: firstRecipe.level,
-        inline: true
-      }
-    ]
-    recipesWithSameResult.forEach(recipe => {
-      const ingredientsText = recipe.ingredients.map(ingredient => {
-        const rarityEmoji = ingredient.rarity ? rarityMap[ingredient.rarity].emoji : ''
-        const job = jobsMap[ingredient.job] || {}
-        const jobEmoji = job.emoji
-        const itemEmoji = itemEmojis[ingredient.itemId]
-        const ingredientEmoji = rarityEmoji || jobEmoji || itemEmoji || ':white_small_square:'
-        const quantity = ingredient.quantity
-        const name = ingredient.title[lang]
-        const quantityText = `${quantity}x`
-        const quantityCodeText = MessageManager.convertToCodeBlock(quantityText, 5)
-        return `${ingredientEmoji} ${quantityCodeText} ${name}`
-      })
-      const orderedByEmojiTexts = ingredientsText.sort((textA, textB) => {
-        const textAhasDefaultEmoji = textA.includes(':white_small_square:')
-        const textBhasDefaultEmoji = textB.includes(':white_small_square:')
-        if (textAhasDefaultEmoji && !textBhasDefaultEmoji) return 1
-        if (!textAhasDefaultEmoji && textBhasDefaultEmoji) return -1
-        return 0
-      })
-      fields.push({
-        name: str.capitalize(str.ingredients[lang]),
-        value: orderedByEmojiTexts.join('\n'),
-        inline: false
-      })
-    })
-    return fields
   }
 }
