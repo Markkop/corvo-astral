@@ -1,3 +1,4 @@
+import { DMChannel, Message, MessageReaction, User } from 'discord.js'
 
 /**
  * An isolated piece of code to avoid nesting try..catch.
@@ -17,11 +18,11 @@ async function reactWithErrorEmoji (message) {
  * @param {Error} error
  * @param {object} message
  */
-export function handleMessageError (error, message) {
-  const guildName = message && message.guild && message.guild.name
-  const channelName = message && message.channel && message.channel.name
-  const authorName = message && message.author && message.author.username
-  const authorTag = message && message.author && message.author.tag
+export function handleMessageError (error: Error, message: Message): void {
+  const guildName = message.guild.name
+  const channelName = message.channel instanceof DMChannel ? '' : message.channel.name
+  const authorName = message.author.username
+  const authorTag = message.author.tag
   const errorText = error.toString() || ''
   console.log(`${errorText} on guild "${guildName}", channel "${channelName}" by ${authorName}(${authorTag}) with content "${message.content}"`)
   if (errorText.includes('TypeError')) {
@@ -37,9 +38,10 @@ export function handleMessageError (error, message) {
  * @param {object} reaction
  * @param {object} user
  */
-export function handleReactionError (error, reaction, user) {
+export function handleReactionError (error: Error, reaction: MessageReaction, user: User): void {
   const errorText = error.toString() || ''
-  console.log(`${errorText} on guild "${reaction.message.guild.name}", channel "${reaction.message.channel.name}" by ${user.username}`)
+  const channelName = reaction.message.channel instanceof DMChannel ? '' : reaction.message.channel.name
+  console.log(`${errorText} on guild "${reaction.message.guild.name}", channel "${channelName}" by ${user.username}`)
   if (errorText.includes('TypeError')) {
     console.log(error)
   }

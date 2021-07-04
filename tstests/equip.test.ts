@@ -1,22 +1,13 @@
-import EquipCommand from '../tssrc/commands/EquipCommand'
+import EquipCommand from '../tssrc/commands/Equip'
 import helpMessages from '../tssrc/utils/helpMessages'
-import { mockMessageAndSpyChannelSend, embedContaining } from './testutils'
-
-const defaultConfig = {
-  guildId: '11',
-  lang: 'en',
-  prefix: '.',
-  almanaxChannel: 'almanax',
-  partyChannel: 'listagem-de-grupos',
-  buildPreview: 'enabled'
-}
+import { mockMessageAndSpyChannelSend, embedContaining, defaultConfig } from './testutils'
 
 describe('EquipmentCommand', () => {
   it('return a matching equipment by name', async () => {
     const content = '.equip tentacled belt'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenCalledWith(embedContaining({
         url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/armors/27645',
         color: '#fede71',
@@ -57,8 +48,8 @@ describe('EquipmentCommand', () => {
   it('return a matching equipment by name with higher rarity by default', async () => {
     const content = '.equip the eternal'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenCalledWith(embedContaining({
       fields: expect.arrayContaining([{
         name: 'Rarity',
@@ -71,8 +62,8 @@ describe('EquipmentCommand', () => {
   it('return a translated equip with "translate" option', async () => {
     const content = '.equip peace pipe translate=pt'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':yellow_circle: Cachimbo Dapais'
     }))
@@ -81,8 +72,8 @@ describe('EquipmentCommand', () => {
   it('return the matching equipment when using query without accents', async () => {
     const content = '.equip lemico lang=pt'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       title: ':yellow_circle: Chapéu Lêmico'
     }))
@@ -91,8 +82,8 @@ describe('EquipmentCommand', () => {
   it('return the matching equipment when using query with accents', async () => {
     const content = '.equip lêmico lang=pt'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       title: ':yellow_circle: Chapéu Lêmico'
     }))
@@ -101,8 +92,8 @@ describe('EquipmentCommand', () => {
   it('return a matching equipment by name and rarity with rarity argument is provided', async () => {
     const content = '.equip the eternal rarity=mythical'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       fields: expect.arrayContaining([{
         name: 'Rarity',
@@ -115,8 +106,8 @@ describe('EquipmentCommand', () => {
   it('return a matching equipment by name and rarity with rarity argument is provided on another language', async () => {
     const content = '.equip o eterno raridade=mítico lang=pt'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       title: ':orange_circle: O Eterno',
       fields: expect.arrayContaining([{
@@ -130,8 +121,8 @@ describe('EquipmentCommand', () => {
   it('return a matching equipment by name and rarity with rarity argument with mixed languages', async () => {
     const content = '.equip o eterno raridade=mythical lang=pt'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       title: ':orange_circle: O Eterno',
       fields: expect.arrayContaining([{
@@ -145,8 +136,8 @@ describe('EquipmentCommand', () => {
   it('return the condition if the resulting equipment has one', async () => {
     const content = '.equip amakna sword'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       fields: expect.arrayContaining([{
         name: 'Conditions',
@@ -159,8 +150,8 @@ describe('EquipmentCommand', () => {
   it('return the useEffect description if the resulting equipment has one', async () => {
     const content = '.equip Toothpick'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       fields: expect.arrayContaining([{
         name: 'In use',
@@ -173,8 +164,8 @@ describe('EquipmentCommand', () => {
   it('does not return the effects for an equipment that does not have one ', async () => {
     const content = '.equip brakmar ring'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       fields: [
         { inline: true, name: 'Level', value: 200 },
@@ -188,8 +179,8 @@ describe('EquipmentCommand', () => {
   it('return a footer with more equipment found if results are more than one', async () => {
     const content = '.equip amakna'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       footer: {
         text: 'Equipment found: Amakna Ring (Epic), Amakna Sword (Relic), Captain Amakna Shield (Relic), Amakna Riktus Boots (Mythical), Amakna Riktus Epaulettes (Mythical), Amakna Riktus Mask (Mythical), Amakna Riktus Breastplate (Mythical), Amakna Riktus Boots (Rare), Amakna Riktus Epaulettes (Rare)'
@@ -200,8 +191,8 @@ describe('EquipmentCommand', () => {
   it('return a footer with truncated results if there are too many', async () => {
     const content = '.equip a'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       footer: {
         text: "Equipment found: Dazzling Belt (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Hazieff's Helmet (Epic), Wa Wabbit's Cwown (Epic), Genetically Modified Epaulettes (Epic), Claymore of Fhenris (Epic), Bax Stab Ax (Epic), Claymus Shushu (Epic), Emiwlet Amulet (Epic), Lenald Walm Pelt (Epic), Vizion Dagger (Epic), Trool Warrior Spikes (Epic), Sanefty Belt (Epic), Happy Sram Kimono (Epic), Durable Shield (Epic), Limited Edition Cape (Epic), Dora Lagoole (Epic), Welder Mask (Epic), Viktorious Rapier (Epic) and other 4846 results"
@@ -212,10 +203,10 @@ describe('EquipmentCommand', () => {
   it('return a not found message if no equip was found', async () => {
     const content = '.equip asdasdasd'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
-      color: '#bb1327',
+      color: 0xbb1327,
       description: 'Type `.help equip` to see some examples of how to search.',
       title: ':x: No results'
     }))
@@ -224,8 +215,8 @@ describe('EquipmentCommand', () => {
   it('return a help message if no query was provided', async () => {
     const content = '.equip'
     const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new EquipCommand(userMessage, 'equip', defaultConfig)
-    equipCommand.return()
+    const equipCommand = new EquipCommand(userMessage, defaultConfig)
+    equipCommand.execute()
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       description: helpMessages.equip.help.en
     }))

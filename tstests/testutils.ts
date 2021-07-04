@@ -1,5 +1,14 @@
 import MockDiscord from './mockDiscord'
 
+export const defaultConfig = {
+  guildId: '11',
+  lang: 'en',
+  prefix: '.',
+  almanaxChannel: 'almanax',
+  partyChannel: 'listagem-de-grupos',
+  buildPreview: 'enabled'
+}
+
 export function mockMessageAndSpyChannelSend(content) {
   const discord = new MockDiscord({ message: { content }})
   const userMessage = discord.getMessage()

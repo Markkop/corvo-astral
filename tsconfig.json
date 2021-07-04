@@ -6,7 +6,16 @@
     "esModuleInterop" : true,
     "allowSyntheticDefaultImports": true,
     "outDir": "out",
-    "rootDir": "tssrc"
+    "rootDir": "tssrc",
+    "baseUrl": "tssrc/",
+    "paths": {
+      "@types": ["types.ts"],
+      "@stringsLang": ["stringsLang.ts"],
+      "@managers": ["managers"],
+      "@commands": ["commands"],
+      "@baseCommands": ["baseCommands"],
+      "@utils/*": ["utils/*"]
+    }
   },
-  "exclude": ["data"]
+  "exclude": ["data", "tstests", "tsconfig.json"]
 }

@@ -1,21 +1,20 @@
-import { connection, connect, disconnect } from 'mongoose'
-import ConfigManager from './ConfigManager'
-import { GuildConfig } from './types'
-import GuildModel from './models/guild'
+import { connection, connect } from 'mongoose'
+import { ConfigManager } from '@managers'
+import { GuildConfig } from '@types'
+import GuildModel from '../models/guild'
 
 export default class DatabaseManager {
-  private constructor() {}
   private static instance: DatabaseManager;
 
-  public static getInstance(): DatabaseManager {
+  public static getInstance (): DatabaseManager {
     if (!DatabaseManager.instance) {
-      DatabaseManager.instance = new DatabaseManager();
+      DatabaseManager.instance = new DatabaseManager()
     }
 
-    return DatabaseManager.instance;
+    return DatabaseManager.instance
   }
 
-  private async connectDatabase() {
+  private async connectDatabase () {
     try {
       if (connection.readyState === 0) {
         connect(`mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_URL}/test?retryWrites=true&w=majority`, {
@@ -29,7 +28,7 @@ export default class DatabaseManager {
     }
   }
 
-  public async createOrUpdateGuild (guildConfig: GuildConfig) {
+  public async createOrUpdateGuild (guildConfig: GuildConfig): Promise<GuildConfig> {
     try {
       await this.connectDatabase()
       const guild = await GuildModel.findOneAndUpdate({ id: guildConfig.guildId }, guildConfig, {
@@ -43,7 +42,7 @@ export default class DatabaseManager {
     }
   }
 
-  public async getGuildConfig (guildId: string) {
+  public async getGuildConfig (guildId: string): Promise<GuildConfig> {
     try {
       await this.connectDatabase()
       const [guildConfig] = await GuildModel.find({ id: guildId }).lean()
@@ -64,7 +63,7 @@ export default class DatabaseManager {
     }
   }
 
-  public async getAllGuildsConfigs () {
+  public async getAllGuildsConfigs (): Promise<GuildConfig[]> {
     try {
       await this.connectDatabase()
       const allGuildsConfig = await GuildModel.find({}).lean()

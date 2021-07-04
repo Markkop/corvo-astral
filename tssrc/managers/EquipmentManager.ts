@@ -1,26 +1,27 @@
-import str from '../stringsLang'
+import { hasTextOrNormalizedTextIncluded } from '@utils/strings'
+import mappings from '@utils/mappings'
+import str from '@stringsLang'
+import { ItemData } from '@types'
 const itemsData = require('../../data/generated/items.json')
-import { hasTextOrNormalizedTextIncluded } from '../utils/strings'
-import mappings from '../utils/mappings'
 const { equipTypesMap, rarityMap } = mappings
 
 class EquipmentManager {
-  private itemsList
-  private equipmentList
+  private itemsList: ItemData[]
+  private equipmentList: ItemData[]
 
-  constructor() {
+  constructor () {
     this.itemsList = itemsData
     this.setEquipmentList()
   }
 
-  private setEquipmentList() {
+  private setEquipmentList () {
     const equipTypesIds = Object.keys(equipTypesMap).map(Number).filter(id => id !== 647) // Remove costumes
     this.equipmentList = this.itemsList
       .filter(item => equipTypesIds.includes(item.itemTypeId))
       .sort((itemA, itemB) => itemB.rarity - itemA.rarity)
   }
 
-  public findEquipmentByName(query, options, lang) {
+  public findEquipmentByName (query, options, lang) {
     const optionsKeys = Object.keys(options)
     const optionRarityKey = Object.values<string>(str.rarity).find(rarityWord => {
       return optionsKeys.some(optionsKey => hasTextOrNormalizedTextIncluded(rarityWord, optionsKey))
@@ -50,5 +51,5 @@ class EquipmentManager {
   }
 }
 
-const equipmentManager = new EquipmentManager() 
+const equipmentManager = new EquipmentManager()
 export default equipmentManager

@@ -24,6 +24,7 @@
     "codecov": "^3.7.2",
     "discord.js": "^12.3.1",
     "dotenv": "^8.4.0",
+    "module-alias": "^2.2.2",
     "mongoose": "^5.10.5",
     "node-cron": "^2.0.3",
     "puppeteer": "^5.5.0",
@@ -39,6 +40,8 @@
     "@babel/preset-env": "^7.11.5",
     "@types/jest": "^26.0.23",
     "@types/node": "^14.17.4",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
     "babel-jest": "^26.3.0",
     "eslint": "^7.8.1",
     "eslint-config-standard": "^14.1.1",
@@ -51,10 +54,12 @@
     "jest": "^27.0.0",
     "ts-jest": "^27.0.3"
   },
-  "jest": {
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true,
-    "preset": "ts-jest",
-    "testEnvironment": "node"
+  "_moduleAliases": {
+    "@types": "out/types.js",
+    "@stringsLang": "out/stringsLang.js",
+    "@managers": "out/managers",
+    "@commands": "out/commands",
+    "@baseCommands": "out/baseCommands",
+    "@utils": "out/utils"
   }
 }

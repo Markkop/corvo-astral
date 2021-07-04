@@ -4,7 +4,7 @@
  * @param {string} str
  * @returns {string}
  */
-export function capitalize (str) {
+export function capitalize (str: string): string {
   if (typeof str !== 'string') return ''
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
@@ -39,6 +39,6 @@ function normalizeCharacters (str) {
  * @param {string} textToBeIncluded
  * @returns {string}
  */
-export function hasTextOrNormalizedTextIncluded (text, textToBeIncluded) {
+export function hasTextOrNormalizedTextIncluded (text: string, textToBeIncluded: string): boolean {
   return normalizeCharacters(text).includes(normalizeCharacters(textToBeIncluded))
 }

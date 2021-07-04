@@ -1,4 +1,4 @@
-export function mountUrl (itemId, type, lang) {
+export function mountUrl (itemId: number, type: number, lang: string): string {
   const categories = [
     {
       title: {

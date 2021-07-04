@@ -1,23 +1,24 @@
-import FinderCommand from './FinderCommand'
-import EquipmentManager from '../resourceManagers/EquipmentManager'
-import RecipesManager from '../resourceManagers/RecipesManager'
-import { mountUrl } from '../utils/mountUrl'
-import mappings from '../utils/mappings'
-import str from '../stringsLang'
-import { MessageEmbed } from 'discord.js'
+import { FinderCommand } from '@baseCommands'
+import { EquipmentManager, RecipesManager, MessageManager } from '@managers'
+import { mountUrl } from '@utils/mountUrl'
+import mappings from '@utils/mappings'
+import str from '@stringsLang'
+import { GuildConfig, PartialEmbed } from '@types'
+import { Message } from 'discord.js'
 const { rarityMap, equipTypesMap, iconCodeMap } = mappings
 
-type EquipEmbed = Partial<MessageEmbed>
-
 export default class EquipCommand extends FinderCommand {
+  constructor (message: Message, guildConfig: GuildConfig) {
+    super(message, guildConfig)
+  }
 
-
-  public async return() {
-    const { args, options } = this.getArgumentsAndOptions(this.message)
+  public async execute (): Promise<void> {
+    const { args, options } = MessageManager.getArgumentsAndOptions(this.message)
     const query = args.join(' ').toLowerCase()
 
     if (!query) {
-      return this.returnHelp()
+      this.replyWithHelp()
+      return
     }
 
     if (options.lang) {
@@ -26,7 +27,8 @@ export default class EquipCommand extends FinderCommand {
 
     const results = EquipmentManager.findEquipmentByName(query, options, this.lang)
     if (!results.length) {
-      return this.returnNotFound()
+      this.returnNotFound()
+      return
     }
 
     if (options.translate) {
@@ -34,24 +36,22 @@ export default class EquipCommand extends FinderCommand {
     }
 
     const equipEmbed = this.mountEquipEmbed(results)
-    const sentMessage = await this.message.channel.send({ embed: equipEmbed })
+    const sentMessage = await this.reply({ embed: equipEmbed })
 
     const reactions = ['💰']
-    const recipesManager = new RecipesManager
-    const recipes = recipesManager.getRecipesByProductedItemId(results[0].id) 
+    const recipesManager = new RecipesManager()
+    const recipes = recipesManager.getRecipesByProductedItemId(results[0].id)
     if (recipes.length) {
       reactions.unshift('🛠️')
     }
-    await this.reactToMessage(reactions, sentMessage)
-    return sentMessage
+    await MessageManager.reactToMessage(reactions, sentMessage)
   }
 
-
-  private parseIconCodeToEmoji (text) {
+  private parseIconCodeToEmoji (text: string) {
     return text.split(/(\[.*?\])/).map(word => iconCodeMap[word] || word).join('')
   }
 
-  private getMoreEquipmentText (results, resultsLimit) {
+  private getMoreEquipmentText (results, resultsLimit: number) {
     let moreResultsText = ''
     if (results.length > resultsLimit) {
       const firstResults = results.slice(0, resultsLimit)
@@ -62,9 +62,9 @@ export default class EquipCommand extends FinderCommand {
     return results.map(equip => `${equip.title[this.lang]} (${rarityMap[equip.rarity].name[this.lang]})`).join(', ').trim() + moreResultsText
   }
 
-  private mountEquipEmbed(results) {
+  private mountEquipEmbed (results): PartialEmbed {
     const firstResult = results[0]
-    const equipEmbed: EquipEmbed = {
+    const equipEmbed: PartialEmbed = {
       url: mountUrl(firstResult.id, firstResult.itemTypeId, this.lang),
       color: rarityMap[firstResult.rarity].color,
       title: `${rarityMap[firstResult.rarity].emoji} ${firstResult.title[this.lang]}`,
@@ -117,13 +117,5 @@ export default class EquipCommand extends FinderCommand {
       }
     }
     return equipEmbed
-
-  }
-
-  // To Do: move this function to toher file
-  private async reactToMessage (reactions, message) {
-    for (let index = 0; index < reactions.length; index++) {
-      await message.react(reactions[index])
-    }
   }
 }
