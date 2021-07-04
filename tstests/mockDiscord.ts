@@ -134,7 +134,7 @@ export default class MockDiscord {
   private mockUser(): void {
     this.user = new User(this.client, {
       id: "user-id",
-      username: "user username",
+      username: "USERNAME",
       discriminator: "user#0000",
       avatar: "user avatar url",
       bot: false,

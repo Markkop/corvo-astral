@@ -8,11 +8,17 @@ import { Client, Message } from 'discord.js'
 import { handleMessageError } from './utils/handleError'
 // import { getCommand, setStartupConfig } from './utils/message'
 import { ConfigManager, MessageManager } from '@managers'
-import { EquipCommand } from '@commands'
+import { 
+  EquipCommand,
+  AboutCommand,
+  CalcCommand
+ } from '@commands'
 require('dotenv').config()
 
 const commandsMap = {
-  equip: EquipCommand
+  equip: EquipCommand,
+  about: AboutCommand,
+  calc: CalcCommand
 }
 
 class Bot {
