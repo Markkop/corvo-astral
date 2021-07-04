@@ -1,6 +1,6 @@
 import FinderCommand from './FinderCommand'
-import EquipmentManager from '../resources/EquipmentManager'
-import RecipesManager from '../resources/RecipesManager'
+import EquipmentManager from '../resourceManagers/EquipmentManager'
+import RecipesManager from '../resourceManagers/RecipesManager'
 import { mountUrl } from '../utils/mountUrl'
 import mappings from '../utils/mappings'
 import str from '../stringsLang'
@@ -20,12 +20,19 @@ export default class EquipCommand extends FinderCommand {
       return this.returnHelp()
     }
 
+    if (options.lang) {
+      this.changeLang(options.lang)
+    }
+
     const results = EquipmentManager.findEquipmentByName(query, options, this.lang)
     if (!results.length) {
       return this.returnNotFound()
     }
 
-    this.translateCommand(options.translate)
+    if (options.translate) {
+      this.changeLang(options.translate)
+    }
+
     const equipEmbed = this.mountEquipEmbed(results)
     const sentMessage = await this.message.channel.send({ embed: equipEmbed })
 

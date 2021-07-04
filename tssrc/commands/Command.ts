@@ -66,9 +66,13 @@ export default abstract class Command {
     return { args, options }
   }
 
-  protected translateCommand(targetLanguage) {
+  private isValidLang(lang) {
     const validLangs = ['en', 'es', 'fr', 'pt']
-    const isValidLang = validLangs.some(validLang => validLang === targetLanguage)
+    return validLangs.some(validLang => validLang === lang)
+  }
+
+  protected changeLang(targetLanguage) {
+    const isValidLang = this.isValidLang(targetLanguage)
     if (isValidLang) {
       this.lang = targetLanguage
     }
