@@ -26,7 +26,7 @@ class ConfigManager {
   }
 
   public getGuildConfig (guildId: string): GuildConfig | DefaultGuildConfig {
-    const guildConfig = this.guildsConfig.find(config => config.guildId === guildId)
+    const guildConfig = this.guildsConfig.find(config => config.id === guildId)
     const defaultConfig = ConfigManager.getDefaultConfig()
     if (!guildConfig) {
       return defaultConfig
@@ -47,6 +47,7 @@ class ConfigManager {
   private async loadGuildsConfig () {
     const databaseManager = DatabaseManager.getInstance()
     this.guildsConfig = await databaseManager.getAllGuildsConfigs()
+    console.log(this.guildsConfig)
   }
 }
 

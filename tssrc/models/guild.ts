@@ -2,12 +2,11 @@
 import { Schema, model, Document } from 'mongoose'
 import { GuildConfig } from '../types'
 
-interface GuildConfigModelInterface extends GuildConfig, Document {}
-
-const GuildConfigSchema = new Schema<GuildConfigModelInterface>({
+const GuildConfigSchema = new Schema({
   id: {
     type: String,
-    required: true
+    required: true,
+    alias: "guildId"
   },
   lang: {
     type: String,
@@ -31,5 +30,5 @@ const GuildConfigSchema = new Schema<GuildConfigModelInterface>({
   }
 })
 
-const GuildModel = model<GuildConfigModelInterface>('Guild', GuildConfigSchema)
+const GuildModel = model('Guild', GuildConfigSchema)
 export default GuildModel

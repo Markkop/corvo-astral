@@ -9,12 +9,16 @@ export default class AlmaCommand extends BaseCommand {
   }
 
   public execute (): void {
-    const bonus = this.getWakfuBonus()
-    const embed = this.mountAlmanaxBonusEmbed(bonus)
+    const embed = AlmaCommand.getAndMountAlmanaxBonusEmbed(this.lang)
     this.send({ embed })
   }
 
-  private mountAlmanaxBonusEmbed (bonus: AlmanaxBonus): PartialEmbed {
+  public static getAndMountAlmanaxBonusEmbed(lang: string) {
+    const bonus = AlmaCommand.getWakfuBonus()
+    return AlmaCommand.mountAlmanaxBonusEmbed(bonus, lang)
+  }
+
+  public static mountAlmanaxBonusEmbed (bonus: AlmanaxBonus, lang: string): PartialEmbed {
     const today = new Date(Date.now())
     const todayText = today.toLocaleDateString('en-US', {
       year: 'numeric',
@@ -27,12 +31,12 @@ export default class AlmaCommand extends BaseCommand {
     return {
       color: 0x40b2b5,
       title: ':partly_sunny: "Today\'s Almanax"',
-      description: `**Bonus:** ${bonus.text[this.lang]}`,
+      description: `**Bonus:** ${bonus.text[lang]}`,
       footer: { text: todayText }
     }
   }
 
-  private getWakfuBonus (day = new Date(Date.now())) {
+  public static getWakfuBonus (day = new Date(Date.now())) {
     return events.find((event: AlmanaxBonus) => {
       const eventFirstDate = new Date(event.firstDate)
       const diffTime = Math.abs(Number(day) - Number(eventFirstDate))

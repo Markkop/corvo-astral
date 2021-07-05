@@ -7,7 +7,7 @@ export type LanguageStrings = {
   es: string
 }
 export interface GuildConfig {
-  guildId: string
+  id: string
   lang: string
   prefix: string
   almanaxChannel: string

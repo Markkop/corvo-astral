@@ -1,15 +1,15 @@
 import 'module-alias/register'
-import { Client, Message } from 'discord.js'
-// import cron from 'node-cron'
+import { Client, Message, TextChannel } from 'discord.js'
+import cron from 'node-cron'
 // import notifyAlmanaxBonus from './almaNotifier'
 // import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment, getAbout, partyList, getRecipe, configGuild, getMonster } from './commands'
 // import onMessageReactionAdd from './reactions/onMessageReactionAdd'
 // import onMessageReactionRemove from './reactions/onMessageReactionRemove'
 import { handleMessageError } from './utils/handleError'
-// import { getCommand, setStartupConfig } from './utils/message'
 import { ConfigManager, MessageManager } from '@managers'
 import { 
   EquipCommand,
+  AlmaCommand,
   AboutCommand,
   CalcCommand,
   RecipeCommand,
@@ -22,7 +22,8 @@ const commandsMap = {
   about: AboutCommand,
   calc: CalcCommand,
   recipe: RecipeCommand,
-  subli: SubliCommand
+  subli: SubliCommand,
+  alma: AlmaCommand
 }
 
 class Bot {
@@ -34,10 +35,11 @@ class Bot {
     this.client = client
     this.token = token
     this.configManager = configManager
+    cron.schedule('* * * * *', this.sendAlmanaxBonus.bind(this))
   }
 
   public listen (): void {
-    this.client.on('message', this.onMessage.bind(this))
+    // this.client.on('message', this.onMessage.bind(this))
     this.client.on('ready', this.onReady.bind(this))
 
     this.client.login(this.token)
@@ -70,6 +72,33 @@ class Bot {
 
   private getCommand (commandWord: string) {
     return commandsMap[commandWord]
+  }
+
+  // TO DO: Refactor and move this function
+  private async sendAlmanaxBonus() {
+    try {
+      console.log('Starting to send almanax bonus to channels...')
+      const guildsIds = this.client.guilds.cache.map(guild => guild.id)
+
+      for (let guildIndex = 0; guildIndex < guildsIds.length; guildIndex++) {
+        const guildId = guildsIds[guildIndex]
+        const guild = this.client.guilds.cache.get(guildId)
+        const guildChannelsIds = guild.channels.cache.map(channel => channel.id)
+        const guildConfig = this.configManager.getGuildConfig(guildId)
+        const almanaxChannelName = guildConfig.almanaxChannel
+
+        for (let channelIndex = 0; channelIndex < guildChannelsIds.length; channelIndex++) {
+          const guildChannelId = guildChannelsIds[channelIndex]
+          const guildChannel = guild.channels.cache.get(guildChannelId) as TextChannel
+          if (!guildChannel.name.includes(almanaxChannelName)) continue
+          const embed = AlmaCommand.getAndMountAlmanaxBonusEmbed(guildConfig.lang)
+          // await guildChannel.send({ embed })
+          console.log('I would be sending to ', almanaxChannelName)
+        }
+      }
+    } catch (error) {
+      console.log(error)
+    }
   }
 }
 
