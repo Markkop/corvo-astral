@@ -16,9 +16,15 @@ export default abstract class BaseCommand {
     this.commandWord = MessageManager.getCommandWord(guildConfig.prefix, message)
   }
 
-  protected async replyWithHelp (): Promise<Message | Message[]> {
+  protected async send (content: MessageOptions): Promise<Message> {
+    const sentContent = await this.message.channel.send(content)
+    if(Array.isArray(sentContent)) return sentContent[0]
+    return sentContent
+  }
+
+  protected async sendWithHelp (): Promise<Message | Message[]> {
     const helpEmbed = this.mountCommandHelpEmbed()
-    return this.reply({ embed: helpEmbed })
+    return this.send({ embed: helpEmbed })
   }
 
   private mountCommandHelpEmbed (): PartialEmbed {
@@ -57,13 +63,5 @@ export default abstract class BaseCommand {
     if (isValidLang) {
       this.lang = targetLanguage
     }
-  }
-
-  protected async reply (content: MessageOptions): Promise<Message> {
-    const sentContent = await this.message.channel.send(content)
-    if(Array.isArray(sentContent)) {
-      return sentContent[0]
-    }
-    return sentContent
   }
 }

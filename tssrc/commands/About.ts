@@ -10,7 +10,7 @@ export default class AboutCommand extends BaseCommand {
 
   public execute (): void {
     const embed = this.mountAboutEmbed()
-    this.reply({ embed })
+    this.send({ embed })
   }
 
   private mountAboutEmbed (): PartialEmbed {

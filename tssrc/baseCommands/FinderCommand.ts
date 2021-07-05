@@ -18,6 +18,6 @@ export default class FinderCommand extends BaseCommand {
 
   protected returnNotFound () {
     const notFoundEmbed = this.mountNotFoundEmbed(this.lang)
-    return this.reply({ embed: notFoundEmbed })
+    return this.send({ embed: notFoundEmbed })
   }
 }

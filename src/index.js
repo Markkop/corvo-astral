@@ -23,7 +23,7 @@ const commandActions = {
   recipe: getRecipe,
   config: configGuild,
   mob: getMonster,
-  time: (message) => message.reply(new Date().toString())
+  time: (message) => message.send(new Date().toString())
 }
 
 /**

@@ -11,7 +11,7 @@ export default class AlmaCommand extends BaseCommand {
   public execute (): void {
     const bonus = this.getWakfuBonus()
     const embed = this.mountAlmanaxBonusEmbed(bonus)
-    this.reply({ embed })
+    this.send({ embed })
   }
 
   private mountAlmanaxBonusEmbed (bonus: AlmanaxBonus): PartialEmbed {

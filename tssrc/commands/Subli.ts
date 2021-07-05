@@ -29,7 +29,7 @@ export default class SubliCommand extends FinderCommand {
     const normalizedQuery = args.join(' ').toLowerCase()
     const equivalentQuery = this.findEquivalentQuery(normalizedQuery)
     if (!normalizedQuery) {
-      this.replyWithHelp()
+      this.sendWithHelp()
       return
     }
 
@@ -49,18 +49,18 @@ export default class SubliCommand extends FinderCommand {
   
     if (foundBy === 'permutatedSlots') {
       const permutatedSublimationFoundEmbed = this.mountPermutatedSublimationFoundEmbed(results, queriedSlotsText, this.lang)
-      this.reply({ embed: permutatedSublimationFoundEmbed })
+      this.send({ embed: permutatedSublimationFoundEmbed })
       return
     }
 
     if (foundBy === 'name') {
       const sublimationFoundEmbed = this.mountSublimationFoundEmbed(results, this.lang)
-      this.reply({ embed: sublimationFoundEmbed })
+      this.send({ embed: sublimationFoundEmbed })
       return
     }
   
     const sublimationsFoundListEmbed = this.mountSublimationsFoundListEmbed(results, queriedSlotsText, this.lang)
-    this.reply({ embed: sublimationsFoundListEmbed })
+    this.send({ embed: sublimationsFoundListEmbed })
     return
   }
 

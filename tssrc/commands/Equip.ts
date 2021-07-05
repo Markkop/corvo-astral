@@ -17,7 +17,7 @@ export default class EquipCommand extends FinderCommand {
     const query = args.join(' ').toLowerCase()
 
     if (!query) {
-      this.replyWithHelp()
+      this.sendWithHelp()
       return
     }
 
@@ -36,7 +36,7 @@ export default class EquipCommand extends FinderCommand {
     }
 
     const equipEmbed = this.mountEquipEmbed(results)
-    const sentMessage = await this.reply({ embed: equipEmbed })
+    const sentMessage = await this.send({ embed: equipEmbed })
 
     const reactions = ['💰']
     const recipes = RecipesManager.getRecipesByProductedItemId(results[0].id)

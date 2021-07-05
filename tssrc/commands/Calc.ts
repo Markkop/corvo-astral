@@ -26,7 +26,7 @@ export default class CalcCommand extends BaseCommand {
     const requiredArgs = ['dmg', 'base', 'res']
     const hasRequiredArgs = requiredArgs.every(requiredArg => Boolean(options[requiredArg]))
     if (!hasRequiredArgs) {
-      this.replyWithHelp()
+      this.sendWithHelp()
       return
     }
 
@@ -42,7 +42,7 @@ export default class CalcCommand extends BaseCommand {
 
     const author = this.message.author.username
     const calcEmbed = this.mountCalcEmbed(author, calculatedValues)
-    this.reply({ embed: calcEmbed })
+    this.send({ embed: calcEmbed })
   }
 
   private calculateDamage(options: Record<string, string>) {

@@ -17,7 +17,7 @@ export default class RecipeCommand extends FinderCommand {
     const query = args.join(' ').toLowerCase()
 
     if (!query) {
-      this.replyWithHelp()
+      this.sendWithHelp()
       return
     }
 
@@ -36,7 +36,7 @@ export default class RecipeCommand extends FinderCommand {
     }
 
     const recipeEmbed = this.mountRecipeEmbed(results)
-    this.reply({ embed: recipeEmbed })
+    this.send({ embed: recipeEmbed })
   }
 
   private mountRecipeEmbed (results: RecipeItemData[]): PartialEmbed {
