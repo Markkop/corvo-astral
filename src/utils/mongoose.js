@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 import mongoose from 'mongoose'
-import GuildModel from '../models/guild'
+import GuildModel from '../../tssrc/models/guild'
 import config from '../config'
 
 /**

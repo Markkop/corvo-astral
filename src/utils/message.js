@@ -90,7 +90,7 @@ export async function setStartupConfig () {
  * React to a given message with an emoji list.
  *
  * @param {string[]} reactions
- * @param {string} message
+ * @param {Message} message
  * @returns {Promise<undefined>}
  */
 export async function reactToMessage (reactions, message) {

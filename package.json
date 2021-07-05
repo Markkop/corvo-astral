@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "npm run build && node dist/index.js",
-    "build": "babel src -d dist",
+    "build": "tsc",
     "import": "npm run build && node dist/importers",
     "lint": "eslint .",
     "test": "jest tests/ --runInBand",
@@ -23,12 +23,14 @@
     "axios": "^0.21.1",
     "codecov": "^3.7.2",
     "discord.js": "^12.3.1",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.4.0",
+    "module-alias": "^2.2.2",
     "mongoose": "^5.10.5",
     "node-cron": "^2.0.3",
     "puppeteer": "^5.5.0",
     "puppeteer-extra": "^3.1.15",
-    "puppeteer-extra-plugin-stealth": "^2.6.5"
+    "puppeteer-extra-plugin-stealth": "^2.6.5",
+    "typescript": "^4.3.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.5",
@@ -36,7 +38,10 @@
     "@babel/node": "^7.10.5",
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
-    "@types/jest": "^26.0.13",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^14.17.4",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
     "babel-jest": "^26.3.0",
     "eslint": "^7.8.1",
     "eslint-config-standard": "^14.1.1",
@@ -46,11 +51,15 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "jest": "^26.4.2"
+    "jest": "^27.0.0",
+    "ts-jest": "^27.0.3"
   },
-  "jest": {
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true,
-    "testEnvironment": "node"
+  "_moduleAliases": {
+    "@types": "out/types.js",
+    "@stringsLang": "out/stringsLang.js",
+    "@managers": "out/managers",
+    "@commands": "out/commands",
+    "@baseCommands": "out/baseCommands",
+    "@utils": "out/utils"
   }
 }
