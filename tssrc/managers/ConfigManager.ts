@@ -47,7 +47,6 @@ class ConfigManager {
   private async loadGuildsConfig () {
     const databaseManager = DatabaseManager.getInstance()
     this.guildsConfig = await databaseManager.getAllGuildsConfigs()
-    console.log(this.guildsConfig)
   }
 }
 

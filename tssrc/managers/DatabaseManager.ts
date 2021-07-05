@@ -31,7 +31,7 @@ export default class DatabaseManager {
   public async createOrUpdateGuild (guildConfig: GuildConfig): Promise<GuildConfig> {
     try {
       await this.connectDatabase()
-      const guild = await GuildModel.findOneAndUpdate({ id: guildConfig.guildId }, guildConfig, {
+      const guild = await GuildModel.findOneAndUpdate({ id: guildConfig.id }, guildConfig, {
         new: true,
         upsert: true
       })
@@ -50,9 +50,6 @@ export default class DatabaseManager {
       if (!guildConfig) {
         return null
       }
-      delete guildConfig._id
-      delete guildConfig.__v
-      delete guildConfig.id
       const configs = {
         ...defaultConfig,
         ...guildConfig

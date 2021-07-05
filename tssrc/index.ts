@@ -1,8 +1,6 @@
 import 'module-alias/register'
 import { Client, Message, TextChannel } from 'discord.js'
 import cron from 'node-cron'
-// import notifyAlmanaxBonus from './almaNotifier'
-// import { getAlmanaxBonus, calculateAttackDamage, getHelp, getSublimation, getEquipment, getAbout, partyList, getRecipe, configGuild, getMonster } from './commands'
 // import onMessageReactionAdd from './reactions/onMessageReactionAdd'
 // import onMessageReactionRemove from './reactions/onMessageReactionRemove'
 import { handleMessageError } from './utils/handleError'
@@ -35,11 +33,11 @@ class Bot {
     this.client = client
     this.token = token
     this.configManager = configManager
-    cron.schedule('* * * * *', this.sendAlmanaxBonus.bind(this))
+    cron.schedule('1 0 * * *', this.sendDailyAlmanaxBonus.bind(this))
   }
 
   public listen (): void {
-    // this.client.on('message', this.onMessage.bind(this))
+    this.client.on('message', this.onMessage.bind(this))
     this.client.on('ready', this.onReady.bind(this))
 
     this.client.login(this.token)
@@ -75,9 +73,8 @@ class Bot {
   }
 
   // TO DO: Refactor and move this function
-  private async sendAlmanaxBonus() {
+  private async sendDailyAlmanaxBonus() {
     try {
-      console.log('Starting to send almanax bonus to channels...')
       const guildsIds = this.client.guilds.cache.map(guild => guild.id)
 
       for (let guildIndex = 0; guildIndex < guildsIds.length; guildIndex++) {
@@ -92,8 +89,7 @@ class Bot {
           const guildChannel = guild.channels.cache.get(guildChannelId) as TextChannel
           if (!guildChannel.name.includes(almanaxChannelName)) continue
           const embed = AlmaCommand.getAndMountAlmanaxBonusEmbed(guildConfig.lang)
-          // await guildChannel.send({ embed })
-          console.log('I would be sending to ', almanaxChannelName)
+          await guildChannel.send({ embed })
         }
       }
     } catch (error) {
