@@ -5,10 +5,17 @@
 [![codecov](https://codecov.io/gh/Markkop/corvo-astral/branch/master/graph/badge.svg)](https://codecov.io/gh/Markkop/corvo-astral)
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
-Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that serves as a helper for the [Wakfu MMORPG](https://www.wakfu.com/) game.  
-If you wish to add this bot to your server, access this [link](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=1342565456&scope=bot).  
+**Corvo Astral** is a [Discord Bot](https://discord.js.org/#/) that serves as a helper for the [Wakfu MMORPG](https://www.wakfu.com/) game.  
+
+If you wish to **add this bot** to your server, access this [link](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=1342565456&scope=bot).  
+
 Most features support Wakfu community languages: en, es, pt and fr.  
-If you need help or want to report bugs, feel free to join the bot's discord: https://discord.gg/aX6j3gM8HC  
+
+If you need help or want to report bugs, feel free to **join the bot's discord**: https://discord.gg/aX6j3gM8HC  
+
+This bot is now featured in **top.gg**: https://top.gg/bot/750529201161109507  
+  
+**This bot is being migrated to Typescript and a more Object-Oriented structure. [Feel free to contribute](https://github.com/Markkop/corvo-astral/tree/refac/typescript-and-oop).**
 
 ## Commands
 
@@ -23,13 +30,17 @@ If you need help or want to report bugs, feel free to join the bot's discord: ht
 * `.config`: configure custom settings for each discord channel
 * `.help`: get help for available commands
 
+## Notes
+Some features have been **disabled** due to the new protection made in Ankama's websites in a way that we can't scrap its data directly.  
+I don't think we'll have an workaround for this, so if you wish to have these features back, **please kindly request** to Ankama devs the availability for these data through API in the following forum: https://www.wakfu.com/en/forum/332-development.  
+**Affected features: details from Krosmoz Almanax, equipment drop information, monster search and information.**
+
 ## Features
 
 ### :milky_way:  Krosmoz Almanax
 
 Inspired by [wakmanax](https://github.com/elio-centrique/wakmanax), the `.alma` command scraps [Krosmoz Almanax](http://www.krosmoz.com/en/almanax) page and returns tons of cool stuff such as Protector of the Day, Zodiac, Trivia, Event and Forecast!  
-**However, all these features are currently disabled because Ankama has protected their websites from scrapping and we can no longer retrieve this extra info.
-The Almanax Bonus is still available!**
+**Note: due to scrapping limitations, the cool stuff is no longer available. The day's bonus is still displayed, thought.**
   
 ![](https://i.imgur.com/BVOqE2p.gif)
 
@@ -66,6 +77,7 @@ Am equipment search is available with `.equip <name>` command.
 It's also possible to filter them by rarity with `rarity=<rarity>` option.  
 If a recipe is associated, it can be displayed by reacting with 🛠️  
 You can also react with 💰 to get its drop data directly from Wakfu's website  
+**Note: due to scrapping limitations, the drop feature is no longer available.**
 
 **Examples**:
 ```bash
@@ -117,7 +129,8 @@ You can search for monsters by typing `.mob ogrest`, for example
 It'll show their characteristics, damage, resistances, drops and spells.  
 For monsters with huge droplist, you can click on the card title to
 open the browser in the monster's page
-When using translate, you first have to select a monster from the results 
+When using translate, you first have to select a monster from the results  
+**Note: due to scrapping limitations, this command is no longer available.**
  
 **Examples**:
 ```bash
@@ -146,6 +159,8 @@ Examples:
 By sending a Method's or Zenith's build link, the bot will access the link, take a printscreen and send it as a preview to the chat.  
 It'll also sum the highest elemental damage with all other non-negative secundary masteries and display it on the message.  
 You can disable this behavior by using `.config set buildPreview=disabled`  
+**Note: Method's builder is no longer available.**  
+**Note: Zenith's builder integration has been disabled while we (me) fix it after its new interface.**  
 
 ![buildPreviewEx](https://user-images.githubusercontent.com/16388408/102099728-5bc0fe80-3e07-11eb-86a4-e61081ee314c.gif)
 
