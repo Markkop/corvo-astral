@@ -22,7 +22,7 @@ export default abstract class BaseCommand {
     return sentContent
   }
 
-  protected async sendWithHelp (): Promise<Message | Message[]> {
+  protected async sendHelp (): Promise<Message | Message[]> {
     const helpEmbed = this.mountCommandHelpEmbed()
     return this.send({ embed: helpEmbed })
   }

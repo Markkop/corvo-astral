@@ -17,7 +17,7 @@ export default class EquipCommand extends FinderCommand {
     const query = args.join(' ').toLowerCase()
 
     if (!query) {
-      this.sendWithHelp()
+      this.sendHelp()
       return
     }
 

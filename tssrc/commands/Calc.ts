@@ -26,7 +26,7 @@ export default class CalcCommand extends BaseCommand {
     const requiredArgs = ['dmg', 'base', 'res']
     const hasRequiredArgs = requiredArgs.every(requiredArg => Boolean(options[requiredArg]))
     if (!hasRequiredArgs) {
-      this.sendWithHelp()
+      this.sendHelp()
       return
     }
 

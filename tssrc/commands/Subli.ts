@@ -29,7 +29,7 @@ export default class SubliCommand extends FinderCommand {
     const normalizedQuery = args.join(' ').toLowerCase()
     const equivalentQuery = this.findEquivalentQuery(normalizedQuery)
     if (!normalizedQuery) {
-      this.sendWithHelp()
+      this.sendHelp()
       return
     }
 
