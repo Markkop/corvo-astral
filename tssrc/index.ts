@@ -1,10 +1,11 @@
 import 'module-alias/register'
-import { Client, Message, TextChannel } from 'discord.js'
+import { Client, Message, MessageReaction, TextChannel, User } from 'discord.js'
 import cron from 'node-cron'
 // import onMessageReactionAdd from './reactions/onMessageReactionAdd'
 // import onMessageReactionRemove from './reactions/onMessageReactionRemove'
 import { handleMessageError } from './utils/handleError'
 import { ConfigManager, MessageManager } from '@managers'
+import ReactionService from './services/ReactionService'
 import { 
   EquipCommand,
   AlmaCommand,
@@ -39,6 +40,8 @@ class Bot {
   public listen (): void {
     this.client.on('message', this.onMessage.bind(this))
     this.client.on('ready', this.onReady.bind(this))
+    this.client.on('messageReactionAdd', this.onMessageReactionAdd.bind(this))
+    // this.client.on('messageReactionRemove', this.onMessageReactionRemove.bind(this))
 
     this.client.login(this.token)
   }
@@ -66,6 +69,10 @@ class Bot {
     } catch (error) {
       handleMessageError(error, message)
     }
+  }
+
+  private async onMessageReactionAdd(reaction: MessageReaction, user: User) {
+    ReactionService.handleReactionAdd(reaction, user)
   }
 
   private getCommand (commandWord: string) {

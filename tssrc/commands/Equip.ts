@@ -38,7 +38,7 @@ export default class EquipCommand extends FinderCommand {
     const equipEmbed = this.mountEquipEmbed(results)
     const sentMessage = await this.send({ embed: equipEmbed })
 
-    const reactions = ['💰']
+    const reactions = []
     const recipes = RecipesManager.getRecipesByProductedItemId(results[0].id)
     if (recipes.length) {
       reactions.unshift('🛠️')

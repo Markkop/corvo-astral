@@ -1,5 +1,5 @@
 import { Message } from 'discord.js'
-import { CommandData } from '@types'
+import { CommandData, LanguageStrings } from '@types'
 
 class MessageManager {
   public static getCommandWord (commandPrefix: string, message: Message): string {
@@ -39,6 +39,16 @@ class MessageManager {
     const whiteSpacesCharacters = Array(codeBlockCharactersLength).fill(' ')
     whiteSpacesCharacters.splice(0, textCharacters.length, ...textCharacters)
     return `\`${whiteSpacesCharacters.join('')}\``
+  }
+
+  // Check if it makes sense to have this method in this class
+  public static guessLanguage (text: string, strObject: LanguageStrings) {
+    return Object.entries(strObject).reduce((lang, [langEntry, nameEntry]) => {
+      if (text.toLowerCase().includes(nameEntry.toLowerCase())) {
+        return langEntry
+      }
+      return lang
+    }, 'en')
   }
 }
 

@@ -2,6 +2,9 @@ import { hasTextOrNormalizedTextIncluded } from '@utils/strings'
 import str from '@stringsLang'
 import { CommandOptions, ItemData } from '@types'
 import mappings from '@utils/mappings'
+import MessageManager from './MessageManager'
+import { MessageReaction, MessageEmbed } from 'discord.js'
+import { RecipesManager } from '@managers'
 const { equipTypesMap, rarityMap } = mappings
 const itemsData = require('../../data/generated/items.json')
 
@@ -123,6 +126,35 @@ class ItemManager {
     return { results, foundBy }
   }
 
+  // Check if this method should be here in this class
+  public async enrichItemMessage (reaction: MessageReaction) {
+    const reactionEmbed = reaction.message.embeds[0]
+    if (!reactionEmbed) return
+
+    const levelField = reactionEmbed.fields.find(field => !/\D/.test(field.value))
+    const levelName = levelField.name || ''
+    const lang = MessageManager.guessLanguage(levelName, str.level)
+    const id = Number(reactionEmbed.description.split('ID: ')[1])
+  
+  
+    if (reaction.emoji.name === '🛠️') {
+      const hasRecipeField = reactionEmbed.fields.some(field => {
+        return Object.values(str.job).some(jobName => jobName === field.name.toLowerCase())
+      })
+      if (hasRecipeField) return
+  
+      const recipes = RecipesManager.getRecipesByProductedItemId(id)
+      if (!recipes.length) return
+  
+      const recipeFields = RecipesManager.getRecipeFields(recipes, lang)
+      reactionEmbed.fields = [
+        ...reactionEmbed.fields,
+        ...recipeFields
+      ]
+    }
+    const newEmbed = new MessageEmbed(reactionEmbed)
+    await reaction.message.edit(newEmbed)
+  }
 
   // TO Do: move the following functions 
   private getRarityIdByRarityNameInAnyLanguage (rarityName) {
