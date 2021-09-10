@@ -16,13 +16,14 @@ export default abstract class BaseCommand {
     this.commandWord = MessageManager.getCommandWord(guildConfig.prefix, message)
   }
 
-  protected async send (content: MessageOptions): Promise<Message> {
-    const sentContent = await this.message.channel.send(content)
+  protected async send (content: MessageOptions | string): Promise<Message> {
+    const messageContent = typeof content === 'string' ? { content } : content
+    const sentContent = await this.message.channel.send(messageContent)
     if(Array.isArray(sentContent)) return sentContent[0]
     return sentContent
   }
 
-  protected async sendHelp (): Promise<Message | Message[]> {
+  protected async sendHelp (): Promise<Message> {
     const helpEmbed = this.mountCommandHelpEmbed()
     return this.send({ embed: helpEmbed })
   }
