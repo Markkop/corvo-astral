@@ -12,7 +12,8 @@ import {
   AboutCommand,
   CalcCommand,
   RecipeCommand,
-  SubliCommand
+  SubliCommand,
+  PartyBaseCommand
  } from '@commands'
 require('dotenv').config()
 
@@ -22,7 +23,8 @@ const commandsMap = {
   calc: CalcCommand,
   recipe: RecipeCommand,
   subli: SubliCommand,
-  alma: AlmaCommand
+  alma: AlmaCommand,
+  party: PartyBaseCommand
 }
 
 class Bot {

@@ -137,3 +137,11 @@ export type CommandData = {
   args: string[],
   options: CommandOptions
 }
+
+export type PartyOptions = {
+  name: string
+  description: string
+  date: string,
+  level: string,
+  slots: string
+}
