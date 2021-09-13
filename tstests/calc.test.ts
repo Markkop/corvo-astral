@@ -1,12 +1,9 @@
 import { CalcCommand } from '../tssrc/commands'
-import { mockMessageAndSpyChannelSend, embedContaining, defaultConfig } from './testutils'
+import { executeCommandAndSpySentMessage, embedContaining } from './testutils'
 
 describe('CalcCommand', () => {
   it('replies damage embed with % resist option', () => {
-    const content = '.calc dmg=4000 base=50 res=61%'
-    const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new CalcCommand(userMessage, defaultConfig)
-    equipCommand.execute()
+    const spy = executeCommandAndSpySentMessage(CalcCommand, '.calc dmg=4000 base=50 res=61%')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':crossed_swords: USERNAME has attacked a gobbal!',
       fields: [
@@ -50,10 +47,7 @@ describe('CalcCommand', () => {
   })
 
   it('replies damage embed with flat resist option', () => {
-    const content = '.calc dmg=4000 base=50 res=422'
-    const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new CalcCommand(userMessage, defaultConfig)
-    equipCommand.execute()
+    const spy = executeCommandAndSpySentMessage(CalcCommand, '.calc dmg=4000 base=50 res=422')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':crossed_swords: USERNAME has attacked a gobbal!',
       fields: [
@@ -97,10 +91,7 @@ describe('CalcCommand', () => {
   })
 
   it('replies damage embed with crit chance option', () => {
-    const content = '!calc dmg=4000 base=50 res=422 crit=10'
-    const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new CalcCommand(userMessage, defaultConfig)
-    equipCommand.execute()
+    const spy = executeCommandAndSpySentMessage(CalcCommand, '!calc dmg=4000 base=50 res=422 crit=10')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':crossed_swords: USERNAME has attacked a gobbal!',
       fields: [
@@ -144,10 +135,7 @@ describe('CalcCommand', () => {
   })
 
   it('replies a help embed if no options were provided', () => {
-    const content = '.calc'
-    const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new CalcCommand(userMessage, defaultConfig)
-    equipCommand.execute()
+    const spy = executeCommandAndSpySentMessage(CalcCommand, '.calc')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: expect.stringContaining('.help')
     }))

@@ -9,7 +9,7 @@
     "build": "tsc",
     "import": "npm run build && node dist/importers",
     "lint": "eslint .",
-    "test": "jest tests/ --runInBand",
+    "test": "jest tstests/ --runInBand",
     "clean": "rm package-lock.json && rm -rf node_modules"
   },
   "keywords": [

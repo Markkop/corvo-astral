@@ -1,13 +1,10 @@
 import { AboutCommand } from '../tssrc/commands'
 import stringsLang from '../tssrc/stringsLang'
-import { mockMessageAndSpyChannelSend, embedContaining, defaultConfig } from './testutils'
+import { executeCommandAndSpySentMessage, embedContaining } from './testutils'
 
 describe('AboutCommand', () => {
   it('replies with about message embed', async () => {
-    const content = '.about'
-    const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-    const equipCommand = new AboutCommand(userMessage, defaultConfig)
-    equipCommand.execute()
+    const spy = executeCommandAndSpySentMessage(AboutCommand, '.about')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       color: 0xFFFF00,
       title: ':crescent_moon: About Corvo Astral',

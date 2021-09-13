@@ -1,7 +1,7 @@
 import MockDiscord from './mockDiscord'
 
 export const defaultConfig = {
-  guildId: '11',
+  id: '11',
   lang: 'en',
   prefix: '.',
   almanaxChannel: 'almanax',
@@ -20,4 +20,11 @@ export function embedContaining(content) {
   return {
     embed: expect.objectContaining(content)
   }
+}
+
+export function executeCommandAndSpySentMessage(command, content) {
+  const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
+  const equipCommand = new command(userMessage, defaultConfig)
+  equipCommand.execute()
+  return spy
 }
