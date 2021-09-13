@@ -3,11 +3,12 @@ import stringsLang from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
 import { MessageManager } from '@managers'
 import { Message } from 'discord.js'
-import { PartyCreateCommand } from '@commands'
+import { PartyCreateCommand, PartyUpdateCommand } from '@commands'
 
 export default class AboutCommand extends BaseCommand {
   private partyActions = {
     create: PartyCreateCommand,
+    update: PartyUpdateCommand
   }
 
   constructor (message: Message, guildConfig: GuildConfig) {

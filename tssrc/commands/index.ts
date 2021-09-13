@@ -6,6 +6,7 @@ import SubliCommand from './Subli'
 import AlmaCommand from './Alma'
 import PartyBaseCommand from './party/PartyBase'
 import PartyCreateCommand from './party/PartyCreate'
+import PartyUpdateCommand from './party/PartyUpdate'
 
 export {
   AboutCommand,
@@ -15,5 +16,6 @@ export {
   SubliCommand,
   AlmaCommand,
   PartyBaseCommand,
-  PartyCreateCommand
+  PartyCreateCommand,
+  PartyUpdateCommand
 }
