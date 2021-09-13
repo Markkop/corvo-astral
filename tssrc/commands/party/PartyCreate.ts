@@ -75,7 +75,6 @@ export default class PartyCreateCommand extends PartyCommand {
     }
     
     const embed = this.mountPartyEmbed(identifier, options)
-
     const partyChannel = this.getPartyChannel() as TextChannel
     const sentMessage = await partyChannel.send({ embed })
     await this.message.react('⏳')

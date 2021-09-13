@@ -20,6 +20,10 @@ export default class MockDiscord {
   private user!: User;
   private guildMember!: GuildMember;
   public message!: Message;
+  
+  private botPartyChannel!: Channel;
+  private botPartyGuildChannel!: GuildChannel;
+  private botPartyTextChannel!: TextChannel;
 
   constructor(options) {
 
@@ -28,9 +32,26 @@ export default class MockDiscord {
     this.mockChannel();
     this.mockGuildChannel();
     this.mockTextChannel();
+
+    this.mockPartyChannel()
+    this.mockBotPartyGuildChannel();
+    this.mockBotPartyTextChannel();
+
     this.mockUser();
     this.mockGuildMember();
     this.mockMessage(options.message.content);
+
+    if (options?.partyChannel?.messages) {
+      this.mockPartyMessages(options.partyChannel.messages)
+    }
+
+    TextChannel.prototype.send = jest.fn().mockImplementation((a) => {
+      return {
+        react: jest.fn()
+      }
+    })
+
+    this.guild.channels.add(this.botPartyTextChannel)
   }
 
   public getClient(): Client {
@@ -47,6 +68,14 @@ export default class MockDiscord {
 
   public getGuildChannel(): GuildChannel {
     return this.guildChannel;
+  }
+
+  public getBotPartyGuildChannel(): GuildChannel {
+    return this.botPartyGuildChannel;
+  }
+
+  public getBotPartyTextChannel(): TextChannel {
+    return this.botPartyTextChannel;
   }
 
   public getTextChannel(): TextChannel {
@@ -105,6 +134,12 @@ export default class MockDiscord {
     });
   }
 
+  private mockPartyChannel(): void {
+    this.botPartyChannel = new Channel(this.client, {
+      id: "party-channel-id",
+    });
+  }
+
   private mockGuildChannel(): void {
     this.guildChannel = new GuildChannel(this.guild, {
       ...this.channel,
@@ -116,10 +151,29 @@ export default class MockDiscord {
     });
   }
 
+  private mockBotPartyTextChannel(): void {
+    this.botPartyTextChannel = new TextChannel(this.guild, {
+      ...this.botPartyGuildChannel,
+      topic: "topic",
+      nsfw: false,
+      last_message_id: "123456789",
+      lastPinTimestamp: new Date("2019-01-01").getTime(),
+      rate_limit_per_user: 0,
+    });
+    this.botPartyTextChannel.messages.fetch = jest.fn().mockResolvedValue(this.botPartyTextChannel.messages.cache)
+  }
+
+  private mockBotPartyGuildChannel(): void {
+    this.botPartyGuildChannel = new GuildChannel(this.guild, {
+      ...this.botPartyChannel,
+      name: "listagem-de-grupos",
+      position: 2,
+      parent_id: "2",
+      permission_overwrites: [],
+    });
+  }
+
   private mockTextChannel(): void {
-    TextChannel.prototype.send = jest.fn().mockResolvedValue({
-      react: jest.fn()
-    })
     this.textChannel = new TextChannel(this.guild, {
       ...this.guildChannel,
 
@@ -160,6 +214,35 @@ export default class MockDiscord {
     );
   }
 
+  private mockPartyMessages(messages): void {
+   messages.forEach((message, index) => {
+    const msg = new Message(
+       this.client,
+       {
+         id: `existing-party-message-id-${index}`,
+         type: "DEFAULT",
+         content: '',
+         author: this.user,
+         webhook_id: null,
+         member: this.guildMember,
+         pinned: false,
+         tts: false,
+         nonce: "nonce",
+         embeds: [message.embed],
+         attachments: [],
+         edited_timestamp: null,
+         reactions: [],
+         mentions: [],
+         mention_roles: [],
+         mention_everyone: [],
+         hit: false,
+       },
+       this.botPartyTextChannel
+     );
+     this.botPartyTextChannel.messages.cache.set(msg.id, msg)
+   })
+  }
+
   private mockMessage(content): void {
     this.message = new Message(
       this.client,
@@ -184,5 +267,6 @@ export default class MockDiscord {
       },
       this.textChannel
     );
+    this.message.react = jest.fn()
   }
 }

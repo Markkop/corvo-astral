@@ -16,15 +16,29 @@ export function mockMessageAndSpyChannelSend(content) {
   return { userMessage, spy }
 }
 
+export function mockMessageWithOptionsAndSpyChannelSend(options) {
+  const discord = new MockDiscord(options)
+  const userMessage = discord.getMessage()
+  const spy = jest.spyOn(userMessage.channel, 'send') 
+  return { userMessage, spy }
+}
+
 export function embedContaining(content) {
   return {
     embed: expect.objectContaining(content)
   }
 }
 
-export function executeCommandAndSpySentMessage(command, content) {
+export async function executeCommandWithMockedOptionsAndSpySentMessage(command, options, config = {}) {
+  const { userMessage, spy } = mockMessageWithOptionsAndSpyChannelSend(options)
+  const equipCommand = new command(userMessage, {...defaultConfig, ...config})
+  await equipCommand.execute()
+  return spy
+}
+
+export async function executeCommandAndSpySentMessage(command, content, config = {}) {
   const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-  const equipCommand = new command(userMessage, defaultConfig)
-  equipCommand.execute()
+  const equipCommand = new command(userMessage, {...defaultConfig, ...config})
+  await equipCommand.execute()
   return spy
 }
