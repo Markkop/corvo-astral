@@ -35,6 +35,10 @@ export default class PartyCommand extends BaseCommand {
     return embed.fields.find(field => field.name.includes(fieldName))
   }
 
+  protected getEmbedFieldValueByName(embed: MessageEmbed, fieldName: string): string {
+    return this.getEmbedFieldByName(embed, fieldName)?.value || ''
+  }
+
   protected getPartyId(message: Message): string {
     const idField = this.getEmbedFieldByName(message.embeds[0], 'ID')
     return idField.value

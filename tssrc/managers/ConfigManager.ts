@@ -4,7 +4,7 @@ import { DatabaseManager } from '@managers'
 class ConfigManager {
   private static instance: ConfigManager;
 
-  private guildsConfig: GuildConfig[]
+  private guildsConfig: GuildConfig[] = []
   private static defaultGuildConfig: DefaultGuildConfig = {
     lang: 'en',
     prefix: '.',

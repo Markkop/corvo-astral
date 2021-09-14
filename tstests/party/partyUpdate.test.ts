@@ -1,6 +1,6 @@
 import PartyUpdateCommand from '../../tssrc/commands/party/PartyUpdate'
 import { 
-  executeCommandWithMockOptionsAndSpyExistingMessageEdit,
+  executeCommandWithMockOptionsAndSpyEdit,
 } from '../testutils'
 import askAndWaitForAnswer from '../../tssrc/utils/askAndWaitForAnswer'
 
@@ -36,7 +36,7 @@ describe('PartyUpdateCommand', () => {
     }
 
     mockAskAndWaitAnswers(['2', 'name', 'newname'])
-    const spy = await executeCommandWithMockOptionsAndSpyExistingMessageEdit(PartyUpdateCommand, mockOptions)
+    const spy = await executeCommandWithMockOptionsAndSpyEdit(PartyUpdateCommand, mockOptions)
     expect(spy).toHaveBeenNthCalledWith(1, expect.objectContaining({
       title: 'Party: newname'
     }))

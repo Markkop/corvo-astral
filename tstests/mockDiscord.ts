@@ -7,6 +7,7 @@ import {
   User,
   GuildMember,
   Message,
+  MessageReaction,
 } from "discord.js";
 
 
@@ -25,6 +26,9 @@ export default class MockDiscord {
   private botPartyGuildChannel!: GuildChannel;
   private botPartyTextChannel!: TextChannel;
 
+  private reaction!: MessageReaction;
+  private reactionUser!: User;
+
   constructor(options) {
 
     this.mockClient();
@@ -39,15 +43,20 @@ export default class MockDiscord {
 
     this.mockUser();
     this.mockGuildMember();
-    this.mockMessage(options.message.content);
+    this.mockMessage(options?.message?.content);
+
+    this.mockPrototypes()
+    this.guild.channels.add(this.botPartyTextChannel)
 
     if (options?.partyChannel?.messages) {
       this.mockPartyMessages(options.partyChannel.messages)
     }
 
-    this.mockPrototypes()
-
-    this.guild.channels.add(this.botPartyTextChannel)
+    if (options?.reaction) {
+      const lastPartyMessage = this.botPartyTextChannel.messages.cache.last()
+      this.mockReaction(options.reaction, lastPartyMessage)
+      this.mockReactionUser(options.reaction?.user?.id);
+    }
   }
 
   public getClient(): Client {
@@ -90,6 +99,14 @@ export default class MockDiscord {
     return this.message;
   }
 
+  public getReaction(): MessageReaction {
+    return this.reaction;
+  }
+
+  public getReactionUser(): User {
+    return this.reactionUser;
+  }
+
   private mockPrototypes() {
     TextChannel.prototype.send = jest.fn().mockImplementation(() => {
       return {
@@ -98,6 +115,10 @@ export default class MockDiscord {
     })
 
     Message.prototype.edit = jest.fn()
+  }
+
+  private mockReaction(reactionOptions, message): void {
+    this.reaction = new MessageReaction(this.client, { emoji: { name: reactionOptions.emoji } }, message)
   }
 
   private mockClient(): void {
@@ -201,6 +222,16 @@ export default class MockDiscord {
     });
   }
 
+  private mockReactionUser(userId): void {
+    this.reactionUser = new User(this.client, {
+      id: userId,
+      username: `USERNAME-${userId}`,
+      discriminator: `user#0000-${userId}`,
+      avatar: "user avatar url",
+      bot: false,
+    });
+  }
+  
   private mockGuildMember(): void {
     this.guildMember = new GuildMember(
       this.client,
