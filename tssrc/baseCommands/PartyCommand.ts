@@ -43,4 +43,25 @@ export default class PartyCommand extends BaseCommand {
     const idField = this.getEmbedFieldByName(message.embeds[0], 'ID')
     return idField.value
   }
+
+  protected updateEmbedFieldByName(embed: MessageEmbed, fieldName: string, newValue: string) {
+    const embedField = this.getEmbedFieldByName(embed, fieldName)
+    embedField.value = newValue || embedField.value
+    return embed
+  }
+  protected updatePartyFieldByName(embed: MessageEmbed, partyFieldName: string, newValue: string) {
+    const updatedEmbed = { ...embed } as MessageEmbed
+    if (partyFieldName === 'name') {
+      updatedEmbed.title = newValue ? `Party: ${newValue}` : embed.title
+    } else if (partyFieldName === 'description') {
+      updatedEmbed.description = newValue
+    } else if (partyFieldName === 'date') {
+      this.updateEmbedFieldByName(updatedEmbed, 'Date', newValue)
+    } else if (partyFieldName === 'level') {
+      this.updateEmbedFieldByName(updatedEmbed, 'Level', newValue)
+    } else if (partyFieldName === 'members') {
+      this.updateEmbedFieldByName(updatedEmbed, 'Members', newValue)
+    }
+    return updatedEmbed
+  }
 }

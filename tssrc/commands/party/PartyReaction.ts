@@ -11,29 +11,6 @@ export default class PartyReaction extends PartyReactionCommand {
     super(reaction, user, guildConfig)
   }
 
-  private updateEmbedFieldByName(embed: MessageEmbed, fieldName: string, newValue: string) {
-    const embedField = this.getEmbedFieldByName(embed, fieldName)
-    embedField.value = newValue || embedField.value
-    return embed
-  }
-
-  // Reuse this code in party update
-  private updatePartyFieldByName(embed: MessageEmbed, partyFieldName: string, newValue: string) {
-    const updatedEmbed = { ...embed } as MessageEmbed
-    if (partyFieldName === 'name') {
-      updatedEmbed.title = newValue ? `Party: ${newValue}` : embed.title
-    } else if (partyFieldName === 'description') {
-      updatedEmbed.description = newValue
-    } else if (partyFieldName === 'date') {
-      this.updateEmbedFieldByName(updatedEmbed, 'Date', newValue)
-    } else if (partyFieldName === 'level') {
-      this.updateEmbedFieldByName(updatedEmbed, 'Level', newValue)
-    } else if (partyFieldName === 'members') {
-      this.updateEmbedFieldByName(updatedEmbed, 'Members', newValue)
-    }
-    return updatedEmbed
-  }
-
   private getUserJoinedRow(members: string, user: User) {
     return members.split('\n').find(memberRow => memberRow.includes(user.id)) || ''
   }
