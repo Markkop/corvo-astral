@@ -45,11 +45,7 @@ export default class MockDiscord {
       this.mockPartyMessages(options.partyChannel.messages)
     }
 
-    TextChannel.prototype.send = jest.fn().mockImplementation((a) => {
-      return {
-        react: jest.fn()
-      }
-    })
+    this.mockPrototypes()
 
     this.guild.channels.add(this.botPartyTextChannel)
   }
@@ -92,6 +88,16 @@ export default class MockDiscord {
 
   public getMessage(): Message {
     return this.message;
+  }
+
+  private mockPrototypes() {
+    TextChannel.prototype.send = jest.fn().mockImplementation(() => {
+      return {
+        react: jest.fn()
+      }
+    })
+
+    Message.prototype.edit = jest.fn()
   }
 
   private mockClient(): void {

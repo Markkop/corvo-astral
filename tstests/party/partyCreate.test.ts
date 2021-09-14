@@ -1,6 +1,6 @@
 import PartyCreateCommand from '../../tssrc/commands/party/PartyCreate'
 import { 
-  executeCommandWithMockedOptionsAndSpySentMessage, 
+  executeCommandWithMockOptionsAndSpySentMessage, 
   executeCommandAndSpySentMessage, 
   embedContaining 
 } from '../testutils'
@@ -54,7 +54,7 @@ describe('PartyCreateCommand', () => {
     }
 
     mockAskAndWaitAnswers(['group3', 'skip', '10/10 21:00', '200', '6'])
-    const spy = await executeCommandWithMockedOptionsAndSpySentMessage(PartyCreateCommand, mockOptions)
+    const spy = await executeCommandWithMockOptionsAndSpySentMessage(PartyCreateCommand, mockOptions)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       fields: expect.arrayContaining([{
         name: ':label: ID',
