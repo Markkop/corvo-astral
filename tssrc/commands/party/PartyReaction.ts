@@ -1,6 +1,6 @@
 import { PartyReactionCommand } from '@baseCommands'
 import { GuildConfig } from '@types'
-import { MessageEmbed, MessageReaction, User } from 'discord.js'
+import { MessageReaction, User } from 'discord.js'
 import mappings from '@utils/mappings'
 const { classEmoji } = mappings
 

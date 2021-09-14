@@ -2,8 +2,8 @@ import { CalcCommand } from '../tssrc/commands'
 import { executeCommandAndSpySentMessage, embedContaining } from './testutils'
 
 describe('CalcCommand', () => {
-  it('replies damage embed with % resist option', () => {
-    const spy = executeCommandAndSpySentMessage(CalcCommand, '.calc dmg=4000 base=50 res=61%')
+  it('replies damage embed with % resist option', async () => {
+    const spy = await executeCommandAndSpySentMessage(CalcCommand, '.calc dmg=4000 base=50 res=61%')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':crossed_swords: USERNAME has attacked a gobbal!',
       fields: [
@@ -46,8 +46,8 @@ describe('CalcCommand', () => {
     }))
   })
 
-  it('replies damage embed with flat resist option', () => {
-    const spy = executeCommandAndSpySentMessage(CalcCommand, '.calc dmg=4000 base=50 res=422')
+  it('replies damage embed with flat resist option', async () => {
+    const spy = await executeCommandAndSpySentMessage(CalcCommand, '.calc dmg=4000 base=50 res=422')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':crossed_swords: USERNAME has attacked a gobbal!',
       fields: [
@@ -90,8 +90,8 @@ describe('CalcCommand', () => {
     }))
   })
 
-  it('replies damage embed with crit chance option', () => {
-    const spy = executeCommandAndSpySentMessage(CalcCommand, '!calc dmg=4000 base=50 res=422 crit=10')
+  it('replies damage embed with crit chance option', async () => {
+    const spy = await executeCommandAndSpySentMessage(CalcCommand, '!calc dmg=4000 base=50 res=422 crit=10')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':crossed_swords: USERNAME has attacked a gobbal!',
       fields: [
@@ -134,8 +134,8 @@ describe('CalcCommand', () => {
     }))
   })
 
-  it('replies a help embed if no options were provided', () => {
-    const spy = executeCommandAndSpySentMessage(CalcCommand, '.calc')
+  it('replies a help embed if no options were provided', async () => {
+    const spy = await executeCommandAndSpySentMessage(CalcCommand, '.calc')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: expect.stringContaining('.help')
     }))

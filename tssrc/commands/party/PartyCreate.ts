@@ -1,5 +1,4 @@
 import { PartyCommand } from '@baseCommands'
-import stringsLang from '@stringsLang'
 import { GuildConfig, PartialEmbed, PartyOptions } from '@types'
 import { Message, TextChannel } from 'discord.js'
 import askAndWaitForAnswer from '@utils/askAndWaitForAnswer'

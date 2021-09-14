@@ -4,7 +4,7 @@ import { executeCommandAndSpySentMessage, embedContaining } from './testutils'
 
 describe('getSublimation', () => {
   it('returns a sublimation when finding only one result', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli brutality')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli brutality')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/resources/25796',
       color: 0xfd87ba,
@@ -38,21 +38,21 @@ describe('getSublimation', () => {
   })
 
   it('return a translated subli with "translate" option', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli frenzy translate=pt')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli frenzy translate=pt')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':scroll: Frenesi'
     }))
   })
 
   it('returns the matching sublimation when using query without accents', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli influencia lang=pt')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli influencia lang=pt')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':scroll: Influência'
     }))
   })
 
   it('returns a sublimation and more results when finding more than one', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli frenzy')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli frenzy')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/resources/27126',
       color: 0xfd8e39,
@@ -89,7 +89,7 @@ describe('getSublimation', () => {
   })
 
   it('returns matching sublimations when searching with three slots', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli BBR')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli BBR')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':mag_right: Sublimations found',
       fields: [
@@ -113,7 +113,7 @@ describe('getSublimation', () => {
   })
 
   it('returns matching sublimations when searching with one white slot', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli wbr')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli wbr')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':mag_right: Sublimations found',
       fields: [
@@ -137,7 +137,7 @@ describe('getSublimation', () => {
   })
 
   it('returns matching sublimations when searching with two white slots', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli wwr')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli wwr')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':mag_right: Sublimations found',
       fields: [
@@ -161,7 +161,7 @@ describe('getSublimation', () => {
   })
 
   it('returns sublimations with "random" argument', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli rgb random')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli rgb random')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':mag_right: Sublimations found',
       fields: [
@@ -206,7 +206,7 @@ describe('getSublimation', () => {
   })
 
   it('returns non-repeated matching sublimations when searching with white slots', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli wwgw')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli wwgw')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':mag_right: Sublimations found',
       fields: [
@@ -230,7 +230,7 @@ describe('getSublimation', () => {
   })
 
   it('returns matching sublimations when searching with four slots', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli rrgb')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli rrgb')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':mag_right: Sublimations found',
       fields: [
@@ -254,7 +254,7 @@ describe('getSublimation', () => {
   })
 
   it('returns matching sublimations when searching by 4 slots with the same combinations', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli gggg')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli gggg')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':mag_right: Sublimations found',
       fields: [
@@ -278,7 +278,7 @@ describe('getSublimation', () => {
   })
 
   it('returns matching sublimations when searching by source', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli vertox')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli vertox')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':mag_right: Sublimations found',
       fields: [
@@ -303,7 +303,7 @@ describe('getSublimation', () => {
 
   // TODO: map multi langue arguments
   it('maps correctly an argument', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli épico')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli épico')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':mag_right: Sublimations found',
       fields: [
@@ -327,7 +327,7 @@ describe('getSublimation', () => {
   })
 
   it('replaces wrong query characters when searching by name', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli frenzy 2')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli frenzy 2')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/resources/27153',
       color: 0xfd8e39,
@@ -364,7 +364,7 @@ describe('getSublimation', () => {
   })
 
   it('return a matching sublimation with a recipe', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli solidity')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli solidity')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       fields: expect.arrayContaining([
         {
@@ -412,7 +412,7 @@ describe('getSublimation', () => {
   })
 
   it('returns a not found message if no sublimation was found', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli caracas')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli caracas')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       color: 0xbb1327,
       description: 'Type `.help subli` to see some examples of how to search.',
@@ -421,7 +421,7 @@ describe('getSublimation', () => {
   })
 
   it('returns a help message if no query was provided', async () => {
-    const spy = executeCommandAndSpySentMessage(SubliCommand, '.subli')
+    const spy = await executeCommandAndSpySentMessage(SubliCommand, '.subli')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       description: helpMessages.subli.help.en
     }))
