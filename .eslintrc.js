@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     '@typescript-eslint'
   ],
-  extends: ['standard', '@typescript-eslint/recommended'],
+  extends: ['standard'],
   rules: {
     'arrow-parens': 0,
     'generator-star-spacing': 0,
@@ -19,7 +19,7 @@ module.exports = {
     'jsdoc/require-returns-description': 0,
     'jsdoc/require-property-description': 0,
     'jsdoc/require-param-description': 0,
-    '@typescript-eslint/no-var-requires': 0,
+    '@typescript-eslint/no-var-requires': 0
   },
   overrides: [
     {
