@@ -1,13 +1,13 @@
-import {  MessageReaction, User } from 'discord.js'
-import GroupFinder from './GroupFinderService'
-import mappings from '@utils/mappings'
+import { MessageReaction, User } from 'discord.js'
 import { ItemManager } from '@managers'
 import { handleReactionError } from '@utils/handleError'
+import { GuildConfig } from '@types'
+import { PartyReaction } from '@commands'
+import mappings from '@utils/mappings'
 const { classEmoji } = mappings
 
 class ReactionService {
   private messagePool = []
-  private groupFinderService = GroupFinder
 
   private allowedEmojis = {
     equip: ['🛠️']
@@ -27,7 +27,17 @@ class ReactionService {
     }
   }
 
-  public async handleReactionAdd(reaction: MessageReaction, user: User) {
+  private handlePartyReaction(reaction: MessageReaction, user: User, guildConfig: GuildConfig, action: 'join'|'leave') {
+    const isPartyMessage = reaction.message.embeds[0]?.title?.includes('Party')
+    if (isPartyMessage) {
+      const className = classEmoji[reaction.emoji.name]
+      if (!className) return
+      const PartyReactionCommand = new PartyReaction(reaction, user, guildConfig)
+      this.lockMessage(reaction.message.id, () => PartyReactionCommand.execute(action))
+    }
+  }
+
+  public async handleReactionAdd(reaction: MessageReaction, user: User, guildConfig: GuildConfig) {
     try {
       if (user.bot) return
       const { message } = reaction
@@ -35,22 +45,31 @@ class ReactionService {
       if (reaction.partial) {
         await this.fetchReaction(reaction)
       }
+
+      this.handlePartyReaction(reaction, user, guildConfig, 'join')
   
-      const { members, listingGroupId } = await this.groupFinderService.getGroupList(message, user)
-      if (members && listingGroupId) {
-        const className = classEmoji[reaction.emoji.name]
-        if (!className) return
-        // return await this.groupFinderService.joinPartyByReaction(reaction, user, members, listingGroupId, className)
-      }
-  
-      const messageId = message.id
       const reactionEmbed = message.embeds[0]
       const title = reactionEmbed.title || ''
       const isEquipMessage = /:(.*?):/.test(title)
       const isValidEquipEmoji = this.validateEmoji('equip', reaction.emoji.name)
       if (isEquipMessage && isValidEquipEmoji) {
-        await this.lockMessage(messageId, () => ItemManager.enrichItemMessage(reaction))
+        await this.lockMessage(reaction.message.id, () => ItemManager.enrichItemMessage(reaction))
       }
+
+    } catch (error) {
+      handleReactionError(error, reaction, user)
+    }
+  }
+
+  public async handleReactionRemove(reaction: MessageReaction, user: User, guildConfig: GuildConfig) {
+    try {
+      if (user.bot) return
+  
+      if (reaction.partial) {
+        await this.fetchReaction(reaction)
+      }
+
+      this.handlePartyReaction(reaction, user, guildConfig, 'leave')
 
     } catch (error) {
       handleReactionError(error, reaction, user)

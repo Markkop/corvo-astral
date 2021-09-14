@@ -24,10 +24,6 @@ export default class PartyUpdateCommand extends PartyCommand {
     })
   }
 
-  private getEmbedFieldByName(embed: MessageEmbed, fieldName: string) {
-    return embed.fields.find(field => field.name.includes(fieldName))
-  }
-
   private updateEmbedFieldByName(embed: MessageEmbed, fieldName: string, newValue: string) {
     const embedField = this.getEmbedFieldByName(embed, fieldName)
     embedField.value = newValue || embedField.value

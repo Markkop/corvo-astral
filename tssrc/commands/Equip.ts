@@ -1,10 +1,10 @@
 import { FinderCommand } from '@baseCommands'
 import { ItemManager, RecipesManager, MessageManager } from '@managers'
 import { mountUrl } from '@utils/mountUrl'
-import mappings from '@utils/mappings'
 import str from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
 import { Message } from 'discord.js'
+import mappings from '@utils/mappings'
 const { rarityMap, equipTypesMap, iconCodeMap } = mappings
 
 export default class EquipCommand extends FinderCommand {

@@ -1,5 +1,5 @@
 import { BaseCommand } from '@baseCommands'
-import { Message, TextChannel } from 'discord.js'
+import { Message, MessageEmbed, TextChannel } from 'discord.js'
 import { GuildConfig } from '@types'
 
 export default class PartyCommand extends BaseCommand {
@@ -24,5 +24,19 @@ export default class PartyCommand extends BaseCommand {
       }
       return partyEmbed.title.includes('Party')
     })
+  }
+
+  protected async getPartyById(id: string) {
+    const parties = await this.getChannelParties()
+    return parties.find(party => party.embeds[0].title.includes(id))
+  }
+
+  protected getEmbedFieldByName(embed: MessageEmbed, fieldName: string) {
+    return embed.fields.find(field => field.name.includes(fieldName))
+  }
+
+  protected getPartyId(message: Message): string {
+    const idField = this.getEmbedFieldByName(message.embeds[0], 'ID')
+    return idField.value
   }
 }

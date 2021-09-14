@@ -7,6 +7,7 @@ import AlmaCommand from './Alma'
 import PartyBaseCommand from './party/PartyBase'
 import PartyCreateCommand from './party/PartyCreate'
 import PartyUpdateCommand from './party/PartyUpdate'
+import PartyReaction from './party/PartyReaction'
 
 export {
   AboutCommand,
@@ -17,5 +18,6 @@ export {
   AlmaCommand,
   PartyBaseCommand,
   PartyCreateCommand,
-  PartyUpdateCommand
+  PartyUpdateCommand,
+  PartyReaction
 }

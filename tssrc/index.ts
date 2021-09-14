@@ -15,6 +15,7 @@ import {
   SubliCommand,
   PartyBaseCommand
  } from '@commands'
+import { GuildConfig } from '@types'
 require('dotenv').config()
 
 const commandsMap = {
@@ -43,7 +44,7 @@ class Bot {
     this.client.on('message', this.onMessage.bind(this))
     this.client.on('ready', this.onReady.bind(this))
     this.client.on('messageReactionAdd', this.onMessageReactionAdd.bind(this))
-    // this.client.on('messageReactionRemove', this.onMessageReactionRemove.bind(this))
+    this.client.on('messageReactionRemove', this.onMessageReactionRemove.bind(this))
 
     this.client.login(this.token)
   }
@@ -74,7 +75,13 @@ class Bot {
   }
 
   private async onMessageReactionAdd(reaction: MessageReaction, user: User) {
-    ReactionService.handleReactionAdd(reaction, user)
+    const guildConfig = this.configManager.getGuildConfig(reaction.message.guild.id)
+    ReactionService.handleReactionAdd(reaction, user, guildConfig as GuildConfig)
+  }
+
+  private async onMessageReactionRemove(reaction: MessageReaction, user: User) {
+    const guildConfig = this.configManager.getGuildConfig(reaction.message.guild.id)
+    ReactionService.handleReactionRemove(reaction, user, guildConfig as GuildConfig)
   }
 
   private getCommand (commandWord: string) {
