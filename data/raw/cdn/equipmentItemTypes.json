@@ -13,10 +13,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Hache",
-      "en": "Axe",
-      "es": "Hacha",
-      "pt": "Machado"
+      "fr": "Hache (Deux mains)",
+      "en": "Ax (two hands)",
+      "es": "Hacha (dos manos)",
+      "pt": "Machado (duas mãos)"
     }
   },
   {
@@ -50,10 +50,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Baguette",
-      "en": "Wand",
-      "es": "Varita",
-      "pt": "Varinha"
+      "fr": "Baguette (Une main)",
+      "en": "Wand (one hand)",
+      "es": "Varita (una mano)",
+      "pt": "Varinha (uma mão)"
     }
   },
   {
@@ -68,10 +68,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Epée",
-      "en": "Sword",
-      "es": "Espada",
-      "pt": "Espada"
+      "fr": "Epée (Une main)",
+      "en": "Sword (one hand)",
+      "es": "Espada (una mano)",
+      "pt": "Espada (uma mão)"
     }
   },
   {
@@ -88,10 +88,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Pelle",
-      "en": "Shovel",
-      "es": "Pala",
-      "pt": "Pá"
+      "fr": "Pelle (Deux mains)",
+      "en": "Shovel (two hands)",
+      "es": "Pala (dos manos)",
+      "pt": "Pá (duas mãos)"
     }
   },
   {
@@ -106,10 +106,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Dague",
-      "en": "Dagger",
-      "es": "Daga",
-      "pt": "Adaga"
+      "fr": "Dague (Seconde main)",
+      "en": "Dagger (other hand)",
+      "es": "Daga (segunda mano)",
+      "pt": "Adaga (segunda mão)"
     }
   },
   {
@@ -124,10 +124,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Bâton",
-      "en": "One-handed Staff",
-      "es": "Bastón",
-      "pt": "Bastão"
+      "fr": "Bâton (Une main)",
+      "en": "Staff (one hand)",
+      "es": "Bastón (una mano)",
+      "pt": "Bastão (uma mão)"
     }
   },
   {
@@ -144,10 +144,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Marteau",
-      "en": "Hammer",
-      "es": "Martillo",
-      "pt": "Martelo"
+      "fr": "Marteau (Deux mains)",
+      "en": "Hammer (two hands)",
+      "es": "Martillo (dos manos)",
+      "pt": "Martelo (duas mãos)"
     }
   },
   {
@@ -162,10 +162,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Aiguille",
-      "en": "Hand",
-      "es": "Aguja",
-      "pt": "Ponteiro"
+      "fr": "Aiguille (Une main)",
+      "en": "Clock Hand (one hand)",
+      "es": "Aguja (una mano)",
+      "pt": "Ponteiro (uma mão)"
     }
   },
   {
@@ -182,10 +182,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Arc",
-      "en": "Bow",
-      "es": "Arco",
-      "pt": "Arco"
+      "fr": "Arc (Deux mains)",
+      "en": "Bow (two hands)",
+      "es": "Arco (dos manos)",
+      "pt": "Arco (duas mãos)"
     }
   },
   {
@@ -326,10 +326,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Bouclier",
-      "en": "Shield",
-      "es": "Escudo",
-      "pt": "Escudo"
+      "fr": "Bouclier (Seconde main)",
+      "en": "Shield (other hand)",
+      "es": "Escudo (segunda mano)",
+      "pt": "Escudo (segunda mão)"
     }
   },
   {
@@ -364,10 +364,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Epée à 2 mains",
-      "en": "Two-handed Sword",
-      "es": "Espada a dos manos",
-      "pt": "Espada de 2 mãos"
+      "fr": "Epée (Deux mains)",
+      "en": "Sword (two hands)",
+      "es": "Espada (dos manos)",
+      "pt": "Espada (duas mãos)"
     }
   },
   {
@@ -384,10 +384,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Bâton à 2 mains",
-      "en": "Two-handed Staff",
-      "es": "Bastón a dos manos",
-      "pt": "Bastão de 2 mãos"
+      "fr": "Bâton (Deux mains)",
+      "en": "Staff (two hands)",
+      "es": "Bastón (dos manos)",
+      "pt": "Bastão (duas mãos)"
     }
   },
   {
@@ -402,10 +402,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Cartes",
-      "en": "Cards",
-      "es": "Cartas",
-      "pt": "Cartas"
+      "fr": "Cartes (Une main)",
+      "en": "Cards (one hand)",
+      "es": "Cartas (una mano)",
+      "pt": "Cartas (uma mão)"
     }
   },
   {

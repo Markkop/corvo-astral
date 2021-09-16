@@ -316,27 +316,6 @@
   },
   {
     "definition": {
-      "id": 164,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 34,
-      "idealRainRangeMax": 66,
-      "idealTemperatureRangeMin": -5,
-      "idealTemperatureRangeMax": 35,
-      "iconGfxId": 2755425,
-      "lastEvolutionStep": 0,
-      "usableByHeroes": false,
-      "idealRain": 2
-    },
-    "title": {
-      "fr": "Cèdre",
-      "en": "Cedar",
-      "es": "Cedro",
-      "pt": "Cedro"
-    }
-  },
-  {
-    "definition": {
       "id": 174,
       "resourceType": 1,
       "isBlocking": true,
@@ -2773,279 +2752,6 @@
   },
   {
     "definition": {
-      "id": 667,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 30618469,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Kamaquat",
-      "en": "Kamaquat",
-      "es": "Kamaquat",
-      "pt": "Kamaquat"
-    }
-  },
-  {
-    "definition": {
-      "id": 668,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 30611445,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Cerisier (bleu)",
-      "en": "Cherry Tree (blue)",
-      "es": "Cerezo (azul)",
-      "pt": "Cerejeira (azul)"
-    }
-  },
-  {
-    "definition": {
-      "id": 669,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 30611445,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Cerisier (orange)",
-      "en": "Cherry Tree (orange)",
-      "es": "Cerezo (naranja)",
-      "pt": "Cerejeira (laranja)"
-    }
-  },
-  {
-    "definition": {
-      "id": 670,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 30611445,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Cerisier (vert)",
-      "en": "Cherry Tree (green)",
-      "es": "Cerezo (verde)",
-      "pt": "Cerejeira (verde)"
-    }
-  },
-  {
-    "definition": {
-      "id": 671,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 27513096,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Pouplier (vert)",
-      "en": "Pooplar (green)",
-      "es": "Álamo (verde)",
-      "pt": "Pop'lar (verde)"
-    }
-  },
-  {
-    "definition": {
-      "id": 672,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 27513096,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Pouplier (orange)",
-      "en": "Pooplar (orange)",
-      "es": "Álamo (naranja)",
-      "pt": "Pop'lar (laranja)"
-    }
-  },
-  {
-    "definition": {
-      "id": 673,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 27513098,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Charme (vert)",
-      "en": "Charm (green)",
-      "es": "Carpe (verde)",
-      "pt": "Cárpino (verde)"
-    }
-  },
-  {
-    "definition": {
-      "id": 674,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 27513098,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Charme (bleu)",
-      "en": "Charm (blue)",
-      "es": "Carpe (azul)",
-      "pt": "Cárpino (azul)"
-    }
-  },
-  {
-    "definition": {
-      "id": 675,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 27513098,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Charme (orange)",
-      "en": "Charm (orange)",
-      "es": "Carpe (naranja)",
-      "pt": "Cárpino (laranja)"
-    }
-  },
-  {
-    "definition": {
-      "id": 676,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 27510009,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Pin sec (bleu)",
-      "en": "Dry Pine (blue)",
-      "es": "Pino seco (azul)",
-      "pt": "Pinho Seco (azul)"
-    }
-  },
-  {
-    "definition": {
-      "id": 678,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 27510009,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Pin sec (rouge)",
-      "en": "Dry Pine (red)",
-      "es": "Pino seco (rojo)",
-      "pt": "Pinho Seco (vermelho)"
-    }
-  },
-  {
-    "definition": {
-      "id": 679,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": -5,
-      "idealTemperatureRangeMax": 35,
-      "iconGfxId": 2757781,
-      "lastEvolutionStep": 0,
-      "usableByHeroes": false,
-      "idealRain": 2
-    },
-    "title": {
-      "fr": "Grand Orme",
-      "en": "Great Elm",
-      "es": "Olmo grande",
-      "pt": "Grande Olmo"
-    }
-  },
-  {
-    "definition": {
-      "id": 680,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": 0,
-      "idealTemperatureRangeMax": 20,
-      "iconGfxId": 30612004,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Têtard (orange)",
-      "en": "Tadbole (orange)",
-      "es": "Desmochado (naranja)",
-      "pt": "Girino (laranja)"
-    }
-  },
-  {
-    "definition": {
       "id": 717,
       "resourceType": 1,
       "isBlocking": true,
@@ -3063,27 +2769,6 @@
       "en": "Mystical Sakura",
       "es": "Sakura mística",
       "pt": "Sacura Mística"
-    }
-  },
-  {
-    "definition": {
-      "id": 753,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": -5,
-      "idealTemperatureRangeMax": 35,
-      "iconGfxId": 2757781,
-      "lastEvolutionStep": 0,
-      "usableByHeroes": false,
-      "idealRain": 2
-    },
-    "title": {
-      "fr": "Orme",
-      "en": "Elm",
-      "es": "Olmo",
-      "pt": "Olmo"
     }
   },
   {
@@ -3294,6 +2979,156 @@
       "en": "Oyster",
       "es": "Ostra",
       "pt": "Ostra"
+    }
+  },
+  {
+    "definition": {
+      "id": 781,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30628739,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    }
+  },
+  {
+    "definition": {
+      "id": 782,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30628741,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    }
+  },
+  {
+    "definition": {
+      "id": 783,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 26027855,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    }
+  },
+  {
+    "definition": {
+      "id": 784,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 26027855,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    }
+  },
+  {
+    "definition": {
+      "id": 785,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31328751,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    }
+  },
+  {
+    "definition": {
+      "id": 786,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31328754,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    }
+  },
+  {
+    "definition": {
+      "id": 787,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28128756,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    }
+  },
+  {
+    "definition": {
+      "id": 788,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28128758,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    }
+  },
+  {
+    "definition": {
+      "id": 789,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30828760,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    }
+  },
+  {
+    "definition": {
+      "id": 790,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30828762,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
     }
   }
 ]

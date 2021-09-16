@@ -6,5 +6,5 @@ module.exports = {
   collectCoverage: true,
   preset: 'ts-jest',
   testEnvironment: 'node',
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/tssrc/' })
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/src/' })
 }

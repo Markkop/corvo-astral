@@ -5,9 +5,9 @@
     "resolveJsonModule": true,
     "esModuleInterop" : true,
     "allowSyntheticDefaultImports": true,
-    "outDir": "out",
-    "rootDir": "tssrc",
-    "baseUrl": "tssrc/",
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": "src/",
     "paths": {
       "@types": ["types.ts"],
       "@stringsLang": ["stringsLang.ts"],
@@ -17,5 +17,5 @@
       "@utils/*": ["utils/*"]
     }
   },
-  "exclude": ["data", "tstests", "tsconfig.json"]
+  "exclude": ["data", "tests", "tsconfig.json"]
 }

@@ -4,12 +4,12 @@
   "description": "A Discord Bot that serves as an Wakfu helper",
   "main": "dist/index.js",
   "scripts": {
-    "start": "npm run build && node out/index.js",
-    "dev": "ts-node tssrc/index.ts",
+    "start": "npm run build && node dist/index.js",
+    "dev": "ts-node src/index.ts",
     "build": "tsc",
-    "import": "ts-node tssrc/importers/import.ts",
+    "import": "ts-node src/importers/import.ts",
     "lint": "eslint .",
-    "test": "jest tstests/ --runInBand",
+    "test": "jest tests/ --runInBand",
     "clean": "rm package-lock.json && rm -rf node_modules"
   },
   "keywords": [
@@ -57,11 +57,11 @@
     "ts-node": "^10.1.0"
   },
   "_moduleAliases": {
-    "@types": "out/types.js",
-    "@stringsLang": "out/stringsLang.js",
-    "@managers": "out/managers",
-    "@commands": "out/commands",
-    "@baseCommands": "out/baseCommands",
-    "@utils": "out/utils"
+    "@types": "dist/types.js",
+    "@stringsLang": "dist/stringsLang.js",
+    "@managers": "dist/managers",
+    "@commands": "dist/commands",
+    "@baseCommands": "dist/baseCommands",
+    "@utils": "dist/utils"
   }
 }
