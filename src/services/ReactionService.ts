@@ -1,4 +1,4 @@
-import { MessageReaction, User } from 'discord.js'
+import { Message, MessageReaction, User } from 'discord.js'
 import { ItemManager } from '@managers'
 import { handleReactionError } from '@utils/handleError'
 import { GuildConfig } from '@types'
@@ -37,25 +37,30 @@ class ReactionService {
     }
   }
 
+  async handleEquipEnrichmentReaction(reaction: MessageReaction) {
+    const reactionEmbed = reaction.message?.embeds[0]
+    if (!reactionEmbed) {
+      return
+    }
+    const title = reactionEmbed.title || ''
+    const isEquipMessage = /:(.*?):/.test(title)
+    const isValidEquipEmoji = this.validateEmoji('equip', reaction.emoji.name)
+    if (isEquipMessage && isValidEquipEmoji) {
+      await this.lockMessage(reaction.message.id, () => ItemManager.enrichItemMessage(reaction))
+    }
+  }
+
   public async handleReactionAdd(reaction: MessageReaction, user: User, guildConfig: GuildConfig) {
     try {
       if (user.bot) return
-      const { message } = reaction
   
       if (reaction.partial) {
         await this.fetchReaction(reaction)
       }
 
       this.handlePartyReaction(reaction, user, guildConfig, 'join')
+      this.handleEquipEnrichmentReaction(reaction)
   
-      const reactionEmbed = message.embeds[0]
-      const title = reactionEmbed.title || ''
-      const isEquipMessage = /:(.*?):/.test(title)
-      const isValidEquipEmoji = this.validateEmoji('equip', reaction.emoji.name)
-      if (isEquipMessage && isValidEquipEmoji) {
-        await this.lockMessage(reaction.message.id, () => ItemManager.enrichItemMessage(reaction))
-      }
-
     } catch (error) {
       handleReactionError(error, reaction, user)
     }
