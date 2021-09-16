@@ -1,8 +1,6 @@
 import 'module-alias/register'
 import { Client, Message, MessageReaction, TextChannel, User } from 'discord.js'
 import cron from 'node-cron'
-// import onMessageReactionAdd from './reactions/onMessageReactionAdd'
-// import onMessageReactionRemove from './reactions/onMessageReactionRemove'
 import { handleMessageError } from './utils/handleError'
 import { ConfigManager, MessageManager } from '@managers'
 import ReactionService from './services/ReactionService'
