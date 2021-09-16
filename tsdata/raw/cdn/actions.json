@@ -1,0 +1,908 @@
+[
+  {
+    "definition": {
+      "id": 1,
+      "effect": "Dommage : Neutre"
+    },
+    "description": {
+      "fr": "Dommage [el0] : [#1]{[+3]?% des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "en": "[el0]  Damage: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? lost:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of the caster:{[7<3]? of the target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "es": "Daño [el0] : [#1]{[+3]?% de los PdV:}{[+3]?{[1=3]? máx.:{[2=3]? actuales:{[3=3]? faltantes:{[4=3]? máx.:{[5=3]? actuales:{[6=3]? faltantes:}}}}}}:}{[+3]?{[4<3]? del lanzador:{[7<3]? del objetivo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "pt": "Dano [el0] : [#1]{[+3]?% dos PV:}{[+3]?{[1=3]? máx.:{[2=3]? atuais:{[3=3]? perdidos:{[4=3]? máx.:{[5=3]? atuais:{[6=3]? perdidos:}}}}}}:}{[+3]?{[4<3]? do lançador:{[7<3]? do alvo:}}:}{[-2]?{[0=2]?[ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+    }
+  },
+  {
+    "definition": {
+      "id": 20,
+      "effect": "Boost : Point de vie (PV)"
+    },
+    "description": {
+      "fr": "[#1] PV",
+      "en": "[#1] HP",
+      "es": "[#1] PdV",
+      "pt": "[#1] PV"
+    }
+  },
+  {
+    "definition": {
+      "id": 21,
+      "effect": "Deboost : Point de vie (PV)"
+    },
+    "description": {
+      "fr": "-[#1] Point{[>1]?s:} de Vie",
+      "en": "-[#1] Health Point{[=1]?:s}",
+      "es": "-[#1] punto{[=1]?:s} de vida",
+      "pt": "-[#1] Ponto{[>1]?s:} de Vida"
+    }
+  },
+  {
+    "definition": {
+      "id": 24,
+      "effect": "Soin : Neutre (Vol de vie)"
+    },
+    "description": {
+      "fr": "Soin [el0] (Vol de vie) : [#1]{[-2]?{[0=2]? [ecnbi]:}:}",
+      "en": "[el0]  Heal (Health Steal): [#1]{[-2]?{[0=2]? [ecnbi]:}:}",
+      "es": "Cura [el0] (robo de vida): [#1]{[-2]?{[0=2]? [ecnbi]:}:}",
+      "pt": "Cura [el0]  (Roubo de Vida): [#1]{[-2]?{[0=2]? [ecnbi]:}:}"
+    }
+  },
+  {
+    "definition": {
+      "id": 26,
+      "effect": "Gain : Maîtrise Soin"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise Soin",
+      "en": "[#1] Healing Mastery",
+      "es": "[#1] dominio cura",
+      "pt": "[#1] de Domínio de cura"
+    }
+  },
+  {
+    "definition": {
+      "id": 31,
+      "effect": "Boost : PA"
+    },
+    "description": {
+      "fr": "[#1] PA",
+      "en": "[#1] AP",
+      "es": "[#1] PA",
+      "pt": "[#1] PA"
+    }
+  },
+  {
+    "definition": {
+      "id": 32,
+      "effect": "OLD - Deboost : PA"
+    },
+    "description": {
+      "fr": "-[#1] PA {[~2]?{[0>2]?([#2]%):}:}",
+      "en": "-[#1] PA {[~2]?{[0>2]?([#2]%):}:}",
+      "es": "-[#1] PA {[~2]?{[0>2]?([#2]%):}:}",
+      "pt": "-[#1] PA {[~2]?{[0>2]?([#2]%):}:}"
+    }
+  },
+  {
+    "definition": {
+      "id": 39,
+      "effect": "Gain : charac passée en paramètre"
+    },
+    "description": {
+      "fr": "[#1]{[~2]?%:} [#3]",
+      "en": "[#1]{[~2]?%:} [#3]",
+      "es": "[#1]{[~2]?%:} [#3]",
+      "pt": "[#1]{[~2]?%:} [#3]"
+    }
+  },
+  {
+    "definition": {
+      "id": 40,
+      "effect": "Perte : charac passée en paramètre"
+    },
+    "description": {
+      "fr": "-[#1]{[~2]?%:} [#3]",
+      "en": "-[#1]{[~2]?%:} [#3]",
+      "es": "-[#1]{[~2]?%:} [#3]",
+      "pt": "-[#1]{[~2]?%:} [#3]"
+    }
+  },
+  {
+    "definition": {
+      "id": 41,
+      "effect": "Boost : PM"
+    },
+    "description": {
+      "fr": "[#1] PM",
+      "en": "[#1] MP",
+      "es": "[#1] PM",
+      "pt": "[#1] de PM"
+    }
+  },
+  {
+    "definition": {
+      "id": 42,
+      "effect": "OLD - Deboost : PM"
+    },
+    "description": {
+      "fr": "-[#1] PM {[~2]?([#2]%):}",
+      "en": "-[#1] MP {[~2]?([#2]%):}",
+      "es": "-[#1] PM {[~2]?([#2]%):}",
+      "pt": "-[#1] PM {[~2]?([#2]%):}"
+    }
+  },
+  {
+    "definition": {
+      "id": 56,
+      "effect": "Deboost : PA"
+    },
+    "description": {
+      "fr": "-[#1] PA max",
+      "en": "-[#1] max AP",
+      "es": "-[#1] PA máx.",
+      "pt": "-[#1] PA máximo"
+    }
+  },
+  {
+    "definition": {
+      "id": 57,
+      "effect": "Deboost : PM"
+    },
+    "description": {
+      "fr": "-[#1] PM max",
+      "en": "-[#1] max MP",
+      "es": "-[#1] PM máx.",
+      "pt": "-[#1] PM máximo"
+    }
+  },
+  {
+    "definition": {
+      "id": 71,
+      "effect": "Gain : Résistance Dos"
+    },
+    "description": {
+      "fr": "[#1] Résistance Dos",
+      "en": "[#1] Rear Resistance",
+      "es": "[#1] resistencia por la espalda",
+      "pt": "[#1] de Resistência de costas"
+    }
+  },
+  {
+    "definition": {
+      "id": 80,
+      "effect": "Gain : Résistance Élémentaire"
+    },
+    "description": {
+      "fr": "[#1] Résistance Élémentaire",
+      "en": "[#1] Elemental Resistance",
+      "es": "[#1] resistencia elemental",
+      "pt": "[#1] de resistência elementar"
+    }
+  },
+  {
+    "definition": {
+      "id": 82,
+      "effect": "Gain : Résistance Feu"
+    },
+    "description": {
+      "fr": "[#1] Résistance [el1]",
+      "en": "[#1] [el1] Resistance",
+      "es": "[#1] resistencia al [el1]",
+      "pt": "[#1] Resistência a [el1]"
+    }
+  },
+  {
+    "definition": {
+      "id": 83,
+      "effect": "Gain : Résistance Eau"
+    },
+    "description": {
+      "fr": "[#1] Résistance [el2]",
+      "en": "[#1] [el2] Resistance",
+      "es": "[#1] resistencia al [el2]",
+      "pt": "[#1] Resistência a [el2]"
+    }
+  },
+  {
+    "definition": {
+      "id": 84,
+      "effect": "Gain : Résistance Terre"
+    },
+    "description": {
+      "fr": "[#1] Résistance [el3]",
+      "en": "[#1] [el3] Resistance",
+      "es": "[#1] resistencia a la [el3]",
+      "pt": "[#1] Resistência a [el3]"
+    }
+  },
+  {
+    "definition": {
+      "id": 85,
+      "effect": "Gain : Résistance Air"
+    },
+    "description": {
+      "fr": "[#1] Résistance [el4]",
+      "en": "[#1] [el4] Resistance",
+      "es": "[#1] resistencia al [el4]",
+      "pt": "[#1] Resistência a [el4]"
+    }
+  },
+  {
+    "definition": {
+      "id": 96,
+      "effect": "Perte : Résistance Terre (sans cap)"
+    },
+    "description": {
+      "fr": "-[#1] Résistance [el3]",
+      "en": "-[#1] [el3] Resistance",
+      "es": "-[#1] resistencia a la [el3]",
+      "pt": "-[#1] Resistência a [el3]"
+    }
+  },
+  {
+    "definition": {
+      "id": 97,
+      "effect": "Perte : Résistance Feu (sans cap)"
+    },
+    "description": {
+      "fr": "-[#1] Résistance [el1]",
+      "en": "-[#1] [el1] Resistance",
+      "es": "-[#1] resistencia al [el1]",
+      "pt": "-[#1] Resistência a [el1]"
+    }
+  },
+  {
+    "definition": {
+      "id": 98,
+      "effect": "Perte : Résistance Eau (sans cap)"
+    },
+    "description": {
+      "fr": "-[#1] Résistance [el2]",
+      "en": "-[#1] [el2] Resistance",
+      "es": "-[#1] resistencia al [el2]",
+      "pt": "-[#1] Resistência a [el2]"
+    }
+  },
+  {
+    "definition": {
+      "id": 100,
+      "effect": "Perte : Résistance Élémentaire (sans cap)"
+    },
+    "description": {
+      "fr": "-[#1] Résistance Élémentaire",
+      "en": "-[#1] Elemental Resistance",
+      "es": "-[#1] resistencia elemental",
+      "pt": "-[#1] de resistência elementar"
+    }
+  },
+  {
+    "definition": {
+      "id": 120,
+      "effect": "Gain : Maîtrise Élémentaire"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise Élémentaire",
+      "en": "[#1] Elemental Mastery",
+      "es": "[#1] dominio elemental",
+      "pt": "[#1] de domínio elementar"
+    }
+  },
+  {
+    "definition": {
+      "id": 122,
+      "effect": "Gain : Maîtrise Feu"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise [el1]",
+      "en": "[#1] [el1] Mastery",
+      "es": "[#1] dominio de [el1]",
+      "pt": "[#1] de domínio de [el1]"
+    }
+  },
+  {
+    "definition": {
+      "id": 123,
+      "effect": "Gain : Maîtrise Terre"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise [el3]",
+      "en": "[#1] [el3] Mastery",
+      "es": "[#1] dominio de [el3]",
+      "pt": "[#1] de domínio de [el3]"
+    }
+  },
+  {
+    "definition": {
+      "id": 124,
+      "effect": "Gain : Maîtrise Eau"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise [el2]",
+      "en": "[#1] [el2] Mastery",
+      "es": "[#1] dominio de [el2]",
+      "pt": "[#1] de domínio de [el2]"
+    }
+  },
+  {
+    "definition": {
+      "id": 125,
+      "effect": "Gain : Maîtrise Air"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise [el4]",
+      "en": "[#1] [el4] Mastery",
+      "es": "[#1] dominio de [el4]",
+      "pt": "[#1] de domínio de [el4]"
+    }
+  },
+  {
+    "definition": {
+      "id": 130,
+      "effect": "Perte : Maîtrise Élémentaire"
+    },
+    "description": {
+      "fr": "-[#1] Maîtrise Élémentaire",
+      "en": "-[#1] Elemental Mastery",
+      "es": "-[#1] dominio elemental",
+      "pt": "-[#1] de domínio elementar"
+    }
+  },
+  {
+    "definition": {
+      "id": 132,
+      "effect": "Perte : Maîtrise Feu"
+    },
+    "description": {
+      "fr": "-[#1] Maîtrise [el1]",
+      "en": "-[#1] [el1] Mastery",
+      "es": "-[#1] dominio de [el1]",
+      "pt": "-[#1] de domínio de [el1]"
+    }
+  },
+  {
+    "definition": {
+      "id": 149,
+      "effect": "Gain : Maîtrise Critique"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise Critique",
+      "en": "[#1] Critical Mastery",
+      "es": "[#1] dominio crítico",
+      "pt": "[#1] de Domínio de crítico"
+    }
+  },
+  {
+    "definition": {
+      "id": 150,
+      "effect": "Gain : Coup Critique (%)"
+    },
+    "description": {
+      "fr": "[#1]% Coup Critique",
+      "en": "[#1]% Critical Hit",
+      "es": "[#1]% golpe crítico",
+      "pt": "[#1]% de Golpe crítico"
+    }
+  },
+  {
+    "definition": {
+      "id": 160,
+      "effect": "Gain : Portée"
+    },
+    "description": {
+      "fr": "[#1] Portée",
+      "en": "[#1] Range",
+      "es": "[#1] alcance",
+      "pt": "[#1] de Alcance"
+    }
+  },
+  {
+    "definition": {
+      "id": 161,
+      "effect": "Perte : Portée"
+    },
+    "description": {
+      "fr": "-[#1] Portée",
+      "en": "-[#1] Range",
+      "es": "-[#1] alcance",
+      "pt": "-[#1] de Alcance"
+    }
+  },
+  {
+    "definition": {
+      "id": 162,
+      "effect": "Gain : Prospection"
+    },
+    "description": {
+      "fr": "[#1] Prospection",
+      "en": "[#1] Prospecting",
+      "es": "[#1] prospección",
+      "pt": "[#1] de Prospecção"
+    }
+  },
+  {
+    "definition": {
+      "id": 166,
+      "effect": "Gain : Sagesse"
+    },
+    "description": {
+      "fr": "[#1] Sagesse",
+      "en": "[#1] Wisdom",
+      "es": "[#1] sabiduría",
+      "pt": "[#1] de Sabedoria"
+    }
+  },
+  {
+    "definition": {
+      "id": 167,
+      "effect": "Perte : Sagesse"
+    },
+    "description": {
+      "fr": "-[#1] Sagesse",
+      "en": "-[#1]% Wisdom",
+      "es": "-[#1]% a la sabiduría",
+      "pt": "-[#1]% de Sabedoria"
+    }
+  },
+  {
+    "definition": {
+      "id": 168,
+      "effect": "Perte : Coup Critique (%)"
+    },
+    "description": {
+      "fr": "-[#1]% Coup Critique",
+      "en": "-[#1]% Critical Hit",
+      "es": "-[#1]% golpe crítico",
+      "pt": "-[#1]% de Golpe crítico"
+    }
+  },
+  {
+    "definition": {
+      "id": 171,
+      "effect": "Gain : Initiative"
+    },
+    "description": {
+      "fr": "[#1] Initiative",
+      "en": "[#1] Initiative",
+      "es": "[#1] iniciativa",
+      "pt": "[#1] de Iniciativa"
+    }
+  },
+  {
+    "definition": {
+      "id": 172,
+      "effect": "Perte : Initiative"
+    },
+    "description": {
+      "fr": "-[#1] Initiative",
+      "en": "-[#1] Initiative",
+      "es": "-[#1] iniciativa",
+      "pt": "-[#1] de Iniciativa"
+    }
+  },
+  {
+    "definition": {
+      "id": 173,
+      "effect": "Gain : Tacle"
+    },
+    "description": {
+      "fr": "[#1] Tacle",
+      "en": "[#1] Lock",
+      "es": "[#1] placaje",
+      "pt": "[#1] de Bloqueio"
+    }
+  },
+  {
+    "definition": {
+      "id": 174,
+      "effect": "Perte : Tacle"
+    },
+    "description": {
+      "fr": "-[#1] Tacle",
+      "en": "-[#1] Lock",
+      "es": "-[#1] placaje",
+      "pt": "-[#1] de Bloqueio"
+    }
+  },
+  {
+    "definition": {
+      "id": 175,
+      "effect": "Gain : Esquive"
+    },
+    "description": {
+      "fr": "[#1] Esquive",
+      "en": "[#1] Dodge",
+      "es": "[#1] Esquiva",
+      "pt": "[#1] de esquiva"
+    }
+  },
+  {
+    "definition": {
+      "id": 176,
+      "effect": "Perte : Esquive"
+    },
+    "description": {
+      "fr": "-[#1] Esquive",
+      "en": "-[#1] Dodge",
+      "es": "-[#1] esquiva",
+      "pt": "-[#1] de Esquiva"
+    }
+  },
+  {
+    "definition": {
+      "id": 177,
+      "effect": "Gain : Volonté"
+    },
+    "description": {
+      "fr": "[#1] Volonté",
+      "en": "[#1] Force of Will",
+      "es": "[#1] voluntad",
+      "pt": "[#1] de Vontade"
+    }
+  },
+  {
+    "definition": {
+      "id": 180,
+      "effect": "Gain : Maîtrise Dos"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise Dos",
+      "en": "[#1] Rear Mastery",
+      "es": "[#1] dominio espalda",
+      "pt": "[#1] de Domínio de costas"
+    }
+  },
+  {
+    "definition": {
+      "id": 181,
+      "effect": "Perte : Maîtrise Dos"
+    },
+    "description": {
+      "fr": "-[#1] Maîtrise Dos",
+      "en": "-[#1] Rear Mastery",
+      "es": "-[#1] dominio espalda",
+      "pt": "-[#1] de Domínio de costas"
+    }
+  },
+  {
+    "definition": {
+      "id": 184,
+      "effect": "Gain : Contrôle"
+    },
+    "description": {
+      "fr": "[#1] Contrôle",
+      "en": "[#1] Control",
+      "es": "[#1] control",
+      "pt": "[#1] de Controle"
+    }
+  },
+  {
+    "definition": {
+      "id": 191,
+      "effect": "Boost : PW"
+    },
+    "description": {
+      "fr": "[#1] PW",
+      "en": "[#1] WP",
+      "es": "[#1] PW",
+      "pt": "[#1] de PW"
+    }
+  },
+  {
+    "definition": {
+      "id": 192,
+      "effect": "Deboost : PW"
+    },
+    "description": {
+      "fr": "-[#1] PW max",
+      "en": "-[#1] max WP",
+      "es": "-[#1] PW máx.",
+      "pt": "-[#1] de PW no máx."
+    }
+  },
+  {
+    "definition": {
+      "id": 194,
+      "effect": "Perte : PW"
+    },
+    "description": {
+      "fr": "-[#1] PW",
+      "en": "-[#1] WP",
+      "es": "-[#1] PW",
+      "pt": "-[#1] PW"
+    }
+  },
+  {
+    "definition": {
+      "id": 234,
+      "effect": "Gain : Barda (Connaissance de l'Equipement)"
+    },
+    "description": {
+      "fr": "[#1] Art du Barda",
+      "en": "[#1] Kit Skill",
+      "es": "[#1] Instrucción Militar",
+      "pt": "[#1] de Instrução Militar"
+    }
+  },
+  {
+    "definition": {
+      "id": 304,
+      "effect": "State : Applique un état"
+    },
+    "description": {
+      "fr": "[#1] {[99>3]?:{[0<3]?:{[~3]?([#3]%):}}}",
+      "en": "[#1] {[99>3]?:{[0<3]?:{[~3]?([#3]%):}}}",
+      "es": "[#1] {[99>3]?:{[0<3]?:{[~3]?([#3]%):}}}",
+      "pt": "[#1] {[99>3]?:{[0<3]?:{[~3]?([#3]%):}}}"
+    }
+  },
+  {
+    "definition": {
+      "id": 330,
+      "effect": "REG : execute le groupe d'effets"
+    }
+  },
+  {
+    "definition": {
+      "id": 400,
+      "effect": "NullEffect : Effet Vide"
+    }
+  },
+  {
+    "definition": {
+      "id": 832,
+      "effect": "Spell : Gain de niveaux de sorts dans une branche"
+    },
+    "description": {
+      "fr": "[#2] Niv. aux sorts [#1]",
+      "en": "[#2] Lvl. to [#1] spells",
+      "es": "[#2] niv. a hechizos [#1]",
+      "pt": "[#2] nv. aos feitiços [#1]"
+    }
+  },
+  {
+    "definition": {
+      "id": 843,
+      "effect": "Area : Retire une zone en sélectionnant la zone comme cible"
+    }
+  },
+  {
+    "definition": {
+      "id": 865,
+      "effect": "REG : valeur du second effet fonction de celle du premier (2 effets enfants max)"
+    }
+  },
+  {
+    "definition": {
+      "id": 875,
+      "effect": "Gain : Parade"
+    },
+    "description": {
+      "fr": "[#1]% Parade",
+      "en": "[#1]% Block",
+      "es": "[#1]% anticipación",
+      "pt": "[#1]% de Parada"
+    }
+  },
+  {
+    "definition": {
+      "id": 876,
+      "effect": "Perte : Parade"
+    },
+    "description": {
+      "fr": "-[#1]% Parade",
+      "en": "-[#1]% Block",
+      "es": "-[#1]% anticipación",
+      "pt": "-[#1]% de Parada"
+    }
+  },
+  {
+    "definition": {
+      "id": 979,
+      "effect": "Spell : Gain de niveau de sort tous éléments (sauf support)"
+    },
+    "description": {
+      "fr": "[#1] Niv. aux sorts élémentaires",
+      "en": "[#1] Lvl. to elemental spells",
+      "es": "[#1] niv. a hechizos elementales",
+      "pt": "[#1] Niv. aos feitiços elementares"
+    }
+  },
+  {
+    "definition": {
+      "id": 988,
+      "effect": "Gain : Résistance Critique"
+    },
+    "description": {
+      "fr": "[#1] Résistance Critique",
+      "en": "[#1] Critical Resistance",
+      "es": "[#1] resistencia crítica",
+      "pt": "[#1] de Resistência a crítico"
+    }
+  },
+  {
+    "definition": {
+      "id": 1020,
+      "effect": "REG : niveau des enfants fonction de la valeur de l'effet déclencheur"
+    }
+  },
+  {
+    "definition": {
+      "id": 1050,
+      "effect": "Gain : Maîtrise Zone"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise Zone",
+      "en": "[#1] Area Mastery",
+      "es": "[#1] dominio zona",
+      "pt": "[#1] de Domínio de zona"
+    }
+  },
+  {
+    "definition": {
+      "id": 1051,
+      "effect": "Gain : Maîtrise Monocible"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise Monocible",
+      "en": "[#1] Single Target Mastery",
+      "es": "[#1] dominio monobjetivo",
+      "pt": "[#1] de Domínio de alvo único"
+    }
+  },
+  {
+    "definition": {
+      "id": 1052,
+      "effect": "Gain : Maîtrise Mêlée"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise Mêlée",
+      "en": "[#1] Melee Mastery",
+      "es": "[#1] dominio cuerpo a cuerpo",
+      "pt": "[#1] de Domínio de luta corpo a corpo"
+    }
+  },
+  {
+    "definition": {
+      "id": 1053,
+      "effect": "Gain : Maîtrise Distance"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise Distance",
+      "en": "[#1] Distance Mastery",
+      "es": "[#1] dominio distancia",
+      "pt": "[#1] de Domínio de distância"
+    }
+  },
+  {
+    "definition": {
+      "id": 1055,
+      "effect": "Gain : Maîtrise Berserk"
+    },
+    "description": {
+      "fr": "[#1] Maîtrise Berserk",
+      "en": "[#1] Berserk Mastery",
+      "es": "[#1] dominio berserker",
+      "pt": "[#1] de Domínio de Berserk"
+    }
+  },
+  {
+    "definition": {
+      "id": 1056,
+      "effect": "Perte : Maîtrise Critique"
+    },
+    "description": {
+      "fr": "-[#1] Maîtrise Critique",
+      "en": "-[#1] Critical Mastery",
+      "es": "-[#1] dominio crítico",
+      "pt": "-[#1] de Domínio de crítico"
+    }
+  },
+  {
+    "definition": {
+      "id": 1060,
+      "effect": "Perte : Maîtrise Distance"
+    },
+    "description": {
+      "fr": "-[#1] Maîtrise Distance",
+      "en": "-[#1] Distance Mastery",
+      "es": "-[#1] dominio distancia",
+      "pt": "-[#1] de Domínio de distância"
+    }
+  },
+  {
+    "definition": {
+      "id": 1061,
+      "effect": "Perte : Maîtrise Berserk"
+    },
+    "description": {
+      "fr": "-[#1] Maîtrise Berserk",
+      "en": "-[#1] Berserk Mastery",
+      "es": "-[#1] dominio berserker",
+      "pt": "-[#1] de Domínio de Berserk"
+    }
+  },
+  {
+    "definition": {
+      "id": 1062,
+      "effect": "Perte : Résistance Critique"
+    },
+    "description": {
+      "fr": "-[#1] Résistance Critique",
+      "en": "-[#1] Critical Resistance",
+      "es": "-[#1] resistencia crítica",
+      "pt": "-[#1] de Resistência a crítico"
+    }
+  },
+  {
+    "definition": {
+      "id": 1063,
+      "effect": "Perte : Résistance Dos"
+    },
+    "description": {
+      "fr": "-[#1] Résistance Dos",
+      "en": "-[#1] Rear Resistance",
+      "es": "-[#1] resistencia por la espalda",
+      "pt": "-[#1] de Resistência de costas"
+    }
+  },
+  {
+    "definition": {
+      "id": 1068,
+      "effect": "Gain : Maîtrise Élémentaire dans un nombre variable d'éléments"
+    },
+    "description": {
+      "fr": "{[~3]?[#1] Maîtrise [#3]:[#1] Maîtrise sur [#2] élément{[>2]?s:} aléatoire{[>2]?s:}}",
+      "en": "{[~3]?[#1] Mastery [#3]:[#1] Mastery of [#2] random{[=2]?:} element{[=2]?:s}}",
+      "es": "{[~3]?[#1] Dominio[#3]:[#1] Dominio de [#2] elemento{[>2]?s:} aleatorio{[>2]?s:}}",
+      "pt": "{[~3]?[#1] Domínio[#3]:[#1] Domínio sobre [#2] elemento{[>2]?s:} aleatório{[>2]?s:}}"
+    }
+  },
+  {
+    "definition": {
+      "id": 1069,
+      "effect": "Gain : Résistance Élémentaire dans un nombre variable d'éléments"
+    },
+    "description": {
+      "fr": "{[~3]?[#1] Résistance [#3]:[#1] Résistance sur [#2] élément{[>2]?s:} aléatoire{[>2]?s:}}",
+      "en": "{[~3]?[#1] Resistance [#3]:[#1] Resistance to [#2] random element{[>2]?s:}}",
+      "es": "{[~3]?[#1] Resistencia [#3]:[#1] Resistencia a [#2] elemento{[>2]?s:} aleatorio{[>2]?s:}}",
+      "pt": "{[~3]?[#1] de Resistência a [#3]:[#1] de Resistência a [#2] elemento{[>2]?s:} aleatório{[>2]?s:}}"
+    }
+  },
+  {
+    "definition": {
+      "id": 1083,
+      "effect": "Dommage : Lumière"
+    },
+    "description": {
+      "fr": "Dommage [el6] : [#1]{[+3]?% des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "en": "[el6] Damage: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? current:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of the caster:{[7<3]? of the target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "es": "Daño [el6]: [#1]{[+3]?% de los PdV:}{[+3]?{[1=3]? máx.:{[2=3]? actuales:{[3=3]? faltantes:{[4=3]? máx.:{[5=3]? actuales:{[6=3]? faltantes:}}}}}}:}{[+3]?{[4<3]? del lanzador:{[7<3]? del objetivo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "pt": "Dano [el6]: [#1]{[+3]?% dos PV:}{[+3]?{[1=3]? máx.:{[2=3]? atuais:{[3=3]? perdidos:{[4=3]? máx.:{[5=3]? atuais:{[6=3]? perdidos:}}}}}}:}{[+3]?{[4<3]? do lançador:{[7<3]? do alvo:}}:}{[-2]?{[0=2]?[ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+    }
+  },
+  {
+    "definition": {
+      "id": 1084,
+      "effect": "Soin : Lumière"
+    },
+    "description": {
+      "fr": "Soin [el6] : [#1]{[+3]?% des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "en": "[el6] Heal: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? current:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of the caster:{[7<3]? of the target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "es": "Cura [el6]: [#1]{[+3]?% de los PdV:}{[+3]?{[1=3]? máx.:{[2=3]? actuales:{[3=3]? faltantes:{[4=3]? máx.:{[5=3]? actuales:{[6=3]? faltantes:}}}}}}:}{[+3]?{[4<3]? del lanzador:{[7<3]? del objetivo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "pt": "Cura [el6]: [#1]{[+3]?% dos PV:}{[+3]?{[1=3]? máx.:{[2=3]? atuais:{[3=3]? perdidos:{[4=3]? máx.:{[5=3]? atuais:{[6=3]? perdidos:}}}}}}:}{[+3]?{[4<3]? do lançador:{[7<3]? do alvo:}}:}{[-2]?{[0=2]?[ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+    }
+  },
+  {
+    "definition": {
+      "id": 2001,
+      "effect": "Job : Modifie la quantité d'objets récoltée"
+    },
+    "description": {
+      "fr": "[#1]% Quantité Récolte{[~2]? en [#2]:}",
+      "en": "[#1]% Harvesting Quantity{[~2]? in [#2]:}",
+      "es": "[#1]% cantidad de recolección{[~2]? en [#2]:}",
+      "pt": "[#1]% de quantidade de colheita{[~2]? para [#2]:}"
+    }
+  }
+]

@@ -3,7 +3,7 @@ import str from '@stringsLang'
 import { MessageManager } from '@managers'
 import mappings from '@utils/mappings'
 const { rarityMap, jobsMap, itemEmojis } = mappings
-const recipesData = require('../../data/recipes.json')
+const recipesData = require('../../tsdata/generated/recipes.json')
 class RecipesManager {
   private recipes: RecipeItemData[]
 

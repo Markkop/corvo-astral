@@ -6,7 +6,7 @@ import MessageManager from './MessageManager'
 import { MessageReaction, MessageEmbed } from 'discord.js'
 import { RecipesManager } from '@managers'
 const { equipTypesMap, rarityMap } = mappings
-const itemsData = require('../../data/generated/items.json')
+const itemsData = require('../../tsdata/generated/items.json')
 
 class ItemManager {
   private itemsList: ItemData[]
@@ -27,7 +27,9 @@ class ItemManager {
   }
 
   private setSublimationList () {
-    this.sublimationList = this.itemsList.filter(item => Boolean(item.sublimation))
+    this.sublimationList = this.itemsList
+      .filter(item => Boolean(item.sublimation))
+      .sort((itemA, itemB) => itemA.title.en.localeCompare(itemB.title.en))
   }
 
   public getItemByName (itemList: ItemData[], name: string, options: CommandOptions, lang: string) {
@@ -66,8 +68,8 @@ class ItemManager {
 
   public getSublimationBySource (source: string, lang: string) {
     return this.sublimationList.filter(subli => {
-      const subliTitle = subli.sublimation.source[lang].toLowerCase()
-      return hasTextOrNormalizedTextIncluded(subliTitle, source)
+      const subliTitle = (subli.sublimation.source && subli.sublimation.source[lang]) || ''
+      return hasTextOrNormalizedTextIncluded(subliTitle.toLowerCase(), source)
     })
   }
 

@@ -70,7 +70,7 @@ export default class SubliCommand extends FinderCommand {
     const isEpicOrRelic = /epic|relic/.test(sublimation.slots)
     const sublimationRarity = sublimation.slots === 'epic' ? 7 : 5
     const icon = isEpicOrRelic ? ':gem:' : ':scroll:'
-    const embedColor = isEpicOrRelic ? rarityMap[sublimationRarity].color : rarityMap[3].color
+    const embedColor = isEpicOrRelic ? rarityMap[sublimationRarity].color : rarityMap[firstResult.rarity].color
     const maxStack = firstResult.description[lang].replace(/\D/g, '')
     const sublimationEmbed: PartialEmbed = {
       url: mountUrl(firstResult.id, firstResult.itemTypeId, lang),
@@ -87,11 +87,16 @@ export default class SubliCommand extends FinderCommand {
           name: str.capitalize(str.maxStacks[lang]),
           value: maxStack || '1',
           inline: true
+        },
+        {
+          name: str.capitalize(str.rarity[lang]),
+          value: rarityMap[firstResult.rarity].name[lang],
+          inline: true
         }
       ]
     }
 
-    const effects = sublimation.effects[lang] || sublimation.effects.en
+    const effects = sublimation.effects && (sublimation.effects[lang] || sublimation.effects.en)
     if (effects) {
       sublimationEmbed.fields.push({
         name: str.capitalize(str.effects[lang]),
@@ -100,7 +105,7 @@ export default class SubliCommand extends FinderCommand {
       })
     }
 
-    const source = sublimation.source[lang] || sublimation.source.en
+    const source = sublimation.source && (sublimation.source[lang] || sublimation.source.en)
     if (source) {
       sublimationEmbed.fields.push({
         name: str.capitalize(str.acquiring[lang]),

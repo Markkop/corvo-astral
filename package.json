@@ -7,7 +7,7 @@
     "start": "npm run build && node out/index.js",
     "dev": "ts-node tssrc/index.ts",
     "build": "tsc",
-    "import": "npm run build && node dist/importers",
+    "import": "ts-node tssrc/importers/import.ts",
     "lint": "eslint .",
     "test": "jest tstests/ --runInBand",
     "clean": "rm package-lock.json && rm -rf node_modules"

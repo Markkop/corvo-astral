@@ -101,7 +101,7 @@ export default class EquipCommand extends FinderCommand {
         inline: false
       })
     }
-    const hasCondititions = Boolean(firstResult.conditions.description[this.lang])
+    const hasCondititions = Boolean(firstResult.conditions && firstResult.conditions.description[this.lang])
     if (hasCondititions) {
       equipEmbed.fields.push({
         name: str.capitalize(str.conditions[this.lang]),
