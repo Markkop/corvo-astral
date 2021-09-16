@@ -1,3 +1,5 @@
+import 'module-alias/register'
+require('dotenv').config()
 import { Client, Message, MessageReaction, TextChannel, User } from 'discord.js'
 import cron from 'node-cron'
 import { handleMessageError } from './utils/handleError'
@@ -121,4 +123,6 @@ export default function initiateBot() {
   const bot = new Bot(client, token, configManager)
   bot.listen()
 }
+
+initiateBot()
 

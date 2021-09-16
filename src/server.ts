@@ -1,5 +1,6 @@
 import express from 'express'
 import path from 'path'
+require('dotenv').config()
 
 const PORT = process.env.PORT || 8080
 
@@ -17,3 +18,5 @@ export default function initiateServer() {
     console.error(error)
   }
 }
+
+initiateServer()
