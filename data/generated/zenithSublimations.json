@@ -865,10 +865,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No fim do turno:\n[pl]Os PA não utilizados são transmitidos ao turno seguinte\n[pl]Máx. 1 PA",
-          "en": "At end of turn:\n[pl]Unused AP are carried over to the next turn\n[pl]Max 1 PA",
-          "fr": "En fin de tour :\n[pl]Les PA non utilisés sont transmis au tour suivant\n[pl]Max 1 PA",
-          "es": "Al final del turno:\n[pl]Los PA no utilizados pasan al turno siguiente\n[pl]Máx. 1 PA"
+          "pt": "No fim do turno:\nOs PA não utilizados são transmitidos ao turno seguinte\nMáx. 1 PA",
+          "en": "At end of turn:\nUnused AP are carried over to the next turn\nMax 1 PA",
+          "fr": "En fin de tour :\nLes PA non utilisés sont transmis au tour suivant\nMax 1 PA",
+          "es": "Al final del turno:\nLos PA no utilizados pasan al turno siguiente\nMáx. 1 PA"
         }
       }
     ],
@@ -2152,10 +2152,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate:\n[pl]Reduz a 0 o domínio de cura\n[pl]10% de Curas realizadas",
-          "en": "At start of fight:\n[pl]Reduces Healing Mastery to 0\n[pl]10% Heals performed",
-          "fr": "En début de combat :\n[pl]Réduit la Maîtrise Soin à 0\n[pl]10% Soins réalisés",
-          "es": "Al comienzo del combate:\n[pl]Reduce el dominio cura a 0\n[pl]10% curas realizadas"
+          "pt": "No início do combate:\nReduz a 0 o domínio de cura\n10% de Curas realizadas",
+          "en": "At start of fight:\nReduces Healing Mastery to 0\n10% Heals performed",
+          "fr": "En début de combat :\nRéduit la Maîtrise Soin à 0\n10% Soins réalisés",
+          "es": "Al comienzo del combate:\nReduce el dominio cura a 0\n10% curas realizadas"
         }
       }
     ],
@@ -3760,10 +3760,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão acima de 90%:\n[pl]30% do nível em domínio elementar",
-          "en": "When HP are above 90%:\n[pl]30% of level in Elemental Mastery",
-          "fr": "Lorsque les PV sont supérieurs à 90% :\n[pl]30% du niveau en Maîtrise élémentaire",
-          "es": "Cuando los PdV superan el 90%:\n[pl]30% del nivel en dominio elemental"
+          "pt": "Quando os PV estão acima de 90%:\n30% do nível em domínio elementar",
+          "en": "When HP are above 90%:\n30% of level in Elemental Mastery",
+          "fr": "Lorsque les PV sont supérieurs à 90% :\n30% du niveau en Maîtrise élémentaire",
+          "es": "Cuando los PdV superan el 90%:\n30% del nivel en dominio elemental"
         }
       }
     ]
@@ -3835,10 +3835,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão acima de 90%:\n[pl]45% do nível em domínio elementar",
-          "en": "When HP are above 90%:\n[pl]45% of level in Elemental Mastery",
-          "fr": "Lorsque les PV sont supérieurs à 90% :\n[pl]45% du niveau en Maîtrise élémentaire",
-          "es": "Cuando los PdV superan el 90%:\n[pl]45% del nivel en dominio elemental"
+          "pt": "Quando os PV estão acima de 90%:\n45% do nível em domínio elementar",
+          "en": "When HP are above 90%:\n45% of level in Elemental Mastery",
+          "fr": "Lorsque les PV sont supérieurs à 90% :\n45% du niveau en Maîtrise élémentaire",
+          "es": "Cuando los PdV superan el 90%:\n45% del nivel en dominio elemental"
         }
       }
     ]
@@ -3898,10 +3898,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão acima de 90%:\n[pl]15% do nível em domínio elementar",
-          "en": "When HP are above 90%:\n[pl]15% of level in Elemental Mastery",
-          "fr": "Lorsque les PV sont supérieurs à 90% :\n[pl]15% du niveau en Maîtrise élémentaire",
-          "es": "Cuando los PdV superan el 90%:\n[pl]15% del nivel en dominio elemental"
+          "pt": "Quando os PV estão acima de 90%:\n15% do nível em domínio elementar",
+          "en": "When HP are above 90%:\n15% of level in Elemental Mastery",
+          "fr": "Lorsque les PV sont supérieurs à 90% :\n15% du niveau en Maîtrise élémentaire",
+          "es": "Cuando los PdV superan el 90%:\n15% del nivel en dominio elemental"
         }
       }
     ],
@@ -8487,10 +8487,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n[pl]10% de Golpe crítico ",
-          "en": "When HP are at less than 50%:\n[pl]10% Critical Hit ",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]10% Coup Critique ",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]10% golpe crítico "
+          "pt": "Quando os PV estão abaixo de 50%:\n10% de Golpe crítico ",
+          "en": "When HP are at less than 50%:\n10% Critical Hit ",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n10% Coup Critique ",
+          "es": "Cuando los PdV son inferiores al 50%:\n10% golpe crítico "
         }
       }
     ]
@@ -8576,10 +8576,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n[pl]15% de Golpe crítico ",
-          "en": "When HP are at less than 50%:\n[pl]15% Critical Hit ",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]15% Coup Critique ",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]15% golpe crítico "
+          "pt": "Quando os PV estão abaixo de 50%:\n15% de Golpe crítico ",
+          "en": "When HP are at less than 50%:\n15% Critical Hit ",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n15% Coup Critique ",
+          "es": "Cuando los PdV son inferiores al 50%:\n15% golpe crítico "
         }
       }
     ]
@@ -8653,10 +8653,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n[pl]5% de Golpe crítico ",
-          "en": "When HP are at less than 50%:\n[pl]5% Critical Hit ",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]5% Coup Critique ",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]5% golpe crítico "
+          "pt": "Quando os PV estão abaixo de 50%:\n5% de Golpe crítico ",
+          "en": "When HP are at less than 50%:\n5% Critical Hit ",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n5% Coup Critique ",
+          "es": "Cuando los PdV son inferiores al 50%:\n5% golpe crítico "
         }
       }
     ],
@@ -9373,10 +9373,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n [pl]20% de bloqueio",
-          "en": "When HP are at less than 50%:\n[pl]20% Lock",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]20% Tacle",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]20% placaje"
+          "pt": "Quando os PV estão abaixo de 50%:\n 20% de bloqueio",
+          "en": "When HP are at less than 50%:\n20% Lock",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n20% Tacle",
+          "es": "Cuando los PdV son inferiores al 50%:\n20% placaje"
         }
       }
     ]
@@ -9448,10 +9448,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n [pl]30% de bloqueio",
-          "en": "When HP are at less than 50%:\n[pl]30% Lock",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]30% Tacle",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]30% placaje"
+          "pt": "Quando os PV estão abaixo de 50%:\n 30% de bloqueio",
+          "en": "When HP are at less than 50%:\n30% Lock",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n30% Tacle",
+          "es": "Cuando los PdV son inferiores al 50%:\n30% placaje"
         }
       }
     ]
@@ -9511,10 +9511,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n [pl]10% de bloqueio",
-          "en": "When HP are at less than 50%:\n[pl]10% Lock",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]10% Tacle",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]10% placaje"
+          "pt": "Quando os PV estão abaixo de 50%:\n 10% de bloqueio",
+          "en": "When HP are at less than 50%:\n10% Lock",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n10% Tacle",
+          "es": "Cuando los PdV son inferiores al 50%:\n10% placaje"
         }
       }
     ],
@@ -10706,10 +10706,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n[pl]20% de esquiva",
-          "en": "When HP are at less than 50%:\n[pl]20% Dodge",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]20% Esquive",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]20% esquiva"
+          "pt": "Quando os PV estão abaixo de 50%:\n20% de esquiva",
+          "en": "When HP are at less than 50%:\n20% Dodge",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n20% Esquive",
+          "es": "Cuando los PdV son inferiores al 50%:\n20% esquiva"
         }
       }
     ]
@@ -10781,10 +10781,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n[pl]30% de esquiva",
-          "en": "When HP are at less than 50%:\n[pl]30% Dodge",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]30% Esquive",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]30% esquiva"
+          "pt": "Quando os PV estão abaixo de 50%:\n30% de esquiva",
+          "en": "When HP are at less than 50%:\n30% Dodge",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n30% Esquive",
+          "es": "Cuando los PdV son inferiores al 50%:\n30% esquiva"
         }
       }
     ]
@@ -10844,10 +10844,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n[pl]10% de esquiva",
-          "en": "When HP are at less than 50%:\n[pl]10% Dodge",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]10% Esquive",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]10% esquiva"
+          "pt": "Quando os PV estão abaixo de 50%:\n10% de esquiva",
+          "en": "When HP are at less than 50%:\n10% Dodge",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n10% Esquive",
+          "es": "Cuando los PdV son inferiores al 50%:\n10% esquiva"
         }
       }
     ],
@@ -12436,10 +12436,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n[pl]10% de Parada ",
-          "en": "When HP are at less than 50%:\n[pl]10% Block ",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]10% Parade ",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]10% anticipación "
+          "pt": "Quando os PV estão abaixo de 50%:\n10% de Parada ",
+          "en": "When HP are at less than 50%:\n10% Block ",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n10% Parade ",
+          "es": "Cuando los PdV son inferiores al 50%:\n10% anticipación "
         }
       }
     ]
@@ -12511,10 +12511,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n[pl]15% de Parada ",
-          "en": "When HP are at less than 50%:\n[pl]15% Block ",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]15% Parade ",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]15% anticipación "
+          "pt": "Quando os PV estão abaixo de 50%:\n15% de Parada ",
+          "en": "When HP are at less than 50%:\n15% Block ",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n15% Parade ",
+          "es": "Cuando los PdV son inferiores al 50%:\n15% anticipación "
         }
       }
     ]
@@ -12574,10 +12574,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando os PV estão abaixo de 50%:\n[pl]5% de Parada ",
-          "en": "When HP are at less than 50%:\n[pl]5% Block ",
-          "fr": "Lorsque les PV sont inférieurs à 50% :\n[pl]5% Parade ",
-          "es": "Cuando los PdV son inferiores al 50%:\n[pl]5% anticipación "
+          "pt": "Quando os PV estão abaixo de 50%:\n5% de Parada ",
+          "en": "When HP are at less than 50%:\n5% Block ",
+          "fr": "Lorsque les PV sont inférieurs à 50% :\n5% Parade ",
+          "es": "Cuando los PdV son inferiores al 50%:\n5% anticipación "
         }
       }
     ],
@@ -16122,10 +16122,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Em fim de turno, se um golpe crítico tiver sido desferido:\n[pl]Cura [el0] : 4% dos PV perdidos do lançador [ecnbi]",
-          "en": "At end of turn, if a critical hit was performed:\n[pl][el0]  Heal: 4% of HP lost of the caster [ecnbi]",
-          "fr": "En fin de tour, si un coup critique a été effectué :\n[pl]Soin [el0] : 4% des PV manquants du lanceur [ecnbi]",
-          "es": "Al final del turno, si se ha efectuado un golpe crítico:\n[pl]Cura [el0] : 4% de los PdV faltantes del lanzador [ecnbi]"
+          "pt": "Em fim de turno, se um golpe crítico tiver sido desferido:\nCura [el0] : 4% dos PV perdidos do lançador [ecnbi]",
+          "en": "At end of turn, if a critical hit was performed:\n[el0]  Heal: 4% of HP lost of the caster [ecnbi]",
+          "fr": "En fin de tour, si un coup critique a été effectué :\nSoin [el0] : 4% des PV manquants du lanceur [ecnbi]",
+          "es": "Al final del turno, si se ha efectuado un golpe crítico:\nCura [el0] : 4% de los PdV faltantes del lanzador [ecnbi]"
         }
       }
     ]
@@ -16197,10 +16197,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Em fim de turno, se um golpe crítico tiver sido desferido:\n[pl]Cura [el0] : 6% dos PV perdidos do lançador [ecnbi]",
-          "en": "At end of turn, if a critical hit was performed:\n[pl][el0]  Heal: 6% of HP lost of the caster [ecnbi]",
-          "fr": "En fin de tour, si un coup critique a été effectué :\n[pl]Soin [el0] : 6% des PV manquants du lanceur [ecnbi]",
-          "es": "Al final del turno, si se ha efectuado un golpe crítico:\n[pl]Cura [el0] : 6% de los PdV faltantes del lanzador [ecnbi]"
+          "pt": "Em fim de turno, se um golpe crítico tiver sido desferido:\nCura [el0] : 6% dos PV perdidos do lançador [ecnbi]",
+          "en": "At end of turn, if a critical hit was performed:\n[el0]  Heal: 6% of HP lost of the caster [ecnbi]",
+          "fr": "En fin de tour, si un coup critique a été effectué :\nSoin [el0] : 6% des PV manquants du lanceur [ecnbi]",
+          "es": "Al final del turno, si se ha efectuado un golpe crítico:\nCura [el0] : 6% de los PdV faltantes del lanzador [ecnbi]"
         }
       }
     ]
@@ -16260,10 +16260,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Em fim de turno, se um golpe crítico tiver sido desferido:\n[pl]Cura [el0] : 2% dos PV perdidos do lançador [ecnbi]",
-          "en": "At end of turn, if a critical hit was performed:\n[pl][el0]  Heal: 2% of HP lost of the caster [ecnbi]",
-          "fr": "En fin de tour, si un coup critique a été effectué :\n[pl]Soin [el0] : 2% des PV manquants du lanceur [ecnbi]",
-          "es": "Al final del turno, si se ha efectuado un golpe crítico:\n[pl]Cura [el0] : 2% de los PdV faltantes del lanzador [ecnbi]"
+          "pt": "Em fim de turno, se um golpe crítico tiver sido desferido:\nCura [el0] : 2% dos PV perdidos do lançador [ecnbi]",
+          "en": "At end of turn, if a critical hit was performed:\n[el0]  Heal: 2% of HP lost of the caster [ecnbi]",
+          "fr": "En fin de tour, si un coup critique a été effectué :\nSoin [el0] : 2% des PV manquants du lanceur [ecnbi]",
+          "es": "Al final del turno, si se ha efectuado un golpe crítico:\nCura [el0] : 2% de los PdV faltantes del lanzador [ecnbi]"
         }
       }
     ],
@@ -17004,10 +17004,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Ao curar um aliado, se o aliado em questão tiver menos de 15% dos PV:\n[pl]Cura [el0] : 14% dos PV máx. do alvo [ecnbi]",
-          "en": "When healing an ally, if the ally has less than 15% HP:\n[pl][el0]  Heal: 14% of HP max of the target [ecnbi]",
-          "fr": "En soignant un allié, si cet allié a moins de 15% PV :\n[pl]Soin [el0] : 14% des PV max de la cible [ecnbi]",
-          "es": "Al curar a un aliado, si este aliado tiene menos del 15% de PdV:\n[pl]Cura [el0] : 14% de los PdV máx. del objetivo [ecnbi]"
+          "pt": "Ao curar um aliado, se o aliado em questão tiver menos de 15% dos PV:\nCura [el0] : 14% dos PV máx. do alvo [ecnbi]",
+          "en": "When healing an ally, if the ally has less than 15% HP:\n[el0]  Heal: 14% of HP max of the target [ecnbi]",
+          "fr": "En soignant un allié, si cet allié a moins de 15% PV :\nSoin [el0] : 14% des PV max de la cible [ecnbi]",
+          "es": "Al curar a un aliado, si este aliado tiene menos del 15% de PdV:\nCura [el0] : 14% de los PdV máx. del objetivo [ecnbi]"
         }
       }
     ]
@@ -17067,10 +17067,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Ao curar um aliado, se o aliado em questão tiver menos de 15% dos PV:\n[pl]Cura [el0] : 7% dos PV máx. do alvo [ecnbi]",
-          "en": "When healing an ally, if the ally has less than 15% HP:\n[pl][el0]  Heal: 7% of HP max of the target [ecnbi]",
-          "fr": "En soignant un allié, si cet allié a moins de 15% PV :\n[pl]Soin [el0] : 7% des PV max de la cible [ecnbi]",
-          "es": "Al curar a un aliado, si este aliado tiene menos del 15% de PdV:\n[pl]Cura [el0] : 7% de los PdV máx. del objetivo [ecnbi]"
+          "pt": "Ao curar um aliado, se o aliado em questão tiver menos de 15% dos PV:\nCura [el0] : 7% dos PV máx. do alvo [ecnbi]",
+          "en": "When healing an ally, if the ally has less than 15% HP:\n[el0]  Heal: 7% of HP max of the target [ecnbi]",
+          "fr": "En soignant un allié, si cet allié a moins de 15% PV :\nSoin [el0] : 7% des PV max de la cible [ecnbi]",
+          "es": "Al curar a un aliado, si este aliado tiene menos del 15% de PdV:\nCura [el0] : 7% de los PdV máx. del objetivo [ecnbi]"
         }
       }
     ],
@@ -17260,10 +17260,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se nenhum aliado estiver entre 1 e 4 células do portador:\n[pl]4% de danos infligidos",
-          "en": "If there are no allies 1 to 4 cells from the bearer:\n[pl]4% Damage Inflicted",
-          "fr": "Si aucun allié n'est entre 1 et 4 cases du porteur :\n[pl]4% Dommages Infligés",
-          "es": "Si no hay ningún aliado a 1-4 casillas del portador:\n[pl]4% de daños causados"
+          "pt": "Se nenhum aliado estiver entre 1 e 4 células do portador:\n4% de danos infligidos",
+          "en": "If there are no allies 1 to 4 cells from the bearer:\n4% Damage Inflicted",
+          "fr": "Si aucun allié n'est entre 1 et 4 cases du porteur :\n4% Dommages Infligés",
+          "es": "Si no hay ningún aliado a 1-4 casillas del portador:\n4% de daños causados"
         }
       }
     ]
@@ -17335,10 +17335,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se nenhum aliado estiver entre 1 e 4 células do portador:\n[pl]6% de danos infligidos",
-          "en": "If there are no allies 1 to 4 cells from the bearer:\n[pl]6% Damage Inflicted",
-          "fr": "Si aucun allié n'est entre 1 et 4 cases du porteur :\n[pl]6% Dommages Infligés",
-          "es": "Si no hay ningún aliado a 1-4 casillas del portador:\n[pl]6% de daños causados"
+          "pt": "Se nenhum aliado estiver entre 1 e 4 células do portador:\n6% de danos infligidos",
+          "en": "If there are no allies 1 to 4 cells from the bearer:\n6% Damage Inflicted",
+          "fr": "Si aucun allié n'est entre 1 et 4 cases du porteur :\n6% Dommages Infligés",
+          "es": "Si no hay ningún aliado a 1-4 casillas del portador:\n6% de daños causados"
         }
       }
     ]
@@ -17398,10 +17398,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se nenhum aliado estiver entre 1 e 4 células do portador:\n[pl]2% de danos infligidos",
-          "en": "If there are no allies 1 to 4 cells from the bearer:\n[pl]2% Damage Inflicted",
-          "fr": "Si aucun allié n'est entre 1 et 4 cases du porteur :\n[pl]2% Dommages Infligés",
-          "es": "Si no hay ningún aliado a 1-4 casillas del portador:\n[pl]2% de daños causados"
+          "pt": "Se nenhum aliado estiver entre 1 e 4 células do portador:\n2% de danos infligidos",
+          "en": "If there are no allies 1 to 4 cells from the bearer:\n2% Damage Inflicted",
+          "fr": "Si aucun allié n'est entre 1 et 4 cases du porteur :\n2% Dommages Infligés",
+          "es": "Si no hay ningún aliado a 1-4 casillas del portador:\n2% de daños causados"
         }
       }
     ],
@@ -17666,10 +17666,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No fim do turno:\n[pl]50% dos PM não utilizados são transferidos para o turno seguinte\n[pl]Máx. 2PM",
-          "en": "At end of turn:\n[pl]50% of unused MP are carried over to the next turn\n[pl]Max 2 MP",
-          "fr": "En fin de tour :\n[pl]50% des PM non utilisés sont transmis au tour suivant\n[pl]Max 2 PM",
-          "es": "Al final del turno:\n[pl]50% de los PM no usados se pasan al turno siguiente\n[pl]Máx. 2 PM"
+          "pt": "No fim do turno:\n50% dos PM não utilizados são transferidos para o turno seguinte\nMáx. 2PM",
+          "en": "At end of turn:\n50% of unused MP are carried over to the next turn\nMax 2 MP",
+          "fr": "En fin de tour :\n50% des PM non utilisés sont transmis au tour suivant\nMax 2 PM",
+          "es": "Al final del turno:\n50% de los PM no usados se pasan al turno siguiente\nMáx. 2 PM"
         }
       }
     ]
@@ -17741,10 +17741,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No fim do turno:\n[pl]50% dos PM não utilizados são transferidos para o turno seguinte\n[pl]Máx. 0PM",
-          "en": "At end of turn:\n[pl]50% of unused MP are carried over to the next turn\n[pl]Max 0 MP",
-          "fr": "En fin de tour :\n[pl]50% des PM non utilisés sont transmis au tour suivant\n[pl]Max 0 PM",
-          "es": "Al final del turno:\n[pl]50% de los PM no usados se pasan al turno siguiente\n[pl]Máx. 0 PM"
+          "pt": "No fim do turno:\n50% dos PM não utilizados são transferidos para o turno seguinte\nMáx. 0PM",
+          "en": "At end of turn:\n50% of unused MP are carried over to the next turn\nMax 0 MP",
+          "fr": "En fin de tour :\n50% des PM non utilisés sont transmis au tour suivant\nMax 0 PM",
+          "es": "Al final del turno:\n50% de los PM no usados se pasan al turno siguiente\nMáx. 0 PM"
         }
       }
     ]
@@ -17804,10 +17804,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No fim do turno:\n[pl]50% dos PM não utilizados são transferidos para o turno seguinte\n[pl]Máx. 1PM",
-          "en": "At end of turn:\n[pl]50% of unused MP are carried over to the next turn\n[pl]Max 1 MP",
-          "fr": "En fin de tour :\n[pl]50% des PM non utilisés sont transmis au tour suivant\n[pl]Max 1 PM",
-          "es": "Al final del turno:\n[pl]50% de los PM no usados se pasan al turno siguiente\n[pl]Máx. 1 PM"
+          "pt": "No fim do turno:\n50% dos PM não utilizados são transferidos para o turno seguinte\nMáx. 1PM",
+          "en": "At end of turn:\n50% of unused MP are carried over to the next turn\nMax 1 MP",
+          "fr": "En fin de tour :\n50% des PM non utilisés sont transmis au tour suivant\nMax 1 PM",
+          "es": "Al final del turno:\n50% de los PM no usados se pasan al turno siguiente\nMáx. 1 PM"
         }
       }
     ],
@@ -18072,10 +18072,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Ao infligir danos a um inimigo com uma arma:\n[pl]Esse inimigo reduz seus danos ao portador do estado em -10% (1 turno, não cumulativo)\n[pl]O portador do estado precisa ter um escudo equipado",
-          "en": "When inflicting damage on an enemy with a weapon:\n[pl]That enemy reduces their damage on the state bearer by -10% (1 turn, not stackable)\n[pl]The state bearer must have a shield equipped",
-          "fr": "En infligeant des dommages à un ennemi avec une arme :\n[pl]Cet ennemi réduit ses dommages sur le porteur de l'état de -10% (1 tour, non-cumulable)\n[pl]Le porteur de l'état doit posséder un bouclier équipé",
-          "es": "Al infligir daños a un enemigo con una arma:\n[pl]Este enemigo reduce sus daños en el portador del estado de -10% (1 turno, no acumulable)\n[pl]El portador del estado debe tener equipado un escudo"
+          "pt": "Ao infligir danos a um inimigo com uma arma:\nEsse inimigo reduz seus danos ao portador do estado em -10% (1 turno, não cumulativo)\nO portador do estado precisa ter um escudo equipado",
+          "en": "When inflicting damage on an enemy with a weapon:\nThat enemy reduces their damage on the state bearer by -10% (1 turn, not stackable)\nThe state bearer must have a shield equipped",
+          "fr": "En infligeant des dommages à un ennemi avec une arme :\nCet ennemi réduit ses dommages sur le porteur de l'état de -10% (1 tour, non-cumulable)\nLe porteur de l'état doit posséder un bouclier équipé",
+          "es": "Al infligir daños a un enemigo con una arma:\nEste enemigo reduce sus daños en el portador del estado de -10% (1 turno, no acumulable)\nEl portador del estado debe tener equipado un escudo"
         }
       }
     ]
@@ -18135,10 +18135,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Ao infligir danos a um inimigo com uma arma:\n[pl]Esse inimigo reduz seus danos ao portador do estado em -5% (1 turno, não cumulativo)\n[pl]O portador do estado precisa ter um escudo equipado",
-          "en": "When inflicting damage on an enemy with a weapon:\n[pl]That enemy reduces their damage on the state bearer by -5% (1 turn, not stackable)\n[pl]The state bearer must have a shield equipped",
-          "fr": "En infligeant des dommages à un ennemi avec une arme :\n[pl]Cet ennemi réduit ses dommages sur le porteur de l'état de -5% (1 tour, non-cumulable)\n[pl]Le porteur de l'état doit posséder un bouclier équipé",
-          "es": "Al infligir daños a un enemigo con una arma:\n[pl]Este enemigo reduce sus daños en el portador del estado de -5% (1 turno, no acumulable)\n[pl]El portador del estado debe tener equipado un escudo"
+          "pt": "Ao infligir danos a um inimigo com uma arma:\nEsse inimigo reduz seus danos ao portador do estado em -5% (1 turno, não cumulativo)\nO portador do estado precisa ter um escudo equipado",
+          "en": "When inflicting damage on an enemy with a weapon:\nThat enemy reduces their damage on the state bearer by -5% (1 turn, not stackable)\nThe state bearer must have a shield equipped",
+          "fr": "En infligeant des dommages à un ennemi avec une arme :\nCet ennemi réduit ses dommages sur le porteur de l'état de -5% (1 tour, non-cumulable)\nLe porteur de l'état doit posséder un bouclier équipé",
+          "es": "Al infligir daños a un enemigo con una arma:\nEste enemigo reduce sus daños en el portador del estado de -5% (1 turno, no acumulable)\nEl portador del estado debe tener equipado un escudo"
         }
       }
     ],
@@ -18342,10 +18342,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate:\n[pl]-2 de PW no máx.\nPara cada PW utilizado durante o turno:\n[pl]|2*2|% de danos infligidos (1 turno) (máx. 30)",
-          "en": "At start of fight:\n[pl]-2 max WP\nFor each WP spent during the turn:\n[pl]|2*2|% damage inflicted (1 turn) (max 30)",
-          "fr": "En début de combat :\n[pl]-2 PW max\nPour chaque PW dépensé au cours du tour :\n[pl]|2*2|% Dommages infligés (1 tour) (max 30)",
-          "es": "Al comienzo del combate:\n[pl]-2 PW máx.\nPor cada PW gastado durante el turno:\n[pl]|2*2|% de daños infligidos (1 turno) (máx. 30)"
+          "pt": "No início do combate:\n-2 de PW no máx.\nPara cada PW utilizado durante o turno:\n|2*2|% de danos infligidos (1 turno) (máx. 30)",
+          "en": "At start of fight:\n-2 max WP\nFor each WP spent during the turn:\n|2*2|% damage inflicted (1 turn) (max 30)",
+          "fr": "En début de combat :\n-2 PW max\nPour chaque PW dépensé au cours du tour :\n|2*2|% Dommages infligés (1 tour) (max 30)",
+          "es": "Al comienzo del combate:\n-2 PW máx.\nPor cada PW gastado durante el turno:\n|2*2|% de daños infligidos (1 turno) (máx. 30)"
         }
       }
     ]
@@ -18431,10 +18431,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate:\n[pl]-3 de PW no máx.\nPara cada PW utilizado durante o turno:\n[pl]|3*2|% de danos infligidos (1 turno) (máx. 30)",
-          "en": "At start of fight:\n[pl]-3 max WP\nFor each WP spent during the turn:\n[pl]|3*2|% damage inflicted (1 turn) (max 30)",
-          "fr": "En début de combat :\n[pl]-3 PW max\nPour chaque PW dépensé au cours du tour :\n[pl]|3*2|% Dommages infligés (1 tour) (max 30)",
-          "es": "Al comienzo del combate:\n[pl]-3 PW máx.\nPor cada PW gastado durante el turno:\n[pl]|3*2|% de daños infligidos (1 turno) (máx. 30)"
+          "pt": "No início do combate:\n-3 de PW no máx.\nPara cada PW utilizado durante o turno:\n|3*2|% de danos infligidos (1 turno) (máx. 30)",
+          "en": "At start of fight:\n-3 max WP\nFor each WP spent during the turn:\n|3*2|% damage inflicted (1 turn) (max 30)",
+          "fr": "En début de combat :\n-3 PW max\nPour chaque PW dépensé au cours du tour :\n|3*2|% Dommages infligés (1 tour) (max 30)",
+          "es": "Al comienzo del combate:\n-3 PW máx.\nPor cada PW gastado durante el turno:\n|3*2|% de daños infligidos (1 turno) (máx. 30)"
         }
       }
     ]
@@ -18508,10 +18508,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate:\n[pl]-1 de PW no máx.\nPara cada PW utilizado durante o turno:\n[pl]|1*2|% de danos infligidos (1 turno) (máx. 30)",
-          "en": "At start of fight:\n[pl]-1 max WP\nFor each WP spent during the turn:\n[pl]|1*2|% damage inflicted (1 turn) (max 30)",
-          "fr": "En début de combat :\n[pl]-1 PW max\nPour chaque PW dépensé au cours du tour :\n[pl]|1*2|% Dommages infligés (1 tour) (max 30)",
-          "es": "Al comienzo del combate:\n[pl]-1 PW máx.\nPor cada PW gastado durante el turno:\n[pl]|1*2|% de daños infligidos (1 turno) (máx. 30)"
+          "pt": "No início do combate:\n-1 de PW no máx.\nPara cada PW utilizado durante o turno:\n|1*2|% de danos infligidos (1 turno) (máx. 30)",
+          "en": "At start of fight:\n-1 max WP\nFor each WP spent during the turn:\n|1*2|% damage inflicted (1 turn) (max 30)",
+          "fr": "En début de combat :\n-1 PW max\nPour chaque PW dépensé au cours du tour :\n|1*2|% Dommages infligés (1 tour) (max 30)",
+          "es": "Al comienzo del combate:\n-1 PW máx.\nPor cada PW gastado durante el turno:\n|1*2|% de daños infligidos (1 turno) (máx. 30)"
         }
       }
     ],
@@ -19143,10 +19143,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o portador do estado começa seu turno com todos seus PW (ou toda sua BQ):\n[pl]20% de Golpe crítico (1 turno)",
-          "en": "When the state bearer starts their turn with all their WP (or all their QB):\n[pl]20% Critical Hit (1 turn)",
-          "fr": "Lorsque le porteur de l'état commence son tour avec tous ses PW (ou toute sa BQ) :\n[pl]20% Coup Critique (1 tour)",
-          "es": "Cuando el portador del estado comienza su turno con todos sus PW (o con toda su BC):\n[pl]20% golpe crítico (1 turno)"
+          "pt": "Quando o portador do estado começa seu turno com todos seus PW (ou toda sua BQ):\n20% de Golpe crítico (1 turno)",
+          "en": "When the state bearer starts their turn with all their WP (or all their QB):\n20% Critical Hit (1 turn)",
+          "fr": "Lorsque le porteur de l'état commence son tour avec tous ses PW (ou toute sa BQ) :\n20% Coup Critique (1 tour)",
+          "es": "Cuando el portador del estado comienza su turno con todos sus PW (o con toda su BC):\n20% golpe crítico (1 turno)"
         }
       }
     ]
@@ -19220,10 +19220,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o portador do estado começa seu turno com todos seus PW (ou toda sua BQ):\n[pl]10% de Golpe crítico (1 turno)",
-          "en": "When the state bearer starts their turn with all their WP (or all their QB):\n[pl]10% Critical Hit (1 turn)",
-          "fr": "Lorsque le porteur de l'état commence son tour avec tous ses PW (ou toute sa BQ) :\n[pl]10% Coup Critique (1 tour)",
-          "es": "Cuando el portador del estado comienza su turno con todos sus PW (o con toda su BC):\n[pl]10% golpe crítico (1 turno)"
+          "pt": "Quando o portador do estado começa seu turno com todos seus PW (ou toda sua BQ):\n10% de Golpe crítico (1 turno)",
+          "en": "When the state bearer starts their turn with all their WP (or all their QB):\n10% Critical Hit (1 turn)",
+          "fr": "Lorsque le porteur de l'état commence son tour avec tous ses PW (ou toute sa BQ) :\n10% Coup Critique (1 tour)",
+          "es": "Cuando el portador del estado comienza su turno con todos sus PW (o con toda su BC):\n10% golpe crítico (1 turno)"
         }
       }
     ],
@@ -19441,10 +19441,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o portador do estado começa seu turno com 50% ou menos dos seus PW (ou da sua BQ):\n[pl]6% dos danos críticos infligidos (1 turno)\n[pl]200% do nível em armadura",
-          "en": "When the state bearer starts their turn with 50% or less of their WP (or their QB):\n[pl]6% Critical Damage inflicted (1 turn)\n[pl]200% of level as Armor",
-          "fr": "Lorsque le porteur de l'état commence son tour avec 50% ou moins de ses PW (ou de sa BQ) :\n[pl]6% Dommages critiques infligés (1 tour)\n[pl]200% du niveau en Armure",
-          "es": "Cuando el portador del estado comienza su turno con el 50% o menos de sus PW (o de su BC):\n[pl]6% de daños críticos infligidos (1 turno)\n[pl]200% del nivel en armadura"
+          "pt": "Quando o portador do estado começa seu turno com 50% ou menos dos seus PW (ou da sua BQ):\n6% dos danos críticos infligidos (1 turno)\n200% do nível em armadura",
+          "en": "When the state bearer starts their turn with 50% or less of their WP (or their QB):\n6% Critical Damage inflicted (1 turn)\n200% of level as Armor",
+          "fr": "Lorsque le porteur de l'état commence son tour avec 50% ou moins de ses PW (ou de sa BQ) :\n6% Dommages critiques infligés (1 tour)\n200% du niveau en Armure",
+          "es": "Cuando el portador del estado comienza su turno con el 50% o menos de sus PW (o de su BC):\n6% de daños críticos infligidos (1 turno)\n200% del nivel en armadura"
         }
       }
     ]
@@ -19530,10 +19530,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o portador do estado começa seu turno com 50% ou menos dos seus PW (ou da sua BQ):\n[pl]9% dos danos críticos infligidos (1 turno)\n[pl]300% do nível em armadura",
-          "en": "When the state bearer starts their turn with 50% or less of their WP (or their QB):\n[pl]9% Critical Damage inflicted (1 turn)\n[pl]300% of level as Armor",
-          "fr": "Lorsque le porteur de l'état commence son tour avec 50% ou moins de ses PW (ou de sa BQ) :\n[pl]9% Dommages critiques infligés (1 tour)\n[pl]300% du niveau en Armure",
-          "es": "Cuando el portador del estado comienza su turno con el 50% o menos de sus PW (o de su BC):\n[pl]9% de daños críticos infligidos (1 turno)\n[pl]300% del nivel en armadura"
+          "pt": "Quando o portador do estado começa seu turno com 50% ou menos dos seus PW (ou da sua BQ):\n9% dos danos críticos infligidos (1 turno)\n300% do nível em armadura",
+          "en": "When the state bearer starts their turn with 50% or less of their WP (or their QB):\n9% Critical Damage inflicted (1 turn)\n300% of level as Armor",
+          "fr": "Lorsque le porteur de l'état commence son tour avec 50% ou moins de ses PW (ou de sa BQ) :\n9% Dommages critiques infligés (1 tour)\n300% du niveau en Armure",
+          "es": "Cuando el portador del estado comienza su turno con el 50% o menos de sus PW (o de su BC):\n9% de daños críticos infligidos (1 turno)\n300% del nivel en armadura"
         }
       }
     ]
@@ -19607,10 +19607,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o portador do estado começa seu turno com 50% ou menos dos seus PW (ou da sua BQ):\n[pl]3% dos danos críticos infligidos (1 turno)\n[pl]100% do nível em armadura",
-          "en": "When the state bearer starts their turn with 50% or less of their WP (or their QB):\n[pl]3% Critical Damage inflicted (1 turn)\n[pl]100% of level as Armor",
-          "fr": "Lorsque le porteur de l'état commence son tour avec 50% ou moins de ses PW (ou de sa BQ) :\n[pl]3% Dommages critiques infligés (1 tour)\n[pl]100% du niveau en Armure",
-          "es": "Cuando el portador del estado comienza su turno con el 50% o menos de sus PW (o de su BC):\n[pl]3% de daños críticos infligidos (1 turno)\n[pl]100% del nivel en armadura"
+          "pt": "Quando o portador do estado começa seu turno com 50% ou menos dos seus PW (ou da sua BQ):\n3% dos danos críticos infligidos (1 turno)\n100% do nível em armadura",
+          "en": "When the state bearer starts their turn with 50% or less of their WP (or their QB):\n3% Critical Damage inflicted (1 turn)\n100% of level as Armor",
+          "fr": "Lorsque le porteur de l'état commence son tour avec 50% ou moins de ses PW (ou de sa BQ) :\n3% Dommages critiques infligés (1 tour)\n100% du niveau en Armure",
+          "es": "Cuando el portador del estado comienza su turno con el 50% o menos de sus PW (o de su BC):\n3% de daños críticos infligidos (1 turno)\n100% del nivel en armadura"
         }
       }
     ],
@@ -19926,10 +19926,10 @@
           }
         ],
         "lang": {
-          "pt": "-15% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\n[pl]Incurável (nível: custo em PA da arma) ao inimigo e ao carregador do estado",
-          "en": "-15 Damage inflicted with a Weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\n[pl]Incurable (level: AP cost of the weapon) on the enemy and state bearer",
-          "fr": "-15% Dommages infligés avec une Arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\n[pl]Incurable (niveau : coût en PA de l'arme) sur l'ennemi et le porteur de l'état",
-          "es": "-15% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\n[pl]Incurable (nivel: coste en PA del arma) en el enemigo y el portador del estado"
+          "pt": "-15% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\nIncurável (nível: custo em PA da arma) ao inimigo e ao carregador do estado",
+          "en": "-15 Damage inflicted with a Weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\nIncurable (level: AP cost of the weapon) on the enemy and state bearer",
+          "fr": "-15% Dommages infligés avec une Arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\nIncurable (niveau : coût en PA de l'arme) sur l'ennemi et le porteur de l'état",
+          "es": "-15% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\nIncurable (nivel: coste en PA del arma) en el enemigo y el portador del estado"
         }
       }
     ]
@@ -20024,10 +20024,10 @@
           }
         ],
         "lang": {
-          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\n[pl]Incurável (nível: custo em PA da arma) ao inimigo e ao carregador do estado",
-          "en": "-10 Damage inflicted with a Weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\n[pl]Incurable (level: AP cost of the weapon) on the enemy and state bearer",
-          "fr": "-10% Dommages infligés avec une Arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\n[pl]Incurable (niveau : coût en PA de l'arme) sur l'ennemi et le porteur de l'état",
-          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\n[pl]Incurable (nivel: coste en PA del arma) en el enemigo y el portador del estado"
+          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\nIncurável (nível: custo em PA da arma) ao inimigo e ao carregador do estado",
+          "en": "-10 Damage inflicted with a Weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\nIncurable (level: AP cost of the weapon) on the enemy and state bearer",
+          "fr": "-10% Dommages infligés avec une Arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\nIncurable (niveau : coût en PA de l'arme) sur l'ennemi et le porteur de l'état",
+          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\nIncurable (nivel: coste en PA del arma) en el enemigo y el portador del estado"
         }
       }
     ]
@@ -20110,10 +20110,10 @@
           }
         ],
         "lang": {
-          "pt": "-20% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\n[pl]Incurável (nível: custo em PA da arma) ao inimigo e ao carregador do estado",
-          "en": "-20 Damage inflicted with a Weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\n[pl]Incurable (level: AP cost of the weapon) on the enemy and state bearer",
-          "fr": "-20% Dommages infligés avec une Arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\n[pl]Incurable (niveau : coût en PA de l'arme) sur l'ennemi et le porteur de l'état",
-          "es": "-20% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\n[pl]Incurable (nivel: coste en PA del arma) en el enemigo y el portador del estado"
+          "pt": "-20% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\nIncurável (nível: custo em PA da arma) ao inimigo e ao carregador do estado",
+          "en": "-20 Damage inflicted with a Weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\nIncurable (level: AP cost of the weapon) on the enemy and state bearer",
+          "fr": "-20% Dommages infligés avec une Arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\nIncurable (niveau : coût en PA de l'arme) sur l'ennemi et le porteur de l'état",
+          "es": "-20% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\nIncurable (nivel: coste en PA del arma) en el enemigo y el portador del estado"
         }
       }
     ],
@@ -20438,10 +20438,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\n[pl]Rouba 30% do nível em bloqueio (1 turno, não cumulativo)",
-          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\n[pl]Steals 30% of level in Lock (1 turn, not stackable)",
-          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\n[pl]Vole 30% du niveau en Tacle (1 tour, non-cumulable)",
-          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\n[pl]Roba un 30% del nivel en placaje (1 turno, no acumulable)"
+          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\nRouba 30% do nível em bloqueio (1 turno, não cumulativo)",
+          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\nSteals 30% of level in Lock (1 turn, not stackable)",
+          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\nVole 30% du niveau en Tacle (1 tour, non-cumulable)",
+          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\nRoba un 30% del nivel en placaje (1 turno, no acumulable)"
         }
       }
     ]
@@ -20527,10 +20527,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\n[pl]Rouba 45% do nível em bloqueio (1 turno, não cumulativo)",
-          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\n[pl]Steals 45% of level in Lock (1 turn, not stackable)",
-          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\n[pl]Vole 45% du niveau en Tacle (1 tour, non-cumulable)",
-          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\n[pl]Roba un 45% del nivel en placaje (1 turno, no acumulable)"
+          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\nRouba 45% do nível em bloqueio (1 turno, não cumulativo)",
+          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\nSteals 45% of level in Lock (1 turn, not stackable)",
+          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\nVole 45% du niveau en Tacle (1 tour, non-cumulable)",
+          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\nRoba un 45% del nivel en placaje (1 turno, no acumulable)"
         }
       }
     ]
@@ -20604,10 +20604,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\n[pl]Rouba 15% do nível em bloqueio (1 turno, não cumulativo)",
-          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\n[pl]Steals 15% of level in Lock (1 turn, not stackable)",
-          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\n[pl]Vole 15% du niveau en Tacle (1 tour, non-cumulable)",
-          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\n[pl]Roba un 15% del nivel en placaje (1 turno, no acumulable)"
+          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\nRouba 15% do nível em bloqueio (1 turno, não cumulativo)",
+          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\nSteals 15% of level in Lock (1 turn, not stackable)",
+          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\nVole 15% du niveau en Tacle (1 tour, non-cumulable)",
+          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\nRoba un 15% del nivel en placaje (1 turno, no acumulable)"
         }
       }
     ],
@@ -20914,10 +20914,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\n[pl]Rouba 30% do nível em esquiva (1 tour, não cumulativo)",
-          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\n[pl]Steals 30% of level in Dodge (1 turn, not stackable)",
-          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\n[pl]Vole 30% du niveau en Esquive (1 tour, non-cumulable)",
-          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\n[pl]Roba un 30% del nivel en placaje (1 turno, no acumulable)"
+          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\nRouba 30% do nível em esquiva (1 tour, não cumulativo)",
+          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\nSteals 30% of level in Dodge (1 turn, not stackable)",
+          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\nVole 30% du niveau en Esquive (1 tour, non-cumulable)",
+          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\nRoba un 30% del nivel en placaje (1 turno, no acumulable)"
         }
       }
     ]
@@ -21003,10 +21003,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\n[pl]Rouba 45% do nível em esquiva (1 tour, não cumulativo)",
-          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\n[pl]Steals 45% of level in Dodge (1 turn, not stackable)",
-          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\n[pl]Vole 45% du niveau en Esquive (1 tour, non-cumulable)",
-          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\n[pl]Roba un 45% del nivel en placaje (1 turno, no acumulable)"
+          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\nRouba 45% do nível em esquiva (1 tour, não cumulativo)",
+          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\nSteals 45% of level in Dodge (1 turn, not stackable)",
+          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\nVole 45% du niveau en Esquive (1 tour, non-cumulable)",
+          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\nRoba un 45% del nivel en placaje (1 turno, no acumulable)"
         }
       }
     ]
@@ -21080,10 +21080,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\n[pl]Rouba 15% do nível em esquiva (1 tour, não cumulativo)",
-          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\n[pl]Steals 15% of level in Dodge (1 turn, not stackable)",
-          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\n[pl]Vole 15% du niveau en Esquive (1 tour, non-cumulable)",
-          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\n[pl]Roba un 15% del nivel en placaje (1 turno, no acumulable)"
+          "pt": "-10% dos danos infligidos com uma arma\nAo infligir danos a um inimigo com uma arma de duas mãos:\nRouba 15% do nível em esquiva (1 tour, não cumulativo)",
+          "en": "-10% Damage inflicted with a weapon\nWhen inflicting damage on an enemy with a two-handed weapon:\nSteals 15% of level in Dodge (1 turn, not stackable)",
+          "fr": "-10% Dommages infligés avec une arme\nEn infligeant des dommages à un ennemi avec une arme à deux mains :\nVole 15% du niveau en Esquive (1 tour, non-cumulable)",
+          "es": "-10% de daños infligidos con una arma\nAl infligir daños a un enemigo con una arma de a dos manos:\nRoba un 15% del nivel en placaje (1 turno, no acumulable)"
         }
       }
     ],
@@ -21376,10 +21376,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o portador do estado sofre danos diretos em contato, uma vez por turno do atacante:\n[pl]O portador do estado inflige danos de luz (20% dou nível)",
-          "en": "When the state bearer suffers direct close-combat damage, once per turn of the attacker:\n[pl]The state bearer inflicts light damage on the attacker (20% of level)",
-          "fr": "Lorsque le porteur de l'état subit des dommages directs au contact, une fois par tour de l'attaquant :\n[pl]Le porteur de l'état lui inflige des dommages lumière (20% du niveau)",
-          "es": "Cuando el portador del estado sufre daños directos en el cuerpo a cuerpo, una vez por turno del atacante:\n[pl]El portador del estado le inflige daños de luz (20% del nivel)"
+          "pt": "Quando o portador do estado sofre danos diretos em contato, uma vez por turno do atacante:\nO portador do estado inflige danos de luz (20% dou nível)",
+          "en": "When the state bearer suffers direct close-combat damage, once per turn of the attacker:\nThe state bearer inflicts light damage on the attacker (20% of level)",
+          "fr": "Lorsque le porteur de l'état subit des dommages directs au contact, une fois par tour de l'attaquant :\nLe porteur de l'état lui inflige des dommages lumière (20% du niveau)",
+          "es": "Cuando el portador del estado sufre daños directos en el cuerpo a cuerpo, una vez por turno del atacante:\nEl portador del estado le inflige daños de luz (20% del nivel)"
         }
       }
     ]
@@ -21451,10 +21451,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o portador do estado sofre danos diretos em contato, uma vez por turno do atacante:\n[pl]O portador do estado inflige danos de luz (30% dou nível)",
-          "en": "When the state bearer suffers direct close-combat damage, once per turn of the attacker:\n[pl]The state bearer inflicts light damage on the attacker (30% of level)",
-          "fr": "Lorsque le porteur de l'état subit des dommages directs au contact, une fois par tour de l'attaquant :\n[pl]Le porteur de l'état lui inflige des dommages lumière (30% du niveau)",
-          "es": "Cuando el portador del estado sufre daños directos en el cuerpo a cuerpo, una vez por turno del atacante:\n[pl]El portador del estado le inflige daños de luz (30% del nivel)"
+          "pt": "Quando o portador do estado sofre danos diretos em contato, uma vez por turno do atacante:\nO portador do estado inflige danos de luz (30% dou nível)",
+          "en": "When the state bearer suffers direct close-combat damage, once per turn of the attacker:\nThe state bearer inflicts light damage on the attacker (30% of level)",
+          "fr": "Lorsque le porteur de l'état subit des dommages directs au contact, une fois par tour de l'attaquant :\nLe porteur de l'état lui inflige des dommages lumière (30% du niveau)",
+          "es": "Cuando el portador del estado sufre daños directos en el cuerpo a cuerpo, una vez por turno del atacante:\nEl portador del estado le inflige daños de luz (30% del nivel)"
         }
       }
     ]
@@ -21514,10 +21514,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o portador do estado sofre danos diretos em contato, uma vez por turno do atacante:\n[pl]O portador do estado inflige danos de luz (10% dou nível)",
-          "en": "When the state bearer suffers direct close-combat damage, once per turn of the attacker:\n[pl]The state bearer inflicts light damage on the attacker (10% of level)",
-          "fr": "Lorsque le porteur de l'état subit des dommages directs au contact, une fois par tour de l'attaquant :\n[pl]Le porteur de l'état lui inflige des dommages lumière (10% du niveau)",
-          "es": "Cuando el portador del estado sufre daños directos en el cuerpo a cuerpo, una vez por turno del atacante:\n[pl]El portador del estado le inflige daños de luz (10% del nivel)"
+          "pt": "Quando o portador do estado sofre danos diretos em contato, uma vez por turno do atacante:\nO portador do estado inflige danos de luz (10% dou nível)",
+          "en": "When the state bearer suffers direct close-combat damage, once per turn of the attacker:\nThe state bearer inflicts light damage on the attacker (10% of level)",
+          "fr": "Lorsque le porteur de l'état subit des dommages directs au contact, une fois par tour de l'attaquant :\nLe porteur de l'état lui inflige des dommages lumière (10% du niveau)",
+          "es": "Cuando el portador del estado sufre daños directos en el cuerpo a cuerpo, una vez por turno del atacante:\nEl portador del estado le inflige daños de luz (10% del nivel)"
         }
       }
     ],
@@ -21796,10 +21796,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se não tiver nenhum escudo, adaga ou arma de duas mãos equipado, no início do combate:\n[pl]50% do nível em domínio elementar\n[pl]4% dos danos infligidos a um alvo com armadura",
-          "en": "If no other shield, dagger or two-handed weapon is equipped, at start of fight:\n[pl]50% of level in Elemental Mastery\n[pl]4% of Damage inflicted on a target with Armor",
-          "fr": "Si aucun bouclier, ni dague, ni arme à deux mains n'est équipé, en début de combat :\n[pl]50% du niveau en Maîtrise Élémentaire\n[pl]4% Dommages infligés sur une cible avec de l'Armure",
-          "es": "Si no hay ningún escudo, ni daga, ni arma de a dos manos equipados, al principio de combate:\n[pl]50% del nivel en dominio elemental\n[pl]4% de daños infligidos a un objetivo con armadura"
+          "pt": "Se não tiver nenhum escudo, adaga ou arma de duas mãos equipado, no início do combate:\n50% do nível em domínio elementar\n4% dos danos infligidos a um alvo com armadura",
+          "en": "If no other shield, dagger or two-handed weapon is equipped, at start of fight:\n50% of level in Elemental Mastery\n4% of Damage inflicted on a target with Armor",
+          "fr": "Si aucun bouclier, ni dague, ni arme à deux mains n'est équipé, en début de combat :\n50% du niveau en Maîtrise Élémentaire\n4% Dommages infligés sur une cible avec de l'Armure",
+          "es": "Si no hay ningún escudo, ni daga, ni arma de a dos manos equipados, al principio de combate:\n50% del nivel en dominio elemental\n4% de daños infligidos a un objetivo con armadura"
         }
       }
     ]
@@ -21885,10 +21885,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se não tiver nenhum escudo, adaga ou arma de duas mãos equipado, no início do combate:\n[pl]75% do nível em domínio elementar\n[pl]6% dos danos infligidos a um alvo com armadura",
-          "en": "If no other shield, dagger or two-handed weapon is equipped, at start of fight:\n[pl]75% of level in Elemental Mastery\n[pl]6% of Damage inflicted on a target with Armor",
-          "fr": "Si aucun bouclier, ni dague, ni arme à deux mains n'est équipé, en début de combat :\n[pl]75% du niveau en Maîtrise Élémentaire\n[pl]6% Dommages infligés sur une cible avec de l'Armure",
-          "es": "Si no hay ningún escudo, ni daga, ni arma de a dos manos equipados, al principio de combate:\n[pl]75% del nivel en dominio elemental\n[pl]6% de daños infligidos a un objetivo con armadura"
+          "pt": "Se não tiver nenhum escudo, adaga ou arma de duas mãos equipado, no início do combate:\n75% do nível em domínio elementar\n6% dos danos infligidos a um alvo com armadura",
+          "en": "If no other shield, dagger or two-handed weapon is equipped, at start of fight:\n75% of level in Elemental Mastery\n6% of Damage inflicted on a target with Armor",
+          "fr": "Si aucun bouclier, ni dague, ni arme à deux mains n'est équipé, en début de combat :\n75% du niveau en Maîtrise Élémentaire\n6% Dommages infligés sur une cible avec de l'Armure",
+          "es": "Si no hay ningún escudo, ni daga, ni arma de a dos manos equipados, al principio de combate:\n75% del nivel en dominio elemental\n6% de daños infligidos a un objetivo con armadura"
         }
       }
     ]
@@ -21962,10 +21962,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se não tiver nenhum escudo, adaga ou arma de duas mãos equipado, no início do combate:\n[pl]25% do nível em domínio elementar\n[pl]2% dos danos infligidos a um alvo com armadura",
-          "en": "If no other shield, dagger or two-handed weapon is equipped, at start of fight:\n[pl]25% of level in Elemental Mastery\n[pl]2% of Damage inflicted on a target with Armor",
-          "fr": "Si aucun bouclier, ni dague, ni arme à deux mains n'est équipé, en début de combat :\n[pl]25% du niveau en Maîtrise Élémentaire\n[pl]2% Dommages infligés sur une cible avec de l'Armure",
-          "es": "Si no hay ningún escudo, ni daga, ni arma de a dos manos equipados, al principio de combate:\n[pl]25% del nivel en dominio elemental\n[pl]2% de daños infligidos a un objetivo con armadura"
+          "pt": "Se não tiver nenhum escudo, adaga ou arma de duas mãos equipado, no início do combate:\n25% do nível em domínio elementar\n2% dos danos infligidos a um alvo com armadura",
+          "en": "If no other shield, dagger or two-handed weapon is equipped, at start of fight:\n25% of level in Elemental Mastery\n2% of Damage inflicted on a target with Armor",
+          "fr": "Si aucun bouclier, ni dague, ni arme à deux mains n'est équipé, en début de combat :\n25% du niveau en Maîtrise Élémentaire\n2% Dommages infligés sur une cible avec de l'Armure",
+          "es": "Si no hay ningún escudo, ni daga, ni arma de a dos manos equipados, al principio de combate:\n25% del nivel en dominio elemental\n2% de daños infligidos a un objetivo con armadura"
         }
       }
     ],
@@ -22258,10 +22258,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se o portador do estado ficar sem armadura no fim do turno:\n[pl]100% do nível em armadura",
-          "en": "If the state bearer does not have any armor at end of turn:\n[pl]100% of level as Armor",
-          "fr": "Si le porteur de l'état ne possède pas d'armure en fin de tour :\n[pl]100% du niveau en Armure",
-          "es": "Si el portador del estado no posee armadura al final del turno:\n[pl]100% del nivel en armadura"
+          "pt": "Se o portador do estado ficar sem armadura no fim do turno:\n100% do nível em armadura",
+          "en": "If the state bearer does not have any armor at end of turn:\n100% of level as Armor",
+          "fr": "Si le porteur de l'état ne possède pas d'armure en fin de tour :\n100% du niveau en Armure",
+          "es": "Si el portador del estado no posee armadura al final del turno:\n100% del nivel en armadura"
         }
       }
     ]
@@ -22333,10 +22333,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se o portador do estado ficar sem armadura no fim do turno:\n[pl]150% do nível em armadura",
-          "en": "If the state bearer does not have any armor at end of turn:\n[pl]150% of level as Armor",
-          "fr": "Si le porteur de l'état ne possède pas d'armure en fin de tour :\n[pl]150% du niveau en Armure",
-          "es": "Si el portador del estado no posee armadura al final del turno:\n[pl]150% del nivel en armadura"
+          "pt": "Se o portador do estado ficar sem armadura no fim do turno:\n150% do nível em armadura",
+          "en": "If the state bearer does not have any armor at end of turn:\n150% of level as Armor",
+          "fr": "Si le porteur de l'état ne possède pas d'armure en fin de tour :\n150% du niveau en Armure",
+          "es": "Si el portador del estado no posee armadura al final del turno:\n150% del nivel en armadura"
         }
       }
     ]
@@ -22396,10 +22396,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se o portador do estado ficar sem armadura no fim do turno:\n[pl]50% do nível em armadura",
-          "en": "If the state bearer does not have any armor at end of turn:\n[pl]50% of level as Armor",
-          "fr": "Si le porteur de l'état ne possède pas d'armure en fin de tour :\n[pl]50% du niveau en Armure",
-          "es": "Si el portador del estado no posee armadura al final del turno:\n[pl]50% del nivel en armadura"
+          "pt": "Se o portador do estado ficar sem armadura no fim do turno:\n50% do nível em armadura",
+          "en": "If the state bearer does not have any armor at end of turn:\n50% of level as Armor",
+          "fr": "Si le porteur de l'état ne possède pas d'armure en fin de tour :\n50% du niveau en Armure",
+          "es": "Si el portador del estado no posee armadura al final del turno:\n50% del nivel en armadura"
         }
       }
     ],
@@ -23802,10 +23802,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se dois aliados ou mais estiverem entre 1 e 4 células do portador:\n[pl]4% de danos infligidos",
-          "en": "If there are two or more allies 1 to 4 cells from the bearer:\n[pl]4% Damage Inflicted",
-          "fr": "Si deux alliés ou plus sont entre 1 et 4 cases du porteur :\n[pl]4% Dommages Infligés",
-          "es": "Si dos aliados o más están a entre 1 y 4 casillas del portador:\n[pl]4% de daños causados"
+          "pt": "Se dois aliados ou mais estiverem entre 1 e 4 células do portador:\n4% de danos infligidos",
+          "en": "If there are two or more allies 1 to 4 cells from the bearer:\n4% Damage Inflicted",
+          "fr": "Si deux alliés ou plus sont entre 1 et 4 cases du porteur :\n4% Dommages Infligés",
+          "es": "Si dos aliados o más están a entre 1 y 4 casillas del portador:\n4% de daños causados"
         }
       }
     ]
@@ -23877,10 +23877,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se dois aliados ou mais estiverem entre 1 e 4 células do portador:\n[pl]6% de danos infligidos",
-          "en": "If there are two or more allies 1 to 4 cells from the bearer:\n[pl]6% Damage Inflicted",
-          "fr": "Si deux alliés ou plus sont entre 1 et 4 cases du porteur :\n[pl]6% Dommages Infligés",
-          "es": "Si dos aliados o más están a entre 1 y 4 casillas del portador:\n[pl]6% de daños causados"
+          "pt": "Se dois aliados ou mais estiverem entre 1 e 4 células do portador:\n6% de danos infligidos",
+          "en": "If there are two or more allies 1 to 4 cells from the bearer:\n6% Damage Inflicted",
+          "fr": "Si deux alliés ou plus sont entre 1 et 4 cases du porteur :\n6% Dommages Infligés",
+          "es": "Si dos aliados o más están a entre 1 y 4 casillas del portador:\n6% de daños causados"
         }
       }
     ]
@@ -23940,10 +23940,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Se dois aliados ou mais estiverem entre 1 e 4 células do portador:\n[pl]2% de danos infligidos",
-          "en": "If there are two or more allies 1 to 4 cells from the bearer:\n[pl]2% Damage Inflicted",
-          "fr": "Si deux alliés ou plus sont entre 1 et 4 cases du porteur :\n[pl]2% Dommages Infligés",
-          "es": "Si dos aliados o más están a entre 1 y 4 casillas del portador:\n[pl]2% de daños causados"
+          "pt": "Se dois aliados ou mais estiverem entre 1 e 4 células do portador:\n2% de danos infligidos",
+          "en": "If there are two or more allies 1 to 4 cells from the bearer:\n2% Damage Inflicted",
+          "fr": "Si deux alliés ou plus sont entre 1 et 4 cases du porteur :\n2% Dommages Infligés",
+          "es": "Si dos aliados o más están a entre 1 y 4 casillas del portador:\n2% de daños causados"
         }
       }
     ],
@@ -25986,10 +25986,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o personagem começa o turno com menos de 20% dos PV:\n[pl]6% de Danos causados (1 turno)\n[pl]100% do nível em armadura",
-          "en": "When the bearer starts their turn below 20% HP:\n[pl]6% Damage inflicted (1 turn)\n[pl]100% of level as armor",
-          "fr": "Lorsque le porteur commence son tour en dessous de 20% PV :\n[pl]6% Dommages infligés (1 tour)\n[pl]100% du niveau en armure",
-          "es": "Cuando el portador empieza su turno por debajo del 20% de los PdV:\n[pl]6% de daños infligidos (1 turno)\n[pl]100% del nivel en armadura"
+          "pt": "Quando o personagem começa o turno com menos de 20% dos PV:\n6% de Danos causados (1 turno)\n100% do nível em armadura",
+          "en": "When the bearer starts their turn below 20% HP:\n6% Damage inflicted (1 turn)\n100% of level as armor",
+          "fr": "Lorsque le porteur commence son tour en dessous de 20% PV :\n6% Dommages infligés (1 tour)\n100% du niveau en armure",
+          "es": "Cuando el portador empieza su turno por debajo del 20% de los PdV:\n6% de daños infligidos (1 turno)\n100% del nivel en armadura"
         }
       }
     ]
@@ -26075,10 +26075,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o personagem começa o turno com menos de 20% dos PV:\n[pl]9% de Danos causados (1 turno)\n[pl]150% do nível em armadura",
-          "en": "When the bearer starts their turn below 20% HP:\n[pl]9% Damage inflicted (1 turn)\n[pl]150% of level as armor",
-          "fr": "Lorsque le porteur commence son tour en dessous de 20% PV :\n[pl]9% Dommages infligés (1 tour)\n[pl]150% du niveau en armure",
-          "es": "Cuando el portador empieza su turno por debajo del 20% de los PdV:\n[pl]9% de daños infligidos (1 turno)\n[pl]150% del nivel en armadura"
+          "pt": "Quando o personagem começa o turno com menos de 20% dos PV:\n9% de Danos causados (1 turno)\n150% do nível em armadura",
+          "en": "When the bearer starts their turn below 20% HP:\n9% Damage inflicted (1 turn)\n150% of level as armor",
+          "fr": "Lorsque le porteur commence son tour en dessous de 20% PV :\n9% Dommages infligés (1 tour)\n150% du niveau en armure",
+          "es": "Cuando el portador empieza su turno por debajo del 20% de los PdV:\n9% de daños infligidos (1 turno)\n150% del nivel en armadura"
         }
       }
     ]
@@ -26152,10 +26152,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o personagem começa o turno com menos de 20% dos PV:\n[pl]3% de Danos causados (1 turno)\n[pl]50% do nível em armadura",
-          "en": "When the bearer starts their turn below 20% HP:\n[pl]3% Damage inflicted (1 turn)\n[pl]50% of level as armor",
-          "fr": "Lorsque le porteur commence son tour en dessous de 20% PV :\n[pl]3% Dommages infligés (1 tour)\n[pl]50% du niveau en armure",
-          "es": "Cuando el portador empieza su turno por debajo del 20% de los PdV:\n[pl]3% de daños infligidos (1 turno)\n[pl]50% del nivel en armadura"
+          "pt": "Quando o personagem começa o turno com menos de 20% dos PV:\n3% de Danos causados (1 turno)\n50% do nível em armadura",
+          "en": "When the bearer starts their turn below 20% HP:\n3% Damage inflicted (1 turn)\n50% of level as armor",
+          "fr": "Lorsque le porteur commence son tour en dessous de 20% PV :\n3% Dommages infligés (1 tour)\n50% du niveau en armure",
+          "es": "Cuando el portador empieza su turno por debajo del 20% de los PdV:\n3% de daños infligidos (1 turno)\n50% del nivel en armadura"
         }
       }
     ],
@@ -27303,10 +27303,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "Quando o portador do estado sofre danos diretos em contato, uma vez por turno do atacante:\n[pl]O portador do estado se vira para ele",
-          "en": "When the state bearer suffers direct close-combat damage, once per turn of the attacker:\n[pl]The state bearer turns toward them",
-          "fr": "Lorsque le porteur de l'état subit des dommages directs au contact, une fois par tour de l'attaquant :\n[pl]Le porteur de l'état se tourne vers lui",
-          "es": "Cuando el portador del estado sufre daños directos en el cuerpo a cuerpo, una vez por turno del atacante:\n[pl]El portador del estado se gira hacia él"
+          "pt": "Quando o portador do estado sofre danos diretos em contato, uma vez por turno do atacante:\nO portador do estado se vira para ele",
+          "en": "When the state bearer suffers direct close-combat damage, once per turn of the attacker:\nThe state bearer turns toward them",
+          "fr": "Lorsque le porteur de l'état subit des dommages directs au contact, une fois par tour de l'attaquant :\nLe porteur de l'état se tourne vers lui",
+          "es": "Cuando el portador del estado sufre daños directos en el cuerpo a cuerpo, una vez por turno del atacante:\nEl portador del estado se gira hacia él"
         }
       }
     ],
@@ -27929,10 +27929,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado tiver 10 PA ou menos:\n[pl]15% de danos infligidos\n[pl]10 de Vontade (se o personagem estiver no nível 100 ou superior)",
-          "en": "At the start of combat, if the state bearer has 10 AP or less:\n[pl]15% damage inflicted\n[pl]10 Force of Will (if the character is at level 100 or greater)",
-          "fr": "Au lancement du combat, si le porteur de l'état a 10 PA ou moins :\n[pl]15% Dommages infligés\n[pl]10 Volonté (si le personnage est niveau 100 ou plus)",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene 10 PA o menos:\n[pl]15% de daños infligidos\n[pl]10 voluntad (si el personaje tiene nivel 100 o más)"
+          "pt": "No início do combate, se o portador do estado tiver 10 PA ou menos:\n15% de danos infligidos\n10 de Vontade (se o personagem estiver no nível 100 ou superior)",
+          "en": "At the start of combat, if the state bearer has 10 AP or less:\n15% damage inflicted\n10 Force of Will (if the character is at level 100 or greater)",
+          "fr": "Au lancement du combat, si le porteur de l'état a 10 PA ou moins :\n15% Dommages infligés\n10 Volonté (si le personnage est niveau 100 ou plus)",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene 10 PA o menos:\n15% de daños infligidos\n10 voluntad (si el personaje tiene nivel 100 o más)"
         }
       }
     ],
@@ -28018,10 +28018,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado tiver 10 % de Golpe Crítico ou menos:\n[pl]15% de danos infligidos\n[pl]50 de Resistência Crítica",
-          "en": "At the start of combat, if the state bearer has 10% Critical Hit or less:\n[pl]15% damage inflicted\n[pl]50 Critical Resistance",
-          "fr": "Au lancement du combat, si le porteur de l'état a 10% Coup Critique ou moins :\n[pl]15% Dommages infligés\n[pl]50 Résistance Critique",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene 10% de golpe crítico o menos:\n[pl]15% de daños infligidos\n[pl]50 resistencia crítica"
+          "pt": "No início do combate, se o portador do estado tiver 10 % de Golpe Crítico ou menos:\n15% de danos infligidos\n50 de Resistência Crítica",
+          "en": "At the start of combat, if the state bearer has 10% Critical Hit or less:\n15% damage inflicted\n50 Critical Resistance",
+          "fr": "Au lancement du combat, si le porteur de l'état a 10% Coup Critique ou moins :\n15% Dommages infligés\n50 Résistance Critique",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene 10% de golpe crítico o menos:\n15% de daños infligidos\n50 resistencia crítica"
         }
       }
     ],
@@ -28167,10 +28167,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado tiver 1 AL ou menos:\n[pl]20% de curas realizadas\n[pl]15% de Armadura concedida e recebida",
-          "en": "At the start of combat, if the state bearer has 1 Range or less:\n[pl]20% Heals performed\n[pl]15% Armor given and received",
-          "fr": "Au lancement du combat, si le porteur de l'état a 1 Portée ou moins :\n[pl]20% Soins réalisés\n[pl]15% Armure donnée et reçue",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene 1 de alcance o menos:\n[pl]20% de curas realizadas\n[pl]15% de armadura dada y recibida"
+          "pt": "No início do combate, se o portador do estado tiver 1 AL ou menos:\n20% de curas realizadas\n15% de Armadura concedida e recebida",
+          "en": "At the start of combat, if the state bearer has 1 Range or less:\n20% Heals performed\n15% Armor given and received",
+          "fr": "Au lancement du combat, si le porteur de l'état a 1 Portée ou moins :\n20% Soins réalisés\n15% Armure donnée et reçue",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene 1 de alcance o menos:\n20% de curas realizadas\n15% de armadura dada y recibida"
         }
       }
     ],
@@ -28256,10 +28256,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado tiver 40% de Parada ou mais:\n[pl]10% de Golpe Crítico",
-          "en": "At the start of combat, if the state bearer has 40% Block or greater:\n[pl]10% Critical Hit",
-          "fr": "Au lancement du combat, si le porteur de l'état a 40% Parade ou plus :\n[pl]10% Coup Critique",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene 40% de anticipación o más:\n[pl]10% de golpe crítico"
+          "pt": "No início do combate, se o portador do estado tiver 40% de Parada ou mais:\n10% de Golpe Crítico",
+          "en": "At the start of combat, if the state bearer has 40% Block or greater:\n10% Critical Hit",
+          "fr": "Au lancement du combat, si le porteur de l'état a 40% Parade ou plus :\n10% Coup Critique",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene 40% de anticipación o más:\n10% de golpe crítico"
         }
       }
     ],
@@ -28585,10 +28585,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, para o portador do estado:\n[pl]-30% de PV (penalidade sobre o modificador de PV)\n[pl]30% de Curas e Armaduras de [ally] recebidas",
-          "en": "At the start of combat, for the state bearer:\n[pl]-30% HP (penalty to the HP modifier)\n[pl]30% Heals and Armor from [ally] received",
-          "fr": "Au lancement du combat, pour le porteur de l'état :\n[pl]-30% PV (malus sur le modificateur de PV)\n[pl]30% Soins et Armures de [ally] reçus",
-          "es": "En el lanzamiento del combate, para el portador del estado:\n[pl] -30 PdV (malus en el modificador de PdV)\n[pl]30% de curas y armaduras de [ally] recibidas"
+          "pt": "No início do combate, para o portador do estado:\n-30% de PV (penalidade sobre o modificador de PV)\n30% de Curas e Armaduras de [ally] recebidas",
+          "en": "At the start of combat, for the state bearer:\n-30% HP (penalty to the HP modifier)\n30% Heals and Armor from [ally] received",
+          "fr": "Au lancement du combat, pour le porteur de l'état :\n-30% PV (malus sur le modificateur de PV)\n30% Soins et Armures de [ally] reçus",
+          "es": "En el lanzamiento del combate, para el portador del estado:\n -30 PdV (malus en el modificador de PdV)\n30% de curas y armaduras de [ally] recibidas"
         }
       }
     ],
@@ -28822,10 +28822,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado tiver mais Domínio de Zona que Domínio de Corpo a Corpo:\n[pl]+20% de danos infligidos no corpo a corpo e em zona simultaneamente",
-          "en": "At the start of combat, if the state bearer has more Area Mastery than Melee Mastery:\n[pl]+20% damage inflicted in close combat and area of effect simultaneously",
-          "fr": "Au lancement du combat, si le porteur de l'état a plus de Maîtrise Zone que de Maîtrise Mêlée :\n[pl]+20% Dommages infligés en mêlée et zone simultanément",
-          "es": "En el lanzamiento del combate, si el portador tiene más dominio zona que dominio cuerpo a cuerpo:\n[pl]+20% de daños infligidos en cuerpo a cuerpo y en zona simultáneamente"
+          "pt": "No início do combate, se o portador do estado tiver mais Domínio de Zona que Domínio de Corpo a Corpo:\n+20% de danos infligidos no corpo a corpo e em zona simultaneamente",
+          "en": "At the start of combat, if the state bearer has more Area Mastery than Melee Mastery:\n+20% damage inflicted in close combat and area of effect simultaneously",
+          "fr": "Au lancement du combat, si le porteur de l'état a plus de Maîtrise Zone que de Maîtrise Mêlée :\n+20% Dommages infligés en mêlée et zone simultanément",
+          "es": "En el lanzamiento del combate, si el portador tiene más dominio zona que dominio cuerpo a cuerpo:\n+20% de daños infligidos en cuerpo a cuerpo y en zona simultáneamente"
         }
       }
     ],
@@ -28882,10 +28882,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado tiver um número ímpar de PA:\n[pl]250% do nível em Bloqueio e Esquiva",
-          "en": "At the start of combat, if the state bearer has an odd number of AP:\n[pl]250% of level as Lock and Dodge",
-          "fr": "Au lancement du combat, si le porteur de l'état a un nombre impair de PA :\n[pl]250% du niveau en Tacle et Esquive",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene un número impar de PA:\n[pl]250% del nivel en placaje y esquiva"
+          "pt": "No início do combate, se o portador do estado tiver um número ímpar de PA:\n250% do nível em Bloqueio e Esquiva",
+          "en": "At the start of combat, if the state bearer has an odd number of AP:\n250% of level as Lock and Dodge",
+          "fr": "Au lancement du combat, si le porteur de l'état a un nombre impair de PA :\n250% du niveau en Tacle et Esquive",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene un número impar de PA:\n250% del nivel en placaje y esquiva"
         }
       }
     ],
@@ -29031,10 +29031,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "-10% de Danos causados\nA cada 10 feitiços lançados, o portador do estado ganha 100% de danos infligidos para o feitiço seguinte.\n[pl]Os feitiços lançados devem custar pelo menos 1 PA para incrementar Excesso.\n[pl]Quando o estado chega ao nível 10, o próximo feitiço se beneficia do bônus de Danos mesmo se não causar danos, e independentemente do seu custo.",
-          "en": "-10% Damage inflicted\nEvery 10 spells cast, the state bearer gains 100% of Damage inflicted for the next spell.\n[pl]The spells cast must cost at least 1 AP to increment Excess.\n[pl]Once the state is at level 10, the next spell receives a Damage bonus, whether it does damage or not, regardless of its cost.",
-          "fr": "-10% Dommages infligés\nTous les 10 sorts lancés, le porteur de l'état gagne 100% Dommages infligés pour le prochain sort.\n[pl]Les sorts lancés doivent coûter au moins 1 PA pour incrémenter Excès.\n[pl]Une fois l'état niveau 10, le prochain sort bénéficie du bonus de Dommages, qu'il effectue des dommages ou non, quel que soit son coût.",
-          "es": "-10% de daños infligidos\nCada 10 hechizos lanzados, el portador del estado gana el 100% de los daños infligidos por el próximo hechizo.\n[pl]Los hechizos lanzados deben costar como mínimo 1 PA para incrementar Exceso.\n[pl]Una vez el estado nivel 10, el próximo hechizo recibe un bonus de daños, que efectúa o no daños, sea cual sea su coste."
+          "pt": "-10% de Danos causados\nA cada 10 feitiços lançados, o portador do estado ganha 100% de danos infligidos para o feitiço seguinte.\nOs feitiços lançados devem custar pelo menos 1 PA para incrementar Excesso.\nQuando o estado chega ao nível 10, o próximo feitiço se beneficia do bônus de Danos mesmo se não causar danos, e independentemente do seu custo.",
+          "en": "-10% Damage inflicted\nEvery 10 spells cast, the state bearer gains 100% of Damage inflicted for the next spell.\nThe spells cast must cost at least 1 AP to increment Excess.\nOnce the state is at level 10, the next spell receives a Damage bonus, whether it does damage or not, regardless of its cost.",
+          "fr": "-10% Dommages infligés\nTous les 10 sorts lancés, le porteur de l'état gagne 100% Dommages infligés pour le prochain sort.\nLes sorts lancés doivent coûter au moins 1 PA pour incrémenter Excès.\nUne fois l'état niveau 10, le prochain sort bénéficie du bonus de Dommages, qu'il effectue des dommages ou non, quel que soit son coût.",
+          "es": "-10% de daños infligidos\nCada 10 hechizos lanzados, el portador del estado gana el 100% de los daños infligidos por el próximo hechizo.\nLos hechizos lanzados deben costar como mínimo 1 PA para incrementar Exceso.\nUna vez el estado nivel 10, el próximo hechizo recibe un bonus de daños, que efectúa o no daños, sea cual sea su coste."
         }
       }
     ],
@@ -29366,10 +29366,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado estiver equipado com uma arma de duas mãos (máximo de 12 PA antes do efeito da sublimação):\n[pl]-2 PM máximo\n[pl]2 PA máx.",
-          "en": "At the start of combat, if the state bearer has a two-handed weapon equipped (maximum 12 AP before the sublimation's effect):\n[pl]-2 max MP\n[pl]2 AP max",
-          "fr": "Au lancement du combat, si le porteur de l'état a une Arme à deux mains équipée (maximum 12 PA avant l'effet de la sublimation) :\n[pl]-2 PM max\n[pl]2 PA max",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene un arma a dos manos equipada (máx. 12 PA antes del efecto de la sublimación):\n[pl]-2 PM máx.\n[pl]2 PA máx."
+          "pt": "No início do combate, se o portador do estado estiver equipado com uma arma de duas mãos (máximo de 12 PA antes do efeito da sublimação):\n-2 PM máximo\n2 PA máx.",
+          "en": "At the start of combat, if the state bearer has a two-handed weapon equipped (maximum 12 AP before the sublimation's effect):\n-2 max MP\n2 AP max",
+          "fr": "Au lancement du combat, si le porteur de l'état a une Arme à deux mains équipée (maximum 12 PA avant l'effet de la sublimation) :\n-2 PM max\n2 PA max",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene un arma a dos manos equipada (máx. 12 PA antes del efecto de la sublimación):\n-2 PM máx.\n2 PA máx."
         }
       }
     ],
@@ -29469,10 +29469,10 @@
         ],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado estiver equipado com uma adaga:\n[pl]15% de danos infligidos aos alvos atingidos de frente\n[pl]10% de lado\n[pl]-10% de costas",
-          "en": "At the start of combat, if the state bearer has a Dagger equipped:\n[pl]15% damage inflicted on targets hit from the front\n[pl]10% from the side\n[pl]-10% from behind",
-          "fr": "Au lancement du combat, si le porteur de l'état a une Dague équipée :\n[pl]15% Dommages infligés sur les cibles touchées de face\n[pl]10% de côté\n[pl]-10% de dos",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene una daga equipada:\n[pl]15% de daños infligidos a los objetivos alcanzados de frente\n[pl]10% de lado\n[pl]-10% por la espalda"
+          "pt": "No início do combate, se o portador do estado estiver equipado com uma adaga:\n15% de danos infligidos aos alvos atingidos de frente\n10% de lado\n-10% de costas",
+          "en": "At the start of combat, if the state bearer has a Dagger equipped:\n15% damage inflicted on targets hit from the front\n10% from the side\n-10% from behind",
+          "fr": "Au lancement du combat, si le porteur de l'état a une Dague équipée :\n15% Dommages infligés sur les cibles touchées de face\n10% de côté\n-10% de dos",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene una daga equipada:\n15% de daños infligidos a los objetivos alcanzados de frente\n10% de lado\n-10% por la espalda"
         }
       }
     ],
@@ -29529,10 +29529,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado estiver equipado com um escudo:\n[pl]1 PM máx.\n[pl]O alcance positivo é fixado em 0",
-          "en": "At the start of combat, if the state bearer has a Shield equipped:\n[pl]1 max MP\n[pl]Positive Range is set at 0",
-          "fr": "Au lancement du combat, si le porteur de l'état a un Bouclier équipé :\n[pl]1 PM max\n[pl]La Portée positive est fixée à 0",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene un escudo equipado:\n[pl]1 PM máx.\n[pl]El alcance positivo está fijado a 0"
+          "pt": "No início do combate, se o portador do estado estiver equipado com um escudo:\n1 PM máx.\nO alcance positivo é fixado em 0",
+          "en": "At the start of combat, if the state bearer has a Shield equipped:\n1 max MP\nPositive Range is set at 0",
+          "fr": "Au lancement du combat, si le porteur de l'état a un Bouclier équipé :\n1 PM max\nLa Portée positive est fixée à 0",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene un escudo equipado:\n1 PM máx.\nEl alcance positivo está fijado a 0"
         }
       }
     ],
@@ -29589,10 +29589,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado tiver 8 PW ou mais:\n[pl]10 de Vontade\n[pl]15% de Parada",
-          "en": "At the start of combat, if the state bearer has 8 WP or greater:\n[pl]10 Force of Will\n[pl]15% Block",
-          "fr": "Au lancement du combat, si le porteur de l'état a 8 PW ou plus\n[pl]10 Volonté\n[pl]15% Parade",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene 8 PW o más\n[pl]10 voluntad\n[pl]15% de anticipación"
+          "pt": "No início do combate, se o portador do estado tiver 8 PW ou mais:\n10 de Vontade\n15% de Parada",
+          "en": "At the start of combat, if the state bearer has 8 WP or greater:\n10 Force of Will\n15% Block",
+          "fr": "Au lancement du combat, si le porteur de l'état a 8 PW ou plus\n10 Volonté\n15% Parade",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene 8 PW o más\n10 voluntad\n15% de anticipación"
         }
       }
     ],
@@ -30032,10 +30032,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado tiver menos que 100% do seu nível de Esquiva:\n[pl]15% de danos infligidos em Berserk\n[pl]100% do nível em Bloqueio",
-          "en": "At the start of combat, if the state bearer has less than 100% of their level as Dodge:\n[pl]15% damage inflicted as Berserk\n[pl]100% of level as Lock",
-          "fr": "Au lancement du combat, si le porteur de l'état a moins de 100% de son niveau en Esquive :\n[pl]15% Dommages infligés en Berserk\n[pl]100% du niveau en Tacle",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene menos del 100% de su nivel en esquiva:\n[pl]15% de daños infligidos en berserker\n[pl]100% del nivel en placaje"
+          "pt": "No início do combate, se o portador do estado tiver menos que 100% do seu nível de Esquiva:\n15% de danos infligidos em Berserk\n100% do nível em Bloqueio",
+          "en": "At the start of combat, if the state bearer has less than 100% of their level as Dodge:\n15% damage inflicted as Berserk\n100% of level as Lock",
+          "fr": "Au lancement du combat, si le porteur de l'état a moins de 100% de son niveau en Esquive :\n15% Dommages infligés en Berserk\n100% du niveau en Tacle",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene menos del 100% de su nivel en esquiva:\n15% de daños infligidos en berserker\n100% del nivel en placaje"
         }
       }
     ],
@@ -30092,10 +30092,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado tiver 4 AL ou mais:\n[pl]15% de danos infligidos em Berserk e Distância simultaneamente\n[pl]1 AL",
-          "en": "At the start of combat, if the state bearer has 4 Range or greater:\n[pl]15% damage inflicted as Berserk and Ranged simultaneously\n[pl]1 Range",
-          "fr": "Au lancement du combat, si le porteur de l'état a 4 Portée ou plus :\n[pl]15% Dommages infligés en Berserk et Distance simultanément\n[pl]1 Portée",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene 4 de alcance o más:\n[pl]15% de daños infligidos en berserker y distancia simultáneamente\n[pl]1 alcance"
+          "pt": "No início do combate, se o portador do estado tiver 4 AL ou mais:\n15% de danos infligidos em Berserk e Distância simultaneamente\n1 AL",
+          "en": "At the start of combat, if the state bearer has 4 Range or greater:\n15% damage inflicted as Berserk and Ranged simultaneously\n1 Range",
+          "fr": "Au lancement du combat, si le porteur de l'état a 4 Portée ou plus :\n15% Dommages infligés en Berserk et Distance simultanément\n1 Portée",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene 4 de alcance o más:\n15% de daños infligidos en berserker y distancia simultáneamente\n1 alcance"
         }
       }
     ],
@@ -30152,10 +30152,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado tiver 50% de Parada ou mais:\n[pl]Bônus no modificador de PV: +30%\n[pl]-50% de Armadura recebida",
-          "en": "At the start of combat, if the state bearer has 50% Block or greater:\n[pl]Bonus to HP modifier: +30%\n[pl]-50% Armor received",
-          "fr": "Au lancement du combat, si le porteur de l'état a 50% Parade ou plus :\n[pl]Bonus sur le modificateur de PV : +30%\n[pl]-50% Armure reçue",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene 50% de anticipación o más:\n[pl]Bonus en el modificador de PdV: +30%\n[pl]-50% de armadura recibida"
+          "pt": "No início do combate, se o portador do estado tiver 50% de Parada ou mais:\nBônus no modificador de PV: +30%\n-50% de Armadura recebida",
+          "en": "At the start of combat, if the state bearer has 50% Block or greater:\nBonus to HP modifier: +30%\n-50% Armor received",
+          "fr": "Au lancement du combat, si le porteur de l'état a 50% Parade ou plus :\nBonus sur le modificateur de PV : +30%\n-50% Armure reçue",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene 50% de anticipación o más:\nBonus en el modificador de PdV: +30%\n-50% de armadura recibida"
         }
       }
     ],
@@ -30212,10 +30212,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "No início do combate, se o portador do estado tiver exatamente 1 AL:\n[pl]15% de danos infligidos e curas realizadas nos alvos compreendidos entre 2 e 4 células de distância do lançador",
-          "en": "At the start of combat, if the state bearer has exactly 1 Range:\n[pl]15% damage inflicted and heals performed on targets that are 2, 3, or 4 cells away from the caster",
-          "fr": "Au lancement du combat, si le porteur de l'état a exactement 1 Portée :\n[pl]15% Dommages infligés et Soins réalisés sur les cibles à 2, 3 ou 4 cases de distance du lanceur",
-          "es": "En el lanzamiento del combate, si el portador del estado tiene exactamente 1 de alcance:\n[pl]15% de daños infligidos y curas realizadas en los objetivos a 2, 3 o 4 casillas de distancia del lanzador"
+          "pt": "No início do combate, se o portador do estado tiver exatamente 1 AL:\n15% de danos infligidos e curas realizadas nos alvos compreendidos entre 2 e 4 células de distância do lançador",
+          "en": "At the start of combat, if the state bearer has exactly 1 Range:\n15% damage inflicted and heals performed on targets that are 2, 3, or 4 cells away from the caster",
+          "fr": "Au lancement du combat, si le porteur de l'état a exactement 1 Portée :\n15% Dommages infligés et Soins réalisés sur les cibles à 2, 3 ou 4 cases de distance du lanceur",
+          "es": "En el lanzamiento del combate, si el portador del estado tiene exactamente 1 de alcance:\n15% de daños infligidos y curas realizadas en los objetivos a 2, 3 o 4 casillas de distancia del lanzador"
         }
       }
     ],
@@ -30272,10 +30272,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "Ao sofrer danos de frente e no corpo a corpo, uma vez por rodada:\n[pl]10% dos PV perdidos em Armadura\n[pl]40% de Armadura concedida (1 turno)",
-          "en": "When suffering damage from the front and in close combat, once per round:\n[pl]10% of missing HP as Armor\n[pl]40% Armor given (1 turn)",
-          "fr": "En subissant des dommages de face et en mêlée, une fois par tour de table :\n[pl]10% des PV manquants en Armure\n[pl]40% Armure donnée (1 tour)",
-          "es": "Al sufrir daños de frente y en cuerpo a cuerpo, una vez por ronda\n[pl]10% de los PdV faltantes en armadura\n[pl]40% de armadura dada (1 turno)"
+          "pt": "Ao sofrer danos de frente e no corpo a corpo, uma vez por rodada:\n10% dos PV perdidos em Armadura\n40% de Armadura concedida (1 turno)",
+          "en": "When suffering damage from the front and in close combat, once per round:\n10% of missing HP as Armor\n40% Armor given (1 turn)",
+          "fr": "En subissant des dommages de face et en mêlée, une fois par tour de table :\n10% des PV manquants en Armure\n40% Armure donnée (1 tour)",
+          "es": "Al sufrir daños de frente y en cuerpo a cuerpo, una vez por ronda\n10% de los PdV faltantes en armadura\n40% de armadura dada (1 turno)"
         }
       }
     ],
@@ -30355,10 +30355,10 @@
           }
         ],
         "lang": {
-          "pt": "No começo do turno, com 6 PW ou mais:\n[pl]Energia Ancestral - Bônus (Nível máx.: 3)\n[pl]O efeito será perdido se o personagem começar seu turno com menos de 6 PW",
-          "en": "At start of turn, with 6 WP or greater:\n[pl]Ancestral Energy - Bonus (Max. level: 3)\n[pl]The state is lost if the character starts their turn with less than 6 WP",
-          "fr": "En début de tour, avec 6 PW ou plus :\n[pl]Énergie ancestrale - Bonus (Niveau max : 3)\n[pl]L'état est perdu si le personnage commence son tour avec moins de 6 PW",
-          "es": "Al principio del turno, con 6 PW o más:\n[pl]Energía Ancestral - Bonus(Nivel máximo: 3)\n[pl]El estado se pierde si el personaje comienza su turno con menos de 6 PW"
+          "pt": "No começo do turno, com 6 PW ou mais:\nEnergia Ancestral - Bônus (Nível máx.: 3)\nO efeito será perdido se o personagem começar seu turno com menos de 6 PW",
+          "en": "At start of turn, with 6 WP or greater:\nAncestral Energy - Bonus (Max. level: 3)\nThe state is lost if the character starts their turn with less than 6 WP",
+          "fr": "En début de tour, avec 6 PW ou plus :\nÉnergie ancestrale - Bonus (Niveau max : 3)\nL'état est perdu si le personnage commence son tour avec moins de 6 PW",
+          "es": "Al principio del turno, con 6 PW o más:\nEnergía Ancestral - Bonus(Nivel máximo: 3)\nEl estado se pierde si el personaje comienza su turno con menos de 6 PW"
         }
       }
     ],
@@ -30438,10 +30438,10 @@
           }
         ],
         "lang": {
-          "pt": "-50 de Resistência Elementar\nUma vez por turno, ao cair abaixo de 50% de PV:\n[pl]Renascimento - Bônus",
-          "en": "-50 Elemental Resistance\nOnce per turn, when falling below 50% HP:\n[pl]Rebirth - Bonus",
-          "fr": "-50 Résistance Élémentaire\nUne fois par tour, en tombant sous 50% PV :\n[pl]Renaissance - Bonus",
-          "es": "-50 resistencia elemental\nUna vez por turno, al caer los PdV bajo el 50%:\n[pl]Resurrección - Bonus"
+          "pt": "-50 de Resistência Elementar\nUma vez por turno, ao cair abaixo de 50% de PV:\nRenascimento - Bônus",
+          "en": "-50 Elemental Resistance\nOnce per turn, when falling below 50% HP:\nRebirth - Bonus",
+          "fr": "-50 Résistance Élémentaire\nUne fois par tour, en tombant sous 50% PV :\nRenaissance - Bonus",
+          "es": "-50 resistencia elemental\nUna vez por turno, al caer los PdV bajo el 50%:\nResurrección - Bonus"
         }
       }
     ],
@@ -30498,10 +30498,10 @@
         "values": [],
         "inner_states": [],
         "lang": {
-          "pt": "A cada movimento, por PM usado:\n[pl]+3% de Parada (máx. 18) (1 turno)\nSe o portador do estado efetuar uma Parada fora do seu turno:\n[pl]O bônus é transformado em Golpe Crítico no próximo turno",
-          "en": "For each movement, per MP used:\n[pl]+3% Block (max. 18) (1 turn)\nIf the state bearer performs a Block when it's not their turn:\n[pl]The bonus is transformed into Critical Hits on the next turn",
-          "fr": "À chaque mouvement, par PM utilisé :\n[pl]+3% Parade (max 18) (1 tour)\nSi le porteur de l'état effectue une parade hors de son tour :\n[pl]Le bonus est transformé en Coup Critique au prochain tour",
-          "es": "En cada movimiento, por PM utilizado:\n[pl]+3% de anticipación (máx. 18) (1 turno)\nSi el portador del estado efectúa una anticipación fuera de su turno:\n[pl]El bonus se transforma en golpe crítico en el próximo turno"
+          "pt": "A cada movimento, por PM usado:\n+3% de Parada (máx. 18) (1 turno)\nSe o portador do estado efetuar uma Parada fora do seu turno:\nO bônus é transformado em Golpe Crítico no próximo turno",
+          "en": "For each movement, per MP used:\n+3% Block (max. 18) (1 turn)\nIf the state bearer performs a Block when it's not their turn:\nThe bonus is transformed into Critical Hits on the next turn",
+          "fr": "À chaque mouvement, par PM utilisé :\n+3% Parade (max 18) (1 tour)\nSi le porteur de l'état effectue une parade hors de son tour :\nLe bonus est transformé en Coup Critique au prochain tour",
+          "es": "En cada movimiento, por PM utilizado:\n+3% de anticipación (máx. 18) (1 turno)\nSi el portador del estado efectúa una anticipación fuera de su turno:\nEl bonus se transforma en golpe crítico en el próximo turno"
         }
       }
     ],

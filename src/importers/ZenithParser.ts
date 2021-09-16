@@ -99,7 +99,7 @@ export default class ZenithParser {
         }), {})
 
         const parsedLangs = Object.keys(effect.lang).reduce((parsedLangs, lang) => {
-          parsedLangs[lang] = this.replaceValueCodes(effect.lang[lang], effectValuesMapping).replace(/\\n/g, '\n').replace(/\n\n/g, '\n')
+          parsedLangs[lang] = this.replaceValueCodes(effect.lang[lang], effectValuesMapping).replace(/\\n/g, '\n').replace(/\n\n/g, '\n').replace(/\[pl\]/g, '')
           effect.inner_states.forEach(state => {
             parsedLangs[lang] = parsedLangs[lang].replace(new RegExp(`\\[st${state.id_state}]`, 'g'), state.lang[lang])
           })
