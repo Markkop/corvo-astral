@@ -14,6 +14,7 @@ import {
   PartyBaseCommand
  } from '@commands'
 import { GuildConfig } from '@types'
+import { saveServersBadgeFile } from '@utils/files'
 require('dotenv').config()
 
 const commandsMap = {
@@ -48,7 +49,9 @@ class Bot {
   }
 
   private onReady () {
-    console.log(`Online on ${this.client.guilds.cache.size} servers: ${this.client.guilds.cache.map(ch => ch.name).join(', ')}`)
+    const servers = this.client.guilds.cache.size
+    console.log(`Online on ${servers} servers: ${this.client.guilds.cache.map(ch => ch.name).join(', ')}`)
+    saveServersBadgeFile(servers)
     this.client.user.setActivity('.about or .help', { type: 'PLAYING' })
   }
 
