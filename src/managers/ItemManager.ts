@@ -1,6 +1,6 @@
 import { hasTextOrNormalizedTextIncluded } from '@utils/strings'
 import str from '@stringsLang'
-import { CommandOptions, ItemData } from '@types'
+import { CommandOptions, ItemData, LanguageStrings } from '@types'
 import mappings from '@utils/mappings'
 import MessageManager from './MessageManager'
 import { MessageReaction, MessageEmbed } from 'discord.js'
@@ -73,6 +73,30 @@ class ItemManager {
     })
   }
 
+  private removeNumberFromTitle(title: LanguageStrings): LanguageStrings {
+    return Object.keys(title).reduce((titles, lang) => {
+      titles[lang] = title[lang].replace(/(IV|III|II|I)$/, '').trim()
+      return titles
+    }, {} as LanguageStrings)
+  }
+
+  private removeSameSublimationsAndRemoveNumberFromTitle(results: ItemData[]): ItemData[] {
+    return results.reduce((noRepeatedResults, result) => {
+      const hasRepeated = noRepeatedResults.some(noRepeatedResult => {
+        return result.title.en.includes(noRepeatedResult.title.en)
+      })
+      if (hasRepeated) {
+        return noRepeatedResults
+      }
+
+      noRepeatedResults.push({
+        ...result,
+        title: this.removeNumberFromTitle(result.title)
+      })
+      return noRepeatedResults
+    }, [])
+  }
+
   public getSublimationByMatchingSlots (query: string) {
     const isFourSlotsCombination = query.length === 4 && query !== 'epic'
     const regexQuery = new RegExp(query.replace(/w/g, '[r|g|b]{1}'))
@@ -103,7 +127,7 @@ class ItemManager {
         const permutatedResults = this.getSublimationByMatchingSlots(queryPerm)
         results.push({
           slots: queryPerm,
-          results: permutatedResults
+          results: this.removeSameSublimationsAndRemoveNumberFromTitle(permutatedResults)
         })
       })
   
@@ -113,7 +137,10 @@ class ItemManager {
     if (isSearchBySlot) {
       results = this.getSublimationByMatchingSlots(query)
       foundBy = 'slots'
-      return { results, foundBy }
+      return { 
+        results: this.removeSameSublimationsAndRemoveNumberFromTitle(results), 
+        foundBy 
+      }
     }
   
     results = this.getSublimationByName(query, options, lang)
