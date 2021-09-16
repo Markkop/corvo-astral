@@ -175,7 +175,7 @@ export default class SubliCommand extends FinderCommand {
     }
     results.forEach(permutatedResult => {
       const slotsAsEmojis = this.parseSlotsToEmojis(permutatedResult.slots)
-      const namedResults = this.getSublimationListText(permutatedResult.results, 40)
+      const namedResults = this.getSublimationListText(permutatedResult.results, 10)
       const resultsLength = permutatedResult.results.length
       embed.fields.push({
         name: `${slotsAsEmojis} (${resultsLength})`,
