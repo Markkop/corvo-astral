@@ -4,7 +4,6 @@ import { openFile, saveFile } from '../utils/files'
 export default class Downloader {
   private httpClient: AxiosInstance
   private wakfuCdnBaseUrl = 'https://wakfu.cdn.ankama.com/gamedata'
-  private wakfuVersion: string
   private dataNames = [
     'actions',
     'collectibleResources',

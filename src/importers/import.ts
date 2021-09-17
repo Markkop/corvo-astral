@@ -9,7 +9,7 @@ const downloadFolder = 'data/raw'
 const generatedFolder = 'data/generated'
 
 async function importData() {
-  const t0 = performance.now();
+  const startTime = performance.now();
 
   const lastImportedVersion = openFile(`${downloadFolder}/cdn/version.json`)
   const downloader = new Downloader(downloadFolder)
@@ -28,8 +28,8 @@ async function importData() {
   const itemsGenerator = new ItemsGenerator(downloadFolder, generatedFolder)
   itemsGenerator.mountItems()
 
-  const t1 = performance.now();
-  const time = ((t1 - t0) / 1000) / 60
+  const endTime = performance.now();
+  const time = ((endTime - startTime) / 1000) / 60
   console.log(`Data importation took ${time.toFixed(2)} minutes.`);
 }
 

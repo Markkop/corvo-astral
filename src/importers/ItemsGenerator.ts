@@ -7,8 +7,8 @@ export default class ItemsGenerator {
   private generatedFolderPath
 
   constructor(rawFolderPath: string, generatedFolderPath: string) {
-    this.itemsData = openFile(`${rawFolderPath}/cdn/items.json`)
     this.generatedFolderPath = generatedFolderPath
+    this.itemsData = openFile(`${rawFolderPath}/cdn/items.json`)
     this.recipesData = openFile(`${generatedFolderPath}/recipes.json`)
   }
 

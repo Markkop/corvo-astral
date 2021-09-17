@@ -1,6 +1,5 @@
 import { saveFile, openFile } from '../utils/files'
 
-// I'm not THAT proud of this code, but it works
 export default class ZenithParser {
   private langs = ['fr', 'en', 'pt', 'es']
   private rawSublimationsData
@@ -92,7 +91,6 @@ export default class ZenithParser {
     return text
       .replace(/\\n/g, '\n')
       .replace(/\n\n/g, '\n')
-      // .replace(/\[pl\]/g, '')
       .replace(/(<b>)|(<\/b>)/g, '')
       .trim()
   }
@@ -145,7 +143,6 @@ export default class ZenithParser {
   }
 
   public parseAndSaveZenithSublimations() {
-
     const combinedZenithStatesLanguages = this.combineSublimationTranslations(this.rawSublimationsStatesData)
     saveFile(combinedZenithStatesLanguages, `${this.generatedFolderPath}/zenithSublimationsStates.json`)
 
