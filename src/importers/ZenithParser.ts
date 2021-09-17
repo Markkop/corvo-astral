@@ -94,6 +94,7 @@ export default class ZenithParser {
       .replace(/\n\n/g, '\n')
       // .replace(/\[pl\]/g, '')
       .replace(/(<b>)|(<\/b>)/g, '')
+      .trim()
   }
 
   private parseSublimationsText(sublimations, states) {

@@ -30,7 +30,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Effects',
-          value: 'At the start of combat, if the state bearer has more Area Mastery than Melee Mastery:\n+20% damage inflicted in close combat and area of effect simultaneously',
+          value: 'At the start of combat, if the state bearer has more Area Mastery than Melee Mastery:\n:white_small_square:+20% damage inflicted in close combat and area of effect simultaneously',
           inline: false
         }
       ]
