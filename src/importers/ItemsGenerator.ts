@@ -103,6 +103,12 @@ export default class ItemsGenerator {
     }
   }
 
+  private parseEffectsAndFilterDescription(effects, itemLevel) {
+    return effects
+      .map(equipEffect => parseEffect(equipEffect.effect, itemLevel))
+      .filter(equipEffect => equipEffect.description)
+  }
+
   mountItems () {
     console.log(`Mounting ${this.itemsData.length} items`)
     const mountedItems = this.itemsData.map((itemData, index) => {
@@ -126,12 +132,8 @@ export default class ItemsGenerator {
       const useParameters = itemDefinition.useParameters
 
       // Parse effect codes to values
-      const equipEffects = itemData.definition.equipEffects
-        .map(equipEffect => parseEffect(equipEffect.effect, itemLevel))
-        .filter(equipEffect => equipEffect.description)
-      const useEffects = itemData.definition.useEffects
-        .map(useEffect => parseEffect(useEffect.effect, itemLevel))
-        .filter(useEffect => useEffect.description)
+      const equipEffects = this.parseEffectsAndFilterDescription(itemData.definition.equipEffects, itemLevel)
+      const useEffects = this.parseEffectsAndFilterDescription(itemData.definition.useEffects, itemLevel)
 
       mappedItem.id = itemDefinition.id
       mappedItem.description = itemData.description
