@@ -172,7 +172,7 @@ export default class ItemsGenerator {
           return subli.id_shard === mappedItem.id
         })
         if (zenithSublimation) {
-          mappedItem.sublimation.effects = zenithSublimation.effects[0].lang
+          mappedItem.sublimation.effects = zenithSublimation.parsedEffects
         }
 
       }

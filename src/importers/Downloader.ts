@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from 'axios'
-import { saveFile } from '../utils/files'
+import { openFile, saveFile } from '../utils/files'
 
 export default class Downloader {
   private httpClient: AxiosInstance
@@ -60,6 +60,48 @@ export default class Downloader {
         })
         saveFile(zenithSublimation, `${this.downloadFolder}/zenith/zenithSublimation_${lang}.json`)
       }
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  private getStates(sublimations) {
+    return sublimations.reduce((states, sublimation) => {
+      sublimation.effects.forEach(effect => {
+        effect.inner_states.forEach(({ id_state }) => {
+          if (states.indexOf(id_state) <= -1) {
+            states.push(id_state)
+          }
+        })
+      })
+      return states
+    }, [])
+  }
+
+  public async downloadSublimationStatesFromZenith() {
+    const langs = ['fr', 'pt', 'es', 'en']
+    try {
+      const { sublimations, special_sublimations} = openFile(`${this.downloadFolder}/zenith/zenithSublimation_en.json`)
+      const states = this.getStates([...sublimations, ...special_sublimations])
+      console.log(`Getting ${states.length} zenith states for each language...`)
+      const zenithStates = []
+      for (let index = 0; index < langs.length; index++) {
+        const lang = langs[index]
+        const langStates = []
+        for (let index = 0; index < states.length; index++) {
+          const state = states[index];
+          const { data: zenithState } = await this.httpClient.get(`https://api.zenithwakfu.com/builder/api/state/${state}`, {
+            headers: {
+              "X-Requested-With": "XMLHttpRequest",
+              "Cookie": `lang=${lang}`
+            }
+          })
+          langStates.push(zenithState)
+        }
+        zenithStates.push(langStates)
+      }
+      console.log(`Saving zenith states...`)
+      saveFile(zenithStates, `${this.downloadFolder}/zenith/zenithSublimationStates.json`)
     } catch (error) {
       console.log(error)
     }

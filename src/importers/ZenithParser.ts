@@ -2,9 +2,11 @@ import { saveFile, openFile } from '../utils/files'
 
 // I'm not THAT proud of this code, but it works
 export default class ZenithParser {
+  private langs = ['fr', 'en', 'pt', 'es']
   private rawSublimationsData
-  private langs = ['pt', 'en', 'fr', 'es']
+  private rawSublimationsStatesData
   private generatedFolderPath
+
 
   constructor(rawFolderPath: string, generatedFolderPath: string) {
     this.loadRawSublimationsData(rawFolderPath)
@@ -15,8 +17,8 @@ export default class ZenithParser {
     const rawSublimationsData = this.langs.map(lang => {
       return openFile(`${rawFolderPath}/zenith/zenithSublimation_${lang}.json`)
     })
-
     this.rawSublimationsData = rawSublimationsData
+    this.rawSublimationsStatesData = openFile(`${rawFolderPath}/zenith/zenithSublimationStates.json`)
   }
 
   private combineSublimationsAndSpecialSublimations() {
@@ -32,45 +34,31 @@ export default class ZenithParser {
       const regex = new RegExp(code, 'g')
       replacedText = replacedText.replace(regex, mapping[code])
     })
-
-    replacedText = replacedText.replace(/(<b>)|(<\/b>)/g, '')
     return replacedText
   }
 
-  private combineSublimationsLanguages(sublimations) {
+  private recursivelyAddItemTranslation(modifyArray, consultingArray, ) {
+    consultingArray.forEach(consultingItem => {
+      const matchingItem = modifyArray.find(modifyItem => {
+        const idProperty = Object.keys(consultingItem).find(prop => prop.includes('id_'))
+        return modifyItem[idProperty] === consultingItem[idProperty]
+      })
+
+      if (consultingItem.translations) {
+        matchingItem.translations.push(...consultingItem.translations)
+      }
+      
+      Object.keys(consultingItem).forEach(key => {
+        if(Array.isArray(consultingItem[key])) {
+          this.recursivelyAddItemTranslation(matchingItem[key], consultingItem[key])
+        }
+      })
+    })
+  }
+
+  private combineSublimationTranslations(sublimations) {
     return sublimations.reduce((combinedSublimations, languageSublimations) => {
-      languageSublimations.forEach(languageSublimation => {
-        const matchingSublimation = combinedSublimations.find(combinedSubli => {
-          return combinedSubli.id_shard === languageSublimation.id_shard
-        })
-
-        matchingSublimation.effects.forEach(effect => {
-          const existingLangs = effect.lang
-            if (!existingLangs) {
-              effect.lang = {}
-            }
-
-            const translation = languageSublimation.effects[0].translations[0]
-            effect.lang = {
-              ...effect.lang,
-              [translation?.locale || 'fr']: translation?.value || effect.name_effect
-            }
-
-            effect.inner_states.forEach(state => {
-              const existingStateLangs = state.lang
-              if (!existingStateLangs) {
-                state.lang = {}
-              }
-  
-              const stateTranslation = languageSublimation.effects[0].inner_states[0].translations[0]
-              state.lang = {
-                ...state.lang,
-                [stateTranslation?.locale || 'fr']: stateTranslation?.value || state.name_state
-              }
-            })
-          })
-        })
-
+      this.recursivelyAddItemTranslation(combinedSublimations, languageSublimations)
       return combinedSublimations
     }, sublimations[0])
   }
@@ -79,8 +67,8 @@ export default class ZenithParser {
     return sublimations.reduce((splittedSublimations, sublimation) => {
       
       if (sublimation.children?.length) {
-        sublimation.children.forEach((childSubli, index) => {
-          childSubli.effects = [sublimation.effects[index + 1] || sublimation.effects[0]]
+        sublimation.children.forEach((childSubli) => {
+          childSubli.effects = sublimation.effects
           splittedSublimations.push(childSubli)
         })
       }
@@ -90,41 +78,80 @@ export default class ZenithParser {
     }, [])
   }
 
-  private parseSublimationsText(sublimations) {
+  private mapComputedEffectValues(values, level = null) {
+    return values.reduce((valuesMapping, {ratio, damage}, index) => {
+      let computedValue = damage ? `${ratio.toFixed(2)} + ${damage}` : ratio.toFixed(2)
+      if (level) {
+        computedValue = (ratio * level) + damage
+      }
+      return { ...valuesMapping, [`\\[#${index + 1}\\]`]: computedValue }
+    }, {})
+  }
+
+  private removeCodesAndCharacters(text) {
+    return text
+      .replace(/\\n/g, '\n')
+      .replace(/\n\n/g, '\n')
+      // .replace(/\[pl\]/g, '')
+      .replace(/(<b>)|(<\/b>)/g, '')
+  }
+
+  private parseSublimationsText(sublimations, states) {
     return sublimations.map(subli => {
-      const parsedSubliEffects = subli.effects.map(effect => {
-        const effectValuesMapping = effect.values.reduce((valuesMapping, value, index) => ({
-          ...valuesMapping,
-          [`\\[#${index + 1}\\]`]: (value.ratio * subli.level) + value.damage
-        }), {})
+      const parsedSubliEffects = subli.effects.reduce((parsedEffects, effect) => {
+        const effectValuesMapping = this.mapComputedEffectValues(effect.values, subli.level)
 
-        const parsedLangs = Object.keys(effect.lang).reduce((parsedLangs, lang) => {
-          parsedLangs[lang] = this.replaceValueCodes(effect.lang[lang], effectValuesMapping).replace(/\\n/g, '\n').replace(/\n\n/g, '\n').replace(/\[pl\]/g, '')
+        const langs = ['fr', 'en', 'es', 'pt']
+        langs.forEach(lang => {
+          const translation = effect.translations.find(({ locale }) => locale === lang)
+          const nameEffect = translation ? translation.value : effect.name_effect
+
+          const effectText = this.replaceValueCodes(nameEffect, effectValuesMapping)
+          parsedEffects[lang] = parsedEffects[lang] ? `${parsedEffects[lang]}\n${effectText}` : effectText
+
+          const aditionalStateInfo = []
           effect.inner_states.forEach(state => {
-            parsedLangs[lang] = parsedLangs[lang].replace(new RegExp(`\\[st${state.id_state}]`, 'g'), state.lang[lang])
+            const innerStateTranslation = state.translations.find(({ locale }) => locale === lang)
+            const nameInnerState = innerStateTranslation ? innerStateTranslation.value : state.name_state
+
+            parsedEffects[lang] = parsedEffects[lang].replace(new RegExp(`\\[st${state.id_state}]`, 'g'), `**${nameInnerState}**`)
+
+            const stateData = states.find(({ id_state }) => state.id_state === id_state)
+            const stateDataInfo = stateData.effects.reduce((stateDataInfo, stateEffect) => {
+              const stateEffectValuesMapping = this.mapComputedEffectValues(stateEffect.values)
+
+              const stateEffectTranslation = stateEffect.translations.find(({ locale }) => locale === lang)
+              const nameStateEffect = stateEffectTranslation ? stateEffectTranslation.value : stateEffect.name_effect
+              
+              return stateDataInfo + '\n' + this.replaceValueCodes(nameStateEffect, stateEffectValuesMapping)
+            }, '')
+  
+            const stateInfo = `**${nameInnerState}**:${stateDataInfo}`
+            aditionalStateInfo.push(stateInfo)
           })
-          return parsedLangs
-        }, {})
 
+          parsedEffects[lang] = `${parsedEffects[lang]}\n${aditionalStateInfo.join('\n')}`
+          parsedEffects[lang] = this.removeCodesAndCharacters(parsedEffects[lang])
+        })
 
-
-        return {
-          ...effect,
-          lang: parsedLangs
-        }
-      })
+        return parsedEffects
+      }, {})
       return { 
         ...subli,
-        effects: parsedSubliEffects
+        parsedEffects: parsedSubliEffects
       }
     })
   }
 
   public parseAndSaveZenithSublimations() {
+
+    const combinedZenithStatesLanguages = this.combineSublimationTranslations(this.rawSublimationsStatesData)
+    saveFile(combinedZenithStatesLanguages, `${this.generatedFolderPath}/zenithSublimationsStates.json`)
+
     const combinedTypeSublimations = this.combineSublimationsAndSpecialSublimations()
-    const combinedLanguagesSublimations = this.combineSublimationsLanguages(combinedTypeSublimations)
+    const combinedLanguagesSublimations = this.combineSublimationTranslations(combinedTypeSublimations)
     const splittedChildrenSublimations = this.splitChildrenSublimations(combinedLanguagesSublimations)
-    const parsedSublimationsText = this.parseSublimationsText(splittedChildrenSublimations)
+    const parsedSublimationsText = this.parseSublimationsText(splittedChildrenSublimations, combinedZenithStatesLanguages)
     console.log(`Generated ${parsedSublimationsText.length} sublimations from Zenith`)
     saveFile(parsedSublimationsText, `${this.generatedFolderPath}/zenithSublimations.json`)
   }

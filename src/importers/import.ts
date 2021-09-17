@@ -15,6 +15,7 @@ async function importData() {
   if (lastImportedVersion !== currentLiveVersion) {
     await downloader.downloadAndSaveWakfuCdnData()
     await downloader.downloadSublimationDataFromZenith()
+    await downloader.downloadSublimationStatesFromZenith()
   }
 
   const recipesGenerator = new RecipesGenerator(downloadFolder, generatedFolder)
