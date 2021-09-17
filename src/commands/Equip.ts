@@ -46,17 +46,6 @@ export default class EquipCommand extends FinderCommand {
     await MessageManager.reactToMessage(reactions, sentMessage)
   }
 
-  private getMoreEquipmentText (results, resultsLimit: number) {
-    let moreResultsText = ''
-    if (results.length > resultsLimit) {
-      const firstResults = results.slice(0, resultsLimit)
-      const otherResults = results.slice(resultsLimit, results.length)
-      moreResultsText = ` ${str.andOther[this.lang]} ${otherResults.length} ${str.results[this.lang]}`
-      results = firstResults
-    }
-    return results.map(equip => `${equip.title[this.lang]} (${rarityMap[equip.rarity].name[this.lang]})`).join(', ').trim() + moreResultsText
-  }
-
   private mountEquipEmbed (results): PartialEmbed {
     const firstResult = results[0]
     const equipEmbed: PartialEmbed = {
@@ -105,7 +94,7 @@ export default class EquipCommand extends FinderCommand {
         inline: false
       })
     }
-    const equipamentsFoundText = this.getMoreEquipmentText(results, 20)
+    const equipamentsFoundText = this.getTruncatedResults(results, 20, true)
     if (results.length > 1) {
       equipEmbed.footer = {
         text: `${str.capitalize(str.equipmentFound[this.lang])}: ${equipamentsFoundText}`

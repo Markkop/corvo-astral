@@ -3,7 +3,7 @@ import { ItemManager, RecipesManager, MessageManager } from '@managers'
 import { mountUrl } from '@utils/mountUrl'
 import mappings from '@utils/mappings'
 import str from '@stringsLang'
-import { GuildConfig, ItemData, PartialEmbed } from '@types'
+import { GuildConfig, PartialEmbed } from '@types'
 import { Message } from 'discord.js'
 const { rarityMap } = mappings
 
@@ -125,7 +125,7 @@ export default class SubliCommand extends FinderCommand {
     const hasFoundMoreThanOne = results.length > 1
     if (hasFoundMoreThanOne) {
       sublimationEmbed.footer = {
-        text: `${str.capitalize(str.sublimationsFound[lang])}: ${this.getSublimationListText(results, 40)}`
+        text: `${str.capitalize(str.sublimationsFound[lang])}: ${this.getTruncatedResults(results, 40)}`
       }
     }
     return sublimationEmbed
@@ -147,7 +147,7 @@ export default class SubliCommand extends FinderCommand {
         },
         {
           name: str.capitalize(str.sublimations[lang]),
-          value: this.getSublimationListText(results, 40),
+          value: this.getTruncatedResults(results, 40),
           inline: false
         }
       ]
@@ -175,7 +175,7 @@ export default class SubliCommand extends FinderCommand {
     }
     results.forEach(permutatedResult => {
       const slotsAsEmojis = this.parseSlotsToEmojis(permutatedResult.slots)
-      const namedResults = this.getSublimationListText(permutatedResult.results, 10)
+      const namedResults = this.getTruncatedResults(permutatedResult.results, 10)
       const resultsLength = permutatedResult.results.length
       embed.fields.push({
         name: `${slotsAsEmojis} (${resultsLength})`,
@@ -184,18 +184,6 @@ export default class SubliCommand extends FinderCommand {
       })
     })
     return embed
-  }
-
-  // TO DO: Reuse the truncate code for both subli and equip
-  private getSublimationListText (results, resultsLimit: number) {
-    let moreResultsText = ''
-    if (results.length > resultsLimit) {
-      const firstResults = results.slice(0, resultsLimit)
-      const otherResults = results.slice(resultsLimit, results.length)
-      moreResultsText = ` ${str.andOther[this.lang]} ${otherResults.length} ${str.results[this.lang]}`
-      results = firstResults
-    }
-    return results.map(subli => subli.title[this.lang]).join(', ').trim() + moreResultsText
   }
 
   private findEquivalentQuery (query: string) {
