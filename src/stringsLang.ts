@@ -213,50 +213,86 @@ export default {
     pt: 'Monstros encontrados'
   },
   aboutText: {
-    en: `**Corvo Astral** is a Discord Bot that serves as a helper for **Wakfu**, an Ankama's MMORPG.
+    en: `**Corvo Astral** is a Discord bot that provides information about the Wakfu MMORPG.
 
-    Made with Javascript and NodeJS and hosted on Heroku, this bot uses data gathered from Wakfu's CDN and Website as well Method's public API.
+    Made with Typescript in NodeJS and hosted on Heroku, this bot uses data gathered from Wakfu's CDN and Zenith's API.
     
+    This project is open source and it's available on Github: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
     Created by [Mark Kop](https://github.com/Markkop) (Markx - Rubilax)
     
-    Want to contribute? This project is open source and it's available on Github
-    Check it out: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
+    **Contribution:**
+    It costs $7/month to keep this bot running 24/7 on [Heroku](https://www.heroku.com/pricing).  
+    I'm currently using Github Education credits which will expire soon, so I'm counting on donations to have it working for the next months.
+    If you have conditions and would like to help, please contribute <3
+    
+    Credit Card: 
+    https://www.buymeacoffee.com/markkop
+
+    Pix (Brazil Only):
+    me@markkop.dev
     
     Join the bot's discord server to get more help, report bugs or discover new features:
     https://discord.gg/aX6j3gM8HC    
     `,
-    es: `**Corvo Astral** is a Discord Bot that serves as a helper for **Wakfu**, an Ankama's MMORPG.
+    es: `**Corvo Astral** is a Discord bot that provides information about the Wakfu MMORPG.
 
-    Made with Javascript and NodeJS and hosted on Heroku, this bot uses data gathered from Wakfu's CDN and Website as well Method's public API.
+    Made with Typescript in NodeJS and hosted on Heroku, this bot uses data gathered from Wakfu's CDN and Zenith's API.
     
+    This project is open source and it's available on Github: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
     Created by [Mark Kop](https://github.com/Markkop) (Markx - Rubilax)
     
-    Want to contribute? This project is open source and it's available on Github
-    Check it out: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
+    **Contribution:**
+    It costs $7/month to keep this bot running 24/7 on [Heroku](https://www.heroku.com/pricing).  
+    I'm currently using Github Education credits which will expire soon, so I'm counting on donations to have it working for the next months.
+    If you have conditions and would like to help, please contribute <3
+    
+    Credit Card: 
+    https://www.buymeacoffee.com/markkop
+
+    Pix (Brazil Only):
+    me@markkop.dev
     
     Join the bot's discord server to get more help, report bugs or discover new features:
     https://discord.gg/aX6j3gM8HC    
     `,
-    fr: `**Corvo Astral** is a Discord Bot that serves as a helper for **Wakfu**, an Ankama's MMORPG.
+    fr: `**Corvo Astral** is a Discord bot that provides information about the Wakfu MMORPG.
 
-    Made with Javascript and NodeJS and hosted on Heroku, this bot uses data gathered from Wakfu's CDN and Website as well Method's public API.
+    Made with Typescript in NodeJS and hosted on Heroku, this bot uses data gathered from Wakfu's CDN and Zenith's API.
     
+    This project is open source and it's available on Github: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
     Created by [Mark Kop](https://github.com/Markkop) (Markx - Rubilax)
     
-    Want to contribute? This project is open source and it's available on Github
-    Check it out: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
+    **Contribution:**
+    It costs $7/month to keep this bot running 24/7 on [Heroku](https://www.heroku.com/pricing).  
+    I'm currently using Github Education credits which will expire soon, so I'm counting on donations to have it working for the next months.
+    If you have conditions and would like to help, please contribute <3
+    
+    Credit Card: 
+    https://www.buymeacoffee.com/markkop
+
+    Pix (Brazil Only):
+    me@markkop.dev
     
     Join the bot's discord server to get more help, report bugs or discover new features:
     https://discord.gg/aX6j3gM8HC    
     `,
-    pt: `**Corvo Astral** is a Discord Bot that serves as a helper for **Wakfu**, an Ankama's MMORPG.
+    pt: `**Corvo Astral** is a Discord bot that provides information about the Wakfu MMORPG.
 
-    Made with Javascript and NodeJS and hosted on Heroku, this bot uses data gathered from Wakfu's CDN and Website as well Method's public API.
+    Made with Typescript in NodeJS and hosted on Heroku, this bot uses data gathered from Wakfu's CDN and Zenith's API.
     
+    This project is open source and it's available on Github: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
     Created by [Mark Kop](https://github.com/Markkop) (Markx - Rubilax)
     
-    Want to contribute? This project is open source and it's available on Github
-    Check it out: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
+    **Contribution:**
+    It costs $7/month to keep this bot running 24/7 on [Heroku](https://www.heroku.com/pricing).  
+    I'm currently using Github Education credits which will expire soon, so I'm counting on donations to have it working for the next months.
+    If you have conditions and would like to help, please contribute <3
+    
+    Credit Card: 
+    https://www.buymeacoffee.com/markkop
+
+    Pix (Brazil Only):
+    me@markkop.dev
     
     Join the bot's discord server to get more help, report bugs or discover new features:
     https://discord.gg/aX6j3gM8HC    
