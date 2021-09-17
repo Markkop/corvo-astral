@@ -68,6 +68,41 @@ export default class ItemsGenerator {
     return sources
   }
 
+  private fixTitle(id, title) {
+    const fixedTitles = {
+      28826: {
+        es: 'Estragos I'
+      },
+      27113: {
+        es: 'Estragos II',
+        pt: 'Assolação II'
+      },
+      28827: {
+        es: 'Estragos III',
+        pt: 'Assolação III'
+      },
+      28825: {
+        es: 'Devastación III'
+      },
+      27112: {
+        es: 'Devastación II'
+      },
+      28824: {
+        es: 'Devastación I'
+      },
+    }
+
+    const fixedTitle = fixedTitles[id]
+    if (!fixedTitle) {
+      return title
+    }
+    
+    return {
+      ...title,
+      ...fixedTitle
+    }
+  }
+
   mountItems () {
     console.log(`Mounting ${this.itemsData.length} items`)
     const mountedItems = this.itemsData.map((itemData, index) => {
@@ -99,7 +134,6 @@ export default class ItemsGenerator {
         .filter(useEffect => useEffect.description)
 
       mappedItem.id = itemDefinition.id
-      mappedItem.title = itemData.title
       mappedItem.description = itemData.description
       mappedItem.level = itemLevel
       mappedItem.useEffects = useEffects
@@ -113,6 +147,9 @@ export default class ItemsGenerator {
       mappedItem.itemTypeId = itemDefinition.baseParameters.itemTypeId
       mappedItem.itemSetId = itemDefinition.baseParameters.itemSetId
       mappedItem.rarity = itemDefinition.baseParameters.rarity
+
+      // Fix title
+      mappedItem.title = this.fixTitle(itemDefinition.id, itemData.title)
 
       // Enrich sublimations information
       const isSublimation = itemTypeId === 812
