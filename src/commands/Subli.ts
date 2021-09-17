@@ -100,7 +100,7 @@ export default class SubliCommand extends FinderCommand {
     if (effects) {
       sublimationEmbed.fields.push({
         name: str.capitalize(str.effects[lang]),
-        value: effects,
+        value: this.parseIconCodeToEmoji(effects),
         inline: false
       })
     }

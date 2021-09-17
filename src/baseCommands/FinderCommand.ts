@@ -2,6 +2,8 @@ import { BaseCommand } from '@baseCommands'
 import str from '@stringsLang'
 import { Message } from 'discord.js'
 import { GuildConfig, PartialEmbed } from '@types'
+import mappings from '@utils/mappings'
+const { iconCodeMap } = mappings
 
 export default class FinderCommand extends BaseCommand {
   constructor (message: Message, guildConfig: GuildConfig) {
@@ -19,5 +21,9 @@ export default class FinderCommand extends BaseCommand {
   protected returnNotFound () {
     const notFoundEmbed = this.mountNotFoundEmbed(this.lang)
     return this.send({ embed: notFoundEmbed })
+  }
+
+  protected parseIconCodeToEmoji (text: string) {
+    return text.split(/(\[.*?\])/).map(word => iconCodeMap[word] || word).join('')
   }
 }

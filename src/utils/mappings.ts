@@ -8,7 +8,8 @@ export default {
     '[HLINE]': ':left_right_arrow:',
     '[VLINE]': ':arrow_up_down:',
     '[CIRCLERING]': ':arrows_counterclockwise:',
-    '[*]': ''
+    '[*]': '',
+    '[pl]': ':white_small_square:'
   },
   classEmoji: {
     '🐲': 'Osa',

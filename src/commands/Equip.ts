@@ -5,7 +5,7 @@ import str from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
 import { Message } from 'discord.js'
 import mappings from '@utils/mappings'
-const { rarityMap, equipTypesMap, iconCodeMap } = mappings
+const { rarityMap, equipTypesMap } = mappings
 
 export default class EquipCommand extends FinderCommand {
   constructor (message: Message, guildConfig: GuildConfig) {
@@ -44,10 +44,6 @@ export default class EquipCommand extends FinderCommand {
       reactions.unshift('🛠️')
     }
     await MessageManager.reactToMessage(reactions, sentMessage)
-  }
-
-  private parseIconCodeToEmoji (text: string) {
-    return text.split(/(\[.*?\])/).map(word => iconCodeMap[word] || word).join('')
   }
 
   private getMoreEquipmentText (results, resultsLimit: number) {
