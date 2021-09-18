@@ -369,9 +369,9 @@ describe('getSublimation', () => {
           value: `:chair: \`10x  \` Raw Bracket
 :pick: \`15x  \` Dragonheart Amethyst
 :sparkles: \`50x  \` Powder
-➥  \`12x  \` Scara Horn
-➥  \`10x  \` Royal Canine
-➥  \`40x  \` Sip of Sulfur`,
+:white_small_square: \`12x  \` Scara Horn
+:white_small_square: \`10x  \` Royal Canine
+:white_small_square: \`40x  \` Sip of Sulfur`,
           inline: false
         }
       ])

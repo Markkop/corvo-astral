@@ -25,10 +25,10 @@ describe('RecipeCommand', () => {
           value: `:pick: \`7x   \` Rose of the Sands
 <:rare:888866409583620159> \`4x   \` Whirligig Breastplate
 :adhesive_bandage: \`35x  \` Durable Souper-Glou
-➥  \`4x   \` Ice Stick
-➥  \`4x   \` Mekeynism
-➥  \`4x   \` Ponk-tius
-➥  \`4x   \` Eternal Ice`,
+:white_small_square: \`4x   \` Ice Stick
+:white_small_square: \`4x   \` Mekeynism
+:white_small_square: \`4x   \` Ponk-tius
+:white_small_square: \`4x   \` Eternal Ice`,
           inline: false
         }
       ]
@@ -66,9 +66,9 @@ describe('RecipeCommand', () => {
 :shell: \`9x   \` Eternal Essence
 :sparkles: \`52x  \` Powder
 <:rare:888866409583620159> \`1x   \` Peace Pipe
-➥  \`3x   \` Rancid Fragrance
-➥  \`21x  \` Rough Vapor
-➥  \`3x   \` Hot Ashes`,
+:white_small_square: \`3x   \` Rancid Fragrance
+:white_small_square: \`21x  \` Rough Vapor
+:white_small_square: \`3x   \` Hot Ashes`,
           inline: false
         }
       ]
@@ -112,22 +112,22 @@ describe('RecipeCommand', () => {
         },
         {
           name: 'Ingredients',
-          value: '➥  `4x   ` Rough Vapor\n➥  `4x   ` Dreggon Shell',
+          value: ':white_small_square: `4x   ` Rough Vapor\n:white_small_square: `4x   ` Dreggon Shell',
           inline: false
         },
         {
           name: 'Ingredients',
-          value: '➥  `4x   ` Magmatic Embers\n➥  `4x   ` Badgerox Fang',
+          value: ':white_small_square: `4x   ` Magmatic Embers\n:white_small_square: `4x   ` Badgerox Fang',
           inline: false
         },
         {
           name: 'Ingredients',
-          value: '➥  `4x   ` Pandala Ghostoplasm\n➥  `4x   ` Blightopard Fur',
+          value: ':white_small_square: `4x   ` Pandala Ghostoplasm\n:white_small_square: `4x   ` Blightopard Fur',
           inline: false
         },
         {
           name: 'Ingredients',
-          value: '➥  `8x   ` Bubourg Claw',
+          value: ':white_small_square: `8x   ` Bubourg Claw',
           inline: false
         }
       ]

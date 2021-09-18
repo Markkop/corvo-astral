@@ -56,7 +56,7 @@ class RecipesManager {
         const job = jobsMap[ingredient.job] || {}
         const jobEmoji = job.emoji
         const itemEmoji = itemEmojis[ingredient.itemId]
-        const ingredientEmoji = rarityEmoji || jobEmoji || itemEmoji || '➥ '
+        const ingredientEmoji = rarityEmoji || jobEmoji || itemEmoji || ':white_small_square:'
         const quantity = ingredient.quantity
         const name = ingredient.title[lang]
         const quantityText = `${quantity}x`
@@ -64,8 +64,8 @@ class RecipesManager {
         return `${ingredientEmoji} ${quantityCodeText} ${name}`
       })
       const orderedByEmojiTexts = ingredientsText.sort((textA, textB) => {
-        const textAhasDefaultEmoji = textA.includes('➥ ')
-        const textBhasDefaultEmoji = textB.includes('➥ ')
+        const textAhasDefaultEmoji = textA.includes(':white_small_square:')
+        const textBhasDefaultEmoji = textB.includes(':white_small_square:')
         if (textAhasDefaultEmoji && !textBhasDefaultEmoji) return 1
         if (!textAhasDefaultEmoji && textBhasDefaultEmoji) return -1
         return 0
