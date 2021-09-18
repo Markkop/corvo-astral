@@ -7,7 +7,7 @@ describe('RecipeCommand', () => {
     const spy = await executeCommandAndSpySentMessage(RecipeCommand, '.recipe kaw breastplate')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       color: 0xfede71,
-      title: ':yellow_circle: Recipe: Kaw Breastplate',
+      title: '<:legendary:888866409382314085> Recipe: Kaw Breastplate',
       thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/13625074.png' },
       fields: [
         {
@@ -23,12 +23,12 @@ describe('RecipeCommand', () => {
         {
           name: 'Ingredients',
           value: `:pick: \`7x   \` Rose of the Sands
-:green_circle: \`4x   \` Whirligig Breastplate
+<:rare:888866409583620159> \`4x   \` Whirligig Breastplate
 :adhesive_bandage: \`35x  \` Durable Souper-Glou
-:white_small_square: \`4x   \` Ice Stick
-:white_small_square: \`4x   \` Mekeynism
-:white_small_square: \`4x   \` Ponk-tius
-:white_small_square: \`4x   \` Eternal Ice`,
+➥  \`4x   \` Ice Stick
+➥  \`4x   \` Mekeynism
+➥  \`4x   \` Ponk-tius
+➥  \`4x   \` Eternal Ice`,
           inline: false
         }
       ]
@@ -38,7 +38,7 @@ describe('RecipeCommand', () => {
   it('replies a translated recipe with "translate" option', async () => {
     const spy = await executeCommandAndSpySentMessage(RecipeCommand, '.recipe peace pipe translate=pt')
     expect(spy).toHaveBeenCalledWith(embedContaining({
-      title: ':yellow_circle: Receita: Cachimbo Dapais'
+      title: '<:legendary:888866409382314085> Receita: Cachimbo Dapais'
     }))
   })
 
@@ -46,7 +46,7 @@ describe('RecipeCommand', () => {
     const spy = await executeCommandAndSpySentMessage(RecipeCommand, '.recipe peace pipe rarity=mythical')
     expect(spy).toHaveBeenCalledWith(embedContaining({
       color: 0xfd8e39,
-      title: ':orange_circle: Recipe: Peace Pipe',
+      title: '<:mythic:888866409734627348> Recipe: Peace Pipe',
       thumbnail: { url: 'https://static.ankama.com/wakfu/portal/game/item/115/25321811.png' },
       fields: [
         {
@@ -65,10 +65,10 @@ describe('RecipeCommand', () => {
 :adhesive_bandage: \`30x  \` Eternal Souper-Glou
 :shell: \`9x   \` Eternal Essence
 :sparkles: \`52x  \` Powder
-:green_circle: \`1x   \` Peace Pipe
-:white_small_square: \`3x   \` Rancid Fragrance
-:white_small_square: \`21x  \` Rough Vapor
-:white_small_square: \`3x   \` Hot Ashes`,
+<:rare:888866409583620159> \`1x   \` Peace Pipe
+➥  \`3x   \` Rancid Fragrance
+➥  \`21x  \` Rough Vapor
+➥  \`3x   \` Hot Ashes`,
           inline: false
         }
       ]
@@ -112,22 +112,22 @@ describe('RecipeCommand', () => {
         },
         {
           name: 'Ingredients',
-          value: ':white_small_square: `4x   ` Rough Vapor\n:white_small_square: `4x   ` Dreggon Shell',
+          value: '➥  `4x   ` Rough Vapor\n➥  `4x   ` Dreggon Shell',
           inline: false
         },
         {
           name: 'Ingredients',
-          value: ':white_small_square: `4x   ` Magmatic Embers\n:white_small_square: `4x   ` Badgerox Fang',
+          value: '➥  `4x   ` Magmatic Embers\n➥  `4x   ` Badgerox Fang',
           inline: false
         },
         {
           name: 'Ingredients',
-          value: ':white_small_square: `4x   ` Pandala Ghostoplasm\n:white_small_square: `4x   ` Blightopard Fur',
+          value: '➥  `4x   ` Pandala Ghostoplasm\n➥  `4x   ` Blightopard Fur',
           inline: false
         },
         {
           name: 'Ingredients',
-          value: ':white_small_square: `8x   ` Bubourg Claw',
+          value: '➥  `8x   ` Bubourg Claw',
           inline: false
         }
       ]

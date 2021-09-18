@@ -30,7 +30,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Effects',
-          value: 'At the start of combat, if the state bearer has more Area Mastery than Melee Mastery:\n:white_small_square:+20% damage inflicted in close combat and area of effect simultaneously',
+          value: 'At the start of combat, if the state bearer has more Area Mastery than Melee Mastery:\n➥ +20% damage inflicted in close combat and area of effect simultaneously',
           inline: false
         }
       ]
@@ -63,7 +63,7 @@ describe('getSublimation', () => {
       fields: [
         {
           name: 'Slots',
-          value: ':red_square: :green_square: :blue_square:',
+          value: '<:red:888856996831449109> <:green:888856997112463421> <:blue:888856996726579271>',
           inline: true
         },
         {
@@ -92,7 +92,7 @@ describe('getSublimation', () => {
       fields: [
         {
           name: 'Query',
-          value: ':blue_square: :blue_square: :red_square:',
+          value: '<:blue:888856996726579271> <:blue:888856996726579271> <:red:888856996831449109>',
           inline: true
         },
         {
@@ -116,7 +116,7 @@ describe('getSublimation', () => {
       fields: [
         {
           name: 'Query',
-          value: ':white_large_square: :blue_square: :red_square:',
+          value: '<:white:888856997066330172> <:blue:888856996726579271> <:red:888856996831449109>',
           inline: true
         },
         {
@@ -140,7 +140,7 @@ describe('getSublimation', () => {
       fields: [
         {
           name: 'Query',
-          value: ':white_large_square: :white_large_square: :red_square:',
+          value: '<:white:888856997066330172> <:white:888856997066330172> <:red:888856996831449109>',
           inline: true
         },
         {
@@ -164,37 +164,37 @@ describe('getSublimation', () => {
       fields: [
         {
           name: 'Query',
-          value: ':red_square: :green_square: :blue_square: in any order',
+          value: '<:red:888856996831449109> <:green:888856997112463421> <:blue:888856996726579271> in any order',
           inline: true
         },
         { name: 'Results', value: 19, inline: true },
         {
-          name: ':red_square: :green_square: :blue_square: (3)',
+          name: '<:red:888856996831449109> <:green:888856997112463421> <:blue:888856996726579271> (3)',
           value: 'Frenzy, Fury, Sensitivity',
           inline: false
         },
         {
-          name: ':red_square: :blue_square: :green_square: (4)',
+          name: '<:red:888856996831449109> <:blue:888856996726579271> <:green:888856997112463421> (4)',
           value: 'Armor Length, Dimensionality, Lone Wolf, Wall',
           inline: false
         },
         {
-          name: ':green_square: :red_square: :blue_square: (3)',
+          name: '<:green:888856997112463421> <:red:888856996831449109> <:blue:888856996726579271> (3)',
           value: 'Endurance, Nature, Prosperity',
           inline: false
         },
         {
-          name: ':green_square: :blue_square: :red_square: (3)',
+          name: '<:green:888856997112463421> <:blue:888856996726579271> <:red:888856996831449109> (3)',
           value: 'Clamor, Last Breath, Moon Scales',
           inline: false
         },
         {
-          name: ':blue_square: :red_square: :green_square: (3)',
+          name: '<:blue:888856996726579271> <:red:888856996831449109> <:green:888856997112463421> (3)',
           value: 'AP Return, Mania, MP Return',
           inline: false
         },
         {
-          name: ':blue_square: :green_square: :red_square: (3)',
+          name: '<:blue:888856996726579271> <:green:888856997112463421> <:red:888856996831449109> (3)',
           value: 'Altruism, Cyclothymia, Theory of Matter',
           inline: false
         }
@@ -209,7 +209,7 @@ describe('getSublimation', () => {
       fields: [
         {
           name: 'Query',
-          value: ':white_large_square: :white_large_square: :green_square: :white_large_square:',
+          value: '<:white:888856997066330172> <:white:888856997066330172> <:green:888856997112463421> <:white:888856997066330172>',
           inline: true
         },
         {
@@ -233,7 +233,7 @@ describe('getSublimation', () => {
       fields: [
         {
           name: 'Query',
-          value: ':red_square: :red_square: :green_square: :blue_square:',
+          value: '<:red:888856996831449109> <:red:888856996831449109> <:green:888856997112463421> <:blue:888856996726579271>',
           inline: true
         },
         {
@@ -257,7 +257,7 @@ describe('getSublimation', () => {
       fields: [
         {
           name: 'Query',
-          value: ':green_square: :green_square: :green_square: :green_square:',
+          value: '<:green:888856997112463421> <:green:888856997112463421> <:green:888856997112463421> <:green:888856997112463421>',
           inline: true
         },
         {
@@ -337,7 +337,7 @@ describe('getSublimation', () => {
         {
           inline: true,
           name: 'Slots',
-          value: ':red_square: :green_square: :red_square:'
+          value: '<:red:888856996831449109> <:green:888856997112463421> <:red:888856996831449109>'
         },
         {
           inline: true,
@@ -369,9 +369,9 @@ describe('getSublimation', () => {
           value: `:chair: \`10x  \` Raw Bracket
 :pick: \`15x  \` Dragonheart Amethyst
 :sparkles: \`50x  \` Powder
-:white_small_square: \`12x  \` Scara Horn
-:white_small_square: \`10x  \` Royal Canine
-:white_small_square: \`40x  \` Sip of Sulfur`,
+➥  \`12x  \` Scara Horn
+➥  \`10x  \` Royal Canine
+➥  \`40x  \` Sip of Sulfur`,
           inline: false
         }
       ])

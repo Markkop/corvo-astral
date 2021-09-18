@@ -22,7 +22,7 @@ describe('PartyUpdateCommand', () => {
         messages: [
           { id: 'existing-party-message-id-0',
             embed: {
-              title: 'Party: group2',
+              title: '<:dungeon:888873201512362035> Party: group2',
               fields: [
                 { name: ':label: ID', value: '2', inline: true },
                 { name: ':calendar_spiral: Date', value: '10/10 21:00', inline: true },
@@ -38,7 +38,7 @@ describe('PartyUpdateCommand', () => {
     mockAskAndWaitAnswers(['2', 'name', 'newname'])
     const spy = await executeCommandWithMockOptionsAndSpyEdit(PartyUpdateCommand, mockOptions)
     expect(spy).toHaveBeenNthCalledWith(1, expect.objectContaining({
-      title: 'Party: newname'
+      title: '<:dungeon:888873201512362035> Party: newname'
     }))
   })
 })

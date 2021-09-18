@@ -8,7 +8,7 @@ describe('EquipmentCommand', () => {
     expect(spy).toHaveBeenCalledWith(embedContaining({
         url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/armors/27645',
         color: 0xfede71,
-        title: ':yellow_circle: Tentacled Belt',
+        title: '<:legendary:888866409382314085> Tentacled Belt',
         description: "It works like a typical belt, but you can't really say it does any more than that.\nID: 27645",
         thumbnail: {
           url: 'https://static.ankama.com/wakfu/portal/game/item/115/13327644.png'
@@ -31,7 +31,7 @@ describe('EquipmentCommand', () => {
           },
           {
             name: 'Equipped',
-            value: '286 HP\n47 Dodge\n30 Prospecting\n6% Critical Hit\n218 Mastery of 2 random element\n118 Distance Mastery\n47 :fire: Resistance\n47 :herb: Resistance',
+            value: '286 HP\n47 Dodge\n30 Prospecting\n6% Critical Hit\n218 Mastery of 2 random element\n118 Distance Mastery\n47 <:FIRE:888826773352120331> Resistance\n47 <:EARTH:888826773410820116> Resistance',
             inline: false
           }
         ],
@@ -56,21 +56,21 @@ describe('EquipmentCommand', () => {
   it('return a translated equip with "translate" option', async () => {
     const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip peace pipe translate=pt')
     expect(spy).toHaveBeenCalledWith(embedContaining({
-      title: ':yellow_circle: Cachimbo Dapais'
+      title: '<:legendary:888866409382314085> Cachimbo Dapais'
     }))
   })
 
   it('return the matching equipment when using query without accents', async () => {
     const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip lemico lang=pt')
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
-      title: ':yellow_circle: Chapéu Lêmico'
+      title: '<:legendary:888866409382314085> Chapéu Lêmico'
     }))
   })
 
   it('return the matching equipment when using query with accents', async () => {
     const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip lêmico lang=pt')
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
-      title: ':yellow_circle: Chapéu Lêmico'
+      title: '<:legendary:888866409382314085> Chapéu Lêmico'
     }))
   })
 
@@ -88,7 +88,7 @@ describe('EquipmentCommand', () => {
   it('return a matching equipment by name and rarity with rarity argument is provided on another language', async () => {
     const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip o eterno raridade=mítico lang=pt')
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
-      title: ':orange_circle: O Eterno',
+      title: '<:mythic:888866409734627348> O Eterno',
       fields: expect.arrayContaining([{
         name: 'Raridade',
         value: 'Mítico',
@@ -100,7 +100,7 @@ describe('EquipmentCommand', () => {
   it('return a matching equipment by name and rarity with rarity argument with mixed languages', async () => {
     const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip o eterno raridade=mythical lang=pt')
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
-      title: ':orange_circle: O Eterno',
+      title: '<:mythic:888866409734627348> O Eterno',
       fields: expect.arrayContaining([{
         name: 'Raridade',
         value: 'Mítico',
@@ -125,7 +125,7 @@ describe('EquipmentCommand', () => {
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       fields: expect.arrayContaining([{
         name: 'In use',
-        value: ':star2: Damage: 46',
+        value: '<:LIGHT:888826773360476170> Damage: 46',
         inline: false
       }])
     }))

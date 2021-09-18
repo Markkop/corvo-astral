@@ -118,7 +118,7 @@ export default class MockDiscord {
   }
 
   private mockReaction(reactionOptions, message): void {
-    this.reaction = new MessageReaction(this.client, { emoji: { name: reactionOptions.emoji } }, message)
+    this.reaction = new MessageReaction(this.client, { emoji: reactionOptions.emoji }, message)
   }
 
   private mockClient(): void {
