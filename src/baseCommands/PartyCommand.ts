@@ -52,7 +52,7 @@ export default class PartyCommand extends BaseCommand {
   protected updatePartyFieldByName(embed: MessageEmbed, partyFieldName: string, newValue: string) {
     const updatedEmbed = { ...embed } as MessageEmbed
     if (partyFieldName === 'name') {
-      updatedEmbed.title = newValue ? `Party: ${newValue}` : embed.title
+      updatedEmbed.title = newValue ? `<:dungeon:888873201512362035> Party: ${newValue}` : embed.title
     } else if (partyFieldName === 'description') {
       updatedEmbed.description = newValue
     } else if (partyFieldName === 'date') {

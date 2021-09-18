@@ -95,10 +95,11 @@ export default class PartyReaction extends PartyReactionCommand {
     const partyId = this.getPartyId(this.message)
     if (!partyId) return
 
-    const className = classEmoji[this.reaction.emoji.name]
+    const emojiString = `<:${this.reaction.emoji.name}:${this.reaction.emoji.id}>`
+    const className = classEmoji[emojiString]
     if (!className) return
 
-    this.className = className
+    this.className = emojiString
 
     if (action === 'join') {
       await this.joinParty()

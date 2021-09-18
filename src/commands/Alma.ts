@@ -30,7 +30,7 @@ export default class AlmaCommand extends BaseCommand {
     })
     return {
       color: 0x40b2b5,
-      title: ':partly_sunny: "Today\'s Almanax"',
+      title: '<:alma:888871222648115261> Today\'s Almanax',
       description: `**Bonus:** ${bonus.text[lang]}`,
       footer: { text: todayText }
     }

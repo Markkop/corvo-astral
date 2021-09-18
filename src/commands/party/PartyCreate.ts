@@ -94,7 +94,7 @@ export default class PartyCreateCommand extends PartyCommand {
     const memberSlots = Array(slots).fill(':small_orange_diamond:')
     memberSlots[0] = `:small_orange_diamond: <@${this.message.author.id}> | `
     const embed = {
-      title: `Party: ${options.name}`,
+      title: `<:dungeon:888873201512362035> Party: ${options.name}`,
       fields: [
         {
           name: ':label: ID',

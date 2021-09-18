@@ -30,7 +30,7 @@ class ReactionService {
   private handlePartyReaction(reaction: MessageReaction, user: User, guildConfig: GuildConfig, action: 'join'|'leave') {
     const isPartyMessage = reaction.message.embeds[0]?.title?.includes('Party')
     if (isPartyMessage) {
-      const className = classEmoji[reaction.emoji.name]
+      const className = classEmoji[`<:${reaction.emoji.name}:${reaction.emoji.id}>`]
       if (!className) return
       const PartyReactionCommand = new PartyReaction(reaction, user, guildConfig)
       this.lockMessage(reaction.message.id, () => PartyReactionCommand.execute(action))

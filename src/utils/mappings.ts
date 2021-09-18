@@ -1,35 +1,35 @@
 export default {
   iconCodeMap: {
-    '[el1]': ':fire:',
-    '[el2]': ':droplet:',
-    '[el3]': ':herb:',
-    '[el4]': ':dash:',
-    '[el6]': ':star2:',
-    '[HLINE]': ':left_right_arrow:',
-    '[VLINE]': ':arrow_up_down:',
-    '[CIRCLERING]': ':arrows_counterclockwise:',
+    '[el1]': '<:FIRE:888826773352120331>',
+    '[el2]': '<:WATER:888826775516364820>',
+    '[el3]': '<:EARTH:888826773410820116>',
+    '[el4]': '<:AIR:888826773154963477>',
+    '[el6]': '<:LIGHT:888826773360476170>',
+    '[HLINE]': '<:HLINE:888860035906699344>',
+    '[VLINE]': '<:VLINE:888860035910864926>',
+    '[CIRCLERING]': '<:CIRCLERING:888823965332688957>',
     '[*]': '',
-    '[pl]': ':white_small_square:'
+    '[pl]': '➥ '
   },
   classEmoji: {
-    '🐲': 'Osa',
-    '🛡️': 'Feca',
-    '🏥': 'Eni',
-    '🕰️': 'Xel',
-    '💰': 'Enu',
-    '🌈': 'Hup',
-    '💢': 'Sac',
-    '😼': 'Eca',
-    '🐶': 'Ouginak',
-    '💀': 'Sram',
-    '🥊': 'Iop',
-    '🏹': 'Cra',
-    '🌱': 'Sadi',
-    '🐼': 'Panda',
-    '💣': 'Rogue',
-    '🎭': 'Mask',
-    '🤖': 'Fogger',
-    '🌀': 'Elio'
+    '<:feca:888829270561030184>': 'Osa',
+    '<:osa:888829270468755486>': 'Feca',
+    '<:eni:888830003930890291>': 'Eni',
+    '<:xel:888829270565224529>': 'Xel',
+    '<:enu:888829270405828638>': 'Enu',
+    '<:hup:888829270770737203>': 'Hup',
+    '<:sac:888829270057680917>': 'Sac',
+    '<:eca:888829270082879509>': 'Eca',
+    '<:kilorf:888829270158352415>': 'Ouginak',
+    '<:sram:888829270376460369>': 'Sram',
+    '<:iop:888829269990584321>': 'Iop',
+    '<:cra:888829270514860032>': 'Cra',
+    '<:sadi:888829270439395338>': 'Sadi',
+    '<:panda:888829270460350485>': 'Panda',
+    '<:rogue:888829270351282237>': 'Rogue',
+    '<:mask:888829270556811324>': 'Mask',
+    '<:steam:888829270238052424>': 'Fogger',
+    '<:elio:888829270581997668>': 'Elio'
   },
   numberEmoji: {
     1: '1️⃣',
@@ -50,7 +50,7 @@ export default {
         fr: 'Inhabituel',
         pt: 'Comum'
       },
-      emoji: ':white_circle:',
+      emoji: '<:common:888866409176772650>',
       color: 0xBCC0C0
     },
     2: {
@@ -60,7 +60,7 @@ export default {
         fr: 'Rare',
         pt: 'Raro'
       },
-      emoji: ':green_circle:',
+      emoji: '<:rare:888866409583620159>',
       color: 0x28f18b
     },
     3: {
@@ -70,7 +70,7 @@ export default {
         fr: 'Mythique',
         pt: 'Mítico'
       },
-      emoji: ':orange_circle:',
+      emoji: '<:mythic:888866409734627348>',
       color: 0xfd8e39
     },
     4: {
@@ -80,7 +80,7 @@ export default {
         fr: 'Légendaire',
         pt: 'Lendário'
       },
-      emoji: ':yellow_circle:',
+      emoji: '<:legendary:888866409382314085>',
       color: 0xfede71
     },
     5: {
@@ -90,7 +90,7 @@ export default {
         fr: 'Relique',
         pt: 'Relíquia'
       },
-      emoji: ':purple_circle:',
+      emoji: '<:relic:888866409495547924>',
       color: 0xff47e7
     },
     6: {
@@ -100,7 +100,7 @@ export default {
         fr: 'Souvenir',
         pt: 'Anelembrança'
       },
-      emoji: ':blue_circle:',
+      emoji: '<:souvenir:888866409394864148>',
       color: 0x8fc7e2
     },
     7: {
@@ -110,7 +110,7 @@ export default {
         fr: 'Epique',
         pt: 'Épico'
       },
-      emoji: ':purple_circle:',
+      emoji: '<:epic:888866409445224518>',
       color: 0xfd87ba
     },
     10: {

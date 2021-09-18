@@ -197,10 +197,10 @@ export default class SubliCommand extends FinderCommand {
 
   private parseSlotsToEmojis (slots: string) {
     const emojiMap = {
-      g: ':green_square:',
-      b: ':blue_square:',
-      r: ':red_square:',
-      w: ':white_large_square:'
+      g: '<:green:888856997112463421>',
+      b: '<:blue:888856996726579271>',
+      r: '<:red:888856996831449109>',
+      w: '<:white:888856997066330172>'
     }
     return Array.from(slots.toLowerCase()).map(letter => emojiMap[letter]).join(' ')
   }

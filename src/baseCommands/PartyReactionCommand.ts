@@ -1,5 +1,5 @@
 import { PartyCommand } from '@baseCommands'
-import { User, MessageReaction, Message, MessageEmbed } from 'discord.js'
+import { User, MessageReaction, MessageEmbed } from 'discord.js'
 import { GuildConfig } from '@types'
 
 export default class PartyReactionCommand extends PartyCommand {
