@@ -88,7 +88,7 @@ export default class PartyCreateCommand extends PartyCommand {
   private mountPartyEmbed (identifier: number, options: PartyOptions): PartialEmbed {
     const maxSlots = 50
     let slots = 6
-    if (!this.isSkip(options.slots)) {
+    if (!this.isSkip(options.slots) && options.slots) {
       slots = (Number(options.slots) >= maxSlots) ? maxSlots : Number(options.slots)
     }
     const memberSlots = Array(slots).fill(':small_orange_diamond:')
