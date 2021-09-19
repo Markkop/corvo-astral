@@ -40,7 +40,6 @@ export default class AlmaCommand extends BaseCommand {
       description: `**Bonus:** ${bonus.text[lang]}${extraInfo}`
     } as PartialEmbed
 
-
     return embed
   }
 
