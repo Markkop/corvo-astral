@@ -1,23 +1,25 @@
 module.exports = {
   root: true,
   parserOptions: {
-    parser: 'babel-eslint',
-    sourceType: 'module',
-    ecmaVersion: '2018'
+    parser: '@typescript-eslint/parser'
   },
   env: {
     node: true,
     jest: true,
     browser: true
   },
-  extends: ['standard', 'standard-jsdoc'],
+  plugins: [
+    '@typescript-eslint'
+  ],
+  extends: ['standard'],
   rules: {
     'arrow-parens': 0,
     'generator-star-spacing': 0,
     'no-new': 0,
     'jsdoc/require-returns-description': 0,
     'jsdoc/require-property-description': 0,
-    'jsdoc/require-param-description': 0
+    'jsdoc/require-param-description': 0,
+    '@typescript-eslint/no-var-requires': 0
   },
   overrides: [
     {

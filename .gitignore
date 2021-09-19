@@ -1,4 +1,6 @@
 .env
 dist
+out
 node_modules
 coverage
+serversBadge.json

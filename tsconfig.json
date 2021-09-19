@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop" : true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": "src/",
+    "paths": {
+      "@types": ["types.ts"],
+      "@stringsLang": ["stringsLang.ts"],
+      "@managers": ["managers"],
+      "@commands": ["commands"],
+      "@baseCommands": ["baseCommands"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "exclude": ["data", "tests", "tsconfig.json"]
+}
