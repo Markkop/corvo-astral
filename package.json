@@ -2,13 +2,16 @@
   "name": "corvo-astral",
   "version": "2.0.0",
   "description": "A Discord Bot that serves as an Wakfu helper",
+  "engines" : { 
+    "node" : ">=12.22.4" 
+  },
   "main": "dist/bot.js",
   "scripts": {
     "start": "npm run build && node dist/bot.js",
     "start:web": "npm run build && node dist/server.js",
-    "dev": "ts-node src/bot.ts",
+    "dev": "npm run build && ts-node src/bot.ts",
     "build": "tsc",
-    "import": "ts-node src/importers/import.ts",
+    "import": "npm run build && ts-node src/importers/import.ts",
     "lint": "eslint .",
     "test": "jest tests/ --runInBand",
     "clean": "rm package-lock.json && rm -rf node_modules"
