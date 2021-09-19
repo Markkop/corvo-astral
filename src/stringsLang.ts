@@ -212,6 +212,12 @@ export default {
     fr: 'Monstres trouvés',
     pt: 'Monstros encontrados'
   },
+  donationExtraMessage: {
+    en: '\n\nThis bot might stop running soon, we\'re counting on your donation.\nTo find out more type \`.about\` or click [here](https://www.buymeacoffee.com/markkop)',
+    fr: '\n\nCe bot pourrait bientôt cesser de fonctionner, nous comptons sur votre don.\nPour en savoir plus, tapez \`.about\` ou cliquez [ici](https://www.buymeacoffee.com/markkop)',
+    pt: '\n\nEste bot pode parar de funcionar em breve, contamos com sua doação.\nPara saber mais digite \`.about\` ou clique [aqui](https://www.buymeacoffee.com/markkop)',
+    es: '\n\nEste bot podría dejar de funcionar pronto, contamos con su donación.\nPara obtener más información, escriba \`.about\` o haga clic [aquí](https://www.buymeacoffee.com/markkop)',
+  },
   aboutText: {
     fr: `**Corvo Astral** est un bot Discord qui fournit des informations sur le MMORPG Wakfu.
     Utilisez .help pour trouver la liste des commandes et leurs exemples d'utilisation.
