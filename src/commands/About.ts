@@ -1,4 +1,5 @@
 import { BaseCommand } from '@baseCommands'
+import { MessageManager } from '@managers'
 import stringsLang from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
 import { Message } from 'discord.js'
@@ -9,6 +10,12 @@ export default class AboutCommand extends BaseCommand {
   }
 
   public execute (): void {
+    const { options } = MessageManager.getArgumentsAndOptions(this.message)
+
+    if (options.lang) {
+      this.changeLang(options.lang)
+    }
+
     const embed = this.mountAboutEmbed()
     this.send({ embed })
   }
