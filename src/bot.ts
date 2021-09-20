@@ -53,7 +53,6 @@ class Bot {
     console.log(`Online on ${servers} servers: ${this.client.guilds.cache.map(ch => ch.name).join(', ')}`)
     this.client.user.setActivity('.about or .help', { type: 'PLAYING' })
     saveServersNumber(servers)
-    this.sendDailyAlmanaxBonus()
   }
 
   private async onMessage (message: Message) {
@@ -109,6 +108,7 @@ class Bot {
         const guildChannelsIds = guild.channels.cache.map(channel => channel.id)
         const guildConfig = this.configManager.getGuildConfig(guildId)
         const almanaxChannelName = guildConfig.almanaxChannel
+        if (!almanaxChannelName) continue
 
         for (let channelIndex = 0; channelIndex < guildChannelsIds.length; channelIndex++) {
           const guildChannelId = guildChannelsIds[channelIndex]
