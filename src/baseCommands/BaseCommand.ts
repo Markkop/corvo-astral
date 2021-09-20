@@ -23,21 +23,23 @@ export default abstract class BaseCommand {
     return sentContent
   }
 
-  protected async sendHelp (): Promise<Message> {
-    const helpEmbed = this.mountCommandHelpEmbed()
+  protected async sendHelp (command: string = ''): Promise<Message> {
+    const helpEmbed = this.mountCommandHelpEmbed(command)
     return this.send({ embed: helpEmbed })
   }
 
-  private mountCommandHelpEmbed (): PartialEmbed {
-    const commandsListText = Object.keys(commandsHelp).map(command => `\`${command}\``).join(', ')
+  private mountCommandHelpEmbed (command: string = ''): PartialEmbed {
+    const commandWord = command || this.commandWord
+    const commandsListText = Object.keys(commandsHelp).filter(cmd => cmd !== 'default').map(command => `\`${command}\``).join(', ')
+    const commandHelp = commandsHelp[commandWord] || commandsHelp.default
     return {
       color: 0xBCC0C0,
-      title: `:grey_question: Help: \`.help ${this.commandWord}\``,
-      description: commandsHelp[this.commandWord].help[this.lang],
+      title: `:grey_question: Help: \`.help ${commandsHelp[commandWord] ? commandWord : ''}\``,
+      description: commandHelp.help[this.lang],
       fields: [
         {
           name: 'Examples',
-          value: commandsHelp[this.commandWord].examples.map(example => `\`${example}\``).join('\n'),
+          value: commandHelp.examples.map(example => `\`${example}\``).join('\n'),
           inline: false
         },
         {

@@ -1,4 +1,13 @@
 export default {
+  default: {
+    help: {
+      en: 'Get help for a given command.',
+      pt: 'Get help for a given command.',
+      es: 'Get help for a given command.',
+      fr: 'Get help for a given command.'
+    },
+    examples: ['.help', '.help subli', '.help equip']
+  },
   alma: {
     help: {
       en: 'Discover the Almanax bonus for the current day',
@@ -122,15 +131,6 @@ Rejoignez et quittez n'importe quel groupe en y réagissant avec la classe de vo
       '.recipe o eterno raridade=mítico lang=pt'
     ]
   },
-  help: {
-    help: {
-      en: 'Nice try',
-      pt: 'Boa tentativa',
-      es: 'Buen intento',
-      fr: 'Bel tentative'
-    },
-    examples: []
-  },
   config: {
     help: {
       en:
@@ -144,20 +144,6 @@ Rejoignez et quittez n'importe quel groupe en y réagissant avec la classe de vo
       '.config set almanaxChannel=temple-bonus',
       '.config set partyChannel=party-listing',
       '.config get'
-    ]
-  },
-  mob: {
-    help: {
-      en:
-        "Search for monsters using the Wakfu's Website monster search",
-      pt: 'Procure por monstros usando a busca de monstros do site do Wakfu',
-      es: 'Busque monstruos usando la búsqueda de monstruos en el sitio web de Wakfu',
-      fr: "Recherchez des monstres à l'aide de la recherche de monstres sur le site Web de Wakfu"
-    },
-    examples: [
-      '.mob ogrest',
-      '.mob gobbal lang=en',
-      '.mob papatudo lang=pt translate=fr'
     ]
   }
 }

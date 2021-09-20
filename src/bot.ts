@@ -12,7 +12,8 @@ import {
   CalcCommand,
   RecipeCommand,
   SubliCommand,
-  PartyBaseCommand
+  PartyBaseCommand,
+  HelpCommand
  } from '@commands'
 import { GuildConfig } from '@types'
 import { saveServersNumber } from '@utils/serversNumber'
@@ -24,7 +25,8 @@ const commandsMap = {
   recipe: RecipeCommand,
   subli: SubliCommand,
   alma: AlmaCommand,
-  party: PartyBaseCommand
+  party: PartyBaseCommand,
+  help: HelpCommand
 }
 
 class Bot {
