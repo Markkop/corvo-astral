@@ -2,6 +2,7 @@ import { Message, MessageOptions } from 'discord.js'
 import { GuildConfig, PartialEmbed } from '@types'
 import { MessageManager } from '@managers'
 import commandsHelp from '@utils/helpMessages'
+import { handleMessageError } from '@utils/handleError'
 
 export default abstract class BaseCommand {
   protected guildConfig: GuildConfig
@@ -17,10 +18,14 @@ export default abstract class BaseCommand {
   }
 
   protected async send (content: MessageOptions | string): Promise<Message> {
-    const messageContent = typeof content === 'string' ? { content } : content
-    const sentContent = await this.message.channel.send(messageContent)
-    if(Array.isArray(sentContent)) return sentContent[0]
-    return sentContent
+    try {
+      const messageContent = typeof content === 'string' ? { content } : content
+      const sentContent = await this.message.channel.send(messageContent)
+      if(Array.isArray(sentContent)) return sentContent[0]
+      return sentContent
+    } catch (error) {
+      handleMessageError(error, this.message)
+    }
   }
 
   protected async sendHelp (command: string = ''): Promise<Message> {

@@ -20,11 +20,11 @@ async function reactWithErrorEmoji (message) {
  */
 export function handleMessageError (error: Error, message: Message): void {
   const guildName = message.guild.name
-  const channelName = message.channel instanceof DMChannel ? '' : message.channel.name
+  const channelName = message.channel instanceof DMChannel ? 'DM' : message.channel.name
   const authorName = message.author.username
   const authorTag = message.author.tag
   const errorText = error.toString() || ''
-  console.log(`${errorText} on guild "${guildName}", channel "${channelName}" by ${authorName}(${authorTag}) with content "${message.content}"`)
+  console.log(`${error.name}: ${error.message} on guild "${guildName}", channel "${channelName}" by ${authorName}(${authorTag}) with content "${message.content}"`)
   if (errorText.includes('TypeError')) {
     console.log(error)
   }
