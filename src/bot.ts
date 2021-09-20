@@ -15,7 +15,7 @@ import {
   PartyBaseCommand
  } from '@commands'
 import { GuildConfig } from '@types'
-import { saveServersBadgeFile } from '@utils/files'
+import { saveServersNumber } from '@utils/serversNumber'
 
 const commandsMap = {
   equip: EquipCommand,
@@ -51,8 +51,8 @@ class Bot {
   private onReady () {
     const servers = this.client.guilds.cache.size
     console.log(`Online on ${servers} servers: ${this.client.guilds.cache.map(ch => ch.name).join(', ')}`)
-    saveServersBadgeFile(servers)
     this.client.user.setActivity('.about or .help', { type: 'PLAYING' })
+    saveServersNumber(servers)
   }
 
   private async onMessage (message: Message) {

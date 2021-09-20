@@ -1,9 +1,9 @@
 # :crescent_moon: Corvo Astral
 
+[![build](https://github.com/Markkop/corvo-astral/actions/workflows/production.yml/badge.svg)](https://github.com/Markkop/corvo-astral/actions/workflows/production.yml)
 ![Repo status](https://www.repostatus.org/badges/latest/active.svg)
-[![Build Status](https://travis-ci.com/Markkop/corvo-astral.svg?branch=master)](https://travis-ci.com/Markkop/corvo-astral)
+[![servers](https://img.shields.io/endpoint?url=https://mark-nest.herokuapp.com/api/corvo-astral-servers)](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=1342565456&scope=bot)
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
-<!-- [![servers](https://img.shields.io/endpoint?url=https://corvo-astral-staging.herokuapp.com/badge)](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=1342565456&scope=bot) -->
 
 Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that provides information about the [Wakfu MMORPG](https://www.wakfu.com/) game.
 

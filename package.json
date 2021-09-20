@@ -8,7 +8,6 @@
   "main": "dist/bot.js",
   "scripts": {
     "start": "npm run build && node dist/bot.js",
-    "start:web": "npm run build && node dist/server.js",
     "dev": "npm run build && ts-node src/bot.ts",
     "build": "tsc",
     "import": "npm run build && ts-node src/importers/import.ts",

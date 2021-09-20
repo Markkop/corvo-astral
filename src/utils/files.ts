@@ -28,17 +28,3 @@ export function saveFile (data: any, filePath: string) {
     console.error(err)
   }
 }
-
-export function saveServersBadgeFile(servers: number) {
-  try {
-    const badge = {
-      "schemaVersion": 1,
-      "label": "online",
-      "message": `${servers} servers`,
-      "color": "green"
-    }
-    saveFile(badge, 'data/generated/serversBadge.json')
-  } catch (err) {
-    console.error(err)
-  }
-}
