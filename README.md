@@ -35,12 +35,15 @@ To keep the bot running, please consider [donating](https://www.buymeacoffee.com
 
 Find out the current Almanax bonus and optimize your farming with `.alma` command.
 
-![]()
+![image](https://user-images.githubusercontent.com/16388408/134070695-44e76cec-a0af-43e9-af6c-4d4baaf4c98b.png)
 
 ### 🕰 Daily Almanax Notification
 
 At 00:01 Europe/France Timezone (GMT+2) (server time), the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
 If you wish to disable this behavior, simply deny permission to this bot on that channel.
+
+![image](https://user-images.githubusercontent.com/16388408/134070563-2cdc69dd-b25b-4514-b008-b109e2f9df71.png)
+
 
 ### 👥 Party Listing
 
@@ -54,7 +57,7 @@ To make use of this feature, make sure that the bot has enough permissions to th
 .party update
 ```
 
-![Party Listing gif example](https://i.imgur.com/bZkbz6E.gif)
+![Untitled](https://user-images.githubusercontent.com/16388408/134070343-334c6944-b235-470d-8725-704bf393d27b.gif)
 
 ### 🌎 Internationalization
 
@@ -62,7 +65,7 @@ Most commands accept `lang=<lang>` and `translate=<lang>` options.
 A server administrator can also set the default language with `.config` command.  
 Available languages are `en`, `es`, `pt` and `fr`.  
 
-![](http://i.imgur.com/HwrkX8M.png)
+![image](https://user-images.githubusercontent.com/16388408/134066602-8c1fd58a-fa9d-46b0-b11b-c09e3ec71aa0.png)
 
 ### 🛡 Equipment search
 
@@ -78,7 +81,7 @@ If a recipe is associated, it can be displayed by reacting with 🛠️
 .equip o eterno raridade=mítico
 ```
 
-![](https://i.imgur.com/0oZzZ4W.png)
+![image](https://user-images.githubusercontent.com/16388408/134066526-bd20588d-11ab-477c-a538-ad83efdcf792.png)
 
 ### 💎 Sublimation search
 
@@ -95,7 +98,7 @@ When searching by slots combionation, it's possible to match with white slots an
 .subli epic
 ```
 
-![](http://i.imgur.com/ViQQqRE.png)
+![image](https://user-images.githubusercontent.com/16388408/134066388-d3fdf726-001c-4b68-b759-1532693d2866.png)
 
 ### 📜 Recipe search
 
@@ -109,8 +112,7 @@ Recipes with same results are shown together.
 .recipe peace pipe rarity=mythical
 ```
 
-![](http://i.imgur.com/1IBDf5j.png)
-
+![image](https://user-images.githubusercontent.com/16388408/134066195-1496574c-d92e-4ea3-929c-bbcbc7395e25.png)
 
 ### 🥊 Damage Calculator
 
@@ -130,7 +132,7 @@ Examples:
 By sending a Zenith's build link, the bot will access the link, take a printscreen and send it as a preview to the chat.  
 It'll also sum the highest elemental damage with all other non-negative secundary masteries and display it on the message.  
 You can disable this behavior by using `.config set buildPreview=disabled`  
-**Note:** this feature is currently disabled since Zenith has changed their interface. If you wish it back, please consider [supporting](https://www.buymeacoffee.com/markkop).
+**Note: this feature is currently disabled since Zenith has changed their interface. If you wish it back, please consider [supporting](https://www.buymeacoffee.com/markkop).**
 
 ![buildPreviewEx](https://user-images.githubusercontent.com/16388408/102099728-5bc0fe80-3e07-11eb-86a4-e61081ee314c.gif)
 
