@@ -53,6 +53,7 @@ class Bot {
     console.log(`Online on ${servers} servers: ${this.client.guilds.cache.map(ch => ch.name).join(', ')}`)
     this.client.user.setActivity('.about or .help', { type: 'PLAYING' })
     saveServersNumber(servers)
+    this.sendDailyAlmanaxBonus()
   }
 
   private async onMessage (message: Message) {
@@ -114,7 +115,11 @@ class Bot {
           const guildChannel = guild.channels.cache.get(guildChannelId) as TextChannel
           if (!guildChannel.name.includes(almanaxChannelName)) continue
           const embed = AlmaCommand.getAndMountAlmanaxBonusEmbed(guildConfig.lang)
-          await guildChannel.send({ embed })
+          try {
+            await guildChannel.send({ embed })
+          } catch (error) {
+            console.log(`${error.name}: ${error.message} on ${guildChannel.name} at ${guild.name}`)
+          }
         }
       }
     } catch (error) {
