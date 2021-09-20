@@ -2,7 +2,7 @@ import 'module-alias/register'
 require('dotenv').config()
 import { Client, Message, MessageReaction, TextChannel, User } from 'discord.js'
 import cron from 'node-cron'
-import { handleMessageError } from './utils/handleError'
+import { handleMessageError, handleReactionError } from './utils/handleError'
 import { ConfigManager, MessageManager } from '@managers'
 import ReactionService from './services/ReactionService'
 import { 
@@ -76,13 +76,21 @@ class Bot {
   }
 
   private async onMessageReactionAdd(reaction: MessageReaction, user: User) {
-    const guildConfig = this.configManager.getGuildConfig(reaction.message.guild.id)
-    ReactionService.handleReactionAdd(reaction, user, guildConfig as GuildConfig)
+    try {
+      const guildConfig = this.configManager.getGuildConfig(reaction.message.guild.id)
+      ReactionService.handleReactionAdd(reaction, user, guildConfig as GuildConfig)
+    } catch (error) {
+      handleReactionError(error, reaction, user)
+    }
   }
 
   private async onMessageReactionRemove(reaction: MessageReaction, user: User) {
-    const guildConfig = this.configManager.getGuildConfig(reaction.message.guild.id)
-    ReactionService.handleReactionRemove(reaction, user, guildConfig as GuildConfig)
+    try {
+      const guildConfig = this.configManager.getGuildConfig(reaction.message.guild.id)
+      ReactionService.handleReactionRemove(reaction, user, guildConfig as GuildConfig)
+    } catch (error) {
+      handleReactionError(error, reaction, user)
+    }
   }
 
   private getCommand (commandWord: string) {
