@@ -56,7 +56,7 @@ export default abstract class BaseCommand {
     }
   }
 
-  private isValidLang (lang: string) {
+  protected isValidLang (lang: string) {
     const validLangs = ['en', 'es', 'fr', 'pt']
     return validLangs.some(validLang => validLang === lang)
   }

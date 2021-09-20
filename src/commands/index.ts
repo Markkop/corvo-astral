@@ -5,6 +5,7 @@ import RecipeCommand from './Recipe'
 import SubliCommand from './Subli'
 import AlmaCommand from './Alma'
 import HelpCommand from './Help'
+import ConfigCommand from './Config'
 import PartyBaseCommand from './party/PartyBase'
 import PartyCreateCommand from './party/PartyCreate'
 import PartyUpdateCommand from './party/PartyUpdate'
@@ -18,6 +19,7 @@ export {
   SubliCommand,
   AlmaCommand,
   HelpCommand,
+  ConfigCommand,
   PartyBaseCommand,
   PartyCreateCommand,
   PartyUpdateCommand,

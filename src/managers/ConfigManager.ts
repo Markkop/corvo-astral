@@ -44,6 +44,19 @@ class ConfigManager {
     this.guildsConfig.push(config)
   }
 
+  public async updateGuildConfig(config: GuildConfig): Promise<void> {
+    const currentConfig = this.guildsConfig.find(cfg => cfg.id === config.id)
+    if (!currentConfig) {
+      await this.createGuildConfig(config)
+      return
+    }
+
+    const databaseManager = DatabaseManager.getInstance()
+    await databaseManager.createOrUpdateGuild(config)
+    const currentConfigIndex = this.guildsConfig.indexOf(currentConfig)
+    this.guildsConfig[currentConfigIndex] = config
+  }
+
   private async loadGuildsConfig () {
     const databaseManager = DatabaseManager.getInstance()
     this.guildsConfig = await databaseManager.getAllGuildsConfigs()
