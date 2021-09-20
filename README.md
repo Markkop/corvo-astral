@@ -57,6 +57,8 @@ To make use of this feature, make sure that the bot has enough permissions to th
 .party update
 ```
 
+![image](https://user-images.githubusercontent.com/16388408/134071603-3846c4c7-71b6-4c7b-9192-9aa520ef83fe.png)
+
 ![Untitled](https://user-images.githubusercontent.com/16388408/134070343-334c6944-b235-470d-8725-704bf393d27b.gif)
 
 ### 🌎 Internationalization
