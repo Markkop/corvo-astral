@@ -5569,10 +5569,10 @@
       }
     },
     "title": {
-      "fr": "Fou-hou-rre-tout",
-      "en": "Twit-Twoo Purse",
-      "es": "Pop hurri",
-      "pt": "Bagunsaco"
+      "fr": "Tas de livres",
+      "en": "Pile of Books",
+      "es": "Montón de libros",
+      "pt": "Pilha de Livros"
     }
   },
   {
@@ -28676,6 +28676,74 @@
       "en": "Huge Bitten Cawwot",
       "es": "Zanahowia gwande mowdisqueada",
       "pt": "Cenouwa Enolme Moldida"
+    }
+  },
+  {
+    "definition": {
+      "id": 17472,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 20603,
+        "femaleGfxId": 20603
+      }
+    },
+    "title": {
+      "fr": "Petit Muwet deux Oweilles",
+      "en": "Little Two-Eawed Wall",
+      "es": "Muwete pequeño con dos owejas",
+      "pt": "Mulo Pequeno de Duas Olelhas"
+    }
+  },
+  {
+    "definition": {
+      "id": 17473,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 20604,
+        "femaleGfxId": 20604
+      }
+    },
+    "title": {
+      "fr": "Gwand Muwet une Oweille",
+      "en": "Lawge One-Eawed Wall",
+      "es": "Gran muwete con una oweja",
+      "pt": "Mugo Gwande de Uma Oguelha"
+    }
+  },
+  {
+    "definition": {
+      "id": 17474,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 20605,
+        "femaleGfxId": 20605
+      }
+    },
+    "title": {
+      "fr": "Gwand Muwet deux Oweilles",
+      "en": "Lawge Two-Eawed Wall",
+      "es": "Gran muwete con dos owejas",
+      "pt": "Mugo Gwande de Duas Oguelhas"
+    }
+  },
+  {
+    "definition": {
+      "id": 17475,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 20606,
+        "femaleGfxId": 20606
+      }
+    },
+    "title": {
+      "fr": "Petit Muwet une Oweille",
+      "en": "Little One-Eawed Wall",
+      "es": "Muwete pequeño con una oweja",
+      "pt": "Mulo Pequeno de Uma Olelha"
     }
   },
   {
@@ -75201,10 +75269,10 @@
       }
     },
     "title": {
-      "fr": "Anneau nasal de Glagla",
-      "en": "Brrrbli Nose Ring",
-      "es": "Nariguera de glalí",
-      "pt": "Anel Nasal de Frilili"
+      "fr": "Boucle nasale de Glagla",
+      "en": "Brrrbli Septum Ring",
+      "es": "Escudo nasal de glalí",
+      "pt": "Joia Nasal de Frilili"
     }
   },
   {
@@ -108242,7 +108310,7 @@
     "definition": {
       "id": 26395,
       "level": 0,
-      "rarity": 1,
+      "rarity": 3,
       "graphicParameters": {
         "gfxId": 30626395,
         "femaleGfxId": 30626395
@@ -116496,7 +116564,7 @@
     "title": {
       "fr": "Ruine II",
       "en": "Ruin II",
-      "es": "Ruina (mítico)",
+      "es": "Ruina II",
       "pt": "Ruína II"
     }
   },
@@ -116513,7 +116581,7 @@
     "title": {
       "fr": "Dérobade II",
       "en": "Evasion II",
-      "es": "Escapatoria (mítico)",
+      "es": "Escapatoria II",
       "pt": "Evasão II"
     }
   },
@@ -116530,7 +116598,7 @@
     "title": {
       "fr": "Ténacité II",
       "en": "Tenacity II",
-      "es": "Tenacidad",
+      "es": "Tenacidad II",
       "pt": "Tenacidade II"
     }
   },
@@ -116547,7 +116615,7 @@
     "title": {
       "fr": "Solidité II",
       "en": "Solidity II",
-      "es": "Solidez",
+      "es": "Solidez II",
       "pt": "Solidez II"
     }
   },
@@ -116564,7 +116632,7 @@
     "title": {
       "fr": "Puits de Vitalité II",
       "en": "Vitality Well II",
-      "es": "Pozo de Vitalidad (mítico)",
+      "es": "Pozo de vitalidad II",
       "pt": "Poço de Vitalidade II"
     }
   },
@@ -116581,7 +116649,7 @@
     "title": {
       "fr": "Cyclothymie II",
       "en": "Cyclothymia II",
-      "es": "Ciclotimia (mítico)",
+      "es": "Ciclotimia II",
       "pt": "Ciclotimia II"
     }
   },
@@ -116598,7 +116666,7 @@
     "title": {
       "fr": "Enveloppe rocheuse II",
       "en": "Rocky Envelope II",
-      "es": "Envoltorio Rocoso (mítico)",
+      "es": "Envoltorio rocoso II",
       "pt": "Invólucro Rochoso II"
     }
   },
@@ -129710,6 +129778,12 @@
         "gfxId": 30628738,
         "femaleGfxId": 30628738
       }
+    },
+    "title": {
+      "fr": "Bouture de Désespoirbre",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129721,6 +129795,12 @@
         "gfxId": 30628739,
         "femaleGfxId": 30628739
       }
+    },
+    "title": {
+      "fr": "Bois de Désespoirbre",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129732,6 +129812,12 @@
         "gfxId": 30628739,
         "femaleGfxId": 30628739
       }
+    },
+    "title": {
+      "fr": "Bois de Désolation",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129743,6 +129829,12 @@
         "gfxId": 30628741,
         "femaleGfxId": 30628741
       }
+    },
+    "title": {
+      "fr": "Bouture de Non-hêtre",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129754,6 +129846,12 @@
         "gfxId": 30628742,
         "femaleGfxId": 30628742
       }
+    },
+    "title": {
+      "fr": "Bois de Non-hêtre",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129765,6 +129863,12 @@
         "gfxId": 30628742,
         "femaleGfxId": 30628742
       }
+    },
+    "title": {
+      "fr": "Bois de Folie",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129776,6 +129880,12 @@
         "gfxId": 30928744,
         "femaleGfxId": 30928744
       }
+    },
+    "title": {
+      "fr": "Graine de Fruit du démon",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129787,6 +129897,12 @@
         "gfxId": 30928745,
         "femaleGfxId": 30928745
       }
+    },
+    "title": {
+      "fr": "Fruit du démon",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129798,6 +129914,12 @@
         "gfxId": 30928745,
         "femaleGfxId": 30928745
       }
+    },
+    "title": {
+      "fr": "Fruit élastique",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129809,6 +129931,12 @@
         "gfxId": 30928747,
         "femaleGfxId": 30928747
       }
+    },
+    "title": {
+      "fr": "Graine de Haricot maléfique",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129820,6 +129948,12 @@
         "gfxId": 30928748,
         "femaleGfxId": 30928748
       }
+    },
+    "title": {
+      "fr": "Haricot maléfique",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129831,6 +129965,12 @@
         "gfxId": 30928748,
         "femaleGfxId": 30928748
       }
+    },
+    "title": {
+      "fr": "Haricot sympa",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129842,6 +129982,12 @@
         "gfxId": 31328750,
         "femaleGfxId": 31328750
       }
+    },
+    "title": {
+      "fr": "Graine de Galinsoga démoniaque",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129853,6 +129999,12 @@
         "gfxId": 31328751,
         "femaleGfxId": 31328751
       }
+    },
+    "title": {
+      "fr": "Galinsoga démoniaque",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129864,6 +130016,12 @@
         "gfxId": 31328751,
         "femaleGfxId": 31328751
       }
+    },
+    "title": {
+      "fr": "Galinsogalinso",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129875,6 +130033,12 @@
         "gfxId": 31328753,
         "femaleGfxId": 31328753
       }
+    },
+    "title": {
+      "fr": "Graine de Chardominateur",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129886,6 +130050,12 @@
         "gfxId": 31328754,
         "femaleGfxId": 31328754
       }
+    },
+    "title": {
+      "fr": "Chardominateur",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129897,6 +130067,12 @@
         "gfxId": 28128756,
         "femaleGfxId": 28128756
       }
+    },
+    "title": {
+      "fr": "Pierre de Vide",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129908,6 +130084,12 @@
         "gfxId": 28128756,
         "femaleGfxId": 28128756
       }
+    },
+    "title": {
+      "fr": "Pierre de Requiem",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129941,6 +130123,12 @@
         "gfxId": 30828760,
         "femaleGfxId": 30828760
       }
+    },
+    "title": {
+      "fr": "Poiss'Hostile",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129952,6 +130140,12 @@
         "gfxId": 30828760,
         "femaleGfxId": 30828760
       }
+    },
+    "title": {
+      "fr": "Poisson Pêcheur",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129963,6 +130157,12 @@
         "gfxId": 30828760,
         "femaleGfxId": 30828760
       }
+    },
+    "title": {
+      "fr": "Trompeur",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -129974,6 +130174,12 @@
         "gfxId": 30828762,
         "femaleGfxId": 30828762
       }
+    },
+    "title": {
+      "fr": "Fabulateur",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -130244,7 +130450,7 @@
     "title": {
       "fr": "Pierre d'Astrub",
       "en": "Astrub Rock",
-      "es": "",
+      "es": "Piedra de Astrub",
       "pt": "Pedra de Astrub"
     }
   },
@@ -130261,7 +130467,7 @@
     "title": {
       "fr": "Bille de Sufokia",
       "en": "Sufokia Marble",
-      "es": "",
+      "es": "Canica de Sufokia",
       "pt": "Boinhla de Gude de Sufokia"
     }
   },
@@ -130278,7 +130484,7 @@
     "title": {
       "fr": "Corne de Frigost",
       "en": "Frigost Horn",
-      "es": "",
+      "es": "Cuerno de Frigost",
       "pt": "Chifre de Frigost"
     }
   },
@@ -130295,7 +130501,7 @@
     "title": {
       "fr": "Maillet de Bonta",
       "en": "Bonta Mallet",
-      "es": "",
+      "es": "Mazo de Bonta",
       "pt": "Malho de Bonta"
     }
   },
@@ -130312,7 +130518,7 @@
     "title": {
       "fr": "Résidus de Moon",
       "en": "Moon Residue",
-      "es": "",
+      "es": "Residuos de Moon",
       "pt": "Resíduos de Moon"
     }
   },
@@ -130329,7 +130535,7 @@
     "title": {
       "fr": "Basalte du Mont Zinit",
       "en": "Mount Zinit Basalt",
-      "es": "",
+      "es": "Basalto del Monte Zinit",
       "pt": "Basalto do Monte Zinit"
     }
   },
@@ -130346,7 +130552,7 @@
     "title": {
       "fr": "Ruine I",
       "en": "Ruin I",
-      "es": "Ruina (mítico)",
+      "es": "Ruina I",
       "pt": "Ruína I"
     }
   },
@@ -130363,7 +130569,7 @@
     "title": {
       "fr": "Ruine III",
       "en": "Ruin III",
-      "es": "Ruina (mítico)",
+      "es": "Ruina III",
       "pt": "Ruína III"
     }
   },
@@ -130380,7 +130586,7 @@
     "title": {
       "fr": "Dérobade I",
       "en": "Evasion I",
-      "es": "Escapatoria",
+      "es": "Escapatoria I",
       "pt": "Evasão I"
     }
   },
@@ -130397,7 +130603,7 @@
     "title": {
       "fr": "Dérobade III",
       "en": "Evasion III",
-      "es": "Escapatoria",
+      "es": "Escapatoria III",
       "pt": "Evasão III"
     }
   },
@@ -130414,8 +130620,25 @@
     "title": {
       "fr": "Puits de Vitalité I",
       "en": "Vitality Well I",
-      "es": "Pozo de Vitalidad",
+      "es": "Pozo de vitalidad I",
       "pt": "Poço de Vitalidade I"
+    }
+  },
+  {
+    "definition": {
+      "id": 28870,
+      "level": 1,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 81227111,
+        "femaleGfxId": 81227111
+      }
+    },
+    "title": {
+      "fr": "Puits de Vitalité III",
+      "en": "Vitality Well III",
+      "es": "Pozo de vitalidad III",
+      "pt": "Poço de Vitalidade III"
     }
   },
   {
@@ -130431,7 +130654,7 @@
     "title": {
       "fr": "Cyclothymie I",
       "en": "Cyclothymia I",
-      "es": "Ciclotimia",
+      "es": "Ciclotimia I",
       "pt": "Ciclotimia I"
     }
   },
@@ -130448,7 +130671,7 @@
     "title": {
       "fr": "Enveloppe rocheuse I",
       "en": "Rocky Envelope I",
-      "es": "Envoltorio Rocoso",
+      "es": "Envoltorio rocoso I",
       "pt": "Invólucro Rochoso I"
     }
   },
@@ -130465,8 +130688,59 @@
     "title": {
       "fr": "Enveloppe rocheuse III",
       "en": "Rocky Envelope III",
-      "es": "Envoltorio Rocoso",
+      "es": "Envoltorio rocoso III",
       "pt": "Invólucro Rochoso III"
+    }
+  },
+  {
+    "definition": {
+      "id": 28959,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 20206,
+        "femaleGfxId": 20206
+      }
+    },
+    "title": {
+      "fr": "Petit tas de livres du Sliptorium",
+      "en": "Small Pile of Undieworld Books",
+      "es": "Pequeño montón de libros del Sliptorium",
+      "pt": "Pequena Pilha de Livros do Sliptorium"
+    }
+  },
+  {
+    "definition": {
+      "id": 28960,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 20206,
+        "femaleGfxId": 20206
+      }
+    },
+    "title": {
+      "fr": "Petit tas de livres",
+      "en": "Small Pile of Books",
+      "es": "Pequeño montón de libros",
+      "pt": "Pequena Pilha de Livros"
+    }
+  },
+  {
+    "definition": {
+      "id": 28961,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 20208,
+        "femaleGfxId": 20208
+      }
+    },
+    "title": {
+      "fr": "Grand tas de livres",
+      "en": "Big Pile of Books",
+      "es": "Gran montón de libros",
+      "pt": "Grande Pilha de Livros"
     }
   }
 ]

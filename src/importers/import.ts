@@ -16,6 +16,7 @@ async function importData() {
   const currentLiveVersion = await downloader.getWakfuCdnVersion()
 
   if (lastImportedVersion !== currentLiveVersion) {
+    console.log('New version found: ', currentLiveVersion)
     await downloader.downloadAndSaveWakfuCdnData()
     await downloader.downloadSublimationDataFromZenith()
     await downloader.downloadSublimationStatesFromZenith()

@@ -2994,6 +2994,12 @@
       "lastEvolutionStep": 1,
       "usableByHeroes": false,
       "idealRain": 3
+    },
+    "title": {
+      "fr": "Désespoirbre",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -3009,6 +3015,12 @@
       "lastEvolutionStep": 1,
       "usableByHeroes": false,
       "idealRain": 3
+    },
+    "title": {
+      "fr": "Non-hêtre",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -3024,6 +3036,12 @@
       "lastEvolutionStep": 1,
       "usableByHeroes": false,
       "idealRain": 2
+    },
+    "title": {
+      "fr": "Fruit du démon",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -3039,6 +3057,12 @@
       "lastEvolutionStep": 1,
       "usableByHeroes": false,
       "idealRain": 2
+    },
+    "title": {
+      "fr": "Haricot maléfique",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -3054,6 +3078,12 @@
       "lastEvolutionStep": 1,
       "usableByHeroes": false,
       "idealRain": 1
+    },
+    "title": {
+      "fr": "Galinsoga démoniaque",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -3069,6 +3099,12 @@
       "lastEvolutionStep": 1,
       "usableByHeroes": false,
       "idealRain": 1
+    },
+    "title": {
+      "fr": "Chardominateur",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -3084,6 +3120,12 @@
       "lastEvolutionStep": 16,
       "usableByHeroes": false,
       "idealRain": 0
+    },
+    "title": {
+      "fr": "Pierre de Vide",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -3114,6 +3156,12 @@
       "lastEvolutionStep": 1,
       "usableByHeroes": false,
       "idealRain": 0
+    },
+    "title": {
+      "fr": "Poiss'Hostile",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   },
   {
@@ -3129,6 +3177,12 @@
       "lastEvolutionStep": 1,
       "usableByHeroes": false,
       "idealRain": 0
+    },
+    "title": {
+      "fr": "Trompeur",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   }
 ]

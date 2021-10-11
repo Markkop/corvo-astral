@@ -24,7 +24,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210349,
+              "id_spell_effect_value": 212606,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -53,7 +53,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -66,7 +66,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210217,
+              "id_spell_effect_value": 212493,
               "offset": 0,
               "damage": 0,
               "ratio": 0.40000000596046,
@@ -114,7 +114,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210218,
+              "id_spell_effect_value": 212494,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -128,7 +128,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210219,
+              "id_spell_effect_value": 212495,
               "offset": 1,
               "damage": 0,
               "ratio": 1,
@@ -170,7 +170,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210260,
+              "id_spell_effect_value": 212529,
               "offset": 0,
               "damage": 0,
               "ratio": -10,
@@ -182,304 +182,6 @@
               "evolution": null,
               "random_number": 0,
               "statistics": null
-            }
-          ]
-        }
-      ],
-      "translations": []
-    },
-    {
-      "id_state": 5977,
-      "name_state": "Arme de Lumière",
-      "gfx_id": "poison_all",
-      "effects": [
-        {
-          "id_effect": 283080,
-          "name_effect": "En début de tour :\\n[pl]Dommage [el6] : [#1]",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 5977,
-            "id_effect": 283080
-          },
-          "translations": [],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210506,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 10,
-              "id_stats": 1083,
-              "id_effect": 283080,
-              "will_calculate_damage": 1,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": null
-            }
-          ]
-        }
-      ],
-      "translations": []
-    },
-    {
-      "id_state": 6710,
-      "name_state": "Énergie ancestrale - Bonus",
-      "gfx_id": "263",
-      "effects": [
-        {
-          "id_effect": 309460,
-          "name_effect": "[#1]% Dommages infligés",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6710,
-            "id_effect": 309460
-          },
-          "translations": [],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210507,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 5,
-              "id_stats": 126,
-              "id_effect": 309460,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 126,
-                "name_stats": "Dommages Infligés",
-                "image_stats": "damage.webp",
-                "base_stats": 0,
-                "order_stats": 1,
-                "id_stats_type": 4,
-                "order": 43,
-                "element": null,
-                "search_display": 0,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309461,
-          "name_effect": "[#1] Résistance Élémentaire",
-          "ui_position": 1,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6710,
-            "id_effect": 309461
-          },
-          "translations": [],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210508,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 25,
-              "id_stats": 80,
-              "id_effect": 309461,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 80,
-                "name_stats": "Résistance élémentaire",
-                "image_stats": "element_resistance.webp",
-                "base_stats": 0,
-                "order_stats": 0,
-                "id_stats_type": null,
-                "order": 33,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        }
-      ],
-      "translations": []
-    },
-    {
-      "id_state": 6713,
-      "name_state": "Renaissance - Bonus",
-      "gfx_id": "264",
-      "effects": [
-        {
-          "id_effect": 309483,
-          "name_effect": "[#1] PM",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309483
-          },
-          "translations": [],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210509,
-              "offset": 0,
-              "damage": 1,
-              "ratio": 0,
-              "id_stats": 41,
-              "id_effect": 309483,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 41,
-                "name_stats": "PM",
-                "image_stats": "pm.webp",
-                "base_stats": 3,
-                "order_stats": 3,
-                "id_stats_type": 1,
-                "order": 2,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309484,
-          "name_effect": "[#1]% Dommages infligés",
-          "ui_position": 1,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309484
-          },
-          "translations": [],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210510,
-              "offset": 0,
-              "damage": 15,
-              "ratio": 0,
-              "id_stats": 126,
-              "id_effect": 309484,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 126,
-                "name_stats": "Dommages Infligés",
-                "image_stats": "damage.webp",
-                "base_stats": 0,
-                "order_stats": 1,
-                "id_stats_type": 4,
-                "order": 43,
-                "element": null,
-                "search_display": 0,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309485,
-          "name_effect": "[#1] Résistance Élémentaire",
-          "ui_position": 2,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309485
-          },
-          "translations": [],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210511,
-              "offset": 0,
-              "damage": 50,
-              "ratio": 0,
-              "id_stats": 80,
-              "id_effect": 309485,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 80,
-                "name_stats": "Résistance élémentaire",
-                "image_stats": "element_resistance.webp",
-                "base_stats": 0,
-                "order_stats": 0,
-                "id_stats_type": null,
-                "order": 33,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
             }
           ]
         }
@@ -508,14 +210,14 @@
           },
           "translations": [
             {
-              "id": 937684,
+              "id": 948199,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 151183,
               "locale": "pt",
               "value": "[#1]% de Danos causados no próximo feitiço de Danos",
-              "created_at": "2021-07-11T10:06:31.000000Z",
-              "updated_at": "2021-07-11T10:06:31.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -523,7 +225,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210349,
+              "id_spell_effect_value": 212606,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -541,14 +243,14 @@
       ],
       "translations": [
         {
-          "id": 937681,
+          "id": 948196,
           "table_name": "state",
           "column_name": "name_state",
           "foreign_key": 3462,
           "locale": "pt",
           "value": "Preparação",
-          "created_at": "2021-07-11T10:06:31.000000Z",
-          "updated_at": "2021-07-11T10:06:31.000000Z"
+          "created_at": "2021-10-08T23:39:56.000000Z",
+          "updated_at": "2021-10-08T23:39:56.000000Z"
         }
       ]
     },
@@ -563,7 +265,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -572,14 +274,14 @@
           },
           "translations": [
             {
-              "id": 936787,
+              "id": 947428,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 151869,
               "locale": "pt",
               "value": "[#1] de Bloqueio",
-              "created_at": "2021-07-11T10:06:30.000000Z",
-              "updated_at": "2021-07-11T10:06:30.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -587,7 +289,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210217,
+              "id_spell_effect_value": 212493,
               "offset": 0,
               "damage": 0,
               "ratio": 0.40000000596046,
@@ -631,14 +333,14 @@
           },
           "translations": [
             {
-              "id": 936790,
+              "id": 947431,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 162662,
               "locale": "pt",
               "value": "No início do turno, ao redor do lançador:\\n[pl]Aos [enemy]: Dano [el6]: [#1][CIRCLERING]\\nSe o alvo morrer:\\n[pl][enemy] Dano [el6]: [#2][CIRCLERING]",
-              "created_at": "2021-07-11T10:06:30.000000Z",
-              "updated_at": "2021-07-11T10:06:30.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -646,7 +348,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210218,
+              "id_spell_effect_value": 212494,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -660,7 +362,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210219,
+              "id_spell_effect_value": 212495,
               "offset": 1,
               "damage": 0,
               "ratio": 1,
@@ -678,14 +380,14 @@
       ],
       "translations": [
         {
-          "id": 936784,
+          "id": 947425,
           "table_name": "state",
           "column_name": "name_state",
           "foreign_key": 751,
           "locale": "pt",
           "value": "Flamejante",
-          "created_at": "2021-07-11T10:06:30.000000Z",
-          "updated_at": "2021-07-11T10:06:30.000000Z"
+          "created_at": "2021-10-08T23:39:56.000000Z",
+          "updated_at": "2021-10-08T23:39:56.000000Z"
         }
       ]
     },
@@ -709,14 +411,14 @@
           },
           "translations": [
             {
-              "id": 937054,
+              "id": 947644,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 177975,
               "locale": "pt",
               "value": "[#1]% de Curas recebidas",
-              "created_at": "2021-07-11T10:06:30.000000Z",
-              "updated_at": "2021-07-11T10:06:30.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -724,7 +426,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210260,
+              "id_spell_effect_value": 212529,
               "offset": 0,
               "damage": 0,
               "ratio": -10,
@@ -742,411 +444,14 @@
       ],
       "translations": [
         {
-          "id": 937051,
+          "id": 947641,
           "table_name": "state",
           "column_name": "name_state",
           "foreign_key": 756,
           "locale": "pt",
           "value": "Incurável",
-          "created_at": "2021-07-11T10:06:30.000000Z",
-          "updated_at": "2021-07-11T10:06:30.000000Z"
-        }
-      ]
-    },
-    {
-      "id_state": 5977,
-      "name_state": "Arme de Lumière",
-      "gfx_id": "poison_all",
-      "effects": [
-        {
-          "id_effect": 283080,
-          "name_effect": "En début de tour :\\n[pl]Dommage [el6] : [#1]",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 5977,
-            "id_effect": 283080
-          },
-          "translations": [
-            {
-              "id": 938767,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 283080,
-              "locale": "pt",
-              "value": "No começo do turno:\\n[pl]Dano [el6]: [#1]",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210506,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 10,
-              "id_stats": 1083,
-              "id_effect": 283080,
-              "will_calculate_damage": 1,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": null
-            }
-          ]
-        }
-      ],
-      "translations": [
-        {
-          "id": 938764,
-          "table_name": "state",
-          "column_name": "name_state",
-          "foreign_key": 5977,
-          "locale": "pt",
-          "value": "Arma de Luz",
-          "created_at": "2021-07-11T10:06:32.000000Z",
-          "updated_at": "2021-07-11T10:06:32.000000Z"
-        }
-      ]
-    },
-    {
-      "id_state": 6710,
-      "name_state": "Énergie ancestrale - Bonus",
-      "gfx_id": "263",
-      "effects": [
-        {
-          "id_effect": 309460,
-          "name_effect": "[#1]% Dommages infligés",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6710,
-            "id_effect": 309460
-          },
-          "translations": [
-            {
-              "id": 938773,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309460,
-              "locale": "pt",
-              "value": "[#1]% de Danos causados",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210507,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 5,
-              "id_stats": 126,
-              "id_effect": 309460,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 126,
-                "name_stats": "Dommages Infligés",
-                "image_stats": "damage.webp",
-                "base_stats": 0,
-                "order_stats": 1,
-                "id_stats_type": 4,
-                "order": 43,
-                "element": null,
-                "search_display": 0,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309461,
-          "name_effect": "[#1] Résistance Élémentaire",
-          "ui_position": 1,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6710,
-            "id_effect": 309461
-          },
-          "translations": [
-            {
-              "id": 938776,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309461,
-              "locale": "pt",
-              "value": "[#1] de resistência elementar",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210508,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 25,
-              "id_stats": 80,
-              "id_effect": 309461,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 80,
-                "name_stats": "Résistance élémentaire",
-                "image_stats": "element_resistance.webp",
-                "base_stats": 0,
-                "order_stats": 0,
-                "id_stats_type": null,
-                "order": 33,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        }
-      ],
-      "translations": [
-        {
-          "id": 938770,
-          "table_name": "state",
-          "column_name": "name_state",
-          "foreign_key": 6710,
-          "locale": "pt",
-          "value": "Energia Ancestral - Bônus",
-          "created_at": "2021-07-11T10:06:32.000000Z",
-          "updated_at": "2021-07-11T10:06:32.000000Z"
-        }
-      ]
-    },
-    {
-      "id_state": 6713,
-      "name_state": "Renaissance - Bonus",
-      "gfx_id": "264",
-      "effects": [
-        {
-          "id_effect": 309483,
-          "name_effect": "[#1] PM",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309483
-          },
-          "translations": [
-            {
-              "id": 938782,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309483,
-              "locale": "pt",
-              "value": "[#1] de PM",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210509,
-              "offset": 0,
-              "damage": 1,
-              "ratio": 0,
-              "id_stats": 41,
-              "id_effect": 309483,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 41,
-                "name_stats": "PM",
-                "image_stats": "pm.webp",
-                "base_stats": 3,
-                "order_stats": 3,
-                "id_stats_type": 1,
-                "order": 2,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309484,
-          "name_effect": "[#1]% Dommages infligés",
-          "ui_position": 1,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309484
-          },
-          "translations": [
-            {
-              "id": 938785,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309484,
-              "locale": "pt",
-              "value": "[#1]% de Danos causados",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210510,
-              "offset": 0,
-              "damage": 15,
-              "ratio": 0,
-              "id_stats": 126,
-              "id_effect": 309484,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 126,
-                "name_stats": "Dommages Infligés",
-                "image_stats": "damage.webp",
-                "base_stats": 0,
-                "order_stats": 1,
-                "id_stats_type": 4,
-                "order": 43,
-                "element": null,
-                "search_display": 0,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309485,
-          "name_effect": "[#1] Résistance Élémentaire",
-          "ui_position": 2,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309485
-          },
-          "translations": [
-            {
-              "id": 938788,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309485,
-              "locale": "pt",
-              "value": "[#1] de resistência elementar",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210511,
-              "offset": 0,
-              "damage": 50,
-              "ratio": 0,
-              "id_stats": 80,
-              "id_effect": 309485,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 80,
-                "name_stats": "Résistance élémentaire",
-                "image_stats": "element_resistance.webp",
-                "base_stats": 0,
-                "order_stats": 0,
-                "id_stats_type": null,
-                "order": 33,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        }
-      ],
-      "translations": [
-        {
-          "id": 938779,
-          "table_name": "state",
-          "column_name": "name_state",
-          "foreign_key": 6713,
-          "locale": "pt",
-          "value": "Renascimento - Bônus",
-          "created_at": "2021-07-11T10:06:32.000000Z",
-          "updated_at": "2021-07-11T10:06:32.000000Z"
+          "created_at": "2021-10-08T23:39:56.000000Z",
+          "updated_at": "2021-10-08T23:39:56.000000Z"
         }
       ]
     }
@@ -1172,14 +477,14 @@
           },
           "translations": [
             {
-              "id": 937683,
+              "id": 948198,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 151183,
               "locale": "es",
               "value": "[#1]% daños infligidos en el próximo hechizo de daños",
-              "created_at": "2021-07-11T10:06:31.000000Z",
-              "updated_at": "2021-07-11T10:06:31.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -1187,7 +492,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210349,
+              "id_spell_effect_value": 212606,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -1205,14 +510,14 @@
       ],
       "translations": [
         {
-          "id": 937680,
+          "id": 948195,
           "table_name": "state",
           "column_name": "name_state",
           "foreign_key": 3462,
           "locale": "es",
           "value": "Preparación",
-          "created_at": "2021-07-11T10:06:31.000000Z",
-          "updated_at": "2021-07-11T10:06:31.000000Z"
+          "created_at": "2021-10-08T23:39:56.000000Z",
+          "updated_at": "2021-10-08T23:39:56.000000Z"
         }
       ]
     },
@@ -1227,7 +532,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -1236,14 +541,14 @@
           },
           "translations": [
             {
-              "id": 936786,
+              "id": 947427,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 151869,
               "locale": "es",
               "value": "[#1] placaje",
-              "created_at": "2021-07-11T10:06:30.000000Z",
-              "updated_at": "2021-07-11T10:06:30.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -1251,7 +556,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210217,
+              "id_spell_effect_value": 212493,
               "offset": 0,
               "damage": 0,
               "ratio": 0.40000000596046,
@@ -1295,14 +600,14 @@
           },
           "translations": [
             {
-              "id": 936789,
+              "id": 947430,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 162662,
               "locale": "es",
               "value": "Al principio del turno, alrededor del lanzador:\\n[pl]A los [enemy]: Daño [el6]: [#1][CIRCLERING]\\nSi el objetivo muere:\\n[pl][enemy] Daño [el6]: [#2][CIRCLERING]",
-              "created_at": "2021-07-11T10:06:30.000000Z",
-              "updated_at": "2021-07-11T10:06:30.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -1310,7 +615,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210218,
+              "id_spell_effect_value": 212494,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -1324,7 +629,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210219,
+              "id_spell_effect_value": 212495,
               "offset": 1,
               "damage": 0,
               "ratio": 1,
@@ -1342,14 +647,14 @@
       ],
       "translations": [
         {
-          "id": 936783,
+          "id": 947424,
           "table_name": "state",
           "column_name": "name_state",
           "foreign_key": 751,
           "locale": "es",
           "value": "Ardiente",
-          "created_at": "2021-07-11T10:06:30.000000Z",
-          "updated_at": "2021-07-11T10:06:30.000000Z"
+          "created_at": "2021-10-08T23:39:56.000000Z",
+          "updated_at": "2021-10-08T23:39:56.000000Z"
         }
       ]
     },
@@ -1373,14 +678,14 @@
           },
           "translations": [
             {
-              "id": 937053,
+              "id": 947643,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 177975,
               "locale": "es",
               "value": "[#1]% curas recibidas",
-              "created_at": "2021-07-11T10:06:30.000000Z",
-              "updated_at": "2021-07-11T10:06:30.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -1388,7 +693,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210260,
+              "id_spell_effect_value": 212529,
               "offset": 0,
               "damage": 0,
               "ratio": -10,
@@ -1406,411 +711,14 @@
       ],
       "translations": [
         {
-          "id": 937050,
+          "id": 947640,
           "table_name": "state",
           "column_name": "name_state",
           "foreign_key": 756,
           "locale": "es",
           "value": "Incurable",
-          "created_at": "2021-07-11T10:06:30.000000Z",
-          "updated_at": "2021-07-11T10:06:30.000000Z"
-        }
-      ]
-    },
-    {
-      "id_state": 5977,
-      "name_state": "Arme de Lumière",
-      "gfx_id": "poison_all",
-      "effects": [
-        {
-          "id_effect": 283080,
-          "name_effect": "En début de tour :\\n[pl]Dommage [el6] : [#1]",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 5977,
-            "id_effect": 283080
-          },
-          "translations": [
-            {
-              "id": 938766,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 283080,
-              "locale": "es",
-              "value": "Al principio del turno:\\n[pl]Daño [el6]: [#1]",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210506,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 10,
-              "id_stats": 1083,
-              "id_effect": 283080,
-              "will_calculate_damage": 1,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": null
-            }
-          ]
-        }
-      ],
-      "translations": [
-        {
-          "id": 938763,
-          "table_name": "state",
-          "column_name": "name_state",
-          "foreign_key": 5977,
-          "locale": "es",
-          "value": "Arma de Luz",
-          "created_at": "2021-07-11T10:06:32.000000Z",
-          "updated_at": "2021-07-11T10:06:32.000000Z"
-        }
-      ]
-    },
-    {
-      "id_state": 6710,
-      "name_state": "Énergie ancestrale - Bonus",
-      "gfx_id": "263",
-      "effects": [
-        {
-          "id_effect": 309460,
-          "name_effect": "[#1]% Dommages infligés",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6710,
-            "id_effect": 309460
-          },
-          "translations": [
-            {
-              "id": 938772,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309460,
-              "locale": "es",
-              "value": "[#1]% de daños infligidos",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210507,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 5,
-              "id_stats": 126,
-              "id_effect": 309460,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 126,
-                "name_stats": "Dommages Infligés",
-                "image_stats": "damage.webp",
-                "base_stats": 0,
-                "order_stats": 1,
-                "id_stats_type": 4,
-                "order": 43,
-                "element": null,
-                "search_display": 0,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309461,
-          "name_effect": "[#1] Résistance Élémentaire",
-          "ui_position": 1,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6710,
-            "id_effect": 309461
-          },
-          "translations": [
-            {
-              "id": 938775,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309461,
-              "locale": "es",
-              "value": "[#1] resistencia elemental",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210508,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 25,
-              "id_stats": 80,
-              "id_effect": 309461,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 80,
-                "name_stats": "Résistance élémentaire",
-                "image_stats": "element_resistance.webp",
-                "base_stats": 0,
-                "order_stats": 0,
-                "id_stats_type": null,
-                "order": 33,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        }
-      ],
-      "translations": [
-        {
-          "id": 938769,
-          "table_name": "state",
-          "column_name": "name_state",
-          "foreign_key": 6710,
-          "locale": "es",
-          "value": "Energía Ancestral - Bonus",
-          "created_at": "2021-07-11T10:06:32.000000Z",
-          "updated_at": "2021-07-11T10:06:32.000000Z"
-        }
-      ]
-    },
-    {
-      "id_state": 6713,
-      "name_state": "Renaissance - Bonus",
-      "gfx_id": "264",
-      "effects": [
-        {
-          "id_effect": 309483,
-          "name_effect": "[#1] PM",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309483
-          },
-          "translations": [
-            {
-              "id": 938781,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309483,
-              "locale": "es",
-              "value": "[#1] PM",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210509,
-              "offset": 0,
-              "damage": 1,
-              "ratio": 0,
-              "id_stats": 41,
-              "id_effect": 309483,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 41,
-                "name_stats": "PM",
-                "image_stats": "pm.webp",
-                "base_stats": 3,
-                "order_stats": 3,
-                "id_stats_type": 1,
-                "order": 2,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309484,
-          "name_effect": "[#1]% Dommages infligés",
-          "ui_position": 1,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309484
-          },
-          "translations": [
-            {
-              "id": 938784,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309484,
-              "locale": "es",
-              "value": "[#1]% de daños infligidos",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210510,
-              "offset": 0,
-              "damage": 15,
-              "ratio": 0,
-              "id_stats": 126,
-              "id_effect": 309484,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 126,
-                "name_stats": "Dommages Infligés",
-                "image_stats": "damage.webp",
-                "base_stats": 0,
-                "order_stats": 1,
-                "id_stats_type": 4,
-                "order": 43,
-                "element": null,
-                "search_display": 0,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309485,
-          "name_effect": "[#1] Résistance Élémentaire",
-          "ui_position": 2,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309485
-          },
-          "translations": [
-            {
-              "id": 938787,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309485,
-              "locale": "es",
-              "value": "[#1] resistencia elemental",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210511,
-              "offset": 0,
-              "damage": 50,
-              "ratio": 0,
-              "id_stats": 80,
-              "id_effect": 309485,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 80,
-                "name_stats": "Résistance élémentaire",
-                "image_stats": "element_resistance.webp",
-                "base_stats": 0,
-                "order_stats": 0,
-                "id_stats_type": null,
-                "order": 33,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        }
-      ],
-      "translations": [
-        {
-          "id": 938778,
-          "table_name": "state",
-          "column_name": "name_state",
-          "foreign_key": 6713,
-          "locale": "es",
-          "value": "Resurrección - Bonus",
-          "created_at": "2021-07-11T10:06:32.000000Z",
-          "updated_at": "2021-07-11T10:06:32.000000Z"
+          "created_at": "2021-10-08T23:39:56.000000Z",
+          "updated_at": "2021-10-08T23:39:56.000000Z"
         }
       ]
     }
@@ -1836,14 +744,14 @@
           },
           "translations": [
             {
-              "id": 937682,
+              "id": 948197,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 151183,
               "locale": "en",
               "value": "[#1]% Damage inflicted on next Damage spell",
-              "created_at": "2021-07-11T10:06:31.000000Z",
-              "updated_at": "2021-07-11T10:06:31.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -1851,7 +759,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210349,
+              "id_spell_effect_value": 212606,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -1869,14 +777,14 @@
       ],
       "translations": [
         {
-          "id": 937679,
+          "id": 948194,
           "table_name": "state",
           "column_name": "name_state",
           "foreign_key": 3462,
           "locale": "en",
           "value": "Preparation",
-          "created_at": "2021-07-11T10:06:31.000000Z",
-          "updated_at": "2021-07-11T10:06:31.000000Z"
+          "created_at": "2021-10-08T23:39:56.000000Z",
+          "updated_at": "2021-10-08T23:39:56.000000Z"
         }
       ]
     },
@@ -1891,7 +799,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -1900,14 +808,14 @@
           },
           "translations": [
             {
-              "id": 936785,
+              "id": 947426,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 151869,
               "locale": "en",
               "value": "[#1] Lock",
-              "created_at": "2021-07-11T10:06:30.000000Z",
-              "updated_at": "2021-07-11T10:06:30.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -1915,7 +823,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210217,
+              "id_spell_effect_value": 212493,
               "offset": 0,
               "damage": 0,
               "ratio": 0.40000000596046,
@@ -1959,14 +867,14 @@
           },
           "translations": [
             {
-              "id": 936788,
+              "id": 947429,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 162662,
               "locale": "en",
               "value": "At the start of the turn, around the caster:\\n[pl]To [enemy]: [el6] Damage: [#1][CIRCLERING]\\nIf the target dies:\\n[pl][enemy] [el6] Damage: [#2][CIRCLERING]",
-              "created_at": "2021-07-11T10:06:30.000000Z",
-              "updated_at": "2021-07-11T10:06:30.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -1974,7 +882,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210218,
+              "id_spell_effect_value": 212494,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -1988,7 +896,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210219,
+              "id_spell_effect_value": 212495,
               "offset": 1,
               "damage": 0,
               "ratio": 1,
@@ -2006,14 +914,14 @@
       ],
       "translations": [
         {
-          "id": 936782,
+          "id": 947423,
           "table_name": "state",
           "column_name": "name_state",
           "foreign_key": 751,
           "locale": "en",
           "value": "Flaming",
-          "created_at": "2021-07-11T10:06:30.000000Z",
-          "updated_at": "2021-07-11T10:06:30.000000Z"
+          "created_at": "2021-10-08T23:39:56.000000Z",
+          "updated_at": "2021-10-08T23:39:56.000000Z"
         }
       ]
     },
@@ -2037,14 +945,14 @@
           },
           "translations": [
             {
-              "id": 937052,
+              "id": 947642,
               "table_name": "effects",
               "column_name": "name_effect",
               "foreign_key": 177975,
               "locale": "en",
               "value": "[#1]% Heals received",
-              "created_at": "2021-07-11T10:06:30.000000Z",
-              "updated_at": "2021-07-11T10:06:30.000000Z"
+              "created_at": "2021-10-08T23:39:56.000000Z",
+              "updated_at": "2021-10-08T23:39:56.000000Z"
             }
           ],
           "inner_spells": [],
@@ -2052,7 +960,7 @@
           "inner_states": [],
           "values": [
             {
-              "id_spell_effect_value": 210260,
+              "id_spell_effect_value": 212529,
               "offset": 0,
               "damage": 0,
               "ratio": -10,
@@ -2070,411 +978,14 @@
       ],
       "translations": [
         {
-          "id": 937049,
+          "id": 947639,
           "table_name": "state",
           "column_name": "name_state",
           "foreign_key": 756,
           "locale": "en",
           "value": "Incurable",
-          "created_at": "2021-07-11T10:06:30.000000Z",
-          "updated_at": "2021-07-11T10:06:30.000000Z"
-        }
-      ]
-    },
-    {
-      "id_state": 5977,
-      "name_state": "Arme de Lumière",
-      "gfx_id": "poison_all",
-      "effects": [
-        {
-          "id_effect": 283080,
-          "name_effect": "En début de tour :\\n[pl]Dommage [el6] : [#1]",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 5977,
-            "id_effect": 283080
-          },
-          "translations": [
-            {
-              "id": 938765,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 283080,
-              "locale": "en",
-              "value": "At start of turn:\\n[pl][el6] Damage: [#1]",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210506,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 10,
-              "id_stats": 1083,
-              "id_effect": 283080,
-              "will_calculate_damage": 1,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": null
-            }
-          ]
-        }
-      ],
-      "translations": [
-        {
-          "id": 938762,
-          "table_name": "state",
-          "column_name": "name_state",
-          "foreign_key": 5977,
-          "locale": "en",
-          "value": "Light Weapon",
-          "created_at": "2021-07-11T10:06:32.000000Z",
-          "updated_at": "2021-07-11T10:06:32.000000Z"
-        }
-      ]
-    },
-    {
-      "id_state": 6710,
-      "name_state": "Énergie ancestrale - Bonus",
-      "gfx_id": "263",
-      "effects": [
-        {
-          "id_effect": 309460,
-          "name_effect": "[#1]% Dommages infligés",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6710,
-            "id_effect": 309460
-          },
-          "translations": [
-            {
-              "id": 938771,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309460,
-              "locale": "en",
-              "value": "[#1]% Damage inflicted",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210507,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 5,
-              "id_stats": 126,
-              "id_effect": 309460,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 126,
-                "name_stats": "Dommages Infligés",
-                "image_stats": "damage.webp",
-                "base_stats": 0,
-                "order_stats": 1,
-                "id_stats_type": 4,
-                "order": 43,
-                "element": null,
-                "search_display": 0,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309461,
-          "name_effect": "[#1] Résistance Élémentaire",
-          "ui_position": 1,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6710,
-            "id_effect": 309461
-          },
-          "translations": [
-            {
-              "id": 938774,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309461,
-              "locale": "en",
-              "value": "[#1] Elemental Resistance",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210508,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 25,
-              "id_stats": 80,
-              "id_effect": 309461,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 80,
-                "name_stats": "Résistance élémentaire",
-                "image_stats": "element_resistance.webp",
-                "base_stats": 0,
-                "order_stats": 0,
-                "id_stats_type": null,
-                "order": 33,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        }
-      ],
-      "translations": [
-        {
-          "id": 938768,
-          "table_name": "state",
-          "column_name": "name_state",
-          "foreign_key": 6710,
-          "locale": "en",
-          "value": "Ancestral Energy - Bonus",
-          "created_at": "2021-07-11T10:06:32.000000Z",
-          "updated_at": "2021-07-11T10:06:32.000000Z"
-        }
-      ]
-    },
-    {
-      "id_state": 6713,
-      "name_state": "Renaissance - Bonus",
-      "gfx_id": "264",
-      "effects": [
-        {
-          "id_effect": 309483,
-          "name_effect": "[#1] PM",
-          "ui_position": 0,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309483
-          },
-          "translations": [
-            {
-              "id": 938780,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309483,
-              "locale": "en",
-              "value": "[#1] MP",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210509,
-              "offset": 0,
-              "damage": 1,
-              "ratio": 0,
-              "id_stats": 41,
-              "id_effect": 309483,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 41,
-                "name_stats": "PM",
-                "image_stats": "pm.webp",
-                "base_stats": 3,
-                "order_stats": 3,
-                "id_stats_type": 1,
-                "order": 2,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309484,
-          "name_effect": "[#1]% Dommages infligés",
-          "ui_position": 1,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": -32513,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309484
-          },
-          "translations": [
-            {
-              "id": 938783,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309484,
-              "locale": "en",
-              "value": "[#1]% Damage inflicted",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210510,
-              "offset": 0,
-              "damage": 15,
-              "ratio": 0,
-              "id_stats": 126,
-              "id_effect": 309484,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 126,
-                "name_stats": "Dommages Infligés",
-                "image_stats": "damage.webp",
-                "base_stats": 0,
-                "order_stats": 1,
-                "id_stats_type": 4,
-                "order": 43,
-                "element": null,
-                "search_display": 0,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 309485,
-          "name_effect": "[#1] Résistance Élémentaire",
-          "ui_position": 2,
-          "from_evolution": 0,
-          "container_min_level": 0,
-          "container_max_level": 32767,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 6713,
-            "id_effect": 309485
-          },
-          "translations": [
-            {
-              "id": 938786,
-              "table_name": "effects",
-              "column_name": "name_effect",
-              "foreign_key": 309485,
-              "locale": "en",
-              "value": "[#1] Elemental Resistance",
-              "created_at": "2021-07-11T10:06:32.000000Z",
-              "updated_at": "2021-07-11T10:06:32.000000Z"
-            }
-          ],
-          "inner_spells": [],
-          "inner_ar": [],
-          "inner_states": [],
-          "values": [
-            {
-              "id_spell_effect_value": 210511,
-              "offset": 0,
-              "damage": 50,
-              "ratio": 0,
-              "id_stats": 80,
-              "id_effect": 309485,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 80,
-                "name_stats": "Résistance élémentaire",
-                "image_stats": "element_resistance.webp",
-                "base_stats": 0,
-                "order_stats": 0,
-                "id_stats_type": null,
-                "order": 33,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        }
-      ],
-      "translations": [
-        {
-          "id": 938777,
-          "table_name": "state",
-          "column_name": "name_state",
-          "foreign_key": 6713,
-          "locale": "en",
-          "value": "Rebirth - Bonus",
-          "created_at": "2021-07-11T10:06:32.000000Z",
-          "updated_at": "2021-07-11T10:06:32.000000Z"
+          "created_at": "2021-10-08T23:39:56.000000Z",
+          "updated_at": "2021-10-08T23:39:56.000000Z"
         }
       ]
     }

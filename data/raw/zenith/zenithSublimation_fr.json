@@ -30,7 +30,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64463,
+              "id_spell_effect_value": 212814,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -75,7 +75,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64464,
+              "id_spell_effect_value": 212815,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -120,7 +120,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64465,
+              "id_spell_effect_value": 212816,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -200,7 +200,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64466,
+              "id_spell_effect_value": 212817,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -245,7 +245,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64467,
+              "id_spell_effect_value": 212818,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -290,7 +290,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64468,
+              "id_spell_effect_value": 212819,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -370,7 +370,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64469,
+              "id_spell_effect_value": 212820,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -415,7 +415,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64470,
+              "id_spell_effect_value": 212821,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -460,7 +460,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64471,
+              "id_spell_effect_value": 212822,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -540,7 +540,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64472,
+              "id_spell_effect_value": 212823,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -585,7 +585,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64473,
+              "id_spell_effect_value": 212824,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -630,7 +630,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64474,
+              "id_spell_effect_value": 212825,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -718,7 +718,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64475,
+              "id_spell_effect_value": 212826,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -763,7 +763,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64476,
+              "id_spell_effect_value": 212827,
               "offset": 0,
               "damage": -22,
               "ratio": 6,
@@ -808,7 +808,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64477,
+              "id_spell_effect_value": 212828,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -888,7 +888,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64499,
+              "id_spell_effect_value": 212850,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -933,7 +933,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64500,
+              "id_spell_effect_value": 212851,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -978,7 +978,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64501,
+              "id_spell_effect_value": 212852,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1058,7 +1058,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64478,
+              "id_spell_effect_value": 212829,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -1103,7 +1103,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64479,
+              "id_spell_effect_value": 212830,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -1148,7 +1148,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64480,
+              "id_spell_effect_value": 212831,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1236,7 +1236,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64481,
+              "id_spell_effect_value": 212832,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -1281,7 +1281,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64482,
+              "id_spell_effect_value": 212833,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -1326,7 +1326,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64483,
+              "id_spell_effect_value": 212834,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1406,7 +1406,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64487,
+              "id_spell_effect_value": 212838,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1451,7 +1451,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64488,
+              "id_spell_effect_value": 212839,
               "offset": 0,
               "damage": -33,
               "ratio": 9,
@@ -1496,7 +1496,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64489,
+              "id_spell_effect_value": 212840,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -1576,7 +1576,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64490,
+              "id_spell_effect_value": 212841,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -1621,7 +1621,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64491,
+              "id_spell_effect_value": 212842,
               "offset": 0,
               "damage": -22,
               "ratio": 6,
@@ -1666,7 +1666,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64492,
+              "id_spell_effect_value": 212843,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -1746,7 +1746,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64493,
+              "id_spell_effect_value": 212844,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1791,7 +1791,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64494,
+              "id_spell_effect_value": 212845,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -1836,7 +1836,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64495,
+              "id_spell_effect_value": 212846,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1916,7 +1916,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64460,
+              "id_spell_effect_value": 212811,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -1961,7 +1961,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64461,
+              "id_spell_effect_value": 212812,
               "offset": 0,
               "damage": -11,
               "ratio": 3,
@@ -2006,7 +2006,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64462,
+              "id_spell_effect_value": 212813,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -2086,7 +2086,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64484,
+              "id_spell_effect_value": 212835,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -2131,7 +2131,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64485,
+              "id_spell_effect_value": 212836,
               "offset": 0,
               "damage": -33,
               "ratio": 9,
@@ -2176,7 +2176,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64486,
+              "id_spell_effect_value": 212837,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -2256,7 +2256,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64496,
+              "id_spell_effect_value": 212847,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2301,7 +2301,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64497,
+              "id_spell_effect_value": 212848,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -2346,7 +2346,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64498,
+              "id_spell_effect_value": 212849,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2426,7 +2426,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64502,
+              "id_spell_effect_value": 212853,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2471,7 +2471,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64503,
+              "id_spell_effect_value": 212854,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -2516,7 +2516,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64504,
+              "id_spell_effect_value": 212855,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2596,7 +2596,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64505,
+              "id_spell_effect_value": 212856,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -2641,7 +2641,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64506,
+              "id_spell_effect_value": 212857,
               "offset": 0,
               "damage": -44,
               "ratio": 12,
@@ -2686,7 +2686,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64507,
+              "id_spell_effect_value": 212858,
               "offset": 0,
               "damage": 0,
               "ratio": 8,
@@ -2774,7 +2774,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64508,
+              "id_spell_effect_value": 212859,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -2819,7 +2819,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64509,
+              "id_spell_effect_value": 212860,
               "offset": 0,
               "damage": -22,
               "ratio": 6,
@@ -2864,7 +2864,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 64510,
+              "id_spell_effect_value": 212861,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -2934,7 +2934,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -2944,7 +2944,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210567,
+              "id_spell_effect_value": 212870,
               "offset": 0,
               "damage": 0,
               "ratio": -7.5,
@@ -3011,7 +3011,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3021,7 +3021,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210568,
+              "id_spell_effect_value": 212871,
               "offset": 0,
               "damage": 0,
               "ratio": 12.5,
@@ -3088,7 +3088,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3098,7 +3098,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210569,
+              "id_spell_effect_value": 212872,
               "offset": 0,
               "damage": 0,
               "ratio": 200,
@@ -3175,7 +3175,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210570,
+              "id_spell_effect_value": 212873,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -3211,7 +3211,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3273,7 +3273,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3283,7 +3283,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210571,
+              "id_spell_effect_value": 212874,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -3364,7 +3364,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3374,7 +3374,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210572,
+              "id_spell_effect_value": 212875,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -3465,7 +3465,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210573,
+              "id_spell_effect_value": 212876,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -3542,7 +3542,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210574,
+              "id_spell_effect_value": 212877,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -3609,7 +3609,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3619,7 +3619,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210575,
+              "id_spell_effect_value": 212878,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -3686,7 +3686,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3696,7 +3696,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210576,
+              "id_spell_effect_value": 212879,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -3724,7 +3724,7 @@
               }
             },
             {
-              "id_spell_effect_value": 210577,
+              "id_spell_effect_value": 212880,
               "offset": 1,
               "damage": 0,
               "ratio": 1.5,
@@ -3752,7 +3752,7 @@
               }
             },
             {
-              "id_spell_effect_value": 210578,
+              "id_spell_effect_value": 212881,
               "offset": 2,
               "damage": 0,
               "ratio": 1.5,
@@ -3833,7 +3833,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3843,7 +3843,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210579,
+              "id_spell_effect_value": 212882,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -3920,7 +3920,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210580,
+              "id_spell_effect_value": 212883,
               "offset": 0,
               "damage": 0,
               "ratio": 30,
@@ -3987,7 +3987,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3997,7 +3997,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210581,
+              "id_spell_effect_value": 212884,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -4088,7 +4088,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210582,
+              "id_spell_effect_value": 212885,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -4155,7 +4155,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4165,7 +4165,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210583,
+              "id_spell_effect_value": 212886,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -4201,7 +4201,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4263,7 +4263,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4273,7 +4273,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210584,
+              "id_spell_effect_value": 212887,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -4301,7 +4301,7 @@
               }
             },
             {
-              "id_spell_effect_value": 210585,
+              "id_spell_effect_value": 212888,
               "offset": 1,
               "damage": 25,
               "ratio": 0,
@@ -4368,7 +4368,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4378,7 +4378,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210586,
+              "id_spell_effect_value": 212889,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -4414,7 +4414,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4424,7 +4424,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210587,
+              "id_spell_effect_value": 212890,
               "offset": 0,
               "damage": 0,
               "ratio": -7.5,
@@ -4501,7 +4501,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210593,
+              "id_spell_effect_value": 212896,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4582,7 +4582,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4592,7 +4592,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210594,
+              "id_spell_effect_value": 212897,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4696,7 +4696,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210595,
+              "id_spell_effect_value": 212898,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -4732,7 +4732,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4742,7 +4742,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210596,
+              "id_spell_effect_value": 212899,
               "offset": 0,
               "damage": 40,
               "ratio": -10,
@@ -4860,7 +4860,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210597,
+              "id_spell_effect_value": 212900,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4874,7 +4874,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210598,
+              "id_spell_effect_value": 212901,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -4982,7 +4982,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4992,7 +4992,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210599,
+              "id_spell_effect_value": 212902,
               "offset": 0,
               "damage": 0,
               "ratio": 15,
@@ -5096,7 +5096,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210600,
+              "id_spell_effect_value": 212903,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -5190,7 +5190,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5200,7 +5200,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210601,
+              "id_spell_effect_value": 212904,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -5304,7 +5304,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210602,
+              "id_spell_effect_value": 212905,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -5408,7 +5408,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210603,
+              "id_spell_effect_value": 212906,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -5512,7 +5512,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210604,
+              "id_spell_effect_value": 212907,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -5739,7 +5739,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210605,
+              "id_spell_effect_value": 212908,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -5851,7 +5851,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5861,7 +5861,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210606,
+              "id_spell_effect_value": 212909,
               "offset": 0,
               "damage": 0,
               "ratio": -5,
@@ -5965,7 +5965,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210607,
+              "id_spell_effect_value": 212910,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -6073,7 +6073,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6083,7 +6083,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210608,
+              "id_spell_effect_value": 212911,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -6129,7 +6129,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210609,
+              "id_spell_effect_value": 212912,
               "offset": 0,
               "damage": 30,
               "ratio": -10,
@@ -6224,7 +6224,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6234,7 +6234,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210610,
+              "id_spell_effect_value": 212913,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -6270,7 +6270,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6280,7 +6280,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210611,
+              "id_spell_effect_value": 212914,
               "offset": 0,
               "damage": 225,
               "ratio": -75,
@@ -6375,7 +6375,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6385,7 +6385,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210612,
+              "id_spell_effect_value": 212915,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -6493,7 +6493,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6503,7 +6503,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210613,
+              "id_spell_effect_value": 212916,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -6539,7 +6539,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6549,7 +6549,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210614,
+              "id_spell_effect_value": 212917,
               "offset": 0,
               "damage": 450,
               "ratio": -150,
@@ -6585,7 +6585,7 @@
           "ui_position": 2,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6595,7 +6595,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210615,
+              "id_spell_effect_value": 212918,
               "offset": 0,
               "damage": 450,
               "ratio": -150,
@@ -6690,7 +6690,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6700,7 +6700,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210616,
+              "id_spell_effect_value": 212919,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -6794,7 +6794,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6804,7 +6804,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210617,
+              "id_spell_effect_value": 212920,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -6908,7 +6908,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210618,
+              "id_spell_effect_value": 212921,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -7018,7 +7018,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210619,
+              "id_spell_effect_value": 212922,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -7122,7 +7122,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210620,
+              "id_spell_effect_value": 212923,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -7216,7 +7216,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7226,7 +7226,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210621,
+              "id_spell_effect_value": 212924,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -7320,7 +7320,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7330,7 +7330,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210622,
+              "id_spell_effect_value": 212925,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7421,7 +7421,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210623,
+              "id_spell_effect_value": 212926,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7512,7 +7512,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210624,
+              "id_spell_effect_value": 212927,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7616,7 +7616,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210625,
+              "id_spell_effect_value": 212928,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7720,7 +7720,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210626,
+              "id_spell_effect_value": 212929,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -7838,7 +7838,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210627,
+              "id_spell_effect_value": 212930,
               "offset": 0,
               "damage": 0,
               "ratio": 150,
@@ -7942,7 +7942,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210628,
+              "id_spell_effect_value": 212931,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -7956,7 +7956,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210629,
+              "id_spell_effect_value": 212932,
               "offset": 1,
               "damage": 0,
               "ratio": 10,
@@ -8037,7 +8037,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8047,7 +8047,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210630,
+              "id_spell_effect_value": 212933,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -8151,7 +8151,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210631,
+              "id_spell_effect_value": 212934,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8255,7 +8255,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210632,
+              "id_spell_effect_value": 212935,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -8363,7 +8363,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8373,7 +8373,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210633,
+              "id_spell_effect_value": 212936,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -8467,7 +8467,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8477,7 +8477,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210634,
+              "id_spell_effect_value": 212937,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8581,7 +8581,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210635,
+              "id_spell_effect_value": 212938,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -8595,7 +8595,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210636,
+              "id_spell_effect_value": 212939,
               "offset": 1,
               "damage": 0,
               "ratio": 5,
@@ -8699,7 +8699,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210637,
+              "id_spell_effect_value": 212940,
               "offset": 0,
               "damage": 0,
               "ratio": 7,
@@ -8790,7 +8790,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210638,
+              "id_spell_effect_value": 212941,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8894,7 +8894,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210639,
+              "id_spell_effect_value": 212942,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -8998,7 +8998,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210640,
+              "id_spell_effect_value": 212943,
               "offset": 0,
               "damage": 0,
               "ratio": -5,
@@ -9089,7 +9089,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210641,
+              "id_spell_effect_value": 212944,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -9207,10 +9207,10 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210642,
+              "id_spell_effect_value": 212945,
               "offset": 0,
               "damage": 0,
-              "ratio": 100,
+              "ratio": 50,
               "id_stats": 999,
               "id_effect": 315472,
               "will_calculate_damage": 0,
@@ -9294,7 +9294,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9304,7 +9304,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210643,
+              "id_spell_effect_value": 212946,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -9399,7 +9399,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9409,7 +9409,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210644,
+              "id_spell_effect_value": 212947,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -9423,7 +9423,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210645,
+              "id_spell_effect_value": 212948,
               "offset": 1,
               "damage": 0,
               "ratio": 100,
@@ -9517,7 +9517,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9527,7 +9527,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210646,
+              "id_spell_effect_value": 212949,
               "offset": 0,
               "damage": -25,
               "ratio": 5,
@@ -9637,7 +9637,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210647,
+              "id_spell_effect_value": 212950,
               "offset": 0,
               "damage": -10,
               "ratio": 0,
@@ -9651,7 +9651,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210648,
+              "id_spell_effect_value": 212951,
               "offset": 1,
               "damage": 0,
               "ratio": 15,
@@ -9755,7 +9755,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210649,
+              "id_spell_effect_value": 212952,
               "offset": 0,
               "damage": -10,
               "ratio": 0,
@@ -9769,7 +9769,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210650,
+              "id_spell_effect_value": 212953,
               "offset": 1,
               "damage": 0,
               "ratio": 15,
@@ -9873,7 +9873,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210651,
+              "id_spell_effect_value": 212954,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -9977,7 +9977,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210652,
+              "id_spell_effect_value": 212955,
               "offset": 0,
               "damage": 0,
               "ratio": 25,
@@ -9991,7 +9991,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210653,
+              "id_spell_effect_value": 212956,
               "offset": 1,
               "damage": 0,
               "ratio": 2,
@@ -10085,7 +10085,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10095,7 +10095,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210654,
+              "id_spell_effect_value": 212957,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -10189,7 +10189,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10199,7 +10199,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210655,
+              "id_spell_effect_value": 212958,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10293,7 +10293,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10303,7 +10303,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210656,
+              "id_spell_effect_value": 212959,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -10384,7 +10384,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10394,7 +10394,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210657,
+              "id_spell_effect_value": 212960,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -10408,7 +10408,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210658,
+              "id_spell_effect_value": 212961,
               "offset": 1,
               "damage": 0,
               "ratio": -2,
@@ -10502,7 +10502,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10512,7 +10512,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210659,
+              "id_spell_effect_value": 212962,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10616,7 +10616,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210660,
+              "id_spell_effect_value": 212963,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -10720,7 +10720,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210661,
+              "id_spell_effect_value": 212964,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10824,7 +10824,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210662,
+              "id_spell_effect_value": 212965,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -10838,7 +10838,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210663,
+              "id_spell_effect_value": 212966,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -10956,7 +10956,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210664,
+              "id_spell_effect_value": 212967,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -11060,7 +11060,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210665,
+              "id_spell_effect_value": 212968,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -11074,7 +11074,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210666,
+              "id_spell_effect_value": 212969,
               "offset": 1,
               "damage": 0,
               "ratio": 50,
@@ -11168,7 +11168,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11178,7 +11178,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210667,
+              "id_spell_effect_value": 212970,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11296,7 +11296,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210668,
+              "id_spell_effect_value": 212971,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11390,7 +11390,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11448,11 +11448,11 @@
       "effects": [
         {
           "id_effect": 316054,
-          "name_effect": "[#1]% dommages et soins non-critiques infligés\\n[#2]% dommages et soins critiques infligés",
+          "name_effect": "<b>[#1]</b>% dommages et soins non-critiques infligés\\n<b>[#2]</b>% dommages et soins critiques infligés",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11462,7 +11462,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210669,
+              "id_spell_effect_value": 212972,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -11476,7 +11476,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210670,
+              "id_spell_effect_value": 212973,
               "offset": 1,
               "damage": 0,
               "ratio": -2,
@@ -11551,6 +11551,970 @@
         }
       ],
       "translations": []
+    },
+    {
+      "id_shard": 28988,
+      "is_epic": 0,
+      "is_relic": 0,
+      "gfx_id": "81228822",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Revigoration I",
+      "max_usage": 4,
+      "level": 1,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 317895,
+          "name_effect": "-[#1]% Soins réalisés",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": -32513,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 28988,
+            "id_effect": 317895
+          },
+          "translations": [],
+          "values": [
+            {
+              "id_spell_effect_value": 212974,
+              "offset": 0,
+              "damage": 10,
+              "ratio": 0,
+              "id_stats": 1094,
+              "id_effect": 317895,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": {
+                "id_stats": 1094,
+                "name_stats": "-Soins réalisés",
+                "image_stats": "healing_done.webp",
+                "base_stats": 0,
+                "order_stats": 2,
+                "id_stats_type": null,
+                "order": 44,
+                "element": null,
+                "search_display": 0,
+                "related_to": null,
+                "related_multiplier": null,
+                "parent_statistic_id": 1095,
+                "is_negative": 1
+              }
+            }
+          ],
+          "inner_states": []
+        },
+        {
+          "id_effect": 317898,
+          "name_effect": "Le porteur de l'état est soigné de <b>[#1]</b>% des soins réalisés sur ses alliés",
+          "ui_position": 1,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": -32513,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 28988,
+            "id_effect": 317898
+          },
+          "translations": [],
+          "values": [
+            {
+              "id_spell_effect_value": 212975,
+              "offset": 0,
+              "damage": 0,
+              "ratio": 4,
+              "id_stats": 400,
+              "id_effect": 317898,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": null
+            }
+          ],
+          "inner_states": []
+        }
+      ],
+      "children": [
+        {
+          "id_shard": 28989,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81228823",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Revigoration II",
+          "max_usage": 4,
+          "level": 2,
+          "parent_id": 28988,
+          "translations": []
+        },
+        {
+          "id_shard": 28990,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81227111",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Revigoration III",
+          "max_usage": 4,
+          "level": 3,
+          "parent_id": 28988,
+          "translations": []
+        }
+      ],
+      "colors_needed": [
+        {
+          "id_color": 2,
+          "image_color_empty": "shard_green_empty",
+          "image_color_full": "shard_green_full",
+          "pivot": {
+            "id_shard": 28988,
+            "id_color": 2
+          }
+        },
+        {
+          "id_color": 3,
+          "image_color_empty": "shard_blue_empty",
+          "image_color_full": "shard_blue_full",
+          "pivot": {
+            "id_shard": 28988,
+            "id_color": 3
+          }
+        },
+        {
+          "id_color": 1,
+          "image_color_empty": "shard_red_empty",
+          "image_color_full": "shard_red_full",
+          "pivot": {
+            "id_shard": 28988,
+            "id_color": 1
+          }
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 28991,
+      "is_epic": 0,
+      "is_relic": 0,
+      "gfx_id": "81228822",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Précaution I",
+      "max_usage": 4,
+      "level": 1,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 317899,
+          "name_effect": "En terminant son tour avec moins de 50% de PV :\\n[pl]Soin [el0] : <b>[#1]</b>% des PV manquants [ecnbi]",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": -32513,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 28991,
+            "id_effect": 317899
+          },
+          "translations": [],
+          "values": [
+            {
+              "id_spell_effect_value": 212976,
+              "offset": 0,
+              "damage": 0,
+              "ratio": 5,
+              "id_stats": 25,
+              "id_effect": 317899,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": null
+            }
+          ],
+          "inner_states": []
+        }
+      ],
+      "children": [
+        {
+          "id_shard": 28992,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81228823",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Précaution II",
+          "max_usage": 4,
+          "level": 2,
+          "parent_id": 28991,
+          "translations": []
+        },
+        {
+          "id_shard": 28993,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81227111",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Précaution III",
+          "max_usage": 4,
+          "level": 3,
+          "parent_id": 28991,
+          "translations": []
+        }
+      ],
+      "colors_needed": [
+        {
+          "id_color": 1,
+          "image_color_empty": "shard_red_empty",
+          "image_color_full": "shard_red_full",
+          "pivot": {
+            "id_shard": 28991,
+            "id_color": 1
+          }
+        },
+        {
+          "id_color": 2,
+          "image_color_empty": "shard_green_empty",
+          "image_color_full": "shard_green_full",
+          "pivot": {
+            "id_shard": 28991,
+            "id_color": 2
+          }
+        },
+        {
+          "id_color": 1,
+          "image_color_empty": "shard_red_empty",
+          "image_color_full": "shard_red_full",
+          "pivot": {
+            "id_shard": 28991,
+            "id_color": 1
+          }
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 28994,
+      "is_epic": 0,
+      "is_relic": 0,
+      "gfx_id": "81228822",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Critique technique I",
+      "max_usage": 2,
+      "level": 1,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 317903,
+          "name_effect": "Le premier coup critique du tour inflige <b>[#1]</b>% dommages supplémentaires\\nLes suivants infligent <b>[#2]</b>% dommages de moins",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": -32513,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 28994,
+            "id_effect": 317903
+          },
+          "translations": [],
+          "values": [
+            {
+              "id_spell_effect_value": 212977,
+              "offset": 0,
+              "damage": 0,
+              "ratio": 6,
+              "id_stats": 1093,
+              "id_effect": 317903,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": null
+            },
+            {
+              "id_spell_effect_value": 212978,
+              "offset": 1,
+              "damage": 0,
+              "ratio": -3,
+              "id_stats": 1093,
+              "id_effect": 317903,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": null
+            }
+          ],
+          "inner_states": []
+        }
+      ],
+      "children": [
+        {
+          "id_shard": 28995,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81228823",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Critique technique II",
+          "max_usage": 2,
+          "level": 2,
+          "parent_id": 28994,
+          "translations": []
+        }
+      ],
+      "colors_needed": [
+        {
+          "id_color": 1,
+          "image_color_empty": "shard_red_empty",
+          "image_color_full": "shard_red_full",
+          "pivot": {
+            "id_shard": 28994,
+            "id_color": 1
+          }
+        },
+        {
+          "id_color": 2,
+          "image_color_empty": "shard_green_empty",
+          "image_color_full": "shard_green_full",
+          "pivot": {
+            "id_shard": 28994,
+            "id_color": 2
+          }
+        },
+        {
+          "id_color": 3,
+          "image_color_empty": "shard_blue_empty",
+          "image_color_full": "shard_blue_full",
+          "pivot": {
+            "id_shard": 28994,
+            "id_color": 3
+          }
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 28996,
+      "is_epic": 0,
+      "is_relic": 0,
+      "gfx_id": "81228822",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Parade offensive I",
+      "max_usage": 2,
+      "level": 1,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 317908,
+          "name_effect": "En faisant une parade sur une attaque directe ennemie :\\n[pl]<b>[#1]</b>% Dommages infligés (1 tour)\\n[pl]-10% Parade",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": 32767,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 28996,
+            "id_effect": 317908
+          },
+          "translations": [],
+          "values": [
+            {
+              "id_spell_effect_value": 212979,
+              "offset": 0,
+              "damage": 0,
+              "ratio": 2,
+              "id_stats": 126,
+              "id_effect": 317908,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": {
+                "id_stats": 126,
+                "name_stats": "Dommages Infligés",
+                "image_stats": "damage.webp",
+                "base_stats": 0,
+                "order_stats": 1,
+                "id_stats_type": 4,
+                "order": 43,
+                "element": null,
+                "search_display": 0,
+                "related_to": null,
+                "related_multiplier": null,
+                "parent_statistic_id": null,
+                "is_negative": null
+              }
+            }
+          ],
+          "inner_states": []
+        }
+      ],
+      "children": [
+        {
+          "id_shard": 28997,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81228823",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Parade offensive II",
+          "max_usage": 2,
+          "level": 2,
+          "parent_id": 28996,
+          "translations": []
+        }
+      ],
+      "colors_needed": [
+        {
+          "id_color": 1,
+          "image_color_empty": "shard_red_empty",
+          "image_color_full": "shard_red_full",
+          "pivot": {
+            "id_shard": 28996,
+            "id_color": 1
+          }
+        },
+        {
+          "id_color": 1,
+          "image_color_empty": "shard_red_empty",
+          "image_color_full": "shard_red_full",
+          "pivot": {
+            "id_shard": 28996,
+            "id_color": 1
+          }
+        },
+        {
+          "id_color": 2,
+          "image_color_empty": "shard_green_empty",
+          "image_color_full": "shard_green_full",
+          "pivot": {
+            "id_shard": 28996,
+            "id_color": 2
+          }
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 28998,
+      "is_epic": 0,
+      "is_relic": 0,
+      "gfx_id": "81228822",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Critique tactique I",
+      "max_usage": 4,
+      "level": 1,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 317911,
+          "name_effect": "<b>[#1]</b>% Dommages critiques infligés si la cible a > 50% PV\\n<b>[#2]</b>% Dommages critiques infligés si la cible a <= 50%PV",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": -32513,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 28998,
+            "id_effect": 317911
+          },
+          "translations": [],
+          "values": [
+            {
+              "id_spell_effect_value": 212980,
+              "offset": 0,
+              "damage": 0,
+              "ratio": 3,
+              "id_stats": 1093,
+              "id_effect": 317911,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": null
+            },
+            {
+              "id_spell_effect_value": 212981,
+              "offset": 1,
+              "damage": 0,
+              "ratio": -3,
+              "id_stats": 1093,
+              "id_effect": 317911,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": null
+            }
+          ],
+          "inner_states": []
+        }
+      ],
+      "children": [
+        {
+          "id_shard": 28999,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81228823",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Critique tactique II",
+          "max_usage": 4,
+          "level": 2,
+          "parent_id": 28998,
+          "translations": []
+        },
+        {
+          "id_shard": 29000,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81227111",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Critique tactique III",
+          "max_usage": 4,
+          "level": 3,
+          "parent_id": 28998,
+          "translations": []
+        }
+      ],
+      "colors_needed": [
+        {
+          "id_color": 1,
+          "image_color_empty": "shard_red_empty",
+          "image_color_full": "shard_red_full",
+          "pivot": {
+            "id_shard": 28998,
+            "id_color": 1
+          }
+        },
+        {
+          "id_color": 2,
+          "image_color_empty": "shard_green_empty",
+          "image_color_full": "shard_green_full",
+          "pivot": {
+            "id_shard": 28998,
+            "id_color": 2
+          }
+        },
+        {
+          "id_color": 2,
+          "image_color_empty": "shard_green_empty",
+          "image_color_full": "shard_green_full",
+          "pivot": {
+            "id_shard": 28998,
+            "id_color": 2
+          }
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 29001,
+      "is_epic": 0,
+      "is_relic": 0,
+      "gfx_id": "81228822",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Neutralité I",
+      "max_usage": 4,
+      "level": 1,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 317914,
+          "name_effect": "Au début du premier tour, si les maîtrises secondaires sont <= 0 :\\n[pl][#1]% Dommages infligés",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": 32767,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 29001,
+            "id_effect": 317914
+          },
+          "translations": [],
+          "values": [
+            {
+              "id_spell_effect_value": 212982,
+              "offset": 0,
+              "damage": 0,
+              "ratio": 8,
+              "id_stats": 126,
+              "id_effect": 317914,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": {
+                "id_stats": 126,
+                "name_stats": "Dommages Infligés",
+                "image_stats": "damage.webp",
+                "base_stats": 0,
+                "order_stats": 1,
+                "id_stats_type": 4,
+                "order": 43,
+                "element": null,
+                "search_display": 0,
+                "related_to": null,
+                "related_multiplier": null,
+                "parent_statistic_id": null,
+                "is_negative": null
+              }
+            }
+          ],
+          "inner_states": []
+        }
+      ],
+      "children": [
+        {
+          "id_shard": 29002,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81228823",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Neutralité II",
+          "max_usage": 4,
+          "level": 2,
+          "parent_id": 29001,
+          "translations": []
+        },
+        {
+          "id_shard": 29003,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81227111",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Neutralité III",
+          "max_usage": 4,
+          "level": 3,
+          "parent_id": 29001,
+          "translations": []
+        }
+      ],
+      "colors_needed": [
+        {
+          "id_color": 3,
+          "image_color_empty": "shard_blue_empty",
+          "image_color_full": "shard_blue_full",
+          "pivot": {
+            "id_shard": 29001,
+            "id_color": 3
+          }
+        },
+        {
+          "id_color": 2,
+          "image_color_empty": "shard_green_empty",
+          "image_color_full": "shard_green_full",
+          "pivot": {
+            "id_shard": 29001,
+            "id_color": 2
+          }
+        },
+        {
+          "id_color": 1,
+          "image_color_empty": "shard_red_empty",
+          "image_color_full": "shard_red_full",
+          "pivot": {
+            "id_shard": 29001,
+            "id_color": 1
+          }
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 29004,
+      "is_epic": 0,
+      "is_relic": 0,
+      "gfx_id": "81228822",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Abandon I",
+      "max_usage": 6,
+      "level": null,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 317916,
+          "name_effect": "Au début du premier tour, si les maîtrises secondaires sont <= 0 :\\n[pl]<b>[#1]</b> PW max et <b>[#2]</b> Portée",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": 32767,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 29004,
+            "id_effect": 317916
+          },
+          "translations": [],
+          "values": [
+            {
+              "id_spell_effect_value": 212983,
+              "offset": 0,
+              "damage": 0,
+              "ratio": 0.5,
+              "id_stats": 191,
+              "id_effect": 317916,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": {
+                "id_stats": 191,
+                "name_stats": "PW",
+                "image_stats": "pw.webp",
+                "base_stats": 6,
+                "order_stats": 4,
+                "id_stats_type": 1,
+                "order": 3,
+                "element": null,
+                "search_display": 1,
+                "related_to": 191191,
+                "related_multiplier": 75,
+                "parent_statistic_id": null,
+                "is_negative": null
+              }
+            },
+            {
+              "id_spell_effect_value": 212984,
+              "offset": 1,
+              "damage": 0,
+              "ratio": 0.5,
+              "id_stats": 160,
+              "id_effect": 317916,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": {
+                "id_stats": 160,
+                "name_stats": "PO",
+                "image_stats": "range.webp",
+                "base_stats": 0,
+                "order_stats": 6,
+                "id_stats_type": 4,
+                "order": 4,
+                "element": null,
+                "search_display": 1,
+                "related_to": null,
+                "related_multiplier": null,
+                "parent_statistic_id": null,
+                "is_negative": null
+              }
+            }
+          ],
+          "inner_states": []
+        }
+      ],
+      "children": [
+        {
+          "id_shard": 29005,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81228823",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Abandon II",
+          "max_usage": 6,
+          "level": 2,
+          "parent_id": 29004,
+          "translations": []
+        },
+        {
+          "id_shard": 29006,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81227111",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Abandon III",
+          "max_usage": 6,
+          "level": null,
+          "parent_id": 29004,
+          "translations": []
+        }
+      ],
+      "colors_needed": [
+        {
+          "id_color": 2,
+          "image_color_empty": "shard_green_empty",
+          "image_color_full": "shard_green_full",
+          "pivot": {
+            "id_shard": 29004,
+            "id_color": 2
+          }
+        },
+        {
+          "id_color": 1,
+          "image_color_empty": "shard_red_empty",
+          "image_color_full": "shard_red_full",
+          "pivot": {
+            "id_shard": 29004,
+            "id_color": 1
+          }
+        },
+        {
+          "id_color": 3,
+          "image_color_empty": "shard_blue_empty",
+          "image_color_full": "shard_blue_full",
+          "pivot": {
+            "id_shard": 29004,
+            "id_color": 3
+          }
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 29007,
+      "is_epic": 0,
+      "is_relic": 0,
+      "gfx_id": "81228822",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Prétention I",
+      "max_usage": 6,
+      "level": 1,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 317919,
+          "name_effect": "Au début du premier tour, si les maîtrises secondaires sont <= 0 :\\n[pl]<b>[#1]</b>% Parade",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": -32513,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 29007,
+            "id_effect": 317919
+          },
+          "translations": [],
+          "values": [
+            {
+              "id_spell_effect_value": 212985,
+              "offset": 0,
+              "damage": 0,
+              "ratio": 5,
+              "id_stats": 875,
+              "id_effect": 317919,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": {
+                "id_stats": 875,
+                "name_stats": "Parade",
+                "image_stats": "block.webp",
+                "base_stats": 0,
+                "order_stats": 4,
+                "id_stats_type": 4,
+                "order": 13,
+                "element": null,
+                "search_display": 1,
+                "related_to": null,
+                "related_multiplier": null,
+                "parent_statistic_id": null,
+                "is_negative": null
+              }
+            }
+          ],
+          "inner_states": []
+        }
+      ],
+      "children": [
+        {
+          "id_shard": 29008,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81228823",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Prétention II",
+          "max_usage": 6,
+          "level": 2,
+          "parent_id": 29007,
+          "translations": []
+        },
+        {
+          "id_shard": 29009,
+          "is_epic": 0,
+          "is_relic": 0,
+          "gfx_id": "81227111",
+          "id_shard_type": 812,
+          "id_color": null,
+          "name_shard": "Prétention III",
+          "max_usage": 6,
+          "level": 3,
+          "parent_id": 29007,
+          "translations": []
+        }
+      ],
+      "colors_needed": [
+        {
+          "id_color": 2,
+          "image_color_empty": "shard_green_empty",
+          "image_color_full": "shard_green_full",
+          "pivot": {
+            "id_shard": 29007,
+            "id_color": 2
+          }
+        },
+        {
+          "id_color": 3,
+          "image_color_empty": "shard_blue_empty",
+          "image_color_full": "shard_blue_full",
+          "pivot": {
+            "id_shard": 29007,
+            "id_color": 3
+          }
+        },
+        {
+          "id_color": 2,
+          "image_color_empty": "shard_green_empty",
+          "image_color_full": "shard_green_full",
+          "pivot": {
+            "id_shard": 29007,
+            "id_color": 2
+          }
+        }
+      ],
+      "translations": []
     }
   ],
   "special_sublimations": [
@@ -11572,7 +12536,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11604,7 +12568,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11646,7 +12610,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210559,
+              "id_spell_effect_value": 212862,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -11729,7 +12693,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11739,7 +12703,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210560,
+              "id_spell_effect_value": 212863,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -11790,7 +12754,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11800,7 +12764,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210561,
+              "id_spell_effect_value": 212864,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -11915,7 +12879,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11925,7 +12889,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210562,
+              "id_spell_effect_value": 212865,
               "offset": 0,
               "damage": 30,
               "ratio": 0,
@@ -11976,7 +12940,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12008,7 +12972,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12040,7 +13004,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12050,7 +13014,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210563,
+              "id_spell_effect_value": 212866,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -12078,7 +13042,7 @@
               }
             },
             {
-              "id_spell_effect_value": 210564,
+              "id_spell_effect_value": 212867,
               "offset": 1,
               "damage": 200,
               "ratio": 0,
@@ -12129,7 +13093,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12225,7 +13189,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12267,7 +13231,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210565,
+              "id_spell_effect_value": 212868,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -12318,7 +13282,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12360,7 +13324,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210566,
+              "id_spell_effect_value": 212869,
               "offset": 0,
               "damage": -30,
               "ratio": 0,
@@ -12397,7 +13361,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12445,7 +13409,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210588,
+              "id_spell_effect_value": 212891,
               "offset": 0,
               "damage": 2,
               "ratio": 0,
@@ -12473,7 +13437,7 @@
               }
             },
             {
-              "id_spell_effect_value": 210589,
+              "id_spell_effect_value": 212892,
               "offset": 1,
               "damage": 2,
               "ratio": 0,
@@ -12524,7 +13488,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12534,7 +13498,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 210590,
+              "id_spell_effect_value": 212893,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -12548,7 +13512,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210591,
+              "id_spell_effect_value": 212894,
               "offset": 1,
               "damage": 10,
               "ratio": 0,
@@ -12562,7 +13526,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 210592,
+              "id_spell_effect_value": 212895,
               "offset": 2,
               "damage": -10,
               "ratio": 0,
@@ -12695,7 +13659,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12759,7 +13723,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12832,13 +13796,7 @@
           },
           "translations": [],
           "values": [],
-          "inner_states": [
-            {
-              "name_state": "Arme de Lumière",
-              "id_state": 5977,
-              "translations": []
-            }
-          ]
+          "inner_states": []
         }
       ],
       "translations": []
@@ -12861,7 +13819,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12893,7 +13851,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12957,7 +13915,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12989,7 +13947,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13030,13 +13988,7 @@
           },
           "translations": [],
           "values": [],
-          "inner_states": [
-            {
-              "name_state": "Énergie ancestrale - Bonus",
-              "id_state": 6710,
-              "translations": []
-            }
-          ]
+          "inner_states": []
         }
       ],
       "translations": []
@@ -13059,7 +14011,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13068,13 +14020,7 @@
           },
           "translations": [],
           "values": [],
-          "inner_states": [
-            {
-              "name_state": "Renaissance - Bonus",
-              "id_state": 6713,
-              "translations": []
-            }
-          ]
+          "inner_states": []
         }
       ],
       "translations": []

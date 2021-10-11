@@ -186136,5 +186136,113 @@
     "itemId": 27884,
     "quantity": 15,
     "ingredientOrder": 2
+  },
+  {
+    "recipeId": 8654,
+    "itemId": 28959,
+    "quantity": 1,
+    "ingredientOrder": 0
+  },
+  {
+    "recipeId": 8654,
+    "itemId": 6162,
+    "quantity": 25,
+    "ingredientOrder": 1
+  },
+  {
+    "recipeId": 8654,
+    "itemId": 21107,
+    "quantity": 5,
+    "ingredientOrder": 2
+  },
+  {
+    "recipeId": 8655,
+    "itemId": 28959,
+    "quantity": 3,
+    "ingredientOrder": 0
+  },
+  {
+    "recipeId": 8655,
+    "itemId": 6162,
+    "quantity": 25,
+    "ingredientOrder": 1
+  },
+  {
+    "recipeId": 8655,
+    "itemId": 21651,
+    "quantity": 5,
+    "ingredientOrder": 2
+  },
+  {
+    "recipeId": 8657,
+    "itemId": 17490,
+    "quantity": 45,
+    "ingredientOrder": 0
+  },
+  {
+    "recipeId": 8657,
+    "itemId": 21109,
+    "quantity": 5,
+    "ingredientOrder": 1
+  },
+  {
+    "recipeId": 8657,
+    "itemId": 21642,
+    "quantity": 5,
+    "ingredientOrder": 2
+  },
+  {
+    "recipeId": 8658,
+    "itemId": 17490,
+    "quantity": 45,
+    "ingredientOrder": 0
+  },
+  {
+    "recipeId": 8658,
+    "itemId": 21109,
+    "quantity": 5,
+    "ingredientOrder": 1
+  },
+  {
+    "recipeId": 8658,
+    "itemId": 21642,
+    "quantity": 5,
+    "ingredientOrder": 2
+  },
+  {
+    "recipeId": 8659,
+    "itemId": 17490,
+    "quantity": 45,
+    "ingredientOrder": 0
+  },
+  {
+    "recipeId": 8659,
+    "itemId": 21109,
+    "quantity": 5,
+    "ingredientOrder": 1
+  },
+  {
+    "recipeId": 8659,
+    "itemId": 21642,
+    "quantity": 5,
+    "ingredientOrder": 2
+  },
+  {
+    "recipeId": 8660,
+    "itemId": 17490,
+    "quantity": 45,
+    "ingredientOrder": 0
+  },
+  {
+    "recipeId": 8660,
+    "itemId": 21109,
+    "quantity": 5,
+    "ingredientOrder": 1
+  },
+  {
+    "recipeId": 8660,
+    "itemId": 21642,
+    "quantity": 5,
+    "ingredientOrder": 2
   }
 ]
