@@ -24,7 +24,10 @@ export default class FinderCommand extends BaseCommand {
   }
 
   protected parseIconCodeToEmoji (text: string) {
-    return text.split(/(\[.*?\])/).map(word => iconCodeMap[word] || word).join('')
+    return text.split(/(\[.*?\])/).map(word => {
+      const isString = typeof iconCodeMap[word] === 'string'
+      return isString ? iconCodeMap[word] : word
+    }).join('')
   }
 
   protected getTruncatedResults (results, resultsLimit: number, showRarity = false) {

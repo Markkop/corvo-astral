@@ -40681,7 +40681,7 @@
   },
   {
     "id": 8619,
-    "categoryId": 77,
+    "categoryId": 81,
     "level": 30,
     "xpRatio": 1800,
     "isUpgrade": false,
@@ -40955,6 +40955,54 @@
     "id": 8653,
     "categoryId": 81,
     "level": 135,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 8654,
+    "categoryId": 81,
+    "level": 55,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 8655,
+    "categoryId": 81,
+    "level": 55,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 8657,
+    "categoryId": 81,
+    "level": 85,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 8658,
+    "categoryId": 81,
+    "level": 85,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 8659,
+    "categoryId": 81,
+    "level": 85,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 8660,
+    "categoryId": 81,
+    "level": 85,
     "xpRatio": 3000,
     "isUpgrade": false,
     "upgradeItemId": 0

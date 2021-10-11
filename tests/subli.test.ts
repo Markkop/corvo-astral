@@ -121,12 +121,12 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 10,
+          value: 11,
           inline: true
         },
         {
           name: 'Sublimations',
-          value: 'Ambush, Berserk Wakfu, Clamor, Integrity, Last Breath, Light Weapons Expert, Moon Scales, Obstinacy, Resolute, Spines',
+          value: 'Ambush, Berserk Wakfu, Clamor, Integrity, Last Breath, Light Weapons Expert, Moon Scales, Obstinacy, Reinvigoration, Resolute, Spines',
           inline: false
         }
       ]
@@ -145,12 +145,12 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 27,
+          value: 30,
           inline: true
         },
         {
           name: 'Sublimations',
-          value: 'Altruism, Ambush, Berserk Wakfu, Clamor, Counterattack, Cyclical Ruin, Cyclothymia, Determination, Distance Barrier, Firm Foot, Focalization, Integrity, Last Breath, Length, Light Weapons Expert, Lock Steal, Moon Scales, Obstinacy, Persistence, Resolute, Ruin, Save, Solidity, Spines, Strong Hand, Swiftness, Theory of Matter',
+          value: 'Altruism, Ambush, Berserk Wakfu, Clamor, Counterattack, Cyclical Ruin, Cyclothymia, Determination, Distance Barrier, Firm Foot, Focalization, Integrity, Last Breath, Length, Light Weapons Expert, Lock Steal, Moon Scales, Neutrality, Obstinacy, Persistence, Precaution, Reinvigoration, Resolute, Ruin, Save, Solidity, Spines, Strong Hand, Swiftness, Theory of Matter',
           inline: false
         }
       ]
@@ -167,10 +167,10 @@ describe('getSublimation', () => {
           value: '<:red:888856996831449109> <:green:888856997112463421> <:blue:888856996726579271> in any order',
           inline: true
         },
-        { name: 'Results', value: 19, inline: true },
+        { name: 'Results', value: 23, inline: true },
         {
-          name: '<:red:888856996831449109> <:green:888856997112463421> <:blue:888856996726579271> (3)',
-          value: 'Frenzy, Fury, Sensitivity',
+          name: '<:red:888856996831449109> <:green:888856997112463421> <:blue:888856996726579271> (4)',
+          value: 'Frenzy, Fury, Sensitivity, Technical Critical',
           inline: false
         },
         {
@@ -179,13 +179,13 @@ describe('getSublimation', () => {
           inline: false
         },
         {
-          name: '<:green:888856997112463421> <:red:888856996831449109> <:blue:888856996726579271> (3)',
-          value: 'Endurance, Nature, Prosperity',
+          name: '<:green:888856997112463421> <:red:888856996831449109> <:blue:888856996726579271> (4)',
+          value: 'Abandon, Endurance, Nature, Prosperity',
           inline: false
         },
         {
-          name: '<:green:888856997112463421> <:blue:888856996726579271> <:red:888856996831449109> (3)',
-          value: 'Clamor, Last Breath, Moon Scales',
+          name: '<:green:888856997112463421> <:blue:888856996726579271> <:red:888856996831449109> (4)',
+          value: 'Clamor, Last Breath, Moon Scales, Reinvigoration',
           inline: false
         },
         {
@@ -194,8 +194,8 @@ describe('getSublimation', () => {
           inline: false
         },
         {
-          name: '<:blue:888856996726579271> <:green:888856997112463421> <:red:888856996831449109> (3)',
-          value: 'Altruism, Cyclothymia, Theory of Matter',
+          name: '<:blue:888856996726579271> <:green:888856997112463421> <:red:888856996831449109> (4)',
+          value: 'Altruism, Cyclothymia, Neutrality, Theory of Matter',
           inline: false
         }
       ]
@@ -214,12 +214,12 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 43,
+          value: 49,
           inline: true
         },
         {
           name: 'Sublimations',
-          value: 'About-Turn, AP Return, Armor Length, Berserk Critical, Berserk Dodge, Carnage, Condemnation, Critical Hit Expert, Destruction, Devastate, Dimensionality, Evasion, Flaming Return, Influence, Lone Wolf, Mania, MP Return, Poisoned Weapon, Raw Power, Secondary Devastation, Stupefaction, Visibility, Vital Return, Vitality Well, Wall, Altruism, Berserk Block, Close-Combat Barrier, Counterattack, Cyclothymia, Determination, Distance Barrier, Dodge Steal, Frenzy, Fury, Lock Steal, Persistence, Sensitivity, Social Relations, Solidity and other 3 results',
+          value: 'About-Turn, AP Return, Armor Length, Berserk Critical, Berserk Dodge, Carnage, Condemnation, Critical Hit Expert, Destruction, Devastate, Dimensionality, Evasion, Flaming Return, Influence, Lone Wolf, Mania, MP Return, Offensive Block, Poisoned Weapon, Pretension, Raw Power, Secondary Devastation, Stupefaction, Tactical Critical, Visibility, Vital Return, Vitality Well, Wall, Altruism, Berserk Block, Close-Combat Barrier, Counterattack, Cyclothymia, Determination, Distance Barrier, Dodge Steal, Frenzy, Fury, Lock Steal, Neutrality and other 9 results',
           inline: false
         }
       ]
@@ -238,12 +238,12 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 6,
+          value: 8,
           inline: true
         },
         {
           name: 'Sublimations',
-          value: 'Carnage, Flaming Return, Slow Evasion, Frenzy, Fury, Sensitivity',
+          value: 'Carnage, Flaming Return, Offensive Block, Slow Evasion, Frenzy, Fury, Sensitivity, Technical Critical',
           inline: false
         }
       ]
