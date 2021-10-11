@@ -30,7 +30,7 @@ export default class AlmaCommand extends BaseCommand {
   public static mountAlmanaxBonusEmbed (bonus: AlmanaxBonus, lang: string): PartialEmbed {
     const randomNumber = getRandomIntInclusive(1, 10)
     let extraInfo = ''
-    if (randomNumber > 4) {
+    if (randomNumber > 8) {
       extraInfo = str.donationExtraMessage[lang]
     }
 
