@@ -6,6 +6,7 @@ import str from '@stringsLang'
 import { MessageManager } from '@managers'
 const events = require('../../data/almanaxBonuses.json')
 
+
 export default class AlmaCommand extends BaseCommand {
   constructor (message: Message, guildConfig: GuildConfig) {
     super(message, guildConfig)
@@ -31,7 +32,8 @@ export default class AlmaCommand extends BaseCommand {
     const randomNumber = getRandomIntInclusive(1, 10)
     let extraInfo = ''
     if (randomNumber > 8) {
-      extraInfo = str.donationExtraMessage[lang]
+      const days = this.getDaysUntilShutdown()
+      extraInfo = str.donationExtraMessage(days)[lang]
     }
 
     const embed = {
@@ -50,5 +52,15 @@ export default class AlmaCommand extends BaseCommand {
       const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
       return diffDays % 5 === 0
     })
+  }
+
+  private static getDaysUntilShutdown() {
+    const shutdownDate = new Date('07/31/2022')
+    const diffTime = Number(shutdownDate) - Number(new Date(Date.now()))
+    if (diffTime < 0) {
+      return 0
+    }
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
+    return diffDays
   }
 }
