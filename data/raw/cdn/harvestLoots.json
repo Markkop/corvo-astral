@@ -8008,6 +8008,19 @@
     "itemIsLootList": false
   },
   {
+    "id": 9367,
+    "itemId": 28755,
+    "quantity": 1,
+    "requiredProspection": 0,
+    "dropRate": 1,
+    "listId": 3321,
+    "quantityPerItem": 3,
+    "quantityMin": 1,
+    "quantityMax": 3,
+    "maxRoll": 1,
+    "itemIsLootList": false
+  },
+  {
     "id": 9368,
     "itemId": 28756,
     "quantity": 1,

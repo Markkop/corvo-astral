@@ -73,18 +73,6 @@
   },
   {
     "definition": {
-      "id": 32,
-      "effect": "OLD - Deboost : PA"
-    },
-    "description": {
-      "fr": "-[#1] PA {[~2]?{[0>2]?([#2]%):}:}",
-      "en": "-[#1] PA {[~2]?{[0>2]?([#2]%):}:}",
-      "es": "-[#1] PA {[~2]?{[0>2]?([#2]%):}:}",
-      "pt": "-[#1] PA {[~2]?{[0>2]?([#2]%):}:}"
-    }
-  },
-  {
-    "definition": {
       "id": 39,
       "effect": "Gain : charac passée en paramètre"
     },
@@ -117,18 +105,6 @@
       "en": "[#1] MP",
       "es": "[#1] PM",
       "pt": "[#1] de PM"
-    }
-  },
-  {
-    "definition": {
-      "id": 42,
-      "effect": "OLD - Deboost : PM"
-    },
-    "description": {
-      "fr": "-[#1] PM {[~2]?([#2]%):}",
-      "en": "-[#1] MP {[~2]?([#2]%):}",
-      "es": "-[#1] PM {[~2]?([#2]%):}",
-      "pt": "-[#1] PM {[~2]?([#2]%):}"
     }
   },
   {
@@ -225,6 +201,18 @@
       "en": "[#1] [el4] Resistance",
       "es": "[#1] resistencia al [el4]",
       "pt": "[#1] Resistência a [el4]"
+    }
+  },
+  {
+    "definition": {
+      "id": 90,
+      "effect": "Perte : Résistance Élémentaire"
+    },
+    "description": {
+      "fr": "-[#1] Résistance Élémentaire",
+      "en": "-[#1] Elemental Resistance",
+      "es": "-[#1] resistencia elemental",
+      "pt": "-[#1] de resistência elementar"
     }
   },
   {

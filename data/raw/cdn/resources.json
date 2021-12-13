@@ -2997,9 +2997,9 @@
     },
     "title": {
       "fr": "Désespoirbre",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Despair Tree",
+      "es": "Desesperárbol",
+      "pt": "Desesperárvore"
     }
   },
   {
@@ -3018,9 +3018,9 @@
     },
     "title": {
       "fr": "Non-hêtre",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Nonbeeching",
+      "es": "Noaya",
+      "pt": "Nadaucária"
     }
   },
   {
@@ -3039,9 +3039,9 @@
     },
     "title": {
       "fr": "Fruit du démon",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Demon Fruit",
+      "es": "Fruta del demonio",
+      "pt": "Fruto do Demônio"
     }
   },
   {
@@ -3060,9 +3060,9 @@
     },
     "title": {
       "fr": "Haricot maléfique",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Evil Bean",
+      "es": "Frijol maléfico",
+      "pt": "Feijão Maligno"
     }
   },
   {
@@ -3081,9 +3081,9 @@
     },
     "title": {
       "fr": "Galinsoga démoniaque",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Demonic Galinsoga",
+      "es": "Galinsoga demoníaca",
+      "pt": "Galinsoga do Mal"
     }
   },
   {
@@ -3102,9 +3102,9 @@
     },
     "title": {
       "fr": "Chardominateur",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Thistlominator",
+      "es": "Cardominador",
+      "pt": "Cardominador"
     }
   },
   {
@@ -3123,9 +3123,9 @@
     },
     "title": {
       "fr": "Pierre de Vide",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Void Stone",
+      "es": "Piedra de vacío",
+      "pt": "Pedra de Vazio"
     }
   },
   {
@@ -3141,6 +3141,12 @@
       "lastEvolutionStep": 16,
       "usableByHeroes": false,
       "idealRain": 0
+    },
+    "title": {
+      "fr": "Pierre symbiotique",
+      "en": "Symbiotic Stone",
+      "es": "Piedra simbiótica",
+      "pt": "Pedra Simbiótica"
     }
   },
   {
@@ -3159,9 +3165,9 @@
     },
     "title": {
       "fr": "Poiss'Hostile",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Spitefish",
+      "es": "Pezostil",
+      "pt": "Peixostil"
     }
   },
   {
@@ -3180,9 +3186,9 @@
     },
     "title": {
       "fr": "Trompeur",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Deceptifish",
+      "es": "Trompembustero",
+      "pt": "Ilusório"
     }
   }
 ]

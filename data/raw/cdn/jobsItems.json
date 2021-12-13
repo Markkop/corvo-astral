@@ -129781,9 +129781,9 @@
     },
     "title": {
       "fr": "Bouture de Désespoirbre",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Despair Tree Cutting",
+      "es": "Esqueje de desesperárbol",
+      "pt": "Muda de Desesperárvore"
     }
   },
   {
@@ -129798,9 +129798,9 @@
     },
     "title": {
       "fr": "Bois de Désespoirbre",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Despair Tree Wood",
+      "es": "Madera de desesperárbol",
+      "pt": "Madeira de Desesperárvore"
     }
   },
   {
@@ -129815,9 +129815,9 @@
     },
     "title": {
       "fr": "Bois de Désolation",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Desolation Wood",
+      "es": "Madera de desolación",
+      "pt": "Madeira da Desolação"
     }
   },
   {
@@ -129832,9 +129832,9 @@
     },
     "title": {
       "fr": "Bouture de Non-hêtre",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Nonbeeching Cutting",
+      "es": "Esqueje de noaya",
+      "pt": "Muda de Nadaucária"
     }
   },
   {
@@ -129849,9 +129849,9 @@
     },
     "title": {
       "fr": "Bois de Non-hêtre",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Nonbeeching Wood",
+      "es": "Madera de noaya",
+      "pt": "Madeira de Nadaucária"
     }
   },
   {
@@ -129866,9 +129866,9 @@
     },
     "title": {
       "fr": "Bois de Folie",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Madness Wood",
+      "es": "Madera de locura",
+      "pt": "Madeira da Loucura"
     }
   },
   {
@@ -129883,9 +129883,9 @@
     },
     "title": {
       "fr": "Graine de Fruit du démon",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Demon Fruit Seed",
+      "es": "Semi de fruta del demonio",
+      "pt": "Semente de Fruto do Demônio"
     }
   },
   {
@@ -129900,9 +129900,9 @@
     },
     "title": {
       "fr": "Fruit du démon",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Demon Fruit",
+      "es": "Fruta del demonio",
+      "pt": "Fruto do Demônio"
     }
   },
   {
@@ -129917,9 +129917,9 @@
     },
     "title": {
       "fr": "Fruit élastique",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Flexifruit",
+      "es": "Fruta elástica",
+      "pt": "Fruta Elástica"
     }
   },
   {
@@ -129934,9 +129934,9 @@
     },
     "title": {
       "fr": "Graine de Haricot maléfique",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Evil Bean Seed",
+      "es": "Semilla de frijol maléfico",
+      "pt": "Semente de Feijão Maligno"
     }
   },
   {
@@ -129951,9 +129951,9 @@
     },
     "title": {
       "fr": "Haricot maléfique",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Evil Bean",
+      "es": "Frijol maléfico",
+      "pt": "Feijão Maligno"
     }
   },
   {
@@ -129968,9 +129968,9 @@
     },
     "title": {
       "fr": "Haricot sympa",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Nice Bean",
+      "es": "Frijol simpático",
+      "pt": "Feijão Legal"
     }
   },
   {
@@ -129985,9 +129985,9 @@
     },
     "title": {
       "fr": "Graine de Galinsoga démoniaque",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Demonic Galinsoga Seed",
+      "es": "Semilla de galinsoga demoníaca",
+      "pt": "Semente de Galinsoga do Mal"
     }
   },
   {
@@ -130002,9 +130002,9 @@
     },
     "title": {
       "fr": "Galinsoga démoniaque",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Demonic Galinsoga",
+      "es": "Galinsoga demoníaca",
+      "pt": "Galinsoga do Mal"
     }
   },
   {
@@ -130019,9 +130019,9 @@
     },
     "title": {
       "fr": "Galinsogalinso",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Galinsogalinsoga",
+      "es": "Galinsogalinso",
+      "pt": "Galinsogalinso"
     }
   },
   {
@@ -130036,9 +130036,9 @@
     },
     "title": {
       "fr": "Graine de Chardominateur",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Thistlominator Seed",
+      "es": "Semilla de cardominador",
+      "pt": "Semente de Cardominador"
     }
   },
   {
@@ -130053,9 +130053,26 @@
     },
     "title": {
       "fr": "Chardominateur",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Thistlominator",
+      "es": "Cardominador",
+      "pt": "Cardominador"
+    }
+  },
+  {
+    "definition": {
+      "id": 28755,
+      "level": 145,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31328754,
+        "femaleGfxId": 31328754
+      }
+    },
+    "title": {
+      "fr": "Chardon Juan",
+      "en": "Thistlanderer",
+      "es": "Cardonjuan",
+      "pt": "Cardo Juan"
     }
   },
   {
@@ -130070,9 +130087,9 @@
     },
     "title": {
       "fr": "Pierre de Vide",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Void Stone",
+      "es": "Piedra de vacío",
+      "pt": "Pedra de Vazio"
     }
   },
   {
@@ -130087,9 +130104,9 @@
     },
     "title": {
       "fr": "Pierre de Requiem",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Requiem Stone",
+      "es": "Piedra de réquiem",
+      "pt": "Pedra de Réquiem"
     }
   },
   {
@@ -130101,6 +130118,12 @@
         "gfxId": 28128758,
         "femaleGfxId": 28128758
       }
+    },
+    "title": {
+      "fr": "Pierre symbiotique",
+      "en": "Symbiotic Stone",
+      "es": "Piedra simbiótica",
+      "pt": "Pedra Simbiótica"
     }
   },
   {
@@ -130112,6 +130135,12 @@
         "gfxId": 28128758,
         "femaleGfxId": 28128758
       }
+    },
+    "title": {
+      "fr": "Pierre symbolique",
+      "en": "Symbolic Stone",
+      "es": "Piedra simbólica",
+      "pt": "Pedra Simbólica"
     }
   },
   {
@@ -130126,9 +130155,9 @@
     },
     "title": {
       "fr": "Poiss'Hostile",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Spitefish",
+      "es": "Pezostil",
+      "pt": "Peixostil"
     }
   },
   {
@@ -130143,9 +130172,9 @@
     },
     "title": {
       "fr": "Poisson Pêcheur",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Anglerfish",
+      "es": "Pez pescador",
+      "pt": "Peixe Pescador"
     }
   },
   {
@@ -130154,15 +130183,15 @@
       "level": 145,
       "rarity": 1,
       "graphicParameters": {
-        "gfxId": 30828760,
-        "femaleGfxId": 30828760
+        "gfxId": 30828762,
+        "femaleGfxId": 30828762
       }
     },
     "title": {
       "fr": "Trompeur",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Deceptifish",
+      "es": "Trompembustero",
+      "pt": "Ilusório"
     }
   },
   {
@@ -130177,9 +130206,9 @@
     },
     "title": {
       "fr": "Fabulateur",
-      "en": "",
-      "es": "",
-      "pt": ""
+      "en": "Fabricator",
+      "es": "Fabulador",
+      "pt": "Fabulador"
     }
   },
   {
@@ -130741,6 +130770,5786 @@
       "en": "Big Pile of Books",
       "es": "Gran montón de libros",
       "pt": "Grande Pilha de Livros"
+    }
+  },
+  {
+    "definition": {
+      "id": 29025,
+      "level": 1,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 70918833,
+        "femaleGfxId": 70918833
+      }
+    },
+    "title": {
+      "fr": "Transmutation Infernale",
+      "en": "Infernal Transmutation",
+      "es": "Transmutación infernal",
+      "pt": "Transmutação Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29026,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 32729026,
+        "femaleGfxId": 32729026
+      }
+    },
+    "title": {
+      "fr": "Planche Infernale",
+      "en": "Infernal Plank",
+      "es": "Tabla infernal",
+      "pt": "Tábua Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29027,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 39329027,
+        "femaleGfxId": 39329027
+      }
+    },
+    "title": {
+      "fr": "Farine Infernale",
+      "en": "Infernal Flour",
+      "es": "Harina infernal",
+      "pt": "Farinha Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29028,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 46329028,
+        "femaleGfxId": 46329028
+      }
+    },
+    "title": {
+      "fr": "Fil Infernal",
+      "en": "Infernal String",
+      "es": "Hilo infernal",
+      "pt": "Fio Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29029,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 51429029,
+        "femaleGfxId": 51429029
+      }
+    },
+    "title": {
+      "fr": "Acier Infernal",
+      "en": "Infernal Steel",
+      "es": "Acero infernal",
+      "pt": "Aço Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29030,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 56729030,
+        "femaleGfxId": 56729030
+      }
+    },
+    "title": {
+      "fr": "Envelouté Infernal",
+      "en": "Infernal Tiramisoup",
+      "es": "Encantártaro infernal",
+      "pt": "Sopa Nomel Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29031,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 56829031,
+        "femaleGfxId": 56829031
+      }
+    },
+    "title": {
+      "fr": "Essence Infernale",
+      "en": "Infernal Essence",
+      "es": "Esencia infernal",
+      "pt": "Essência Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29032,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 56929032,
+        "femaleGfxId": 56929032
+      }
+    },
+    "title": {
+      "fr": "Epice Infernale",
+      "en": "Infernal Spice",
+      "es": "Especia infernal",
+      "pt": "Tempero Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29033,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 57029033,
+        "femaleGfxId": 57029033
+      }
+    },
+    "title": {
+      "fr": "Fibre Infernale",
+      "en": "Infernal Fiber",
+      "es": "Fibra infernal",
+      "pt": "Fibra Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29034,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 57129034,
+        "femaleGfxId": 57129034
+      }
+    },
+    "title": {
+      "fr": "Manche Infernal",
+      "en": "Infernal Handle",
+      "es": "Mango infernal",
+      "pt": "Cabo Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29035,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 57429035,
+        "femaleGfxId": 57429035
+      }
+    },
+    "title": {
+      "fr": "Cuir Infernal",
+      "en": "Infernal Leather",
+      "es": "Cuero infernal",
+      "pt": "Couro Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29036,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 57529036,
+        "femaleGfxId": 57529036
+      }
+    },
+    "title": {
+      "fr": "Plaque Infernale",
+      "en": "Infernal Plate",
+      "es": "Placa infernal",
+      "pt": "Placa Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29037,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 57629037,
+        "femaleGfxId": 57629037
+      }
+    },
+    "title": {
+      "fr": "Gemme Infernale",
+      "en": "Infernal Gem",
+      "es": "Gema infernal",
+      "pt": "Gema Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29038,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 57729038,
+        "femaleGfxId": 57729038
+      }
+    },
+    "title": {
+      "fr": "Huile Infernale",
+      "en": "Infernal Oil",
+      "es": "Aceite infernal",
+      "pt": "Óleo Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29039,
+      "level": 230,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 57829039,
+        "femaleGfxId": 57829039
+      }
+    },
+    "title": {
+      "fr": "Equerre Infernale",
+      "en": "Infernal Bracket",
+      "es": "Escuadrita infernal",
+      "pt": "Suporte Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29040,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 57829040,
+        "femaleGfxId": 57829040
+      }
+    },
+    "title": {
+      "fr": "Orbe Infernal",
+      "en": "Infernal Orb",
+      "es": "Orbe infernal",
+      "pt": "Orbe Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29041,
+      "level": 140,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 73929041,
+        "femaleGfxId": 73929041
+      }
+    },
+    "title": {
+      "fr": "Sioupère-Glou Infernale",
+      "en": "Infernal Souper-Glou",
+      "es": "Superglú infernal",
+      "pt": "Bond, Super Bond Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29042,
+      "level": 1,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 74529042,
+        "femaleGfxId": 74529042
+      }
+    },
+    "title": {
+      "fr": "Pain Fernal",
+      "en": "Inferna Loaf",
+      "es": "Pan infernal",
+      "pt": "Pão Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29043,
+      "level": 1,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 74529042,
+        "femaleGfxId": 74529042
+      }
+    },
+    "title": {
+      "fr": "Pain Tagrahm",
+      "en": "Pentagrain Bread",
+      "es": "Pan tagrama",
+      "pt": "Pão Tagrama"
+    }
+  },
+  {
+    "definition": {
+      "id": 29049,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929049,
+        "femaleGfxId": 11929049
+      }
+    },
+    "title": {
+      "fr": "Viles Bottines",
+      "en": "Vile Boots",
+      "es": "Viles botines",
+      "pt": "Botas Vis"
+    }
+  },
+  {
+    "definition": {
+      "id": 29050,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929049,
+        "femaleGfxId": 11929049
+      }
+    },
+    "title": {
+      "fr": "Viles Bottines",
+      "en": "Vile Boots",
+      "es": "Viles botines",
+      "pt": "Botas Vis"
+    }
+  },
+  {
+    "definition": {
+      "id": 29051,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329051,
+        "femaleGfxId": 10329051
+      }
+    },
+    "title": {
+      "fr": "Le Vil'Ain",
+      "en": "Vyl'oop",
+      "es": "El vill'ano",
+      "pt": "O Vil'Ão"
+    }
+  },
+  {
+    "definition": {
+      "id": 29052,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329051,
+        "femaleGfxId": 10329051
+      }
+    },
+    "title": {
+      "fr": "Le Vil'Ain",
+      "en": "Vyl'oop",
+      "es": "El vill'ano",
+      "pt": "O Vil'Ão"
+    }
+  },
+  {
+    "definition": {
+      "id": 29053,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429053,
+        "femaleGfxId": 13429053
+      }
+    },
+    "title": {
+      "fr": "Masque Corrompu",
+      "en": "Corrupted Mask",
+      "es": "Máscara corrompida",
+      "pt": "Máscara Corrompida"
+    }
+  },
+  {
+    "definition": {
+      "id": 29054,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429053,
+        "femaleGfxId": 13429053
+      }
+    },
+    "title": {
+      "fr": "Masque Corrompu",
+      "en": "Corrupted Mask",
+      "es": "Máscara corrompida",
+      "pt": "Máscara Corrompida"
+    }
+  },
+  {
+    "definition": {
+      "id": 29055,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029055,
+        "femaleGfxId": 12029055
+      }
+    },
+    "title": {
+      "fr": "Amulette Corrompue",
+      "en": "Corrupted Amulet",
+      "es": "Amuleto corrompido",
+      "pt": "Amuleto Corrompido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29056,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029055,
+        "femaleGfxId": 12029055
+      }
+    },
+    "title": {
+      "fr": "Amulette Corrompue",
+      "en": "Corrupted Amulet",
+      "es": "Amuleto corrompido",
+      "pt": "Amuleto Corrompido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29059,
+      "level": 219,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13329059,
+        "femaleGfxId": 13329059
+      }
+    },
+    "title": {
+      "fr": "Ceinture de Phytomorphe",
+      "en": "Phytomorph Belt",
+      "es": "Cinturón de fitoforme",
+      "pt": "Cinto de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29060,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329059,
+        "femaleGfxId": 13329059
+      }
+    },
+    "title": {
+      "fr": "Ceinture de Phytomorphe",
+      "en": "Phytomorph Belt",
+      "es": "Cinturón de fitoforme",
+      "pt": "Cinto de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29061,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329059,
+        "femaleGfxId": 13329059
+      }
+    },
+    "title": {
+      "fr": "Ceinture de Phytomorphe",
+      "en": "Phytomorph Belt",
+      "es": "Cinturón de fitoforme",
+      "pt": "Cinto de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29062,
+      "level": 220,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13429062,
+        "femaleGfxId": 13429062
+      }
+    },
+    "title": {
+      "fr": "Coiffe Bolet-haine",
+      "en": "Shroomy Headgear",
+      "es": "Tocado boolodio",
+      "pt": "Chapéu Boole'teano"
+    }
+  },
+  {
+    "definition": {
+      "id": 29063,
+      "level": 223,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429062,
+        "femaleGfxId": 13429062
+      }
+    },
+    "title": {
+      "fr": "Coiffe Bolet-haine",
+      "en": "Shroomy Headgear",
+      "es": "Tocado boolodio",
+      "pt": "Chapéu Boole'teano"
+    }
+  },
+  {
+    "definition": {
+      "id": 29064,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429062,
+        "femaleGfxId": 13429062
+      }
+    },
+    "title": {
+      "fr": "Coiffe Bolet-haine",
+      "en": "Shroomy Headgear",
+      "es": "Tocado boolodio",
+      "pt": "Chapéu Boole'teano"
+    }
+  },
+  {
+    "definition": {
+      "id": 29065,
+      "level": 221,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13229065,
+        "femaleGfxId": 13229065
+      }
+    },
+    "title": {
+      "fr": "Cape de Phytomorphe",
+      "en": "Phytomorph Cloak",
+      "es": "Capa de fitoforme",
+      "pt": "Capa de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29066,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229065,
+        "femaleGfxId": 13229065
+      }
+    },
+    "title": {
+      "fr": "Cape de Phytomorphe",
+      "en": "Phytomorph Cloak",
+      "es": "Capa de fitoforme",
+      "pt": "Capa de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29067,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229065,
+        "femaleGfxId": 13229065
+      }
+    },
+    "title": {
+      "fr": "Cape de Phytomorphe",
+      "en": "Phytomorph Cloak",
+      "es": "Capa de fitoforme",
+      "pt": "Capa de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29068,
+      "level": 222,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13829068,
+        "femaleGfxId": 13829068
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de Phytomorphe",
+      "en": "Phytomorph Epaulettes",
+      "es": "Hombreras de fitoforme",
+      "pt": "Dragonas de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29069,
+      "level": 225,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829068,
+        "femaleGfxId": 13829068
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de Phytomorphe",
+      "en": "Phytomorph Epaulettes",
+      "es": "Hombreras de fitoforme",
+      "pt": "Dragonas de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29070,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829068,
+        "femaleGfxId": 13829068
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de Phytomorphe",
+      "en": "Phytomorph Epaulettes",
+      "es": "Hombreras de fitoforme",
+      "pt": "Dragonas de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29071,
+      "level": 219,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13629071,
+        "femaleGfxId": 34729071
+      }
+    },
+    "title": {
+      "fr": "Plastron de Phytomorphe",
+      "en": "Phytomorph Breastplate",
+      "es": "Coraza de fitoforme",
+      "pt": "Peitoral de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29072,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629071,
+        "femaleGfxId": 34729071
+      }
+    },
+    "title": {
+      "fr": "Plastron de Phytomorphe",
+      "en": "Phytomorph Breastplate",
+      "es": "Coraza de fitoforme",
+      "pt": "Peitoral de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29073,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629071,
+        "femaleGfxId": 34729071
+      }
+    },
+    "title": {
+      "fr": "Plastron de Phytomorphe",
+      "en": "Phytomorph Breastplate",
+      "es": "Coraza de fitoforme",
+      "pt": "Peitoral de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29074,
+      "level": 220,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 10329074,
+        "femaleGfxId": 10329074
+      }
+    },
+    "title": {
+      "fr": "Bague Incorruptible",
+      "en": "Incorruptible Ring",
+      "es": "Anillo incorruptible",
+      "pt": "Anel Incorruptível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29075,
+      "level": 223,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329074,
+        "femaleGfxId": 10329074
+      }
+    },
+    "title": {
+      "fr": "Bague Incorruptible",
+      "en": "Incorruptible Ring",
+      "es": "Anillo incorruptible",
+      "pt": "Anel Incorruptível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29076,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329074,
+        "femaleGfxId": 10329074
+      }
+    },
+    "title": {
+      "fr": "Bague Incorruptible",
+      "en": "Incorruptible Ring",
+      "es": "Anillo incorruptible",
+      "pt": "Anel Incorruptível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29077,
+      "level": 221,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029077,
+        "femaleGfxId": 12029077
+      }
+    },
+    "title": {
+      "fr": "Amulette Corruptible",
+      "en": "Corruptible Amulet",
+      "es": "Amuleto corruptible",
+      "pt": "Amuleto Corruptível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29078,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029077,
+        "femaleGfxId": 12029077
+      }
+    },
+    "title": {
+      "fr": "Amulette Corruptible",
+      "en": "Corruptible Amulet",
+      "es": "Amuleto corruptible",
+      "pt": "Amuleto Corruptível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29079,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929079,
+        "femaleGfxId": 11929079
+      }
+    },
+    "title": {
+      "fr": "Bottes Moisies",
+      "en": "Oldie Moldy Boots",
+      "es": "Botas mohosas",
+      "pt": "Botas Mofadas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29080,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929079,
+        "femaleGfxId": 11929079
+      }
+    },
+    "title": {
+      "fr": "Bottes Moisies",
+      "en": "Oldie Moldy Boots",
+      "es": "Botas mohosas",
+      "pt": "Botas Mofadas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29081,
+      "level": 223,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 10329081,
+        "femaleGfxId": 10329081
+      }
+    },
+    "title": {
+      "fr": "Chose de Vaal'Enthia",
+      "en": "Vaal'Enthia Claw",
+      "es": "Cosa de Vaal'Enthia",
+      "pt": "Coisa de Vaal'Enthia"
+    }
+  },
+  {
+    "definition": {
+      "id": 29082,
+      "level": 226,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329081,
+        "femaleGfxId": 10329081
+      }
+    },
+    "title": {
+      "fr": "Chose de Vaal'Enthia",
+      "en": "Vaal'Enthia Claw",
+      "es": "Cosa de Vaal'Enthia",
+      "pt": "Coisa de Vaal'Enthia"
+    }
+  },
+  {
+    "definition": {
+      "id": 29083,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329081,
+        "femaleGfxId": 10329081
+      }
+    },
+    "title": {
+      "fr": "Chose de Vaal'Enthia",
+      "en": "Vaal'Enthia Claw",
+      "es": "Cosa de Vaal'Enthia",
+      "pt": "Coisa de Vaal'Enthia"
+    }
+  },
+  {
+    "definition": {
+      "id": 29085,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929084,
+        "femaleGfxId": 11929084
+      }
+    },
+    "title": {
+      "fr": "Bottes de Vaal'Enthia",
+      "en": "Vaal'Enthia Boots",
+      "es": "Botas de Vaal'Enthia",
+      "pt": "Botas de Vaal'Enthia"
+    }
+  },
+  {
+    "definition": {
+      "id": 29086,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929084,
+        "femaleGfxId": 11929084
+      }
+    },
+    "title": {
+      "fr": "Bottes de Vaal'Enthia",
+      "en": "Vaal'Enthia Boots",
+      "es": "Botas de Vaal'Enthia",
+      "pt": "Botas de Vaal'Enthia"
+    }
+  },
+  {
+    "definition": {
+      "id": 29087,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229087,
+        "femaleGfxId": 13229087
+      }
+    },
+    "title": {
+      "fr": "Cape Sporadique",
+      "en": "Sporadic Cloak",
+      "es": "Capa sporádica",
+      "pt": "Capa Esporádica"
+    }
+  },
+  {
+    "definition": {
+      "id": 29088,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229087,
+        "femaleGfxId": 13229087
+      }
+    },
+    "title": {
+      "fr": "Cape Sporadique",
+      "en": "Sporadic Cloak",
+      "es": "Capa sporádica",
+      "pt": "Capa Esporádica"
+    }
+  },
+  {
+    "definition": {
+      "id": 29089,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629089,
+        "femaleGfxId": 34729089
+      }
+    },
+    "title": {
+      "fr": "Le Caramélisé",
+      "en": "Caramelicious",
+      "es": "El caramelizado",
+      "pt": "Caramelizado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29090,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629089,
+        "femaleGfxId": 34729089
+      }
+    },
+    "title": {
+      "fr": "Le Caramélisé",
+      "en": "Caramelicious",
+      "es": "El caramelizado",
+      "pt": "Caramelizado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29091,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829091,
+        "femaleGfxId": 13829091
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de Gaal'a",
+      "en": "Gaal'a Epaulettes",
+      "es": "Hombreras de Gaal'a",
+      "pt": "Dragonas de Gaal'a"
+    }
+  },
+  {
+    "definition": {
+      "id": 29092,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829091,
+        "femaleGfxId": 13829091
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de Gaal'a",
+      "en": "Gaal'a Epaulettes",
+      "es": "Hombreras de Gaal'a",
+      "pt": "Dragonas de Gaal'a"
+    }
+  },
+  {
+    "definition": {
+      "id": 29095,
+      "level": 225,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329095,
+        "femaleGfxId": 10329095
+      }
+    },
+    "title": {
+      "fr": "Phyto'ring",
+      "en": "Phyto'ring",
+      "es": "Fitoring",
+      "pt": "Fito'ring"
+    }
+  },
+  {
+    "definition": {
+      "id": 29096,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329095,
+        "femaleGfxId": 10329095
+      }
+    },
+    "title": {
+      "fr": "Phyto'ring",
+      "en": "Phyto'ring",
+      "es": "Fitoring",
+      "pt": "Fito'ring"
+    }
+  },
+  {
+    "definition": {
+      "id": 29097,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429097,
+        "femaleGfxId": 13429097
+      }
+    },
+    "title": {
+      "fr": "Coiffe Phytosensible",
+      "en": "Phytosensitive Headgear",
+      "es": "Tocado fitosensible",
+      "pt": "Chapéu Fitossensível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29098,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429097,
+        "femaleGfxId": 13429097
+      }
+    },
+    "title": {
+      "fr": "Coiffe Phytosensible",
+      "en": "Phytosensitive Headgear",
+      "es": "Tocado fitosensible",
+      "pt": "Chapéu Fitossensível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29099,
+      "level": 225,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13329099,
+        "femaleGfxId": 13329099
+      }
+    },
+    "title": {
+      "fr": "Ceintrophée",
+      "en": "Beltrophy",
+      "es": "Cintrofeo",
+      "pt": "Cintroféu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29100,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329099,
+        "femaleGfxId": 13329099
+      }
+    },
+    "title": {
+      "fr": "Ceintrophée\t",
+      "en": "Beltrophy\t",
+      "es": "Cintrofeo\t",
+      "pt": "Cintroféu\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29101,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329099,
+        "femaleGfxId": 13329099
+      }
+    },
+    "title": {
+      "fr": "Ceintrophée",
+      "en": "Beltrophy",
+      "es": "Cintrofeo",
+      "pt": "Cintroféu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29102,
+      "level": 224,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13429102,
+        "femaleGfxId": 13429102
+      }
+    },
+    "title": {
+      "fr": "Le Taque",
+      "en": "The Tock",
+      "es": "El tac",
+      "pt": "O Taque"
+    }
+  },
+  {
+    "definition": {
+      "id": 29103,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429102,
+        "femaleGfxId": 13429102
+      }
+    },
+    "title": {
+      "fr": "Le Taque",
+      "en": "The Tock",
+      "es": "El tac",
+      "pt": "O Taque"
+    }
+  },
+  {
+    "definition": {
+      "id": 29104,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429102,
+        "femaleGfxId": 13429102
+      }
+    },
+    "title": {
+      "fr": "Le Taque",
+      "en": "The Tock",
+      "es": "El tac",
+      "pt": "O Taque"
+    }
+  },
+  {
+    "definition": {
+      "id": 29105,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229105,
+        "femaleGfxId": 13229105
+      }
+    },
+    "title": {
+      "fr": "La Tique",
+      "en": "The Tick",
+      "es": "La tic",
+      "pt": "A Tique"
+    }
+  },
+  {
+    "definition": {
+      "id": 29106,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229105,
+        "femaleGfxId": 13229105
+      }
+    },
+    "title": {
+      "fr": "La Tique",
+      "en": "The Tick",
+      "es": "La tic",
+      "pt": "A Tique"
+    }
+  },
+  {
+    "definition": {
+      "id": 29107,
+      "level": 229,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829107,
+        "femaleGfxId": 13829107
+      }
+    },
+    "title": {
+      "fr": "Les Tomb'Heures",
+      "en": "Shoulder Throws",
+      "es": "Las seductombreras",
+      "pt": "Conquistad'Horas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29108,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829107,
+        "femaleGfxId": 13829107
+      }
+    },
+    "title": {
+      "fr": "Les Tomb'Heures",
+      "en": "Shoulder Throws",
+      "es": "Las seductombreras",
+      "pt": "Conquistad'Horas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29109,
+      "level": 230,
+      "rarity": 6,
+      "graphicParameters": {
+        "gfxId": 10319888,
+        "femaleGfxId": 10319888
+      }
+    },
+    "title": {
+      "fr": "Le Nomade Max",
+      "en": "Nomad Max",
+      "es": "El Nómada Max",
+      "pt": "Nômade Máximo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29110,
+      "level": 230,
+      "rarity": 6,
+      "graphicParameters": {
+        "gfxId": 12019893,
+        "femaleGfxId": 12019893
+      }
+    },
+    "title": {
+      "fr": "Crocs Féroces",
+      "en": "Ferocious Fangs",
+      "es": "Colmillos feroces",
+      "pt": "Presas Ferozes"
+    }
+  },
+  {
+    "definition": {
+      "id": 29111,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829111,
+        "femaleGfxId": 13829111
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de l'adepte",
+      "en": "Follower Epaulettes",
+      "es": "Hombreras de adepto",
+      "pt": "Dragonas do Adepto"
+    }
+  },
+  {
+    "definition": {
+      "id": 29112,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829111,
+        "femaleGfxId": 13829111
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de l'adepte",
+      "en": "Follower Epaulettes",
+      "es": "Hombreras de adepto",
+      "pt": "Dragonas do Adepto"
+    }
+  },
+  {
+    "definition": {
+      "id": 29113,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029113,
+        "femaleGfxId": 12029113
+      }
+    },
+    "title": {
+      "fr": "Amulette de l'adepte",
+      "en": "Follower Amulet",
+      "es": "Amuleto de adepto",
+      "pt": "Amuleto do Adepto"
+    }
+  },
+  {
+    "definition": {
+      "id": 29114,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029113,
+        "femaleGfxId": 12029113
+      }
+    },
+    "title": {
+      "fr": "Amulette de l'adepte",
+      "en": "Follower Amulet",
+      "es": "Amuleto de adepto",
+      "pt": "Amuleto do Adepto"
+    }
+  },
+  {
+    "definition": {
+      "id": 29115,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429115,
+        "femaleGfxId": 13429115
+      }
+    },
+    "title": {
+      "fr": "Coc'Heaume",
+      "en": "Chrysahelm",
+      "es": "Cascorón",
+      "pt": "Cas'Elmo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29116,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429115,
+        "femaleGfxId": 13429115
+      }
+    },
+    "title": {
+      "fr": "Coc'Heaume",
+      "en": "Chrysahelm",
+      "es": "Cascorón",
+      "pt": "Cas'Elmo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29117,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329117,
+        "femaleGfxId": 13329117
+      }
+    },
+    "title": {
+      "fr": "Sangle Aérienne",
+      "en": "Aerial Belt",
+      "es": "Correa aérea",
+      "pt": "Cinto Aéreo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29118,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329117,
+        "femaleGfxId": 13329117
+      }
+    },
+    "title": {
+      "fr": "Sangle Aérienne",
+      "en": "Aerial Belt",
+      "es": "Correa aérea",
+      "pt": "Cinto Aéreo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29122,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329121,
+        "femaleGfxId": 13329121
+      }
+    },
+    "title": {
+      "fr": "Boucle Dentée",
+      "en": "Toothed Belt",
+      "es": "Cinturón dentado",
+      "pt": "Fivela Dentada"
+    }
+  },
+  {
+    "definition": {
+      "id": 29123,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329121,
+        "femaleGfxId": 13329121
+      }
+    },
+    "title": {
+      "fr": "Boucle Dentée",
+      "en": "Toothed Belt",
+      "es": "Cinturón dentado",
+      "pt": "Fivela Dentada"
+    }
+  },
+  {
+    "definition": {
+      "id": 29124,
+      "level": 220,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 11929124,
+        "femaleGfxId": 11929124
+      }
+    },
+    "title": {
+      "fr": "Bottes Vides",
+      "en": "Empty Boots",
+      "es": "Botas vacías",
+      "pt": "Botas Vazias"
+    }
+  },
+  {
+    "definition": {
+      "id": 29125,
+      "level": 223,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929124,
+        "femaleGfxId": 11929124
+      }
+    },
+    "title": {
+      "fr": "Bottes Vides",
+      "en": "Empty Boots",
+      "es": "Botas vacías",
+      "pt": "Botas Vazias"
+    }
+  },
+  {
+    "definition": {
+      "id": 29126,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929124,
+        "femaleGfxId": 11929124
+      }
+    },
+    "title": {
+      "fr": "Bottes Vides",
+      "en": "Empty Boots",
+      "es": "Botas vacías",
+      "pt": "Botas Vazias"
+    }
+  },
+  {
+    "definition": {
+      "id": 29127,
+      "level": 221,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 10329127,
+        "femaleGfxId": 10329127
+      }
+    },
+    "title": {
+      "fr": "Ann'Agrippé",
+      "en": "Clinging Ring",
+      "es": "An'Agarrado",
+      "pt": "An'Apegado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29128,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329127,
+        "femaleGfxId": 10329127
+      }
+    },
+    "title": {
+      "fr": "Ann'Agrippé",
+      "en": "Clinging Ring",
+      "es": "An'Agarrado",
+      "pt": "An'Apegado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29130,
+      "level": 222,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13829130,
+        "femaleGfxId": 13829130
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de Vidéant",
+      "en": "Voidivion Epaulettes",
+      "es": "Hombreras de vaciante",
+      "pt": "Dragonas de Vaziante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29131,
+      "level": 225,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829130,
+        "femaleGfxId": 13829130
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de Vidéant",
+      "en": "Voidivion Epaulettes",
+      "es": "Hombreras de vaciante",
+      "pt": "Dragonas de Vaziante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29132,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829130,
+        "femaleGfxId": 13829130
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de Vidéant",
+      "en": "Voidivion Epaulettes",
+      "es": "Hombreras de vaciante",
+      "pt": "Dragonas de Vaziante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29133,
+      "level": 219,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13629133,
+        "femaleGfxId": 34729133
+      }
+    },
+    "title": {
+      "fr": "Plastron d'Enter",
+      "en": "Bracing Breastplate",
+      "es": "Coraza dentada",
+      "pt": "Peitoral Denterrível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29134,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629133,
+        "femaleGfxId": 34729133
+      }
+    },
+    "title": {
+      "fr": "Plastron d'Enter\t",
+      "en": "Bracing Breastplate\t",
+      "es": "Coraza dentada\t",
+      "pt": "Peitoral Denterrível\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29135,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629133,
+        "femaleGfxId": 34729133
+      }
+    },
+    "title": {
+      "fr": "Plastron d'Enter",
+      "en": "Bracing Breastplate",
+      "es": "Coraza dentada",
+      "pt": "Peitoral Denterrível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29136,
+      "level": 220,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 12029136,
+        "femaleGfxId": 12029136
+      }
+    },
+    "title": {
+      "fr": "Collier de Briss",
+      "en": "Briss Necklace",
+      "es": "Collar de Briss",
+      "pt": "Colar de Briss"
+    }
+  },
+  {
+    "definition": {
+      "id": 29137,
+      "level": 223,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029136,
+        "femaleGfxId": 12029136
+      }
+    },
+    "title": {
+      "fr": "Collier de Briss",
+      "en": "Briss Necklace",
+      "es": "Collar de Briss",
+      "pt": "Colar de Briss"
+    }
+  },
+  {
+    "definition": {
+      "id": 29138,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029136,
+        "femaleGfxId": 12029136
+      }
+    },
+    "title": {
+      "fr": "Collier de Briss",
+      "en": "Briss Necklace",
+      "es": "Collar de Briss",
+      "pt": "Colar de Briss"
+    }
+  },
+  {
+    "definition": {
+      "id": 29139,
+      "level": 221,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429139,
+        "femaleGfxId": 13429139
+      }
+    },
+    "title": {
+      "fr": "Coiffe de Chrysavide",
+      "en": "Chrysavoid Headgear",
+      "es": "Tocado de crisálivacío",
+      "pt": "Chapéu de Crisalhufas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29140,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429139,
+        "femaleGfxId": 13429139
+      }
+    },
+    "title": {
+      "fr": "Coiffe de Chrysavide",
+      "en": "Chrysavoid Headgear",
+      "es": "Tocado de crisálivacío",
+      "pt": "Chapéu de Crisalhufas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29141,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229141,
+        "femaleGfxId": 13229141
+      }
+    },
+    "title": {
+      "fr": "Cape de Vidéant",
+      "en": "Voidivion Cloak",
+      "es": "Capa de vaciante",
+      "pt": "Capa de Vaziante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29142,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229141,
+        "femaleGfxId": 13229141
+      }
+    },
+    "title": {
+      "fr": "Cape de Vidéant",
+      "en": "Voidivion Cloak",
+      "es": "Capa de vaciante",
+      "pt": "Capa de Vaziante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29143,
+      "level": 223,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 10329143,
+        "femaleGfxId": 10329143
+      }
+    },
+    "title": {
+      "fr": "Annéant",
+      "en": "Void Ring",
+      "es": "Annada",
+      "pt": "A'nulado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29144,
+      "level": 226,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329143,
+        "femaleGfxId": 10329143
+      }
+    },
+    "title": {
+      "fr": "Annéant\t",
+      "en": "Void Ring\t",
+      "es": "Annada\t",
+      "pt": "A'nulado\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29145,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329143,
+        "femaleGfxId": 10329143
+      }
+    },
+    "title": {
+      "fr": "Annéant",
+      "en": "Void Ring",
+      "es": "Annada",
+      "pt": "A'nulado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29146,
+      "level": 225,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 11929146,
+        "femaleGfxId": 11929146
+      }
+    },
+    "title": {
+      "fr": "Bottes de mauvais Augure",
+      "en": "Bad Omen Boots",
+      "es": "Botas de mal augurio",
+      "pt": "Botas de Mau Agouro"
+    }
+  },
+  {
+    "definition": {
+      "id": 29147,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929146,
+        "femaleGfxId": 11929146
+      }
+    },
+    "title": {
+      "fr": "Bottes de mauvais Augure",
+      "en": "Bad Omen Boots",
+      "es": "Botas de mal augurio",
+      "pt": "Botas de Mau Agouro"
+    }
+  },
+  {
+    "definition": {
+      "id": 29148,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929146,
+        "femaleGfxId": 11929146
+      }
+    },
+    "title": {
+      "fr": "Bottes de mauvais Augure",
+      "en": "Bad Omen Boots",
+      "es": "Botas de mal augurio",
+      "pt": "Botas de Mau Agouro"
+    }
+  },
+  {
+    "definition": {
+      "id": 29149,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229149,
+        "femaleGfxId": 13229149
+      }
+    },
+    "title": {
+      "fr": "Voile d'Ombre\t",
+      "en": "Shadowy Veil\t",
+      "es": "Velo de sombra\t",
+      "pt": "Véu de Sombra\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29150,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229149,
+        "femaleGfxId": 13229149
+      }
+    },
+    "title": {
+      "fr": "Voile d'Ombre",
+      "en": "Shadowy Veil",
+      "es": "Velo de sombra",
+      "pt": "Véu de Sombra"
+    }
+  },
+  {
+    "definition": {
+      "id": 29151,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629151,
+        "femaleGfxId": 13629151
+      }
+    },
+    "title": {
+      "fr": "Plastron d'Ar'Nan",
+      "en": "Ar'Nan Breastplate",
+      "es": "Coraza de Ar'Nan",
+      "pt": "Peitoral de Ar'Nan"
+    }
+  },
+  {
+    "definition": {
+      "id": 29152,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629151,
+        "femaleGfxId": 13629151
+      }
+    },
+    "title": {
+      "fr": "Plastron d'Ar'Nan",
+      "en": "Ar'Nan Breastplate",
+      "es": "Coraza de Ar'Nan",
+      "pt": "Peitoral de Ar'Nan"
+    }
+  },
+  {
+    "definition": {
+      "id": 29153,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329153,
+        "femaleGfxId": 13329153
+      }
+    },
+    "title": {
+      "fr": "Ceinture Renforcée\t",
+      "en": "Reinforced Belt\t",
+      "es": "Cinturón reforzado\t",
+      "pt": "Cinto Reforçado\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29154,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329153,
+        "femaleGfxId": 13329153
+      }
+    },
+    "title": {
+      "fr": "Ceinture Renforcée",
+      "en": "Reinforced Belt",
+      "es": "Cinturón reforzado",
+      "pt": "Cinto Reforçado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29155,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429155,
+        "femaleGfxId": 13429155
+      }
+    },
+    "title": {
+      "fr": "Heaume du Chevalier Creux",
+      "en": "Hollowed-Out Knight's Helm",
+      "es": "Yelmo del caballero hueco",
+      "pt": "Elmo do Cavaleiro Oco"
+    }
+  },
+  {
+    "definition": {
+      "id": 29156,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429155,
+        "femaleGfxId": 13429155
+      }
+    },
+    "title": {
+      "fr": "Heaume du Chevalier Creux",
+      "en": "Hollowed-Out Knight's Helm",
+      "es": "Yelmo del caballero hueco",
+      "pt": "Elmo do Cavaleiro Oco"
+    }
+  },
+  {
+    "definition": {
+      "id": 29157,
+      "level": 225,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829157,
+        "femaleGfxId": 13829157
+      }
+    },
+    "title": {
+      "fr": "Diagonale du Vide\t",
+      "en": "Void Diagonal\t",
+      "es": "Diagonal del vacío\t",
+      "pt": "Diagonal do Vazio\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29158,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829157,
+        "femaleGfxId": 13829157
+      }
+    },
+    "title": {
+      "fr": "Diagonale du Vide\t",
+      "en": "Void Diagonal\t",
+      "es": "Diagonal del vacío\t",
+      "pt": "Diagonal do Vazio\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29159,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029159,
+        "femaleGfxId": 12029159
+      }
+    },
+    "title": {
+      "fr": "La Mib'Oule\t",
+      "en": "The MIB'all\t",
+      "es": "La mibola\t",
+      "pt": "MIB'ola\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29160,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029159,
+        "femaleGfxId": 12029159
+      }
+    },
+    "title": {
+      "fr": "La Mib'Oule",
+      "en": "The MIB'all",
+      "es": "La mibola",
+      "pt": "MIB'ola"
+    }
+  },
+  {
+    "definition": {
+      "id": 29161,
+      "level": 225,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 10329161,
+        "femaleGfxId": 10329161
+      }
+    },
+    "title": {
+      "fr": "Dés Espoir",
+      "en": "Despair o' Dice",
+      "es": "Dadosánimo",
+      "pt": "Dedal Amento"
+    }
+  },
+  {
+    "definition": {
+      "id": 29162,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329161,
+        "femaleGfxId": 10329161
+      }
+    },
+    "title": {
+      "fr": "Dés Espoir",
+      "en": "Despair o' Dice",
+      "es": "Dadosánimo",
+      "pt": "Dedal Amento"
+    }
+  },
+  {
+    "definition": {
+      "id": 29163,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329161,
+        "femaleGfxId": 10329161
+      }
+    },
+    "title": {
+      "fr": "Dés Espoir",
+      "en": "Despair o' Dice",
+      "es": "Dadosánimo",
+      "pt": "Dedal Amento"
+    }
+  },
+  {
+    "definition": {
+      "id": 29164,
+      "level": 224,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13429164,
+        "femaleGfxId": 13429164
+      }
+    },
+    "title": {
+      "fr": "BenK'squette",
+      "en": "BenK'ap",
+      "es": "BenK'asco",
+      "pt": "BenK'uepe"
+    }
+  },
+  {
+    "definition": {
+      "id": 29165,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429164,
+        "femaleGfxId": 13429164
+      }
+    },
+    "title": {
+      "fr": "BenK'squette",
+      "en": "BenK'ap",
+      "es": "BenK'asco",
+      "pt": "BenK'uepe"
+    }
+  },
+  {
+    "definition": {
+      "id": 29166,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429164,
+        "femaleGfxId": 13429164
+      }
+    },
+    "title": {
+      "fr": "BenK'squette",
+      "en": "BenK'ap",
+      "es": "BenK'asco",
+      "pt": "BenK'uepe"
+    }
+  },
+  {
+    "definition": {
+      "id": 29167,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329167,
+        "femaleGfxId": 10329167
+      }
+    },
+    "title": {
+      "fr": "Sortie d'Automne",
+      "en": "Autumnal Outing",
+      "es": "Salida de otoño",
+      "pt": "Saída de Outono"
+    }
+  },
+  {
+    "definition": {
+      "id": 29168,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329167,
+        "femaleGfxId": 10329167
+      }
+    },
+    "title": {
+      "fr": "Sortie d'Automne",
+      "en": "Autumnal Outing",
+      "es": "Salida de otoño",
+      "pt": "Saída de Outono"
+    }
+  },
+  {
+    "definition": {
+      "id": 29169,
+      "level": 229,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329169,
+        "femaleGfxId": 13329169
+      }
+    },
+    "title": {
+      "fr": "Ceinturfu",
+      "en": "Beltomorrow",
+      "es": "Cintuloco",
+      "pt": "Cintorutuf"
+    }
+  },
+  {
+    "definition": {
+      "id": 29170,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329169,
+        "femaleGfxId": 13329169
+      }
+    },
+    "title": {
+      "fr": "Ceinturfu",
+      "en": "Beltomorrow",
+      "es": "Cintuloco",
+      "pt": "Cintorutuf"
+    }
+  },
+  {
+    "definition": {
+      "id": 29171,
+      "level": 230,
+      "rarity": 6,
+      "graphicParameters": {
+        "gfxId": 13420220,
+        "femaleGfxId": 13420220
+      }
+    },
+    "title": {
+      "fr": "Heaume de Précision",
+      "en": "Precision Helmet",
+      "es": "Yelmo de precisión",
+      "pt": "Elmo de Precisão"
+    }
+  },
+  {
+    "definition": {
+      "id": 29172,
+      "level": 230,
+      "rarity": 6,
+      "graphicParameters": {
+        "gfxId": 13220213,
+        "femaleGfxId": 13220213
+      }
+    },
+    "title": {
+      "fr": "Drapeau Dunîl",
+      "en": "Nyl Flag",
+      "es": "Bandera Delnilo",
+      "pt": "Bandeira Dunylo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29173,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429173,
+        "femaleGfxId": 13429173
+      }
+    },
+    "title": {
+      "fr": "Masque d'Archibald",
+      "en": "Archibald Mask",
+      "es": "Máscara de Archibald",
+      "pt": "Máscara de Arquibaldo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29174,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429173,
+        "femaleGfxId": 13429173
+      }
+    },
+    "title": {
+      "fr": "Masque d'Archibald",
+      "en": "Archibald Mask",
+      "es": "Máscara de Archibald",
+      "pt": "Máscara de Arquibaldo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29175,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329175,
+        "femaleGfxId": 13329175
+      }
+    },
+    "title": {
+      "fr": "Buste d'Archibald",
+      "en": "Archibald Bust",
+      "es": "Busto de Archibald",
+      "pt": "Busto de Arquibaldo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29176,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329175,
+        "femaleGfxId": 13329175
+      }
+    },
+    "title": {
+      "fr": "Buste d'Archibald",
+      "en": "Archibald Bust",
+      "es": "Busto de Archibald",
+      "pt": "Busto de Arquibaldo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29177,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429177,
+        "femaleGfxId": 13429177
+      }
+    },
+    "title": {
+      "fr": "Epouvancrâne",
+      "en": "Skullcrow",
+      "es": "Cascorripilante",
+      "pt": "Crâniospantalho"
+    }
+  },
+  {
+    "definition": {
+      "id": 29179,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029179,
+        "femaleGfxId": 12029179
+      }
+    },
+    "title": {
+      "fr": "Pendant d'If",
+      "en": "Yew Pendangle",
+      "es": "Colgante de If",
+      "pt": "Pingente de Teixo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29180,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029179,
+        "femaleGfxId": 12029179
+      }
+    },
+    "title": {
+      "fr": "Pendant d'If",
+      "en": "Yew Pendangle",
+      "es": "Colgante de If",
+      "pt": "Pingente de Teixo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29183,
+      "level": 219,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 10329183,
+        "femaleGfxId": 10329183
+      }
+    },
+    "title": {
+      "fr": "Ano'Rible",
+      "en": "Horror Ring",
+      "es": "Ano'Rrible",
+      "pt": "Horrivanel"
+    }
+  },
+  {
+    "definition": {
+      "id": 29184,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329183,
+        "femaleGfxId": 10329183
+      }
+    },
+    "title": {
+      "fr": "Ano'Rible",
+      "en": "Horror Ring",
+      "es": "Ano'Rrible",
+      "pt": "Horrivanel"
+    }
+  },
+  {
+    "definition": {
+      "id": 29185,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329183,
+        "femaleGfxId": 10329183
+      }
+    },
+    "title": {
+      "fr": "Ano'Rible",
+      "en": "Horror Ring",
+      "es": "Ano'Rrible",
+      "pt": "Horrivanel"
+    }
+  },
+  {
+    "definition": {
+      "id": 29186,
+      "level": 220,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13429186,
+        "femaleGfxId": 13429186
+      }
+    },
+    "title": {
+      "fr": "La Gargoiffe\t",
+      "en": "Gargoyle Headgear\t",
+      "es": "El gargotocado\t",
+      "pt": "Chapegárgula\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29187,
+      "level": 223,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429186,
+        "femaleGfxId": 13429186
+      }
+    },
+    "title": {
+      "fr": "La Gargoiffe\t\t",
+      "en": "Gargoyle Headgear\t\t",
+      "es": "El gargotocado\t\t",
+      "pt": "Chapegárgula\t\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29188,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429186,
+        "femaleGfxId": 13429186
+      }
+    },
+    "title": {
+      "fr": "La Gargoiffe",
+      "en": "Gargoyle Headgear",
+      "es": "El gargotocado",
+      "pt": "Chapegárgula"
+    }
+  },
+  {
+    "definition": {
+      "id": 29189,
+      "level": 221,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13229189,
+        "femaleGfxId": 13229189
+      }
+    },
+    "title": {
+      "fr": "Voile Ensanglanté",
+      "en": "Bloody Veil",
+      "es": "Velo ensangrentado",
+      "pt": "Véu Ensanguentado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29190,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229189,
+        "femaleGfxId": 13229189
+      }
+    },
+    "title": {
+      "fr": "Voile Ensanglanté",
+      "en": "Bloody Veil",
+      "es": "Velo ensangrentado",
+      "pt": "Véu Ensanguentado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29191,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229189,
+        "femaleGfxId": 13229189
+      }
+    },
+    "title": {
+      "fr": "Voile Ensanglanté",
+      "en": "Bloody Veil",
+      "es": "Velo ensangrentado",
+      "pt": "Véu Ensanguentado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29192,
+      "level": 222,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 11929192,
+        "femaleGfxId": 11929192
+      }
+    },
+    "title": {
+      "fr": "Pattes de Démhorrible",
+      "en": "Horridemon Leg",
+      "es": "Patas de demorribles",
+      "pt": "Patas de Demhorrível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29193,
+      "level": 225,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929192,
+        "femaleGfxId": 11929192
+      }
+    },
+    "title": {
+      "fr": "Pattes de Démhorrible",
+      "en": "Horridemon Leg",
+      "es": "Patas de demorribles",
+      "pt": "Patas de Demhorrível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29194,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929192,
+        "femaleGfxId": 11929192
+      }
+    },
+    "title": {
+      "fr": "Pattes de Démhorrible\t",
+      "en": "Horridemon Leg\t",
+      "es": "Patas de demorribles\t",
+      "pt": "Patas de Demhorrível\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29196,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629195,
+        "femaleGfxId": 34729195
+      }
+    },
+    "title": {
+      "fr": "Plastron de l'Épouvante",
+      "en": "Breastplate of Terror",
+      "es": "Coraza del espanto",
+      "pt": "Peitoral do Terror"
+    }
+  },
+  {
+    "definition": {
+      "id": 29197,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629195,
+        "femaleGfxId": 34729195
+      }
+    },
+    "title": {
+      "fr": "Plastron de l'Épouvante\t",
+      "en": "Breastplate of Terror\t",
+      "es": "Coraza del espanto\t",
+      "pt": "Peitoral do Terror\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29198,
+      "level": 220,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 12029198,
+        "femaleGfxId": 12029198
+      }
+    },
+    "title": {
+      "fr": "Amulette de l'Effroi\t",
+      "en": "Amulet of Terror\t",
+      "es": "Amuleto del pavor\t",
+      "pt": "Amuleto do Terror\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29199,
+      "level": 223,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029198,
+        "femaleGfxId": 12029198
+      }
+    },
+    "title": {
+      "fr": "Amulette de l'Effroi\t",
+      "en": "Amulet of Terror\t",
+      "es": "Amuleto del pavor\t",
+      "pt": "Amuleto do Terror\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29200,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029198,
+        "femaleGfxId": 12029198
+      }
+    },
+    "title": {
+      "fr": "Amulette de l'Effroi\t",
+      "en": "Amulet of Terror\t",
+      "es": "Amuleto del pavor\t",
+      "pt": "Amuleto do Terror\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29201,
+      "level": 221,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329201,
+        "femaleGfxId": 13329201
+      }
+    },
+    "title": {
+      "fr": "Ceinture Effroyable\t",
+      "en": "Frightful Belt\t",
+      "es": "Cinturón espeluznante\t",
+      "pt": "Cinto Apavorante\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29202,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329201,
+        "femaleGfxId": 13329201
+      }
+    },
+    "title": {
+      "fr": "Ceinture Effroyable\t",
+      "en": "Frightful Belt\t",
+      "es": "Cinturón espeluznante\t",
+      "pt": "Cinto Apavorante\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29203,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829203,
+        "femaleGfxId": 13829203
+      }
+    },
+    "title": {
+      "fr": "Epaulettes Horribles\t",
+      "en": "Horrible Epaulettes\t",
+      "es": "Hombreras horribles\t",
+      "pt": "Dragonas Horríveis\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29204,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829203,
+        "femaleGfxId": 13829203
+      }
+    },
+    "title": {
+      "fr": "Epaulettes Horribles\t",
+      "en": "Horrible Epaulettes\t",
+      "es": "Hombreras horribles\t",
+      "pt": "Dragonas Horríveis\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29205,
+      "level": 223,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13829205,
+        "femaleGfxId": 13829205
+      }
+    },
+    "title": {
+      "fr": "Epaulettes Or'Nées \t",
+      "en": "Forl'Ornate Epaulettes \t",
+      "es": "Hombreras or'namentadas \t",
+      "pt": "Dragonas Adournadas \t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29206,
+      "level": 226,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829205,
+        "femaleGfxId": 13829205
+      }
+    },
+    "title": {
+      "fr": "Epaulettes Or'Nées \t",
+      "en": "Forl'Ornate Epaulettes \t",
+      "es": "Hombreras or'namentadas \t",
+      "pt": "Dragonas Adournadas \t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29207,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829205,
+        "femaleGfxId": 13829205
+      }
+    },
+    "title": {
+      "fr": "Epaulettes Or'Nées \t",
+      "en": "Forl'Ornate Epaulettes \t",
+      "es": "Hombreras or'namentadas \t",
+      "pt": "Dragonas Adournadas \t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29208,
+      "level": 225,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 12029208,
+        "femaleGfxId": 12029208
+      }
+    },
+    "title": {
+      "fr": "Gri-gri Sanguinaire\t",
+      "en": "Bloodthirsty Gris-Gris\t",
+      "es": "Grisgrís sanguinario\t",
+      "pt": "Amuleto Sanguinário\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29209,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029208,
+        "femaleGfxId": 12029208
+      }
+    },
+    "title": {
+      "fr": "Gri-gri Sanguinaire\t",
+      "en": "Bloodthirsty Gris-Gris\t",
+      "es": "Grisgrís sanguinario\t",
+      "pt": "Amuleto Sanguinário\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29210,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029208,
+        "femaleGfxId": 12029208
+      }
+    },
+    "title": {
+      "fr": "Gri-gri Sanguinaire\t",
+      "en": "Bloodthirsty Gris-Gris\t",
+      "es": "Grisgrís sanguinario\t",
+      "pt": "Amuleto Sanguinário\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29211,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229211,
+        "femaleGfxId": 13229211
+      }
+    },
+    "title": {
+      "fr": "Cape de Cratéros\t",
+      "en": "Crateros Cloak\t",
+      "es": "Capa de Crateros\t",
+      "pt": "Capa de Crateros\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29212,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229211,
+        "femaleGfxId": 13229211
+      }
+    },
+    "title": {
+      "fr": "Cape de Cratéros\t",
+      "en": "Crateros Cloak\t",
+      "es": "Capa de Crateros\t",
+      "pt": "Capa de Crateros\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29213,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629213,
+        "femaleGfxId": 34729213
+      }
+    },
+    "title": {
+      "fr": "Chemise du Bourreau",
+      "en": "Executioner's Shirt",
+      "es": "Camisa de verdugo",
+      "pt": "Camisa do Carrasco"
+    }
+  },
+  {
+    "definition": {
+      "id": 29214,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629213,
+        "femaleGfxId": 34729213
+      }
+    },
+    "title": {
+      "fr": "Chemise du Bourreau\t",
+      "en": "Executioner's Shirt\t",
+      "es": "Camisa de verdugo\t",
+      "pt": "Camisa do Carrasco\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29215,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329215,
+        "femaleGfxId": 13329215
+      }
+    },
+    "title": {
+      "fr": "Croch'Ture\t",
+      "en": "Li'l' Hooky\t",
+      "es": "Garfito\t",
+      "pt": "Ganchinto\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29216,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329215,
+        "femaleGfxId": 13329215
+      }
+    },
+    "title": {
+      "fr": "Croch'Ture",
+      "en": "Li'l' Hooky",
+      "es": "Garfito",
+      "pt": "Ganchinto"
+    }
+  },
+  {
+    "definition": {
+      "id": 29217,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429217,
+        "femaleGfxId": 13429217
+      }
+    },
+    "title": {
+      "fr": "Coiffe du Bourreau\t",
+      "en": "Executioner's Headgear\t",
+      "es": "Tocado de verdugo\t",
+      "pt": "Chapéu do Carrasco\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29218,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429217,
+        "femaleGfxId": 13429217
+      }
+    },
+    "title": {
+      "fr": "Coiffe du Bourreau\t",
+      "en": "Executioner's Headgear\t",
+      "es": "Tocado de verdugo\t",
+      "pt": "Chapéu do Carrasco\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29219,
+      "level": 225,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329219,
+        "femaleGfxId": 10329219
+      }
+    },
+    "title": {
+      "fr": "Goat Ique\t",
+      "en": "Goat Thick Ring\t",
+      "es": "Got ico\t",
+      "pt": "Goat Ico\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29220,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329219,
+        "femaleGfxId": 10329219
+      }
+    },
+    "title": {
+      "fr": "Goat Ique\t",
+      "en": "Goat Thick Ring\t",
+      "es": "Got ico\t",
+      "pt": "Goat Ico\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29221,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929221,
+        "femaleGfxId": 11929221
+      }
+    },
+    "title": {
+      "fr": "Les Cratérobottes",
+      "en": "Crateroboots",
+      "es": "Las craterobotas",
+      "pt": "Craterobotas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29222,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929221,
+        "femaleGfxId": 11929221
+      }
+    },
+    "title": {
+      "fr": "Les Cratérobottes \t",
+      "en": "Crateroboots \t",
+      "es": "Las craterobotas \t",
+      "pt": "Craterobotas \t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29223,
+      "level": 225,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13329223,
+        "femaleGfxId": 13329223
+      }
+    },
+    "title": {
+      "fr": "Ceinture Unique\t",
+      "en": "Unique Belt\t",
+      "es": "Cinturón único\t",
+      "pt": "Cinto Único\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29224,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329223,
+        "femaleGfxId": 13329223
+      }
+    },
+    "title": {
+      "fr": "Ceinture Unique\t",
+      "en": "Unique Belt\t",
+      "es": "Cinturón único\t",
+      "pt": "Cinto Único\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29225,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329223,
+        "femaleGfxId": 13329223
+      }
+    },
+    "title": {
+      "fr": "Ceinture Unique\t",
+      "en": "Unique Belt\t",
+      "es": "Cinturón único\t",
+      "pt": "Cinto Único\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29226,
+      "level": 224,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13429226,
+        "femaleGfxId": 13429226
+      }
+    },
+    "title": {
+      "fr": "Casque du Féca Wabbit\t",
+      "en": "Wabbit Feca Helmet\t",
+      "es": "Casco de feca wabbit\t",
+      "pt": "Capacete do Feca Wabbit\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29227,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429226,
+        "femaleGfxId": 13429226
+      }
+    },
+    "title": {
+      "fr": "Casque du Féca Wabbit\t",
+      "en": "Wabbit Feca Helmet\t",
+      "es": "Casco de feca wabbit\t",
+      "pt": "Capacete do Feca Wabbit\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29228,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429226,
+        "femaleGfxId": 13429226
+      }
+    },
+    "title": {
+      "fr": "Casque du Féca Wabbit\t",
+      "en": "Wabbit Feca Helmet\t",
+      "es": "Casco de feca wabbit\t",
+      "pt": "Capacete do Feca Wabbit\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29229,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229229,
+        "femaleGfxId": 13229229
+      }
+    },
+    "title": {
+      "fr": "L'Aficahpe",
+      "en": "Aficahpe",
+      "es": "La aficapa",
+      "pt": "Aficahpa"
+    }
+  },
+  {
+    "definition": {
+      "id": 29230,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229229,
+        "femaleGfxId": 13229229
+      }
+    },
+    "title": {
+      "fr": "L'Aficahpe",
+      "en": "Aficahpe",
+      "es": "La aficapa",
+      "pt": "Aficahpa"
+    }
+  },
+  {
+    "definition": {
+      "id": 29231,
+      "level": 229,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029231,
+        "femaleGfxId": 12029231
+      }
+    },
+    "title": {
+      "fr": "Amulette du Temps",
+      "en": "Amulet of Time",
+      "es": "Amuleto del tiempo",
+      "pt": "Amuleto do Tempo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29232,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029231,
+        "femaleGfxId": 12029231
+      }
+    },
+    "title": {
+      "fr": "Amulette du Temps",
+      "en": "Amulet of Time",
+      "es": "Amuleto del tiempo",
+      "pt": "Amuleto do Tempo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29233,
+      "level": 230,
+      "rarity": 6,
+      "graphicParameters": {
+        "gfxId": 13819887,
+        "femaleGfxId": 13819887
+      }
+    },
+    "title": {
+      "fr": "Piquants Solaires",
+      "en": "Smolder Pads",
+      "es": "Pinchos solares",
+      "pt": "Queimeiras"
+    }
+  },
+  {
+    "definition": {
+      "id": 29234,
+      "level": 230,
+      "rarity": 6,
+      "graphicParameters": {
+        "gfxId": 13619891,
+        "femaleGfxId": 34719891
+      }
+    },
+    "title": {
+      "fr": "Peignoir Dodikaprio",
+      "en": "Ti Tunic",
+      "es": "Albornoz Dodikaprio",
+      "pt": "Roupão Dodikaprio"
+    }
+  },
+  {
+    "definition": {
+      "id": 29235,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629235,
+        "femaleGfxId": 34729235
+      }
+    },
+    "title": {
+      "fr": "!\"(-è@)\"",
+      "en": "!\"(-è@)\"",
+      "es": "!\"(-è@)\"",
+      "pt": "!\"(-è@)\""
+    }
+  },
+  {
+    "definition": {
+      "id": 29236,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629235,
+        "femaleGfxId": 34729235
+      }
+    },
+    "title": {
+      "fr": "!\"(-è@)\"",
+      "en": "!\"(-è@)\"",
+      "es": "!\"(-è@)\"",
+      "pt": "!\"(-è@)\""
+    }
+  },
+  {
+    "definition": {
+      "id": 29237,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329237,
+        "femaleGfxId": 10329237
+      }
+    },
+    "title": {
+      "fr": "\".#@)é",
+      "en": "\".#@)é",
+      "es": "\".#@)é",
+      "pt": "\".#@)é"
+    }
+  },
+  {
+    "definition": {
+      "id": 29238,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329237,
+        "femaleGfxId": 10329237
+      }
+    },
+    "title": {
+      "fr": "\".#@)é",
+      "en": "\".#@)é",
+      "es": "\".#@)é",
+      "pt": "\".#@)é"
+    }
+  },
+  {
+    "definition": {
+      "id": 29239,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329239,
+        "femaleGfxId": 13329239
+      }
+    },
+    "title": {
+      "fr": "Nageoires égarées",
+      "en": "Streye Fins",
+      "es": "Aletas extraviadas",
+      "pt": "Nadadeiras Perdidas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29240,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329239,
+        "femaleGfxId": 13329239
+      }
+    },
+    "title": {
+      "fr": "Nageoires égarées",
+      "en": "Streye Fins",
+      "es": "Aletas extraviadas",
+      "pt": "Nadadeiras Perdidas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29241,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029241,
+        "femaleGfxId": 12029241
+      }
+    },
+    "title": {
+      "fr": "Porte-Bonheur égaré",
+      "en": "Streye Lucky Charm",
+      "es": "Amuleto ido",
+      "pt": "Amuleto da Sorte Perdido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29242,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029241,
+        "femaleGfxId": 12029241
+      }
+    },
+    "title": {
+      "fr": "Porte-Bonheur égaré",
+      "en": "Streye Lucky Charm",
+      "es": "Amuleto ido",
+      "pt": "Amuleto da Sorte Perdido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29245,
+      "level": 219,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13329245,
+        "femaleGfxId": 13329245
+      }
+    },
+    "title": {
+      "fr": "Bas-Ventre d'Ésrevni\t",
+      "en": "Detrevni Underbelly\t",
+      "es": "Bajo vientre de Oditrevni\t",
+      "pt": "Baixo-Ventre de Oditrevni\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29246,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329245,
+        "femaleGfxId": 13329245
+      }
+    },
+    "title": {
+      "fr": "Bas-Ventre d'Ésrevni\t",
+      "en": "Detrevni Underbelly\t",
+      "es": "Bajo vientre de Oditrevni\t",
+      "pt": "Baixo-Ventre de Oditrevni\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29247,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329245,
+        "femaleGfxId": 13329245
+      }
+    },
+    "title": {
+      "fr": "Bas-Ventre d'Ésrevni\t",
+      "en": "Detrevni Underbelly\t",
+      "es": "Bajo vientre de Oditrevni\t",
+      "pt": "Baixo-Ventre de Oditrevni\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29248,
+      "level": 220,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13429248,
+        "femaleGfxId": 13429248
+      }
+    },
+    "title": {
+      "fr": "Coiffe de l'Égaré\t",
+      "en": "Streye Headgear\t",
+      "es": "Tocado de ido\t",
+      "pt": "Chapéu do Perdido\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29249,
+      "level": 223,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429248,
+        "femaleGfxId": 13429248
+      }
+    },
+    "title": {
+      "fr": "Coiffe de l'Égaré\t",
+      "en": "Streye Headgear\t",
+      "es": "Tocado de ido\t",
+      "pt": "Chapéu do Perdido\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29250,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429248,
+        "femaleGfxId": 13429248
+      }
+    },
+    "title": {
+      "fr": "Coiffe de l'Égaré\t",
+      "en": "Streye Headgear\t",
+      "es": "Tocado de ido\t",
+      "pt": "Chapéu do Perdido\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29251,
+      "level": 221,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13229251,
+        "femaleGfxId": 13229251
+      }
+    },
+    "title": {
+      "fr": "Cape Démentielle\t",
+      "en": "Dementyed Cloak\t",
+      "es": "Capa demencial\t",
+      "pt": "Capa Demencial\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29252,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229251,
+        "femaleGfxId": 13229251
+      }
+    },
+    "title": {
+      "fr": "Cape Démentielle\t",
+      "en": "Dementyed Cloak\t",
+      "es": "Capa demencial\t",
+      "pt": "Capa Demencial\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29253,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229251,
+        "femaleGfxId": 13229251
+      }
+    },
+    "title": {
+      "fr": "Cape Démentielle\t",
+      "en": "Dementyed Cloak\t",
+      "es": "Capa demencial\t",
+      "pt": "Capa Demencial\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29254,
+      "level": 222,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13829254,
+        "femaleGfxId": 13829254
+      }
+    },
+    "title": {
+      "fr": "Les Répliqu'hantes\t",
+      "en": "Replic'Haunts\t",
+      "es": "Las replicagobiantes\t",
+      "pt": "Replicanespantos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29255,
+      "level": 225,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829254,
+        "femaleGfxId": 13829254
+      }
+    },
+    "title": {
+      "fr": "Les Répliqu'hantes\t",
+      "en": "Replic'Haunts\t",
+      "es": "Las replicagobiantes\t",
+      "pt": "Replicanespantos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29256,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829254,
+        "femaleGfxId": 13829254
+      }
+    },
+    "title": {
+      "fr": "Les Répliqu'hantes\t",
+      "en": "Replic'Haunts\t",
+      "es": "Las replicagobiantes\t",
+      "pt": "Replicanespantos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29257,
+      "level": 219,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13629257,
+        "femaleGfxId": 34729257
+      }
+    },
+    "title": {
+      "fr": "L'Insatiable",
+      "en": "The Insatiable",
+      "es": "La insaciable",
+      "pt": "O Insaciável"
+    }
+  },
+  {
+    "definition": {
+      "id": 29258,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629257,
+        "femaleGfxId": 34729257
+      }
+    },
+    "title": {
+      "fr": "L'Insatiable",
+      "en": "The Insatiable",
+      "es": "La insaciable",
+      "pt": "O Insaciável"
+    }
+  },
+  {
+    "definition": {
+      "id": 29259,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629257,
+        "femaleGfxId": 34729257
+      }
+    },
+    "title": {
+      "fr": "L'Insatiable",
+      "en": "The Insatiable",
+      "es": "La insaciable",
+      "pt": "O Insaciável"
+    }
+  },
+  {
+    "definition": {
+      "id": 29260,
+      "level": 220,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 12029260,
+        "femaleGfxId": 12029260
+      }
+    },
+    "title": {
+      "fr": "Amulette des Égarés\t",
+      "en": "Streye Amulet\t",
+      "es": "Amuleto de los idos\t",
+      "pt": "Amuleto dos Perdidos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29261,
+      "level": 223,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029260,
+        "femaleGfxId": 12029260
+      }
+    },
+    "title": {
+      "fr": "Amulette des Égarés\t",
+      "en": "Streye Amulet\t",
+      "es": "Amuleto de los idos\t",
+      "pt": "Amuleto dos Perdidos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29262,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029260,
+        "femaleGfxId": 12029260
+      }
+    },
+    "title": {
+      "fr": "Amulette des Égarés\t",
+      "en": "Streye Amulet\t",
+      "es": "Amuleto de los idos\t",
+      "pt": "Amuleto dos Perdidos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29263,
+      "level": 221,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329263,
+        "femaleGfxId": 10329263
+      }
+    },
+    "title": {
+      "fr": "Annœil",
+      "en": "Eye Ring",
+      "es": "Annojo",
+      "pt": "Anolho"
+    }
+  },
+  {
+    "definition": {
+      "id": 29264,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329263,
+        "femaleGfxId": 10329263
+      }
+    },
+    "title": {
+      "fr": "Annœil",
+      "en": "Eye Ring",
+      "es": "Annojo",
+      "pt": "Anolho"
+    }
+  },
+  {
+    "definition": {
+      "id": 29265,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929265,
+        "femaleGfxId": 11929265
+      }
+    },
+    "title": {
+      "fr": "Les Affamées\t",
+      "en": "Famished Boots\t",
+      "es": "Las hambrientas\t",
+      "pt": "As Famintas\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29266,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929265,
+        "femaleGfxId": 11929265
+      }
+    },
+    "title": {
+      "fr": "Les Affamées",
+      "en": "Famished Boots",
+      "es": "Las hambrientas",
+      "pt": "As Famintas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29267,
+      "level": 223,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13329267,
+        "femaleGfxId": 13329267
+      }
+    },
+    "title": {
+      "fr": "La Ceinture Adezyeux\t",
+      "en": "Siyin Gai Belt\t",
+      "es": "Cinturón conojos\t",
+      "pt": "Cinto Temolhos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29268,
+      "level": 226,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329267,
+        "femaleGfxId": 13329267
+      }
+    },
+    "title": {
+      "fr": "La Ceinture Adezyeux\t",
+      "en": "Siyin Gai Belt\t",
+      "es": "Cinturón conojos\t",
+      "pt": "Cinto Temolhos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29269,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329267,
+        "femaleGfxId": 13329267
+      }
+    },
+    "title": {
+      "fr": "La Ceinture Adezyeux\t",
+      "en": "Siyin Gai Belt\t",
+      "es": "Cinturón conojos\t",
+      "pt": "Cinto Temolhos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29270,
+      "level": 225,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13229270,
+        "femaleGfxId": 13229270
+      }
+    },
+    "title": {
+      "fr": "La Cap'Oulox",
+      "en": "Feudora",
+      "es": "La cap'ulox",
+      "pt": "Cap'alpite"
+    }
+  },
+  {
+    "definition": {
+      "id": 29271,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229270,
+        "femaleGfxId": 13229270
+      }
+    },
+    "title": {
+      "fr": "La Cap'Oulox",
+      "en": "Feudora",
+      "es": "La cap'ulox",
+      "pt": "Cap'alpite"
+    }
+  },
+  {
+    "definition": {
+      "id": 29272,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229270,
+        "femaleGfxId": 13229270
+      }
+    },
+    "title": {
+      "fr": "La Cap'Oulox",
+      "en": "Feudora",
+      "es": "La cap'ulox",
+      "pt": "Cap'alpite"
+    }
+  },
+  {
+    "definition": {
+      "id": 29273,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329273,
+        "femaleGfxId": 10329273
+      }
+    },
+    "title": {
+      "fr": "Anneau de !@#dh`~",
+      "en": "Ring of !@#dh`~",
+      "es": "Anillo de !@#dh`~",
+      "pt": "Anel de !@#dh`~"
+    }
+  },
+  {
+    "definition": {
+      "id": 29274,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329273,
+        "femaleGfxId": 10329273
+      }
+    },
+    "title": {
+      "fr": "Anneau de !@#dh`~",
+      "en": "Ring of !@#dh`~",
+      "es": "Anillo de !@#dh`~",
+      "pt": "Anel de !@#dh`~"
+    }
+  },
+  {
+    "definition": {
+      "id": 29275,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629275,
+        "femaleGfxId": 34729275
+      }
+    },
+    "title": {
+      "fr": "Plastron Indescriptible\t",
+      "en": "Indescribable Breastplate\t",
+      "es": "Coraza indescriptible\t",
+      "pt": "Peitoral Indescritível\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29276,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629275,
+        "femaleGfxId": 34729275
+      }
+    },
+    "title": {
+      "fr": "Plastron Indescriptible\t",
+      "en": "Indescribable Breastplate\t",
+      "es": "Coraza indescriptible\t",
+      "pt": "Peitoral Indescritível\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29277,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829277,
+        "femaleGfxId": 13829277
+      }
+    },
+    "title": {
+      "fr": "Epaulettes du Non-Sens",
+      "en": "Nonsensical Epaulettes",
+      "es": "Hombreras del sinsentido",
+      "pt": "Dragonas do Nonsense"
+    }
+  },
+  {
+    "definition": {
+      "id": 29278,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829277,
+        "femaleGfxId": 13829277
+      }
+    },
+    "title": {
+      "fr": "Epaulettes du Non-Sens",
+      "en": "Nonsensical Epaulettes",
+      "es": "Hombreras del sinsentido",
+      "pt": "Dragonas do Nonsense"
+    }
+  },
+  {
+    "definition": {
+      "id": 29279,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929279,
+        "femaleGfxId": 11929279
+      }
+    },
+    "title": {
+      "fr": "Bottes Mystérieuses\t",
+      "en": "Mysterious Boots\t",
+      "es": "Botas misteriosas\t",
+      "pt": "Botas Misteriosas\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29280,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929279,
+        "femaleGfxId": 11929279
+      }
+    },
+    "title": {
+      "fr": "Bottes Mystérieuses",
+      "en": "Mysterious Boots",
+      "es": "Botas misteriosas",
+      "pt": "Botas Misteriosas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29281,
+      "level": 225,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429281,
+        "femaleGfxId": 13429281
+      }
+    },
+    "title": {
+      "fr": "Casque Tout Terrain\t",
+      "en": "All-Terrain Helmet\t",
+      "es": "Casco todoterreno\t",
+      "pt": "Capacete Todo-Terreno\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29282,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429281,
+        "femaleGfxId": 13429281
+      }
+    },
+    "title": {
+      "fr": "Casque Tout Terrain",
+      "en": "All-Terrain Helmet",
+      "es": "Casco todoterreno",
+      "pt": "Capacete Todo-Terreno"
+    }
+  },
+  {
+    "definition": {
+      "id": 29283,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029283,
+        "femaleGfxId": 12029283
+      }
+    },
+    "title": {
+      "fr": "L'Avie",
+      "en": "Lyfamulet",
+      "es": "Lavida",
+      "pt": "A'Vida"
+    }
+  },
+  {
+    "definition": {
+      "id": 29284,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029283,
+        "femaleGfxId": 12029283
+      }
+    },
+    "title": {
+      "fr": "L'avie",
+      "en": "Lyfamulet",
+      "es": "Lavida",
+      "pt": "A'Vida"
+    }
+  },
+  {
+    "definition": {
+      "id": 29285,
+      "level": 225,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 10329285,
+        "femaleGfxId": 10329285
+      }
+    },
+    "title": {
+      "fr": "Ann'Othan",
+      "en": "Othannular",
+      "es": "Ani'Othan",
+      "pt": "Othan'el"
+    }
+  },
+  {
+    "definition": {
+      "id": 29286,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329285,
+        "femaleGfxId": 10329285
+      }
+    },
+    "title": {
+      "fr": "Ann'Othan",
+      "en": "Othannular",
+      "es": "Ani'Othan",
+      "pt": "Othan'el"
+    }
+  },
+  {
+    "definition": {
+      "id": 29287,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329285,
+        "femaleGfxId": 10329285
+      }
+    },
+    "title": {
+      "fr": "Ann'Othan",
+      "en": "Othannular",
+      "es": "Ani'Othan",
+      "pt": "Othan'el"
+    }
+  },
+  {
+    "definition": {
+      "id": 29288,
+      "level": 224,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13429288,
+        "femaleGfxId": 13429288
+      }
+    },
+    "title": {
+      "fr": "Coiffe du disparu",
+      "en": "Headgear of the Vanished",
+      "es": "Tocado de desaparecido",
+      "pt": "Chapéu do Desaparecido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29289,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429288,
+        "femaleGfxId": 13429288
+      }
+    },
+    "title": {
+      "fr": "Coiffe du disparu",
+      "en": "Headgear of the Vanished",
+      "es": "Tocado de desaparecido",
+      "pt": "Chapéu do Desaparecido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29290,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429288,
+        "femaleGfxId": 13429288
+      }
+    },
+    "title": {
+      "fr": "Coiffe du disparu",
+      "en": "Headgear of the Vanished",
+      "es": "Tocado de desaparecido",
+      "pt": "Chapéu do Desaparecido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29291,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229291,
+        "femaleGfxId": 13229291
+      }
+    },
+    "title": {
+      "fr": "Cape Genniale",
+      "en": "Gennius Cloak",
+      "es": "Capa gennial",
+      "pt": "Capa Genial"
+    }
+  },
+  {
+    "definition": {
+      "id": 29292,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229291,
+        "femaleGfxId": 13229291
+      }
+    },
+    "title": {
+      "fr": "Cape Genniale",
+      "en": "Gennius Cloak",
+      "es": "Capa gennial",
+      "pt": "Capa Genial"
+    }
+  },
+  {
+    "definition": {
+      "id": 29293,
+      "level": 229,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629293,
+        "femaleGfxId": 34729293
+      }
+    },
+    "title": {
+      "fr": "Plastron de JonTurk\t",
+      "en": "JonTurk Breastplate\t",
+      "es": "Coraza de JonTurk\t",
+      "pt": "Peitoral de JonTurk\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29294,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629293,
+        "femaleGfxId": 34729293
+      }
+    },
+    "title": {
+      "fr": "Plastron de JonTurk\t",
+      "en": "JonTurk Breastplate\t",
+      "es": "Coraza de JonTurk\t",
+      "pt": "Peitoral de JonTurk\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29295,
+      "level": 230,
+      "rarity": 6,
+      "graphicParameters": {
+        "gfxId": 11919708,
+        "femaleGfxId": 11919708
+      }
+    },
+    "title": {
+      "fr": "Sandales Ourdies",
+      "en": "Despairdrilles",
+      "es": "Sandalias tramadas",
+      "pt": "Desesperadrilhas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29296,
+      "level": 230,
+      "rarity": 6,
+      "graphicParameters": {
+        "gfxId": 13319714,
+        "femaleGfxId": 13319714
+      }
+    },
+    "title": {
+      "fr": "Cordon Jon",
+      "en": "Tinker Belt",
+      "es": "Cordón Jon",
+      "pt": "Colar Bouço"
+    }
+  },
+  {
+    "definition": {
+      "id": 29297,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11029297,
+        "femaleGfxId": 11029297
+      }
+    },
+    "title": {
+      "fr": "Epée immuable",
+      "en": "Unyielding Sword",
+      "es": "Espada inmutable",
+      "pt": "Espada Imutável"
+    }
+  },
+  {
+    "definition": {
+      "id": 29298,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11029297,
+        "femaleGfxId": 11029297
+      }
+    },
+    "title": {
+      "fr": "Epée immuable",
+      "en": "Unyielding Sword",
+      "es": "Espada inmutable",
+      "pt": "Espada Imutável"
+    }
+  },
+  {
+    "definition": {
+      "id": 29299,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 18929299,
+        "femaleGfxId": 18929299
+      }
+    },
+    "title": {
+      "fr": "Le Constant",
+      "en": "The Constant",
+      "es": "El constante",
+      "pt": "O Constante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29300,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 18929299,
+        "femaleGfxId": 18929299
+      }
+    },
+    "title": {
+      "fr": "Le Constant",
+      "en": "The Constant",
+      "es": "El constante",
+      "pt": "O Constante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29301,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329301,
+        "femaleGfxId": 13329301
+      }
+    },
+    "title": {
+      "fr": "Salopette de Gloutonnie\t",
+      "en": "Greedery Overalls\t",
+      "es": "Peto de Glotonía\t",
+      "pt": "Macacão de Gulania\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29302,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329301,
+        "femaleGfxId": 13329301
+      }
+    },
+    "title": {
+      "fr": "Salopette de Gloutonnie\t",
+      "en": "Greedery Overalls\t",
+      "es": "Peto de Glotonía\t",
+      "pt": "Macacão de Gulania\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29303,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029303,
+        "femaleGfxId": 12029303
+      }
+    },
+    "title": {
+      "fr": "L'aujourd'hui",
+      "en": "Today",
+      "es": "Elhoy",
+      "pt": "O Hoje"
+    }
+  },
+  {
+    "definition": {
+      "id": 29304,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029303,
+        "femaleGfxId": 12029303
+      }
+    },
+    "title": {
+      "fr": "L'aujourd'hui",
+      "en": "Today",
+      "es": "Elhoy",
+      "pt": "O Hoje"
+    }
+  },
+  {
+    "definition": {
+      "id": 29307,
+      "level": 219,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13329307,
+        "femaleGfxId": 13329307
+      }
+    },
+    "title": {
+      "fr": "Boucle Infernale\t",
+      "en": "Hell Belt of Leather\t",
+      "es": "Cinturón infernal\t",
+      "pt": "Fivela Infernal\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29308,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329307,
+        "femaleGfxId": 13329307
+      }
+    },
+    "title": {
+      "fr": "Boucle Infernale\t",
+      "en": "Hell Belt of Leather\t",
+      "es": "Cinturón infernal\t",
+      "pt": "Fivela Infernal\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29309,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329307,
+        "femaleGfxId": 13329307
+      }
+    },
+    "title": {
+      "fr": "Boucle Infernale\t",
+      "en": "Hell Belt of Leather\t",
+      "es": "Cinturón infernal\t",
+      "pt": "Fivela Infernal\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29310,
+      "level": 220,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13429310,
+        "femaleGfxId": 13429310
+      }
+    },
+    "title": {
+      "fr": "Coupe Infernale\t",
+      "en": "Devil's Haircut\t",
+      "es": "Corte infernal\t",
+      "pt": "Corte Infernal\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29311,
+      "level": 223,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429310,
+        "femaleGfxId": 13429310
+      }
+    },
+    "title": {
+      "fr": "Coupe Infernale\t",
+      "en": "Devil's Haircut\t",
+      "es": "Corte infernal\t",
+      "pt": "Corte Infernal\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29312,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429310,
+        "femaleGfxId": 13429310
+      }
+    },
+    "title": {
+      "fr": "Coupe Infernale\t",
+      "en": "Devil's Haircut\t",
+      "es": "Corte infernal\t",
+      "pt": "Corte Infernal\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29313,
+      "level": 221,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13229313,
+        "femaleGfxId": 13229313
+      }
+    },
+    "title": {
+      "fr": "La Ravageuse\t",
+      "en": "The Destroyer\t",
+      "es": "La devastadora\t",
+      "pt": "Caparrasadora\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29314,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229313,
+        "femaleGfxId": 13229313
+      }
+    },
+    "title": {
+      "fr": "La Ravageuse\t\t",
+      "en": "The Destroyer\t\t",
+      "es": "La devastadora\t\t",
+      "pt": "Caparrasadora\t\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29315,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229313,
+        "femaleGfxId": 13229313
+      }
+    },
+    "title": {
+      "fr": "La Ravageuse\t\t",
+      "en": "The Destroyer\t\t",
+      "es": "La devastadora\t\t",
+      "pt": "Caparrasadora\t\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29316,
+      "level": 222,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13829316,
+        "femaleGfxId": 13829316
+      }
+    },
+    "title": {
+      "fr": "Épaulettes de Ravageur",
+      "en": "Destroyer Epaulettes",
+      "es": "Hombreras de devastador",
+      "pt": "Dragonas de Devastador"
+    }
+  },
+  {
+    "definition": {
+      "id": 29317,
+      "level": 225,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829316,
+        "femaleGfxId": 13829316
+      }
+    },
+    "title": {
+      "fr": "Épaulettes de Ravageur\t",
+      "en": "Destroyer Epaulettes\t",
+      "es": "Hombreras de devastador\t",
+      "pt": "Dragonas de Devastador\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29318,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829316,
+        "femaleGfxId": 13829316
+      }
+    },
+    "title": {
+      "fr": "Épaulettes de Ravageur",
+      "en": "Destroyer Epaulettes",
+      "es": "Hombreras de devastador",
+      "pt": "Dragonas de Devastador"
+    }
+  },
+  {
+    "definition": {
+      "id": 29319,
+      "level": 219,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13629319,
+        "femaleGfxId": 34729319
+      }
+    },
+    "title": {
+      "fr": "Le Foyer\t",
+      "en": "The Hearth\t",
+      "es": "El fogón\t",
+      "pt": "La Reira\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29320,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629319,
+        "femaleGfxId": 34729319
+      }
+    },
+    "title": {
+      "fr": "Le Foyer",
+      "en": "The Hearth",
+      "es": "El fogón",
+      "pt": "La Reira"
+    }
+  },
+  {
+    "definition": {
+      "id": 29322,
+      "level": 220,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 12029322,
+        "femaleGfxId": 12029322
+      }
+    },
+    "title": {
+      "fr": "Pendentif de Ravageur\t",
+      "en": "Destroyer Pendant\t",
+      "es": "Colgante de devastador\t",
+      "pt": "Pingente de Devastador\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29323,
+      "level": 223,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029322,
+        "femaleGfxId": 12029322
+      }
+    },
+    "title": {
+      "fr": "Pendentif de Ravageur\t",
+      "en": "Destroyer Pendant\t",
+      "es": "Colgante de devastador\t",
+      "pt": "Pingente de Devastador\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29324,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029322,
+        "femaleGfxId": 12029322
+      }
+    },
+    "title": {
+      "fr": "Pendentif de Ravageur\t",
+      "en": "Destroyer Pendant\t",
+      "es": "Colgante de devastador\t",
+      "pt": "Pingente de Devastador\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29325,
+      "level": 221,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629325,
+        "femaleGfxId": 34729325
+      }
+    },
+    "title": {
+      "fr": "Plastron ravageur",
+      "en": "Destroyer Breastplate",
+      "es": "Coraza devastadora",
+      "pt": "Peitoral Devastador"
+    }
+  },
+  {
+    "definition": {
+      "id": 29326,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629325,
+        "femaleGfxId": 34729325
+      }
+    },
+    "title": {
+      "fr": "Plastron ravageur",
+      "en": "Destroyer Breastplate",
+      "es": "Coraza devastadora",
+      "pt": "Peitoral Devastador"
+    }
+  },
+  {
+    "definition": {
+      "id": 29327,
+      "level": 222,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329327,
+        "femaleGfxId": 10329327
+      }
+    },
+    "title": {
+      "fr": "Anneau du Ravagé\t",
+      "en": "Destroyer Ring\t",
+      "es": "Anillo de devastado\t",
+      "pt": "Anel dos Loucos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29328,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329327,
+        "femaleGfxId": 10329327
+      }
+    },
+    "title": {
+      "fr": "Anneau du Ravagé\t",
+      "en": "Destroyer Ring\t",
+      "es": "Anillo de devastado\t",
+      "pt": "Anel dos Loucos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29329,
+      "level": 223,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13829329,
+        "femaleGfxId": 13829329
+      }
+    },
+    "title": {
+      "fr": "Les Gardiennes",
+      "en": "The Guardians",
+      "es": "Las guardianas",
+      "pt": "Protetoras"
+    }
+  },
+  {
+    "definition": {
+      "id": 29330,
+      "level": 226,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829329,
+        "femaleGfxId": 13829329
+      }
+    },
+    "title": {
+      "fr": "Les Gardiennes",
+      "en": "The Guardians",
+      "es": "Las guardianas",
+      "pt": "Protetoras"
+    }
+  },
+  {
+    "definition": {
+      "id": 29331,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829329,
+        "femaleGfxId": 13829329
+      }
+    },
+    "title": {
+      "fr": "Les Gardiennes",
+      "en": "The Guardians",
+      "es": "Las guardianas",
+      "pt": "Protetoras"
+    }
+  },
+  {
+    "definition": {
+      "id": 29333,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229332,
+        "femaleGfxId": 13229332
+      }
+    },
+    "title": {
+      "fr": "Manteau Souverain\t",
+      "en": "Sovereign Coat\t",
+      "es": "Manto soberano\t",
+      "pt": "Manto Soberano\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29334,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229332,
+        "femaleGfxId": 13229332
+      }
+    },
+    "title": {
+      "fr": "Manteau Souverain\t",
+      "en": "Sovereign Coat\t",
+      "es": "Manto soberano\t",
+      "pt": "Manto Soberano\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29335,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029335,
+        "femaleGfxId": 12029335
+      }
+    },
+    "title": {
+      "fr": "Amulette de l'Au-Delà\t",
+      "en": "Amulet of the Great Beyond\t",
+      "es": "Amuleto del más allá\t",
+      "pt": "Amuleto do Além\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29336,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029335,
+        "femaleGfxId": 12029335
+      }
+    },
+    "title": {
+      "fr": "Amulette de l'Au-Delà\t",
+      "en": "Amulet of the Great Beyond\t",
+      "es": "Amuleto del más allá\t",
+      "pt": "Amuleto do Além\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29337,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629337,
+        "femaleGfxId": 34729337
+      }
+    },
+    "title": {
+      "fr": "L'Epidoptera",
+      "en": "Le Pidoptera",
+      "es": "La epidoptera",
+      "pt": "Lepidóptero"
+    }
+  },
+  {
+    "definition": {
+      "id": 29338,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629337,
+        "femaleGfxId": 34729337
+      }
+    },
+    "title": {
+      "fr": "L'Epidoptera",
+      "en": "Le Pidoptera",
+      "es": "La epidoptera",
+      "pt": "Lepidóptero"
+    }
+  },
+  {
+    "definition": {
+      "id": 29339,
+      "level": 224,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329339,
+        "femaleGfxId": 13329339
+      }
+    },
+    "title": {
+      "fr": "Pagne de K'abah'al\t",
+      "en": "K'abah'al Loincloth\t",
+      "es": "Taparrabos de K'abah'al\t",
+      "pt": "Tanga de K'abah'al\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29340,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329339,
+        "femaleGfxId": 13329339
+      }
+    },
+    "title": {
+      "fr": "Pagne de K'abah'al\t",
+      "en": "K'abah'al Loincloth\t",
+      "es": "Taparrabos de K'abah'al\t",
+      "pt": "Tanga de K'abah'al\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29341,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429341,
+        "femaleGfxId": 13429341
+      }
+    },
+    "title": {
+      "fr": "Masque de K'abah'al\t",
+      "en": "K'abah'al Mask\t",
+      "es": "Máscara de K'abah'al\t",
+      "pt": "Máscara de K'abah'al\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29342,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429341,
+        "femaleGfxId": 13429341
+      }
+    },
+    "title": {
+      "fr": "Masque de K'abah'al\t",
+      "en": "K'abah'al Mask\t",
+      "es": "Máscara de K'abah'al\t",
+      "pt": "Máscara de K'abah'al\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29343,
+      "level": 225,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329343,
+        "femaleGfxId": 10329343
+      }
+    },
+    "title": {
+      "fr": "An'Sceptre",
+      "en": "Sceptering",
+      "es": "An'Cetro",
+      "pt": "An'Cetro"
+    }
+  },
+  {
+    "definition": {
+      "id": 29344,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329343,
+        "femaleGfxId": 10329343
+      }
+    },
+    "title": {
+      "fr": "An'Sceptre",
+      "en": "Sceptering",
+      "es": "An'Cetro",
+      "pt": "An'Cetro"
+    }
+  },
+  {
+    "definition": {
+      "id": 29345,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929345,
+        "femaleGfxId": 11929345
+      }
+    },
+    "title": {
+      "fr": "Les Mythottes \t",
+      "en": "Boots of Legend \t",
+      "es": "Las mitotas \t",
+      "pt": "Mitobotas \t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29346,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929345,
+        "femaleGfxId": 11929345
+      }
+    },
+    "title": {
+      "fr": "Les Mythottes \t",
+      "en": "Boots of Legend \t",
+      "es": "Las mitotas \t",
+      "pt": "Mitobotas \t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29347,
+      "level": 225,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13629347,
+        "femaleGfxId": 34729347
+      }
+    },
+    "title": {
+      "fr": "Kimono de Koaxx\t",
+      "en": "Koaxx Kimono\t",
+      "es": "Kimono de Koaxx\t",
+      "pt": "Quimono de Koaxx\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29348,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629347,
+        "femaleGfxId": 34729347
+      }
+    },
+    "title": {
+      "fr": "Kimono de Koaxx\t",
+      "en": "Koaxx Kimono\t",
+      "es": "Kimono de Koaxx\t",
+      "pt": "Quimono de Koaxx\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29349,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629347,
+        "femaleGfxId": 34729347
+      }
+    },
+    "title": {
+      "fr": "Kimono de Koaxx\t",
+      "en": "Koaxx Kimono\t",
+      "es": "Kimono de Koaxx\t",
+      "pt": "Quimono de Koaxx\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29350,
+      "level": 224,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13429350,
+        "femaleGfxId": 13429350
+      }
+    },
+    "title": {
+      "fr": "Gufet'Heaume",
+      "en": "Gufet'Helm",
+      "es": "Yelmo de Gufetto",
+      "pt": "Gufettelmo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29351,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429350,
+        "femaleGfxId": 13429350
+      }
+    },
+    "title": {
+      "fr": "Gufet'Heaume",
+      "en": "Gufet'Helm",
+      "es": "Yelmo de Gufetto",
+      "pt": "Gufettelmo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29352,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429350,
+        "femaleGfxId": 13429350
+      }
+    },
+    "title": {
+      "fr": "Gufet'Heaume",
+      "en": "Gufet'Helm",
+      "es": "Yelmo de Gufetto",
+      "pt": "Gufettelmo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29353,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229353,
+        "femaleGfxId": 13229353
+      }
+    },
+    "title": {
+      "fr": "Cape Suspecte",
+      "en": "Suspect Cape",
+      "es": "Capa sospechosa",
+      "pt": "Capa Suspeita"
+    }
+  },
+  {
+    "definition": {
+      "id": 29354,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229353,
+        "femaleGfxId": 13229353
+      }
+    },
+    "title": {
+      "fr": "Cape Suspecte",
+      "en": "Suspect Cape",
+      "es": "Capa sospechosa",
+      "pt": "Capa Suspeita"
+    }
+  },
+  {
+    "definition": {
+      "id": 29355,
+      "level": 229,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929355,
+        "femaleGfxId": 11929355
+      }
+    },
+    "title": {
+      "fr": "Grèves d'Asthenis",
+      "en": "Asthenis Greaves",
+      "es": "Grebas de Asthenis",
+      "pt": "Grevas de Asthenis"
+    }
+  },
+  {
+    "definition": {
+      "id": 29356,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929355,
+        "femaleGfxId": 11929355
+      }
+    },
+    "title": {
+      "fr": "Grèves d'Asthenis\t",
+      "en": "Asthenis Greaves\t",
+      "es": "Grebas de Asthenis\t",
+      "pt": "Grevas de Asthenis\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29357,
+      "level": 230,
+      "rarity": 6,
+      "graphicParameters": {
+        "gfxId": 13820163,
+        "femaleGfxId": 13820163
+      }
+    },
+    "title": {
+      "fr": "Epaulettes Tylique",
+      "en": "Ethylettes",
+      "es": "Hombreras impetuosas",
+      "pt": "Dragonas Zetílicas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29358,
+      "level": 230,
+      "rarity": 6,
+      "graphicParameters": {
+        "gfxId": 12020204,
+        "femaleGfxId": 12020204
+      }
+    },
+    "title": {
+      "fr": "Grigri du Bordunil",
+      "en": "De Nyl Amulet",
+      "es": "Grisgrís Juntoalnilo",
+      "pt": "Amuleto de Fozdunylo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29361,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 53129361,
+        "femaleGfxId": 53129361
+      }
+    },
+    "title": {
+      "fr": "Pseudopode",
+      "en": "Pseudopod",
+      "es": "Pseudópodo",
+      "pt": "Pseudópode"
+    }
+  },
+  {
+    "definition": {
+      "id": 29362,
+      "level": 216,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 53129362,
+        "femaleGfxId": 53129362
+      }
+    },
+    "title": {
+      "fr": "Phytomate",
+      "en": "Phytomato",
+      "es": "Fitomate",
+      "pt": "Fitomate"
+    }
+  },
+  {
+    "definition": {
+      "id": 29363,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 53129363,
+        "femaleGfxId": 53129363
+      }
+    },
+    "title": {
+      "fr": "Nar'Vaal'Haut",
+      "en": "Vaal'Endew",
+      "es": "Chaal'ado",
+      "pt": "Nar'Vaal'To"
+    }
+  },
+  {
+    "definition": {
+      "id": 29365,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 28229365,
+        "femaleGfxId": 28229365
+      }
+    },
+    "title": {
+      "fr": "Bout de Phytomorphe",
+      "en": "Phytomorph Piece",
+      "es": "Trozo de fitoforme",
+      "pt": "Pedaço de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29366,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 53129366,
+        "femaleGfxId": 53129366
+      }
+    },
+    "title": {
+      "fr": "Main de Phytomorphe",
+      "en": "Phytomorph Hand",
+      "es": "Mano de fitoforme",
+      "pt": "Mão de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29367,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 53129367,
+        "femaleGfxId": 53129367
+      }
+    },
+    "title": {
+      "fr": "Peau de Vidéant",
+      "en": "Voidivion Skin",
+      "es": "Piel de vaciante",
+      "pt": "Pele de Vaziante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29368,
+      "level": 216,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 53129368,
+        "femaleGfxId": 53129368
+      }
+    },
+    "title": {
+      "fr": "Griffe de Vidéant",
+      "en": "Voidivion Claw",
+      "es": "Garra de vaciante",
+      "pt": "Garra de Vaziante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29369,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 53129369,
+        "femaleGfxId": 53129369
+      }
+    },
+    "title": {
+      "fr": "Scalp d'Ar'Nan",
+      "en": "Ar'Nan Scalp",
+      "es": "Cabellera de Ar'Nan",
+      "pt": "Escalpo de Ar'Nan"
+    }
+  },
+  {
+    "definition": {
+      "id": 29371,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 28229371,
+        "femaleGfxId": 28229371
+      }
+    },
+    "title": {
+      "fr": "Cuir de Vidéant",
+      "en": "Voidivion Hide",
+      "es": "Cuero de vaciante",
+      "pt": "Couro de Vaziante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29372,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 53129372,
+        "femaleGfxId": 53129372
+      }
+    },
+    "title": {
+      "fr": "Restes de Vidéant",
+      "en": "Voidivion Remains",
+      "es": "Restos de vaciante",
+      "pt": "Restos de Vaziante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29373,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 53129373,
+        "femaleGfxId": 53129373
+      }
+    },
+    "title": {
+      "fr": "Aile de Démhorrible\t",
+      "en": "Horridemon Wing\t",
+      "es": "Ala de demorrible\t",
+      "pt": "Asa de Demhorrível\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29374,
+      "level": 216,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 53129374,
+        "femaleGfxId": 53129374
+      }
+    },
+    "title": {
+      "fr": "Tentacule de Sangsure",
+      "en": "Bloodcensor Tentacle",
+      "es": "Tentáculo de saguijueveto",
+      "pt": "Tentáculo de Proibissangue"
+    }
+  },
+  {
+    "definition": {
+      "id": 29375,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 53129375,
+        "femaleGfxId": 53129375
+      }
+    },
+    "title": {
+      "fr": "Crochet de Cratéros",
+      "en": "Crateros Hook",
+      "es": "Garfio de Crateros",
+      "pt": "Gancho de Crateros"
+    }
+  },
+  {
+    "definition": {
+      "id": 29377,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 28229377,
+        "femaleGfxId": 28229377
+      }
+    },
+    "title": {
+      "fr": "Masque de Démhorrible",
+      "en": "Horridemon Mask",
+      "es": "Máscara de demorrible",
+      "pt": "Máscara de Demhorrível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29378,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 53129378,
+        "femaleGfxId": 53129378
+      }
+    },
+    "title": {
+      "fr": "Main de Démhorrible\t",
+      "en": "Horridemon Hand\t",
+      "es": "Mano de demorrible\t",
+      "pt": "Mão de Demhorrível\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29379,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 53129379,
+        "femaleGfxId": 53129379
+      }
+    },
+    "title": {
+      "fr": "Scalp de Réman'hante\t",
+      "en": "Reman'haunt Scalp\t",
+      "es": "Cabellera de remanagobiante\t",
+      "pt": "Escalpo de Remanespanto\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29380,
+      "level": 216,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 53129380,
+        "femaleGfxId": 53129380
+      }
+    },
+    "title": {
+      "fr": "Mouchards de Démentia\t",
+      "en": "Dementya's Snitches\t",
+      "es": "Soplones de Dementia\t",
+      "pt": "Informadores de Demência\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29381,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 53129381,
+        "femaleGfxId": 53129381
+      }
+    },
+    "title": {
+      "fr": "Trophée de !@#dh`~",
+      "en": "!@#dh`~ Trophy",
+      "es": "Trofeo de !@#dh`~",
+      "pt": "Troféu de !@#dh`~"
+    }
+  },
+  {
+    "definition": {
+      "id": 29383,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 28229383,
+        "femaleGfxId": 28229383
+      }
+    },
+    "title": {
+      "fr": "Patte d'Égarés\t",
+      "en": "Streye Leg\t",
+      "es": "Pata de idos\t",
+      "pt": "Pata de Perdidos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29384,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 53129384,
+        "femaleGfxId": 53129384
+      }
+    },
+    "title": {
+      "fr": "Ventre d'Égarés\t",
+      "en": "Streye Belly\t",
+      "es": "Vientre de idos\t",
+      "pt": "Barriga de Perdidos\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29385,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 53129385,
+        "femaleGfxId": 53129385
+      }
+    },
+    "title": {
+      "fr": "Bras de Ravageur\t",
+      "en": "Destroyer Arm\t",
+      "es": "Brazo de devastador\t",
+      "pt": "Braço de Devastador\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29386,
+      "level": 216,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 53129386,
+        "femaleGfxId": 53129386
+      }
+    },
+    "title": {
+      "fr": "Cœur de Ravageur\t",
+      "en": "Destroyer's Heart\t",
+      "es": "Corazón de devastador\t",
+      "pt": "Coração de Devastador\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29387,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 53129387,
+        "femaleGfxId": 53129387
+      }
+    },
+    "title": {
+      "fr": "Pointe du sceptre de K'abah'al\t",
+      "en": "K'abah'al Scepter Tip\t",
+      "es": "Punta del cetro de K'abah'al\t",
+      "pt": "Ponta do Cetro de K'abah'al\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29389,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 28229389,
+        "femaleGfxId": 28229389
+      }
+    },
+    "title": {
+      "fr": "Dents de Ravageur",
+      "en": "Destroyer Teeth",
+      "es": "Dientes de devastador",
+      "pt": "Dentes de Devastador"
+    }
+  },
+  {
+    "definition": {
+      "id": 29390,
+      "level": 216,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 53129390,
+        "femaleGfxId": 53129390
+      }
+    },
+    "title": {
+      "fr": "Restes de Ravageur\t",
+      "en": "Destroyer Remains\t",
+      "es": "Restos de devastador\t",
+      "pt": "Restos de Devastador\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29406,
+      "level": 0,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 2142,
+        "femaleGfxId": 2142
+      }
+    },
+    "title": {
+      "fr": "Porte démoniaque",
+      "en": "Demonic Door",
+      "es": "Puerta demoníaca",
+      "pt": "Porta Demoníaca"
+    }
+  },
+  {
+    "definition": {
+      "id": 29407,
+      "level": 1,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 21051,
+        "femaleGfxId": 21051
+      }
+    },
+    "title": {
+      "fr": "Blé décoratif",
+      "en": "Decorative Wheat",
+      "es": "Trigo decorativo",
+      "pt": "Trigo Decorativo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29410,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 53129410,
+        "femaleGfxId": 53129410
+      }
+    },
+    "title": {
+      "fr": "Fragment d'armure d'Anathar",
+      "en": "Anathar Armor Fragment",
+      "es": "Fragmento de armadura de Anathar",
+      "pt": "Fragmento de Armadura de Anathar"
+    }
+  },
+  {
+    "definition": {
+      "id": 29411,
+      "level": 230,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 82229411,
+        "femaleGfxId": 82229411
+      }
+    },
+    "title": {
+      "fr": "Clef d'intervention d'Anathar",
+      "en": "Anathar's Intervention Key",
+      "es": "Llave de intervención de Anathar",
+      "pt": "Chave de Intervenção de Anathar"
+    }
+  },
+  {
+    "definition": {
+      "id": 29429,
+      "level": 1,
+      "rarity": 1,
+      "graphicParameters": {
+        "gfxId": 21053,
+        "femaleGfxId": 21053
+      }
+    },
+    "title": {
+      "fr": "Stèle démoniaque",
+      "en": "Demonic Stele",
+      "es": "Estela demoníaca",
+      "pt": "Estela Demoníaca"
     }
   }
 ]
