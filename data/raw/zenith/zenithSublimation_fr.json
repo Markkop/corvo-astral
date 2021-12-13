@@ -30,7 +30,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212814,
+              "id_spell_effect_value": 334230,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -75,7 +75,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212815,
+              "id_spell_effect_value": 334231,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -120,7 +120,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212816,
+              "id_spell_effect_value": 334232,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -200,7 +200,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212817,
+              "id_spell_effect_value": 334233,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -245,7 +245,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212818,
+              "id_spell_effect_value": 334234,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -290,7 +290,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212819,
+              "id_spell_effect_value": 334235,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -370,7 +370,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212820,
+              "id_spell_effect_value": 334236,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -415,7 +415,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212821,
+              "id_spell_effect_value": 334237,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -460,7 +460,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212822,
+              "id_spell_effect_value": 334238,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -540,7 +540,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212823,
+              "id_spell_effect_value": 334239,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -585,7 +585,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212824,
+              "id_spell_effect_value": 334240,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -630,7 +630,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212825,
+              "id_spell_effect_value": 334241,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -718,7 +718,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212826,
+              "id_spell_effect_value": 334242,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -763,7 +763,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212827,
+              "id_spell_effect_value": 334243,
               "offset": 0,
               "damage": -22,
               "ratio": 6,
@@ -808,7 +808,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212828,
+              "id_spell_effect_value": 334244,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -888,7 +888,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212850,
+              "id_spell_effect_value": 334266,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -933,7 +933,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212851,
+              "id_spell_effect_value": 334267,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -978,7 +978,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212852,
+              "id_spell_effect_value": 334268,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1058,7 +1058,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212829,
+              "id_spell_effect_value": 334245,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -1103,7 +1103,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212830,
+              "id_spell_effect_value": 334246,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -1148,7 +1148,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212831,
+              "id_spell_effect_value": 334247,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1236,7 +1236,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212832,
+              "id_spell_effect_value": 334248,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -1281,7 +1281,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212833,
+              "id_spell_effect_value": 334249,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -1326,7 +1326,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212834,
+              "id_spell_effect_value": 334250,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1406,7 +1406,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212838,
+              "id_spell_effect_value": 334254,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1451,7 +1451,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212839,
+              "id_spell_effect_value": 334255,
               "offset": 0,
               "damage": -33,
               "ratio": 9,
@@ -1496,7 +1496,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212840,
+              "id_spell_effect_value": 334256,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -1576,7 +1576,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212841,
+              "id_spell_effect_value": 334257,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -1621,7 +1621,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212842,
+              "id_spell_effect_value": 334258,
               "offset": 0,
               "damage": -22,
               "ratio": 6,
@@ -1666,7 +1666,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212843,
+              "id_spell_effect_value": 334259,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -1746,7 +1746,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212844,
+              "id_spell_effect_value": 334260,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1791,7 +1791,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212845,
+              "id_spell_effect_value": 334261,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -1836,7 +1836,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212846,
+              "id_spell_effect_value": 334262,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1916,7 +1916,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212811,
+              "id_spell_effect_value": 334227,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -1961,7 +1961,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212812,
+              "id_spell_effect_value": 334228,
               "offset": 0,
               "damage": -11,
               "ratio": 3,
@@ -2006,7 +2006,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212813,
+              "id_spell_effect_value": 334229,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -2086,7 +2086,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212835,
+              "id_spell_effect_value": 334251,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -2131,7 +2131,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212836,
+              "id_spell_effect_value": 334252,
               "offset": 0,
               "damage": -33,
               "ratio": 9,
@@ -2176,7 +2176,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212837,
+              "id_spell_effect_value": 334253,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -2256,7 +2256,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212847,
+              "id_spell_effect_value": 334263,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2301,7 +2301,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212848,
+              "id_spell_effect_value": 334264,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -2346,7 +2346,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212849,
+              "id_spell_effect_value": 334265,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2426,7 +2426,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212853,
+              "id_spell_effect_value": 334269,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2471,7 +2471,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212854,
+              "id_spell_effect_value": 334270,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -2516,7 +2516,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212855,
+              "id_spell_effect_value": 334271,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2596,7 +2596,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212856,
+              "id_spell_effect_value": 334272,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -2641,7 +2641,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212857,
+              "id_spell_effect_value": 334273,
               "offset": 0,
               "damage": -44,
               "ratio": 12,
@@ -2686,7 +2686,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212858,
+              "id_spell_effect_value": 334274,
               "offset": 0,
               "damage": 0,
               "ratio": 8,
@@ -2774,7 +2774,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212859,
+              "id_spell_effect_value": 334275,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -2819,7 +2819,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212860,
+              "id_spell_effect_value": 334276,
               "offset": 0,
               "damage": -22,
               "ratio": 6,
@@ -2864,7 +2864,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212861,
+              "id_spell_effect_value": 334277,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -2934,7 +2934,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -2944,7 +2944,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212870,
+              "id_spell_effect_value": 334111,
               "offset": 0,
               "damage": 0,
               "ratio": -7.5,
@@ -3011,7 +3011,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3021,7 +3021,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212871,
+              "id_spell_effect_value": 334112,
               "offset": 0,
               "damage": 0,
               "ratio": 12.5,
@@ -3088,7 +3088,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3098,7 +3098,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212872,
+              "id_spell_effect_value": 334113,
               "offset": 0,
               "damage": 0,
               "ratio": 200,
@@ -3175,7 +3175,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212873,
+              "id_spell_effect_value": 334114,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -3211,7 +3211,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3283,7 +3283,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212874,
+              "id_spell_effect_value": 334115,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -3374,7 +3374,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212875,
+              "id_spell_effect_value": 334116,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -3465,7 +3465,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212876,
+              "id_spell_effect_value": 334117,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -3532,7 +3532,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3542,7 +3542,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212877,
+              "id_spell_effect_value": 334118,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -3609,7 +3609,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3619,7 +3619,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212878,
+              "id_spell_effect_value": 334119,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -3686,7 +3686,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3696,7 +3696,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212879,
+              "id_spell_effect_value": 334120,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -3724,7 +3724,7 @@
               }
             },
             {
-              "id_spell_effect_value": 212880,
+              "id_spell_effect_value": 334121,
               "offset": 1,
               "damage": 0,
               "ratio": 1.5,
@@ -3752,7 +3752,7 @@
               }
             },
             {
-              "id_spell_effect_value": 212881,
+              "id_spell_effect_value": 334122,
               "offset": 2,
               "damage": 0,
               "ratio": 1.5,
@@ -3843,7 +3843,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212882,
+              "id_spell_effect_value": 334123,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -3920,7 +3920,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212883,
+              "id_spell_effect_value": 334124,
               "offset": 0,
               "damage": 0,
               "ratio": 30,
@@ -3997,7 +3997,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212884,
+              "id_spell_effect_value": 334125,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -4088,7 +4088,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212885,
+              "id_spell_effect_value": 334126,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -4155,7 +4155,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4165,7 +4165,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212886,
+              "id_spell_effect_value": 334127,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -4273,7 +4273,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212887,
+              "id_spell_effect_value": 334128,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -4301,7 +4301,7 @@
               }
             },
             {
-              "id_spell_effect_value": 212888,
+              "id_spell_effect_value": 334129,
               "offset": 1,
               "damage": 25,
               "ratio": 0,
@@ -4378,7 +4378,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212889,
+              "id_spell_effect_value": 334130,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -4414,7 +4414,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4424,7 +4424,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212890,
+              "id_spell_effect_value": 334131,
               "offset": 0,
               "damage": 0,
               "ratio": -7.5,
@@ -4501,7 +4501,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212896,
+              "id_spell_effect_value": 334137,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4592,7 +4592,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212897,
+              "id_spell_effect_value": 334138,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4696,7 +4696,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212898,
+              "id_spell_effect_value": 334139,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -4742,7 +4742,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212899,
+              "id_spell_effect_value": 334140,
               "offset": 0,
               "damage": 40,
               "ratio": -10,
@@ -4850,7 +4850,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4860,7 +4860,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212900,
+              "id_spell_effect_value": 334141,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4874,7 +4874,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212901,
+              "id_spell_effect_value": 334142,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -4992,7 +4992,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212902,
+              "id_spell_effect_value": 334143,
               "offset": 0,
               "damage": 0,
               "ratio": 15,
@@ -5096,7 +5096,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212903,
+              "id_spell_effect_value": 334144,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -5190,7 +5190,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5200,7 +5200,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212904,
+              "id_spell_effect_value": 334145,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -5294,7 +5294,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5304,7 +5304,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212905,
+              "id_spell_effect_value": 334146,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -5408,7 +5408,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212906,
+              "id_spell_effect_value": 334147,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -5512,7 +5512,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212907,
+              "id_spell_effect_value": 334148,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -5729,7 +5729,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5739,7 +5739,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212908,
+              "id_spell_effect_value": 334149,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -5775,7 +5775,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5851,7 +5851,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5861,7 +5861,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212909,
+              "id_spell_effect_value": 334150,
               "offset": 0,
               "damage": 0,
               "ratio": -5,
@@ -5955,7 +5955,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5965,7 +5965,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212910,
+              "id_spell_effect_value": 334151,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -6083,7 +6083,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212911,
+              "id_spell_effect_value": 334152,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -6119,7 +6119,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6129,7 +6129,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212912,
+              "id_spell_effect_value": 334153,
               "offset": 0,
               "damage": 30,
               "ratio": -10,
@@ -6224,7 +6224,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6234,7 +6234,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212913,
+              "id_spell_effect_value": 334154,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -6280,7 +6280,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212914,
+              "id_spell_effect_value": 334155,
               "offset": 0,
               "damage": 225,
               "ratio": -75,
@@ -6375,7 +6375,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6385,7 +6385,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212915,
+              "id_spell_effect_value": 334156,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -6493,7 +6493,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6503,7 +6503,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212916,
+              "id_spell_effect_value": 334157,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -6549,7 +6549,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212917,
+              "id_spell_effect_value": 334158,
               "offset": 0,
               "damage": 450,
               "ratio": -150,
@@ -6595,7 +6595,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212918,
+              "id_spell_effect_value": 334159,
               "offset": 0,
               "damage": 450,
               "ratio": -150,
@@ -6700,7 +6700,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212919,
+              "id_spell_effect_value": 334160,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -6804,7 +6804,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212920,
+              "id_spell_effect_value": 334161,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -6898,7 +6898,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6908,7 +6908,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212921,
+              "id_spell_effect_value": 334162,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -7008,7 +7008,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7018,7 +7018,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212922,
+              "id_spell_effect_value": 334163,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -7122,7 +7122,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212923,
+              "id_spell_effect_value": 334164,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -7216,7 +7216,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7226,7 +7226,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212924,
+              "id_spell_effect_value": 334165,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -7330,7 +7330,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212925,
+              "id_spell_effect_value": 334166,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7421,7 +7421,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212926,
+              "id_spell_effect_value": 334167,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7512,7 +7512,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212927,
+              "id_spell_effect_value": 334168,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7606,7 +7606,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7616,7 +7616,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212928,
+              "id_spell_effect_value": 334169,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7720,7 +7720,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212929,
+              "id_spell_effect_value": 334170,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -7828,7 +7828,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7838,7 +7838,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212930,
+              "id_spell_effect_value": 334171,
               "offset": 0,
               "damage": 0,
               "ratio": 150,
@@ -7942,7 +7942,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212931,
+              "id_spell_effect_value": 334172,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -7956,7 +7956,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212932,
+              "id_spell_effect_value": 334173,
               "offset": 1,
               "damage": 0,
               "ratio": 10,
@@ -8037,7 +8037,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8047,7 +8047,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212933,
+              "id_spell_effect_value": 334174,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -8151,7 +8151,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212934,
+              "id_spell_effect_value": 334175,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8255,7 +8255,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212935,
+              "id_spell_effect_value": 334176,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -8373,7 +8373,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212936,
+              "id_spell_effect_value": 334177,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -8467,7 +8467,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8477,7 +8477,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212937,
+              "id_spell_effect_value": 334178,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8581,7 +8581,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212938,
+              "id_spell_effect_value": 334179,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -8595,7 +8595,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212939,
+              "id_spell_effect_value": 334180,
               "offset": 1,
               "damage": 0,
               "ratio": 5,
@@ -8699,7 +8699,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212940,
+              "id_spell_effect_value": 334181,
               "offset": 0,
               "damage": 0,
               "ratio": 7,
@@ -8790,7 +8790,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212941,
+              "id_spell_effect_value": 334182,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8894,7 +8894,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212942,
+              "id_spell_effect_value": 334183,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -8998,7 +8998,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212943,
+              "id_spell_effect_value": 334184,
               "offset": 0,
               "damage": 0,
               "ratio": -5,
@@ -9079,7 +9079,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9089,7 +9089,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212944,
+              "id_spell_effect_value": 334185,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -9207,7 +9207,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212945,
+              "id_spell_effect_value": 334186,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -9304,7 +9304,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212946,
+              "id_spell_effect_value": 334187,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -9409,7 +9409,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212947,
+              "id_spell_effect_value": 334188,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -9423,7 +9423,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212948,
+              "id_spell_effect_value": 334189,
               "offset": 1,
               "damage": 0,
               "ratio": 100,
@@ -9517,7 +9517,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9527,7 +9527,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212949,
+              "id_spell_effect_value": 334190,
               "offset": 0,
               "damage": -25,
               "ratio": 5,
@@ -9637,7 +9637,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212950,
+              "id_spell_effect_value": 334191,
               "offset": 0,
               "damage": -10,
               "ratio": 0,
@@ -9651,7 +9651,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212951,
+              "id_spell_effect_value": 334192,
               "offset": 1,
               "damage": 0,
               "ratio": 15,
@@ -9745,7 +9745,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9755,7 +9755,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212952,
+              "id_spell_effect_value": 334193,
               "offset": 0,
               "damage": -10,
               "ratio": 0,
@@ -9769,7 +9769,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212953,
+              "id_spell_effect_value": 334194,
               "offset": 1,
               "damage": 0,
               "ratio": 15,
@@ -9863,7 +9863,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9873,7 +9873,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212954,
+              "id_spell_effect_value": 334195,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -9967,7 +9967,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9977,7 +9977,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212955,
+              "id_spell_effect_value": 334196,
               "offset": 0,
               "damage": 0,
               "ratio": 25,
@@ -9991,7 +9991,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212956,
+              "id_spell_effect_value": 334197,
               "offset": 1,
               "damage": 0,
               "ratio": 2,
@@ -10085,7 +10085,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10095,7 +10095,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212957,
+              "id_spell_effect_value": 334198,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -10189,7 +10189,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10199,7 +10199,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212958,
+              "id_spell_effect_value": 334199,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10293,7 +10293,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10303,7 +10303,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212959,
+              "id_spell_effect_value": 334200,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -10394,7 +10394,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212960,
+              "id_spell_effect_value": 334201,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -10408,7 +10408,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212961,
+              "id_spell_effect_value": 334202,
               "offset": 1,
               "damage": 0,
               "ratio": -2,
@@ -10512,7 +10512,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212962,
+              "id_spell_effect_value": 334203,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10616,7 +10616,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212963,
+              "id_spell_effect_value": 334204,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -10720,7 +10720,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212964,
+              "id_spell_effect_value": 334205,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10824,7 +10824,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212965,
+              "id_spell_effect_value": 334206,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -10838,7 +10838,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212966,
+              "id_spell_effect_value": 334207,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -10946,7 +10946,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10956,7 +10956,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212967,
+              "id_spell_effect_value": 334208,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -11050,7 +11050,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11060,7 +11060,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212968,
+              "id_spell_effect_value": 334209,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -11074,7 +11074,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212969,
+              "id_spell_effect_value": 334210,
               "offset": 1,
               "damage": 0,
               "ratio": 50,
@@ -11178,7 +11178,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212970,
+              "id_spell_effect_value": 334211,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11286,7 +11286,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11296,7 +11296,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212971,
+              "id_spell_effect_value": 334212,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11462,7 +11462,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212972,
+              "id_spell_effect_value": 334213,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -11476,7 +11476,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212973,
+              "id_spell_effect_value": 334214,
               "offset": 1,
               "damage": 0,
               "ratio": -2,
@@ -11570,7 +11570,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11580,7 +11580,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212974,
+              "id_spell_effect_value": 334215,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -11616,7 +11616,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11626,7 +11626,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212975,
+              "id_spell_effect_value": 334216,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -11720,7 +11720,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11730,7 +11730,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212976,
+              "id_spell_effect_value": 334217,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11824,7 +11824,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11834,7 +11834,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212977,
+              "id_spell_effect_value": 334218,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -11848,7 +11848,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212978,
+              "id_spell_effect_value": 334219,
               "offset": 1,
               "damage": 0,
               "ratio": -3,
@@ -11929,7 +11929,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11939,7 +11939,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212979,
+              "id_spell_effect_value": 334220,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -12034,7 +12034,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12044,7 +12044,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212980,
+              "id_spell_effect_value": 334221,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -12058,7 +12058,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212981,
+              "id_spell_effect_value": 334222,
               "offset": 1,
               "damage": 0,
               "ratio": -3,
@@ -12162,7 +12162,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212982,
+              "id_spell_effect_value": 334223,
               "offset": 0,
               "damage": 0,
               "ratio": 8,
@@ -12280,7 +12280,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212983,
+              "id_spell_effect_value": 334224,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -12308,7 +12308,7 @@
               }
             },
             {
-              "id_spell_effect_value": 212984,
+              "id_spell_effect_value": 334225,
               "offset": 1,
               "damage": 0,
               "ratio": 0.5,
@@ -12416,7 +12416,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12426,7 +12426,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212985,
+              "id_spell_effect_value": 334226,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -12600,7 +12600,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12610,7 +12610,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212862,
+              "id_spell_effect_value": 334103,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -12661,7 +12661,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12693,7 +12693,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12703,7 +12703,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212863,
+              "id_spell_effect_value": 334104,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -12754,7 +12754,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12764,7 +12764,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212864,
+              "id_spell_effect_value": 334105,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -12815,7 +12815,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12889,7 +12889,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212865,
+              "id_spell_effect_value": 334106,
               "offset": 0,
               "damage": 30,
               "ratio": 0,
@@ -12972,7 +12972,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13014,7 +13014,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212866,
+              "id_spell_effect_value": 334107,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -13042,7 +13042,7 @@
               }
             },
             {
-              "id_spell_effect_value": 212867,
+              "id_spell_effect_value": 334108,
               "offset": 1,
               "damage": 200,
               "ratio": 0,
@@ -13093,7 +13093,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13125,7 +13125,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13231,7 +13231,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212868,
+              "id_spell_effect_value": 334109,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -13314,7 +13314,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13324,7 +13324,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212869,
+              "id_spell_effect_value": 334110,
               "offset": 0,
               "damage": -30,
               "ratio": 0,
@@ -13361,7 +13361,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13399,7 +13399,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13409,7 +13409,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212891,
+              "id_spell_effect_value": 334132,
               "offset": 0,
               "damage": 2,
               "ratio": 0,
@@ -13437,7 +13437,7 @@
               }
             },
             {
-              "id_spell_effect_value": 212892,
+              "id_spell_effect_value": 334133,
               "offset": 1,
               "damage": 2,
               "ratio": 0,
@@ -13488,7 +13488,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13498,7 +13498,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 212893,
+              "id_spell_effect_value": 334134,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -13512,7 +13512,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212894,
+              "id_spell_effect_value": 334135,
               "offset": 1,
               "damage": 10,
               "ratio": 0,
@@ -13526,7 +13526,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 212895,
+              "id_spell_effect_value": 334136,
               "offset": 2,
               "damage": -10,
               "ratio": 0,
@@ -13563,7 +13563,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13659,7 +13659,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13691,7 +13691,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13755,7 +13755,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13787,7 +13787,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13796,7 +13796,13 @@
           },
           "translations": [],
           "values": [],
-          "inner_states": []
+          "inner_states": [
+            {
+              "name_state": "Arme de Lumière",
+              "id_state": 5977,
+              "translations": []
+            }
+          ]
         }
       ],
       "translations": []
@@ -13819,7 +13825,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13915,7 +13921,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13979,7 +13985,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13988,7 +13994,13 @@
           },
           "translations": [],
           "values": [],
-          "inner_states": []
+          "inner_states": [
+            {
+              "name_state": "Énergie ancestrale - Bonus",
+              "id_state": 6710,
+              "translations": []
+            }
+          ]
         }
       ],
       "translations": []
@@ -14011,7 +14023,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14020,7 +14032,13 @@
           },
           "translations": [],
           "values": [],
-          "inner_states": []
+          "inner_states": [
+            {
+              "name_state": "Renaissance - Bonus",
+              "id_state": 6713,
+              "translations": []
+            }
+          ]
         }
       ],
       "translations": []
@@ -14043,7 +14061,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
