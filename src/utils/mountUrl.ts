@@ -1,4 +1,4 @@
-export function mountUrl (itemId: number, type: number, lang: string): string {
+export function mountUrl(itemId: number, type: number, lang: string): string {
   const categories = [
     {
       title: {
@@ -16,7 +16,7 @@ export function mountUrl (itemId: number, type: number, lang: string): string {
         es: 'armas',
         fr: 'weapons'
       },
-      types: [101, 108, 110, 11, 112, 113, 114, 115, 117, 119, 120, 189, 219, 223, 253, 254, 480, 512, 519, 520]
+      types: [101, 108, 110, 111, 112, 113, 114, 115, 117, 119, 120, 189, 219, 223, 253, 254, 480, 512, 519, 520]
     },
     {
       title: {
