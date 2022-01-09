@@ -131084,8 +131084,8 @@
       "level": 1,
       "rarity": 1,
       "graphicParameters": {
-        "gfxId": 74529042,
-        "femaleGfxId": 74529042
+        "gfxId": 74529043,
+        "femaleGfxId": 74529043
       }
     },
     "title": {
@@ -133137,6 +133137,23 @@
   },
   {
     "definition": {
+      "id": 29178,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429177,
+        "femaleGfxId": 13429177
+      }
+    },
+    "title": {
+      "fr": "Epouvancrâne",
+      "en": "Skullcrow",
+      "es": "Cascorripilante",
+      "pt": "Crâniospantalho"
+    }
+  },
+  {
+    "definition": {
       "id": 29179,
       "level": 227,
       "rarity": 3,
@@ -133371,6 +133388,23 @@
       "en": "Horridemon Leg\t",
       "es": "Patas de demorribles\t",
       "pt": "Patas de Demhorrível\t"
+    }
+  },
+  {
+    "definition": {
+      "id": 29195,
+      "level": 219,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13629195,
+        "femaleGfxId": 34729195
+      }
+    },
+    "title": {
+      "fr": "Plastron de l'Épouvante",
+      "en": "Breastplate of Terror",
+      "es": "Coraza del espanto",
+      "pt": "Peitoral do Terror"
     }
   },
   {
@@ -135432,6 +135466,23 @@
   },
   {
     "definition": {
+      "id": 29321,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629319,
+        "femaleGfxId": 34729319
+      }
+    },
+    "title": {
+      "fr": "Le Foyer\t",
+      "en": "The Hearth\t",
+      "es": "El fogón\t",
+      "pt": "La Reira\t"
+    }
+  },
+  {
+    "definition": {
       "id": 29322,
       "level": 220,
       "rarity": 2,
@@ -136533,6 +136584,108 @@
       "en": "Anathar's Intervention Key",
       "es": "Llave de intervención de Anathar",
       "pt": "Chave de Intervenção de Anathar"
+    }
+  },
+  {
+    "definition": {
+      "id": 29412,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829412,
+        "femaleGfxId": 13829412
+      }
+    },
+    "title": {
+      "fr": "Epaulettes d'Anathar",
+      "en": "Anathar Epaulettes",
+      "es": "Hombreras de Anathar",
+      "pt": "Dragonas de Anathar"
+    }
+  },
+  {
+    "definition": {
+      "id": 29413,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829412,
+        "femaleGfxId": 13829412
+      }
+    },
+    "title": {
+      "fr": "Epaulettes d'Anathar",
+      "en": "Anathar Epaulettes",
+      "es": "Hombreras de Anathar",
+      "pt": "Dragonas de Anathar"
+    }
+  },
+  {
+    "definition": {
+      "id": 29414,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229414,
+        "femaleGfxId": 13229414
+      }
+    },
+    "title": {
+      "fr": "Cape d'Anathar",
+      "en": "Anathar Cloak",
+      "es": "Capa de Anathar",
+      "pt": "Capa de Anathar"
+    }
+  },
+  {
+    "definition": {
+      "id": 29415,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229414,
+        "femaleGfxId": 13229414
+      }
+    },
+    "title": {
+      "fr": "Cape d'Anathar",
+      "en": "Anathar Cloak",
+      "es": "Capa de Anathar",
+      "pt": "Capa de Anathar"
+    }
+  },
+  {
+    "definition": {
+      "id": 29416,
+      "level": 227,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629416,
+        "femaleGfxId": 34729416
+      }
+    },
+    "title": {
+      "fr": "Plastron d'Anathar",
+      "en": "Anathar Breastplate",
+      "es": "Coraza de Anathar",
+      "pt": "Peitoral de Anathar"
+    }
+  },
+  {
+    "definition": {
+      "id": 29417,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629416,
+        "femaleGfxId": 34729416
+      }
+    },
+    "title": {
+      "fr": "Plastron d'Anathar",
+      "en": "Anathar Breastplate",
+      "es": "Coraza de Anathar",
+      "pt": "Peitoral de Anathar"
     }
   },
   {

@@ -31057,7 +31057,7 @@
   },
   {
     "recipeId": 8712,
-    "productedItemId": 29320,
+    "productedItemId": 29321,
     "productOrder": 0,
     "productedItemQuantity": 1
   },
@@ -31345,7 +31345,7 @@
   },
   {
     "recipeId": 8761,
-    "productedItemId": 29177,
+    "productedItemId": 29178,
     "productOrder": 0,
     "productedItemQuantity": 1
   },
@@ -32144,6 +32144,48 @@
   {
     "recipeId": 8896,
     "productedItemId": 29411,
+    "productOrder": 0,
+    "productedItemQuantity": 1
+  },
+  {
+    "recipeId": 8898,
+    "productedItemId": 29196,
+    "productOrder": 0,
+    "productedItemQuantity": 1
+  },
+  {
+    "recipeId": 8899,
+    "productedItemId": 29414,
+    "productOrder": 0,
+    "productedItemQuantity": 1
+  },
+  {
+    "recipeId": 8900,
+    "productedItemId": 29415,
+    "productOrder": 0,
+    "productedItemQuantity": 1
+  },
+  {
+    "recipeId": 8901,
+    "productedItemId": 29412,
+    "productOrder": 0,
+    "productedItemQuantity": 1
+  },
+  {
+    "recipeId": 8902,
+    "productedItemId": 29413,
+    "productOrder": 0,
+    "productedItemQuantity": 1
+  },
+  {
+    "recipeId": 8903,
+    "productedItemId": 29416,
+    "productOrder": 0,
+    "productedItemQuantity": 1
+  },
+  {
+    "recipeId": 8904,
+    "productedItemId": 29417,
     "productOrder": 0,
     "productedItemQuantity": 1
   }

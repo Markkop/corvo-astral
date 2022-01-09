@@ -6,39 +6,39 @@ describe('EquipmentCommand', () => {
   it('return a matching equipment by name', async () => {
     const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip tentacled belt')
     expect(spy).toHaveBeenCalledWith(embedContaining({
-        url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/armors/27645',
-        color: 0xfede71,
-        title: '<:legendary:888866409382314085> Tentacled Belt',
-        description: "It works like a typical belt, but you can't really say it does any more than that.\nID: 27645",
-        thumbnail: {
-          url: 'https://static.ankama.com/wakfu/portal/game/item/115/13327644.png'
+      url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/armors/27645',
+      color: 0xfede71,
+      title: '<:legendary:888866409382314085> Tentacled Belt',
+      description: "It works like a typical belt, but you can't really say it does any more than that.\nID: 27645",
+      thumbnail: {
+        url: 'https://static.ankama.com/wakfu/portal/game/item/115/13327644.png'
+      },
+      fields: [
+        {
+          name: 'Level',
+          value: 215,
+          inline: true
         },
-        fields: [
-          {
-            name: 'Level',
-            value: 215,
-            inline: true
-          },
-          {
-            name: 'Type',
-            value: 'Belt',
-            inline: true
-          },
-          {
-            name: 'Rarity',
-            value: 'Legendary',
-            inline: true
-          },
-          {
-            name: 'Equipped',
-            value: '286 HP\n47 Dodge\n30 Prospecting\n6% Critical Hit\n218 Mastery of 2 random element\n118 Distance Mastery\n47 <:FIRE:888826773352120331> Resistance\n47 <:EARTH:888826773410820116> Resistance',
-            inline: false
-          }
-        ],
-        footer: {
-          text: 'Equipment found: Tentacled Belt (Legendary), Tentacled Belt (Mythical)'
+        {
+          name: 'Type',
+          value: 'Belt',
+          inline: true
+        },
+        {
+          name: 'Rarity',
+          value: 'Legendary',
+          inline: true
+        },
+        {
+          name: 'Equipped',
+          value: '286 HP\n47 Dodge\n30 Prospecting\n6% Critical Hit\n218 Mastery of 2 random element\n118 Distance Mastery\n47 <:FIRE:888826773352120331> Resistance\n47 <:EARTH:888826773410820116> Resistance',
+          inline: false
         }
-      })
+      ],
+      footer: {
+        text: 'Equipment found: Tentacled Belt (Legendary), Tentacled Belt (Mythical)'
+      }
+    })
     )
   })
 
@@ -155,7 +155,7 @@ describe('EquipmentCommand', () => {
     const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip a')
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       footer: {
-        text: "Equipment found: Dazzling Belt (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Hazieff's Helmet (Epic), Wa Wabbit's Cwown (Epic), Genetically Modified Epaulettes (Epic), Claymore of Fhenris (Epic), Bax Stab Ax (Epic), Claymus Shushu (Epic), Emiwlet Amulet (Epic), Lenald Walm Pelt (Epic), Vizion Dagger (Epic), Trool Warrior Spikes (Epic), Sanefty Belt (Epic), Happy Sram Kimono (Epic), Durable Shield (Epic), Limited Edition Cape (Epic), Dora Lagoole (Epic), Welder Mask (Epic), Viktorious Rapier (Epic) and other 5062 results"
+        text: "Equipment found: Dazzling Belt (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Hazieff's Helmet (Epic), Wa Wabbit's Cwown (Epic), Genetically Modified Epaulettes (Epic), Claymore of Fhenris (Epic), Bax Stab Ax (Epic), Claymus Shushu (Epic), Emiwlet Amulet (Epic), Lenald Walm Pelt (Epic), Vizion Dagger (Epic), Trool Warrior Spikes (Epic), Sanefty Belt (Epic), Happy Sram Kimono (Epic), Durable Shield (Epic), Limited Edition Cape (Epic), Dora Lagoole (Epic), Welder Mask (Epic), Viktorious Rapier (Epic) and other 5064 results"
       }
     }))
   })
