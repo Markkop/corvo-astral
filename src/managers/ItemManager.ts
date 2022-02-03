@@ -182,7 +182,7 @@ class ItemManager {
       ]
     }
     const newEmbed = new MessageEmbed(reactionEmbed)
-    await reaction.message.edit(newEmbed)
+    await reaction.message.edit({ embeds: [newEmbed]})
   }
 
   // TO Do: move the following functions 

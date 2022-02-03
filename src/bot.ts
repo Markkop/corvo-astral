@@ -1,34 +1,36 @@
 import 'module-alias/register'
 require('dotenv').config()
-import { Client, Message, MessageReaction, TextChannel, User } from 'discord.js'
+import { Client, Interaction, Message, MessageReaction, TextChannel, User, Intents } from 'discord.js'
 import cron from 'node-cron'
-import { handleMessageError, handleReactionError } from './utils/handleError'
+import { handleInteractionError, handleMessageError, handleReactionError } from './utils/handleError'
 import { ConfigManager, MessageManager } from '@managers'
 import ReactionService from './services/ReactionService'
 import { 
-  EquipCommand,
+  // EquipCommand,
   AlmaCommand,
   AboutCommand,
   CalcCommand,
-  RecipeCommand,
-  SubliCommand,
-  PartyBaseCommand,
-  HelpCommand,
-  ConfigCommand
+  // RecipeCommand,
+  // SubliCommand,
+  // PartyBaseCommand,
+  // HelpCommand,
+  // ConfigCommand
  } from '@commands'
 import { GuildConfig } from '@types'
 import { saveServersNumber } from '@utils/serversNumber'
+import { registerCommands } from '@utils/registerCommands'
+
 
 const commandsMap = {
-  equip: EquipCommand,
+  // equip: EquipCommand,
   about: AboutCommand,
   calc: CalcCommand,
-  recipe: RecipeCommand,
-  subli: SubliCommand,
+  // recipe: RecipeCommand,
+  // subli: SubliCommand,
   alma: AlmaCommand,
-  party: PartyBaseCommand,
-  help: HelpCommand,
-  config: ConfigCommand
+  // party: PartyBaseCommand,
+  // help: HelpCommand,
+  // config: ConfigCommand
 }
 
 class Bot {
@@ -44,7 +46,8 @@ class Bot {
   }
 
   public listen (): void {
-    this.client.on('message', this.onMessage.bind(this))
+    // this.client.on('message', this.onMessage.bind(this))
+    this.client.on('interactionCreate', this.onInteractionCreate.bind(this))
     this.client.on('ready', this.onReady.bind(this))
     this.client.on('messageReactionAdd', this.onMessageReactionAdd.bind(this))
     this.client.on('messageReactionRemove', this.onMessageReactionRemove.bind(this))
@@ -54,28 +57,51 @@ class Bot {
 
   private onReady () {
     const servers = this.client.guilds.cache.size
-    console.log(`Online on ${servers} servers: ${this.client.guilds.cache.map(ch => ch.name).join(', ')}`)
+    console.log(`Online on ${servers} servers: ${this.client.guilds.cache.map(guild => guild.name).join(', ')}`)
     this.client.user.setActivity('.about or .help', { type: 'PLAYING' })
     saveServersNumber(servers)
+    this.client.guilds.cache.forEach(guild => {
+      const guildConfig = this.configManager.getGuildConfig(guild.id)
+      registerCommands(this.client, guild.id, guildConfig as GuildConfig)
+    })
   }
 
-  private async onMessage (message: Message) {
+
+  // private async onMessage (message: Message) {
+  //   try {
+  //     if (message.author.bot) return
+  //     if (!message.guild) return
+
+  //     const guildConfig = this.configManager.getGuildConfig(message.guild.id)
+  //     if (!message.content.startsWith(guildConfig.prefix)) return
+
+  //     const commandWord = MessageManager.getCommandWord(guildConfig.prefix, message)
+  //     const Command = this.getCommand(commandWord)
+
+  //     if (!Command) return
+
+  //     const CommandClass = new Command(message, guildConfig)
+  //     await CommandClass.execute()
+  //   } catch (error) {
+  //     handleMessageError(error, message)
+  //   }
+  // }
+
+  private async onInteractionCreate (interaction: Interaction) {
     try {
-      if (message.author.bot) return
-      if (!message.guild) return
+      if (!interaction.isCommand()) return;
 
-      const guildConfig = this.configManager.getGuildConfig(message.guild.id)
-      if (!message.content.startsWith(guildConfig.prefix)) return
+      const commandName = interaction.commandName
+      const Command = this.getCommand(commandName)
 
-      const commandWord = MessageManager.getCommandWord(guildConfig.prefix, message)
-      const Command = this.getCommand(commandWord)
+	    if (!Command) return;
 
-      if (!Command) return
+      const guildConfig = this.configManager.getGuildConfig(interaction.guildId)
 
-      const CommandClass = new Command(message, guildConfig)
+      const CommandClass = new Command(interaction, guildConfig)
       await CommandClass.execute()
     } catch (error) {
-      handleMessageError(error, message)
+      handleInteractionError(error, interaction)
     }
   }
 
@@ -120,7 +146,7 @@ class Bot {
           if (!guildChannel.name.includes(almanaxChannelName)) continue
           const embed = AlmaCommand.getAndMountAlmanaxBonusEmbed(guildConfig.lang)
           try {
-            await guildChannel.send({ embed })
+            await guildChannel.send({ embeds: [embed] })
           } catch (error) {
             console.log(`${error.name}: ${error.message} on ${guildChannel.name} at ${guild.name}`)
           }
@@ -133,7 +159,7 @@ class Bot {
 }
 
 export default function initiateBot() {
-  const client = new Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION'] })
+  const client = new Client({ intents: [Intents.FLAGS.GUILDS] })
   const configManager = ConfigManager.getInstance()
   const token = process.env.DISCORD_BOT_TOKEN
   

@@ -8,6 +8,54 @@ export default {
   capitalize (str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
   },
+  langCommandOptionDescription: {
+    en: 'The language you wish to use for this command',
+    es: 'El idioma que desea utilizar para este comando',
+    fr: 'La langue que vous souhaitez utiliser pour cette commande',
+    pt: 'O idioma que você deseja usar para este comando'
+  },
+  aboutCommandDescription: {
+    en: 'Displays information about Corvo Astral',
+    pt: 'Exibe informações sobre o Corvo Astral',
+    es: 'Muestra información sobre el Corvo Astral',
+    fr: 'Affiche des informations sur Corvo Astral'
+  },
+  almaCommandDescription: {
+    en: 'Discover the Almanax bonus for the current day',
+    pt: 'Descubra o bônus do Almanax para o dia atual',
+    es: 'Descubra el bono Almanax para el día actual',
+    fr: 'Découvrez le bonus Almanax du jour en cours'
+  },
+  calcCommandDescription: {
+    en: 'Calculates the damage inflicted based on player and target stats',
+    es: 'Calcula el daño infligido en función de las estadísticas del jugador y del objetivo. ',
+    fr: 'Calcule les dégâts infligés en fonction des statistiques du joueur et de la cible ',
+    pt: 'Calcula o dano infligido com base nas estatísticas do jogador e do alvo '
+  },
+  calcCommandDmgOptionDescription: {
+    en: 'total domain (major elemental + secondary)',
+    pt: 'domínio total (maior elemental + secundários)',
+    es: 'dominio total (elemental mayor + secundario)',
+    fr: 'dégâts totaux (élémentaire majeur + secondaire)',
+  },
+  calcCommandResOptionDescription: {
+    en: "target's resistance. It can be in% or total",
+    pt: 'resistência do alvo. Pode ser em % ou total',
+    es: 'resistencia del objetivo. Puede estar en% o total',
+    fr: 'résistance de la cible. Cela peut être en % ou au total',
+  },
+  calcCommandBaseOptionDescription: {
+    en: 'skill base damage',
+    pt: 'dano base da skill',
+    es: 'daño de la base de habilidades',
+    fr: 'dégâts de base de compétences',
+  },
+  calcCommandCritOptionDescription: {
+    en: 'critical chance in%',
+    pt: 'chance crítica em %',
+    es: 'probabilidad crítica en%',
+    fr: 'chance critique en %'
+  },
   slots: {
     en: 'slots',
     es: 'ajustes',

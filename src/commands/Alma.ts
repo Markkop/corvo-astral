@@ -1,26 +1,31 @@
 import { BaseCommand } from '@baseCommands'
-import { AlmanaxBonus, GuildConfig, PartialEmbed } from '@types'
+import { AlmanaxBonus, GuildConfig } from '@types'
 import { getRandomIntInclusive } from '@utils/numbers'
-import { Message } from 'discord.js'
+import { Interaction, MessageEmbed } from 'discord.js'
 import str from '@stringsLang'
-import { MessageManager } from '@managers'
+import { SlashCommandBuilder } from '@discordjs/builders'
 const events = require('../../data/almanaxBonuses.json')
 
+export const getData = (lang: string) => new SlashCommandBuilder()
+  .setName('alma')
+  .setDescription(str.almaCommandDescription[lang])
+  .addStringOption(option => option.setName('lang').setDescription(str.langCommandOptionDescription[lang]))
 
-export default class AlmaCommand extends BaseCommand {
-  constructor (message: Message, guildConfig: GuildConfig) {
-    super(message, guildConfig)
+class AlmaCommand extends BaseCommand {
+  constructor (interaction: Interaction, guildConfig: GuildConfig) {
+    super(interaction, guildConfig)
   }
 
   public execute (): void {
-    const { options } = MessageManager.getArgumentsAndOptions(this.message)
+    if (!this.interaction.isCommand()) return
+    const lang = this.interaction.options.getString('lang')
 
-    if (options.lang) {
-      this.changeLang(options.lang)
+    if (lang) {
+      this.changeLang(lang)
     }
 
     const embed = AlmaCommand.getAndMountAlmanaxBonusEmbed(this.lang)
-    this.send({ embed })
+    this.send({ embeds: [embed] })
   }
 
   public static getAndMountAlmanaxBonusEmbed(lang: string) {
@@ -28,7 +33,7 @@ export default class AlmaCommand extends BaseCommand {
     return AlmaCommand.mountAlmanaxBonusEmbed(bonus, lang)
   }
 
-  public static mountAlmanaxBonusEmbed (bonus: AlmanaxBonus, lang: string): PartialEmbed {
+  public static mountAlmanaxBonusEmbed (bonus: AlmanaxBonus, lang: string): MessageEmbed {
     const randomNumber = getRandomIntInclusive(1, 10)
     let extraInfo = ''
     if (randomNumber > 8) {
@@ -40,7 +45,7 @@ export default class AlmaCommand extends BaseCommand {
       color: 0x40b2b5,
       title: '<:alma:888871222648115261> Today\'s Almanax',
       description: `**Bonus:** ${bonus.text[lang]}${extraInfo}`
-    } as PartialEmbed
+    } as MessageEmbed
 
     return embed
   }
@@ -64,3 +69,5 @@ export default class AlmaCommand extends BaseCommand {
     return diffDays
   }
 }
+
+export default AlmaCommand
