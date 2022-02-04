@@ -1,86 +1,105 @@
-// import { PartyCommand } from '@baseCommands'
-// import { GuildConfig } from '@types'
-// import { Collection, Interaction, Message, MessageEmbed } from 'discord.js'
-// import askAndWaitForAnswer from '@utils/askAndWaitForAnswer'
+import { PartyCommand } from '@baseCommands'
+import { GuildConfig, PartialEmbed } from '@types'
+import { Collection, Interaction, Message, MessageEmbed } from 'discord.js'
+import { SlashCommandBuilder } from '@discordjs/builders'
+import str from '@stringsLang'
 
-// export default class PartyUpdateCommand extends PartyCommand {
-//   constructor (interaction: Interaction, guildConfig: GuildConfig) {
-//     super(interaction, guildConfig)
-//   }
+export const getData = (lang: string) => new SlashCommandBuilder()
+  .setName('party-update')
+  .setDescription(str.partyUpdateCommandDescription[lang])
+  .addNumberOption(option => option.setName('id').setDescription(str.partyIdCommandOptionDescription[lang]).setRequired(true))
+  .addStringOption(option => option.setName('name').setDescription(str.partyNameCommandOptionDescription[lang]))
+  .addStringOption(option => option.setName('description').setDescription(str.partyDescriptionCommandOptionDescription[lang]))
+  .addStringOption(option => option.setName('date').setDescription(str.partyDateCommandOptionDescription[lang]))
+  .addStringOption(option => option.setName('level').setDescription(str.partyLevelCommandOptionDescription[lang]))
 
-//   private mountNoPartyFoundEmbed() {
-//     return {
-//       embed: {
-//         color: '#bb1327',
-//         title: ':x: Error on using party command',
-//         description: 'No party message has been found on configured party listing channel'
-//       }
-//     }
-//   }
+export default class PartyUpdateCommand extends PartyCommand {
+  constructor (interaction: Interaction, guildConfig: GuildConfig) {
+    super(interaction, guildConfig)
+  }
 
-//   private getMessageByEmbedNameAndValue (messages: Collection<string, Message>, name: string, value: string) {
-//     return messages.find(message => {
-//       return message.embeds[0].fields.some(field => field.name.includes(name) && field.value === value)
-//     })
-//   }
+  private mountNoPartyFoundEmbed(): PartialEmbed {
+    return {
+      title: ':x: Error on using party command',
+      description: 'No party message has been found on configured party listing channel'
+    }
+  }
+
+  private getMessageByEmbedNameAndValue (messages: Collection<string, Message>, name: string, value: string) {
+    return messages.find(message => {
+      return message.embeds[0].fields.some(field => field.name.includes(name) && field.value === value)
+    })
+  }
   
-//   public async execute (): Promise<void> {
-//     const partyMessages = await this.getChannelParties() 
-//     if (!partyMessages.size) {
-//       await this.send(this.mountNoPartyFoundEmbed())
-//     }
+  public async execute (): Promise<void> {
+    if (!this.interaction.isCommand()) return
+    const lang = this.interaction.options.getString('lang')
 
-//     const askIdText = 'Oh, you again? First tell me the :label: **ID** from the party you want to update.'
-//     const id = await askAndWaitForAnswer(askIdText, this.message)
-//     if (!id) return
+    if (lang) {
+      this.changeLang(lang)
+    }
 
-//     const matchingParty = this.getMessageByEmbedNameAndValue(partyMessages, 'ID', id)
-//     if (!matchingParty) {
-//       await this.send("Are you sure? I haven't find any party within the last 100 parties.")
-//       return
-//     }
+    const partyMessages = await this.getChannelParties() 
+    if (!partyMessages.size) {
+      const notFoundEmbed = this.mountNoPartyFoundEmbed()
+      await this.send({ embeds: [notFoundEmbed]})
+    }
 
-//     const hasIdOption = Boolean(id)
-//     if (!hasIdOption) return
+    const id = this.interaction.options.getNumber('id')
+    if (!id) return
 
-//     const matchingPartyEmbed = matchingParty.embeds[0]
-//     const partySlotsField = this.getEmbedFieldByName(matchingPartyEmbed, 'Members')
-//     const partySlots = partySlotsField.value.split('\n')
-//     const userPartySlot = partySlots.find(slot => slot.includes(this.message.author.id))
-//     if (!userPartySlot) {
-//       await this.send("Soo.. er.. How can I say this? You are not in this party, I'm sorry")
-//       return 
-//     }
+    const matchingParty = this.getMessageByEmbedNameAndValue(partyMessages, 'ID', String(id))
+    if (!matchingParty) {
+      await this.send("Are you sure? I haven't find any party within the last 100 parties.")
+      return
+    }
 
-//     const userPartySlotIndex = partySlots.indexOf(userPartySlot)
-//     const isPartyLeader = userPartySlotIndex === 0
-//     if (!isPartyLeader) {
-//       await this.send("You're not this party leader, so try asking them")
-//       return 
-//     }
+    const hasIdOption = Boolean(id)
+    if (!hasIdOption) return
 
-//     const changeOptions = ['name', 'description', 'date', 'level']
-//     const changeOptionsText = changeOptions.join(', ')
-//     const askChangeText = `Cool, I've found the party. What do you want to change? (${changeOptionsText})`
-//     const content = await askAndWaitForAnswer(askChangeText, this.message)
-//     if (!content) return
+    const matchingPartyEmbed = matchingParty.embeds[0]
+    const partySlotsField = this.getEmbedFieldByName(matchingPartyEmbed, 'Members')
+    const partySlots = partySlotsField.value.split('\n')
+    const userPartySlot = partySlots.find(slot => slot.includes(this.interaction.user.id))
+    if (!userPartySlot) {
+      await this.send("Soo.. er.. How can I say this? You are not in this party, I'm sorry")
+      return 
+    }
 
-//     const isValidContent = changeOptions.includes(content)
-//     if (!isValidContent) {
-//       await this.send(`Sorry, buddy. But I can only change ${changeOptionsText}`)
-//       return 
-//     }
+    const userPartySlotIndex = partySlots.indexOf(userPartySlot)
+    const isPartyLeader = userPartySlotIndex === 0
+    if (!isPartyLeader) {
+      await this.send("You're not this party leader, so try asking them")
+      return 
+    }
 
-//     const askNewContent = `Right, so what's the new value for **${content}**?`
-//     const newContent = await askAndWaitForAnswer(askNewContent, this.message)
-//     if (!newContent) return
+    const name = this.interaction.options.getString('name')
+    const description = this.interaction.options.getString('description')
+    const date = this.interaction.options.getString('date')
+    const level = this.interaction.options.getString('level')
 
-//     const updatedEmbed = this.updatePartyFieldByName(matchingPartyEmbed, content, newContent)
+    if (!name && !description && !date && !level) {
+      await this.send("At least one option is requred")
+      return
+    }
 
-//     const embed = { ...updatedEmbed }
-//     const newEmbed = new MessageEmbed(embed)
-//     await this.send(`:sunglasses: All set! Check it out on ${matchingParty.channel.toString()}.`)
-//     await matchingParty.edit(newEmbed)
-//     return 
-//   }
-// }
+    const options = {
+      name,
+      description,
+      date,
+      level,
+    }
+
+    const updatedEmbed = Object.entries(options).reduce((updatedEmbed, [key, value]) => {
+      if (!value) return updatedEmbed
+      return this.updatePartyFieldByName(updatedEmbed, key, value)
+    }, matchingPartyEmbed)
+
+
+    const embed = { ...updatedEmbed }
+    const newEmbed = new MessageEmbed(embed)
+    await this.send(`:sunglasses: All set! Check it out on ${matchingParty.channel.toString()}.`)
+    await matchingParty.edit({embeds: [newEmbed]})
+    return 
+  }
+}

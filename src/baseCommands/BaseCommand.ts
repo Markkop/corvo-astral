@@ -14,14 +14,14 @@ export default abstract class BaseCommand {
     this.guildConfig = guildConfig
     this.lang = guildConfig.lang
     this.interaction = interaction
-    this.commandWord = interaction.isCommand() ? interaction.commandName : '' 
+    this.commandWord = interaction?.isCommand() ? interaction.commandName : '' 
   }
 
   protected async send (content: MessageOptions | string): Promise<void> {
     try {
       const interaction = this.interaction as CommandInteraction
       const messageContent = typeof content === 'string' ? { content } : content
-      const sentContent = await interaction.reply(messageContent)
+      await interaction.reply(messageContent)
     } catch (error) {
       handleInteractionError(error, this.interaction)
     }

@@ -6,9 +6,8 @@ import CalcCommand, { getData as getCalcData} from './Calc'
 import AlmaCommand, { getData as getAlmaData} from './Alma'
 // import HelpCommand from './Help'
 import ConfigCommand, { getData as getConfigData } from './Config'
-// import PartyBaseCommand from './party/PartyBase'
-// import PartyCreateCommand from './party/PartyCreate'
-// import PartyUpdateCommand from './party/PartyUpdate'
+import PartyCreateCommand, { getData as getPartyCreateData } from './party/PartyCreate'
+import PartyUpdateCommand, { getData as getPartyUpdateData } from './party/PartyUpdate'
 import PartyReaction from './party/PartyReaction'
 
 export {
@@ -20,9 +19,8 @@ export {
   AlmaCommand,
   // HelpCommand,
   ConfigCommand,
-  // PartyBaseCommand,
-  // PartyCreateCommand,
-  // PartyUpdateCommand,
+  PartyCreateCommand,
+  PartyUpdateCommand,
   PartyReaction
 }
 
@@ -30,5 +28,7 @@ export default [
   getAboutData,
   getCalcData,
   getAlmaData,
-  getConfigData
+  getConfigData,
+  getPartyCreateData,
+  getPartyUpdateData
 ]

@@ -12,7 +12,8 @@ import {
   CalcCommand,
   // RecipeCommand,
   // SubliCommand,
-  // PartyBaseCommand,
+  PartyCreateCommand,
+  PartyUpdateCommand,
   // HelpCommand,
   ConfigCommand
  } from '@commands'
@@ -28,7 +29,8 @@ const commandsMap = {
   // recipe: RecipeCommand,
   // subli: SubliCommand,
   alma: AlmaCommand,
-  // party: PartyBaseCommand,
+  'party-create': PartyCreateCommand,
+  'party-update': PartyUpdateCommand,
   // help: HelpCommand,
   config: ConfigCommand
 }
@@ -159,7 +161,10 @@ class Bot {
 }
 
 export default function initiateBot() {
-  const client = new Client({ intents: [Intents.FLAGS.GUILDS] })
+  const client = new Client({ 
+    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGE_REACTIONS],
+    partials: ['MESSAGE', 'CHANNEL', 'REACTION']
+   })
   const configManager = ConfigManager.getInstance()
   const token = process.env.DISCORD_BOT_TOKEN
   

@@ -19,7 +19,7 @@ export default class PartyReactionCommand extends PartyCommand {
     try {
       const embed = { ...updatedEmbed }
       const newEmbed = new MessageEmbed(embed)
-      await this.message.edit({ embeds: [newEmbed] })
+      await this.reaction.message.edit({ embeds: [newEmbed] })
     } catch (error) {
       console.log(error)
     }

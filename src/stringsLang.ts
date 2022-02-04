@@ -8,6 +8,54 @@ export default {
   capitalize (str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
   },
+  partyUpdateCommandDescription: {
+    en: "Change a field in the group listing",
+    es: 'Cambiar un campo en la lista de grupos',
+    fr: "Modifier un champ dans la liste des groupes",
+    pt: 'Altera um campo da listagem de grupo'
+  },
+  partyIdCommandOptionDescription: {
+    en: "The group identification (ID) number",
+    es: 'El número de identificación (ID) del grupo',
+    fr: "Le numéro d'identification de groupe (ID)",
+    pt: 'O número de identificação (ID) do grupo'
+  },
+  partySlotsCommandOptionDescription: {
+    en: "The number of slots available",
+    es: 'El número de espacios disponibles',
+    fr: "Le nombre de places disponibles",
+    pt: 'O número de vagas disponíveis'
+  },
+  partyLevelCommandOptionDescription: {
+    en: "The level or level range required to participate",
+    es: 'El nivel o rango de nivel requerido para participar',
+    fr: "Le niveau ou la fourchette de niveaux requis pour participer",
+    pt: 'O nível ou a faixa de nível necessária para participar'
+  },
+  partyDateCommandOptionDescription: {
+    en: "When the group will meet (in any format) ",
+    es: 'Cuándo se reunirá el grupo (en cualquier formato)',
+    fr: "Quand le groupe se réunira (dans n'importe quel format)",
+    pt: 'O momento em que o grupo irá se encontrar (em qualquer formato)'
+  },
+  partyDescriptionCommandOptionDescription: {
+    en: "Group description",
+    es: 'Descripción del grupo',
+    fr: "Description du groupe ",
+    pt: 'Descrição do grupo'
+  },
+  partyNameCommandOptionDescription: {
+    en: "Group's name",
+    es: 'Nombre del grupo',
+    fr: "Nom du groupe ",
+    pt: 'Nome do grupo'
+  },
+  partyCreateCommandDescription: {
+    en: 'Create a group listing on the configured channel',
+    es: 'Crear una lista de grupo en el canal configurado',
+    fr: "Créer une liste de groupe sur le canal configuré",
+    pt: 'Cria uma listagem de grupo no canal configurado'
+  },
   buildPreviewConfigCommandOptionDescription: {
     en: 'Enables use of build preview ',
     es: 'Habilita el uso de la vista previa de build',

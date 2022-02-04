@@ -1,6 +1,6 @@
 import { PartyReactionCommand } from '@baseCommands'
 import { GuildConfig } from '@types'
-import { MessageReaction, User } from 'discord.js'
+import { Message, MessageReaction, User } from 'discord.js'
 import mappings from '@utils/mappings'
 const { classEmoji } = mappings
 
@@ -92,7 +92,7 @@ export default class PartyReaction extends PartyReactionCommand {
   }
 
   public async execute (action: 'join'|'leave'): Promise<void> {
-    const partyId = this.getPartyId(this.message)
+    const partyId = this.getPartyId(this.reaction.message as Message)
     if (!partyId) return
 
     const emojiString = `<:${this.reaction.emoji.name}:${this.reaction.emoji.id}>`
