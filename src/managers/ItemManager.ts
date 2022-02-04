@@ -19,6 +19,31 @@ class ItemManager {
     this.setSublimationList()
   }
 
+  // Look at this workaround I have to make lol
+  private getRarityIdForZeroRarityValues(subli) {
+    const rarityIdBySublimationPartialName = {
+      'III': 4,
+      'II': 3,
+      'I': 2,
+    }
+    const idMap = Object.keys(rarityIdBySublimationPartialName).find((key => subli.title.en.includes(key)))
+    return rarityIdBySublimationPartialName[idMap]
+  }
+
+  private safeGetRarityIdFromSubli(subli) {
+    const { rarity } = subli
+    if (rarity === 0) return this.getRarityIdForZeroRarityValues(subli)
+    return rarity
+  }
+
+  public getSublimationRarityIds () {
+    return this.sublimationList.reduce((rarityIds, subli) => {
+      const rarity = this.safeGetRarityIdFromSubli(subli)
+      if (!rarity || rarityIds.indexOf(rarity) > -1) return rarityIds
+      return [...rarityIds, rarity]
+    }, [])
+  }
+
   private setEquipmentList () {
     const equipTypesIds = Object.keys(equipTypesMap).map(Number).filter(id => id !== 647) // Remove costumes
     this.equipmentList = this.itemsList

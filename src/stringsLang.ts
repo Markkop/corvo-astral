@@ -45,10 +45,10 @@ export default {
     fr: "Obtenir de l'aide sur les fonctionnalités du bot"
   },
   subliRarityCommandOptionDescription: {
-    en: 'The rarity of the sublimation (in any language)',
-    pt: 'A raridade da sublimação (em qualquer idioma)',
-    es: 'La rareza de la sublimacione (en cualquier idioma) ',
-    fr: "La rareté de la sublimation (dans n'importe quelle langue)"
+    en: 'The rarity of the sublimation',
+    pt: 'A raridade da sublimação',
+    es: 'La rareza de la sublimacione',
+    fr: "La rareté de la sublimation"
   },
   subliRandomCommandOptionDescription: {
     en: 'Display sublimations compatible with the slots in random order',
@@ -87,10 +87,10 @@ export default {
     fr: "Recherchez les sublimations par nom ou combinaison d'emplacements."
   },
   recipeRarityCommandOptionDescription: {
-    en: 'The rarity of the recipe (in any language)',
-    pt: 'A raridade da receita (em qualquer idioma)',
-    es: 'La rareza de la receta (en cualquier idioma) ',
-    fr: "La rareté de la recette (dans n'importe quelle langue)"
+    en: 'The rarity of the recipe',
+    pt: 'A raridade da receita',
+    es: 'La rareza de la receta',
+    fr: "La rareté de la recette"
   },
   recipeNameCommandOptionDescription: {
     en: 'Name or part of a recipe name',
@@ -105,10 +105,10 @@ export default {
     fr: "Recherche par nom de la recette et / ou rareté"
   },
   equipRarityCommandOptionDescription: {
-    en: 'The rarity of the equipment (in any language)',
-    pt: 'A raridade do equipamento (em qualquer idioma)',
-    es: 'La rareza del equipo (en cualquier idioma) ',
-    fr: "La rareté d'équipement (dans n'importe quelle langue)"
+    en: 'The rarity of the equipment',
+    pt: 'A raridade do equipamento',
+    es: 'La rareza del equipo',
+    fr: "La rareté d'équipement"
   },
   equipNameCommandOptionDescription: {
     en: 'Name or part of an equipment name',

@@ -4,7 +4,7 @@ import { GuildConfig } from '@types'
 import { Interaction, Permissions } from 'discord.js'
 import { SlashCommandBuilder } from '@discordjs/builders'
 import str from '@stringsLang'
-import { registerCommands } from '@utils/registerCommands'
+import { addStringOptionWithLanguageChoices, registerCommands } from '@utils/registerCommands'
 
 export const getData = (lang: string) => new SlashCommandBuilder()
   .setName('config')
@@ -13,14 +13,16 @@ export const getData = (lang: string) => new SlashCommandBuilder()
 		subcommand
 			.setName('get')
 			.setDescription(str.getConfigCommandDescription[lang]))
-	.addSubcommand(subcommand =>
+	.addSubcommand(subcommand => {
 		subcommand
 			.setName('set')
 			.setDescription(str.setConfigCommandDescription[lang])
-      .addStringOption(option => option.setName('lang').setDescription(str.langConfigCommandOptionDescription[lang]))
       .addChannelOption(option => option.setName('almanax-channel').setDescription(str.almanaxChannelConfigCommandOptionDescription[lang]))
       .addChannelOption(option => option.setName('party-channel').setDescription(str.partyChannelConfigCommandOptionDescription[lang]))
-      .addBooleanOption(option => option.setName('build-preview').setDescription(str.buildPreviewConfigCommandOptionDescription[lang])))
+      .addBooleanOption(option => option.setName('build-preview').setDescription(str.buildPreviewConfigCommandOptionDescription[lang]))
+    addStringOptionWithLanguageChoices(subcommand, 'lang', str.langConfigCommandOptionDescription[lang])
+    return subcommand
+  })
 
 export default class ConfigCommand extends BaseCommand {
   constructor (interaction: Interaction, guildConfig: GuildConfig) {

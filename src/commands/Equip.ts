@@ -4,9 +4,9 @@ import { mountUrl } from '@utils/mountUrl'
 import str from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
 import { Interaction, Message } from 'discord.js'
-import mappings from '@utils/mappings'
 import { SlashCommandBuilder } from '@discordjs/builders'
-import { addLangAndTranslateStringOptions } from '@utils/registerCommands'
+import { addLangAndTranslateStringOptions, addStringOptionWithRarityChoices } from '@utils/registerCommands'
+import mappings from '@utils/mappings'
 const { rarityMap, equipTypesMap } = mappings
 
 export const getData = (lang: string) => {
@@ -15,7 +15,7 @@ export const getData = (lang: string) => {
     .setName('equip')
     .setDescription(str.equipCommandDescription[lang])
     .addStringOption(option => option.setName('name').setDescription(str.equipNameCommandOptionDescription[lang]).setRequired(true))
-    .addStringOption(option => option.setName('rarity').setDescription(str.equipRarityCommandOptionDescription[lang]))
+  addStringOptionWithRarityChoices(builder, 'rarity', str.equipRarityCommandOptionDescription[lang], lang)
   addLangAndTranslateStringOptions(builder, lang)
   return builder
 }

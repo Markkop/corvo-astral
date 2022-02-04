@@ -5,10 +5,26 @@ import { Client } from "discord.js";
 import commandsData from "../commands";
 import { SlashCommandBuilder, SlashCommandSubcommandBuilder} from '@discordjs/builders'
 import stringsLang from "@stringsLang";
+import mappings from '@utils/mappings'
+const { rarityMap } = mappings
 
 const languages = ['en', 'fr', 'pt', 'es']
 
-function addStringOptionWithLanguageChoices(builder: SlashCommandBuilder|SlashCommandSubcommandBuilder, name: string, description: string) {
+export function addStringOptionWithRarityChoices(builder: SlashCommandBuilder|SlashCommandSubcommandBuilder, name: string, description: string, lang: string, rarityIds?: number[]) {
+  let rarities = []
+  if (rarityIds) {
+    rarities = rarityIds.map(rarityId => rarityMap[rarityId].name[lang])
+  } else {
+    rarities = Object.values(rarityMap).map(rarity => rarity.name[lang])
+  }
+  return builder.addStringOption(option => {
+      option.setName(name).setDescription(description)
+      rarities.forEach(rarity => option.addChoice(rarity, rarity))
+      return option
+    })
+}
+
+export function addStringOptionWithLanguageChoices(builder: SlashCommandBuilder|SlashCommandSubcommandBuilder, name: string, description: string) {
   return builder.addStringOption(option => {
       option.setName(name).setDescription(description)
       languages.forEach(language => option.addChoice(language, language))
@@ -42,7 +58,7 @@ export async function registerCommands (client: Client, guildId: string, guildCo
   
     console.log("Slash commands registered!");
   } catch (error) {
-    if (error.rawError.code === 50001) {
+    if (error.rawError?.code === 50001) {
       console.log(`Missing Access on server "${guildName}"`)
       return
     }

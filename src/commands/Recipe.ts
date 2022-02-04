@@ -7,7 +7,7 @@ import { Interaction, Message } from 'discord.js'
 import mappings from '@utils/mappings'
 const { rarityMap, jobsMap, itemEmojis } = mappings
 import { SlashCommandBuilder } from '@discordjs/builders'
-import { addLangAndTranslateStringOptions } from '@utils/registerCommands'
+import { addLangAndTranslateStringOptions, addStringOptionWithRarityChoices } from '@utils/registerCommands'
 
 export const getData = (lang: string) => {
   const builder = new SlashCommandBuilder()
@@ -15,7 +15,7 @@ export const getData = (lang: string) => {
     .setName('recipe')
     .setDescription(str.recipeCommandDescription[lang])
     .addStringOption(option => option.setName('name').setDescription(str.recipeNameCommandOptionDescription[lang]).setRequired(true))
-    .addStringOption(option => option.setName('rarity').setDescription(str.recipeRarityCommandOptionDescription[lang]))
+  addStringOptionWithRarityChoices(builder, 'rarity', str.recipeRarityCommandOptionDescription[lang], lang)
   addLangAndTranslateStringOptions(builder, lang)
   return builder
 }

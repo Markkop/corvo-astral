@@ -6,7 +6,7 @@ import str from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
 import { Interaction, Message } from 'discord.js'
 import { SlashCommandBuilder } from '@discordjs/builders'
-import { addLangAndTranslateStringOptions } from '@utils/registerCommands'
+import { addLangAndTranslateStringOptions, addStringOptionWithRarityChoices } from '@utils/registerCommands'
 
 const { rarityMap } = mappings
 
@@ -18,7 +18,7 @@ export const getData = (lang: string) => new SlashCommandBuilder()
       .setName('by-name')
       .setDescription(str.byNameSubliConfigCommandDescription[lang])
       .addStringOption(option => option.setName('name').setDescription(str.subliNameCommandOptionDescription[lang]).setRequired(true))
-      .addStringOption(option => option.setName('rarity').setDescription(str.subliRarityCommandOptionDescription[lang]))
+    addStringOptionWithRarityChoices(subcommand, 'rarity', str.subliRarityCommandOptionDescription[lang], lang, ItemManager.getSublimationRarityIds())
     addLangAndTranslateStringOptions(subcommand, lang)
     return subcommand
   })
