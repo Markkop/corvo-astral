@@ -2,7 +2,7 @@ import AboutCommand, { getData as getAboutData} from './About'
 import EquipCommand, { getData as getEquipData } from './Equip'
 import CalcCommand, { getData as getCalcData} from './Calc'
 import RecipeCommand, { getData as getRecipeData} from './Recipe'
-// import SubliCommand from './Subli'
+import SubliCommand, { getData as getSubliData } from './Subli'
 import AlmaCommand, { getData as getAlmaData} from './Alma'
 // import HelpCommand from './Help'
 import ConfigCommand, { getData as getConfigData } from './Config'
@@ -15,7 +15,7 @@ export {
   EquipCommand,
   CalcCommand,
   RecipeCommand,
-  // SubliCommand,
+  SubliCommand,
   AlmaCommand,
   // HelpCommand,
   ConfigCommand,
@@ -32,5 +32,6 @@ export default [
   getPartyCreateData,
   getPartyUpdateData,
   getEquipData,
-  getRecipeData
+  getRecipeData,
+  getSubliData
 ]

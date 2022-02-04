@@ -55,9 +55,9 @@ class ItemManager {
     return this.getItemByName(this.equipmentList, name, options, lang)
   }
 
-  public getSublimationByName (name: string, options: CommandOptions, lang: string) {
-    name = name.replace(/2|ll/g, 'ii').replace(/3|lll/g, 'iii')
-    return this.getItemByName(this.sublimationList, name, options, lang)
+  public getSublimationByName (options: CommandOptions, lang: string) {
+    const query = String(options.query).replace(/2|ll/g, 'ii').replace(/3|lll/g, 'iii')
+    return this.getItemByName(this.sublimationList, query, options, lang)
   }
 
   public getSublimationBySource (source: string, lang: string) {
@@ -110,17 +110,17 @@ class ItemManager {
     return this.sublimationList.filter(item => regexQuery.test(item.sublimation.slots.toLowerCase()))
   }
 
-  public getSublimations (query, options, hasAnyOrderArgument, lang) {
-    const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|epic|relic/.test(query)
+  public getSublimations (options, lang) {
+    const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|epic|relic/.test(options.slots)
     let results = []
     let foundBy = ''
   
-    if (isSearchBySlot && hasAnyOrderArgument) {
-      const queryPermutation = this.findPermutations(query)
-      queryPermutation.forEach((queryPerm) => {
-        const permutatedResults = this.getSublimationByMatchingSlots(queryPerm)
+    if (isSearchBySlot && options.random) {
+      const slotsPermutation = this.findPermutations(options.slots)
+      slotsPermutation.forEach((slotsPerm) => {
+        const permutatedResults = this.getSublimationByMatchingSlots(slotsPerm)
         results.push({
-          slots: queryPerm,
+          slots: slotsPerm,
           results: this.removeSameSublimationsAndRemoveNumberFromTitle(permutatedResults)
         })
       })
@@ -129,7 +129,7 @@ class ItemManager {
     }
   
     if (isSearchBySlot) {
-      results = this.getSublimationByMatchingSlots(query)
+      results = this.getSublimationByMatchingSlots(options.slots)
       foundBy = 'slots'
       return { 
         results: this.removeSameSublimationsAndRemoveNumberFromTitle(results), 
@@ -137,14 +137,14 @@ class ItemManager {
       }
     }
   
-    results = this.getSublimationByName(query, options, lang)
+    results = this.getSublimationByName(options, lang)
     foundBy = 'name'
   
     if (results.length) {
       return { results, foundBy }
     }
   
-    results = this.getSublimationBySource(query, lang)
+    results = this.getSublimationBySource(options.query, lang)
     foundBy = 'source'
     return { results, foundBy }
   }

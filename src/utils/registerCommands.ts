@@ -3,6 +3,14 @@ import { GuildConfig } from "@types";
 import { Routes } from "discord-api-types/v9";
 import { Client } from "discord.js";
 import commandsData from "../commands";
+import { SlashCommandBuilder, SlashCommandSubcommandBuilder} from '@discordjs/builders'
+import stringsLang from "@stringsLang";
+
+export function addLangAndTranslateStringOptions(builder: SlashCommandBuilder|SlashCommandSubcommandBuilder, lang: string) {
+  return builder
+    .addStringOption(option => option.setName('lang').setDescription(stringsLang.langCommandOptionDescription[lang]))
+    .addStringOption(option => option.setName('translate').setDescription(stringsLang.translateCommandOptionDescription[lang]))
+}
 
 export async function registerCommands (client: Client, guildId: string, guildConfig: GuildConfig, guildName: string) {
   try {

@@ -44,7 +44,7 @@ export function handleMessageError (error: Error, message: Message): void {
   const authorTag = interaction.user.tag
   const errorText = error.toString() || ''
   console.log(`${error.name}: ${interaction.isCommand() && interaction.commandName} on guild "${guildName}", channel "${channelName}" by ${authorName}(${authorTag})`)
-  if (errorText.includes('TypeError')) {
+  if (errorText.includes('TypeError') || errorText.includes('RangeError')) {
     console.log(error)
   }
 }

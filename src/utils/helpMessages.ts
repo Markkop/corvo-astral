@@ -51,13 +51,13 @@ Paramètres:
   },
   subli: {
     help: {
-      en: `Search for sublimations by name, combination of slots or source of obtain.
+      en: `Search for sublimations by name or slots combination.
 Use "random" to search for matches in any order.`,
-      pt: `Pesquise por sublimações pelo nome, combinação de slots ou fonte de obtenção.
+      pt: `Pesquise por sublimações pelo nome ou combinação de slots.
 Utilize "random" para procurar combinações em qualquer ordem.`,
-      es: `Busque sublimaciones por nombre, combinación de ranuras o fuente de obtención.
+      es: `Busque sublimaciones por nombre o combinación de ranuras.
 Utilice "random" para buscar coincidencias en cualquier orden.`,
-      fr: `Recherchez les sublimations par nom, combinaison d'emplacements ou source d'obtention.
+      fr: `Recherchez les sublimations par nom ou combinaison d'emplacements.
 Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.`
     },
     examples: [
@@ -67,9 +67,6 @@ Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.
       '.subli rwb',
       '.subli rgbg random',
       '.subli epic',
-      '.subli quest',
-      '.subli koko',
-      '.subli craft'
     ]
   },
   equip: {

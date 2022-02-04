@@ -8,6 +8,48 @@ export default {
   capitalize (str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
   },
+  subliRarityCommandOptionDescription: {
+    en: 'The rarity of the sublimation (in any language)',
+    pt: 'A raridade da sublimação (em qualquer idioma)',
+    es: 'La rareza de la sublimacione (en cualquier idioma) ',
+    fr: "La rareté de la sublimation (dans n'importe quelle langue)"
+  },
+  subliRandomCommandOptionDescription: {
+    en: 'Display sublimations compatible with the slots in random order',
+    pt: 'Exibir sublimações compatíveis com os slots em ordem aleatória',
+    es: 'Mostrar sublimaciones admitidas por slots en orden aleatorio',
+    fr: "Afficher les sublimations prises en charge par les emplacements dans un ordre aléatoire"
+  },
+  subliSlotsCommandOptionDescription: {
+    en: 'The combination of the slots with the initials of the colors in English. Example: "rgbw"',
+    pt: 'A combinação dos slots com as iniciais das cores em inglês. Exemplo: "rgbw"',
+    fr: 'La combinaison des slots avec les initiales des couleurs en anglais. Exemple : "rgbw"',
+    es: "La combinación de les emplacements con las iniciales de los colores en inglés. Ejemplo: \"rgbw\""
+  },
+  subliNameCommandOptionDescription: {
+    en: 'The name or part of the sublimation name',
+    pt: 'O nome ou parte do nome da sublimação',
+    es: 'El nombre o parte del nombre de la sublimación',
+    fr: "Le nom ou une partie du nom de sublimation"
+  },
+  byNameSubliConfigCommandDescription: {
+    en: 'Search for sublimations by name.',
+    pt: 'Pesquise por sublimações pelo nome.',
+    es: 'Busque sublimaciones por nombre.',
+    fr: "Recherchez les sublimations par nom."
+  },
+  bySlotsSubliConfigCommandDescription: {
+    en: 'Search for sublimations by slots combination.',
+    pt: 'Pesquise por sublimações pela combinação de slots.',
+    es: 'Busque sublimaciones por combinación de ranuras.',
+    fr: "Recherchez les sublimations per combinaison d'emplacements."
+  },
+  subliCommandDescription: {
+    en: 'Search for sublimations by name or slots combination.',
+    pt: 'Pesquise por sublimações pelo nome ou combinação de slots.',
+    es: 'Busque sublimaciones por nombre o combinación de ranuras.',
+    fr: "Recherchez les sublimations par nom ou combinaison d'emplacements."
+  },
   recipeRarityCommandOptionDescription: {
     en: 'The rarity of the recipe (in any language)',
     pt: 'A raridade da receita (em qualquer idioma)',
