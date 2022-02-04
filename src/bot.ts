@@ -6,7 +6,7 @@ import { handleInteractionError, handleMessageError, handleReactionError } from 
 import { ConfigManager, MessageManager } from '@managers'
 import ReactionService from './services/ReactionService'
 import { 
-  // EquipCommand,
+  EquipCommand,
   AlmaCommand,
   AboutCommand,
   CalcCommand,
@@ -23,7 +23,7 @@ import { registerCommands } from '@utils/registerCommands'
 
 
 const commandsMap = {
-  // equip: EquipCommand,
+  equip: EquipCommand,
   about: AboutCommand,
   calc: CalcCommand,
   // recipe: RecipeCommand,

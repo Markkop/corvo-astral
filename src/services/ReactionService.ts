@@ -52,7 +52,6 @@ class ReactionService {
 
   public async handleReactionAdd(reaction: MessageReaction, user: User, guildConfig: GuildConfig) {
     try {
-      console.log(reaction, user)
       if (user.bot) return
   
       if (reaction.partial) {

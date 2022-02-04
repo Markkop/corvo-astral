@@ -8,6 +8,24 @@ export default {
   capitalize (str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
   },
+  equipRarityCommandOptionDescription: {
+    en: 'The rarity of the equipment (in any language)',
+    pt: 'A raridade do equipamento (em qualquer idioma)',
+    es: 'La rareza del equipo (en cualquier idioma) ',
+    fr: "La rareté d'équipement (dans n'importe quelle langue)"
+  },
+  equipNameCommandOptionDescription: {
+    en: 'Name or part of an equipment name',
+    pt: 'Nome ou parte do nome de um equipamento',
+    es: 'Nombre o parte del nombre de un equipo',
+    fr: "Nom ou partie d'un nom d'équipement"
+  },
+  equipCommandDescription: {
+    en: 'Search by equipment name and / or rarity',
+    pt: 'Pesquise pelo nome do equipamento e/ou raridade',
+    es: 'Buscar por nombre de equipo y / o rareza',
+    fr: "Recherche par nom d'équipement et / ou rareté"
+  },
   partyUpdateCommandDescription: {
     en: "Change a field in the group listing",
     es: 'Cambiar un campo en la lista de grupos',
@@ -97,6 +115,12 @@ export default {
     es: 'Ver o cambiar la configuración del bot',
     fr: 'Afficher ou modifier la configuration du bot ',
     pt: 'Visualizar ou alterar a configuração do bot '
+  },
+  translateCommandOptionDescription: {
+    en: 'The language you want to see in the return of this command',
+    es: 'El idioma que desea ver en el retorno de este comando ',
+    fr: 'La langue que vous voulez voir dans le retour de cette commande ',
+    pt: 'O idioma que você deseja visualizar no retorno deste comando'
   },
   langCommandOptionDescription: {
     en: 'The language you wish to use for this command',

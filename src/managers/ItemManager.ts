@@ -33,19 +33,14 @@ class ItemManager {
   }
 
   public getItemByName (itemList: ItemData[], name: string, options: CommandOptions, lang: string) {
-    const optionsKeys = Object.keys(options)
-    const optionRarityKey = Object.values<string>(str.rarity).find(rarityWord => {
-      return optionsKeys.some(optionsKey => hasTextOrNormalizedTextIncluded(rarityWord, optionsKey))
-    })
-
-    if (!optionRarityKey) {
+    if (!options.rarity) {
       return itemList.filter(equip => hasTextOrNormalizedTextIncluded(equip.title[lang], name))
     }
 
     return itemList.filter(equip => {
       let filterAssertion = true
       const includeName = hasTextOrNormalizedTextIncluded(equip.title[lang], name)
-      const rarityIdOption = this.getRarityIdByRarityNameInAnyLanguage(options[optionRarityKey])
+      const rarityIdOption = this.getRarityIdByRarityNameInAnyLanguage(options.rarity)
       const hasRarity = rarityIdOption === equip.rarity
       filterAssertion = filterAssertion && hasRarity
 

@@ -17,17 +17,18 @@ export default abstract class BaseCommand {
     this.commandWord = interaction?.isCommand() ? interaction.commandName : '' 
   }
 
-  protected async send (content: MessageOptions | string): Promise<void> {
+  protected async send (content: MessageOptions | string): Promise<Message> {
     try {
       const interaction = this.interaction as CommandInteraction
       const messageContent = typeof content === 'string' ? { content } : content
-      await interaction.reply(messageContent)
+      const sentContent = await interaction.reply({...messageContent, fetchReply: true })
+      return sentContent as Message
     } catch (error) {
       handleInteractionError(error, this.interaction)
     }
   }
 
-  protected async sendHelp (command: string = ''): Promise<void> {
+  protected async sendHelp (command: string = ''): Promise<Message> {
     const helpEmbed = this.mountCommandHelpEmbed(command)
     return this.send({ embeds: [helpEmbed] })
   }

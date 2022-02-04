@@ -1,5 +1,5 @@
 import AboutCommand, { getData as getAboutData} from './About'
-// import EquipCommand from './Equip'
+import EquipCommand, { getData as getEquipData } from './Equip'
 import CalcCommand, { getData as getCalcData} from './Calc'
 // import RecipeCommand from './Recipe'
 // import SubliCommand from './Subli'
@@ -12,7 +12,7 @@ import PartyReaction from './party/PartyReaction'
 
 export {
   AboutCommand,
-  // EquipCommand,
+  EquipCommand,
   CalcCommand,
   // RecipeCommand,
   // SubliCommand,
@@ -30,5 +30,6 @@ export default [
   getAlmaData,
   getConfigData,
   getPartyCreateData,
-  getPartyUpdateData
+  getPartyUpdateData,
+  getEquipData
 ]

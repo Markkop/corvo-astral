@@ -46,7 +46,7 @@ class RecipesManager {
       },
       {
         name: str.capitalize(str.level[lang]),
-        value: firstRecipe.level,
+        value: String(firstRecipe.level),
         inline: true
       }
     ]
