@@ -7,14 +7,18 @@ import { Interaction, Message } from 'discord.js'
 import mappings from '@utils/mappings'
 const { rarityMap, jobsMap, itemEmojis } = mappings
 import { SlashCommandBuilder } from '@discordjs/builders'
+import { addLangAndTranslateStringOptions } from '@utils/registerCommands'
 
-export const getData = (lang: string) => new SlashCommandBuilder()
-  .setName('recipe')
-  .setDescription(str.recipeCommandDescription[lang])
-  .addStringOption(option => option.setName('name').setDescription(str.recipeNameCommandOptionDescription[lang]).setRequired(true))
-  .addStringOption(option => option.setName('rarity').setDescription(str.recipeRarityCommandOptionDescription[lang]))
-  .addStringOption(option => option.setName('lang').setDescription(str.langCommandOptionDescription[lang]))
-  .addStringOption(option => option.setName('translate').setDescription(str.translateCommandOptionDescription[lang]))
+export const getData = (lang: string) => {
+  const builder = new SlashCommandBuilder()
+  builder
+    .setName('recipe')
+    .setDescription(str.recipeCommandDescription[lang])
+    .addStringOption(option => option.setName('name').setDescription(str.recipeNameCommandOptionDescription[lang]).setRequired(true))
+    .addStringOption(option => option.setName('rarity').setDescription(str.recipeRarityCommandOptionDescription[lang]))
+  addLangAndTranslateStringOptions(builder, lang)
+  return builder
+}
 
 export default class RecipeCommand extends FinderCommand {
   constructor (interaction: Interaction, guildConfig: GuildConfig) {

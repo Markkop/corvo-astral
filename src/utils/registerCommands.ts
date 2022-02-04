@@ -7,9 +7,13 @@ import { SlashCommandBuilder, SlashCommandSubcommandBuilder} from '@discordjs/bu
 import stringsLang from "@stringsLang";
 
 export function addLangAndTranslateStringOptions(builder: SlashCommandBuilder|SlashCommandSubcommandBuilder, lang: string) {
+  return addLangStringOption(builder, lang)
+    .addStringOption(option => option.setName('translate').setDescription(stringsLang.translateCommandOptionDescription[lang]))
+}
+
+export function addLangStringOption(builder: SlashCommandBuilder|SlashCommandSubcommandBuilder, lang: string) {
   return builder
     .addStringOption(option => option.setName('lang').setDescription(stringsLang.langCommandOptionDescription[lang]))
-    .addStringOption(option => option.setName('translate').setDescription(stringsLang.translateCommandOptionDescription[lang]))
 }
 
 export async function registerCommands (client: Client, guildId: string, guildConfig: GuildConfig, guildName: string) {

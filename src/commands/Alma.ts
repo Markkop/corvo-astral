@@ -4,12 +4,17 @@ import { getRandomIntInclusive } from '@utils/numbers'
 import { Interaction, MessageEmbed } from 'discord.js'
 import str from '@stringsLang'
 import { SlashCommandBuilder } from '@discordjs/builders'
+import { addLangStringOption } from '@utils/registerCommands'
 const events = require('../../data/almanaxBonuses.json')
 
-export const getData = (lang: string) => new SlashCommandBuilder()
-  .setName('alma')
-  .setDescription(str.almaCommandDescription[lang])
-  .addStringOption(option => option.setName('lang').setDescription(str.langCommandOptionDescription[lang]))
+export const getData = (lang: string) => {
+  const builder = new SlashCommandBuilder()
+  builder
+    .setName('alma')
+    .setDescription(str.almaCommandDescription[lang])
+  addLangStringOption(builder, lang)
+  return builder
+}
 
 class AlmaCommand extends BaseCommand {
   constructor (interaction: Interaction, guildConfig: GuildConfig) {

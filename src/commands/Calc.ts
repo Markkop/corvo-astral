@@ -3,6 +3,7 @@ import str from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
 import { Interaction } from 'discord.js'
 import { SlashCommandBuilder } from '@discordjs/builders'
+import { addLangAndTranslateStringOptions } from '@utils/registerCommands'
 
 type CalculatedValues = {
   damage: number
@@ -16,14 +17,18 @@ type CalculatedValues = {
   backstabDamage: number
 }
 
-export const getData = (lang: string) => new SlashCommandBuilder()
-  .setName('calc')
-  .setDescription(str.calcCommandDescription[lang])
-  .addNumberOption(option => option.setName('dmg').setDescription(str.calcCommandDmgOptionDescription[lang]).setRequired(true))
-  .addNumberOption(option => option.setName('base').setDescription(str.calcCommandBaseOptionDescription[lang]).setRequired(true))
-  .addNumberOption(option => option.setName('res').setDescription(str.calcCommandResOptionDescription[lang]).setRequired(true))
-  .addNumberOption(option => option.setName('crit').setDescription(str.calcCommandCritOptionDescription[lang]))
-  .addStringOption(option => option.setName('lang').setDescription(str.langCommandOptionDescription[lang]))
+export const getData = (lang: string) => {
+  const builder = new SlashCommandBuilder()
+  builder
+    .setName('calc')
+    .setDescription(str.calcCommandDescription[lang])
+    .addNumberOption(option => option.setName('dmg').setDescription(str.calcCommandDmgOptionDescription[lang]).setRequired(true))
+    .addNumberOption(option => option.setName('base').setDescription(str.calcCommandBaseOptionDescription[lang]).setRequired(true))
+    .addNumberOption(option => option.setName('res').setDescription(str.calcCommandResOptionDescription[lang]).setRequired(true))
+    .addNumberOption(option => option.setName('crit').setDescription(str.calcCommandCritOptionDescription[lang]))
+  addLangAndTranslateStringOptions(builder, lang)
+  return builder
+}
 
 export default class CalcCommand extends BaseCommand {
   static data: SlashCommandBuilder

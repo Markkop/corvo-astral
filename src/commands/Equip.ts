@@ -6,16 +6,19 @@ import { GuildConfig, PartialEmbed } from '@types'
 import { Interaction, Message } from 'discord.js'
 import mappings from '@utils/mappings'
 import { SlashCommandBuilder } from '@discordjs/builders'
+import { addLangAndTranslateStringOptions } from '@utils/registerCommands'
 const { rarityMap, equipTypesMap } = mappings
 
-export const getData = (lang: string) => new SlashCommandBuilder()
-  .setName('equip')
-  .setDescription(str.equipCommandDescription[lang])
-  .addStringOption(option => option.setName('name').setDescription(str.equipNameCommandOptionDescription[lang]).setRequired(true))
-  .addStringOption(option => option.setName('rarity').setDescription(str.equipRarityCommandOptionDescription[lang]))
-  .addStringOption(option => option.setName('lang').setDescription(str.langCommandOptionDescription[lang]))
-  .addStringOption(option => option.setName('translate').setDescription(str.translateCommandOptionDescription[lang]))
-
+export const getData = (lang: string) => {
+  const builder = new SlashCommandBuilder()
+  builder
+    .setName('equip')
+    .setDescription(str.equipCommandDescription[lang])
+    .addStringOption(option => option.setName('name').setDescription(str.equipNameCommandOptionDescription[lang]).setRequired(true))
+    .addStringOption(option => option.setName('rarity').setDescription(str.equipRarityCommandOptionDescription[lang]))
+  addLangAndTranslateStringOptions(builder, lang)
+  return builder
+}
 
 export default class EquipCommand extends FinderCommand {
   constructor (interaction: Interaction, guildConfig: GuildConfig) {

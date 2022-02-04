@@ -4,11 +4,16 @@ import { GuildConfig, PartialEmbed } from '@types'
 import { openFile } from '@utils/files'
 import { Interaction } from 'discord.js'
 import { SlashCommandBuilder } from '@discordjs/builders'
+import { addLangStringOption } from '@utils/registerCommands'
 
-export const getData = (lang: string) => new SlashCommandBuilder()
-  .setName('about')
-  .setDescription(stringsLang.aboutCommandDescription[lang])
-  .addStringOption(option => option.setName('lang').setDescription(stringsLang.langCommandOptionDescription[lang]))
+export const getData = (lang: string) => {
+  const builder = new SlashCommandBuilder()
+  builder
+    .setName('about')
+    .setDescription(stringsLang.aboutCommandDescription[lang])
+  addLangStringOption(builder, lang)
+  return builder
+}
 
 export default class AboutCommand extends BaseCommand {
   constructor (interaction: Interaction, guildConfig: GuildConfig) {
