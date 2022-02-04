@@ -6,14 +6,24 @@ import commandsData from "../commands";
 import { SlashCommandBuilder, SlashCommandSubcommandBuilder} from '@discordjs/builders'
 import stringsLang from "@stringsLang";
 
+const languages = ['en', 'fr', 'pt', 'es']
+
+function addStringOptionWithLanguageChoices(builder: SlashCommandBuilder|SlashCommandSubcommandBuilder, name: string, description: string) {
+  return builder.addStringOption(option => {
+      option.setName(name).setDescription(description)
+      languages.forEach(language => option.addChoice(language, language))
+      return option
+    })
+}
+
 export function addLangAndTranslateStringOptions(builder: SlashCommandBuilder|SlashCommandSubcommandBuilder, lang: string) {
-  return addLangStringOption(builder, lang)
-    .addStringOption(option => option.setName('translate').setDescription(stringsLang.translateCommandOptionDescription[lang]))
+  addLangStringOption(builder, lang)
+  addStringOptionWithLanguageChoices(builder, 'translate', stringsLang.translateCommandOptionDescription[lang])
+  return builder
 }
 
 export function addLangStringOption(builder: SlashCommandBuilder|SlashCommandSubcommandBuilder, lang: string) {
-  return builder
-    .addStringOption(option => option.setName('lang').setDescription(stringsLang.langCommandOptionDescription[lang]))
+  return addStringOptionWithLanguageChoices(builder, 'lang', stringsLang.langCommandOptionDescription[lang])
 }
 
 export async function registerCommands (client: Client, guildId: string, guildConfig: GuildConfig, guildName: string) {
