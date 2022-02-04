@@ -1,4 +1,4 @@
-import { Interaction, Message, MessageOptions } from 'discord.js'
+import { CommandInteraction, Interaction, Message, MessageOptions } from 'discord.js'
 import { GuildConfig, PartialEmbed } from '@types'
 import { MessageManager } from '@managers'
 import commandsHelp from '@utils/helpMessages'
@@ -17,18 +17,17 @@ export default abstract class BaseCommand {
     this.commandWord = interaction.isCommand() ? interaction.commandName : '' 
   }
 
-  protected async send (content: MessageOptions | string): Promise<Message> {
+  protected async send (content: MessageOptions | string): Promise<void> {
     try {
+      const interaction = this.interaction as CommandInteraction
       const messageContent = typeof content === 'string' ? { content } : content
-      const sentContent = await this.interaction.channel.send(messageContent)
-      if(Array.isArray(sentContent)) return sentContent[0]
-      return sentContent
+      const sentContent = await interaction.reply(messageContent)
     } catch (error) {
       handleInteractionError(error, this.interaction)
     }
   }
 
-  protected async sendHelp (command: string = ''): Promise<Message> {
+  protected async sendHelp (command: string = ''): Promise<void> {
     const helpEmbed = this.mountCommandHelpEmbed(command)
     return this.send({ embeds: [helpEmbed] })
   }

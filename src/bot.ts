@@ -14,7 +14,7 @@ import {
   // SubliCommand,
   // PartyBaseCommand,
   // HelpCommand,
-  // ConfigCommand
+  ConfigCommand
  } from '@commands'
 import { GuildConfig } from '@types'
 import { saveServersNumber } from '@utils/serversNumber'
@@ -30,7 +30,7 @@ const commandsMap = {
   alma: AlmaCommand,
   // party: PartyBaseCommand,
   // help: HelpCommand,
-  // config: ConfigCommand
+  config: ConfigCommand
 }
 
 class Bot {

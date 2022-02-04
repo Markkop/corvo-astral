@@ -1,83 +1,96 @@
-// import { BaseCommand } from '@baseCommands'
-// import { MessageManager, ConfigManager } from '@managers'
-// import { GuildConfig } from '@types'
-// import { Interaction, Message } from 'discord.js'
+import { BaseCommand } from '@baseCommands'
+import { ConfigManager } from '@managers'
+import { GuildConfig } from '@types'
+import { Interaction, Permissions } from 'discord.js'
+import { SlashCommandBuilder } from '@discordjs/builders'
+import str from '@stringsLang'
+import { registerCommands } from '@utils/registerCommands'
 
-// export default class ConfigCommand extends BaseCommand {
-//   constructor (interaction: Interaction, guildConfig: GuildConfig) {
-//     super(interaction, guildConfig)
-//   }
+export const getData = (lang: string) => new SlashCommandBuilder()
+  .setName('config')
+  .setDescription(str.configCommandDescription[lang])
+  .addSubcommand(subcommand =>
+		subcommand
+			.setName('get')
+			.setDescription(str.getConfigCommandDescription[lang]))
+	.addSubcommand(subcommand =>
+		subcommand
+			.setName('set')
+			.setDescription(str.setConfigCommandDescription[lang])
+      .addStringOption(option => option.setName('lang').setDescription(str.langConfigCommandOptionDescription[lang]))
+      .addChannelOption(option => option.setName('almanax-channel').setDescription(str.almanaxChannelConfigCommandOptionDescription[lang]))
+      .addChannelOption(option => option.setName('party-channel').setDescription(str.partyChannelConfigCommandOptionDescription[lang]))
+      .addBooleanOption(option => option.setName('build-preview').setDescription(str.buildPreviewConfigCommandOptionDescription[lang])))
 
-//   public async execute (): Promise<void> {
-//     const { args, options } = MessageManager.getArgumentsAndOptions(this.message)
+export default class ConfigCommand extends BaseCommand {
+  constructor (interaction: Interaction, guildConfig: GuildConfig) {
+    super(interaction, guildConfig)
+  }
 
-//     if (options.lang) {
-//       this.changeLang(options.lang)
-//     }
+  public async execute (): Promise<void> {
+    if (!this.interaction.isCommand()) return
 
-//     const arg = args[0]
-//     const validArgs = ['get', 'set']
-//     const validOptions = ['lang', 'almanaxChannel', 'partyChannel', 'buildPreview']
-//     const isValidArgs = validArgs.some(validArg => validArg === arg)
-//     const isValidOptions = Object.keys(options).every(option => validOptions.includes(option))
-
-//     if (!isValidArgs || !isValidOptions) {
-//       this.sendHelp()
-//       return
-//     }
-
-//     const guildId = String(this.message.guild.id)
-//     if (arg === 'set') {
-//       if (!this.message.member.hasPermission('ADMINISTRATOR')) {
-//         this.send('You need administrator permission for this')
-//         return 
-//       }
+    const guildId = String(this.interaction.guild.id)
+    if (this.interaction.options.getSubcommand() === 'set') {
+      const userPermissions = this.interaction.member.permissions as Permissions
+      if (!userPermissions.has(Permissions.ALL)) {
+        this.send('You need administrator permission for this')
+        return 
+      }
       
-//       const hasOptions = Boolean(Object.keys(options).length)
-//       if(!hasOptions) {
-//         this.sendHelp()
-//         return
-//       }
+      const lang = this.interaction.options.getString('lang')
+      if (lang && !this.isValidLang(lang)) {
+        this.send(`${lang} is not a valid language.`)
+        return 
+      }
 
-//       if (options.lang && !this.isValidLang(options.lang)) {
-//         this.send(`${options.lang} is not a valid language.`)
-//         return 
-//       }
+      const configManager = ConfigManager.getInstance()
+      const currentConfig = configManager.getGuildConfig(guildId)
+      
+      const almanaxChannel = this.interaction.options.getChannel('almanax-channel')
+      const partyChannel = this.interaction.options.getChannel('party-channel')
+      const buildPreview = this.interaction.options.getBoolean('build-preview')
+      const hasBuildPreviewOption = typeof buildPreview === 'boolean'
+      const buildPreviewOption = buildPreview ? 'enabled' : 'disabled'
 
-//       const configManager = ConfigManager.getInstance()
-//       const currentConfig = configManager.getGuildConfig(guildId)
-//       // TO DO: refactor this config setting to be generic
-//       const newConfig = {
-//         id: guildId,
-//         prefix: options.prefix || currentConfig.prefix,
-//         lang: options.lang || currentConfig.lang,
-//         almanaxChannel: options.almanaxChannel || currentConfig.almanaxChannel,
-//         partyChannel: options.partyChannel || currentConfig.partyChannel,
-//         buildPreview: options.buildPreview || currentConfig.buildPreview,
-//       }
-//       await configManager.updateGuildConfig(newConfig)
-//       const configEmbed = this.mountConfigEmbed('Config updated', newConfig)
-//       this.send({ embed: configEmbed })
-//       return
-//     }
+      if(!lang && !almanaxChannel && !partyChannel && !hasBuildPreviewOption) {
+        this.send('At least one option is required')
+        return
+      }
 
-//     const configManager = ConfigManager.getInstance()
-//     const currentConfig = configManager.getGuildConfig(guildId)
-//     if (!currentConfig) {
-//       const configEmbed = this.mountConfigEmbed('No custom config found. Using default', ConfigManager.getDefaultConfig())
-//       this.send({ embed: configEmbed })
-//       return
-//     }
-//     const configEmbed = this.mountConfigEmbed(`Config for "${this.message.guild.name}"`, currentConfig)
-//     this.send({ embed: configEmbed })
-//     return
-//   }
+      const newConfig = {
+        id: guildId,
+        prefix: currentConfig.prefix,
+        lang: lang || currentConfig.lang,
+        almanaxChannel: almanaxChannel?.name || currentConfig.almanaxChannel,
+        partyChannel: partyChannel?.name || currentConfig.partyChannel,
+        buildPreview: hasBuildPreviewOption ? buildPreviewOption : currentConfig.buildPreview,
+      }
 
-//   private mountConfigEmbed (title, config) {
-//     const guildConfigText = JSON.stringify(config, null, 2)
-//     return {
-//       title,
-//       description: '```json\n' + guildConfigText + '\n```'
-//     }
-//   }
-// }
+      await configManager.updateGuildConfig(newConfig)
+      const configEmbed = this.mountConfigEmbed('Config updated', newConfig)
+      registerCommands(this.interaction.client, guildId, newConfig)
+      await this.send({ embeds: [configEmbed] })
+      return
+    }
+
+    const configManager = ConfigManager.getInstance()
+    const currentConfig = configManager.getGuildConfig(guildId)
+    if (!currentConfig) {
+      const configEmbed = this.mountConfigEmbed('No custom config found. Using default', ConfigManager.getDefaultConfig())
+      this.send({ embeds: [configEmbed] })
+      return
+    }
+    const configEmbed = this.mountConfigEmbed(`Config for "${this.interaction.guild.name}"`, currentConfig)
+    this.send({ embeds: [configEmbed] })
+    return
+  }
+
+  private mountConfigEmbed (title, config) {
+    const guildConfigText = JSON.stringify(config, null, 2)
+    return {
+      title,
+      description: '```json\n' + guildConfigText + '\n```'
+    }
+  }
+}

@@ -5,7 +5,7 @@ import CalcCommand, { getData as getCalcData} from './Calc'
 // import SubliCommand from './Subli'
 import AlmaCommand, { getData as getAlmaData} from './Alma'
 // import HelpCommand from './Help'
-// import ConfigCommand from './Config'
+import ConfigCommand, { getData as getConfigData } from './Config'
 // import PartyBaseCommand from './party/PartyBase'
 // import PartyCreateCommand from './party/PartyCreate'
 // import PartyUpdateCommand from './party/PartyUpdate'
@@ -19,7 +19,7 @@ export {
   // SubliCommand,
   AlmaCommand,
   // HelpCommand,
-  // ConfigCommand,
+  ConfigCommand,
   // PartyBaseCommand,
   // PartyCreateCommand,
   // PartyUpdateCommand,
@@ -29,5 +29,6 @@ export {
 export default [
   getAboutData,
   getCalcData,
-  getAlmaData
+  getAlmaData,
+  getConfigData
 ]

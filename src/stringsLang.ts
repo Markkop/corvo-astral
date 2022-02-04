@@ -8,6 +8,48 @@ export default {
   capitalize (str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
   },
+  buildPreviewConfigCommandOptionDescription: {
+    en: 'Enables use of build preview ',
+    es: 'Habilita el uso de la vista previa de build',
+    fr: "Permet l'utilisation de l'aperçu de les build",
+    pt: 'Ativa o uso de pré-visualização de builds'
+  },
+  partyChannelConfigCommandOptionDescription: {
+    en: 'The channel will contain the group listings',
+    es: 'El canal contendrá las listas de grupos.',
+    fr: 'La chaîne contiendra les listes de groupes ',
+    pt: 'O canal conterá as listagens de grupo'
+  },
+  almanaxChannelConfigCommandOptionDescription: {
+    en: 'The channel that will report the Almanax bonus daily',
+    es: 'El canal que informará el bono de Almanax diariamente',
+    fr: 'La chaîne qui rapportera quotidiennement le bonus Almanax',
+    pt: 'O canal que informará o bônus do Almanax diariamente'
+  },
+  langConfigCommandOptionDescription: {
+    en: 'The language that will be used in searches and in command results',
+    es: 'El idioma que se utilizará en las búsquedas y en los resultados de los comandos.',
+    fr: 'La langue qui sera utilisée dans les recherches et dans les résultats des commandes',
+    pt: 'O idioma que será usado nas buscas e nos resultados dos comandos'
+  },
+  setConfigCommandDescription: {
+    en: 'Change bot configuration',
+    es: 'Cambiar la configuración del bot',
+    fr: 'Modifier la configuration du bot ',
+    pt: 'Alterar a configuração do bot '
+  },
+  getConfigCommandDescription: {
+    en: 'View bot configuration',
+    es: 'Ver la configuración del bot',
+    fr: 'Afficher la configuration du bot ',
+    pt: 'Visualizar a configuração do bot '
+  },
+  configCommandDescription: {
+    en: 'View or change bot configuration',
+    es: 'Ver o cambiar la configuración del bot',
+    fr: 'Afficher ou modifier la configuration du bot ',
+    pt: 'Visualizar ou alterar a configuração do bot '
+  },
   langCommandOptionDescription: {
     en: 'The language you wish to use for this command',
     es: 'El idioma que desea utilizar para este comando',
