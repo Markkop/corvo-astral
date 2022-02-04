@@ -38,7 +38,7 @@ export default class EquipCommand extends FinderCommand {
     const name = this.interaction.options.getString('name')
 
     const options = {
-      rarityId: this.getRarityIdByRarityNameInAnyLanguage(rarity)
+      rarityId: rarity && this.getRarityIdByRarityNameInAnyLanguage(rarity)
     }
 
     const results = ItemManager.getEquipmentByName(name, options, this.lang)
