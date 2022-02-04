@@ -14,7 +14,7 @@ import {
   SubliCommand,
   PartyCreateCommand,
   PartyUpdateCommand,
-  // HelpCommand,
+  HelpCommand,
   ConfigCommand
  } from '@commands'
 import { GuildConfig } from '@types'
@@ -31,7 +31,7 @@ const commandsMap = {
   alma: AlmaCommand,
   'party-create': PartyCreateCommand,
   'party-update': PartyUpdateCommand,
-  // help: HelpCommand,
+  help: HelpCommand,
   config: ConfigCommand
 }
 

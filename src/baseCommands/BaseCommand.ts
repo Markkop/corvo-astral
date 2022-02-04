@@ -3,6 +3,7 @@ import { GuildConfig, PartialEmbed } from '@types'
 import { MessageManager } from '@managers'
 import commandsHelp from '@utils/helpMessages'
 import { handleInteractionError, handleMessageError } from '@utils/handleError'
+import stringsLang from '@stringsLang'
 
 export default abstract class BaseCommand {
   protected guildConfig: GuildConfig
@@ -28,32 +29,32 @@ export default abstract class BaseCommand {
     }
   }
 
-  protected async sendHelp (command: string = ''): Promise<Message> {
+  protected async sendHelp (command): Promise<Message> {
     const helpEmbed = this.mountCommandHelpEmbed(command)
     return this.send({ embeds: [helpEmbed] })
   }
 
-  private mountCommandHelpEmbed (command: string = ''): PartialEmbed {
+  private mountCommandHelpEmbed (command): PartialEmbed {
     const commandWord = command || this.commandWord
     const commandsListText = Object.keys(commandsHelp).filter(cmd => cmd !== 'default').map(command => `\`${command}\``).join(', ')
-    const commandHelp = commandsHelp[commandWord] || commandsHelp.default
+    const commandHelp = commandsHelp[commandWord]
     return {
       color: 0xBCC0C0,
       title: `:grey_question: Help: \`.help ${commandsHelp[commandWord] ? commandWord : ''}\``,
       description: commandHelp.help[this.lang],
       fields: [
         {
-          name: 'Examples',
+          name: stringsLang.examples[this.lang],
           value: commandHelp.examples.map(example => `\`${example}\``).join('\n'),
           inline: false
         },
         {
-          name: 'Internationalization',
-          value: 'Some commands support `lang=<lang>` and `translate=<lang>` options.\nAvailable languages: `en`, `pt`, `fr` and `es`.',
+          name: stringsLang.internationalization[this.lang],
+          value: stringsLang.internationalizationText[this.lang],
           inline: false
         },
         {
-          name: 'Available Commands',
+          name: stringsLang.availableCommands[this.lang],
           value: commandsListText,
           inline: false
         }

@@ -25,7 +25,7 @@ export const getData = (lang: string) => {
     .addNumberOption(option => option.setName('dmg').setDescription(str.calcCommandDmgOptionDescription[lang]).setRequired(true))
     .addNumberOption(option => option.setName('base').setDescription(str.calcCommandBaseOptionDescription[lang]).setRequired(true))
     .addNumberOption(option => option.setName('res').setDescription(str.calcCommandResOptionDescription[lang]).setRequired(true))
-    .addNumberOption(option => option.setName('crit').setDescription(str.calcCommandCritOptionDescription[lang]))
+    .addStringOption(option => option.setName('crit').setDescription(str.calcCommandCritOptionDescription[lang]))
   addLangAndTranslateStringOptions(builder, lang)
   return builder
 }
@@ -48,12 +48,12 @@ export default class CalcCommand extends BaseCommand {
     const dmg = this.interaction.options.getNumber('dmg')
     const base = this.interaction.options.getNumber('base')
     const res = this.interaction.options.getNumber('res')
-    const crit = this.interaction.options.getNumber('crit')
+    const crit = this.interaction.options.getString('crit')
     const calculatedValues = this.calculateDamage({ 
       dmg: String(dmg), 
       base: String(base),
       res: String(res),
-      crit: crit ? String(crit) : ''
+      crit: crit || ''
     })
 
     const translate = this.interaction.options.getString('translate')

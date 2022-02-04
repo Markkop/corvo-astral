@@ -8,6 +8,42 @@ export default {
   capitalize (str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
   },
+  availableCommands: {
+    en: 'Available commands',
+    pt: 'Comandos disponíveis',
+    es: 'Comandos disponibles',
+    fr: 'Commandes disponibles'
+  },
+  examples: {
+    en: 'Exemples',
+    pt: 'Exemplos',
+    es: 'Ejemplos',
+    fr: 'Exemples'
+  },
+  internationalization: {
+    en: 'Internationalization',
+    pt: 'Internacionalização',
+    es: 'Internacionalización',
+    fr: 'Internationalisation'
+  },
+  internationalizationText: {
+    en: 'You can use commands in another language with "lang" option or translate their output with "translate" option',
+    pt: 'Você pode usar comandos em outro idioma com a opção "lang" ou traduzir sua saída com a opção "translate"',
+    es: 'Puede usar comandos en otro idioma con la opción "lang" o traducir su salida con la opción "translate"',
+    fr: `Vous pouvez utiliser des commandes dans une autre langue avec l'option "lang" ou traduire leur sortie avec l'option "translate"`
+  },
+  commandOptionHelpCommandDescription: {
+    en: 'The command you wish to know more',
+    pt: 'O comando que você deseja saber mais',
+    es: 'El comando que desea saber más',
+    fr: "La commande que vous souhaitez en savoir plus"
+  },
+  helpCommandDescription: {
+    en: 'Get help with the bot features',
+    pt: 'Obtenha ajuda para utilizar as funcionalidades do bot',
+    es: 'Obtenga ayuda para usar las funciones del bot',
+    fr: "Obtenir de l'aide sur les fonctionnalités du bot"
+  },
   subliRarityCommandOptionDescription: {
     en: 'The rarity of the sublimation (in any language)',
     pt: 'A raridade da sublimação (em qualquer idioma)',
