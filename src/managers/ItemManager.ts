@@ -33,15 +33,14 @@ class ItemManager {
   }
 
   public getItemByName (itemList: ItemData[], name: string, options: CommandOptions, lang: string) {
-    if (!options.rarity) {
+    if (!options.rarityId) {
       return itemList.filter(equip => hasTextOrNormalizedTextIncluded(equip.title[lang], name))
     }
 
     return itemList.filter(equip => {
       let filterAssertion = true
       const includeName = hasTextOrNormalizedTextIncluded(equip.title[lang], name)
-      const rarityIdOption = this.getRarityIdByRarityNameInAnyLanguage(options.rarity)
-      const hasRarity = rarityIdOption === equip.rarity
+      const hasRarity = options.rarityId === equip.rarity
       filterAssertion = filterAssertion && hasRarity
 
       return includeName && filterAssertion
@@ -181,12 +180,7 @@ class ItemManager {
   }
 
   // TO Do: move the following functions 
-  private getRarityIdByRarityNameInAnyLanguage (rarityName) {
-    return Object.entries(rarityMap).reduce((idDetected, [rarityId, rarityDetails]) => {
-      const names = Object.values(rarityDetails.name)
-      return names.some(name => rarityName.toLowerCase() === name.toLowerCase()) ? Number(rarityId) : idDetected
-    }, 0)
-  }
+
 
   private findPermutations (string: string) {
     if (!string || typeof string !== 'string' || string.length > 4) {

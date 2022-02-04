@@ -8,6 +8,24 @@ export default {
   capitalize (str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
   },
+  recipeRarityCommandOptionDescription: {
+    en: 'The rarity of the recipe (in any language)',
+    pt: 'A raridade da receita (em qualquer idioma)',
+    es: 'La rareza de la receta (en cualquier idioma) ',
+    fr: "La rareté de la recette (dans n'importe quelle langue)"
+  },
+  recipeNameCommandOptionDescription: {
+    en: 'Name or part of a recipe name',
+    pt: 'Nome ou parte do nome de uma receita',
+    es: 'Nombre o parte del nombre de una receta',
+    fr: "Nom ou partie d'un nom de recette"
+  },
+  recipeCommandDescription: {
+    en: 'Search by recipe name and / or rarity',
+    pt: 'Pesquise pelo nome da receita e/ou raridade',
+    es: 'Buscar por nombre de la receta y / o rareza',
+    fr: "Recherche par nom de la recette et / ou rareté"
+  },
   equipRarityCommandOptionDescription: {
     en: 'The rarity of the equipment (in any language)',
     pt: 'A raridade do equipamento (em qualquer idioma)',

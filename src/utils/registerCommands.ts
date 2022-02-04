@@ -4,7 +4,7 @@ import { Routes } from "discord-api-types/v9";
 import { Client } from "discord.js";
 import commandsData from "../commands";
 
-export async function registerCommands (client: Client, guildId: string, guildConfig: GuildConfig) {
+export async function registerCommands (client: Client, guildId: string, guildConfig: GuildConfig, guildName: string) {
   try {
     const rest = new REST({ version: "9" }).setToken(process.env.DISCORD_BOT_TOKEN);
   
@@ -20,6 +20,10 @@ export async function registerCommands (client: Client, guildId: string, guildCo
   
     console.log("Slash commands registered!");
   } catch (error) {
+    if (error.rawError.code === 50001) {
+      console.log(`Missing Access on server "${guildName}"`)
+      return
+    }
     console.log(error)
   } 
 };

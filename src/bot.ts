@@ -10,7 +10,7 @@ import {
   AlmaCommand,
   AboutCommand,
   CalcCommand,
-  // RecipeCommand,
+  RecipeCommand,
   // SubliCommand,
   PartyCreateCommand,
   PartyUpdateCommand,
@@ -26,7 +26,7 @@ const commandsMap = {
   equip: EquipCommand,
   about: AboutCommand,
   calc: CalcCommand,
-  // recipe: RecipeCommand,
+  recipe: RecipeCommand,
   // subli: SubliCommand,
   alma: AlmaCommand,
   'party-create': PartyCreateCommand,
@@ -75,7 +75,6 @@ class Bot {
       })
     }, 1000)
   }
-
 
   // private async onMessage (message: Message) {
   //   try {

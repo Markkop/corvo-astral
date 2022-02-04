@@ -23,8 +23,8 @@ class RecipesManager {
       }
       const matchesName = recipeResult.title[lang].toLowerCase().includes(query)
       let matchesRarity = true
-      if (options.rarity && recipeResult.rarity) {
-        matchesRarity = rarityMap[recipeResult.rarity].name[lang].toLowerCase().includes(options.rarity)
+      if (options.rarityId && recipeResult.rarity) {
+        matchesRarity = options.rarityId === recipeResult.rarity
       }
       const filterAssertion = matchesName && matchesRarity
       return filterAssertion

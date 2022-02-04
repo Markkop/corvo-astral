@@ -1,7 +1,7 @@
 import AboutCommand, { getData as getAboutData} from './About'
 import EquipCommand, { getData as getEquipData } from './Equip'
 import CalcCommand, { getData as getCalcData} from './Calc'
-// import RecipeCommand from './Recipe'
+import RecipeCommand, { getData as getRecipeData} from './Recipe'
 // import SubliCommand from './Subli'
 import AlmaCommand, { getData as getAlmaData} from './Alma'
 // import HelpCommand from './Help'
@@ -14,7 +14,7 @@ export {
   AboutCommand,
   EquipCommand,
   CalcCommand,
-  // RecipeCommand,
+  RecipeCommand,
   // SubliCommand,
   AlmaCommand,
   // HelpCommand,
@@ -31,5 +31,6 @@ export default [
   getConfigData,
   getPartyCreateData,
   getPartyUpdateData,
-  getEquipData
+  getEquipData,
+  getRecipeData
 ]

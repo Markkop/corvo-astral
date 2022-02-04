@@ -43,4 +43,11 @@ export default class FinderCommand extends BaseCommand {
       return `${item.title[this.lang]}${rarityText}`
     }).join(', ').trim() + moreResultsText
   }
+
+  protected getRarityIdByRarityNameInAnyLanguage (rarityName: string) {
+    return Object.entries(rarityMap).reduce((idDetected, [rarityId, rarityDetails]) => {
+      const names = Object.values(rarityDetails.name)
+      return names.some(name => rarityName.toLowerCase() === name.toLowerCase()) ? Number(rarityId) : idDetected
+    }, 0)
+  }
 }
