@@ -69,7 +69,7 @@ export default class ConfigCommand extends BaseCommand {
 
       await configManager.updateGuildConfig(newConfig)
       const configEmbed = this.mountConfigEmbed('Config updated', newConfig)
-      registerCommands(this.interaction.client, guildId, newConfig)
+      registerCommands(this.interaction.client, guildId, newConfig, this.interaction.guild.name)
       await this.send({ embeds: [configEmbed] })
       return
     }

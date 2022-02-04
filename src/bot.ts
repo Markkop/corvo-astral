@@ -62,10 +62,18 @@ class Bot {
     console.log(`Online on ${servers} servers: ${this.client.guilds.cache.map(guild => guild.name).join(', ')}`)
     this.client.user.setActivity('.about or .help', { type: 'PLAYING' })
     saveServersNumber(servers)
-    this.client.guilds.cache.forEach(guild => {
-      const guildConfig = this.configManager.getGuildConfig(guild.id)
-      registerCommands(this.client, guild.id, guildConfig as GuildConfig)
-    })
+    this.registerCommandsAfterLoadingConfigs()
+  }
+
+  private registerCommandsAfterLoadingConfigs() {
+    const interval = setInterval(() => {
+      if(!this.configManager.hasLoadedConfigs) return
+      clearInterval(interval)
+      this.client.guilds.cache.forEach(guild => {
+        const guildConfig = this.configManager.getGuildConfig(guild.id)
+        registerCommands(this.client, guild.id, guildConfig as GuildConfig, guild.name)
+      })
+    }, 1000)
   }
 
 
