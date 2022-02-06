@@ -1,23 +1,18 @@
-import PartyCreateCommand from '../../src/commands/party/PartyCreate'
+import PartyCreateCommand, { getData } from '../../src/commands/party/PartyCreate'
 import { 
   executeCommandWithMockOptionsAndSpySentMessage, 
-  executeCommandAndSpySentMessage, 
-  embedContaining 
+  embedContaining, 
+  getParsedCommand
 } from '../testutils'
-import askAndWaitForAnswer from '../../src/utils/askAndWaitForAnswer'
 
-jest.mock('../../src/utils/askAndWaitForAnswer', () => jest.fn())
-
-function mockAskAndWaitAnswers(answers: string[]) {
-  answers.forEach(answer => {
-    (askAndWaitForAnswer as jest.Mock).mockResolvedValueOnce(answer)
-  })
-}
 
 describe('PartyCreateCommand', () => {
+  const commandData = getData('en')
+
   it('creates the first party message on the party channel if there is no party messages', async () => {
-    mockAskAndWaitAnswers(['group1', 'skip', '10/10 21:00', '200', '6'])
-    const spy = await executeCommandAndSpySentMessage(PartyCreateCommand, '.party create')
+    const stringCommand = '/party-create name: group1 date: 10/10 21:00 level: 200 slots: 6'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandWithMockOptionsAndSpySentMessage(PartyCreateCommand, {command})
     expect(spy).toHaveBeenNthCalledWith(1, embedContaining({
       title: '<:dungeon:888873201512362035> Party: group1',
       fields: [
@@ -33,10 +28,10 @@ describe('PartyCreateCommand', () => {
   })
 
   it('creates a party listing with the next identifier', async () => {
+    const stringCommand = '/party-create name: group3 date: 10/10 21:00 level: 200 slots: 6'
+    const command = getParsedCommand(stringCommand, commandData)
     const mockOptions = {
-      message: {
-        content: '.party create'
-      },
+      command,
       partyChannel: {
         messages: [
           { embed: {
@@ -53,7 +48,6 @@ describe('PartyCreateCommand', () => {
       }
     }
 
-    mockAskAndWaitAnswers(['group3', 'skip', '10/10 21:00', '200', '6'])
     const spy = await executeCommandWithMockOptionsAndSpySentMessage(PartyCreateCommand, mockOptions)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       fields: expect.arrayContaining([{

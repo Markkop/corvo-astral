@@ -47,7 +47,6 @@ export default class MockDiscord {
     this.mockInteracion(options?.command)
 
     this.mockPrototypes()
-    // this.guild.channels.add(this.botPartyTextChannel)
 
     if (options?.partyChannel?.messages) {
       this.mockPartyMessages(options.partyChannel.messages)
@@ -58,6 +57,9 @@ export default class MockDiscord {
       this.mockReaction(options.reaction, lastPartyMessage)
       this.mockReactionUser(options.reaction?.user?.id);
     }
+
+    this.guild.channels.cache.set(this.botPartyTextChannel.id, this.botPartyTextChannel)
+    this.client.guilds.cache.set(this.guild.id, this.guild)
   }
 
   public getClient(): Client {
@@ -270,6 +272,7 @@ export default class MockDiscord {
     this.guildMember = Reflect.construct(GuildMember, [
       this.client,
       {
+        id: BigInt(1),
         deaf: false,
         mute: false,
         self_mute: false,
@@ -290,7 +293,7 @@ export default class MockDiscord {
     const msg = Reflect.construct(Message, [
        this.client,
        {
-        id: `existing-party-message-id-${index}`,
+        id: BigInt(10),
         type: "DEFAULT",
         content: '',
         author: this.user,
@@ -352,6 +355,7 @@ export default class MockDiscord {
       ]
     );
     this.interaction.reply = jest.fn()
+    this.interaction.guildId = this.guild.id
     this.interaction.isCommand = jest.fn(() => true)
   }
 }
