@@ -77,7 +77,7 @@ describe('EquipmentCommand', () => {
   })
 
   it('return the matching equipment when using query with accents', async () => {
-    const stringCommand = '/equip name: lêmico lang:pt'
+    const stringCommand = '/equip name: lêmico lang: pt'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
@@ -86,7 +86,7 @@ describe('EquipmentCommand', () => {
   })
 
   it('return a matching equipment by name and rarity with rarity argument is provided', async () => {
-    const stringCommand = '/equip name: the eternal rarity:mythical'
+    const stringCommand = '/equip name: the eternal rarity: mythical'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
@@ -113,7 +113,7 @@ describe('EquipmentCommand', () => {
   })
 
   it('return a matching equipment by name and rarity with rarity argument with mixed languages', async () => {
-    const stringCommand = '/equip name: o eterno rarity:mythical lang:pt'
+    const stringCommand = '/equip name: o eterno rarity: mythical lang: pt'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({

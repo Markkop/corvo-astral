@@ -1,7 +1,7 @@
 import PartyCreateCommand, { getData } from '../../src/commands/party/PartyCreate'
 import { 
   executeCommandWithMockOptionsAndSpySentMessage, 
-  embedContaining, 
+  embedContainingWithoutFetchReply, 
   getParsedCommand
 } from '../testutils'
 
@@ -13,7 +13,7 @@ describe('PartyCreateCommand', () => {
     const stringCommand = '/party-create name: group1 date: 10/10 21:00 level: 200 slots: 6'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandWithMockOptionsAndSpySentMessage(PartyCreateCommand, {command})
-    expect(spy).toHaveBeenNthCalledWith(1, embedContaining({
+    expect(spy).toHaveBeenNthCalledWith(1, embedContainingWithoutFetchReply({
       title: '<:dungeon:888873201512362035> Party: group1',
       fields: [
         { name: ':label: ID', value: '1', inline: true },
@@ -49,7 +49,7 @@ describe('PartyCreateCommand', () => {
     }
 
     const spy = await executeCommandWithMockOptionsAndSpySentMessage(PartyCreateCommand, mockOptions)
-    expect(spy).toHaveBeenCalledWith(embedContaining({
+    expect(spy).toHaveBeenCalledWith(embedContainingWithoutFetchReply({
       fields: expect.arrayContaining([{
         name: ':label: ID',
         value: '3',

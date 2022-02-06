@@ -39,7 +39,7 @@ describe('RecipeCommand', () => {
   })
 
   it('replies a translated recipe with "translate" option', async () => {
-    const stringCommand = '/recipe name: peace pipe translate:pt'
+    const stringCommand = '/recipe name: peace pipe translate: pt'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(RecipeCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -48,7 +48,7 @@ describe('RecipeCommand', () => {
   })
 
   it('replies a matching recipe by name and rarity', async () => {
-    const stringCommand = '/recipe name: peace pipe rarity:mythical'
+    const stringCommand = '/recipe name: peace pipe rarity: mythical'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(RecipeCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({

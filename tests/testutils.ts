@@ -77,7 +77,16 @@ export function getParsedCommand(stringCommand: string, commandData) {
   }
 }
 
+
 export function embedContaining(content) {
+  return {
+    embeds: expect.arrayContaining([expect.objectContaining(content)]),
+    fetchReply: true
+  }
+}
+
+
+export function embedContainingWithoutFetchReply(content) {
   return {
     embeds: expect.arrayContaining([expect.objectContaining(content)])
   }
