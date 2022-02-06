@@ -1,36 +1,9 @@
-import { getParsedCommand, parseCommand } from "./testutils"
-import { getData } from '../src/commands/About'
+import { getParsedCommand } from "./testutils"
+import { getData as getAboutData } from '../src/commands/About'
+import { getData as getPartyCreateData } from '../src/commands/party/partyCreate'
 
 describe('Test utils', () => {
-  it('parseCommand parses a command with parameters with spaces', () => {
-    const commandString = '/equip name: tentacled belt lang: en'
-    const parsedCommand = parseCommand(commandString)
-    const expected = {
-      name: 'equip',
-      subcommand: '',
-      options: [
-        { name: 'name', value: 'tentacled belt' },
-        { name: 'lang', value: 'en' }
-      ]
-    }
-    expect(parsedCommand).toEqual(expected)
-  })
-
-  it('parseCommand parses a sub command with parameters with spaces', () => {
-    const commandString = '/config set lang: my favorite language'
-    const parsedCommand = parseCommand(commandString)
-    const expected = {
-      name: 'config',
-      subcommand: 'set',
-      options: [
-        { name: 'lang', value: 'my favorite language' }
-      ]
-    }
-    expect(parsedCommand).toEqual(expected)
-  })
-
-
-  it('getParsedCommand parses a command string  with sub command as expected', () => {
+  it('getParsedCommand parses a command string with sub command as expected', () => {
     const commandData = {
       "name": "config",
       "description": "View or change bot configuration",
@@ -102,7 +75,7 @@ describe('Test utils', () => {
     expect(parsedCommand).toEqual(expected)
   })
   it('getParsedCommand parses a command string without subcommand as expected', () => {
-    const commandData = getData('en')
+    const commandData = getAboutData('en')
     const commandString = '/about lang: en'
     const parsedCommand = getParsedCommand(commandString, commandData)
     const expected = {
@@ -114,6 +87,24 @@ describe('Test utils', () => {
         type: 3,
         name: 'lang'
       }]
+    }
+    expect(parsedCommand).toEqual(expected)
+  })
+  
+  it('getParsedCommand parses a command string with : ', () => {
+    const commandData = getPartyCreateData('en')
+    const commandString = '/party-create name: group1 date: 10/10 21:00 level: 200 slots: 6'
+    const parsedCommand = getParsedCommand(commandString, commandData)
+    const expected = {
+      type: 1,
+      options: [
+        { value: 'group1', type: 3, name: 'name' },
+        { value: '10/10 21:00', type: 3, name: 'date' },
+        { value: '200', type: 3, name: 'level' },
+        { value: 6, type: 10, name: 'slots' }
+      ],
+      name: 'party-create',
+      id: 'party-create'
     }
     expect(parsedCommand).toEqual(expected)
   })

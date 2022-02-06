@@ -11,102 +11,75 @@ export const defaultConfig = {
 }
 
 export const optionType = {
-  null: 0,
-  subCommand: 1,
-  subCommandGroup: 2,
-  string: 3,
-  integer: 4,
-  boolean: 5,
-  user: 6,
-  channel: 7,
-  role: 8,
-  mentionable: 9,
-  number: 10,
+  // 0: null,
+  // 1: subCommand,
+  // 2: subCommandGroup,
+  3: String,
+  4: Number,
+  5: Boolean,
+  // 6: user,
+  // 7: channel,
+  // 8: role,
+  // 9: mentionable,
+  10: Number,
 }
 
-export function parseCommand(stringCommand) {
-  const splittedCommand = stringCommand.replace(/:\s/g , ':').split(' ')
-  const secondSplit = splittedCommand[1]
-  let command = {
-    name: '',
-    subcommand: secondSplit?.includes(':') ? '' : secondSplit,
-    options: []
-  }
-  for (let index = 0; index < splittedCommand.length; index++ ) {
-    const item = splittedCommand[index]
-    if (item.includes('/')) {
-      command.name = item.replace('/', '')
-      continue
-    }
-
-    if (!item.includes(':')) {
-      continue 
-    }
-
-    const [ name ] = item.split(':')
-    const optionArguments = stringCommand.split(/\s\w*:/)
-    command.options.push({ 
-      name, 
-      value: optionArguments[command.options.length + 1].trim()
-    })
-  }
-  return command
+function getNestedOptions(options) {
+  return options.reduce((allOptions, option) => {
+    if (!option.options) return [...allOptions, option]
+    const nestedOptions = getNestedOptions(option.options)
+    return [option, ...allOptions, ...nestedOptions]
+  }, [])
 }
 
-export function mapParsedSubCommandToInteractionCommand(parsedCommand, { options }) {
-  return parsedCommand.options.reduce((command, { name, value }) => {
-    const subCommandOption = options.find(option => option.name === parsedCommand.subcommand)
-    const option = subCommandOption.options.find(option => option.name === name)
-    if (!option) return command
-    command.options.push({
-      name: parsedCommand.subcommand,
-      type: optionType.subCommand,
-      options: [{
-        name,
-        value,
-        type: option.type,
-      }]
-    })
-    return command
-  }, { 
-    id: parsedCommand.name,
-    name: parsedCommand.name,
-    type: optionType.subCommand,
-    options: []
-  })
-}
-
-
-export function mapParsedCommandToInteractionCommand(parsedCommand, { options }) {
-  return parsedCommand.options.reduce((command, { name, value }) => {
-    const option = options.find(option => option.name === name)
-    if (!option) return command
-    command.options.push({
-      name,
-      value,
-      type: option.type
-    })
-    return command
-  }, { 
-    id: parsedCommand.name,
-    name: parsedCommand.name,
-    type: optionType.subCommand,
-    options: []
-  })
+function castToType(value: string, typeId: number) {
+  const typeCaster = optionType[typeId]
+  return typeCaster ? typeCaster(value) : value
 }
 
 export function getParsedCommand(stringCommand: string, commandData) {
-  const parsedCommand = parseCommand(stringCommand)
-  if (parsedCommand.subcommand) {
-    return mapParsedSubCommandToInteractionCommand(parsedCommand, commandData)
+  const options = getNestedOptions(commandData.options)
+  const optionsIndentifiers = options.map(option => `${option.name}:`)
+  const requestedOptions = options.reduce((requestedOptions, option) => {
+    const identifier = `${option.name}:`
+    if (!stringCommand.includes(identifier)) return requestedOptions
+    const remainder = stringCommand.split(identifier)[1]
+
+    const nextOptionIdentifier = remainder.split(' ').find(word => optionsIndentifiers.includes(word))
+    if (nextOptionIdentifier) {
+      const value = remainder.split(nextOptionIdentifier)[0].trim()
+      return [...requestedOptions, {
+        name: option.name,
+        value: castToType(value, option.type),
+        type: option.type
+      }]
+    }
+    
+    return [...requestedOptions, {
+      name: option.name,
+      value: castToType(remainder.trim(), option.type),
+      type: option.type
+    }]
+  }, [])
+  const optionNames = options.map(option => option.name)
+  const splittedCommand = stringCommand.split(' ')
+  const name = splittedCommand[0].replace('/', '')
+  const subcommand = splittedCommand.find(word => optionNames.includes(word))
+  return {
+    id: name,
+    name,
+    type: 1,
+    options: subcommand ? [{
+      name: subcommand,
+      type: 1,
+      options: requestedOptions
+    }] : requestedOptions
   }
-  return mapParsedCommandToInteractionCommand(parsedCommand, commandData)
 }
 
 export function embedContaining(content) {
   return {
-    embeds: expect.arrayContaining([expect.objectContaining(content)]),
-    fetchReply: true
+    embeds: expect.arrayContaining([expect.objectContaining(content)])
   }
 }
 
@@ -137,17 +110,18 @@ export async function executeCommandAndSpyReply(command, content, config = {}) {
   return spy
 }
 
-/* Spy 'send' with mock options */
-export function mockMessageWithOptionsAndSpyChannelSend(options) {
+/* Spy channel 'send' with mock options */
+export function mockInteractionWithOptionsAndSpyChannelSend(options) {
   const discord = new MockDiscord(options)
-  const userMessage = discord.getMessage()
-  const spy = jest.spyOn(userMessage.channel, 'send') 
-  return { userMessage, spy }
+  const interaction = discord.getInteraction() as CommandInteraction
+  const channel = discord.getBotPartyTextChannel()
+  const spy = jest.spyOn(channel, 'send') 
+  return { interaction, spy }
 }
 
-export async function executeCommandWithMockOptionsAndSpySentMessage(command, options, config = {}) {
-  const { userMessage, spy } = mockMessageWithOptionsAndSpyChannelSend(options)
-  const commandInstance = new command(userMessage, {...defaultConfig, ...config})
+export async function executeCommandWithMockOptionsAndSpySentMessage(command, content, config = {}) {
+  const { interaction, spy } = mockInteractionWithOptionsAndSpyChannelSend(content)
+  const commandInstance = new command(interaction, {...defaultConfig, ...config})
   await commandInstance.execute()
   return spy
 }
