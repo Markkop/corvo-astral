@@ -26,9 +26,10 @@ export const optionType = {
 
 export function parseCommand(stringCommand) {
   const splittedCommand = stringCommand.replace(/:\s/g , ':').split(' ')
+  const secondSplit = splittedCommand[1]
   let command = {
     name: '',
-    subcommand: '',
+    subcommand: secondSplit?.includes(':') ? '' : secondSplit,
     options: []
   }
   for (let index = 0; index < splittedCommand.length; index++ ) {
@@ -38,13 +39,16 @@ export function parseCommand(stringCommand) {
       continue
     }
 
-    if (item.includes(':')) {
-      const [ name, value ] = item.split(':')
-      command.options.push({ name, value })
+    if (!item.includes(':')) {
       continue 
     }
 
-    command.subcommand = item
+    const [ name ] = item.split(':')
+    const optionArguments = stringCommand.split(/\s\w*:/)
+    command.options.push({ 
+      name, 
+      value: optionArguments[command.options.length + 1].trim()
+    })
   }
   return command
 }

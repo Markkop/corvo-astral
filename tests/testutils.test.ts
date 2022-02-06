@@ -1,8 +1,36 @@
-import { getParsedCommand } from "./testutils"
+import { getParsedCommand, parseCommand } from "./testutils"
 import { getData } from '../src/commands/About'
 
 describe('Test utils', () => {
-  it('parses a command string  with sub command as expected', () => {
+  it('parseCommand parses a command with parameters with spaces', () => {
+    const commandString = '/equip name: tentacled belt lang: en'
+    const parsedCommand = parseCommand(commandString)
+    const expected = {
+      name: 'equip',
+      subcommand: '',
+      options: [
+        { name: 'name', value: 'tentacled belt' },
+        { name: 'lang', value: 'en' }
+      ]
+    }
+    expect(parsedCommand).toEqual(expected)
+  })
+
+  it('parseCommand parses a sub command with parameters with spaces', () => {
+    const commandString = '/config set lang: my favorite language'
+    const parsedCommand = parseCommand(commandString)
+    const expected = {
+      name: 'config',
+      subcommand: 'set',
+      options: [
+        { name: 'lang', value: 'my favorite language' }
+      ]
+    }
+    expect(parsedCommand).toEqual(expected)
+  })
+
+
+  it('getParsedCommand parses a command string  with sub command as expected', () => {
     const commandData = {
       "name": "config",
       "description": "View or change bot configuration",
@@ -73,7 +101,7 @@ describe('Test utils', () => {
     }
     expect(parsedCommand).toEqual(expected)
   })
-  it('parses a command string without subcommand as expected', () => {
+  it('getParsedCommand parses a command string without subcommand as expected', () => {
     const commandData = getData('en')
     const commandString = '/about lang: en'
     const parsedCommand = getParsedCommand(commandString, commandData)
