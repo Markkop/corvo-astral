@@ -1,3 +1,4 @@
+import { CommandInteraction } from 'discord.js'
 import MockDiscord from './mockDiscord'
 
 export const defaultConfig = {
@@ -11,7 +12,8 @@ export const defaultConfig = {
 
 export function embedContaining(content) {
   return {
-    embed: expect.objectContaining(content)
+    embeds: expect.arrayContaining([expect.objectContaining(content)]),
+    fetchReply: true
   }
 }
 
@@ -27,17 +29,17 @@ export function copy(obj) {
   return JSON.parse(JSON.stringify(obj))
 }
 
-/* Spy 'send' */
-export function mockMessageAndSpyChannelSend(content) {
-  const discord = new MockDiscord({ message: { content }})
-  const userMessage = discord.getMessage()
-  const spy = jest.spyOn(userMessage.channel, 'send') 
-  return { userMessage, spy }
+/* Spy 'reply' */
+export function mockInteractionAndSpyReply(command) {
+  const discord = new MockDiscord({ command })
+  const interaction = discord.getInteraction() as CommandInteraction
+  const spy = jest.spyOn(interaction, 'reply') 
+  return { interaction, spy }
 }
 
-export async function executeCommandAndSpySentMessage(command, content, config = {}) {
-  const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-  const commandInstance = new command(userMessage, {...defaultConfig, ...config})
+export async function executeCommandAndSpyReply(command, content, config = {}) {
+  const { interaction, spy } = mockInteractionAndSpyReply(content)
+  const commandInstance = new command(interaction, {...defaultConfig, ...config})
   await commandInstance.execute()
   return spy
 }
