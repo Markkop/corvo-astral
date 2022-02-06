@@ -29,6 +29,7 @@ class MessageManager {
   }
 
   public static async reactToMessage (reactions: string[], message: Message): Promise<void> {
+    if (!message || !message.react) return
     for (let index = 0; index < reactions.length; index++) {
       await message.react(reactions[index])
     }
