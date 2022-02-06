@@ -10,6 +10,95 @@ export const defaultConfig = {
   buildPreview: 'enabled'
 }
 
+export const optionType = {
+  null: 0,
+  subCommand: 1,
+  subCommandGroup: 2,
+  string: 3,
+  integer: 4,
+  boolean: 5,
+  user: 6,
+  channel: 7,
+  role: 8,
+  mentionable: 9,
+  number: 10,
+}
+
+export function parseCommand(stringCommand) {
+  const splittedCommand = stringCommand.replace(/:\s/g , ':').split(' ')
+  let command = {
+    name: '',
+    subcommand: '',
+    options: []
+  }
+  for (let index = 0; index < splittedCommand.length; index++ ) {
+    const item = splittedCommand[index]
+    if (item.includes('/')) {
+      command.name = item.replace('/', '')
+      continue
+    }
+
+    if (item.includes(':')) {
+      const [ name, value ] = item.split(':')
+      command.options.push({ name, value })
+      continue 
+    }
+
+    command.subcommand = item
+  }
+  return command
+}
+
+export function mapParsedSubCommandToInteractionCommand(parsedCommand, { options }) {
+  return parsedCommand.options.reduce((command, { name, value }) => {
+    const subCommandOption = options.find(option => option.name === parsedCommand.subcommand)
+    const option = subCommandOption.options.find(option => option.name === name)
+    if (!option) return command
+    command.options.push({
+      name: parsedCommand.subcommand,
+      type: optionType.subCommand,
+      options: [{
+        name,
+        value,
+        type: option.type,
+      }]
+    })
+    return command
+  }, { 
+    id: parsedCommand.name,
+    name: parsedCommand.name,
+    type: optionType.subCommand,
+    options: []
+  })
+}
+
+
+export function mapParsedCommandToInteractionCommand(parsedCommand, { options }) {
+  return parsedCommand.options.reduce((command, { name, value }) => {
+    const option = options.find(option => option.name === name)
+    if (!option) return command
+    command.options.push({
+      name,
+      value,
+      type: option.type
+    })
+    return command
+  }, { 
+    id: parsedCommand.name,
+    name: parsedCommand.name,
+    type: optionType.subCommand,
+    options: []
+  })
+}
+
+export function getParsedCommand(stringCommand: string, commandData) {
+  const parsedCommand = parseCommand(stringCommand)
+  if (parsedCommand.subcommand) {
+    return mapParsedSubCommandToInteractionCommand(parsedCommand, commandData)
+  }
+  return mapParsedCommandToInteractionCommand(parsedCommand, commandData)
+}
+
 export function embedContaining(content) {
   return {
     embeds: expect.arrayContaining([expect.objectContaining(content)]),
