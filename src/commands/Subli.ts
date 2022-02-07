@@ -1,10 +1,10 @@
 import { FinderCommand } from '@baseCommands'
-import { ItemManager, RecipesManager, MessageManager } from '@managers'
+import { ItemManager, RecipesManager } from '@managers'
 import { mountUrl } from '@utils/mountUrl'
 import mappings from '@utils/mappings'
 import str from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
-import { Interaction, Message } from 'discord.js'
+import { Interaction } from 'discord.js'
 import { SlashCommandBuilder } from '@discordjs/builders'
 import { addLangAndTranslateStringOptions, addStringOptionWithRarityChoices } from '@utils/registerCommands'
 

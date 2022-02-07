@@ -1,6 +1,5 @@
 import { FinderCommand } from '@baseCommands'
-import { ItemManager, RecipesManager, MessageManager } from '@managers'
-import { mountUrl } from '@utils/mountUrl'
+import { ItemManager, RecipesManager } from '@managers'
 import str from '@stringsLang'
 import { GuildConfig, PartialEmbed, RecipeItemData } from '@types'
 import { Interaction, Message } from 'discord.js'

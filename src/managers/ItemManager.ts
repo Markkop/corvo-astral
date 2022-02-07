@@ -5,7 +5,7 @@ import mappings from '@utils/mappings'
 import MessageManager from './MessageManager'
 import { MessageReaction, MessageEmbed } from 'discord.js'
 import { RecipesManager } from '@managers'
-const { equipTypesMap, rarityMap } = mappings
+const { equipTypesMap } = mappings
 const itemsData = require('../../data/generated/items.json')
 
 class ItemManager {

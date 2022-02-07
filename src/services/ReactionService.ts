@@ -1,4 +1,4 @@
-import { Message, MessageReaction, User } from 'discord.js'
+import { MessageReaction, User } from 'discord.js'
 import { ItemManager } from '@managers'
 import { handleReactionError } from '@utils/handleError'
 import { GuildConfig } from '@types'

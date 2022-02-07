@@ -1,6 +1,5 @@
 import { CommandInteraction, Interaction, Message, MessageOptions } from 'discord.js'
 import { GuildConfig, PartialEmbed } from '@types'
-import { MessageManager } from '@managers'
 import commandsHelp from '@utils/helpMessages'
 import { handleInteractionError, handleMessageError } from '@utils/handleError'
 import stringsLang from '@stringsLang'

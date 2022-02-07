@@ -1,9 +1,8 @@
 import { BaseCommand } from '@baseCommands'
-import { MessageManager } from '@managers'
 import stringsLang from '@stringsLang'
 import { GuildConfig } from '@types'
 import { addLangStringOption } from '@utils/registerCommands'
-import { Interaction, Message } from 'discord.js'
+import { Interaction } from 'discord.js'
 import { SlashCommandBuilder } from '@discordjs/builders'
 import helpMessages from '@utils/helpMessages'
 
