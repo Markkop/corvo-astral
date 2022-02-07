@@ -60,7 +60,7 @@ class Bot {
   private onReady () {
     const servers = this.client.guilds.cache.size
     console.log(`Online on ${servers} servers: ${this.client.guilds.cache.map(guild => guild.name).join(', ')}`)
-    this.client.user.setActivity('.about or .help', { type: 'PLAYING' })
+    this.client.user.setActivity('/about or /help', { type: 'PLAYING' })
     saveServersNumber(servers)
     this.registerCommandsAfterLoadingConfigs()
   }
