@@ -59,6 +59,7 @@ export default class MockDiscord {
     }
 
     this.guild.channels.cache.set(this.botPartyTextChannel.id, this.botPartyTextChannel)
+    this.client.channels.cache.set(this.botPartyTextChannel.id, this.botPartyTextChannel)
     this.client.guilds.cache.set(this.guild.id, this.guild)
   }
 
@@ -289,7 +290,7 @@ export default class MockDiscord {
   }
 
   private mockPartyMessages(messages): void {
-   messages.forEach((message, index) => {
+   messages.forEach((message) => {
     const msg = Reflect.construct(Message, [
        this.client,
        {
@@ -313,7 +314,8 @@ export default class MockDiscord {
        },
        this.botPartyTextChannel
       ]);
-     this.botPartyTextChannel.messages.cache.set(msg.id, msg)
+      msg.channelId = this.botPartyTextChannel.id
+      this.botPartyTextChannel.messages.cache.set(msg.id, msg)
    })
   }
 

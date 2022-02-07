@@ -128,8 +128,8 @@ export function mockInteractionWithOptionsAndSpyChannelSend(options) {
   return { interaction, spy }
 }
 
-export async function executeCommandWithMockOptionsAndSpySentMessage(command, content, config = {}) {
-  const { interaction, spy } = mockInteractionWithOptionsAndSpyChannelSend(content)
+export async function executeCommandWithMockOptionsAndSpySentMessage(command, options, config = {}) {
+  const { interaction, spy } = mockInteractionWithOptionsAndSpyChannelSend(options)
   const commandInstance = new command(interaction, {...defaultConfig, ...config})
   await commandInstance.execute()
   return spy
@@ -138,16 +138,16 @@ export async function executeCommandWithMockOptionsAndSpySentMessage(command, co
 /* Spy 'edit' with mock options */
 export function mockMessageWithOptionsAndSpyEdit(options) {
   const discord = new MockDiscord(options)
-  const userMessage = discord.getMessage()
+  const interaction = discord.getInteraction() as CommandInteraction
   const channel = discord.getBotPartyTextChannel()
   const lastMessage = channel.messages.cache.last()
   const spy = jest.spyOn(lastMessage, 'edit') 
-  return { userMessage, spy }
+  return { interaction, spy }
 }
 
 export async function executeCommandWithMockOptionsAndSpyEdit(command, options, config = {}) {
-  const { userMessage, spy } = mockMessageWithOptionsAndSpyEdit(options)
-  const commandInstance = new command(userMessage, {...defaultConfig, ...config})
+  const { interaction, spy } = mockMessageWithOptionsAndSpyEdit(options)
+  const commandInstance = new command(interaction, {...defaultConfig, ...config})
   await commandInstance.execute()
   return spy
 }

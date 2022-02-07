@@ -1,23 +1,19 @@
-import PartyUpdateCommand from '../../src/commands/party/PartyUpdate'
+import PartyUpdateCommand, { getData } from '../../src/commands/party/PartyUpdate'
 import { 
-  executeCommandWithMockOptionsAndSpyEdit,
+  executeCommandWithMockOptionsAndSpyEdit, 
+  embedContainingWithoutFetchReply, 
+  getParsedCommand
 } from '../testutils'
-import askAndWaitForAnswer from '../../src/utils/askAndWaitForAnswer'
-
-jest.mock('../../src/utils/askAndWaitForAnswer', () => jest.fn())
-
-function mockAskAndWaitAnswers(answers: string[]) {
-  answers.forEach(answer => {
-    (askAndWaitForAnswer as jest.Mock).mockResolvedValueOnce(answer)
-  })
-}
 
 describe('PartyUpdateCommand', () => {
+  const commandData = getData('en')
+
   it('updates a party listing with the new title', async () => {
+    const stringCommand = '/party-update id: 2 name: newname'
+    const command = getParsedCommand(stringCommand, commandData)
+
     const mockOptions = {
-      message: {
-        content: '.party create'
-      },
+      command,
       partyChannel: {
         messages: [
           { id: 'existing-party-message-id-0',
@@ -35,9 +31,9 @@ describe('PartyUpdateCommand', () => {
       }
     }
 
-    mockAskAndWaitAnswers(['2', 'name', 'newname'])
+    
     const spy = await executeCommandWithMockOptionsAndSpyEdit(PartyUpdateCommand, mockOptions)
-    expect(spy).toHaveBeenNthCalledWith(1, expect.objectContaining({
+    expect(spy).toHaveBeenNthCalledWith(1, embedContainingWithoutFetchReply({
       title: '<:dungeon:888873201512362035> Party: newname'
     }))
   })
