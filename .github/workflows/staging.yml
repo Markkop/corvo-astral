@@ -2,7 +2,7 @@ name: Build - Test - Deploy (Staging)
 
 on:
   push:
-    branches: [ staging ]
+    branches: [ feat/slash-commands ]
 
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [16.13]
 
     steps:
     - uses: actions/checkout@v2
