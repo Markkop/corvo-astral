@@ -6,7 +6,7 @@ export default {
       es: 'Descubra el bono Almanax para el día actual',
       fr: 'Découvrez le bonus Almanax du jour en cours'
     },
-    examples: ['/alma', '/alma lang=fr']
+    examples: ['/alma', '/alma lang: fr']
   },
   calc: {
     help: {
@@ -52,12 +52,12 @@ Utilice "random" para buscar coincidencias en cualquier orden.`,
 Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.`
     },
     examples: [
-      '/subli by-name name:bruta',
-      '/subli by-name name:bruta translate:fr',
-      '/subli by-name name:talho lang:pt',
-      '/subli by-slots rwb',
-      '/subli by-slots rgbg random=true',
-      '/subli by-slots epic',
+      '/subli by-name name: bruta',
+      '/subli by-name name: bruta translate: fr',
+      '/subli by-name name: talho lang: pt',
+      '/subli by-slots slots: rwb',
+      '/subli by-slots slots: rgbg random:true',
+      '/subli by-slots slots: epic',
     ]
   },
   equip: {
@@ -68,8 +68,8 @@ Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.
       fr: "Recherche par nom d'équipement et / ou rareté"
     },
     examples: [
-      '/equip name:martelo de osamodas lang:pt',
-      '/equip name:the eternal rarity:mythical'
+      '/equip name: martelo de osamodas lang: pt',
+      '/equip name: the eternal rarity: mythical'
     ]
   },
   about: {
@@ -89,8 +89,8 @@ Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.
       fr: "Créez des groupes pour recruter d'autres joueurs pour les donjons et les événements.\nLes joueurs peuvent rejoindre et quitter la fête en réagissant aux emojis de classe"
     },
     examples: [
-      '/party-create name:Boss Smasher',
-      "/party-create name:Ogrest description:If it's your first time, it's okay date:Tomorrow 8PM level:200 slots:3"
+      '/party-create name: Boss Smasher',
+      "/party-create name: Ogrest description: If it's your first time, it's okay date: Tomorrow 8PM level: 200 slots: 3"
     ]
   },
   "party-update": {
@@ -101,7 +101,7 @@ Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.
       fr: "Modifier les détails d'une fiche de groupe dont vous êtes le chef",
     },
     examples: [
-      '/party-update id:20 date:02/04/2020 '
+      '/party-update id: 20 date: 02/04/2020 '
     ]
   },
   recipe: {
@@ -112,10 +112,10 @@ Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.
       fr: 'Voir les recettes.'
     },
     examples: [
-      '/recipe name:brakmar sword',
-      '/recipe name:espada de brakmar lang=pt',
-      '/recipe name:peace pipe rarity=mythical',
-      '/recipe name:o eterno raridade=mítico lang=pt'
+      '/recipe name: brakmar sword',
+      '/recipe name: espada de brakmar lang: pt',
+      '/recipe name: peace pipe rarity: mythical',
+      '/recipe name: o eterno rarity: mítico lang: pt'
     ]
   },
   config: {
@@ -128,9 +128,9 @@ Utilisez "random" pour rechercher des correspondances dans n'importe quel ordre.
     },
     examples: [
       '/config get',
-      '/config set lang=en',
-      '/config set almanax-channel:#temple-bonus',
-      '/config set party-channel:#party-listing',
+      '/config set lang: en',
+      '/config set almanax-channel: #temple-bonus',
+      '/config set party-channel: #party-listing',
     ]
   }
 }
