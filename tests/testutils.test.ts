@@ -1,6 +1,6 @@
 import { getParsedCommand } from "./testutils"
 import { getData as getAboutData } from '../src/commands/About'
-import { getData as getPartyCreateData } from '../src/commands/party/partyCreate'
+import { getData as getPartyCreateData } from '../src/commands/party/PartyCreate'
 
 describe('Test utils', () => {
   it('getParsedCommand parses a command string with sub command as expected', () => {
