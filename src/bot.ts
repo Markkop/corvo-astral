@@ -48,7 +48,7 @@ class Bot {
   }
 
   public listen (): void {
-    this.client.on('message', this.onMessage.bind(this))
+    this.client.on('messageCreate', this.onMessage.bind(this))
     this.client.on('interactionCreate', this.onInteractionCreate.bind(this))
     this.client.on('ready', this.onReady.bind(this))
     this.client.on('messageReactionAdd', this.onMessageReactionAdd.bind(this))
