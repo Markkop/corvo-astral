@@ -1,6 +1,6 @@
 import 'module-alias/register'
 require('dotenv').config()
-import { Client, Interaction, Message, MessageReaction, TextChannel, User, Intents } from 'discord.js'
+import { Client, Interaction, Message, MessageReaction, TextChannel, User, Intents, Guild } from 'discord.js'
 import cron from 'node-cron'
 import { handleInteractionError, handleMessageError, handleReactionError } from './utils/handleError'
 import { ConfigManager, MessageManager } from '@managers'
@@ -53,6 +53,7 @@ class Bot {
     this.client.on('ready', this.onReady.bind(this))
     this.client.on('messageReactionAdd', this.onMessageReactionAdd.bind(this))
     this.client.on('messageReactionRemove', this.onMessageReactionRemove.bind(this))
+    this.client.on('guildCreate', this.onGuildCreate.bind(this))
 
     this.client.login(this.token)
   }
@@ -63,6 +64,12 @@ class Bot {
     this.client.user.setActivity('/about or /help', { type: 'PLAYING' })
     saveServersNumber(servers)
     this.registerCommandsAfterLoadingConfigs()
+  }
+
+  private onGuildCreate (guild: Guild) {
+    const guildConfig = this.configManager.getGuildConfig(guild.id)
+    registerCommands(this.client, guild.id, guildConfig as GuildConfig, guild.name)
+    console.log(`Just joined on ${guild.name} and registered slash commands!`)
   }
 
   private registerCommandsAfterLoadingConfigs() {
