@@ -20,7 +20,7 @@ import {
 import { GuildConfig } from '@types'
 import { saveServersNumber } from '@utils/serversNumber'
 import { registerCommands } from '@utils/registerCommands'
-
+import stringsLang from '@stringsLang'
 
 const commandsMap = {
   equip: EquipCommand,
@@ -48,7 +48,7 @@ class Bot {
   }
 
   public listen (): void {
-    // this.client.on('message', this.onMessage.bind(this))
+    this.client.on('message', this.onMessage.bind(this))
     this.client.on('interactionCreate', this.onInteractionCreate.bind(this))
     this.client.on('ready', this.onReady.bind(this))
     this.client.on('messageReactionAdd', this.onMessageReactionAdd.bind(this))
@@ -76,25 +76,33 @@ class Bot {
     }, 1000)
   }
 
-  // private async onMessage (message: Message) {
-  //   try {
-  //     if (message.author.bot) return
-  //     if (!message.guild) return
+  /**
+   * Temporary onMessage listener which will be removed after April 30th
+   */
+  private async onMessage (message: Message) {
+    try {
+      if (message.author.bot) return
+      if (!message.guild) return
 
-  //     const guildConfig = this.configManager.getGuildConfig(message.guild.id)
-  //     if (!message.content.startsWith(guildConfig.prefix)) return
+      const guildConfig = this.configManager.getGuildConfig(message.guild.id)
+      if (!message.content.startsWith(guildConfig.prefix)) return
 
-  //     const commandWord = MessageManager.getCommandWord(guildConfig.prefix, message)
-  //     const Command = this.getCommand(commandWord)
+      const commandWord = MessageManager.getCommandWord(guildConfig.prefix, message)
+      const Command = this.getCommand(commandWord)
 
-  //     if (!Command) return
+      if (!Command) return
 
-  //     const CommandClass = new Command(message, guildConfig)
-  //     await CommandClass.execute()
-  //   } catch (error) {
-  //     handleMessageError(error, message)
-  //   }
-  // }
+      message.reply({ embeds: [
+        {
+          color: 0xFFFF00,
+          title: ':tools: Slash Commands',
+          description: stringsLang.deprecatedMessageCommand[guildConfig.lang],
+        }
+      ]})
+    } catch (error) {
+      handleMessageError(error, message)
+    }
+  }
 
   private async onInteractionCreate (interaction: Interaction) {
     try {
@@ -169,7 +177,7 @@ class Bot {
 
 export default function initiateBot() {
   const client = new Client({ 
-    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGE_REACTIONS],
+    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.GUILD_MESSAGES],
     partials: ['MESSAGE', 'CHANNEL', 'REACTION']
    })
   const configManager = ConfigManager.getInstance()

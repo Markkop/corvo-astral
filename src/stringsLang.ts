@@ -1,3 +1,5 @@
+import { getDaysUntilShutdown } from "@utils/shutdown"
+
 export default {
   /**
    * Capitalizes a string.
@@ -7,6 +9,36 @@ export default {
    */
   capitalize (str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
+  },
+  deprecatedMessageCommand: {
+    en: `The bot now supports Slash Commands!
+Press "/" to see and use the available commands.
+
+If they're not working for some reason, try removing and adding the bot again to the server using the link available [here](https://github.com/Markkop/corvo-astral).
+
+Also note that without your support, the bot will continue to work for just ${getDaysUntilShutdown()} more days. ⚰️
+See how to contribute at /about `,
+    pt: `Agora o bot tem suporte para Slash Commands!
+Aperte "/" para ver e usar os comandos disponíveis.
+
+Se eles não estiverem funcionando por algum motivo, tente remover e adicionar o bot novamente ao servidor usando o link disponível [aqui](https://github.com/Markkop/corvo-astral).
+
+Note também que sem o seu apoio, o bot continuará funcionando por apenas mais ${getDaysUntilShutdown()} dias. ⚰️
+Veja como contribuir em /about`,
+    es: `¡El bot ahora es compatible con los comandos Slash!
+Pulse "/" para ver y utilizar los comandos disponibles.
+
+Si no funcionan por alguna razón, intente eliminar y agregar el bot nuevamente al servidor utilizando el enlace disponible [aquí](https://github.com/Markkop/corvo-astral).
+
+También tenga en cuenta que sin su apoyo, el bot continuará funcionando solo por ${getDaysUntilShutdown()} días más. ⚰️
+Vea cómo contribuir en /about`,
+    fr: `Le bot prend désormais en charge les commandes Slash!
+Appuyez sur "/" pour voir et utiliser les commandes disponibles.
+
+S'ils ne fonctionnent pas pour une raison quelconque, essayez de supprimer et d'ajouter à nouveau le bot au serveur en utilisant le lien disponible [ici](https://github.com/Markkop/corvo-astral).
+
+Notez également que sans votre soutien, le bot continuera à fonctionner pendant seulement ${getDaysUntilShutdown()} jours supplémentaires. ⚰️
+Découvrez comment contribuer sur /about`
   },
   availableCommands: {
     en: 'Available commands',

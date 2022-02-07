@@ -5,6 +5,7 @@ import { Interaction, MessageEmbed } from 'discord.js'
 import str from '@stringsLang'
 import { SlashCommandBuilder } from '@discordjs/builders'
 import { addLangStringOption } from '@utils/registerCommands'
+import { getDaysUntilShutdown } from '@utils/shutdown'
 const events = require('../../data/almanaxBonuses.json')
 
 export const getData = (lang: string) => {
@@ -42,7 +43,7 @@ class AlmaCommand extends BaseCommand {
     const randomNumber = getRandomIntInclusive(1, 10)
     let extraInfo = ''
     if (randomNumber > 8) {
-      const days = this.getDaysUntilShutdown()
+      const days = getDaysUntilShutdown()
       extraInfo = str.donationExtraMessage(days)[lang]
     }
 
@@ -62,16 +63,6 @@ class AlmaCommand extends BaseCommand {
       const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
       return diffDays % 5 === 0
     })
-  }
-
-  private static getDaysUntilShutdown() {
-    const shutdownDate = new Date('07/31/2022')
-    const diffTime = Number(shutdownDate) - Number(new Date(Date.now()))
-    if (diffTime < 0) {
-      return 0
-    }
-    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
-    return diffDays
   }
 }
 

@@ -7,7 +7,8 @@
 
 Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that provides information about the [Wakfu MMORPG](https://www.wakfu.com/) game.
 
-If you wish to **add this bot** to your server, access this [link](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=1342565456&scope=bot).  
+If you wish to **add this bot** to your server, access this [link](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=139586825280&scope=bot%20applications.commands).  
+
 
 Most features support Wakfu community languages: en, es, pt and fr.  
 
