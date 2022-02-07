@@ -347,6 +347,7 @@ export default class MockDiscord {
   }
 
   private mockInteracion(command): void {
+    if (!command) return
     this.interaction = Reflect.construct(CommandInteraction, [
       this.client,
         {

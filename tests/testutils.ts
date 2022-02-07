@@ -93,7 +93,7 @@ export function embedContainingWithoutFetchReply(content) {
 }
 
 export function fieldContainingValue(expectedValue) {
-  return expect.objectContaining({
+  return embedContainingWithoutFetchReply({
     fields: expect.arrayContaining([expect.objectContaining({
       value: expect.stringContaining(expectedValue)
     })])
