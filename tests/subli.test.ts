@@ -5,7 +5,7 @@ describe('getSublimation', () => {
   const commandData = getData('en')
 
   it('returns a sublimation when finding only one result', async () => {
-    const stringCommand = '/subli brutality'
+    const stringCommand = '/subli by-name name: brutality'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -41,7 +41,7 @@ describe('getSublimation', () => {
   })
 
   it('return a translated subli with "translate" option', async () => {
-    const stringCommand = '/subli frenzy translate: pt'
+    const stringCommand = '/subli by-name name: frenzy translate: pt'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -50,7 +50,7 @@ describe('getSublimation', () => {
   })
 
   it('returns the matching sublimation when using query without accents', async () => {
-    const stringCommand = '/subli influencia lang: pt'
+    const stringCommand = '/subli by-name name: influencia lang: pt'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -59,7 +59,7 @@ describe('getSublimation', () => {
   })
 
   it('returns a sublimation and more results when finding more than one', async () => {
-    const stringCommand = '/subli frenzy'
+    const stringCommand = '/subli by-name name: frenzy'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -95,7 +95,7 @@ describe('getSublimation', () => {
   })
 
   it('returns matching sublimations when searching with three slots', async () => {
-    const stringCommand = '/subli BBR'
+    const stringCommand = '/subli by-slots slots: BBR'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -108,7 +108,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 4,
+          value: "4",
           inline: true
         },
         {
@@ -121,7 +121,7 @@ describe('getSublimation', () => {
   })
 
   it('returns matching sublimations when searching with one white slot', async () => {
-    const stringCommand = '/subli wbr'
+    const stringCommand = '/subli by-slots slots: wbr'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -134,7 +134,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 11,
+          value: "11",
           inline: true
         },
         {
@@ -147,7 +147,7 @@ describe('getSublimation', () => {
   })
 
   it('returns matching sublimations when searching with two white slots', async () => {
-    const stringCommand = '/subli wwr'
+    const stringCommand = '/subli by-slots slots: wwr'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -160,7 +160,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 30,
+          value: "30",
           inline: true
         },
         {
@@ -173,7 +173,7 @@ describe('getSublimation', () => {
   })
 
   it('returns sublimations with "random" argument', async () => {
-    const stringCommand = '/subli rgb random'
+    const stringCommand = '/subli by-slots slots: rgb random: true'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -184,7 +184,7 @@ describe('getSublimation', () => {
           value: '<:red:888856996831449109> <:green:888856997112463421> <:blue:888856996726579271> in any order',
           inline: true
         },
-        { name: 'Results', value: 23, inline: true },
+        { name: 'Results', value: "23", inline: true },
         {
           name: '<:red:888856996831449109> <:green:888856997112463421> <:blue:888856996726579271> (4)',
           value: 'Frenzy, Fury, Sensitivity, Technical Critical',
@@ -220,7 +220,7 @@ describe('getSublimation', () => {
   })
 
   it('returns non-repeated matching sublimations when searching with white slots', async () => {
-    const stringCommand = '/subli wwgw'
+    const stringCommand = '/subli by-slots slots: wwgw'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -233,12 +233,12 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 49,
+          value: "49",
           inline: true
         },
         {
           name: 'Sublimations',
-          value: 'About-Turn, AP Return, Armor Length, Berserk Critical, Berserk Dodge, Carnage, Condemnation, Critical Hit Expert, Destruction, Devastate, Dimensionality, Evasion, Flaming Return, Influence, Lone Wolf, Mania, MP Return, Offensive Block, Poisoned Weapon, Pretension, Raw Power, Secondary Devastation, Stupefaction, Tactical Critical, Visibility, Vital Return, Vitality Well, Wall, Altruism, Berserk Block, Close-Combat Barrier, Counterattack, Cyclothymia, Determination, Distance Barrier, Dodge Steal, Frenzy, Fury, Lock Steal, Neutrality and other 9 results',
+          value: 'About-Turn, AP Return, Armor Length, Berserk Critical, Berserk Dodge, Carnage, Condemnation, Critical Hit Expert, Destruction, Devastate, Dimensionality, Evasion, Flaming Return, Influence, Lone Wolf, Mania, MP Return, Offensive Block, Poisoned Weapon, Pretension, Raw Power, Secondary Devastation, Stupefaction, Tactical Critical, Visibility, Vital Return, Vitality Well, Wall, Altruism, Berserk Block and other 19 results',
           inline: false
         }
       ]
@@ -246,7 +246,7 @@ describe('getSublimation', () => {
   })
 
   it('returns matching sublimations when searching with four slots', async () => {
-    const stringCommand = '/subli rrgb'
+    const stringCommand = '/subli by-slots slots: rrgb'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -259,7 +259,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 8,
+          value: "8",
           inline: true
         },
         {
@@ -272,7 +272,7 @@ describe('getSublimation', () => {
   })
 
   it('returns matching sublimations when searching by 4 slots with the same combinations', async () => {
-    const stringCommand = '/subli gggg'
+    const stringCommand = '/subli by-slots slots: gggg'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -285,7 +285,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 3,
+          value: "3",
           inline: true
         },
         {
@@ -297,8 +297,9 @@ describe('getSublimation', () => {
     }))
   })
 
+  // Removed
   it.skip('returns matching sublimations when searching by source', async () => {
-    const stringCommand = '/subli vertox'
+    const stringCommand = '/subli source: vertox'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -311,7 +312,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 3,
+          value: "3",
           inline: true
         },
         {
@@ -325,7 +326,7 @@ describe('getSublimation', () => {
 
   // TODO: map multi langue arguments
   it('maps correctly an argument', async () => {
-    const stringCommand = '/subli épico'
+    const stringCommand = '/subli by-slots slots: epic'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -338,7 +339,7 @@ describe('getSublimation', () => {
         },
         {
           name: 'Results',
-          value: 18,
+          value: "18",
           inline: true
         },
         {
@@ -351,7 +352,7 @@ describe('getSublimation', () => {
   })
 
   it('replaces wrong query characters when searching by name', async () => {
-    const stringCommand = '/subli frenzy 2'
+    const stringCommand = '/subli by-name name: frenzy 2'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -360,7 +361,7 @@ describe('getSublimation', () => {
   })
 
   it('return a matching sublimation with a recipe', async () => {
-    const stringCommand = '/subli solidity'
+    const stringCommand = '/subli by-name name: solidity'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
@@ -393,7 +394,7 @@ describe('getSublimation', () => {
         {
           inline: true,
           name: 'Level',
-          value: 60
+          value: "60"
         },
         {
           name: 'Ingredients',
@@ -410,7 +411,7 @@ describe('getSublimation', () => {
   })
 
   it('returns a not found message if no sublimation was found', async () => {
-    const stringCommand = '/subli caracas'
+    const stringCommand = '/subli by-name name: caracas'
     const command = getParsedCommand(stringCommand, commandData)
     const spy = await executeCommandAndSpyReply(SubliCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({

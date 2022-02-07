@@ -48,6 +48,16 @@ export default {
     9: '9️⃣'
   },
   rarityMap: {
+    0: {
+      name: {
+        en: 'Old',
+        es: 'Old',
+        fr: 'Old',
+        pt: 'Old'
+      },
+      emoji: '<:common:888866409176772650>',
+      color: 0xBCC0C0
+    },
     1: {
       name: {
         en: 'Unusual',

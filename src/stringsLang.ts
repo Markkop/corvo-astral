@@ -57,10 +57,10 @@ export default {
     fr: "Afficher les sublimations prises en charge par les emplacements dans un ordre aléatoire"
   },
   subliSlotsCommandOptionDescription: {
-    en: 'The combination of the slots with the initials of the colors in English. Example: "rgbw"',
-    pt: 'A combinação dos slots com as iniciais das cores em inglês. Exemplo: "rgbw"',
-    fr: 'La combinaison des slots avec les initiales des couleurs en anglais. Exemple : "rgbw"',
-    es: "La combinación de les emplacements con las iniciales de los colores en inglés. Ejemplo: \"rgbw\""
+    en: 'The combination of the slots with the initials of the colors in English. Ex: "rgbw", "epic", "relic"',
+    pt: 'A combinação dos slots com as iniciais das cores em inglês. Ex: "rgbw", "epic", "relic"',
+    fr: 'La combinaison des slots avec les initiales des couleurs en anglais. Ex: "rgbw", "epic", "relic"',
+    es: `La combinación de les emplacements con las iniciales de los colores en inglés. Ej: "rgbw", "epic", "relic"`
   },
   subliNameCommandOptionDescription: {
     en: 'The name or part of the sublimation name',

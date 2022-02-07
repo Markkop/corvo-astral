@@ -62,7 +62,7 @@ export default class SubliCommand extends FinderCommand {
     const options = {
       query,
       rarityId: rarity && this.getRarityIdByRarityNameInAnyLanguage(rarity),
-      slots,
+      slots: slots && slots.toLowerCase(),
       random,
     }
 
