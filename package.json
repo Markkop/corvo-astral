@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "A Discord Bot that serves as an Wakfu helper",
   "engines": {
-    "node": ">=16.13.2"
+    "node": "16.13.2"
   },
   "main": "dist/bot.js",
   "scripts": {
