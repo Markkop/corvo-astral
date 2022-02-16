@@ -9,7 +9,6 @@ Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that provides informa
 
 If you wish to **add this bot** to your server, access this [link](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=139586825280&scope=bot%20applications.commands).  
 
-
 Most features support Wakfu community languages: en, es, pt and fr.  
 
 If you need help or want to report bugs, feel free to **join the bot's discord**: https://discord.gg/aX6j3gM8HC  
@@ -20,27 +19,27 @@ To keep the bot running, please consider [donating](https://www.buymeacoffee.com
 
 ## Commands
 
-* `.alma`: returns the Almanax Bonus for the current day
-* `.calc`: calculates the damage for an attack given some values
-* `.subli`: search for sublimations by name, slot combination or source
-* `.recipe`: search for recipes by name and rarity
-* `.equip`: search for equipment by name and rarity
-* `.party`: create, update, join or leave a party listing
-* `.about`: get information about this bot
-* `.config`: configure custom settings for each discord channel
-* `.help`: get help for available commands
+* `/alma`: returns the Almanax Bonus for the current day
+* `/calc`: calculates the damage for an attack given some values
+* `/subli`: search for sublimations by name, slot combination or source
+* `/recipe`: search for recipes by name and rarity
+* `/equip`: search for equipment by name and rarity
+* `/party`: create, update, join or leave a party listing
+* `/about`: get information about this bot
+* `/config`: configure custom settings for each discord channel
+* `/help`: get help for available commands
 
 ## Features 
 
 ### ⛅️ Almanax
 
-Find out the current Almanax bonus and optimize your farming with `.alma` command.
+Find out the current Almanax bonus and optimize your farming with `/alma` command.
 
-![image](https://user-images.githubusercontent.com/16388408/134070695-44e76cec-a0af-43e9-af6c-4d4baaf4c98b.png)
+![image](https://user-images.githubusercontent.com/16388408/154340449-c9dda590-95b7-4fb9-9153-c9fa9864d15b.png)
 
 ### 🕰 Daily Almanax Notification
 
-At 00:01 Europe/France Timezone (GMT+2) (server time), the bot will send the `.alma` command to a channel named `almanax` or any other named defined by the `.config` command.  
+At 00:01 Europe/France Timezone (GMT+2) (server time), the bot will send the `/alma` command to a channel named `almanax` or any other named defined by the `/config` command.  
 If you wish to disable this behavior, simply deny permission to this bot on that channel.
 
 ![image](https://user-images.githubusercontent.com/16388408/134070563-2cdc69dd-b25b-4514-b008-b109e2f9df71.png)
@@ -48,60 +47,62 @@ If you wish to disable this behavior, simply deny permission to this bot on that
 
 ### 👥 Party Listing
 
-When using `.party create` command, the bot will guide you through creating a new party list and it'll post it on the cannel defined by the `.config` command (`listagem-de-grupos` by default).  
+When using `/party-create` command, the bot will create a new party list and it'll post it on the channel defined by the `/config` command (`listagem-de-grupos` by default).  
 It'll also listen to reactions so members can join or leave groups.  
 To make use of this feature, make sure that the bot has enough permissions to the configured channel.  
 
 **Examples**:
 ```bash
-.party create
-.party update
+/party-create name: Boss Smasher
+/party-create name: Ogrest description: If it's your first time, it's okay date: Tomorrow 8PM level: 200 slots: 3
 ```
 
-![image](https://user-images.githubusercontent.com/16388408/134071603-3846c4c7-71b6-4c7b-9192-9aa520ef83fe.png)
+![image](https://user-images.githubusercontent.com/16388408/154342000-cf540dfe-6070-41ac-ba86-686261840a3f.png)
 
-![Untitled](https://user-images.githubusercontent.com/16388408/134070343-334c6944-b235-470d-8725-704bf393d27b.gif)
 
 ### 🌎 Internationalization
 
-Most commands accept `lang=<lang>` and `translate=<lang>` options.  
-A server administrator can also set the default language with `.config` command.  
+Most commands accept `lang: <lang>` and `translate: <lang>` options.  
+A server administrator can also set the default language with `/config` command.  
 Available languages are `en`, `es`, `pt` and `fr`.  
 
-![image](https://user-images.githubusercontent.com/16388408/134066602-8c1fd58a-fa9d-46b0-b11b-c09e3ec71aa0.png)
+![image](https://user-images.githubusercontent.com/16388408/154341187-6024bf47-dc89-4bc4-bb7e-339fa9178470.png)
+
+![image](https://user-images.githubusercontent.com/16388408/154341341-aba99e7e-655e-4297-977d-0e69c289de44.png)
 
 ### 🛡 Equipment search
 
-Am equipment search is available with `.equip <name>` command.  
-It's also possible to filter them by rarity with `rarity=<rarity>` option.  
+An equipment search is available with `/equip name: <name>` command.  
+It's also possible to filter them by a rarity option.
 If a recipe is associated, it can be displayed by reacting with 🛠️  
 
 **Examples**:
 ```bash
-.equip martelo de osamodas lang=pt
-.equip brakmar sword translate=fr
-.equip the eternal rarity=mythical
-.equip o eterno raridade=mítico
+/equip name: martelo de osamodas lang: pt
+/equip name: the eternal rarity: mythical
 ```
 
-![image](https://user-images.githubusercontent.com/16388408/134066526-bd20588d-11ab-477c-a538-ad83efdcf792.png)
+![image](https://user-images.githubusercontent.com/16388408/154341493-cc1c14ab-08d9-4e11-8c24-822ffdc03796.png)
+
 
 ### 💎 Sublimation search
 
-The command `.subli` can search by sublimation name, type and slots combination.  
-When searching by slots combionation, it's possible to match with white slots and/or by random ordering.  
+The command `/subli` can search by sublimation name, type, rarity and slots combination.  
+When searching by slots combination, it's possible to match with white slots and/or by random ordering.  
 
 **Examples**:
 ```bash
-.subli bruta
-.subli bruta translate=fr
-.subli talho lang=pt
-.subli rwb
-.subli rgbg random
-.subli epic
+/subli by-name name: bruta
+/subli by-name name: bruta translate: fr
+/subli by-name name: talho lang: pt
+/subli by-slots slots: rwb
+/subli by-slots slots: rgbg random: true
+/subli by-slots slots: epic
 ```
 
-![image](https://user-images.githubusercontent.com/16388408/134066388-d3fdf726-001c-4b68-b759-1532693d2866.png)
+![image](https://user-images.githubusercontent.com/16388408/154341613-61243e6b-881f-43a9-8c01-2e286cab88cd.png)
+
+![image](https://user-images.githubusercontent.com/16388408/154341679-f6e10cec-86e1-44ff-aa02-d185248b53b3.png)
 
 ### 📜 Recipe search
 
@@ -110,12 +111,13 @@ Recipes with same results are shown together.
 
 **Examples**:
 ```bash
-.recipe brakmar sword
-.recipe espada de brakmar lang=pt
-.recipe peace pipe rarity=mythical
+/recipe name: brakmar sword
+/recipe name: espada de brakmar lang: pt
+/recipe name: peace pipe rarity: mythical
+/recipe name: o eterno rarity: mítico lang: pt
 ```
 
-![image](https://user-images.githubusercontent.com/16388408/134066195-1496574c-d92e-4ea3-929c-bbcbc7395e25.png)
+![image](https://user-images.githubusercontent.com/16388408/154341785-576b84f0-2c0e-4914-937b-fd3d407492f8.png)
 
 ### 🥊 Damage Calculator
 
@@ -124,11 +126,12 @@ Maybe in the future we can add new options to it.
 
 Examples:
 ```bash
-.calc dmg=3000 base=55 res=60%
-.calc dmg=5000 base=40 res=420 crit=30%
+/calc dmg:3000 base:55 res:60%
+/calc dmg:5000 base:40 res:420 crit:30%
 ```
 
-![](http://i.imgur.com/acjj1cJ.png)
+![image](https://user-images.githubusercontent.com/16388408/154341868-1fa0be2d-a945-4e76-a8d6-8afc09a8d63d.png)
+
 
 ### 👷 Builder Integration
 
@@ -144,20 +147,17 @@ You can disable this behavior by using `.config set buildPreview=disabled`
 Some bot options can be configurable according to each server using `.config`.  
 **Options**:
 * lang: default bot language between fr, en, es and pt (default: en)
-* prefix: character to call commands (default: .) _(not available yet)_
 * almanaxChannel: channel to receive the `.alma` command daily (default: almanax)
 * partyChannel: channel to receive the `.party` command (default: listagem-de-grupos)
 * buildPreview: `enabled` (default) or `disabled` to show a build printscreen and other info
 
 **Examples**:
 ```bash
-.config set lang=en
-.config set almanaxChannel=temple-bonus
-.config set partyChannel=party-listing
-.config set buildPreview=disabled
-.config get
+/config get
+/config set lang: en
+/config set almanax-channel: #temple-bonus
+/config set party-channel: #party-listing
 ```
-
 
 ## Disabled Features
 
@@ -165,20 +165,20 @@ The following features are currently disabled due to external limitations, such 
 
 ### 🌌 Krosmoz Almanax
 
-Inspired by [wakmanax](https://github.com/elio-centrique/wakmanax), the `.alma` command used to scrap [Krosmoz Almanax](http://www.krosmoz.com/en/almanax) page and returned tons of cool stuff such as Protector of the Day, Zodiac, Trivia, Event and Forecast.  
+Inspired by [wakmanax](https://github.com/elio-centrique/wakmanax), the `/alma` command used to scrap [Krosmoz Almanax](http://www.krosmoz.com/en/almanax) page and returned tons of cool stuff such as Protector of the Day, Zodiac, Trivia, Event and Forecast.  
   
 ![](https://i.imgur.com/BVOqE2p.gif)
 
 ### 🐲 Monster search
 
-When Wakfu's web scrapping was working, we could search for monsters by typing `.mob ogrest`, for example  
+When Wakfu's web scrapping was working, we could search for monsters by typing `/mob name: ogrest`, for example  
 It would show their characteristics, damage, resistances, drops and spells.  
 
 ![papatudoMob](https://user-images.githubusercontent.com/16388408/101432541-ce9e1700-38e7-11eb-8214-3a048596d944.gif)
 
 ## 🚧 Roadmap
 
-- Slash commands
+- Slash commands ✅
 - Almanax Bonus Forecast
 - Zenith Build Preview
 - Sublimation Custom Drop Information
