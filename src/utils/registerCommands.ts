@@ -71,7 +71,6 @@ export async function registerCommands(
       { body: commandData }
     );
 
-    console.log("Slash commands registered!");
   } catch (error) {
     if (error.rawError?.code === 50001) {
       console.log(`Missing Access on server "${guildName}"`)
