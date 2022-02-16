@@ -1,24 +1,35 @@
 import { BaseCommand } from '@baseCommands'
-import { MessageManager } from '@managers'
 import stringsLang from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
 import { openFile } from '@utils/files'
-import { Message } from 'discord.js'
+import { Interaction } from 'discord.js'
+import { SlashCommandBuilder } from '@discordjs/builders'
+import { addLangStringOption } from '@utils/registerCommands'
+
+export const getData = (lang: string) => {
+  const builder = new SlashCommandBuilder()
+  builder
+    .setName('about')
+    .setDescription(stringsLang.aboutCommandDescription[lang])
+  addLangStringOption(builder, lang)
+  return builder
+}
 
 export default class AboutCommand extends BaseCommand {
-  constructor (message: Message, guildConfig: GuildConfig) {
-    super(message, guildConfig)
+  constructor (interaction: Interaction, guildConfig: GuildConfig) {
+    super(interaction, guildConfig)
   }
 
   public execute (): void {
-    const { options } = MessageManager.getArgumentsAndOptions(this.message)
+    if (!this.interaction.isCommand()) return
+    const lang = this.interaction.options.getString('lang')
 
-    if (options.lang) {
-      this.changeLang(options.lang)
+    if (lang) {
+      this.changeLang(lang)
     }
 
     const embed = this.mountAboutEmbed()
-    this.send({ embed })
+    this.send({ embeds: [embed] })
   }
 
   private mountAboutEmbed (): PartialEmbed {

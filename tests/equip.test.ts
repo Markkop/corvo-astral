@@ -1,10 +1,13 @@
-import EquipCommand from '../src/commands/Equip'
-import helpMessages from '../src/utils/helpMessages'
-import { executeCommandAndSpySentMessage, embedContaining } from './testutils'
+import EquipCommand, { getData } from '../src/commands/Equip'
+import { executeCommandAndSpyReply, embedContaining, getParsedCommand } from './testutils'
 
 describe('EquipmentCommand', () => {
+  const commandData = getData('en')
+
   it('return a matching equipment by name', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip tentacled belt')
+    const stringCommand = '/equip name: tentacled belt lang: en'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       url: 'https://www.wakfu.com/en/mmorpg/encyclopedia/armors/27645',
       color: 0xfede71,
@@ -16,7 +19,7 @@ describe('EquipmentCommand', () => {
       fields: [
         {
           name: 'Level',
-          value: 215,
+          value: "215",
           inline: true
         },
         {
@@ -43,7 +46,9 @@ describe('EquipmentCommand', () => {
   })
 
   it('return a matching equipment by name with higher rarity by default', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip the eternal')
+    const stringCommand = '/equip name: the eternal'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       fields: expect.arrayContaining([{
         name: 'Rarity',
@@ -54,28 +59,36 @@ describe('EquipmentCommand', () => {
   })
 
   it('return a translated equip with "translate" option', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip peace pipe translate=pt')
+    const stringCommand = '/equip name: peace pipe translate: pt'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: '<:legendary:888866409382314085> Cachimbo Dapais'
     }))
   })
 
   it('return the matching equipment when using query without accents', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip lemico lang=pt')
+    const stringCommand = '/equip name: lemico lang: pt'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       title: '<:legendary:888866409382314085> Chapéu Lêmico'
     }))
   })
 
   it('return the matching equipment when using query with accents', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip lêmico lang=pt')
+    const stringCommand = '/equip name: lêmico lang: pt'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       title: '<:legendary:888866409382314085> Chapéu Lêmico'
     }))
   })
 
   it('return a matching equipment by name and rarity with rarity argument is provided', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip the eternal rarity=mythical')
+    const stringCommand = '/equip name: the eternal rarity: mythical'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       fields: expect.arrayContaining([{
         name: 'Rarity',
@@ -86,7 +99,9 @@ describe('EquipmentCommand', () => {
   })
 
   it('return a matching equipment by name and rarity with rarity argument is provided on another language', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip o eterno raridade=mítico lang=pt')
+    const stringCommand = '/equip name: o eterno rarity: mítico lang: pt'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       title: '<:mythic:888866409734627348> O Eterno',
       fields: expect.arrayContaining([{
@@ -98,7 +113,9 @@ describe('EquipmentCommand', () => {
   })
 
   it('return a matching equipment by name and rarity with rarity argument with mixed languages', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip o eterno raridade=mythical lang=pt')
+    const stringCommand = '/equip name: o eterno rarity: mythical lang: pt'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       title: '<:mythic:888866409734627348> O Eterno',
       fields: expect.arrayContaining([{
@@ -110,7 +127,9 @@ describe('EquipmentCommand', () => {
   })
 
   it.skip('return the condition if the resulting equipment has one', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip amakna sword')
+    const stringCommand = '/equip name: amakna sword'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       fields: expect.arrayContaining([{
         name: 'Conditions',
@@ -121,7 +140,9 @@ describe('EquipmentCommand', () => {
   })
 
   it('return the useEffect description if the resulting equipment has one', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip Toothpick')
+    const stringCommand = '/equip name: Toothpick'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       fields: expect.arrayContaining([{
         name: 'In use',
@@ -132,10 +153,12 @@ describe('EquipmentCommand', () => {
   })
 
   it('does not return the effects for an equipment that does not have one ', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip brakmar ring')
+    const stringCommand = '/equip name: brakmar ring'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       fields: [
-        { inline: true, name: 'Level', value: 200 },
+        { inline: true, name: 'Level', value: "200" },
         { inline: true, name: 'Type', value: 'Ring' },
         { inline: true, name: 'Rarity', value: 'Epic' },
       ]
@@ -143,7 +166,9 @@ describe('EquipmentCommand', () => {
   })
 
   it('return a footer with more equipment found if results are more than one', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip amakna')
+    const stringCommand = '/equip name: amakna'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       footer: {
         text: 'Equipment found: Amakna Ring (Epic), Amakna Sword (Relic), Captain Amakna Shield (Relic), Amakna Riktus Boots (Mythical), Amakna Riktus Epaulettes (Mythical), Amakna Riktus Mask (Mythical), Amakna Riktus Breastplate (Mythical), Amakna Riktus Boots (Rare), Amakna Riktus Epaulettes (Rare)'
@@ -152,7 +177,9 @@ describe('EquipmentCommand', () => {
   })
 
   it('return a footer with truncated results if there are too many', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip a')
+    const stringCommand = '/equip name: a'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       footer: {
         text: "Equipment found: Dazzling Belt (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Hazieff's Helmet (Epic), Wa Wabbit's Cwown (Epic), Genetically Modified Epaulettes (Epic), Claymore of Fhenris (Epic), Bax Stab Ax (Epic), Claymus Shushu (Epic), Emiwlet Amulet (Epic), Lenald Walm Pelt (Epic), Vizion Dagger (Epic), Trool Warrior Spikes (Epic), Sanefty Belt (Epic), Happy Sram Kimono (Epic), Durable Shield (Epic), Limited Edition Cape (Epic), Dora Lagoole (Epic), Welder Mask (Epic), Viktorious Rapier (Epic) and other 5064 results"
@@ -161,20 +188,13 @@ describe('EquipmentCommand', () => {
   })
 
   it('return a not found message if no equip was found', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip asdasdasd')
+    const stringCommand = '/equip name: asdasdasd'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       color: 0xbb1327,
       description: 'Type `.help equip` to see some examples of how to search.',
       title: ':x: No results'
-    }))
-  })
-
-
-
-  it('return a help message if no query was provided', async () => {
-    const spy = await executeCommandAndSpySentMessage(EquipCommand, '.equip')
-    expect(spy).toHaveBeenLastCalledWith(embedContaining({
-      description: helpMessages.equip.help.en
     }))
   })
 })

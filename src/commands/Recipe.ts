@@ -1,42 +1,57 @@
 import { FinderCommand } from '@baseCommands'
-import { ItemManager, RecipesManager, MessageManager } from '@managers'
-import { mountUrl } from '@utils/mountUrl'
+import { ItemManager, RecipesManager } from '@managers'
 import str from '@stringsLang'
 import { GuildConfig, PartialEmbed, RecipeItemData } from '@types'
-import { Message } from 'discord.js'
+import { Interaction, Message } from 'discord.js'
 import mappings from '@utils/mappings'
 const { rarityMap, jobsMap, itemEmojis } = mappings
+import { SlashCommandBuilder } from '@discordjs/builders'
+import { addLangAndTranslateStringOptions, addStringOptionWithRarityChoices } from '@utils/registerCommands'
+
+export const getData = (lang: string) => {
+  const builder = new SlashCommandBuilder()
+  builder
+    .setName('recipe')
+    .setDescription(str.recipeCommandDescription[lang])
+    .addStringOption(option => option.setName('name').setDescription(str.recipeNameCommandOptionDescription[lang]).setRequired(true))
+  addStringOptionWithRarityChoices(builder, 'rarity', str.recipeRarityCommandOptionDescription[lang], lang)
+  addLangAndTranslateStringOptions(builder, lang)
+  return builder
+}
 
 export default class RecipeCommand extends FinderCommand {
-  constructor (message: Message, guildConfig: GuildConfig) {
-    super(message, guildConfig)
+  constructor (interaction: Interaction, guildConfig: GuildConfig) {
+    super(interaction, guildConfig)
   }
 
   public async execute (): Promise<void> {
-    const { args, options } = MessageManager.getArgumentsAndOptions(this.message)
-    const query = args.join(' ').toLowerCase()
+    if (!this.interaction.isCommand()) return
+    const lang = this.interaction.options.getString('lang')
+    const translate = this.interaction.options.getString('translate')
+    const rarity = this.interaction.options.getString('rarity')
 
-    if (!query) {
-      this.sendHelp()
-      return
+    if (lang) {
+      this.changeLang(lang)
     }
 
-    if (options.lang) {
-      this.changeLang(options.lang)
+    const name = this.interaction.options.getString('name')
+
+    const options = {
+      rarityId: rarity && this.getRarityIdByRarityNameInAnyLanguage(rarity)
     }
 
-    const results = RecipesManager.findRecipeByName(query, options, this.lang)
+    const results = RecipesManager.findRecipeByName(name, options, this.lang)
     if (!results.length) {
       this.returnNotFound()
       return
     }
 
-    if (options.translate) {
-      this.changeLang(options.translate)
+    if (translate) {
+      this.changeLang(translate)
     }
 
     const recipeEmbed = this.mountRecipeEmbed(results)
-    this.send({ embed: recipeEmbed })
+    this.send({ embeds: [recipeEmbed] })
   }
 
   private mountRecipeEmbed (results: RecipeItemData[]): PartialEmbed {

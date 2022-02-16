@@ -1,14 +1,14 @@
 import { BaseCommand } from '@baseCommands'
-import { Message, MessageEmbed, TextChannel } from 'discord.js'
+import { Interaction, MessageEmbed, TextChannel, Message } from 'discord.js'
 import { GuildConfig } from '@types'
 
 export default class PartyCommand extends BaseCommand {
-  constructor (message: Message, guildConfig: GuildConfig) {
-    super(message, guildConfig)
+  constructor (interaction: Interaction, guildConfig: GuildConfig) {
+    super(interaction, guildConfig)
   }
 
   protected getPartyChannel () {
-    return this.message.guild.channels.cache.find(channel => {
+    return this.interaction.guild.channels.cache.find(channel => {
       return channel.name.includes(this.guildConfig.partyChannel)
     })
   }

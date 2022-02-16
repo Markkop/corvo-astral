@@ -3,6 +3,7 @@ import { DatabaseManager } from '@managers'
 
 class ConfigManager {
   private static instance: ConfigManager;
+  public hasLoadedConfigs = false
 
   private guildsConfig: GuildConfig[] = []
   private static defaultGuildConfig: DefaultGuildConfig = {
@@ -60,6 +61,8 @@ class ConfigManager {
   private async loadGuildsConfig () {
     const databaseManager = DatabaseManager.getInstance()
     this.guildsConfig = await databaseManager.getAllGuildsConfigs()
+    this.hasLoadedConfigs = true
+    console.log('Guild Configs loaded!')
   }
 }
 

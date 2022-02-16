@@ -1,66 +1,107 @@
 import { FinderCommand } from '@baseCommands'
-import { ItemManager, RecipesManager, MessageManager } from '@managers'
+import { ItemManager, RecipesManager } from '@managers'
 import { mountUrl } from '@utils/mountUrl'
 import mappings from '@utils/mappings'
 import str from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
-import { Message } from 'discord.js'
+import { Interaction } from 'discord.js'
+import { SlashCommandBuilder } from '@discordjs/builders'
+import { addLangAndTranslateStringOptions, addStringOptionWithRarityChoices } from '@utils/registerCommands'
+
 const { rarityMap } = mappings
 
+export const getData = (lang: string) => new SlashCommandBuilder()
+  .setName('subli')
+  .setDescription(str.subliCommandDescription[lang])
+  .addSubcommand(subcommand => {
+    subcommand
+      .setName('by-name')
+      .setDescription(str.byNameSubliConfigCommandDescription[lang])
+      .addStringOption(option => option.setName('name').setDescription(str.subliNameCommandOptionDescription[lang]).setRequired(true))
+    addStringOptionWithRarityChoices(subcommand, 'rarity', str.subliRarityCommandOptionDescription[lang], lang, ItemManager.getSublimationRarityIds())
+    addLangAndTranslateStringOptions(subcommand, lang)
+    return subcommand
+  })
+  .addSubcommand(subcommand => {
+    subcommand
+      .setName('by-slots')
+      .setDescription(str.bySlotsSubliConfigCommandDescription[lang])
+      .addStringOption(option => option.setName('slots').setDescription(str.subliSlotsCommandOptionDescription[lang]).setRequired(true))
+      .addBooleanOption(option => option.setName('random').setDescription(str.subliRandomCommandOptionDescription[lang]))
+    addLangAndTranslateStringOptions(subcommand, lang)
+    return subcommand
+  })
+  
+
 export default class SubliCommand extends FinderCommand {
-  constructor (message: Message, guildConfig: GuildConfig) {
-    super(message, guildConfig)
+  constructor (interaction: Interaction, guildConfig: GuildConfig) {
+    super(interaction, guildConfig)
   }
 
   public async execute (): Promise<void> {
-    const anyOrderArgument = 'random'
-    const { args, options } = MessageManager.getArgumentsAndOptions(this.message)
+    if (!this.interaction.isCommand()) return
+    const lang = this.interaction.options.getString('lang')
+    const translate = this.interaction.options.getString('translate')
+    const slots = this.interaction.options.getString('slots')
+    const random = this.interaction.options.getBoolean('random')
+    const rarity = this.interaction.options.getString('rarity')
 
-    if (options.lang) {
-      this.changeLang(options.lang)
+    if (lang) {
+      this.changeLang(lang)
     }
 
-    const hasAnyOrderArgument = args.includes(anyOrderArgument)
-    if (hasAnyOrderArgument) {
-      const anyOrderIndex = args.indexOf(anyOrderArgument)
-      args.splice(anyOrderIndex, 1)
+    const name = this.interaction.options.getString('name')
+    let query = ''
+    if (name) {
+      const normalizedQuery = name && name.toLowerCase()
+      const equivalentQuery = this.findEquivalentQuery(normalizedQuery)
+      query = equivalentQuery || normalizedQuery
     }
 
-    const normalizedQuery = args.join(' ').toLowerCase()
-    const equivalentQuery = this.findEquivalentQuery(normalizedQuery)
-    if (!normalizedQuery) {
-      this.sendHelp()
-      return
+
+    const options = {
+      query,
+      rarityId: rarity && this.getRarityIdByRarityNameInAnyLanguage(rarity),
+      slots: slots && slots.toLowerCase(),
+      random,
     }
 
-    const query = equivalentQuery || normalizedQuery
-    const { results, foundBy } = ItemManager.getSublimations(query, options, hasAnyOrderArgument, this.lang)
+    const { results, foundBy } = ItemManager.getSublimations(options, this.lang)
     if (!results.length) {
       this.returnNotFound()
       return
     }
 
-    if (options.translate) {
-      this.changeLang(options.translate)
+    if (translate) {
+      this.changeLang(translate)
     }
 
-    const isEpicOrRelic = /epic|relic/.test(query)
-    const queriedSlotsText = foundBy === 'slots' && !isEpicOrRelic ? this.parseSlotsToEmojis(query) : query
+    const isEpicOrRelic = /epic|relic/.test(options.slots)
+    const queriedSlotsText = foundBy === 'slots' && !isEpicOrRelic ? this.parseSlotsToEmojis(options.slots) : options.slots
   
     if (foundBy === 'permutatedSlots') {
-      const permutatedSublimationFoundEmbed = this.mountPermutatedSublimationFoundEmbed(results, queriedSlotsText, this.lang)
-      this.send({ embed: permutatedSublimationFoundEmbed })
+      let maxTruncation = 30
+      let permutatedSublimationFoundEmbed = this.mountPermutatedSublimationFoundEmbed(results, queriedSlotsText, this.lang, maxTruncation)
+      let embedLength = JSON.stringify(permutatedSublimationFoundEmbed).length
+
+      while (embedLength > 6000) {
+        maxTruncation -= 1
+        permutatedSublimationFoundEmbed = this.mountPermutatedSublimationFoundEmbed(results, queriedSlotsText, this.lang, maxTruncation)
+        embedLength = JSON.stringify(permutatedSublimationFoundEmbed).length
+      }
+    
+      this.send({ embeds: [permutatedSublimationFoundEmbed] })
       return
     }
 
     if (foundBy === 'name') {
       const sublimationFoundEmbed = this.mountSublimationFoundEmbed(results, this.lang)
-      this.send({ embed: sublimationFoundEmbed })
+      this.send({ embeds: [sublimationFoundEmbed] })
       return
     }
   
     const sublimationsFoundListEmbed = this.mountSublimationsFoundListEmbed(results, queriedSlotsText, this.lang)
-    this.send({ embed: sublimationsFoundListEmbed })
+    this.send({ embeds: [sublimationsFoundListEmbed] })
     return
   }
 
@@ -125,7 +166,7 @@ export default class SubliCommand extends FinderCommand {
     const hasFoundMoreThanOne = results.length > 1
     if (hasFoundMoreThanOne) {
       sublimationEmbed.footer = {
-        text: `${str.capitalize(str.sublimationsFound[lang])}: ${this.getTruncatedResults(results, 40)}`
+        text: `${str.capitalize(str.sublimationsFound[lang])}: ${this.getTruncatedResults(results, 30)}`
       }
     }
     return sublimationEmbed
@@ -142,19 +183,19 @@ export default class SubliCommand extends FinderCommand {
         },
         {
           name: str.capitalize(str.results[lang]),
-          value: results.length,
+          value: String(results.length),
           inline: true
         },
         {
           name: str.capitalize(str.sublimations[lang]),
-          value: this.getTruncatedResults(results, 40),
+          value: this.getTruncatedResults(results, 30),
           inline: false
         }
       ]
     }
   }
 
-  private mountPermutatedSublimationFoundEmbed (results, queriedSlotsText, lang): PartialEmbed {
+  private mountPermutatedSublimationFoundEmbed (results, queriedSlotsText, lang, maxTruncation): PartialEmbed {
     const totalResults = results.reduce((totalResults, permutatedResult) => {
       return totalResults + permutatedResult.results.length
     }, 0)
@@ -168,14 +209,14 @@ export default class SubliCommand extends FinderCommand {
         },
         {
           name: str.capitalize(str.results[lang]),
-          value: totalResults,
+          value: String(totalResults),
           inline: true
         }
       ]
     }
     results.forEach(permutatedResult => {
       const slotsAsEmojis = this.parseSlotsToEmojis(permutatedResult.slots)
-      const namedResults = this.getTruncatedResults(permutatedResult.results, 10)
+      const namedResults = this.getTruncatedResults(permutatedResult.results, maxTruncation)
       const resultsLength = permutatedResult.results.length
       embed.fields.push({
         name: `${slotsAsEmojis} (${resultsLength})`,
@@ -183,6 +224,7 @@ export default class SubliCommand extends FinderCommand {
         inline: false
       })
     })
+
     return embed
   }
 

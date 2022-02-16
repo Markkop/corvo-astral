@@ -1,10 +1,13 @@
-import RecipeCommand from '../src/commands/Recipe'
-import helpMessages from '../src/utils/helpMessages'
-import { executeCommandAndSpySentMessage, embedContaining } from './testutils'
+import RecipeCommand, { getData } from '../src/commands/Recipe'
+import { executeCommandAndSpyReply, embedContaining, getParsedCommand } from './testutils'
 
 describe('RecipeCommand', () => {
+  const commandData = getData('en')
+
   it('replies a matching recipe by name', async () => {
-    const spy = await executeCommandAndSpySentMessage(RecipeCommand, '.recipe kaw breastplate')
+    const stringCommand = '/recipe name: kaw breastplate'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(RecipeCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       color: 0xfede71,
       title: '<:legendary:888866409382314085> Recipe: Kaw Breastplate',
@@ -17,7 +20,7 @@ describe('RecipeCommand', () => {
         },
         {
           name: 'Level',
-          value: 80,
+          value: '80',
           inline: true
         },
         {
@@ -36,14 +39,18 @@ describe('RecipeCommand', () => {
   })
 
   it('replies a translated recipe with "translate" option', async () => {
-    const spy = await executeCommandAndSpySentMessage(RecipeCommand, '.recipe peace pipe translate=pt')
+    const stringCommand = '/recipe name: peace pipe translate: pt'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(RecipeCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: '<:legendary:888866409382314085> Receita: Cachimbo Dapais'
     }))
   })
 
   it('replies a matching recipe by name and rarity', async () => {
-    const spy = await executeCommandAndSpySentMessage(RecipeCommand, '.recipe peace pipe rarity=mythical')
+    const stringCommand = '/recipe name: peace pipe rarity: mythical'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(RecipeCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       color: 0xfd8e39,
       title: '<:mythic:888866409734627348> Recipe: Peace Pipe',
@@ -56,7 +63,7 @@ describe('RecipeCommand', () => {
         },
         {
           name: 'Level',
-          value: 128,
+          value: '128',
           inline: true
         },
         {
@@ -76,7 +83,9 @@ describe('RecipeCommand', () => {
   })
 
   it('replies a matching recipe and more matching results on footer', async () => {
-    const spy = await executeCommandAndSpySentMessage(RecipeCommand, '.recipe amakna')
+    const stringCommand = '/recipe name: amakna'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(RecipeCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       footer: {
         text: 'Recipes found: Amakna Sword (Relic), Amakna Riktus Epaulettes (Mythical), Amakna Riktus Boots (Mythical), Amakna Root Beer, Amakna Riktus Epaulettes, Amakna Riktus Boots, Amakna Bench, Amakna Throne'
@@ -85,7 +94,9 @@ describe('RecipeCommand', () => {
   })
 
   it('replies a matching recipe and a truncated more results on footer', async () => {
-    const spy = await executeCommandAndSpySentMessage(RecipeCommand, '.recipe sword')
+    const stringCommand = '/recipe name: sword'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(RecipeCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       footer: {
         text: "Recipes found: Sufokia Sword (Relic), Bonta Sword (Relic), Brakmar Sword (Relic), Eternal Sword (Relic), Tot's Great Big Sword  (Legendary), Whirly Sword (Legendary), Homely Sword (Legendary), Cease Sword (Legendary), Millennium Sword (Legendary), Steel Beak Sword (Legendary), Relay Kamasword (Legendary), Sworden (Legendary), Infected Cawwot Sword (Legendary), The Spin Ache Sword (Legendary), Black Crow's Sword  (Legendary), Sword of Iop (Legendary), Emerasword (Legendary), Elite Riktus Sword (Legendary), Good Eye Sword (Legendary), Bad Aboum's Sword (Legendary) and other 51 results"
@@ -94,7 +105,9 @@ describe('RecipeCommand', () => {
   })
 
   it('replies a merged recipe when there are more recipes for the same result', async () => {
-    const spy = await executeCommandAndSpySentMessage(RecipeCommand, '.recipe eternal leather')
+    const stringCommand = '/recipe name: eternal leather'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(RecipeCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       color: 0xBCC0C0,
       title: 'Recipe: Eternal Leather',
@@ -107,7 +120,7 @@ describe('RecipeCommand', () => {
         },
         {
           name: 'Level',
-          value: 120,
+          value: '120',
           inline: true
         },
         {
@@ -135,18 +148,13 @@ describe('RecipeCommand', () => {
   })
 
   it('replies a not found message if no recipe has been found', async () => {
-    const spy = await executeCommandAndSpySentMessage(RecipeCommand, '.recipe asdasd')
+    const stringCommand = '/recipe name: asdasd'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(RecipeCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       color: 0xbb1327,
       description: 'Type `.help recipe` to see some examples of how to search.',
       title: ':x: No results'
-    }))
-  })
-
-  it('replies a help message if no query was provided', async () => {
-    const spy = await executeCommandAndSpySentMessage(RecipeCommand, '.recipe')
-    expect(spy).toHaveBeenCalledWith(embedContaining({
-      description: helpMessages.recipe.help.en
     }))
   })
 })

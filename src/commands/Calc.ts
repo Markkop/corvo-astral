@@ -1,8 +1,9 @@
 import { BaseCommand } from '@baseCommands'
-import { MessageManager } from '@managers'
 import str from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
-import { Message } from 'discord.js'
+import { Interaction } from 'discord.js'
+import { SlashCommandBuilder } from '@discordjs/builders'
+import { addLangAndTranslateStringOptions } from '@utils/registerCommands'
 
 type CalculatedValues = {
   damage: number
@@ -16,33 +17,53 @@ type CalculatedValues = {
   backstabDamage: number
 }
 
+export const getData = (lang: string) => {
+  const builder = new SlashCommandBuilder()
+  builder
+    .setName('calc')
+    .setDescription(str.calcCommandDescription[lang])
+    .addNumberOption(option => option.setName('dmg').setDescription(str.calcCommandDmgOptionDescription[lang]).setRequired(true))
+    .addNumberOption(option => option.setName('base').setDescription(str.calcCommandBaseOptionDescription[lang]).setRequired(true))
+    .addStringOption(option => option.setName('res').setDescription(str.calcCommandResOptionDescription[lang]).setRequired(true))
+    .addStringOption(option => option.setName('crit').setDescription(str.calcCommandCritOptionDescription[lang]))
+  addLangAndTranslateStringOptions(builder, lang)
+  return builder
+}
+
 export default class CalcCommand extends BaseCommand {
-  constructor (message: Message, guildConfig: GuildConfig) {
-    super(message, guildConfig)
+  static data: SlashCommandBuilder
+  
+  constructor (interaction: Interaction, guildConfig: GuildConfig) {
+    super(interaction, guildConfig)
   }
 
   public execute (): void {
-    const { args, options } = MessageManager.getArgumentsAndOptions(this.message)
-    const requiredArgs = ['dmg', 'base', 'res']
-    const hasRequiredArgs = requiredArgs.every(requiredArg => Boolean(options[requiredArg]))
-    if (!hasRequiredArgs) {
-      this.sendHelp()
-      return
+    if (!this.interaction.isCommand()) return
+    const lang = this.interaction.options.getString('lang')
+
+    if (lang) {
+      this.changeLang(lang)
     }
 
-    if (options.lang) {
-      this.changeLang(options.lang)
+    const dmg = this.interaction.options.getNumber('dmg')
+    const base = this.interaction.options.getNumber('base')
+    const res = this.interaction.options.getString('res')
+    const crit = this.interaction.options.getString('crit')
+    const calculatedValues = this.calculateDamage({ 
+      dmg: String(dmg), 
+      base: String(base),
+      res: String(res),
+      crit: crit || ''
+    })
+
+    const translate = this.interaction.options.getString('translate')
+    if (translate) {
+      this.changeLang(translate)
     }
 
-    const calculatedValues = this.calculateDamage(options)
-
-    if (options.translate) {
-      this.changeLang(options.translate)
-    }
-
-    const author = this.message.author.username
+    const author = this.interaction.user.username
     const calcEmbed = this.mountCalcEmbed(author, calculatedValues)
-    this.send({ embed: calcEmbed })
+    this.send({ embeds: [calcEmbed] })
   }
 
   private calculateDamage(options: Record<string, string>) {

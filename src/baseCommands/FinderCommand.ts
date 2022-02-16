@@ -1,13 +1,13 @@
 import { BaseCommand } from '@baseCommands'
 import str from '@stringsLang'
-import { Message } from 'discord.js'
+import { Interaction } from 'discord.js'
 import { GuildConfig, PartialEmbed } from '@types'
 import mappings from '@utils/mappings'
 const { iconCodeMap, rarityMap } = mappings
 
 export default class FinderCommand extends BaseCommand {
-  constructor (message: Message, guildConfig: GuildConfig) {
-    super(message, guildConfig)
+  constructor (interaction: Interaction, guildConfig: GuildConfig) {
+    super(interaction, guildConfig)
   }
 
   private mountNotFoundEmbed (lang: string): PartialEmbed {
@@ -20,7 +20,7 @@ export default class FinderCommand extends BaseCommand {
 
   protected returnNotFound () {
     const notFoundEmbed = this.mountNotFoundEmbed(this.lang)
-    return this.send({ embed: notFoundEmbed })
+    return this.send({ embeds: [notFoundEmbed] })
   }
 
   protected parseIconCodeToEmoji (text: string) {
@@ -42,5 +42,12 @@ export default class FinderCommand extends BaseCommand {
       const rarityText = showRarity ? ` (${rarityMap[item.rarity].name[this.lang]})` : ''
       return `${item.title[this.lang]}${rarityText}`
     }).join(', ').trim() + moreResultsText
+  }
+
+  protected getRarityIdByRarityNameInAnyLanguage (rarityName: string) {
+    return Object.entries(rarityMap).reduce((idDetected, [rarityId, rarityDetails]) => {
+      const names = Object.values(rarityDetails.name)
+      return names.some(name => rarityName.toLowerCase() === name.toLowerCase()) ? Number(rarityId) : idDetected
+    }, 0)
   }
 }

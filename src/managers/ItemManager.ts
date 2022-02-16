@@ -5,7 +5,7 @@ import mappings from '@utils/mappings'
 import MessageManager from './MessageManager'
 import { MessageReaction, MessageEmbed } from 'discord.js'
 import { RecipesManager } from '@managers'
-const { equipTypesMap, rarityMap } = mappings
+const { equipTypesMap } = mappings
 const itemsData = require('../../data/generated/items.json')
 
 class ItemManager {
@@ -17,6 +17,31 @@ class ItemManager {
     this.itemsList = itemsData
     this.setEquipmentList()
     this.setSublimationList()
+  }
+
+  // Look at this workaround I have to make lol
+  private getRarityIdForZeroRarityValues(subli) {
+    const rarityIdBySublimationPartialName = {
+      'III': 4,
+      'II': 3,
+      'I': 2,
+    }
+    const idMap = Object.keys(rarityIdBySublimationPartialName).find((key => subli.title.en.includes(key)))
+    return rarityIdBySublimationPartialName[idMap]
+  }
+
+  private safeGetRarityIdFromSubli(subli) {
+    const { rarity } = subli
+    if (rarity === 0) return this.getRarityIdForZeroRarityValues(subli)
+    return rarity
+  }
+
+  public getSublimationRarityIds () {
+    return this.sublimationList.reduce((rarityIds, subli) => {
+      const rarity = this.safeGetRarityIdFromSubli(subli)
+      if (!rarity || rarityIds.indexOf(rarity) > -1) return rarityIds
+      return [...rarityIds, rarity]
+    }, [])
   }
 
   private setEquipmentList () {
@@ -33,20 +58,14 @@ class ItemManager {
   }
 
   public getItemByName (itemList: ItemData[], name: string, options: CommandOptions, lang: string) {
-    const optionsKeys = Object.keys(options)
-    const optionRarityKey = Object.values<string>(str.rarity).find(rarityWord => {
-      return optionsKeys.some(optionsKey => hasTextOrNormalizedTextIncluded(rarityWord, optionsKey))
-    })
-
-    if (!optionRarityKey) {
+    if (!options.rarityId) {
       return itemList.filter(equip => hasTextOrNormalizedTextIncluded(equip.title[lang], name))
     }
 
     return itemList.filter(equip => {
       let filterAssertion = true
       const includeName = hasTextOrNormalizedTextIncluded(equip.title[lang], name)
-      const rarityIdOption = this.getRarityIdByRarityNameInAnyLanguage(options[optionRarityKey])
-      const hasRarity = rarityIdOption === equip.rarity
+      const hasRarity = options.rarityId === equip.rarity
       filterAssertion = filterAssertion && hasRarity
 
       return includeName && filterAssertion
@@ -61,9 +80,9 @@ class ItemManager {
     return this.getItemByName(this.equipmentList, name, options, lang)
   }
 
-  public getSublimationByName (name: string, options: CommandOptions, lang: string) {
-    name = name.replace(/2|ll/g, 'ii').replace(/3|lll/g, 'iii')
-    return this.getItemByName(this.sublimationList, name, options, lang)
+  public getSublimationByName (options: CommandOptions, lang: string) {
+    const query = String(options.query).replace(/2|ll/g, 'ii').replace(/3|lll/g, 'iii')
+    return this.getItemByName(this.sublimationList, query, options, lang)
   }
 
   public getSublimationBySource (source: string, lang: string) {
@@ -116,17 +135,17 @@ class ItemManager {
     return this.sublimationList.filter(item => regexQuery.test(item.sublimation.slots.toLowerCase()))
   }
 
-  public getSublimations (query, options, hasAnyOrderArgument, lang) {
-    const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|epic|relic/.test(query)
+  public getSublimations (options, lang) {
+    const isSearchBySlot = /[rgbw][rgbw][rgbw]?[rgbw]|epic|relic/.test(options.slots)
     let results = []
     let foundBy = ''
   
-    if (isSearchBySlot && hasAnyOrderArgument) {
-      const queryPermutation = this.findPermutations(query)
-      queryPermutation.forEach((queryPerm) => {
-        const permutatedResults = this.getSublimationByMatchingSlots(queryPerm)
+    if (isSearchBySlot && options.random) {
+      const slotsPermutation = this.findPermutations(options.slots)
+      slotsPermutation.forEach((slotsPerm) => {
+        const permutatedResults = this.getSublimationByMatchingSlots(slotsPerm)
         results.push({
-          slots: queryPerm,
+          slots: slotsPerm,
           results: this.removeSameSublimationsAndRemoveNumberFromTitle(permutatedResults)
         })
       })
@@ -135,7 +154,7 @@ class ItemManager {
     }
   
     if (isSearchBySlot) {
-      results = this.getSublimationByMatchingSlots(query)
+      results = this.getSublimationByMatchingSlots(options.slots)
       foundBy = 'slots'
       return { 
         results: this.removeSameSublimationsAndRemoveNumberFromTitle(results), 
@@ -143,14 +162,14 @@ class ItemManager {
       }
     }
   
-    results = this.getSublimationByName(query, options, lang)
+    results = this.getSublimationByName(options, lang)
     foundBy = 'name'
   
     if (results.length) {
       return { results, foundBy }
     }
   
-    results = this.getSublimationBySource(query, lang)
+    results = this.getSublimationBySource(options.query, lang)
     foundBy = 'source'
     return { results, foundBy }
   }
@@ -182,16 +201,11 @@ class ItemManager {
       ]
     }
     const newEmbed = new MessageEmbed(reactionEmbed)
-    await reaction.message.edit(newEmbed)
+    await reaction.message.edit({ embeds: [newEmbed]})
   }
 
   // TO Do: move the following functions 
-  private getRarityIdByRarityNameInAnyLanguage (rarityName) {
-    return Object.entries(rarityMap).reduce((idDetected, [rarityId, rarityDetails]) => {
-      const names = Object.values(rarityDetails.name)
-      return names.some(name => rarityName.toLowerCase() === name.toLowerCase()) ? Number(rarityId) : idDetected
-    }, 0)
-  }
+
 
   private findPermutations (string: string) {
     if (!string || typeof string !== 'string' || string.length > 4) {

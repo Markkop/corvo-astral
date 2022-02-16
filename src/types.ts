@@ -131,7 +131,7 @@ export type RecipeItemData = {
   result: RecipeResult
 }
 
-export type CommandOptions = Record<string, string>
+export type CommandOptions = Record<string, string|number>
 
 export type CommandData = {
   args: string[],

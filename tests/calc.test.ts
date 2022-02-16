@@ -1,9 +1,12 @@
-import { CalcCommand } from '../src/commands'
-import { executeCommandAndSpySentMessage, embedContaining } from './testutils'
+import CalcCommand, { getData } from '../src/commands/Calc'
+import { executeCommandAndSpyReply, embedContaining, getParsedCommand } from './testutils'
 
 describe('CalcCommand', () => {
+  const commandData = getData('en')
+
   it('replies damage embed with % resist option', async () => {
-    const spy = await executeCommandAndSpySentMessage(CalcCommand, '.calc dmg=4000 base=50 res=61%')
+    const command = getParsedCommand('/calc dmg: 4000 base: 50 res: 61%', commandData)
+    const spy = await executeCommandAndSpyReply(CalcCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':crossed_swords: USERNAME has attacked a gobbal!',
       fields: [
@@ -47,7 +50,8 @@ describe('CalcCommand', () => {
   })
 
   it('replies damage embed with flat resist option', async () => {
-    const spy = await executeCommandAndSpySentMessage(CalcCommand, '.calc dmg=4000 base=50 res=422')
+    const command = getParsedCommand('/calc dmg: 4000 base: 50 res: 422', commandData)
+    const spy = await executeCommandAndSpyReply(CalcCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':crossed_swords: USERNAME has attacked a gobbal!',
       fields: [
@@ -91,7 +95,9 @@ describe('CalcCommand', () => {
   })
 
   it('replies damage embed with crit chance option', async () => {
-    const spy = await executeCommandAndSpySentMessage(CalcCommand, '!calc dmg=4000 base=50 res=422 crit=10')
+    const stringCommand = '/calc dmg: 4000 base: 50 res: 422 crit: 10'
+    const command = getParsedCommand(stringCommand, commandData)
+    const spy = await executeCommandAndSpyReply(CalcCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       title: ':crossed_swords: USERNAME has attacked a gobbal!',
       fields: [
@@ -131,13 +137,6 @@ describe('CalcCommand', () => {
           inline: true
         }
       ]
-    }))
-  })
-
-  it('replies a help embed if no options were provided', async () => {
-    const spy = await executeCommandAndSpySentMessage(CalcCommand, '.calc')
-    expect(spy).toHaveBeenCalledWith(embedContaining({
-      title: expect.stringContaining('.help')
     }))
   })
 })

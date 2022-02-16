@@ -1,3 +1,4 @@
+import { CommandInteraction } from 'discord.js'
 import MockDiscord from './mockDiscord'
 
 export const defaultConfig = {
@@ -9,14 +10,90 @@ export const defaultConfig = {
   buildPreview: 'enabled'
 }
 
+export const optionType = {
+  // 0: null,
+  // 1: subCommand,
+  // 2: subCommandGroup,
+  3: String,
+  4: Number,
+  5: Boolean,
+  // 6: user,
+  // 7: channel,
+  // 8: role,
+  // 9: mentionable,
+  10: Number,
+}
+
+function getNestedOptions(options) {
+  return options.reduce((allOptions, option) => {
+    if (!option.options) return [...allOptions, option]
+    const nestedOptions = getNestedOptions(option.options)
+    return [option, ...allOptions, ...nestedOptions]
+  }, [])
+}
+
+function castToType(value: string, typeId: number) {
+  const typeCaster = optionType[typeId]
+  return typeCaster ? typeCaster(value) : value
+}
+
+export function getParsedCommand(stringCommand: string, commandData) {
+  const options = getNestedOptions(commandData.options)
+  const optionsIndentifiers = options.map(option => `${option.name}:`)
+  const requestedOptions = options.reduce((requestedOptions, option) => {
+    const identifier = `${option.name}:`
+    if (!stringCommand.includes(identifier)) return requestedOptions
+    const remainder = stringCommand.split(identifier)[1]
+
+    const nextOptionIdentifier = remainder.split(' ').find(word => optionsIndentifiers.includes(word))
+    if (nextOptionIdentifier) {
+      const value = remainder.split(nextOptionIdentifier)[0].trim()
+      return [...requestedOptions, {
+        name: option.name,
+        value: castToType(value, option.type),
+        type: option.type
+      }]
+    }
+    
+    return [...requestedOptions, {
+      name: option.name,
+      value: castToType(remainder.trim(), option.type),
+      type: option.type
+    }]
+  }, [])
+  const optionNames = options.map(option => option.name)
+  const splittedCommand = stringCommand.split(' ')
+  const name = splittedCommand[0].replace('/', '')
+  const subcommand = splittedCommand.find(word => optionNames.includes(word))
+  return {
+    id: name,
+    name,
+    type: 1,
+    options: subcommand ? [{
+      name: subcommand,
+      type: 1,
+      options: requestedOptions
+    }] : requestedOptions
+  }
+}
+
+
 export function embedContaining(content) {
   return {
-    embed: expect.objectContaining(content)
+    embeds: expect.arrayContaining([expect.objectContaining(content)]),
+    fetchReply: true
+  }
+}
+
+
+export function embedContainingWithoutFetchReply(content) {
+  return {
+    embeds: expect.arrayContaining([expect.objectContaining(content)])
   }
 }
 
 export function fieldContainingValue(expectedValue) {
-  return expect.objectContaining({
+  return embedContainingWithoutFetchReply({
     fields: expect.arrayContaining([expect.objectContaining({
       value: expect.stringContaining(expectedValue)
     })])
@@ -27,32 +104,33 @@ export function copy(obj) {
   return JSON.parse(JSON.stringify(obj))
 }
 
-/* Spy 'send' */
-export function mockMessageAndSpyChannelSend(content) {
-  const discord = new MockDiscord({ message: { content }})
-  const userMessage = discord.getMessage()
-  const spy = jest.spyOn(userMessage.channel, 'send') 
-  return { userMessage, spy }
+/* Spy 'reply' */
+export function mockInteractionAndSpyReply(command) {
+  const discord = new MockDiscord({ command })
+  const interaction = discord.getInteraction() as CommandInteraction
+  const spy = jest.spyOn(interaction, 'reply') 
+  return { interaction, spy }
 }
 
-export async function executeCommandAndSpySentMessage(command, content, config = {}) {
-  const { userMessage, spy } = mockMessageAndSpyChannelSend(content)
-  const commandInstance = new command(userMessage, {...defaultConfig, ...config})
+export async function executeCommandAndSpyReply(command, content, config = {}) {
+  const { interaction, spy } = mockInteractionAndSpyReply(content)
+  const commandInstance = new command(interaction, {...defaultConfig, ...config})
   await commandInstance.execute()
   return spy
 }
 
-/* Spy 'send' with mock options */
-export function mockMessageWithOptionsAndSpyChannelSend(options) {
+/* Spy channel 'send' with mock options */
+export function mockInteractionWithOptionsAndSpyChannelSend(options) {
   const discord = new MockDiscord(options)
-  const userMessage = discord.getMessage()
-  const spy = jest.spyOn(userMessage.channel, 'send') 
-  return { userMessage, spy }
+  const interaction = discord.getInteraction() as CommandInteraction
+  const channel = discord.getBotPartyTextChannel()
+  const spy = jest.spyOn(channel, 'send') 
+  return { interaction, spy }
 }
 
 export async function executeCommandWithMockOptionsAndSpySentMessage(command, options, config = {}) {
-  const { userMessage, spy } = mockMessageWithOptionsAndSpyChannelSend(options)
-  const commandInstance = new command(userMessage, {...defaultConfig, ...config})
+  const { interaction, spy } = mockInteractionWithOptionsAndSpyChannelSend(options)
+  const commandInstance = new command(interaction, {...defaultConfig, ...config})
   await commandInstance.execute()
   return spy
 }
@@ -60,16 +138,16 @@ export async function executeCommandWithMockOptionsAndSpySentMessage(command, op
 /* Spy 'edit' with mock options */
 export function mockMessageWithOptionsAndSpyEdit(options) {
   const discord = new MockDiscord(options)
-  const userMessage = discord.getMessage()
+  const interaction = discord.getInteraction() as CommandInteraction
   const channel = discord.getBotPartyTextChannel()
   const lastMessage = channel.messages.cache.last()
   const spy = jest.spyOn(lastMessage, 'edit') 
-  return { userMessage, spy }
+  return { interaction, spy }
 }
 
 export async function executeCommandWithMockOptionsAndSpyEdit(command, options, config = {}) {
-  const { userMessage, spy } = mockMessageWithOptionsAndSpyEdit(options)
-  const commandInstance = new command(userMessage, {...defaultConfig, ...config})
+  const { interaction, spy } = mockMessageWithOptionsAndSpyEdit(options)
+  const commandInstance = new command(interaction, {...defaultConfig, ...config})
   await commandInstance.execute()
   return spy
 }

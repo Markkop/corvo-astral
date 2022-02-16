@@ -3,40 +3,56 @@ import { ItemManager, RecipesManager, MessageManager } from '@managers'
 import { mountUrl } from '@utils/mountUrl'
 import str from '@stringsLang'
 import { GuildConfig, PartialEmbed } from '@types'
-import { Message } from 'discord.js'
+import { Interaction } from 'discord.js'
+import { SlashCommandBuilder } from '@discordjs/builders'
+import { addLangAndTranslateStringOptions, addStringOptionWithRarityChoices } from '@utils/registerCommands'
 import mappings from '@utils/mappings'
 const { rarityMap, equipTypesMap } = mappings
 
+export const getData = (lang: string) => {
+  const builder = new SlashCommandBuilder()
+  builder
+    .setName('equip')
+    .setDescription(str.equipCommandDescription[lang])
+    .addStringOption(option => option.setName('name').setDescription(str.equipNameCommandOptionDescription[lang]).setRequired(true))
+  addStringOptionWithRarityChoices(builder, 'rarity', str.equipRarityCommandOptionDescription[lang], lang)
+  addLangAndTranslateStringOptions(builder, lang)
+  return builder
+}
+
 export default class EquipCommand extends FinderCommand {
-  constructor (message: Message, guildConfig: GuildConfig) {
-    super(message, guildConfig)
+  constructor (interaction: Interaction, guildConfig: GuildConfig) {
+    super(interaction, guildConfig)
   }
 
   public async execute (): Promise<void> {
-    const { args, options } = MessageManager.getArgumentsAndOptions(this.message)
-    const query = args.join(' ').toLowerCase()
+    if (!this.interaction.isCommand()) return
+    const lang = this.interaction.options.getString('lang')
+    const translate = this.interaction.options.getString('translate')
+    const rarity = this.interaction.options.getString('rarity')
 
-    if (!query) {
-      this.sendHelp()
-      return
+    if (lang) {
+      this.changeLang(lang)
     }
 
-    if (options.lang) {
-      this.changeLang(options.lang)
+    const name = this.interaction.options.getString('name')
+
+    const options = {
+      rarityId: rarity && this.getRarityIdByRarityNameInAnyLanguage(rarity)
     }
 
-    const results = ItemManager.getEquipmentByName(query, options, this.lang)
+    const results = ItemManager.getEquipmentByName(name, options, this.lang)
     if (!results.length) {
       this.returnNotFound()
       return
     }
 
-    if (options.translate) {
-      this.changeLang(options.translate)
+    if (translate) {
+      this.changeLang(translate)
     }
 
     const equipEmbed = this.mountEquipEmbed(results)
-    const sentMessage = await this.send({ embed: equipEmbed })
+    const sentMessage = await this.send({ embeds: [equipEmbed] })
 
     const reactions = []
     const recipes = RecipesManager.getRecipesByProductedItemId(results[0].id)
@@ -57,7 +73,7 @@ export default class EquipCommand extends FinderCommand {
       fields: [
         {
           name: str.capitalize(str.level[this.lang]),
-          value: firstResult.level,
+          value: String(firstResult.level),
           inline: true
         },
         {

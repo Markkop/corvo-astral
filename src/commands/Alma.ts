@@ -1,26 +1,37 @@
 import { BaseCommand } from '@baseCommands'
-import { AlmanaxBonus, GuildConfig, PartialEmbed } from '@types'
+import { AlmanaxBonus, GuildConfig } from '@types'
 import { getRandomIntInclusive } from '@utils/numbers'
-import { Message } from 'discord.js'
+import { Interaction, MessageEmbed } from 'discord.js'
 import str from '@stringsLang'
-import { MessageManager } from '@managers'
+import { SlashCommandBuilder } from '@discordjs/builders'
+import { addLangStringOption } from '@utils/registerCommands'
+import { getDaysUntilShutdown } from '@utils/shutdown'
 const events = require('../../data/almanaxBonuses.json')
 
+export const getData = (lang: string) => {
+  const builder = new SlashCommandBuilder()
+  builder
+    .setName('alma')
+    .setDescription(str.almaCommandDescription[lang])
+  addLangStringOption(builder, lang)
+  return builder
+}
 
-export default class AlmaCommand extends BaseCommand {
-  constructor (message: Message, guildConfig: GuildConfig) {
-    super(message, guildConfig)
+class AlmaCommand extends BaseCommand {
+  constructor (interaction: Interaction, guildConfig: GuildConfig) {
+    super(interaction, guildConfig)
   }
 
   public execute (): void {
-    const { options } = MessageManager.getArgumentsAndOptions(this.message)
+    if (!this.interaction.isCommand()) return
+    const lang = this.interaction.options.getString('lang')
 
-    if (options.lang) {
-      this.changeLang(options.lang)
+    if (lang) {
+      this.changeLang(lang)
     }
 
     const embed = AlmaCommand.getAndMountAlmanaxBonusEmbed(this.lang)
-    this.send({ embed })
+    this.send({ embeds: [embed] })
   }
 
   public static getAndMountAlmanaxBonusEmbed(lang: string) {
@@ -28,11 +39,11 @@ export default class AlmaCommand extends BaseCommand {
     return AlmaCommand.mountAlmanaxBonusEmbed(bonus, lang)
   }
 
-  public static mountAlmanaxBonusEmbed (bonus: AlmanaxBonus, lang: string): PartialEmbed {
+  public static mountAlmanaxBonusEmbed (bonus: AlmanaxBonus, lang: string): MessageEmbed {
     const randomNumber = getRandomIntInclusive(1, 10)
     let extraInfo = ''
     if (randomNumber > 8) {
-      const days = this.getDaysUntilShutdown()
+      const days = getDaysUntilShutdown()
       extraInfo = str.donationExtraMessage(days)[lang]
     }
 
@@ -40,7 +51,7 @@ export default class AlmaCommand extends BaseCommand {
       color: 0x40b2b5,
       title: '<:alma:888871222648115261> Today\'s Almanax',
       description: `**Bonus:** ${bonus.text[lang]}${extraInfo}`
-    } as PartialEmbed
+    } as MessageEmbed
 
     return embed
   }
@@ -53,14 +64,6 @@ export default class AlmaCommand extends BaseCommand {
       return diffDays % 5 === 0
     })
   }
-
-  private static getDaysUntilShutdown() {
-    const shutdownDate = new Date('07/31/2022')
-    const diffTime = Number(shutdownDate) - Number(new Date(Date.now()))
-    if (diffTime < 0) {
-      return 0
-    }
-    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
-    return diffDays
-  }
 }
+
+export default AlmaCommand
