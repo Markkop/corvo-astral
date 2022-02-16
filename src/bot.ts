@@ -5,7 +5,7 @@ import cron from 'node-cron'
 import { handleInteractionError, handleMessageError, handleReactionError } from './utils/handleError'
 import { ConfigManager, MessageManager } from '@managers'
 import ReactionService from './services/ReactionService'
-import { 
+import {
   EquipCommand,
   AlmaCommand,
   AboutCommand,
@@ -16,7 +16,7 @@ import {
   PartyUpdateCommand,
   HelpCommand,
   ConfigCommand
- } from '@commands'
+} from '@commands'
 import { GuildConfig } from '@types'
 import { saveServersNumber } from '@utils/serversNumber'
 import { registerCommands } from '@utils/registerCommands'
@@ -40,14 +40,14 @@ class Bot {
   private token: string
   private configManager: ConfigManager
 
-  constructor (client: Client, token: string, configManager: ConfigManager) {
+  constructor(client: Client, token: string, configManager: ConfigManager) {
     this.client = client
     this.token = token
     this.configManager = configManager
     cron.schedule('1 0 * * *', this.sendDailyAlmanaxBonus.bind(this))
   }
 
-  public listen (): void {
+  public listen(): void {
     this.client.on('messageCreate', this.onMessage.bind(this))
     this.client.on('interactionCreate', this.onInteractionCreate.bind(this))
     this.client.on('ready', this.onReady.bind(this))
@@ -58,7 +58,7 @@ class Bot {
     this.client.login(this.token)
   }
 
-  private onReady () {
+  private onReady() {
     const servers = this.client.guilds.cache.size
     console.log(`Online on ${servers} servers: ${this.client.guilds.cache.map(guild => guild.name).join(', ')}`)
     this.client.user.setActivity('/about or /help', { type: 'PLAYING' })
@@ -66,7 +66,7 @@ class Bot {
     this.registerCommandsAfterLoadingConfigs()
   }
 
-  private onGuildCreate (guild: Guild) {
+  private onGuildCreate(guild: Guild) {
     const guildConfig = this.configManager.getGuildConfig(guild.id)
     registerCommands(this.client, guild.id, guildConfig as GuildConfig, guild.name)
     console.log(`Just joined on ${guild.name} and registered slash commands!`)
@@ -74,19 +74,20 @@ class Bot {
 
   private registerCommandsAfterLoadingConfigs() {
     const interval = setInterval(() => {
-      if(!this.configManager.hasLoadedConfigs) return
+      if (!this.configManager.hasLoadedConfigs) return
       clearInterval(interval)
       this.client.guilds.cache.forEach(guild => {
         const guildConfig = this.configManager.getGuildConfig(guild.id)
         registerCommands(this.client, guild.id, guildConfig as GuildConfig, guild.name)
       })
+      console.log("Slash commands registered!")
     }, 1000)
   }
 
   /**
    * Temporary onMessage listener which will be removed after April 30th
    */
-  private async onMessage (message: Message) {
+  private async onMessage(message: Message) {
     try {
       if (message.author.bot) return
       if (!message.guild) return
@@ -99,26 +100,28 @@ class Bot {
 
       if (!Command) return
 
-      message.reply({ embeds: [
-        {
-          color: 0xFFFF00,
-          title: ':tools: Slash Commands',
-          description: stringsLang.deprecatedMessageCommand[guildConfig.lang],
-        }
-      ]})
+      message.reply({
+        embeds: [
+          {
+            color: 0xFFFF00,
+            title: ':tools: Slash Commands',
+            description: stringsLang.deprecatedMessageCommand[guildConfig.lang],
+          }
+        ]
+      })
     } catch (error) {
       handleMessageError(error, message)
     }
   }
 
-  private async onInteractionCreate (interaction: Interaction) {
+  private async onInteractionCreate(interaction: Interaction) {
     try {
       if (!interaction.isCommand()) return;
 
       const commandName = interaction.commandName
       const Command = this.getCommand(commandName)
 
-	    if (!Command) return;
+      if (!Command) return;
 
       const guildConfig = this.configManager.getGuildConfig(interaction.guildId)
 
@@ -147,7 +150,7 @@ class Bot {
     }
   }
 
-  private getCommand (commandWord: string) {
+  private getCommand(commandWord: string) {
     return commandsMap[commandWord]
   }
 
@@ -183,13 +186,13 @@ class Bot {
 }
 
 export default function initiateBot() {
-  const client = new Client({ 
+  const client = new Client({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.GUILD_MESSAGES],
     partials: ['MESSAGE', 'CHANNEL', 'REACTION']
-   })
+  })
   const configManager = ConfigManager.getInstance()
   const token = process.env.DISCORD_BOT_TOKEN
-  
+
   const bot = new Bot(client, token, configManager)
   bot.listen()
 }
