@@ -7,7 +7,7 @@ export default {
    * @param {string} str
    * @returns {string}
    */
-  capitalize (str) {
+  capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
   },
   deprecatedMessageCommand: {
@@ -89,10 +89,10 @@ Découvrez comment contribuer sur /about`
     fr: "Afficher les sublimations prises en charge par les emplacements dans un ordre aléatoire"
   },
   subliSlotsCommandOptionDescription: {
-    en: 'The combination of the slots with the initials of the colors in English. Ex: "rgbw", "epic", "relic"',
+    en: 'The combination of the slots with the initials of the colors in English. Eg:"rgbw", "epic", "relic"',
     pt: 'A combinação dos slots com as iniciais das cores em inglês. Ex: "rgbw", "epic", "relic"',
     fr: 'La combinaison des slots avec les initiales des couleurs en anglais. Ex: "rgbw", "epic", "relic"',
-    es: `La combinación de les emplacements con las iniciales de los colores en inglés. Ej: "rgbw", "epic", "relic"`
+    es: `La combinación de les emplacements con las iniciales de los colores en inglés. Ej: "rgbw", "epic"`
   },
   subliNameCommandOptionDescription: {
     en: 'The name or part of the sublimation name',
@@ -503,7 +503,7 @@ Découvrez comment contribuer sur /about`
     pt: 'Monstros encontrados'
   },
   donationExtraMessage(days: number) {
-      return {
+    return {
       en: `\n\nThis bot might stop running in ${days} days, we\'re counting on your donation.\nTo find out more type \`.about\` or click [here](https://www.buymeacoffee.com/markkop)`,
       fr: `\n\nCe bot pourrait cesser de fonctionner dans ${days} hours, nous comptons sur votre don.\nPour en savoir plus, tapez \`.about\` ou cliquez [ici](https://www.buymeacoffee.com/markkop)`,
       pt: `\n\nEste bot pode parar de funcionar em ${days} dias, contamos com sua doação.\nPara saber mais digite \`.about\` ou clique [aqui](https://www.buymeacoffee.com/markkop)`,
@@ -603,5 +603,5 @@ Autor e mantenedor: [Mark Kop](https://github.com/Markkop) (Markx - Rubilax)
 O jogo WAKFU e os gráficos usados ​​neste bot pertencem à Ankama - todos os direitos reservados.
 Este bot é um projeto não oficial e não tem nenhuma conexão com a Ankama.
     `
-  } 
+  }
 }
