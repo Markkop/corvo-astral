@@ -3190,5 +3190,47 @@
       "es": "Trompembustero",
       "pt": "Ilusório"
     }
+  },
+  {
+    "definition": {
+      "id": 802,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 80929569,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Arbre Wakfu",
+      "en": "Wakfu Tree",
+      "es": "Árbol Wakfu",
+      "pt": "Árvore Wakfu"
+    }
+  },
+  {
+    "definition": {
+      "id": 803,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 80929569,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Arbre Wakfu",
+      "en": "Wakfu Tree",
+      "es": "Árbol Wakfu",
+      "pt": "Árvore Wakfu"
+    }
   }
 ]

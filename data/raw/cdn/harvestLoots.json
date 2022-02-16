@@ -8123,5 +8123,31 @@
     "quantityMax": 3,
     "maxRoll": 1,
     "itemIsLootList": false
+  },
+  {
+    "id": 10080,
+    "itemId": 29570,
+    "quantity": 1,
+    "requiredProspection": 0,
+    "dropRate": 1,
+    "listId": 3399,
+    "quantityPerItem": 3,
+    "quantityMin": 1,
+    "quantityMax": 1,
+    "maxRoll": 1,
+    "itemIsLootList": false
+  },
+  {
+    "id": 10081,
+    "itemId": 29582,
+    "quantity": 1,
+    "requiredProspection": 0,
+    "dropRate": 1,
+    "listId": 3400,
+    "quantityPerItem": 3,
+    "quantityMin": 1,
+    "quantityMax": 1,
+    "maxRoll": 1,
+    "itemIsLootList": false
   }
 ]

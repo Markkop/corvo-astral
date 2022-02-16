@@ -36951,10 +36951,10 @@
       }
     },
     "title": {
-      "fr": "Sœur d'âme",
+      "fr": "Soeur d'âme",
       "en": "Soul Sister",
-      "es": "Hermana del Alma",
-      "pt": "Irmã de alma"
+      "es": "Hermana del alma",
+      "pt": "Irmã de Alma"
     }
   },
   {
@@ -62995,9 +62995,9 @@
       }
     },
     "title": {
-      "fr": "Sœur d'âme",
+      "fr": "Soeur d'âme",
       "en": "Soul Sister",
-      "es": "Hermana del Alma",
+      "es": "Hermana del alma",
       "pt": "Irmã de Alma"
     }
   },
@@ -131794,6 +131794,40 @@
   },
   {
     "definition": {
+      "id": 29093,
+      "level": 228,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329093,
+        "femaleGfxId": 13329093
+      }
+    },
+    "title": {
+      "fr": "Serre Vice",
+      "en": "Screwy Driver",
+      "es": "Sierra vicio",
+      "pt": "Agarrada"
+    }
+  },
+  {
+    "definition": {
+      "id": 29094,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329093,
+        "femaleGfxId": 13329093
+      }
+    },
+    "title": {
+      "fr": "Serre Vice",
+      "en": "Screwy Driver",
+      "es": "Sierra vicio",
+      "pt": "Agarrada"
+    }
+  },
+  {
+    "definition": {
       "id": 29095,
       "level": 225,
       "rarity": 3,
@@ -132307,6 +132341,23 @@
       "id": 29128,
       "level": 224,
       "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329127,
+        "femaleGfxId": 10329127
+      }
+    },
+    "title": {
+      "fr": "Ann'Agrippé",
+      "en": "Clinging Ring",
+      "es": "An'Agarrado",
+      "pt": "An'Apegado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29129,
+      "level": 230,
+      "rarity": 4,
       "graphicParameters": {
         "gfxId": 10329127,
         "femaleGfxId": 10329127
@@ -135126,40 +135177,6 @@
   },
   {
     "definition": {
-      "id": 29299,
-      "level": 230,
-      "rarity": 3,
-      "graphicParameters": {
-        "gfxId": 18929299,
-        "femaleGfxId": 18929299
-      }
-    },
-    "title": {
-      "fr": "Le Constant",
-      "en": "The Constant",
-      "es": "El constante",
-      "pt": "O Constante"
-    }
-  },
-  {
-    "definition": {
-      "id": 29300,
-      "level": 230,
-      "rarity": 4,
-      "graphicParameters": {
-        "gfxId": 18929299,
-        "femaleGfxId": 18929299
-      }
-    },
-    "title": {
-      "fr": "Le Constant",
-      "en": "The Constant",
-      "es": "El constante",
-      "pt": "O Constante"
-    }
-  },
-  {
-    "definition": {
       "id": 29301,
       "level": 224,
       "rarity": 3,
@@ -136703,6 +136720,1383 @@
       "en": "Demonic Stele",
       "es": "Estela demoníaca",
       "pt": "Estela Demoníaca"
+    }
+  },
+  {
+    "definition": {
+      "id": 29449,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729449,
+        "femaleGfxId": 31729449
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Phytomorphe",
+      "en": "Phytomorph Key Fragment",
+      "es": "Fragmento de llave fitoforme",
+      "pt": "Fragmento de Chave de Fitomorfo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29450,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729450,
+        "femaleGfxId": 31729450
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Vidéant",
+      "en": "Voidivion Key Fragment",
+      "es": "Fragmento de llave vaciante",
+      "pt": "Fragmento de Chave de Vaziante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29451,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729451,
+        "femaleGfxId": 31729451
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Démhorrible",
+      "en": "Horridemon Key Fragment",
+      "es": "Fragmento de llave demorrible",
+      "pt": "Fragmento de Chave de Demhorrível"
+    }
+  },
+  {
+    "definition": {
+      "id": 29452,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729452,
+        "femaleGfxId": 31729452
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Égaré",
+      "en": "Streye Key Fragment",
+      "es": "Fragmento de llave ido",
+      "pt": "Fragmento de Chave de Perdido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29453,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729453,
+        "femaleGfxId": 31729453
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Ravageur",
+      "en": "Destroyer Key Fragment",
+      "es": "Fragmento de llave devastador",
+      "pt": "Fragmento de Chave de Devastador"
+    }
+  },
+  {
+    "definition": {
+      "id": 29457,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329457,
+        "femaleGfxId": 10329457
+      }
+    },
+    "title": {
+      "fr": "Anneau de Rushu",
+      "en": "Rushu Ring",
+      "es": "Anillo de Rushu",
+      "pt": "Anel de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29458,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329457,
+        "femaleGfxId": 10329457
+      }
+    },
+    "title": {
+      "fr": "Anneau de Rushu",
+      "en": "Rushu Ring",
+      "es": "Anillo de Rushu",
+      "pt": "Anel de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29459,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429459,
+        "femaleGfxId": 13429459
+      }
+    },
+    "title": {
+      "fr": "Casque de Rushu",
+      "en": "Rushu Helmet",
+      "es": "Casco de Rushu",
+      "pt": "Capacete de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29460,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429459,
+        "femaleGfxId": 13429459
+      }
+    },
+    "title": {
+      "fr": "Casque de Rushu",
+      "en": "Rushu Helmet",
+      "es": "Casco de Rushu",
+      "pt": "Capacete de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29461,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229461,
+        "femaleGfxId": 13229461
+      }
+    },
+    "title": {
+      "fr": "Cape de Rushu",
+      "en": "Rushu Cloak",
+      "es": "Capa de Rushu",
+      "pt": "Capa de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29462,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229461,
+        "femaleGfxId": 13229461
+      }
+    },
+    "title": {
+      "fr": "Cape de Rushu",
+      "en": "Rushu Cloak",
+      "es": "Capa de Rushu",
+      "pt": "Capa de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29463,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929463,
+        "femaleGfxId": 11929463
+      }
+    },
+    "title": {
+      "fr": "Bottes de Rushu",
+      "en": "Rushu Boots",
+      "es": "Botas de Rushu",
+      "pt": "Botas de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29464,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929463,
+        "femaleGfxId": 11929463
+      }
+    },
+    "title": {
+      "fr": "Bottes de Rushu",
+      "en": "Rushu Boots",
+      "es": "Botas de Rushu",
+      "pt": "Botas de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29465,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629465,
+        "femaleGfxId": 34729465
+      }
+    },
+    "title": {
+      "fr": "Plastron de Rushu",
+      "en": "Rushu Breastplate",
+      "es": "Coraza de Rushu",
+      "pt": "Peitoral de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29466,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629465,
+        "femaleGfxId": 34729465
+      }
+    },
+    "title": {
+      "fr": "Plastron de Rushu",
+      "en": "Rushu Breastplate",
+      "es": "Coraza de Rushu",
+      "pt": "Peitoral de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29467,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029467,
+        "femaleGfxId": 12029467
+      }
+    },
+    "title": {
+      "fr": "Amulette de Rushu",
+      "en": "Rushu Amulet",
+      "es": "Amuleto de Rushu",
+      "pt": "Amuleto de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29468,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029467,
+        "femaleGfxId": 12029467
+      }
+    },
+    "title": {
+      "fr": "Amulette de Rushu",
+      "en": "Rushu Amulet",
+      "es": "Amuleto de Rushu",
+      "pt": "Amuleto de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29469,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329469,
+        "femaleGfxId": 13329469
+      }
+    },
+    "title": {
+      "fr": "Ceinture de Rushu",
+      "en": "Rushu Belt",
+      "es": "Cinturón de Rushu",
+      "pt": "Cinto de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29470,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329469,
+        "femaleGfxId": 13329469
+      }
+    },
+    "title": {
+      "fr": "Ceinture de Rushu",
+      "en": "Rushu Belt",
+      "es": "Cinturón de Rushu",
+      "pt": "Cinto de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29471,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829471,
+        "femaleGfxId": 13829471
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de Rushu",
+      "en": "Rushu Epaulettes",
+      "es": "Hombreras de Rushu",
+      "pt": "Dragonas de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29472,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829471,
+        "femaleGfxId": 13829471
+      }
+    },
+    "title": {
+      "fr": "Epaulettes de Rushu",
+      "en": "Rushu Epaulettes",
+      "es": "Hombreras de Rushu",
+      "pt": "Dragonas de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29473,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11029473,
+        "femaleGfxId": 11029473
+      }
+    },
+    "title": {
+      "fr": "Tatsus Shushu",
+      "en": "Tatsus Shushu",
+      "es": "Tatsus fab'huritu",
+      "pt": "Tatsus Shushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29474,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11029473,
+        "femaleGfxId": 11029473
+      }
+    },
+    "title": {
+      "fr": "Tatsus Shushu",
+      "en": "Tatsus Shushu",
+      "es": "Tatsus fab'huritu",
+      "pt": "Tatsus Shushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29475,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10129475,
+        "femaleGfxId": 10129475
+      }
+    },
+    "title": {
+      "fr": "Tranchoir Abyssal",
+      "en": "Abyssal Trencher",
+      "es": "Tajo abisal",
+      "pt": "Trincho Abissal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29476,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10129475,
+        "femaleGfxId": 10129475
+      }
+    },
+    "title": {
+      "fr": "Tranchoir Abyssal",
+      "en": "Abyssal Trencher",
+      "es": "Tajo abisal",
+      "pt": "Trincho Abissal"
+    }
+  },
+  {
+    "definition": {
+      "id": 29477,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 22329477,
+        "femaleGfxId": 22329477
+      }
+    },
+    "title": {
+      "fr": "Lame insondable",
+      "en": "Mysterious Blade",
+      "es": "Hoja insondable",
+      "pt": "Lâmina Misteriosa"
+    }
+  },
+  {
+    "definition": {
+      "id": 29478,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 22329477,
+        "femaleGfxId": 22329477
+      }
+    },
+    "title": {
+      "fr": "Lame insondable",
+      "en": "Mysterious Blade",
+      "es": "Hoja insondable",
+      "pt": "Lâmina Misteriosa"
+    }
+  },
+  {
+    "definition": {
+      "id": 29479,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11129479,
+        "femaleGfxId": 11129479
+      }
+    },
+    "title": {
+      "fr": "Vylus Shushu",
+      "en": "Vylus Shushu",
+      "es": "Vilus fab'huritu",
+      "pt": "Vylus Shushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29480,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11129479,
+        "femaleGfxId": 11129479
+      }
+    },
+    "title": {
+      "fr": "Vylus Shushu",
+      "en": "Vylus Shushu",
+      "es": "Vilus fab'huritu",
+      "pt": "Vylus Shushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29481,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11729481,
+        "femaleGfxId": 11729481
+      }
+    },
+    "title": {
+      "fr": "L'Aviolarc",
+      "en": "The Aviolbow",
+      "es": "Aviolarco",
+      "pt": "Avilarco"
+    }
+  },
+  {
+    "definition": {
+      "id": 29482,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11729481,
+        "femaleGfxId": 11729481
+      }
+    },
+    "title": {
+      "fr": "L'Aviolarc",
+      "en": "The Aviolbow",
+      "es": "Aviolarco",
+      "pt": "Avilarco"
+    }
+  },
+  {
+    "definition": {
+      "id": 29483,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11329483,
+        "femaleGfxId": 11329483
+      }
+    },
+    "title": {
+      "fr": "L'Augaromasse",
+      "en": "The Augaromace",
+      "es": "La Augaromaza",
+      "pt": "Augaromaça"
+    }
+  },
+  {
+    "definition": {
+      "id": 29484,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11329483,
+        "femaleGfxId": 11329483
+      }
+    },
+    "title": {
+      "fr": "L'Augaromasse",
+      "en": "The Augaromace",
+      "es": "La Augaromaza",
+      "pt": "Augaromaça"
+    }
+  },
+  {
+    "definition": {
+      "id": 29485,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 25329485,
+        "femaleGfxId": 25329485
+      }
+    },
+    "title": {
+      "fr": "Sceptre du dernier repos",
+      "en": "Last Rest Scepter",
+      "es": "Cetro del descanso eterno",
+      "pt": "Cetro do Último Descanso"
+    }
+  },
+  {
+    "definition": {
+      "id": 29486,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 25329485,
+        "femaleGfxId": 25329485
+      }
+    },
+    "title": {
+      "fr": "Sceptre du dernier repos",
+      "en": "Last Rest Scepter",
+      "es": "Cetro del descanso eterno",
+      "pt": "Cetro do Último Descanso"
+    }
+  },
+  {
+    "definition": {
+      "id": 29487,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11529487,
+        "femaleGfxId": 11529487
+      }
+    },
+    "title": {
+      "fr": "Kraivus Shushu",
+      "en": "Kraivus Shushu",
+      "es": "Kraiveus fab'huritus",
+      "pt": "Kraivus Shushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29488,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11529487,
+        "femaleGfxId": 11529487
+      }
+    },
+    "title": {
+      "fr": "Kraivus Shushu",
+      "en": "Kraivus Shushu",
+      "es": "Kraiveus fab'huritus",
+      "pt": "Kraivus Shushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29489,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 18929489,
+        "femaleGfxId": 18929489
+      }
+    },
+    "title": {
+      "fr": "Egide de la fin des temps",
+      "en": "End of Time Aegis",
+      "es": "Égida del fin de los tiempos",
+      "pt": "Égide do Fim dos Tempos"
+    }
+  },
+  {
+    "definition": {
+      "id": 29490,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 18929489,
+        "femaleGfxId": 18929489
+      }
+    },
+    "title": {
+      "fr": "Egide de la fin des temps",
+      "en": "End of Time Aegis",
+      "es": "Égida del fin de los tiempos",
+      "pt": "Égide do Fim dos Tempos"
+    }
+  },
+  {
+    "definition": {
+      "id": 29491,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11229491,
+        "femaleGfxId": 11229491
+      }
+    },
+    "title": {
+      "fr": "Dague Marabouteuse",
+      "en": "Gobbsaggy Dagger",
+      "es": "Daga brujandera",
+      "pt": "Adaga Bruxa"
+    }
+  },
+  {
+    "definition": {
+      "id": 29492,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11229491,
+        "femaleGfxId": 11229491
+      }
+    },
+    "title": {
+      "fr": "Dague Marabouteuse",
+      "en": "Gobbsaggy Dagger",
+      "es": "Daga brujandera",
+      "pt": "Adaga Bruxa"
+    }
+  },
+  {
+    "definition": {
+      "id": 29516,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929516,
+        "femaleGfxId": 11929516
+      }
+    },
+    "title": {
+      "fr": "Les Viddhartatanes corrompues",
+      "en": "Corrupted Viddhartas",
+      "es": "Botas Arate corruptas",
+      "pt": "Viddhartas Corrompidas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29517,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929516,
+        "femaleGfxId": 11929516
+      }
+    },
+    "title": {
+      "fr": "Les Viddhartatanes corrompues",
+      "en": "Corrupted Viddhartas",
+      "es": "Botas Arate corruptas",
+      "pt": "Viddhartas Corrompidas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29518,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229518,
+        "femaleGfxId": 13229518
+      }
+    },
+    "title": {
+      "fr": "Caperpétuelle corrompue",
+      "en": "Corrupted Perpetual Cloak",
+      "es": "Caparpetua corrupta",
+      "pt": "Caperpétua Corrompida"
+    }
+  },
+  {
+    "definition": {
+      "id": 29519,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229518,
+        "femaleGfxId": 13229518
+      }
+    },
+    "title": {
+      "fr": "Caperpétuelle corrompue",
+      "en": "Corrupted Perpetual Cloak",
+      "es": "Caparpetua corrupta",
+      "pt": "Caperpétua Corrompida"
+    }
+  },
+  {
+    "definition": {
+      "id": 29520,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429520,
+        "femaleGfxId": 13429520
+      }
+    },
+    "title": {
+      "fr": "Le Kraignosse corrompu",
+      "en": "Corrupted Daudgee",
+      "es": "El Témelo corrupto",
+      "pt": "Esquivo Corrompido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29521,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429520,
+        "femaleGfxId": 13429520
+      }
+    },
+    "title": {
+      "fr": "Le Kraignosse corrompu",
+      "en": "Corrupted Daudgee",
+      "es": "El Témelo corrupto",
+      "pt": "Esquivo Corrompido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29522,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629522,
+        "femaleGfxId": 13629522
+      }
+    },
+    "title": {
+      "fr": "Les Mailles Har corrompues",
+      "en": "Corrupted Mail Har",
+      "es": "Los Mallar corruptos",
+      "pt": "Peitorainur Corrompido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29523,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629522,
+        "femaleGfxId": 13629522
+      }
+    },
+    "title": {
+      "fr": "Les Mailles Har corrompues",
+      "en": "Corrupted Mail Har",
+      "es": "Los Mallar corruptos",
+      "pt": "Peitorainur Corrompido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29524,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829524,
+        "femaleGfxId": 13829524
+      }
+    },
+    "title": {
+      "fr": "Les Ombres des âmes voilées corrompues",
+      "en": "Corrupted Shadows of the Veiled Souls",
+      "es": "Las sombras de almas veladas corruptas",
+      "pt": "As Sombras das Almas Veladas Corrompidas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29525,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829524,
+        "femaleGfxId": 13829524
+      }
+    },
+    "title": {
+      "fr": "Les Ombres des âmes voilées corrompues",
+      "en": "Corrupted Shadows of the Veiled Souls",
+      "es": "Las sombras de almas veladas corruptas",
+      "pt": "As Sombras das Almas Veladas Corrompidas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29526,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029526,
+        "femaleGfxId": 12029526
+      }
+    },
+    "title": {
+      "fr": "Amulette de l'Emiw corrompue",
+      "en": "Corrupted Emiw Amulet",
+      "es": "Amuleto del Emiw corrupto",
+      "pt": "Amuleto do Emiw Corrompido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29527,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029526,
+        "femaleGfxId": 12029526
+      }
+    },
+    "title": {
+      "fr": "Amulette de l'Emiw corrompue",
+      "en": "Corrupted Emiw Amulet",
+      "es": "Amuleto del Emiw corrupto",
+      "pt": "Amuleto do Emiw Corrompido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29528,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329528,
+        "femaleGfxId": 10329528
+      }
+    },
+    "title": {
+      "fr": "Soeur d'âme corrompue",
+      "en": "Corrupted Soul Sister",
+      "es": "Hermana del alma corrupta",
+      "pt": "Irmã de Alma Corrompida"
+    }
+  },
+  {
+    "definition": {
+      "id": 29529,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329528,
+        "femaleGfxId": 10329528
+      }
+    },
+    "title": {
+      "fr": "Soeur d'âme corrompue",
+      "en": "Corrupted Soul Sister",
+      "es": "Hermana del alma corrupta",
+      "pt": "Irmã de Alma Corrompida"
+    }
+  },
+  {
+    "definition": {
+      "id": 29530,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329530,
+        "femaleGfxId": 13329530
+      }
+    },
+    "title": {
+      "fr": "Obi du Lenald corrompu",
+      "en": "Corrupted Lenald Maltial Alt Belt",
+      "es": "Obi de zollo corrupto",
+      "pt": "Cinto Laposa de Altes Malciais Corrompido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29531,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329530,
+        "femaleGfxId": 13329530
+      }
+    },
+    "title": {
+      "fr": "Obi du Lenald corrompu",
+      "en": "Corrupted Lenald Maltial Alt Belt",
+      "es": "Obi de zollo corrupto",
+      "pt": "Cinto Laposa de Altes Malciais Corrompido"
+    }
+  },
+  {
+    "definition": {
+      "id": 29532,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 12029532,
+        "femaleGfxId": 12029532
+      }
+    },
+    "title": {
+      "fr": "Oeuf Shamanique maudit",
+      "en": "Cursed Shamanic Egg",
+      "es": "Huevo de chamán maldito",
+      "pt": "Ovo Xamânico Amaldiçoado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29533,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 12029532,
+        "femaleGfxId": 12029532
+      }
+    },
+    "title": {
+      "fr": "Oeuf Shamanique maudit",
+      "en": "Cursed Shamanic Egg",
+      "es": "Huevo de chamán maldito",
+      "pt": "Ovo Xamânico Amaldiçoado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29534,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10329534,
+        "femaleGfxId": 10329534
+      }
+    },
+    "title": {
+      "fr": "Bracelet Gume maudit",
+      "en": "Cursed Five Cawat Ring",
+      "es": "Barzal egumbre maldito",
+      "pt": "Bracelegume Amaldiçoado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29535,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10329534,
+        "femaleGfxId": 10329534
+      }
+    },
+    "title": {
+      "fr": "Bracelet Gume maudit",
+      "en": "Cursed Five Cawat Ring",
+      "es": "Barzal egumbre maldito",
+      "pt": "Bracelegume Amaldiçoado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29536,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13329536,
+        "femaleGfxId": 13329536
+      }
+    },
+    "title": {
+      "fr": "Ceinturon de la Grande Prêtresse maudit",
+      "en": "Cursed High Priestess Belt",
+      "es": "Cinturón de la Suma Sacerdotisa maldito",
+      "pt": "Cinturão da Grande Sacerdotisa Amaldiçoado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29537,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13329536,
+        "femaleGfxId": 13329536
+      }
+    },
+    "title": {
+      "fr": "Ceinturon de la Grande Prêtresse maudit",
+      "en": "Cursed High Priestess Belt",
+      "es": "Cinturón de la Suma Sacerdotisa maldito",
+      "pt": "Cinturão da Grande Sacerdotisa Amaldiçoado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29538,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429538,
+        "femaleGfxId": 13429538
+      }
+    },
+    "title": {
+      "fr": "Casque Djeunairo maudit",
+      "en": "Cursed Janairo Helmet",
+      "es": "Casco dragoraz maldito",
+      "pt": "Elmo Janairo Amaldiçoado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29539,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13429538,
+        "femaleGfxId": 13429538
+      }
+    },
+    "title": {
+      "fr": "Casque Djeunairo maudit",
+      "en": "Cursed Janairo Helmet",
+      "es": "Casco dragoraz maldito",
+      "pt": "Elmo Janairo Amaldiçoado"
+    }
+  },
+  {
+    "definition": {
+      "id": 29540,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229540,
+        "femaleGfxId": 13229540
+      }
+    },
+    "title": {
+      "fr": "Cape de Luk Ylook maudite",
+      "en": "Cursed Luk Ylook Cloak",
+      "es": "Capa de Luk Ylook maldita",
+      "pt": "Capa de Luk Ylook Amaldiçoada"
+    }
+  },
+  {
+    "definition": {
+      "id": 29541,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13229540,
+        "femaleGfxId": 13229540
+      }
+    },
+    "title": {
+      "fr": "Cape de Luk Ylook maudite",
+      "en": "Cursed Luk Ylook Cloak",
+      "es": "Capa de Luk Ylook maldita",
+      "pt": "Capa de Luk Ylook Amaldiçoada"
+    }
+  },
+  {
+    "definition": {
+      "id": 29542,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13629542,
+        "femaleGfxId": 34729542
+      }
+    },
+    "title": {
+      "fr": "Plastravenir maudit",
+      "en": "Cursed Abreastplate",
+      "es": "Coraza del porvenir maldito",
+      "pt": "Futuraça Amaldiçoada"
+    }
+  },
+  {
+    "definition": {
+      "id": 29543,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13629542,
+        "femaleGfxId": 34729542
+      }
+    },
+    "title": {
+      "fr": "Plastravenir maudit",
+      "en": "Cursed Abreastplate",
+      "es": "Coraza del porvenir maldito",
+      "pt": "Futuraça Amaldiçoada"
+    }
+  },
+  {
+    "definition": {
+      "id": 29544,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11929544,
+        "femaleGfxId": 11929544
+      }
+    },
+    "title": {
+      "fr": "Grèves des Eclaireurs d'Otomaï maudites",
+      "en": "Cursed Otomai's Scouts Greaves",
+      "es": "Grebas de los exploradores de Otomai malditas",
+      "pt": "Grevas dos Exploradores de Otomai Amaldiçoadas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29545,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11929544,
+        "femaleGfxId": 11929544
+      }
+    },
+    "title": {
+      "fr": "Grèves des Eclaireurs d'Otomaï maudites",
+      "en": "Cursed Otomai's Scouts Greaves",
+      "es": "Grebas de los exploradores de Otomai malditas",
+      "pt": "Grevas dos Exploradores de Otomai Amaldiçoadas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29546,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13829546,
+        "femaleGfxId": 13829546
+      }
+    },
+    "title": {
+      "fr": "Epaulettes du Corbeau noir maudites",
+      "en": "Cursed Black Crow's Epaulettes",
+      "es": "Hombreras del Cuervo Negro malditas",
+      "pt": "Dragonas do Corvo Negro Amaldiçoadas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29547,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 13829546,
+        "femaleGfxId": 13829546
+      }
+    },
+    "title": {
+      "fr": "Epaulettes du Corbeau noir maudites",
+      "en": "Cursed Black Crow's Epaulettes",
+      "es": "Hombreras del Cuervo Negro malditas",
+      "pt": "Dragonas do Corvo Negro Amaldiçoadas"
+    }
+  },
+  {
+    "definition": {
+      "id": 29548,
+      "level": 216,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 53129548,
+        "femaleGfxId": 53129548
+      }
+    },
+    "title": {
+      "fr": "Barbe de Rushu",
+      "en": "Rushu Beard",
+      "es": "Barba de Rushu",
+      "pt": "Barba de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29549,
+      "level": 230,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31729549,
+        "femaleGfxId": 31729549
+      }
+    },
+    "title": {
+      "fr": "Clef du palais de Rushu",
+      "en": "Rushu's Palace Key",
+      "es": "Llave del palacio de Rushu",
+      "pt": "Chave do Palácio de Rushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29570,
+      "level": 1,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 80929570,
+        "femaleGfxId": 80929570
+      }
+    },
+    "title": {
+      "fr": "Bois d'arbre Wakfu",
+      "en": "Wakfu Wood",
+      "es": "Madera de árbol Wakfu",
+      "pt": "Madeira da Árvore Wakfu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29571,
+      "level": 1,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13429571,
+        "femaleGfxId": 13429571
+      }
+    },
+    "title": {
+      "fr": "Chapeau des 10 ans",
+      "en": "10-Year Hat",
+      "es": "Sombrero de los 10 años",
+      "pt": "Chapéu dos 10 Anos"
+    }
+  },
+  {
+    "definition": {
+      "id": 29572,
+      "level": 1,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 13229572,
+        "femaleGfxId": 13229572
+      }
+    },
+    "title": {
+      "fr": "Cape des 10 ans",
+      "en": "10-Year Cape",
+      "es": "Capa de los 10 años",
+      "pt": "Capa dos 10 Anos"
+    }
+  },
+  {
+    "definition": {
+      "id": 29582,
+      "level": 1,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 80929569,
+        "femaleGfxId": 80929569
+      }
+    },
+    "title": {
+      "fr": "Bouture d'arbre Wakfu",
+      "en": "Wakfu Tree Cutting",
+      "es": "Esqueje de árbol Wakfu",
+      "pt": "Muda da Árvore Wakfu"
+    }
+  },
+  {
+    "definition": {
+      "id": 29589,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 18929299,
+        "femaleGfxId": 18929299
+      }
+    },
+    "title": {
+      "fr": "Le Constant",
+      "en": "The Constant",
+      "es": "El constante",
+      "pt": "O Constante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29590,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 18929299,
+        "femaleGfxId": 18929299
+      }
+    },
+    "title": {
+      "fr": "Le Constant",
+      "en": "The Constant",
+      "es": "El constante",
+      "pt": "O Constante"
     }
   }
 ]

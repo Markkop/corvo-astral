@@ -1,1069 +1,24 @@
 [
   {
     "definition": {
-      "id": 4239
+      "id": 2246
     },
     "title": {
-      "fr": "Costume Infernal",
-      "en": "Infernal Costume",
-      "es": "Traje Infernal",
-      "pt": "Traje Infernal"
+      "fr": "Costume d'Araknelle",
+      "en": "Arachnid Costume",
+      "es": "Traje de Araknela",
+      "pt": "Traje Aracnídeo"
     }
   },
   {
     "definition": {
-      "id": 3193
-    }
-  },
-  {
-    "definition": {
-      "id": 5414
-    }
-  },
-  {
-    "definition": {
-      "id": 3416
-    }
-  },
-  {
-    "definition": {
-      "id": 2732
-    },
-    "title": {
-      "fr": "Dynaste du Lotus",
-      "en": "Lotus Dynast",
-      "es": "Dinasta de loto",
-      "pt": "Dinastia de Lótus"
-    }
-  },
-  {
-    "definition": {
-      "id": 2556
-    },
-    "title": {
-      "fr": "Costume du Tourmenteur",
-      "en": "Tormentor Costume",
-      "es": "Traje de Atormentador",
-      "pt": "Insígnia de Atormentador"
-    }
-  },
-  {
-    "definition": {
-      "id": 3602
-    },
-    "title": {
-      "fr": "Costume Facebook",
-      "en": "Facebook Costume",
-      "es": "Traje Facebook",
-      "pt": "Traje do Facebook"
-    }
-  },
-  {
-    "definition": {
-      "id": 6012
-    },
-    "title": {
-      "fr": "Tacle Berserk",
-      "en": "Berserk Lock",
-      "es": "Placaje Berserker",
-      "pt": "Bloqueio Berserk"
-    }
-  },
-  {
-    "definition": {
-      "id": 5370
-    },
-    "title": {
-      "fr": "Pacte Wakfu",
-      "en": "Wakfu Pact",
-      "es": "Pacto Wakfu",
-      "pt": "Pacto Wakfu"
-    }
-  },
-  {
-    "definition": {
-      "id": 6800
-    }
-  },
-  {
-    "definition": {
-      "id": 6586
-    }
-  },
-  {
-    "definition": {
-      "id": 5443
-    },
-    "title": {
-      "fr": "Santé de fer",
-      "en": "Robust Health",
-      "es": "Salud de hierro",
-      "pt": "Saúde de Ferro"
-    }
-  },
-  {
-    "definition": {
-      "id": 5981
-    },
-    "title": {
-      "fr": "Dévastation",
-      "en": "Devastation",
-      "es": "Devastación",
-      "pt": "Devastação"
-    }
-  },
-  {
-    "definition": {
-      "id": 5078
-    },
-    "title": {
-      "fr": "Fracass'carcasse",
-      "en": "Smashmouth",
-      "es": "Rompecarcasa",
-      "pt": "Kebra-Karkaça"
-    }
-  },
-  {
-    "definition": {
-      "id": 4781
-    },
-    "title": {
-      "fr": "Costume du Boufbowleur de Bonta",
-      "en": "Bonta Gobbowler Costume",
-      "es": "Traje de Jalabolista de Bonta",
-      "pt": "Traje do Papabolista de Bonta"
-    }
-  },
-  {
-    "definition": {
-      "id": 5363
-    }
-  },
-  {
-    "definition": {
-      "id": 2616
-    },
-    "title": {
-      "fr": "Costume de Bouftou Rose",
-      "en": "Pink Gobball Costume",
-      "es": "Traje de Jalató Rosa",
-      "pt": "Insígnia de Papatudo Rosa"
-    }
-  },
-  {
-    "definition": {
-      "id": 4791
-    },
-    "title": {
-      "fr": "Costume du Iop Noir",
-      "en": "Black Iop Costume",
-      "es": "Traje de Yopuka Negro",
-      "pt": "Traje do Iop Preto"
-    }
-  },
-  {
-    "definition": {
-      "id": 7070
-    },
-    "title": {
-      "fr": "Pacte d'Anathar II",
-      "en": "Anathar's Pact II",
-      "es": "Pacto de Anathar II",
-      "pt": "Pacto de Anathar II"
-    }
-  },
-  {
-    "definition": {
-      "id": 2064
-    },
-    "title": {
-      "fr": "Insigne des Mérydes",
-      "en": "Meridia Insignia",
-      "es": "Insignia de los santos",
-      "pt": "Insígnia dos Meridas"
-    }
-  },
-  {
-    "definition": {
-      "id": 6812
-    },
-    "title": {
-      "fr": "Puissance brute",
-      "en": "Raw Power",
-      "es": "Potencia bruta",
-      "pt": "Potência Bruta"
-    }
-  },
-  {
-    "definition": {
-      "id": 6026
-    },
-    "title": {
-      "fr": "Influence",
-      "en": "Influence",
-      "es": "Influjo",
-      "pt": "Influência"
-    }
-  },
-  {
-    "definition": {
-      "id": 5364
-    }
-  },
-  {
-    "definition": {
-      "id": 6767
-    }
-  },
-  {
-    "definition": {
-      "id": 5987
-    },
-    "title": {
-      "fr": "Détermination",
-      "en": "Determination",
-      "es": "Determinación",
-      "pt": "Determinação"
-    }
-  },
-  {
-    "definition": {
-      "id": 3200
-    }
-  },
-  {
-    "definition": {
-      "id": 6329
-    },
-    "title": {
-      "fr": "Loup Solitaire",
-      "en": "Lone Wolf",
-      "es": "Lobo Solitario",
-      "pt": "Lobo Solitário"
-    }
-  },
-  {
-    "definition": {
-      "id": 4784
-    },
-    "title": {
-      "fr": "Costume du Boufbowleur de Sufokia",
-      "en": "Sufokia Gobbowler Costume",
-      "es": "Traje de Jalabolista de Sufokia",
-      "pt": "Traje do Papabolista de Sufokia"
-    }
-  },
-  {
-    "definition": {
-      "id": 1619
-    },
-    "title": {
-      "fr": "Emblème d'Osamodas",
-      "en": "Osamodas Emblem",
-      "es": "Emblema de osamodas",
-      "pt": "Emblema de Osamodas"
-    }
-  },
-  {
-    "definition": {
-      "id": 6801
-    }
-  },
-  {
-    "definition": {
-      "id": 6811
-    },
-    "title": {
-      "fr": "Arme solide",
-      "en": "Solid Weapon",
-      "es": "Arma sólida",
-      "pt": "Arma Sólida"
-    }
-  },
-  {
-    "definition": {
-      "id": 5907
-    }
-  },
-  {
-    "definition": {
-      "id": 2247
-    },
-    "title": {
-      "fr": "Costume bien taillé",
-      "en": "Well-Tailored Costume",
-      "es": "Traje hispáÑico",
-      "pt": "Traje Bem Feito"
-    }
-  },
-  {
-    "definition": {
-      "id": 1282
-    },
-    "title": {
-      "fr": "Insigne de guilde rang 5",
-      "en": "Rank 5 Guild Insignia",
-      "es": "Insignia de gremio rango 5",
-      "pt": "Insígnia da Guilda de Categoria 5"
-    }
-  },
-  {
-    "definition": {
-      "id": 5452
-    },
-    "title": {
-      "fr": "Aura de flammes",
-      "en": "Flame Aura",
-      "es": "Aura de Llamas",
-      "pt": "Aura de Chamas"
-    }
-  },
-  {
-    "definition": {
-      "id": 5216
-    },
-    "title": {
-      "fr": "Directives",
-      "en": "Directives",
-      "es": "Directivas",
-      "pt": "Diretivas"
-    }
-  },
-  {
-    "definition": {
-      "id": 6330
-    },
-    "title": {
-      "fr": "Secret de la vie",
-      "en": "Secret of Life",
-      "es": "Secreto de la Vida",
-      "pt": "Segredo da Vida"
-    }
-  },
-  {
-    "definition": {
-      "id": 3344
-    },
-    "title": {
-      "fr": "Mercenaire de Sufokia",
-      "en": "Sufokia Mercenary",
-      "es": "Mercenario de Sufokia",
-      "pt": "Mercenário de Sufokia"
-    }
-  },
-  {
-    "definition": {
-      "id": 6714
-    },
-    "title": {
-      "fr": "Paisible",
-      "en": "Peaceful",
-      "es": "Apacible",
-      "pt": "Pacífico"
-    }
-  },
-  {
-    "definition": {
-      "id": 6833
-    },
-    "title": {
-      "fr": "Pied ferme",
-      "en": "Firm Foot",
-      "es": "Pie firme",
-      "pt": "Pé Firme"
-    }
-  },
-  {
-    "definition": {
-      "id": 1620
-    },
-    "title": {
-      "fr": "Emblème du Steamer",
-      "en": "Foggernaut Emblem",
-      "es": "Emblema de steamer",
-      "pt": "Emblema de Steamer"
-    }
-  },
-  {
-    "definition": {
-      "id": 4780
-    },
-    "title": {
-      "fr": "Costume d'un réveil forcé",
-      "en": "Forced Awakening Costume",
-      "es": "Traje de un despertar forzado",
-      "pt": "Traje do Despertar Forçado"
-    }
-  },
-  {
-    "definition": {
-      "id": 5154
-    }
-  },
-  {
-    "definition": {
-      "id": 6832
-    },
-    "title": {
-      "fr": "Main forte",
-      "en": "Strong Hand",
-      "es": "Mano aliada",
-      "pt": "Mãozinha"
-    }
-  },
-  {
-    "definition": {
-      "id": 2615
-    },
-    "title": {
-      "fr": "Costume de Black Wabbit",
-      "en": "Black Wabbit Costume",
-      "es": "Traje de Black Wabbit",
-      "pt": "Insígnia do Black Wabbit"
-    }
-  },
-  {
-    "definition": {
-      "id": 6599
-    }
-  },
-  {
-    "definition": {
-      "id": 6846
-    }
-  },
-  {
-    "definition": {
-      "id": 2932
-    },
-    "title": {
-      "fr": "Costume d'Adale",
-      "en": "Adal Costume",
-      "es": "Traje de Adal",
-      "pt": "Traje de Adal"
-    }
-  },
-  {
-    "definition": {
-      "id": 5079
-    },
-    "title": {
-      "fr": "Alternance",
-      "en": "Alternation",
-      "es": "Alternancia",
-      "pt": "Alternância"
-    }
-  },
-  {
-    "definition": {
-      "id": 5444
-    },
-    "title": {
-      "fr": "Science du placement",
-      "en": "Positioning Knowledge",
-      "es": "Ciencia del Posicionamiento",
-      "pt": "Arte do posicionamento"
-    }
-  },
-  {
-    "definition": {
-      "id": 5664
-    }
-  },
-  {
-    "definition": {
-      "id": 5270
-    }
-  },
-  {
-    "definition": {
-      "id": 6818
-    },
-    "title": {
-      "fr": "Vol d'Esquive",
-      "en": "Dodge Steal",
-      "es": "Robo de esquiva",
-      "pt": "Roubo de Esquiva"
-    }
-  },
-  {
-    "definition": {
-      "id": 4960
-    }
-  },
-  {
-    "definition": {
-      "id": 5448
-    },
-    "title": {
-      "fr": "Force herculéenne",
-      "en": "Herculean Strength",
-      "es": "Fuerza Hercúlea",
-      "pt": "Força Hercúlea"
-    }
-  },
-  {
-    "definition": {
-      "id": 4917
-    }
-  },
-  {
-    "definition": {
-      "id": 2495
-    },
-    "title": {
-      "fr": "Costume de Grinch",
-      "en": "Grinch Costume",
-      "es": "Traje de Grinch",
-      "pt": "Traje de Grinch"
-    }
-  },
-  {
-    "definition": {
-      "id": 6095
-    }
-  },
-  {
-    "definition": {
-      "id": 2554
-    },
-    "title": {
-      "fr": "Costume d'Ocushus",
-      "en": "Ocushu Costume",
-      "es": "Traje de Okhlar",
-      "pt": "Insígnia de Ocushu"
-    }
-  },
-  {
-    "definition": {
-      "id": 1597
-    },
-    "title": {
-      "fr": "Insigne Encapuchonné",
-      "en": "Hoodlum Insignia",
-      "es": "Insignia de encapuchado",
-      "pt": "Insígnia de Encapuzado"
-    }
-  },
-  {
-    "definition": {
-      "id": 6678
-    }
-  },
-  {
-    "definition": {
-      "id": 6302
-    }
-  },
-  {
-    "definition": {
-      "id": 6928
-    },
-    "title": {
-      "fr": "Critique technique",
-      "en": "Technical Critical",
-      "es": "Crítico técnico",
-      "pt": "Crítico Técnico"
-    }
-  },
-  {
-    "definition": {
-      "id": 6008
-    },
-    "title": {
-      "fr": "Vivacité",
-      "en": "Vivacity",
-      "es": "Vivacidad",
-      "pt": "Vivacidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 5210
-    }
-  },
-  {
-    "definition": {
-      "id": 5252
-    },
-    "title": {
-      "fr": "Sang de la déchirure",
-      "en": "Heartbreaking Blood",
-      "es": "Sangre del Martirio",
-      "pt": "Sangue do Talho"
-    }
-  },
-  {
-    "definition": {
-      "id": 6096
-    }
-  },
-  {
-    "definition": {
-      "id": 2271
-    },
-    "title": {
-      "fr": "Costume de Lardevil",
-      "en": "Lardevil Costume",
-      "es": "Traje de Puerkevil",
-      "pt": "Traje de Diabanha"
-    }
-  },
-  {
-    "definition": {
-      "id": 3261
-    },
-    "title": {
-      "fr": "Costume du Tyrolien",
-      "en": "Tyrolean Costume",
-      "es": "Traje de Tiroliano",
-      "pt": "Traje do tirolês"
-    }
-  },
-  {
-    "definition": {
-      "id": 4548
-    }
-  },
-  {
-    "definition": {
-      "id": 1568
-    },
-    "title": {
-      "fr": "Guilde Samoussaï",
-      "en": "Samoussai Guild",
-      "es": "Gremio samusai",
-      "pt": "Guilda Samussai"
-    }
-  },
-  {
-    "definition": {
-      "id": 1616
-    },
-    "title": {
-      "fr": "Emblème du Roublard",
-      "en": "Rogue Emblem",
-      "es": "Emblema de tymador",
-      "pt": "Emblema de Ladino"
-    }
-  },
-  {
-    "definition": {
-      "id": 5999
-    },
-    "title": {
-      "fr": "Dimensionnalité",
-      "en": "Dimensionality",
-      "es": "Dimensionalidad",
-      "pt": "Dimensionalidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 2272
-    },
-    "title": {
-      "fr": "Costume de Megathon",
-      "en": "Decepticod Costume",
-      "es": "Traje de Megatún",
-      "pt": "Traje de Megatum"
-    }
-  },
-  {
-    "definition": {
-      "id": 6594
-    }
-  },
-  {
-    "definition": {
-      "id": 6013
-    },
-    "title": {
-      "fr": "Ravage secondaire",
-      "en": "Secondary Devastation",
-      "es": "Estragos secundarios",
-      "pt": "Assolação Secundária"
-    }
-  },
-  {
-    "definition": {
-      "id": 2513
-    },
-    "title": {
-      "fr": "Requinquage 33%",
-      "en": "Perk Up 33%",
-      "es": "Recuperación 33%",
-      "pt": "Estimular 33%"
-    }
-  },
-  {
-    "definition": {
-      "id": 6587
-    }
-  },
-  {
-    "definition": {
-      "id": 2460
-    },
-    "title": {
-      "fr": "Costume de Garde d'Amakna",
-      "en": "Amaknian Guard Costume",
-      "es": "Traje de Guarda de Amakna",
-      "pt": "Traje de Guarda de Amakna"
-    }
-  },
-  {
-    "definition": {
-      "id": 5700
-    }
-  },
-  {
-    "definition": {
-      "id": 3201
-    }
-  },
-  {
-    "definition": {
-      "id": 1583
-    },
-    "title": {
-      "fr": "Le demi pay aime",
-      "en": "Glass Half Empee",
-      "es": "Medio peheme",
-      "pt": "Vidro Meio Vajio"
-    }
-  },
-  {
-    "definition": {
-      "id": 5885
-    },
-    "title": {
-      "fr": "Inversion",
-      "en": "Inversion",
-      "es": "Inversión",
-      "pt": "Inversão"
-    }
-  },
-  {
-    "definition": {
-      "id": 5994
-    },
-    "title": {
-      "fr": "Frénésie",
-      "en": "Frenzy",
-      "es": "Frenesí",
-      "pt": "Frenesi"
-    }
-  },
-  {
-    "definition": {
-      "id": 4300
-    },
-    "title": {
-      "fr": "Costume de l'été",
-      "en": "Summer Costume",
-      "es": "Traje de Verano",
-      "pt": "Traje do Verão"
-    }
-  },
-  {
-    "definition": {
-      "id": 5074
-    },
-    "title": {
-      "fr": "Constant",
-      "en": "Constant",
-      "es": "Constante",
-      "pt": "Constante"
-    }
-  },
-  {
-    "definition": {
-      "id": 5446
-    },
-    "title": {
-      "fr": "Brutalité",
-      "en": "Brutality",
-      "es": "Brutalidad",
-      "pt": "Brutalidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 6019
-    },
-    "title": {
-      "fr": "Barrière Distance",
-      "en": "Distance Barrier",
-      "es": "Barrera a Distancia",
-      "pt": "Barreira a Distância"
-    }
-  },
-  {
-    "definition": {
-      "id": 5075
-    },
-    "title": {
-      "fr": "Mesuré",
-      "en": "Measured",
-      "es": "Comedido",
-      "pt": "Comedido"
-    }
-  },
-  {
-    "definition": {
-      "id": 2520
-    },
-    "title": {
-      "fr": "Costume de Mariage",
-      "en": "Marriage Costume",
-      "es": "Traje de Boda",
-      "pt": "Insígnia de Casamento"
-    }
-  },
-  {
-    "definition": {
-      "id": 1567
-    },
-    "title": {
-      "fr": "Guilde Draconique",
-      "en": "Draconic Guild",
-      "es": "Gremio dracónico",
-      "pt": "Guida Dracônica"
-    }
-  },
-  {
-    "definition": {
-      "id": 6826
-    },
-    "title": {
-      "fr": "Être sensible",
-      "en": "Sensitivity",
-      "es": "Ser sensible",
-      "pt": "Sensibilidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 5983
-    },
-    "title": {
-      "fr": "Carnage",
-      "en": "Carnage",
-      "es": "Masacre",
-      "pt": "Carnificina"
-    }
-  },
-  {
-    "definition": {
-      "id": 1348
-    },
-    "title": {
-      "fr": "Etoi Eskeutula",
-      "en": "Legwhat?",
-      "es": "Ytudondeta",
-      "pt": "Pernoquê?"
-    }
-  },
-  {
-    "definition": {
-      "id": 6331
-    },
-    "title": {
-      "fr": "Tolérance",
-      "en": "Tolerance",
-      "es": "Tolerancia",
-      "pt": "Tolerância"
-    }
-  },
-  {
-    "definition": {
-      "id": 3142
-    },
-    "title": {
-      "fr": "Costume de Mercenaire",
-      "en": "Mercenary Costume",
-      "es": "Traje de Mercenario",
-      "pt": "Insígnia de Mercenário"
-    }
-  },
-  {
-    "definition": {
-      "id": 6076
-    }
-  },
-  {
-    "definition": {
-      "id": 2493
-    },
-    "title": {
-      "fr": "Costume du Culte Occulte",
-      "en": "Occult Cult Costume",
-      "es": "Traje del Culto Oculto",
-      "pt": "Traje do Culto Oculto"
-    }
-  },
-  {
-    "definition": {
-      "id": 5271
-    }
-  },
-  {
-    "definition": {
-      "id": 6675
-    }
-  },
-  {
-    "definition": {
-      "id": 7071
-    },
-    "title": {
-      "fr": "Pacte d'Anathar III",
-      "en": "Anathar's Pact III",
-      "es": "Pacto de Anathar III",
-      "pt": "Pacto de Anathar III"
-    }
-  },
-  {
-    "definition": {
-      "id": 6384
-    }
-  },
-  {
-    "definition": {
-      "id": 5984
-    },
-    "title": {
-      "fr": "Cicatrisation",
-      "en": "Healing",
-      "es": "Sanación",
-      "pt": "Cicatrização"
-    }
-  },
-  {
-    "definition": {
-      "id": 6034
-    },
-    "title": {
-      "fr": "Focalisation",
-      "en": "Focalization",
-      "es": "Focalización",
-      "pt": "Focalização"
-    }
-  },
-  {
-    "definition": {
-      "id": 2462
-    },
-    "title": {
-      "fr": "Costume de Garde de Bonta",
-      "en": "Bontarian Guard Costume",
-      "es": "Traje de Guarda de Bonta",
-      "pt": "Traje de Guarda de Bonta"
-    }
-  },
-  {
-    "definition": {
-      "id": 6275
-    }
-  },
-  {
-    "definition": {
-      "id": 5989
-    },
-    "title": {
-      "fr": "Solidité",
-      "en": "Solidity",
-      "es": "Solidez",
-      "pt": "Solidez"
-    }
-  },
-  {
-    "definition": {
-      "id": 1973
-    },
-    "title": {
-      "fr": "Costume de Wabbit",
-      "en": "Wabbit Costume",
-      "es": "Traje de Wabbit",
-      "pt": "Traje de Wabbit"
-    }
-  },
-  {
-    "definition": {
-      "id": 4782
-    },
-    "title": {
-      "fr": "Costume du Boufbowleur de Brâkmar",
-      "en": "Brakmar Gobbowler Costume",
-      "es": "Traje de Jalabolista de Brakmar",
-      "pt": "Traje do Papabolista de Brakmar"
-    }
-  },
-  {
-    "definition": {
-      "id": 6042
-    },
-    "title": {
-      "fr": "Stupéfaction",
-      "en": "Stupefaction",
-      "es": "Estupefacción",
-      "pt": "Espanto"
-    }
-  },
-  {
-    "definition": {
-      "id": 1598
-    },
-    "title": {
-      "fr": "Insigne Encapuchonné",
-      "en": "Hoodlum Insignia",
-      "es": "Insignia de encapuchado",
-      "pt": "Insígnia de Encapuzado"
-    }
-  },
-  {
-    "definition": {
-      "id": 4709
-    },
-    "title": {
-      "fr": "Costume de Flaqueux",
-      "en": "Puddly Costume",
-      "es": "Traje de Charcoso",
-      "pt": "Traje de Charcoso"
-    }
-  },
-  {
-    "definition": {
-      "id": 4102
-    },
-    "title": {
-      "fr": "Costume Huppermage de Bonta",
-      "en": "Bontarian Huppermage Costume",
-      "es": "Traje Hipermago de Bonta",
-      "pt": "Traje de Huppermago de Bonta"
-    }
-  },
-  {
-    "definition": {
-      "id": 2573
-    },
-    "title": {
-      "fr": "Requinquage 75%",
-      "en": "Perk Up 75%",
-      "es": "Recuperación 75%",
-      "pt": "Estimular 75%"
-    }
-  },
-  {
-    "definition": {
-      "id": 3987
+      "id": 4242
     },
     "title": {
-      "fr": "Costume de Renne",
-      "en": "Reindeer Costume",
-      "es": "Traje de Reno",
-      "pt": "Traje de Rena"
+      "fr": "Costume Gras",
+      "en": "Fool's Costume",
+      "es": "Traje Grasiento",
+      "pt": "Traje Engordurado"
     }
   },
   {
@@ -1079,155 +34,324 @@
   },
   {
     "definition": {
-      "id": 2411
+      "id": 2493
     },
     "title": {
-      "fr": "Requinquage 50%",
-      "en": "Perk Up 50%",
-      "es": "Recuperación 50%",
-      "pt": "Estimular 50%"
+      "fr": "Costume du Culte Occulte",
+      "en": "Occult Cult Costume",
+      "es": "Traje del Culto Oculto",
+      "pt": "Traje do Culto Oculto"
     }
   },
   {
     "definition": {
-      "id": 2243
+      "id": 6846
+    }
+  },
+  {
+    "definition": {
+      "id": 6679
+    }
+  },
+  {
+    "definition": {
+      "id": 5668
+    }
+  },
+  {
+    "definition": {
+      "id": 6029
     },
     "title": {
-      "fr": "Costume de Chasseur de Monstre d'Halouine",
-      "en": "Al Howin Monster Hunter Costume",
-      "es": "Traje de Cazador de Monstruos de Haluín",
-      "pt": "Traje de Caçador de Monstro do Relouin"
+      "fr": "Muraille",
+      "en": "Wall",
+      "es": "Muralla",
+      "pt": "Muralha"
     }
   },
   {
     "definition": {
-      "id": 3191
-    }
-  },
-  {
-    "definition": {
-      "id": 6813
+      "id": 4382
     },
     "title": {
-      "fr": "Retour enflammé",
-      "en": "Flaming Return",
-      "es": "Respuesta ardiente",
-      "pt": "Retorno das Chamas"
+      "fr": "Costume de Nowel",
+      "en": "Kwismas Costume",
+      "es": "Traje de Nawidad",
+      "pt": "Traje de Nataw"
     }
   },
   {
     "definition": {
-      "id": 5829
+      "id": 6824
     },
     "title": {
-      "fr": "Insigne Encapuchonné",
-      "en": "Hoodlum Insignia",
-      "es": "Insignia de Encapuchado",
-      "pt": "Insígnia de Encapuzado"
+      "fr": "Retour vital",
+      "en": "Vital Return",
+      "es": "Vuelta vital",
+      "pt": "Volta Vital"
     }
   },
   {
     "definition": {
-      "id": 6032
+      "id": 6599
+    }
+  },
+  {
+    "definition": {
+      "id": 4469
+    }
+  },
+  {
+    "definition": {
+      "id": 5999
     },
     "title": {
-      "fr": "Prospérité",
-      "en": "Prosperity",
-      "es": "Prosperidad",
-      "pt": "Prosperidade"
+      "fr": "Dimensionnalité",
+      "en": "Dimensionality",
+      "es": "Dimensionalidad",
+      "pt": "Dimensionalidade"
     }
   },
   {
     "definition": {
-      "id": 1284
+      "id": 6847
+    }
+  },
+  {
+    "definition": {
+      "id": 5403
+    }
+  },
+  {
+    "definition": {
+      "id": 2636
     },
     "title": {
-      "fr": "Makabrano Ksion",
-      "en": "Makabraktion Ring",
-      "es": "Makabranillo Ksión",
-      "pt": "Anel da Makabração"
+      "fr": "Transfert Tellurique",
+      "en": "Terrestrial Transfer",
+      "es": "Transferencia Telúrica",
+      "pt": "Transferência Telúrica"
     }
   },
   {
     "definition": {
-      "id": 6000
+      "id": 6926
     },
     "title": {
-      "fr": "Théorie de la matière",
-      "en": "Theory of Matter",
-      "es": "Teoría de la Materia",
-      "pt": "Teoria da Matéria"
+      "fr": "Revigoration",
+      "en": "Reinvigoration",
+      "es": "Revigorización",
+      "pt": "Revigorada"
     }
   },
   {
     "definition": {
-      "id": 3062
+      "id": 6097
+    }
+  },
+  {
+    "definition": {
+      "id": 1130
     },
     "title": {
-      "fr": "Costume de Shushu Fanatique",
-      "en": "Fanatic Shushu Costume",
-      "es": "Traje de fab'huritu fanático",
-      "pt": "Insígnia de Shushu Fanático"
+      "fr": "Tenue de Pionnier",
+      "en": "Pioneer Outfit",
+      "es": "Traje de pionero",
+      "pt": "Traje de Pioneiro"
     }
   },
   {
     "definition": {
-      "id": 3990
+      "id": 4778
     },
     "title": {
-      "fr": "Costume 1001 Griffes",
-      "en": "1001 Claws Costume",
-      "es": "Para todos los que deseen afilar sus mil y una patas.",
-      "pt": "Traje das Mil e Uma Garras"
+      "fr": "Costume d'Otomaï",
+      "en": "Otomai Costume",
+      "es": "Traje de Otomai",
+      "pt": "Traje de Otomai"
     }
   },
   {
     "definition": {
-      "id": 5991
+      "id": 6042
     },
     "title": {
-      "fr": "Légèreté",
-      "en": "Lightness",
-      "es": "Ligereza",
-      "pt": "Leveza"
+      "fr": "Stupéfaction",
+      "en": "Stupefaction",
+      "es": "Estupefacción",
+      "pt": "Espanto"
     }
   },
   {
     "definition": {
-      "id": 1596
+      "id": 4381
     },
     "title": {
-      "fr": "Insigne Encapuchonné",
-      "en": "Hoodlum Insignia",
-      "es": "Insignia de encapuchado",
-      "pt": "Insígnia de Encapuzado"
+      "fr": "Costume Patriote",
+      "en": "Patriot Costume",
+      "es": "Traje Patriota",
+      "pt": "Traje do Patriota"
     }
   },
   {
     "definition": {
-      "id": 6090
+      "id": 6822
     },
     "title": {
-      "fr": "Cicatrisation",
-      "en": "Healing",
-      "es": "Sanación",
-      "pt": "Cicatrização"
+      "fr": "Arcanes",
+      "en": "Arcana",
+      "es": "Arcanos",
+      "pt": "Arcanos"
     }
   },
   {
     "definition": {
-      "id": 4547
-    }
-  },
-  {
-    "definition": {
-      "id": 5080
+      "id": 6006
     },
     "title": {
-      "fr": "Confiance",
-      "en": "Trust",
-      "es": "Confianza",
-      "pt": "Confiança"
+      "fr": "Sauvegarde",
+      "en": "Save",
+      "es": "Guardado",
+      "pt": "Salvaguarda"
+    }
+  },
+  {
+    "definition": {
+      "id": 5277
+    }
+  },
+  {
+    "definition": {
+      "id": 5352
+    }
+  },
+  {
+    "definition": {
+      "id": 5885
+    },
+    "title": {
+      "fr": "Inversion",
+      "en": "Inversion",
+      "es": "Inversión",
+      "pt": "Inversão"
+    }
+  },
+  {
+    "definition": {
+      "id": 6817
+    },
+    "title": {
+      "fr": "Vol de Tacle",
+      "en": "Lock Steal",
+      "es": "Robo de placaje",
+      "pt": "Roubo de Bloqueio"
+    }
+  },
+  {
+    "definition": {
+      "id": 5800
+    }
+  },
+  {
+    "definition": {
+      "id": 2729
+    },
+    "title": {
+      "fr": "Dynaste d'Argent",
+      "en": "Silver Dynast",
+      "es": "Dinasta de plata",
+      "pt": "Dinastia de Prata"
+    }
+  },
+  {
+    "definition": {
+      "id": 5980
+    },
+    "title": {
+      "fr": "Ruine",
+      "en": "Ruin",
+      "es": "Ruina",
+      "pt": "Ruína"
+    }
+  },
+  {
+    "definition": {
+      "id": 6384
+    }
+  },
+  {
+    "definition": {
+      "id": 4383
+    },
+    "title": {
+      "fr": "Costume Día de los Muertos",
+      "en": "Día de los Muertos Costume",
+      "es": "Traje del Día de Muertos",
+      "pt": "Traje do Día de los Muertos"
+    }
+  },
+  {
+    "definition": {
+      "id": 6586
+    }
+  },
+  {
+    "definition": {
+      "id": 6274
+    }
+  },
+  {
+    "definition": {
+      "id": 6377
+    }
+  },
+  {
+    "definition": {
+      "id": 2368
+    },
+    "title": {
+      "fr": "Costume d'Archaologue de Brâkmar",
+      "en": "Brakmarian Archaosologist Costume",
+      "es": "Traje de Arcaólogo de Brakmar",
+      "pt": "Traje de arcaólogo de Brakmar"
+    }
+  },
+  {
+    "definition": {
+      "id": 1616
+    },
+    "title": {
+      "fr": "Emblème du Roublard",
+      "en": "Rogue Emblem",
+      "es": "Emblema de tymador",
+      "pt": "Emblema de Ladino"
+    }
+  },
+  {
+    "definition": {
+      "id": 5886
+    },
+    "title": {
+      "fr": "Eternité",
+      "en": "Eternity",
+      "es": "Eternidad",
+      "pt": "Eternidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 5153
+    }
+  },
+  {
+    "definition": {
+      "id": 6818
+    },
+    "title": {
+      "fr": "Vol d'Esquive",
+      "en": "Dodge Steal",
+      "es": "Robo de esquiva",
+      "pt": "Roubo de Esquiva"
     }
   },
   {
@@ -1237,95 +361,40 @@
   },
   {
     "definition": {
-      "id": 2617
-    },
-    "title": {
-      "fr": "Costume de Tofu Violet",
-      "en": "Purple Tofu Costume",
-      "es": "Traje de Tofu Violeta",
-      "pt": "Insígnia de Tofu Roxo"
+      "id": 3189
     }
   },
   {
     "definition": {
-      "id": 1566
+      "id": 1780
     },
     "title": {
-      "fr": "Guilde Chaferion",
-      "en": "Chaferion Guild",
-      "es": "Gremio chaferino",
-      "pt": "Guilda Chaferiana"
+      "fr": "Costume de Fatassin",
+      "en": "Infuntry Costume",
+      "es": "Traje de Infante",
+      "pt": "Traje de Infangaiataria"
     }
   },
   {
     "definition": {
-      "id": 5082
+      "id": 1611
     },
     "title": {
-      "fr": "Robuste",
-      "en": "Robust",
-      "es": "Robusto",
-      "pt": "Robusto"
+      "fr": "Emblème d'Ecaflip",
+      "en": "Ecaflip Emblem",
+      "es": "Emblema de zurcarák",
+      "pt": "Emblema de Ecaflip"
     }
   },
   {
     "definition": {
-      "id": 6680
-    }
-  },
-  {
-    "definition": {
-      "id": 4792
+      "id": 3589
     },
     "title": {
-      "fr": "Costume du Iop Rouge",
-      "en": "Red Iop Costume",
-      "es": "Traje de Yopuka Rojo",
-      "pt": "Traje do Iop Vermelho"
-    }
-  },
-  {
-    "definition": {
-      "id": 5993
-    },
-    "title": {
-      "fr": "Réprobation",
-      "en": "Condemnation",
-      "es": "Reprobación",
-      "pt": "Reprovação"
-    }
-  },
-  {
-    "definition": {
-      "id": 2524
-    },
-    "title": {
-      "fr": "Costume à définir",
-      "en": "TBD Costume",
-      "es": "Traje por Definir",
-      "pt": "Insígnia a ser definida"
-    }
-  },
-  {
-    "definition": {
-      "id": 2570
-    },
-    "title": {
-      "fr": "Muraille 75%",
-      "en": "Walls 75%",
-      "es": "Muralla 75%",
-      "pt": "Muros 75%"
-    }
-  },
-  {
-    "definition": {
-      "id": 6021
-    },
-    "title": {
-      "fr": "Persistance",
-      "en": "Persistence",
-      "es": "Persistencia",
-      "pt": "Persistência"
+      "fr": "Costume Chef de Meute",
+      "en": "Leader of the Pack Costume",
+      "es": "Traje de Jefe de la Manada",
+      "pt": "Traje do Líder da Matilha"
     }
   },
   {
@@ -1337,6 +406,22 @@
       "en": "Tactical Critical",
       "es": "Crítico táctico",
       "pt": "Crítico Estratégico"
+    }
+  },
+  {
+    "definition": {
+      "id": 6020
+    },
+    "title": {
+      "fr": "Barrière Mêlée",
+      "en": "Close Combat Barrier",
+      "es": "Barrera en Cuerpo a Cuerpo",
+      "pt": "Barreira Corpo aCorpo"
+    }
+  },
+  {
+    "definition": {
+      "id": 4471
     }
   },
   {
@@ -1358,692 +443,13 @@
   },
   {
     "definition": {
-      "id": 2505
+      "id": 4303
     },
     "title": {
-      "fr": "Fortification",
-      "en": "Fortification",
-      "es": "Fortificación",
-      "pt": "Fortificação"
-    }
-  },
-  {
-    "definition": {
-      "id": 6824
-    },
-    "title": {
-      "fr": "Retour vital",
-      "en": "Vital Return",
-      "es": "Vuelta vital",
-      "pt": "Volta Vital"
-    }
-  },
-  {
-    "definition": {
-      "id": 6097
-    }
-  },
-  {
-    "definition": {
-      "id": 6927
-    },
-    "title": {
-      "fr": "Précaution",
-      "en": "Precaution",
-      "es": "Precaución",
-      "pt": "Precaução"
-    }
-  },
-  {
-    "definition": {
-      "id": 6926
-    },
-    "title": {
-      "fr": "Revigoration",
-      "en": "Reinvigoration",
-      "es": "Revigorización",
-      "pt": "Revigorada"
-    }
-  },
-  {
-    "definition": {
-      "id": 5403
-    }
-  },
-  {
-    "definition": {
-      "id": 5349
-    }
-  },
-  {
-    "definition": {
-      "id": 6588
-    }
-  },
-  {
-    "definition": {
-      "id": 4090
-    }
-  },
-  {
-    "definition": {
-      "id": 5386
-    }
-  },
-  {
-    "definition": {
-      "id": 1480
-    },
-    "title": {
-      "fr": "Insigne de Jacko",
-      "en": "Jacko Insignia",
-      "es": "Insignia de Jacko",
-      "pt": "Insígnia de Aboborino"
-    }
-  },
-  {
-    "definition": {
-      "id": 2931
-    },
-    "title": {
-      "fr": "Costume de Passage",
-      "en": "Passenthru Costume",
-      "es": "Traje de Paso",
-      "pt": "Insígnia de Passagem"
-    }
-  },
-  {
-    "definition": {
-      "id": 2030
-    },
-    "title": {
-      "fr": "Costume de Lin Kuei",
-      "en": "Lin Kawaii Costume",
-      "es": "Traje de Lin Kei",
-      "pt": "Traje de Lin Kuei"
-    }
-  },
-  {
-    "definition": {
-      "id": 6731
-    },
-    "title": {
-      "fr": "Dofus Turquoise",
-      "en": "Turquoise Dofus",
-      "es": "Dofus Turquesa",
-      "pt": "Dofus Turquesa"
-    }
-  },
-  {
-    "definition": {
-      "id": 5413
-    }
-  },
-  {
-    "definition": {
-      "id": 6814
-    },
-    "title": {
-      "fr": "Influence du Wakfu",
-      "en": "Wakfu Influence",
-      "es": "Influjo del Wakfu",
-      "pt": "Influência do Wakfu"
-    }
-  },
-  {
-    "definition": {
-      "id": 6842
-    },
-    "title": {
-      "fr": "Courage",
-      "en": "Courage",
-      "es": "Valentía",
-      "pt": "Coragem"
-    }
-  },
-  {
-    "definition": {
-      "id": 6024
-    },
-    "title": {
-      "fr": "Parade Berserk",
-      "en": "Berserk Block",
-      "es": "Anticipación Berserker",
-      "pt": "Parada Berserk"
-    }
-  },
-  {
-    "definition": {
-      "id": 6036
-    },
-    "title": {
-      "fr": "Longueur",
-      "en": "Length",
-      "es": "Longitud",
-      "pt": "Extensão"
-    }
-  },
-  {
-    "definition": {
-      "id": 5026
-    }
-  },
-  {
-    "definition": {
-      "id": 2494
-    },
-    "title": {
-      "fr": "Costume de la Fête du Printemps",
-      "en": "Spring Has Sprung Costume",
-      "es": "Traje de la Fiesta de la Primavera",
-      "pt": "Traje de Primavendo a Primavera"
-    }
-  },
-  {
-    "definition": {
-      "id": 6020
-    },
-    "title": {
-      "fr": "Barrière Mêlée",
-      "en": "Close Combat Barrier",
-      "es": "Barrera en Cuerpo a Cuerpo",
-      "pt": "Barreira Corpo aCorpo"
-    }
-  },
-  {
-    "definition": {
-      "id": 1611
-    },
-    "title": {
-      "fr": "Emblème d'Ecaflip",
-      "en": "Ecaflip Emblem",
-      "es": "Emblema de zurcarák",
-      "pt": "Emblema de Ecaflip"
-    }
-  },
-  {
-    "definition": {
-      "id": 4471
-    }
-  },
-  {
-    "definition": {
-      "id": 3189
-    }
-  },
-  {
-    "definition": {
-      "id": 6274
-    }
-  },
-  {
-    "definition": {
-      "id": 1615
-    },
-    "title": {
-      "fr": "Emblème d'Enutrof",
-      "en": "Enutrof Emblem",
-      "es": "Emblema de anutrof",
-      "pt": "Emblema de Enutrof"
-    }
-  },
-  {
-    "definition": {
-      "id": 1319
-    },
-    "title": {
-      "fr": "Insigne de Necropeth",
-      "en": "Spektral Insignia",
-      "es": "Insignia necropeda",
-      "pt": "Insígnia Espektral"
-    }
-  },
-  {
-    "definition": {
-      "id": 4104
-    },
-    "title": {
-      "fr": "Costume Huppermage d'Amakna",
-      "en": "Amaknian Huppermage Costume",
-      "es": "Traje Hipermago de Amakna",
-      "pt": "Traje de Huppermago de Amakna"
-    }
-  },
-  {
-    "definition": {
-      "id": 1318
-    },
-    "title": {
-      "fr": "Insigne du Cucupidon",
-      "en": "Cupiddlypants Insignia",
-      "es": "Insignia de Cubeedo",
-      "pt": "Insígnia de Escúpilo"
-    }
-  },
-  {
-    "definition": {
-      "id": 6025
-    },
-    "title": {
-      "fr": "Puits de Vitalité",
-      "en": "Vitality Well",
-      "es": "Pozo de Vitalidad",
-      "pt": "Poço de Vitalidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 5976
-    },
-    "title": {
-      "fr": "Arme de Lumière",
-      "en": "Light Weapon",
-      "es": "Arma de Luz",
-      "pt": "Arma de Luz"
-    }
-  },
-  {
-    "definition": {
-      "id": 6673
-    }
-  },
-  {
-    "definition": {
-      "id": 6039
-    },
-    "title": {
-      "fr": "Influence lente",
-      "en": "Slow Influence",
-      "es": "Influjo lento",
-      "pt": "Influência Lenta"
-    }
-  },
-  {
-    "definition": {
-      "id": 1612
-    },
-    "title": {
-      "fr": "Emblème d'Eniripsa",
-      "en": "Eniripsa Emblem",
-      "es": "Emblema de aniripsa",
-      "pt": "Emblema de Eniripsa"
-    }
-  },
-  {
-    "definition": {
-      "id": 5153
-    }
-  },
-  {
-    "definition": {
-      "id": 6198
-    }
-  },
-  {
-    "definition": {
-      "id": 6816
-    },
-    "title": {
-      "fr": "Arme incurable",
-      "en": "Incurable Weapon",
-      "es": "Arma incurable",
-      "pt": "Arma Incurável"
-    }
-  },
-  {
-    "definition": {
-      "id": 3187
-    }
-  },
-  {
-    "definition": {
-      "id": 6023
-    },
-    "title": {
-      "fr": "Aisance",
-      "en": "Poise",
-      "es": "Ligereza",
-      "pt": "Desenvoltura"
-    }
-  },
-  {
-    "definition": {
-      "id": 6798
-    }
-  },
-  {
-    "definition": {
-      "id": 3194
-    }
-  },
-  {
-    "definition": {
-      "id": 6380
-    }
-  },
-  {
-    "definition": {
-      "id": 3188
-    }
-  },
-  {
-    "definition": {
-      "id": 5077
-    },
-    "title": {
-      "fr": "Dénouement",
-      "en": "Unraveling",
-      "es": "Desenlace",
-      "pt": "Desenlace"
-    }
-  },
-  {
-    "definition": {
-      "id": 2463
-    },
-    "title": {
-      "fr": "Costume de Garde de Sufokia",
-      "en": "Sufokian Guard Costume",
-      "es": "Traje de Guarda de Sufokia",
-      "pt": "Traje de Guarda de Sufokia"
-    }
-  },
-  {
-    "definition": {
-      "id": 2512
-    },
-    "title": {
-      "fr": "Rage",
-      "en": "Fury",
-      "es": "Rabia",
-      "pt": "Raiva"
-    }
-  },
-  {
-    "definition": {
-      "id": 7074
-    },
-    "title": {
-      "fr": "Costume de Dark Wapin",
-      "en": "Darth Wodent Costume",
-      "es": "Traje de Dark Wonejo",
-      "pt": "Traje de Dark Lepowide"
-    }
-  },
-  {
-    "definition": {
-      "id": 7073
-    },
-    "title": {
-      "fr": "Pacte d'Anathar V",
-      "en": "Anathar's Pact V",
-      "es": "Pacto de Anathar V",
-      "pt": "Pacto de Anathar V"
-    }
-  },
-  {
-    "definition": {
-      "id": 6377
-    }
-  },
-  {
-    "definition": {
-      "id": 3341
-    },
-    "title": {
-      "fr": "Mercenaire d'Amakna",
-      "en": "Amakna Mercenary",
-      "es": "Mercenario de Amakna",
-      "pt": "Mercenário de Amakna"
-    }
-  },
-  {
-    "definition": {
-      "id": 6379
-    }
-  },
-  {
-    "definition": {
-      "id": 2413
-    },
-    "title": {
-      "fr": "Muraille 50%",
-      "en": "Walls 50%",
-      "es": "Muralla 50%",
-      "pt": "Muros 50%"
-    }
-  },
-  {
-    "definition": {
-      "id": 2246
-    },
-    "title": {
-      "fr": "Costume d'Araknelle",
-      "en": "Arachnid Costume",
-      "es": "Traje de Araknela",
-      "pt": "Traje Aracnídeo"
-    }
-  },
-  {
-    "definition": {
-      "id": 2525
-    },
-    "title": {
-      "fr": "Costume de Cacterre",
-      "en": "Castuc Costume",
-      "es": "Traje de Cacterro",
-      "pt": "Insígnia de Cacterra"
-    }
-  },
-  {
-    "definition": {
-      "id": 5798
-    }
-  },
-  {
-    "definition": {
-      "id": 2522
-    },
-    "title": {
-      "fr": "Costume de petit Paysan",
-      "en": "Little Farmer Costume",
-      "es": "Traje del Pequeño Campesino",
-      "pt": "Traje do pequeno Fazendeiro"
-    },
-    "description": {
-      "fr": "[default]",
-      "en": "[default]",
-      "es": "[default]",
-      "pt": "[default]"
-    }
-  },
-  {
-    "definition": {
-      "id": 3588
-    },
-    "title": {
-      "fr": "Costume du Mulou Alpha",
-      "en": "Alpha Boowolf Costume",
-      "es": "Traje de Milubo Alfa",
-      "pt": "Traje de Milobo Alfa"
-    }
-  },
-  {
-    "definition": {
-      "id": 5909
-    }
-  },
-  {
-    "definition": {
-      "id": 5361
-    }
-  },
-  {
-    "definition": {
-      "id": 4241
-    },
-    "title": {
-      "fr": "Costume du Tofu",
-      "en": "Tofu Costume",
-      "es": "Traje de Tofu",
-      "pt": "Traje do Tofu"
-    }
-  },
-  {
-    "definition": {
-      "id": 5800
-    }
-  },
-  {
-    "definition": {
-      "id": 7006
-    }
-  },
-  {
-    "definition": {
-      "id": 1823
-    },
-    "title": {
-      "fr": "Costume du Père Doby",
-      "en": "Father Deepboar Costume",
-      "es": "Traje del Padre Doby",
-      "pt": "Traje do padre Doby"
-    }
-  },
-  {
-    "definition": {
-      "id": 6038
-    },
-    "title": {
-      "fr": "Enveloppe rocheuse",
-      "en": "Rocky Envelope",
-      "es": "Envoltorio Rocoso",
-      "pt": "Invólucro Rochoso"
-    }
-  },
-  {
-    "definition": {
-      "id": 6817
-    },
-    "title": {
-      "fr": "Vol de Tacle",
-      "en": "Lock Steal",
-      "es": "Robo de placaje",
-      "pt": "Roubo de Bloqueio"
-    }
-  },
-  {
-    "definition": {
-      "id": 6706
-    },
-    "title": {
-      "fr": "Furie II",
-      "en": "Outrage II",
-      "es": "Furia II",
-      "pt": "Fúria II"
-    }
-  },
-  {
-    "definition": {
-      "id": 4863
-    },
-    "title": {
-      "fr": "Kit de Refroidissement",
-      "en": "Cooling Kit",
-      "es": "Kit de Refrigeración",
-      "pt": "Kit de Resfriamento"
-    }
-  },
-  {
-    "definition": {
-      "id": 5250
-    },
-    "title": {
-      "fr": "Excès",
-      "en": "Excess",
-      "es": "Exceso",
-      "pt": "Excesso"
-    }
-  },
-  {
-    "definition": {
-      "id": 3604
-    },
-    "title": {
-      "fr": "Costume de Vampire",
-      "en": "Vampyre Costume",
-      "es": "Traje de Vampiro",
-      "pt": "Traje de Vampiro"
-    }
-  },
-  {
-    "definition": {
-      "id": 6705
-    },
-    "title": {
-      "fr": "Furie",
-      "en": "Outrage",
-      "es": "Furia",
-      "pt": "Fúria"
-    }
-  },
-  {
-    "definition": {
-      "id": 1613
-    },
-    "title": {
-      "fr": "Emblème du Sadida",
-      "en": "Sadida Emblem",
-      "es": "Emblema de sadida",
-      "pt": "Emblema de Sadida"
-    }
-  },
-  {
-    "definition": {
-      "id": 5024
-    }
-  },
-  {
-    "definition": {
-      "id": 7005
-    }
-  },
-  {
-    "definition": {
-      "id": 5390
-    }
-  },
-  {
-    "definition": {
-      "id": 6831
-    },
-    "title": {
-      "fr": "Dernier souffle",
-      "en": "Last Breath",
-      "es": "Último aliento",
-      "pt": "Último Suspiro"
-    }
-  },
-  {
-    "definition": {
-      "id": 6822
-    },
-    "title": {
-      "fr": "Arcanes",
-      "en": "Arcana",
-      "es": "Arcanos",
-      "pt": "Arcanos"
-    }
-  },
-  {
-    "definition": {
-      "id": 2729
-    },
-    "title": {
-      "fr": "Dynaste d'Argent",
-      "en": "Silver Dynast",
-      "es": "Dinasta de plata",
-      "pt": "Dinastia de Prata"
+      "fr": "Costume du Mentor",
+      "en": "Mentor Costume",
+      "es": "Traje del Mentor",
+      "pt": "Traje do Mentor"
     }
   },
   {
@@ -2059,764 +465,62 @@
   },
   {
     "definition": {
-      "id": 4915
-    }
-  },
-  {
-    "definition": {
-      "id": 1780
+      "id": 2931
     },
     "title": {
-      "fr": "Costume de Fatassin",
-      "en": "Infuntry Costume",
-      "es": "Traje de Infante",
-      "pt": "Traje de Infangaiataria"
+      "fr": "Costume de Passage",
+      "en": "Passenthru Costume",
+      "es": "Traje de Paso",
+      "pt": "Insígnia de Passagem"
     }
   },
   {
     "definition": {
-      "id": 5212
-    }
-  },
-  {
-    "definition": {
-      "id": 2514
+      "id": 2462
     },
     "title": {
-      "fr": "Vivacité 90%",
-      "en": "90% Vivacity",
-      "es": "Vivacidad 90%",
-      "pt": "90% de Vivacidade"
+      "fr": "Costume de Garde de Bonta",
+      "en": "Bontarian Guard Costume",
+      "es": "Traje de Guarda de Bonta",
+      "pt": "Traje de Guarda de Bonta"
     }
   },
   {
     "definition": {
-      "id": 5802
-    }
-  },
-  {
-    "definition": {
-      "id": 6802
-    }
-  },
-  {
-    "definition": {
-      "id": 4916
-    }
-  },
-  {
-    "definition": {
-      "id": 3601
+      "id": 5989
     },
     "title": {
-      "fr": "Costume du Requin",
-      "en": "Shark Costume",
-      "es": "Traje de Tiburón",
-      "pt": "Traje de Tubarão"
+      "fr": "Solidité",
+      "en": "Solidity",
+      "es": "Solidez",
+      "pt": "Solidez"
     }
   },
   {
     "definition": {
-      "id": 6029
+      "id": 2513
     },
     "title": {
-      "fr": "Muraille",
-      "en": "Wall",
-      "es": "Muralla",
-      "pt": "Muralha"
+      "fr": "Requinquage 33%",
+      "en": "Perk Up 33%",
+      "es": "Recuperación 33%",
+      "pt": "Estimular 33%"
     }
   },
   {
     "definition": {
-      "id": 6002
+      "id": 2031
     },
     "title": {
-      "fr": "Endurance",
-      "en": "Endurance",
-      "es": "Aguante",
-      "pt": "Resistência"
+      "fr": "Costume de Shilay Lyu",
+      "en": "Shilay Lyu Costume",
+      "es": "Traje de Shilay Lyu",
+      "pt": "Traje de Shilay Lyu"
     }
   },
   {
     "definition": {
-      "id": 6001
-    },
-    "title": {
-      "fr": "Retour PA",
-      "en": "AP Return",
-      "es": "Devolución de PA",
-      "pt": "Volta PA"
-    }
-  },
-  {
-    "definition": {
-      "id": 4468
-    }
-  },
-  {
-    "definition": {
-      "id": 5799
-    }
-  },
-  {
-    "definition": {
-      "id": 5213
-    }
-  },
-  {
-    "definition": {
-      "id": 6829
-    },
-    "title": {
-      "fr": "Manie",
-      "en": "Mania",
-      "es": "Manía",
-      "pt": "Mania"
-    }
-  },
-  {
-    "definition": {
-      "id": 3233
-    },
-    "title": {
-      "fr": "Emblème du Zobal",
-      "en": "Masqueraider Emblem",
-      "es": "Emblema de zobal",
-      "pt": "Emblema do Zobal"
-    }
-  },
-  {
-    "definition": {
-      "id": 4920
-    }
-  },
-  {
-    "definition": {
-      "id": 4103
-    },
-    "title": {
-      "fr": "Costume Huppermage de Brâkmar",
-      "en": "Brakmarian Huppermage Costume",
-      "es": "Traje Hipermago de Brakmar",
-      "pt": "Traje de Huppermago de Brakmar"
-    }
-  },
-  {
-    "definition": {
-      "id": 1798
-    },
-    "title": {
-      "fr": "Insigne du Mulmouth",
-      "en": "Boohemoth Insignia",
-      "es": "Insignia de mimut",
-      "pt": "Insígnia do Mimute"
-    }
-  },
-  {
-    "definition": {
-      "id": 6219
-    }
-  },
-  {
-    "definition": {
-      "id": 2274
-    },
-    "title": {
-      "fr": "Costume de vilain",
-      "en": "Villain Costume",
-      "es": "Traje de Supervillano",
-      "pt": "Traje de Vilão"
-    }
-  },
-  {
-    "definition": {
-      "id": 6942
-    }
-  },
-  {
-    "definition": {
-      "id": 6199
-    }
-  },
-  {
-    "definition": {
-      "id": 6031
-    },
-    "title": {
-      "fr": "Retour PM",
-      "en": "MP Return",
-      "es": "Devolución de PM",
-      "pt": "Volta PM"
-    }
-  },
-  {
-    "definition": {
-      "id": 5985
-    },
-    "title": {
-      "fr": "Embuscade",
-      "en": "Ambush",
-      "es": "Emboscada",
-      "pt": "Emboscada"
-    }
-  },
-  {
-    "definition": {
-      "id": 2515
-    },
-    "title": {
-      "fr": "Berserk 50%",
-      "en": "50% Berserk",
-      "es": "Berserk 50%",
-      "pt": "Berserk 50%"
-    }
-  },
-  {
-    "definition": {
-      "id": 3989
-    },
-    "title": {
-      "fr": "Costume des Etoiles",
-      "en": "Star Costume",
-      "es": "Traje de las Estrellas",
-      "pt": "Traje de Estrela"
-    }
-  },
-  {
-    "definition": {
-      "id": 2574
-    },
-    "title": {
-      "fr": "Requinquage 25%",
-      "en": "Perk Up 25%",
-      "es": "Recuperación 25%",
-      "pt": "Estimular 25%"
-    }
-  },
-  {
-    "definition": {
-      "id": 6847
-    }
-  },
-  {
-    "definition": {
-      "id": 6712
-    },
-    "title": {
-      "fr": "Renaissance",
-      "en": "Rebirth",
-      "es": "Resurrección",
-      "pt": "Renascimento"
-    }
-  },
-  {
-    "definition": {
-      "id": 6707
-    },
-    "title": {
-      "fr": "Pilier",
-      "en": "Pillar",
-      "es": "Pilar",
-      "pt": "Pilar"
-    }
-  },
-  {
-    "definition": {
-      "id": 6273
-    }
-  },
-  {
-    "definition": {
-      "id": 5449
-    },
-    "title": {
-      "fr": "Concentration élémentaire",
-      "en": "Elemental Concentration",
-      "es": "Concentración Elemental",
-      "pt": "Concentração Elementar"
-    }
-  },
-  {
-    "definition": {
-      "id": 6827
-    },
-    "title": {
-      "fr": "Longueur d'armure",
-      "en": "Armor Length",
-      "es": "Longitud de armadura",
-      "pt": "Extensão da Armadura"
-    }
-  },
-  {
-    "definition": {
-      "id": 5362
-    }
-  },
-  {
-    "definition": {
-      "id": 4640
-    }
-  },
-  {
-    "definition": {
-      "id": 5174
-    },
-    "title": {
-      "fr": "Alternance II",
-      "en": "Alternation II",
-      "es": "Alternancia II",
-      "pt": "Alternância II"
-    }
-  },
-  {
-    "definition": {
-      "id": 6007
-    },
-    "title": {
-      "fr": "Bonne action",
-      "en": "Good Deed",
-      "es": "Buena Acción",
-      "pt": "Boa Ação"
-    }
-  },
-  {
-    "definition": {
-      "id": 6598
-    }
-  },
-  {
-    "definition": {
-      "id": 6004
-    },
-    "title": {
-      "fr": "Ecailles de Lune",
-      "en": "Moon Scales",
-      "es": "Fragmentos de Luna",
-      "pt": "Escamas de Lua"
-    }
-  },
-  {
-    "definition": {
-      "id": 7069
-    },
-    "title": {
-      "fr": "Pacte d'Anathar I",
-      "en": "Anathar's Pact I",
-      "es": "Pacto de Anathar I",
-      "pt": "Pacto de Anathar I"
-    }
-  },
-  {
-    "definition": {
-      "id": 5990
-    },
-    "title": {
-      "fr": "Fermeté",
-      "en": "Resolute",
-      "es": "Firmeza",
-      "pt": "Firmeza"
-    }
-  },
-  {
-    "definition": {
-      "id": 6018
-    },
-    "title": {
-      "fr": "Esquive Berserk",
-      "en": "Berserk Dodge",
-      "es": "Esquiva Berserker",
-      "pt": "Esquiva Berserk"
-    }
-  },
-  {
-    "definition": {
-      "id": 4382
-    },
-    "title": {
-      "fr": "Costume de Nowel",
-      "en": "Kwismas Costume",
-      "es": "Traje de Nawidad",
-      "pt": "Traje de Nataw"
-    }
-  },
-  {
-    "definition": {
-      "id": 4790
-    },
-    "title": {
-      "fr": "Costume de Coqueline",
-      "en": "Mishell Costume",
-      "es": "Traje de Kaskarina",
-      "pt": "Traje de Conchita"
-    }
-  },
-  {
-    "definition": {
-      "id": 5073
-    },
-    "title": {
-      "fr": "Inflexible",
-      "en": "Inflexible",
-      "es": "Inflexible",
-      "pt": "Inflexível"
-    }
-  },
-  {
-    "definition": {
-      "id": 5803
-    }
-  },
-  {
-    "definition": {
-      "id": 6674
-    }
-  },
-  {
-    "definition": {
-      "id": 3986
-    },
-    "title": {
-      "fr": "Costume de Moon",
-      "en": "Moon Costume",
-      "es": "Traje de Moon",
-      "pt": "Traje de Moon"
-    }
-  },
-  {
-    "definition": {
-      "id": 4374
-    },
-    "title": {
-      "fr": "Costume d'ouvrier de l'usine",
-      "en": "Factory Worker Costume",
-      "es": "Traje de Obrero de la Fábrica",
-      "pt": "Traje de Operário da Fábrica"
-    }
-  },
-  {
-    "definition": {
-      "id": 5450
-    },
-    "title": {
-      "fr": "Stasification",
-      "en": "Stasification",
-      "es": "Stasificación",
-      "pt": "Estasificação"
-    }
-  },
-  {
-    "definition": {
-      "id": 2461
-    },
-    "title": {
-      "fr": "Costume de Garde de Brâkmar",
-      "en": "Brakmarian Guard Costume",
-      "es": "Traje de Guarda de Brakmar",
-      "pt": "Traje de Guarda de Brakmar"
-    }
-  },
-  {
-    "definition": {
-      "id": 4462
-    }
-  },
-  {
-    "definition": {
-      "id": 6027
-    },
-    "title": {
-      "fr": "Fureur",
-      "en": "Fury",
-      "es": "Furor",
-      "pt": "Furor"
-    }
-  },
-  {
-    "definition": {
-      "id": 4240
-    },
-    "title": {
-      "fr": "Costume du Renouveau",
-      "en": "Revival Costume",
-      "es": "Traje de Renovación",
-      "pt": "Traje da Revitalização"
-    }
-  },
-  {
-    "definition": {
-      "id": 6677
-    }
-  },
-  {
-    "definition": {
-      "id": 1317
-    },
-    "title": {
-      "fr": "Insigne du DarkVlad",
-      "en": "Dark Vlad Insignia",
-      "es": "Insignia de Dark Vlad",
-      "pt": "Insígnia do Dark Vlad"
-    }
-  },
-  {
-    "definition": {
-      "id": 6711
-    },
-    "title": {
-      "fr": "Énergie ancestrale",
-      "en": "Ancestral Energy",
-      "es": "Energía Ancestral",
-      "pt": "Energia Ancestral"
-    }
-  },
-  {
-    "definition": {
-      "id": 5388
-    }
-  },
-  {
-    "definition": {
-      "id": 1610
-    },
-    "title": {
-      "fr": "Emblème du Sacrieur",
-      "en": "Sacrier Emblem",
-      "es": "Emblema de sacrógrito",
-      "pt": "Emblema de Sacrier"
-    }
-  },
-  {
-    "definition": {
-      "id": 4570
-    },
-    "title": {
-      "fr": "Dofus Prismatique",
-      "en": "Prismatic Dofus",
-      "es": "Dofus Prismático",
-      "pt": "Dofus Prismático"
-    },
-    "description": {
-      "fr": "Accorde +2 PA un tour sur deux",
-      "en": "Gives +2 AP every other turn",
-      "es": "Otorga +2 PA cada dos turnos.",
-      "pt": "Concede +2 PA em turnos alternados"
-    }
-  },
-  {
-    "definition": {
-      "id": 6929
-    },
-    "title": {
-      "fr": "Parade offensive",
-      "en": "Offensive Block",
-      "es": "Anticipación ofensiva",
-      "pt": "Parada Ofensiva"
-    }
-  },
-  {
-    "definition": {
-      "id": 5992
-    },
-    "title": {
-      "fr": "Topologie",
-      "en": "Topology",
-      "es": "Topología",
-      "pt": "Topologia"
-    }
-  },
-  {
-    "definition": {
-      "id": 1354
-    },
-    "title": {
-      "fr": "Aura de l'Amour",
-      "en": "Love Aura",
-      "es": "Aura del Amor",
-      "pt": "Aura do Amor"
-    }
-  },
-  {
-    "definition": {
-      "id": 6938
-    }
-  },
-  {
-    "definition": {
-      "id": 6005
-    },
-    "title": {
-      "fr": "Vélocité",
-      "en": "Swiftness",
-      "es": "Velocidad",
-      "pt": "Presteza"
-    }
-  },
-  {
-    "definition": {
-      "id": 5387
-    }
-  },
-  {
-    "definition": {
-      "id": 6932
-    },
-    "title": {
-      "fr": "Abandon",
-      "en": "Abandon",
-      "es": "Abandono",
-      "pt": "Abandono"
-    }
-  },
-  {
-    "definition": {
-      "id": 6383
-    }
-  },
-  {
-    "definition": {
-      "id": 3146
-    },
-    "title": {
-      "fr": "Costume de Pirate",
-      "en": "Pirate Costume",
-      "es": "Traje de Pirata",
-      "pt": "Traje de Pirata"
-    }
-  },
-  {
-    "definition": {
-      "id": 5389
-    }
-  },
-  {
-    "definition": {
-      "id": 5886
-    },
-    "title": {
-      "fr": "Eternité",
-      "en": "Eternity",
-      "es": "Eternidad",
-      "pt": "Eternidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 3099
-    },
-    "title": {
-      "fr": "Costume J'Like",
-      "en": "Like't Costume",
-      "es": "Traje M'Like",
-      "pt": "Traje Curti"
-    }
-  },
-  {
-    "definition": {
-      "id": 6933
-    },
-    "title": {
-      "fr": "Prétention",
-      "en": "Pretension",
-      "es": "Pretensión",
-      "pt": "Pretensão"
-    }
-  },
-  {
-    "definition": {
-      "id": 4105
-    },
-    "title": {
-      "fr": "Costume Huppermage de Sufokia",
-      "en": "Sufokian Huppermage Costume",
-      "es": "Traje Hipermago de Sufokia",
-      "pt": "Traje de Huppermago de Sufokia"
-    }
-  },
-  {
-    "definition": {
-      "id": 4839
-    },
-    "title": {
-      "fr": "Costume de Kali",
-      "en": "Kali Costume",
-      "es": "Traje de Kali",
-      "pt": "Traje de Kali"
-    }
-  },
-  {
-    "definition": {
-      "id": 6011
-    },
-    "title": {
-      "fr": "Ruine cyclique",
-      "en": "Cyclical Ruin",
-      "es": "Ruina cíclica",
-      "pt": "Ruína Cíclica"
-    }
-  },
-  {
-    "definition": {
-      "id": 1742
-    },
-    "title": {
-      "fr": "Emblème du Zobal",
-      "en": "Masqueraider Emblem",
-      "es": "Emblema de zobal",
-      "pt": "Emblema de Zobal"
-    }
-  },
-  {
-    "definition": {
-      "id": 1565
-    },
-    "title": {
-      "fr": "Guilde Presplak",
-      "en": "Presplak Guild",
-      "es": "Gremio prespika",
-      "pt": "Guilda Persplaca"
-    }
-  },
-  {
-    "definition": {
-      "id": 5249
-    },
-    "title": {
-      "fr": "Maniement : Dague",
-      "en": "Wield type: Dagger",
-      "es": "Manejo: Daga",
-      "pt": "Manejo: Adaga"
-    }
-  },
-  {
-    "definition": {
-      "id": 3487
-    },
-    "title": {
-      "fr": "Costume de Pwak",
-      "en": "Fleaster Costume",
-      "es": "Traje de Pazcuak",
-      "pt": "Traje de Paskwak"
-    }
-  },
-  {
-    "definition": {
-      "id": 2366
-    },
-    "title": {
-      "fr": "Costume d'Archaologue de Bonta",
-      "en": "Bontarian Archaosologist Costume",
-      "es": "Traje de Arcaólogo de Bonta",
-      "pt": "Traje de arcaólogo de Bonta"
-    }
-  },
-  {
-    "definition": {
-      "id": 5804
-    }
-  },
-  {
-    "definition": {
-      "id": 4549
+      "id": 6678
     }
   },
   {
@@ -2832,516 +536,6 @@
   },
   {
     "definition": {
-      "id": 3190
-    }
-  },
-  {
-    "definition": {
-      "id": 1617
-    },
-    "title": {
-      "fr": "Emblème du Pandawa",
-      "en": "Pandawa Emblem",
-      "es": "Emblema de pandawa",
-      "pt": "Emblema de Pandawa"
-    }
-  },
-  {
-    "definition": {
-      "id": 5988
-    },
-    "title": {
-      "fr": "Ténacité",
-      "en": "Tenacity",
-      "es": "Tenacidad",
-      "pt": "Tenacidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 5665
-    }
-  },
-  {
-    "definition": {
-      "id": 4242
-    },
-    "title": {
-      "fr": "Costume Gras",
-      "en": "Fool's Costume",
-      "es": "Traje Grasiento",
-      "pt": "Traje Engordurado"
-    }
-  },
-  {
-    "definition": {
-      "id": 4299
-    },
-    "title": {
-      "fr": "Costume de Scaphandrier",
-      "en": "Scuba Diver Costume",
-      "es": "Traje de Buzo",
-      "pt": "Traje de Escafandrista"
-    }
-  },
-  {
-    "definition": {
-      "id": 5411
-    }
-  },
-  {
-    "definition": {
-      "id": 5445
-    },
-    "title": {
-      "fr": "Anatomie",
-      "en": "Anatomy",
-      "es": "Anatomía",
-      "pt": "Anatomia"
-    }
-  },
-  {
-    "definition": {
-      "id": 2731
-    },
-    "title": {
-      "fr": "Dynaste de Jade",
-      "en": "Jade Dynast",
-      "es": "Dinasta jade",
-      "pt": "Dinastia de Jade"
-    }
-  },
-  {
-    "definition": {
-      "id": 7040
-    }
-  },
-  {
-    "definition": {
-      "id": 5272
-    }
-  },
-  {
-    "definition": {
-      "id": 5422
-    }
-  },
-  {
-    "definition": {
-      "id": 2636
-    },
-    "title": {
-      "fr": "Transfert Tellurique",
-      "en": "Terrestrial Transfer",
-      "es": "Transferencia Telúrica",
-      "pt": "Transferência Telúrica"
-    }
-  },
-  {
-    "definition": {
-      "id": 5982
-    },
-    "title": {
-      "fr": "Ravage",
-      "en": "Devastate",
-      "es": "Estragos",
-      "pt": "Assolação"
-    }
-  },
-  {
-    "definition": {
-      "id": 4563
-    }
-  },
-  {
-    "definition": {
-      "id": 6597
-    }
-  },
-  {
-    "definition": {
-      "id": 5211
-    }
-  },
-  {
-    "definition": {
-      "id": 6016
-    },
-    "title": {
-      "fr": "Embuscade écartée",
-      "en": "Distant Ambush",
-      "es": "Emboscada alejada",
-      "pt": "Emboscada Afastada"
-    }
-  },
-  {
-    "definition": {
-      "id": 4381
-    },
-    "title": {
-      "fr": "Costume Patriote",
-      "en": "Patriot Costume",
-      "es": "Traje Patriota",
-      "pt": "Traje do Patriota"
-    }
-  },
-  {
-    "definition": {
-      "id": 3603
-    },
-    "title": {
-      "fr": "Costume PVP",
-      "en": "PVP Costume",
-      "es": "Traje JcJ",
-      "pt": "Traje de JcJ"
-    }
-  },
-  {
-    "definition": {
-      "id": 2389
-    },
-    "title": {
-      "fr": "Costume Transparent",
-      "en": "Transparent Costume",
-      "es": "Traje Transparente",
-      "pt": "Traje Transparente"
-    }
-  },
-  {
-    "definition": {
-      "id": 4383
-    },
-    "title": {
-      "fr": "Costume Día de los Muertos",
-      "en": "Día de los Muertos Costume",
-      "es": "Traje del Día de Muertos",
-      "pt": "Traje do Día de los Muertos"
-    }
-  },
-  {
-    "definition": {
-      "id": 5668
-    }
-  },
-  {
-    "definition": {
-      "id": 3488
-    },
-    "title": {
-      "fr": "Costume Razer",
-      "en": "Razer Costume",
-      "es": "Traje Razer",
-      "pt": "Traje Razer"
-    }
-  },
-  {
-    "definition": {
-      "id": 2730
-    },
-    "title": {
-      "fr": "Dynaste de Grenat",
-      "en": "Garnet Dynast",
-      "es": "Dinasta granate",
-      "pt": "Dinastia Rubra"
-    }
-  },
-  {
-    "definition": {
-      "id": 5076
-    },
-    "title": {
-      "fr": "Précis",
-      "en": "Precise",
-      "es": "Preciso",
-      "pt": "Preciso"
-    }
-  },
-  {
-    "definition": {
-      "id": 4302
-    }
-  },
-  {
-    "definition": {
-      "id": 3342
-    },
-    "title": {
-      "fr": "Mercenaire de Bonta",
-      "en": "Bonta Mercenary",
-      "es": "Mercenario de Bonta",
-      "pt": "Mercenário de Bonta"
-    }
-  },
-  {
-    "definition": {
-      "id": 6592
-    }
-  },
-  {
-    "definition": {
-      "id": 5081
-    },
-    "title": {
-      "fr": "Brasero",
-      "en": "Brazier",
-      "es": "Brasero",
-      "pt": "Braseiro"
-    }
-  },
-  {
-    "definition": {
-      "id": 5410
-    }
-  },
-  {
-    "definition": {
-      "id": 6828
-    },
-    "title": {
-      "fr": "Altruisme",
-      "en": "Altruism",
-      "es": "Altruismo",
-      "pt": "Altruísmo"
-    }
-  },
-  {
-    "definition": {
-      "id": 1608
-    },
-    "title": {
-      "fr": "Emblème du Iop",
-      "en": "Iop Emblem",
-      "es": "Emblema de yopuka",
-      "pt": "Emblema de Iop"
-    }
-  },
-  {
-    "definition": {
-      "id": 5908
-    }
-  },
-  {
-    "definition": {
-      "id": 6593
-    }
-  },
-  {
-    "definition": {
-      "id": 2270
-    },
-    "title": {
-      "fr": "Costume de Kralaman",
-      "en": "Kralaman Costume",
-      "es": "Traje de Kralaman",
-      "pt": "Traje de Kralaman"
-    }
-  },
-  {
-    "definition": {
-      "id": 3589
-    },
-    "title": {
-      "fr": "Costume Chef de Meute",
-      "en": "Leader of the Pack Costume",
-      "es": "Traje de Jefe de la Manada",
-      "pt": "Traje do Líder da Matilha"
-    }
-  },
-  {
-    "definition": {
-      "id": 1130
-    },
-    "title": {
-      "fr": "Tenue de Pionnier",
-      "en": "Pioneer Outfit",
-      "es": "Traje de pionero",
-      "pt": "Traje de Pioneiro"
-    }
-  },
-  {
-    "definition": {
-      "id": 1599
-    },
-    "title": {
-      "fr": "Insigne Encapuchonné",
-      "en": "Hoodlum Insignia",
-      "es": "Insignia de encapuchado",
-      "pt": "Insígnia de Encapuzado"
-    }
-  },
-  {
-    "definition": {
-      "id": 1614
-    },
-    "title": {
-      "fr": "Emblème du Xelor",
-      "en": "Xelor Emblem",
-      "es": "Emblema de xelor",
-      "pt": "Emblema de Xelor"
-    }
-  },
-  {
-    "definition": {
-      "id": 6006
-    },
-    "title": {
-      "fr": "Sauvegarde",
-      "en": "Save",
-      "es": "Guardado",
-      "pt": "Salvaguarda"
-    }
-  },
-  {
-    "definition": {
-      "id": 2368
-    },
-    "title": {
-      "fr": "Costume d'Archaologue de Brâkmar",
-      "en": "Brakmarian Archaosologist Costume",
-      "es": "Traje de Arcaólogo de Brakmar",
-      "pt": "Traje de arcaólogo de Brakmar"
-    }
-  },
-  {
-    "definition": {
-      "id": 6010
-    },
-    "title": {
-      "fr": "Visibilité",
-      "en": "Visibility",
-      "es": "Visibilidad",
-      "pt": "Visibilidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 5023
-    }
-  },
-  {
-    "definition": {
-      "id": 7004
-    }
-  },
-  {
-    "definition": {
-      "id": 3192
-    }
-  },
-  {
-    "definition": {
-      "id": 4469
-    }
-  },
-  {
-    "definition": {
-      "id": 2367
-    },
-    "title": {
-      "fr": "Costume d'Archaologue d'Amakna",
-      "en": "Amaknian Archaosologist Costume",
-      "es": "Traje de Arcaólogo de Amakna",
-      "pt": "Traje de arcaólogo de Amakna"
-    }
-  },
-  {
-    "definition": {
-      "id": 4388
-    },
-    "title": {
-      "fr": "Costume du Citwouillard",
-      "en": "Pumpkwin Costume",
-      "es": "Traje de Calawacilla",
-      "pt": "Traje do Abobomedo"
-    }
-  },
-  {
-    "definition": {
-      "id": 5352
-    }
-  },
-  {
-    "definition": {
-      "id": 4919
-    }
-  },
-  {
-    "definition": {
-      "id": 6679
-    }
-  },
-  {
-    "definition": {
-      "id": 5701
-    }
-  },
-  {
-    "definition": {
-      "id": 5986
-    },
-    "title": {
-      "fr": "Dérobade",
-      "en": "Evasion",
-      "es": "Escapatoria",
-      "pt": "Evasão"
-    }
-  },
-  {
-    "definition": {
-      "id": 4778
-    },
-    "title": {
-      "fr": "Costume d'Otomaï",
-      "en": "Otomai Costume",
-      "es": "Traje de Otomai",
-      "pt": "Traje de Otomai"
-    }
-  },
-  {
-    "definition": {
-      "id": 6768
-    }
-  },
-  {
-    "definition": {
-      "id": 6834
-    },
-    "title": {
-      "fr": "Volte-face",
-      "en": "About-Turn",
-      "es": "Media vuelta",
-      "pt": "Meia-Volta"
-    }
-  },
-  {
-    "definition": {
-      "id": 7039
-    }
-  },
-  {
-    "definition": {
-      "id": 5384
-    },
-    "title": {
-      "fr": "Costume de Twitch",
-      "en": "Twitch Costume",
-      "es": "Traje de Twitch",
-      "pt": "Traje de Twitch"
-    }
-  },
-  {
-    "definition": {
-      "id": 5248
-    },
-    "title": {
-      "fr": "Maniement : Bouclier",
-      "en": "Wield type: Shield",
-      "es": "Manejo: Escudo",
-      "pt": "Manejo: Escudo"
-    }
-  },
-  {
-    "definition": {
       "id": 6709
     },
     "title": {
@@ -3349,214 +543,6 @@
       "en": "Longevity",
       "es": "Longevidad",
       "pt": "Longevidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 5158
-    },
-    "title": {
-      "fr": "Maniement : Deux mains",
-      "en": "Wield type: two-handed",
-      "es": "Manejo: Dos manos",
-      "pt": "Manejo: Duas mãos"
-    }
-  },
-  {
-    "definition": {
-      "id": 6037
-    },
-    "title": {
-      "fr": "Expert des Parades",
-      "en": "Blocking Expert",
-      "es": "Experto en Anticipación",
-      "pt": "Especialista em Paradas"
-    }
-  },
-  {
-    "definition": {
-      "id": 6931
-    },
-    "title": {
-      "fr": "Neutralité",
-      "en": "Neutrality",
-      "es": "Neutralidad",
-      "pt": "Neutralidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 6041
-    },
-    "title": {
-      "fr": "Expert des Coups Critiques",
-      "en": "Critical Hit Expert",
-      "es": "Experto en Golpes Críticos",
-      "pt": "Especialista em Golpes Críticos"
-    }
-  },
-  {
-    "definition": {
-      "id": 4089
-    },
-    "title": {
-      "fr": "Costume Huppermage",
-      "en": "Huppermage Costume",
-      "es": "Traje Hipermago",
-      "pt": "Traje de Huppermago"
-    }
-  },
-  {
-    "definition": {
-      "id": 4243
-    },
-    "title": {
-      "fr": "Costume Twitter",
-      "en": "Twitter Costume",
-      "es": "Traje Twitter",
-      "pt": "Traje do Twitter"
-    }
-  },
-  {
-    "definition": {
-      "id": 6799
-    }
-  },
-  {
-    "definition": {
-      "id": 6708
-    },
-    "title": {
-      "fr": "Contrôle de l'espace",
-      "en": "Controlling Space",
-      "es": "Control del Espacio",
-      "pt": "Controle do Espaço"
-    }
-  },
-  {
-    "definition": {
-      "id": 6819
-    },
-    "title": {
-      "fr": "Contre-attaque",
-      "en": "Counterattack",
-      "es": "Contraataque",
-      "pt": "Contra-Ataque"
-    }
-  },
-  {
-    "definition": {
-      "id": 7072
-    },
-    "title": {
-      "fr": "Pacte d'Anathar IV",
-      "en": "Anathar's Pact IV",
-      "es": "Pacto de Anathar IV",
-      "pt": "Pacto de Anathar IV"
-    }
-  },
-  {
-    "definition": {
-      "id": 751
-    },
-    "title": {
-      "fr": "Enflammé",
-      "en": "Flaming",
-      "es": "Ardiente",
-      "pt": "Flamejante"
-    },
-    "description": {
-      "fr": "Lorsque vous commencez votre tour, les adversaires à votre corps à corps subissent des dégâts.",
-      "en": "When you start your turn, enemies next to you will take damage.",
-      "es": "Cuando comienzas tu turno, los enemigos que tengas cuerpo a cuerpo sufren daños.",
-      "pt": "Quando você iniciar o seu turno, os inimigos que estiverem por perto sofrerão dano."
-    }
-  },
-  {
-    "definition": {
-      "id": 2848
-    },
-    "title": {
-      "fr": "Costume du Waterfestival",
-      "en": "Water Festival Costume",
-      "es": "Traje del Festival del Agua",
-      "pt": "Insígnia de Festival de Água"
-    }
-  },
-  {
-    "definition": {
-      "id": 5277
-    }
-  },
-  {
-    "definition": {
-      "id": 2369
-    },
-    "title": {
-      "fr": "Costume d'Archaologue de Sufokia",
-      "en": "Sufokian Archaosologist Costume",
-      "es": "Traje de Arcaólogo de Sufokia",
-      "pt": "Traje de arcaólogo de Sufokia"
-    }
-  },
-  {
-    "definition": {
-      "id": 6889
-    }
-  },
-  {
-    "definition": {
-      "id": 6033
-    },
-    "title": {
-      "fr": "Clameur",
-      "en": "Clamor",
-      "es": "Clamor",
-      "pt": "Clamor"
-    }
-  },
-  {
-    "definition": {
-      "id": 6022
-    },
-    "title": {
-      "fr": "Opiniâtreté",
-      "en": "Obstinacy",
-      "es": "Terquedad",
-      "pt": "Insistência"
-    }
-  },
-  {
-    "definition": {
-      "id": 1482
-    },
-    "title": {
-      "fr": "Costume de Goule",
-      "en": "Ghoul Costume",
-      "es": "Traje de Ghul",
-      "pt": "Traje de Carniçal"
-    }
-  },
-  {
-    "definition": {
-      "id": 6030
-    },
-    "title": {
-      "fr": "Cyclothymie",
-      "en": "Cyclothymia",
-      "es": "Ciclotimia",
-      "pt": "Ciclotimia"
-    }
-  },
-  {
-    "definition": {
-      "id": 3343
-    },
-    "title": {
-      "fr": "Mercenaire de Brâkmar",
-      "en": "Brakmar Mercenary",
-      "es": "Mercenario de Brakmar",
-      "pt": "Mercenário de Brakmar"
     }
   },
   {
@@ -3572,18 +558,164 @@
   },
   {
     "definition": {
-      "id": 5175
-    },
-    "title": {
-      "fr": "Brise",
-      "en": "Breeze",
-      "es": "Brisa",
-      "pt": "Brisa"
+      "id": 4919
     }
   },
   {
     "definition": {
-      "id": 5025
+      "id": 6024
+    },
+    "title": {
+      "fr": "Parade Berserk",
+      "en": "Berserk Block",
+      "es": "Anticipación Berserker",
+      "pt": "Parada Berserk"
+    }
+  },
+  {
+    "definition": {
+      "id": 3200
+    }
+  },
+  {
+    "definition": {
+      "id": 3261
+    },
+    "title": {
+      "fr": "Costume du Tyrolien",
+      "en": "Tyrolean Costume",
+      "es": "Traje de Tiroliano",
+      "pt": "Traje do tirolês"
+    }
+  },
+  {
+    "definition": {
+      "id": 3062
+    },
+    "title": {
+      "fr": "Costume de Shushu Fanatique",
+      "en": "Fanatic Shushu Costume",
+      "es": "Traje de fab'huritu fanático",
+      "pt": "Insígnia de Shushu Fanático"
+    }
+  },
+  {
+    "definition": {
+      "id": 5158
+    },
+    "title": {
+      "fr": "Maniement : Deux mains",
+      "en": "Wield type: two-handed",
+      "es": "Manejo: Dos manos",
+      "pt": "Manejo: Duas mãos"
+    }
+  },
+  {
+    "definition": {
+      "id": 1282
+    },
+    "title": {
+      "fr": "Insigne de guilde rang 5",
+      "en": "Rank 5 Guild Insignia",
+      "es": "Insignia de gremio rango 5",
+      "pt": "Insígnia da Guilda de Categoria 5"
+    }
+  },
+  {
+    "definition": {
+      "id": 6380
+    }
+  },
+  {
+    "definition": {
+      "id": 2524
+    },
+    "title": {
+      "fr": "Costume à définir",
+      "en": "TBD Costume",
+      "es": "Traje por Definir",
+      "pt": "Insígnia a ser definida"
+    }
+  },
+  {
+    "definition": {
+      "id": 2618
+    },
+    "title": {
+      "fr": "Costume de l'Amour Sincère",
+      "en": "True Love Costume",
+      "es": "Traje del Amor Sincero",
+      "pt": "Insígnia do Amor Verdadeiro"
+    }
+  },
+  {
+    "definition": {
+      "id": 6814
+    },
+    "title": {
+      "fr": "Influence du Wakfu",
+      "en": "Wakfu Influence",
+      "es": "Influjo del Wakfu",
+      "pt": "Influência do Wakfu"
+    }
+  },
+  {
+    "definition": {
+      "id": 7039
+    }
+  },
+  {
+    "definition": {
+      "id": 1284
+    },
+    "title": {
+      "fr": "Makabrano Ksion",
+      "en": "Makabraktion Ring",
+      "es": "Makabranillo Ksión",
+      "pt": "Anel da Makabração"
+    }
+  },
+  {
+    "definition": {
+      "id": 4563
+    }
+  },
+  {
+    "definition": {
+      "id": 6030
+    },
+    "title": {
+      "fr": "Cyclothymie",
+      "en": "Cyclothymia",
+      "es": "Ciclotimia",
+      "pt": "Ciclotimia"
+    }
+  },
+  {
+    "definition": {
+      "id": 2574
+    },
+    "title": {
+      "fr": "Requinquage 25%",
+      "en": "Perk Up 25%",
+      "es": "Recuperación 25%",
+      "pt": "Estimular 25%"
+    }
+  },
+  {
+    "definition": {
+      "id": 1480
+    },
+    "title": {
+      "fr": "Insigne de Jacko",
+      "en": "Jacko Insignia",
+      "es": "Insignia de Jacko",
+      "pt": "Insígnia de Aboborino"
+    }
+  },
+  {
+    "definition": {
+      "id": 6596
     }
   },
   {
@@ -3599,6 +731,293 @@
   },
   {
     "definition": {
+      "id": 3233
+    },
+    "title": {
+      "fr": "Emblème du Zobal",
+      "en": "Masqueraider Emblem",
+      "es": "Emblema de zobal",
+      "pt": "Emblema do Zobal"
+    }
+  },
+  {
+    "definition": {
+      "id": 1599
+    },
+    "title": {
+      "fr": "Insigne Encapuchonné",
+      "en": "Hoodlum Insignia",
+      "es": "Insignia de encapuchado",
+      "pt": "Insígnia de Encapuzado"
+    }
+  },
+  {
+    "definition": {
+      "id": 6939
+    }
+  },
+  {
+    "definition": {
+      "id": 6013
+    },
+    "title": {
+      "fr": "Ravage secondaire",
+      "en": "Secondary Devastation",
+      "es": "Estragos secundarios",
+      "pt": "Assolação Secundária"
+    }
+  },
+  {
+    "definition": {
+      "id": 5362
+    }
+  },
+  {
+    "definition": {
+      "id": 4090
+    }
+  },
+  {
+    "definition": {
+      "id": 2461
+    },
+    "title": {
+      "fr": "Costume de Garde de Brâkmar",
+      "en": "Brakmarian Guard Costume",
+      "es": "Traje de Guarda de Brakmar",
+      "pt": "Traje de Guarda de Brakmar"
+    }
+  },
+  {
+    "definition": {
+      "id": 6036
+    },
+    "title": {
+      "fr": "Longueur",
+      "en": "Length",
+      "es": "Longitud",
+      "pt": "Extensão"
+    }
+  },
+  {
+    "definition": {
+      "id": 6674
+    }
+  },
+  {
+    "definition": {
+      "id": 2617
+    },
+    "title": {
+      "fr": "Costume de Tofu Violet",
+      "en": "Purple Tofu Costume",
+      "es": "Traje de Tofu Violeta",
+      "pt": "Insígnia de Tofu Roxo"
+    }
+  },
+  {
+    "definition": {
+      "id": 6832
+    },
+    "title": {
+      "fr": "Main forte",
+      "en": "Strong Hand",
+      "es": "Mano aliada",
+      "pt": "Mãozinha"
+    }
+  },
+  {
+    "definition": {
+      "id": 6002
+    },
+    "title": {
+      "fr": "Endurance",
+      "en": "Endurance",
+      "es": "Aguante",
+      "pt": "Resistência"
+    }
+  },
+  {
+    "definition": {
+      "id": 4470
+    }
+  },
+  {
+    "definition": {
+      "id": 6379
+    }
+  },
+  {
+    "definition": {
+      "id": 5175
+    },
+    "title": {
+      "fr": "Brise",
+      "en": "Breeze",
+      "es": "Brisa",
+      "pt": "Brisa"
+    }
+  },
+  {
+    "definition": {
+      "id": 3198
+    }
+  },
+  {
+    "definition": {
+      "id": 5082
+    },
+    "title": {
+      "fr": "Robuste",
+      "en": "Robust",
+      "es": "Robusto",
+      "pt": "Robusto"
+    }
+  },
+  {
+    "definition": {
+      "id": 1482
+    },
+    "title": {
+      "fr": "Costume de Goule",
+      "en": "Ghoul Costume",
+      "es": "Traje de Ghul",
+      "pt": "Traje de Carniçal"
+    }
+  },
+  {
+    "definition": {
+      "id": 2270
+    },
+    "title": {
+      "fr": "Costume de Kralaman",
+      "en": "Kralaman Costume",
+      "es": "Traje de Kralaman",
+      "pt": "Traje de Kralaman"
+    }
+  },
+  {
+    "definition": {
+      "id": 6705
+    },
+    "title": {
+      "fr": "Furie",
+      "en": "Outrage",
+      "es": "Furia",
+      "pt": "Fúria"
+    }
+  },
+  {
+    "definition": {
+      "id": 5073
+    },
+    "title": {
+      "fr": "Inflexible",
+      "en": "Inflexible",
+      "es": "Inflexible",
+      "pt": "Inflexível"
+    }
+  },
+  {
+    "definition": {
+      "id": 3343
+    },
+    "title": {
+      "fr": "Mercenaire de Brâkmar",
+      "en": "Brakmar Mercenary",
+      "es": "Mercenario de Brakmar",
+      "pt": "Mercenário de Brakmar"
+    }
+  },
+  {
+    "definition": {
+      "id": 6004
+    },
+    "title": {
+      "fr": "Ecailles de Lune",
+      "en": "Moon Scales",
+      "es": "Fragmentos de Luna",
+      "pt": "Escamas de Lua"
+    }
+  },
+  {
+    "definition": {
+      "id": 7073
+    },
+    "title": {
+      "fr": "Pacte d'Anathar V",
+      "en": "Anathar's Pact V",
+      "es": "Pacto de Anathar V",
+      "pt": "Pacto de Anathar V"
+    }
+  },
+  {
+    "definition": {
+      "id": 6597
+    }
+  },
+  {
+    "definition": {
+      "id": 6331
+    },
+    "title": {
+      "fr": "Tolérance",
+      "en": "Tolerance",
+      "es": "Tolerancia",
+      "pt": "Tolerância"
+    }
+  },
+  {
+    "definition": {
+      "id": 6008
+    },
+    "title": {
+      "fr": "Vivacité",
+      "en": "Vivacity",
+      "es": "Vivacidad",
+      "pt": "Vivacidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 5081
+    },
+    "title": {
+      "fr": "Brasero",
+      "en": "Brazier",
+      "es": "Brasero",
+      "pt": "Braseiro"
+    }
+  },
+  {
+    "definition": {
+      "id": 1742
+    },
+    "title": {
+      "fr": "Emblème du Zobal",
+      "en": "Masqueraider Emblem",
+      "es": "Emblema de zobal",
+      "pt": "Emblema de Zobal"
+    }
+  },
+  {
+    "definition": {
+      "id": 6095
+    }
+  },
+  {
+    "definition": {
+      "id": 1619
+    },
+    "title": {
+      "fr": "Emblème d'Osamodas",
+      "en": "Osamodas Emblem",
+      "es": "Emblema de osamodas",
+      "pt": "Emblema de Osamodas"
+    }
+  },
+  {
+    "definition": {
       "id": 6821
     },
     "title": {
@@ -3610,51 +1029,473 @@
   },
   {
     "definition": {
-      "id": 4303
-    },
-    "title": {
-      "fr": "Costume du Mentor",
-      "en": "Mentor Costume",
-      "es": "Traje del Mentor",
-      "pt": "Traje do Mentor"
+      "id": 5211
     }
   },
   {
     "definition": {
-      "id": 6017
-    },
-    "title": {
-      "fr": "Epines",
-      "en": "Spines",
-      "es": "Espinas",
-      "pt": "Espinhos"
+      "id": 5664
     }
   },
   {
     "definition": {
-      "id": 6596
+      "id": 5026
     }
   },
   {
     "definition": {
-      "id": 6823
-    },
-    "title": {
-      "fr": "Relations sociales",
-      "en": "Social Relations",
-      "es": "Relaciones sociales",
-      "pt": "Relações Sociais"
+      "id": 6587
     }
   },
   {
     "definition": {
-      "id": 3340
+      "id": 2494
     },
     "title": {
-      "fr": "Mercenaire d'Astrub",
-      "en": "Astrubian Mercenary",
-      "es": "Mercenario de Astrub",
-      "pt": "Mercenário de Astrub"
+      "fr": "Costume de la Fête du Printemps",
+      "en": "Spring Has Sprung Costume",
+      "es": "Traje de la Fiesta de la Primavera",
+      "pt": "Traje de Primavendo a Primavera"
+    }
+  },
+  {
+    "definition": {
+      "id": 6382
+    }
+  },
+  {
+    "definition": {
+      "id": 4240
+    },
+    "title": {
+      "fr": "Costume du Renouveau",
+      "en": "Revival Costume",
+      "es": "Traje de Renovación",
+      "pt": "Traje da Revitalização"
+    }
+  },
+  {
+    "definition": {
+      "id": 6826
+    },
+    "title": {
+      "fr": "Être sensible",
+      "en": "Sensitivity",
+      "es": "Ser sensible",
+      "pt": "Sensibilidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 6931
+    },
+    "title": {
+      "fr": "Neutralité",
+      "en": "Neutrality",
+      "es": "Neutralidad",
+      "pt": "Neutralidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 5024
+    }
+  },
+  {
+    "definition": {
+      "id": 5410
+    }
+  },
+  {
+    "definition": {
+      "id": 6016
+    },
+    "title": {
+      "fr": "Embuscade écartée",
+      "en": "Distant Ambush",
+      "es": "Emboscada alejada",
+      "pt": "Emboscada Afastada"
+    }
+  },
+  {
+    "definition": {
+      "id": 6076
+    }
+  },
+  {
+    "definition": {
+      "id": 6010
+    },
+    "title": {
+      "fr": "Visibilité",
+      "en": "Visibility",
+      "es": "Visibilidad",
+      "pt": "Visibilidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 1617
+    },
+    "title": {
+      "fr": "Emblème du Pandawa",
+      "en": "Pandawa Emblem",
+      "es": "Emblema de pandawa",
+      "pt": "Emblema de Pandawa"
+    }
+  },
+  {
+    "definition": {
+      "id": 2030
+    },
+    "title": {
+      "fr": "Costume de Lin Kuei",
+      "en": "Lin Kawaii Costume",
+      "es": "Traje de Lin Kei",
+      "pt": "Traje de Lin Kuei"
+    }
+  },
+  {
+    "definition": {
+      "id": 2520
+    },
+    "title": {
+      "fr": "Costume de Mariage",
+      "en": "Marriage Costume",
+      "es": "Traje de Boda",
+      "pt": "Insígnia de Casamento"
+    }
+  },
+  {
+    "definition": {
+      "id": 6929
+    },
+    "title": {
+      "fr": "Parade offensive",
+      "en": "Offensive Block",
+      "es": "Anticipación ofensiva",
+      "pt": "Parada Ofensiva"
+    }
+  },
+  {
+    "definition": {
+      "id": 1613
+    },
+    "title": {
+      "fr": "Emblème du Sadida",
+      "en": "Sadida Emblem",
+      "es": "Emblema de sadida",
+      "pt": "Emblema de Sadida"
+    }
+  },
+  {
+    "definition": {
+      "id": 6712
+    },
+    "title": {
+      "fr": "Renaissance",
+      "en": "Rebirth",
+      "es": "Resurrección",
+      "pt": "Renascimento"
+    }
+  },
+  {
+    "definition": {
+      "id": 6711
+    },
+    "title": {
+      "fr": "Énergie ancestrale",
+      "en": "Ancestral Energy",
+      "es": "Energía Ancestral",
+      "pt": "Energia Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 6927
+    },
+    "title": {
+      "fr": "Précaution",
+      "en": "Precaution",
+      "es": "Precaución",
+      "pt": "Precaução"
+    }
+  },
+  {
+    "definition": {
+      "id": 6012
+    },
+    "title": {
+      "fr": "Tacle Berserk",
+      "en": "Berserk Lock",
+      "es": "Placaje Berserker",
+      "pt": "Bloqueio Berserk"
+    }
+  },
+  {
+    "definition": {
+      "id": 3604
+    },
+    "title": {
+      "fr": "Costume de Vampire",
+      "en": "Vampyre Costume",
+      "es": "Traje de Vampiro",
+      "pt": "Traje de Vampiro"
+    }
+  },
+  {
+    "definition": {
+      "id": 1566
+    },
+    "title": {
+      "fr": "Guilde Chaferion",
+      "en": "Chaferion Guild",
+      "es": "Gremio chaferino",
+      "pt": "Guilda Chaferiana"
+    }
+  },
+  {
+    "definition": {
+      "id": 6037
+    },
+    "title": {
+      "fr": "Expert des Parades",
+      "en": "Blocking Expert",
+      "es": "Experto en Anticipación",
+      "pt": "Especialista em Paradas"
+    }
+  },
+  {
+    "definition": {
+      "id": 5976
+    },
+    "title": {
+      "fr": "Arme de Lumière",
+      "en": "Light Weapon",
+      "es": "Arma de Luz",
+      "pt": "Arma de Luz"
+    }
+  },
+  {
+    "definition": {
+      "id": 1615
+    },
+    "title": {
+      "fr": "Emblème d'Enutrof",
+      "en": "Enutrof Emblem",
+      "es": "Emblema de anutrof",
+      "pt": "Emblema de Enutrof"
+    }
+  },
+  {
+    "definition": {
+      "id": 2571
+    },
+    "title": {
+      "fr": "Berserk 75%",
+      "en": "75% Berserk",
+      "es": "Berserk 75%",
+      "pt": "Berserk 75%"
+    }
+  },
+  {
+    "definition": {
+      "id": 6829
+    },
+    "title": {
+      "fr": "Manie",
+      "en": "Mania",
+      "es": "Manía",
+      "pt": "Mania"
+    }
+  },
+  {
+    "definition": {
+      "id": 4088
+    },
+    "title": {
+      "fr": "Costume Frida",
+      "en": "Frida Costume",
+      "es": "Traje Frida",
+      "pt": "Traje de Frida"
+    }
+  },
+  {
+    "definition": {
+      "id": 4917
+    }
+  },
+  {
+    "definition": {
+      "id": 4916
+    }
+  },
+  {
+    "definition": {
+      "id": 5443
+    },
+    "title": {
+      "fr": "Santé de fer",
+      "en": "Robust Health",
+      "es": "Salud de hierro",
+      "pt": "Saúde de Ferro"
+    }
+  },
+  {
+    "definition": {
+      "id": 5387
+    }
+  },
+  {
+    "definition": {
+      "id": 2505
+    },
+    "title": {
+      "fr": "Fortification",
+      "en": "Fortification",
+      "es": "Fortificación",
+      "pt": "Fortificação"
+    }
+  },
+  {
+    "definition": {
+      "id": 4388
+    },
+    "title": {
+      "fr": "Costume du Citwouillard",
+      "en": "Pumpkwin Costume",
+      "es": "Traje de Calawacilla",
+      "pt": "Traje do Abobomedo"
+    }
+  },
+  {
+    "definition": {
+      "id": 2570
+    },
+    "title": {
+      "fr": "Muraille 75%",
+      "en": "Walls 75%",
+      "es": "Muralla 75%",
+      "pt": "Muros 75%"
+    }
+  },
+  {
+    "definition": {
+      "id": 6018
+    },
+    "title": {
+      "fr": "Esquive Berserk",
+      "en": "Berserk Dodge",
+      "es": "Esquiva Berserker",
+      "pt": "Esquiva Berserk"
+    }
+  },
+  {
+    "definition": {
+      "id": 5154
+    }
+  },
+  {
+    "definition": {
+      "id": 6800
+    }
+  },
+  {
+    "definition": {
+      "id": 3099
+    },
+    "title": {
+      "fr": "Costume J'Like",
+      "en": "Like't Costume",
+      "es": "Traje M'Like",
+      "pt": "Traje Curti"
+    }
+  },
+  {
+    "definition": {
+      "id": 1354
+    },
+    "title": {
+      "fr": "Aura de l'Amour",
+      "en": "Love Aura",
+      "es": "Aura del Amor",
+      "pt": "Aura do Amor"
+    }
+  },
+  {
+    "definition": {
+      "id": 5802
+    }
+  },
+  {
+    "definition": {
+      "id": 6928
+    },
+    "title": {
+      "fr": "Critique technique",
+      "en": "Technical Critical",
+      "es": "Crítico técnico",
+      "pt": "Crítico Técnico"
+    }
+  },
+  {
+    "definition": {
+      "id": 6039
+    },
+    "title": {
+      "fr": "Influence lente",
+      "en": "Slow Influence",
+      "es": "Influjo lento",
+      "pt": "Influência Lenta"
+    }
+  },
+  {
+    "definition": {
+      "id": 7074
+    },
+    "title": {
+      "fr": "Costume de Dark Wapin",
+      "en": "Darth Wodent Costume",
+      "es": "Traje de Dark Wonejo",
+      "pt": "Traje de Dark Lepowide"
+    }
+  },
+  {
+    "definition": {
+      "id": 5079
+    },
+    "title": {
+      "fr": "Alternance",
+      "en": "Alternation",
+      "es": "Alternancia",
+      "pt": "Alternância"
+    }
+  },
+  {
+    "definition": {
+      "id": 2512
+    },
+    "title": {
+      "fr": "Rage",
+      "en": "Fury",
+      "es": "Rabia",
+      "pt": "Raiva"
+    }
+  },
+  {
+    "definition": {
+      "id": 3989
+    },
+    "title": {
+      "fr": "Costume des Etoiles",
+      "en": "Star Costume",
+      "es": "Traje de las Estrellas",
+      "pt": "Traje de Estrela"
+    }
+  },
+  {
+    "definition": {
+      "id": 6799
     }
   },
   {
@@ -3675,40 +1516,886 @@
   },
   {
     "definition": {
-      "id": 6328
+      "id": 6329
     },
     "title": {
-      "fr": "Intégrité",
-      "en": "Integrity",
-      "es": "Integridad",
-      "pt": "Integridade"
+      "fr": "Loup Solitaire",
+      "en": "Lone Wolf",
+      "es": "Lobo Solitario",
+      "pt": "Lobo Solitário"
     }
   },
   {
     "definition": {
-      "id": 4783
+      "id": 6813
     },
     "title": {
-      "fr": "Costume du Boufbowleur d'Amakna",
-      "en": "Amakna Gobbowler Costume",
-      "es": "Traje de Jalabolista de Amakna",
-      "pt": "Traje do Papabolista de Amakna"
+      "fr": "Retour enflammé",
+      "en": "Flaming Return",
+      "es": "Respuesta ardiente",
+      "pt": "Retorno das Chamas"
     }
   },
   {
     "definition": {
-      "id": 6939
+      "id": 2389
+    },
+    "title": {
+      "fr": "Costume Transparent",
+      "en": "Transparent Costume",
+      "es": "Traje Transparente",
+      "pt": "Traje Transparente"
     }
   },
   {
     "definition": {
-      "id": 2618
+      "id": 5213
+    }
+  },
+  {
+    "definition": {
+      "id": 5452
     },
     "title": {
-      "fr": "Costume de l'Amour Sincère",
-      "en": "True Love Costume",
-      "es": "Traje del Amor Sincero",
-      "pt": "Insígnia do Amor Verdadeiro"
+      "fr": "Aura de flammes",
+      "en": "Flame Aura",
+      "es": "Aura de Llamas",
+      "pt": "Aura de Chamas"
+    }
+  },
+  {
+    "definition": {
+      "id": 6041
+    },
+    "title": {
+      "fr": "Expert des Coups Critiques",
+      "en": "Critical Hit Expert",
+      "es": "Experto en Golpes Críticos",
+      "pt": "Especialista em Golpes Críticos"
+    }
+  },
+  {
+    "definition": {
+      "id": 5992
+    },
+    "title": {
+      "fr": "Topologie",
+      "en": "Topology",
+      "es": "Topología",
+      "pt": "Topologia"
+    }
+  },
+  {
+    "definition": {
+      "id": 5666
+    }
+  },
+  {
+    "definition": {
+      "id": 7106
+    },
+    "title": {
+      "fr": "Dofushu",
+      "en": "Dofushu",
+      "es": "Dofub'huritu",
+      "pt": "Dofushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 6802
+    }
+  },
+  {
+    "definition": {
+      "id": 3188
+    }
+  },
+  {
+    "definition": {
+      "id": 3192
+    }
+  },
+  {
+    "definition": {
+      "id": 5803
+    }
+  },
+  {
+    "definition": {
+      "id": 6275
+    }
+  },
+  {
+    "definition": {
+      "id": 6038
+    },
+    "title": {
+      "fr": "Enveloppe rocheuse",
+      "en": "Rocky Envelope",
+      "es": "Envoltorio Rocoso",
+      "pt": "Invólucro Rochoso"
+    }
+  },
+  {
+    "definition": {
+      "id": 6823
+    },
+    "title": {
+      "fr": "Relations sociales",
+      "en": "Social Relations",
+      "es": "Relaciones sociales",
+      "pt": "Relações Sociais"
+    }
+  },
+  {
+    "definition": {
+      "id": 4243
+    },
+    "title": {
+      "fr": "Costume Twitter",
+      "en": "Twitter Costume",
+      "es": "Traje Twitter",
+      "pt": "Traje do Twitter"
+    }
+  },
+  {
+    "definition": {
+      "id": 3341
+    },
+    "title": {
+      "fr": "Mercenaire d'Amakna",
+      "en": "Amakna Mercenary",
+      "es": "Mercenario de Amakna",
+      "pt": "Mercenário de Amakna"
+    }
+  },
+  {
+    "definition": {
+      "id": 5252
+    },
+    "title": {
+      "fr": "Sang de la déchirure",
+      "en": "Heartbreaking Blood",
+      "es": "Sangre del Martirio",
+      "pt": "Sangue do Talho"
+    }
+  },
+  {
+    "definition": {
+      "id": 6598
+    }
+  },
+  {
+    "definition": {
+      "id": 2573
+    },
+    "title": {
+      "fr": "Requinquage 75%",
+      "en": "Perk Up 75%",
+      "es": "Recuperación 75%",
+      "pt": "Estimular 75%"
+    }
+  },
+  {
+    "definition": {
+      "id": 5080
+    },
+    "title": {
+      "fr": "Confiance",
+      "en": "Trust",
+      "es": "Confianza",
+      "pt": "Confiança"
+    }
+  },
+  {
+    "definition": {
+      "id": 5078
+    },
+    "title": {
+      "fr": "Fracass'carcasse",
+      "en": "Smashmouth",
+      "es": "Rompecarcasa",
+      "pt": "Kebra-Karkaça"
+    }
+  },
+  {
+    "definition": {
+      "id": 5388
+    }
+  },
+  {
+    "definition": {
+      "id": 4102
+    },
+    "title": {
+      "fr": "Costume Huppermage de Bonta",
+      "en": "Bontarian Huppermage Costume",
+      "es": "Traje Hipermago de Bonta",
+      "pt": "Traje de Huppermago de Bonta"
+    }
+  },
+  {
+    "definition": {
+      "id": 5174
+    },
+    "title": {
+      "fr": "Alternance II",
+      "en": "Alternation II",
+      "es": "Alternancia II",
+      "pt": "Alternância II"
+    }
+  },
+  {
+    "definition": {
+      "id": 1319
+    },
+    "title": {
+      "fr": "Insigne de Necropeth",
+      "en": "Spektral Insignia",
+      "es": "Insignia necropeda",
+      "pt": "Insígnia Espektral"
+    }
+  },
+  {
+    "definition": {
+      "id": 5389
+    }
+  },
+  {
+    "definition": {
+      "id": 2495
+    },
+    "title": {
+      "fr": "Costume de Grinch",
+      "en": "Grinch Costume",
+      "es": "Traje de Grinch",
+      "pt": "Traje de Grinch"
+    }
+  },
+  {
+    "definition": {
+      "id": 6383
+    }
+  },
+  {
+    "definition": {
+      "id": 6677
+    }
+  },
+  {
+    "definition": {
+      "id": 4780
+    },
+    "title": {
+      "fr": "Costume d'un réveil forcé",
+      "en": "Forced Awakening Costume",
+      "es": "Traje de un despertar forzado",
+      "pt": "Traje do Despertar Forçado"
+    }
+  },
+  {
+    "definition": {
+      "id": 6675
+    }
+  },
+  {
+    "definition": {
+      "id": 6680
+    }
+  },
+  {
+    "definition": {
+      "id": 7006
+    }
+  },
+  {
+    "definition": {
+      "id": 3344
+    },
+    "title": {
+      "fr": "Mercenaire de Sufokia",
+      "en": "Sufokia Mercenary",
+      "es": "Mercenario de Sufokia",
+      "pt": "Mercenário de Sufokia"
+    }
+  },
+  {
+    "definition": {
+      "id": 4299
+    },
+    "title": {
+      "fr": "Costume de Scaphandrier",
+      "en": "Scuba Diver Costume",
+      "es": "Traje de Buzo",
+      "pt": "Traje de Escafandrista"
+    }
+  },
+  {
+    "definition": {
+      "id": 4782
+    },
+    "title": {
+      "fr": "Costume du Boufbowleur de Brâkmar",
+      "en": "Brakmar Gobbowler Costume",
+      "es": "Traje de Jalabolista de Brakmar",
+      "pt": "Traje do Papabolista de Brakmar"
+    }
+  },
+  {
+    "definition": {
+      "id": 6001
+    },
+    "title": {
+      "fr": "Retour PA",
+      "en": "AP Return",
+      "es": "Devolución de PA",
+      "pt": "Volta PA"
+    }
+  },
+  {
+    "definition": {
+      "id": 5985
+    },
+    "title": {
+      "fr": "Embuscade",
+      "en": "Ambush",
+      "es": "Emboscada",
+      "pt": "Emboscada"
+    }
+  },
+  {
+    "definition": {
+      "id": 7101
+    }
+  },
+  {
+    "definition": {
+      "id": 6827
+    },
+    "title": {
+      "fr": "Longueur d'armure",
+      "en": "Armor Length",
+      "es": "Longitud de armadura",
+      "pt": "Extensão da Armadura"
+    }
+  },
+  {
+    "definition": {
+      "id": 5701
+    }
+  },
+  {
+    "definition": {
+      "id": 1823
+    },
+    "title": {
+      "fr": "Costume du Père Doby",
+      "en": "Father Deepboar Costume",
+      "es": "Traje del Padre Doby",
+      "pt": "Traje do padre Doby"
+    }
+  },
+  {
+    "definition": {
+      "id": 6330
+    },
+    "title": {
+      "fr": "Secret de la vie",
+      "en": "Secret of Life",
+      "es": "Secreto de la Vida",
+      "pt": "Segredo da Vida"
+    }
+  },
+  {
+    "definition": {
+      "id": 6707
+    },
+    "title": {
+      "fr": "Pilier",
+      "en": "Pillar",
+      "es": "Pilar",
+      "pt": "Pilar"
+    }
+  },
+  {
+    "definition": {
+      "id": 5700
+    }
+  },
+  {
+    "definition": {
+      "id": 6811
+    },
+    "title": {
+      "fr": "Arme solide",
+      "en": "Solid Weapon",
+      "es": "Arma sólida",
+      "pt": "Arma Sólida"
+    }
+  },
+  {
+    "definition": {
+      "id": 5075
+    },
+    "title": {
+      "fr": "Mesuré",
+      "en": "Measured",
+      "es": "Comedido",
+      "pt": "Comedido"
+    }
+  },
+  {
+    "definition": {
+      "id": 1902
+    },
+    "title": {
+      "fr": "Insigne du Justicier Boucher",
+      "en": "Justice Butcher Insignia",
+      "es": "Insignia de justiciero carnicero",
+      "pt": "Insígnia do Justiceiro Açougueiro"
+    }
+  },
+  {
+    "definition": {
+      "id": 5422
+    }
+  },
+  {
+    "definition": {
+      "id": 6889
+    }
+  },
+  {
+    "definition": {
+      "id": 4103
+    },
+    "title": {
+      "fr": "Costume Huppermage de Brâkmar",
+      "en": "Brakmarian Huppermage Costume",
+      "es": "Traje Hipermago de Brakmar",
+      "pt": "Traje de Huppermago de Brakmar"
+    }
+  },
+  {
+    "definition": {
+      "id": 5804
+    }
+  },
+  {
+    "definition": {
+      "id": 6831
+    },
+    "title": {
+      "fr": "Dernier souffle",
+      "en": "Last Breath",
+      "es": "Último aliento",
+      "pt": "Último Suspiro"
+    }
+  },
+  {
+    "definition": {
+      "id": 4790
+    },
+    "title": {
+      "fr": "Costume de Coqueline",
+      "en": "Mishell Costume",
+      "es": "Traje de Kaskarina",
+      "pt": "Traje de Conchita"
+    }
+  },
+  {
+    "definition": {
+      "id": 5987
+    },
+    "title": {
+      "fr": "Détermination",
+      "en": "Determination",
+      "es": "Determinación",
+      "pt": "Determinação"
+    }
+  },
+  {
+    "definition": {
+      "id": 6938
+    }
+  },
+  {
+    "definition": {
+      "id": 3201
+    }
+  },
+  {
+    "definition": {
+      "id": 3601
+    },
+    "title": {
+      "fr": "Costume du Requin",
+      "en": "Shark Costume",
+      "es": "Traje de Tiburón",
+      "pt": "Traje de Tubarão"
+    }
+  },
+  {
+    "definition": {
+      "id": 4784
+    },
+    "title": {
+      "fr": "Costume du Boufbowleur de Sufokia",
+      "en": "Sufokia Gobbowler Costume",
+      "es": "Traje de Jalabolista de Sufokia",
+      "pt": "Traje do Papabolista de Sufokia"
+    }
+  },
+  {
+    "definition": {
+      "id": 6825
+    },
+    "title": {
+      "fr": "Destruction",
+      "en": "Destruction",
+      "es": "Destrucción",
+      "pt": "Destruição"
+    }
+  },
+  {
+    "definition": {
+      "id": 5988
+    },
+    "title": {
+      "fr": "Ténacité",
+      "en": "Tenacity",
+      "es": "Tenacidad",
+      "pt": "Tenacidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 5665
+    }
+  },
+  {
+    "definition": {
+      "id": 7070
+    },
+    "title": {
+      "fr": "Pacte d'Anathar II",
+      "en": "Anathar's Pact II",
+      "es": "Pacto de Anathar II",
+      "pt": "Pacto de Anathar II"
+    }
+  },
+  {
+    "definition": {
+      "id": 6017
+    },
+    "title": {
+      "fr": "Epines",
+      "en": "Spines",
+      "es": "Espinas",
+      "pt": "Espinhos"
+    }
+  },
+  {
+    "definition": {
+      "id": 7040
+    }
+  },
+  {
+    "definition": {
+      "id": 6593
+    }
+  },
+  {
+    "definition": {
+      "id": 4781
+    },
+    "title": {
+      "fr": "Costume du Boufbowleur de Bonta",
+      "en": "Bonta Gobbowler Costume",
+      "es": "Traje de Jalabolista de Bonta",
+      "pt": "Traje do Papabolista de Bonta"
+    }
+  },
+  {
+    "definition": {
+      "id": 5249
+    },
+    "title": {
+      "fr": "Maniement : Dague",
+      "en": "Wield type: Dagger",
+      "es": "Manejo: Daga",
+      "pt": "Manejo: Adaga"
+    }
+  },
+  {
+    "definition": {
+      "id": 5829
+    },
+    "title": {
+      "fr": "Insigne Encapuchonné",
+      "en": "Hoodlum Insignia",
+      "es": "Insignia de Encapuchado",
+      "pt": "Insígnia de Encapuzado"
+    }
+  },
+  {
+    "definition": {
+      "id": 2274
+    },
+    "title": {
+      "fr": "Costume de vilain",
+      "en": "Villain Costume",
+      "es": "Traje de Supervillano",
+      "pt": "Traje de Vilão"
+    }
+  },
+  {
+    "definition": {
+      "id": 5991
+    },
+    "title": {
+      "fr": "Légèreté",
+      "en": "Lightness",
+      "es": "Ligereza",
+      "pt": "Leveza"
+    }
+  },
+  {
+    "definition": {
+      "id": 5212
+    }
+  },
+  {
+    "definition": {
+      "id": 2848
+    },
+    "title": {
+      "fr": "Costume du Waterfestival",
+      "en": "Water Festival Costume",
+      "es": "Traje del Festival del Agua",
+      "pt": "Insígnia de Festival de Água"
+    }
+  },
+  {
+    "definition": {
+      "id": 5248
+    },
+    "title": {
+      "fr": "Maniement : Bouclier",
+      "en": "Wield type: Shield",
+      "es": "Manejo: Escudo",
+      "pt": "Manejo: Escudo"
+    }
+  },
+  {
+    "definition": {
+      "id": 5386
+    }
+  },
+  {
+    "definition": {
+      "id": 5984
+    },
+    "title": {
+      "fr": "Cicatrisation",
+      "en": "Healing",
+      "es": "Sanación",
+      "pt": "Cicatrização"
+    }
+  },
+  {
+    "definition": {
+      "id": 3194
+    }
+  },
+  {
+    "definition": {
+      "id": 5023
+    }
+  },
+  {
+    "definition": {
+      "id": 2932
+    },
+    "title": {
+      "fr": "Costume d'Adale",
+      "en": "Adal Costume",
+      "es": "Traje de Adal",
+      "pt": "Traje de Adal"
+    }
+  },
+  {
+    "definition": {
+      "id": 6673
+    }
+  },
+  {
+    "definition": {
+      "id": 1973
+    },
+    "title": {
+      "fr": "Costume de Wabbit",
+      "en": "Wabbit Costume",
+      "es": "Traje de Wabbit",
+      "pt": "Traje de Wabbit"
+    }
+  },
+  {
+    "definition": {
+      "id": 4640
+    }
+  },
+  {
+    "definition": {
+      "id": 5907
+    }
+  },
+  {
+    "definition": {
+      "id": 1612
+    },
+    "title": {
+      "fr": "Emblème d'Eniripsa",
+      "en": "Eniripsa Emblem",
+      "es": "Emblema de aniripsa",
+      "pt": "Emblema de Eniripsa"
+    }
+  },
+  {
+    "definition": {
+      "id": 1608
+    },
+    "title": {
+      "fr": "Emblème du Iop",
+      "en": "Iop Emblem",
+      "es": "Emblema de yopuka",
+      "pt": "Emblema de Iop"
+    }
+  },
+  {
+    "definition": {
+      "id": 6302
+    }
+  },
+  {
+    "definition": {
+      "id": 3487
+    },
+    "title": {
+      "fr": "Costume de Pwak",
+      "en": "Fleaster Costume",
+      "es": "Traje de Pazcuak",
+      "pt": "Traje de Paskwak"
+    }
+  },
+  {
+    "definition": {
+      "id": 6834
+    },
+    "title": {
+      "fr": "Volte-face",
+      "en": "About-Turn",
+      "es": "Media vuelta",
+      "pt": "Meia-Volta"
+    }
+  },
+  {
+    "definition": {
+      "id": 4374
+    },
+    "title": {
+      "fr": "Costume d'ouvrier de l'usine",
+      "en": "Factory Worker Costume",
+      "es": "Traje de Obrero de la Fábrica",
+      "pt": "Traje de Operário da Fábrica"
+    }
+  },
+  {
+    "definition": {
+      "id": 6714
+    },
+    "title": {
+      "fr": "Paisible",
+      "en": "Peaceful",
+      "es": "Apacible",
+      "pt": "Pacífico"
+    }
+  },
+  {
+    "definition": {
+      "id": 3191
+    }
+  },
+  {
+    "definition": {
+      "id": 6023
+    },
+    "title": {
+      "fr": "Aisance",
+      "en": "Poise",
+      "es": "Ligereza",
+      "pt": "Desenvoltura"
+    }
+  },
+  {
+    "definition": {
+      "id": 2556
+    },
+    "title": {
+      "fr": "Costume du Tourmenteur",
+      "en": "Tormentor Costume",
+      "es": "Traje de Atormentador",
+      "pt": "Insígnia de Atormentador"
+    }
+  },
+  {
+    "definition": {
+      "id": 6019
+    },
+    "title": {
+      "fr": "Barrière Distance",
+      "en": "Distance Barrier",
+      "es": "Barrera a Distancia",
+      "pt": "Barreira a Distância"
+    }
+  },
+  {
+    "definition": {
+      "id": 6096
+    }
+  },
+  {
+    "definition": {
+      "id": 6009
+    },
+    "title": {
+      "fr": "Critique Berserk",
+      "en": "Berserk Critical",
+      "es": "Crítico Berserker",
+      "pt": "Crítico Berserk"
+    }
+  },
+  {
+    "definition": {
+      "id": 3987
+    },
+    "title": {
+      "fr": "Costume de Renne",
+      "en": "Reindeer Costume",
+      "es": "Traje de Reno",
+      "pt": "Traje de Rena"
+    }
+  },
+  {
+    "definition": {
+      "id": 5444
+    },
+    "title": {
+      "fr": "Science du placement",
+      "en": "Positioning Knowledge",
+      "es": "Ciencia del Posicionamiento",
+      "pt": "Arte do posicionamento"
     }
   },
   {
@@ -3730,28 +2417,13 @@
   },
   {
     "definition": {
-      "id": 5666
-    }
-  },
-  {
-    "definition": {
-      "id": 6009
+      "id": 4089
     },
     "title": {
-      "fr": "Critique Berserk",
-      "en": "Berserk Critical",
-      "es": "Crítico Berserker",
-      "pt": "Crítico Berserk"
-    }
-  },
-  {
-    "definition": {
-      "id": 3199
-    }
-  },
-  {
-    "definition": {
-      "id": 6382
+      "fr": "Costume Huppermage",
+      "en": "Huppermage Costume",
+      "es": "Traje Hipermago",
+      "pt": "Traje de Huppermago"
     }
   },
   {
@@ -3767,111 +2439,386 @@
   },
   {
     "definition": {
-      "id": 6014
+      "id": 1583
     },
     "title": {
-      "fr": "Dérobade lente",
-      "en": "Slow Evasion",
-      "es": "Escapatoria lenta",
-      "pt": "Evasão Lenta"
+      "fr": "Le demi pay aime",
+      "en": "Glass Half Empee",
+      "es": "Medio peheme",
+      "pt": "Vidro Meio Vajio"
     }
   },
   {
     "definition": {
-      "id": 3198
+      "id": 5025
     }
   },
   {
     "definition": {
-      "id": 4088
+      "id": 2369
     },
     "title": {
-      "fr": "Costume Frida",
-      "en": "Frida Costume",
-      "es": "Traje Frida",
-      "pt": "Traje de Frida"
+      "fr": "Costume d'Archaologue de Sufokia",
+      "en": "Sufokian Archaosologist Costume",
+      "es": "Traje de Arcaólogo de Sufokia",
+      "pt": "Traje de arcaólogo de Sufokia"
     }
   },
   {
     "definition": {
-      "id": 4470
-    }
-  },
-  {
-    "definition": {
-      "id": 2572
+      "id": 3488
     },
     "title": {
-      "fr": "Requinquage 66%",
-      "en": "Perk Up 66%",
-      "es": "Recuperación 66%",
-      "pt": "Estimular 66%"
+      "fr": "Costume Razer",
+      "en": "Razer Costume",
+      "es": "Traje Razer",
+      "pt": "Traje Razer"
     }
   },
   {
     "definition": {
-      "id": 1478
-    },
-    "title": {
-      "fr": "Insigne de Sorcier",
-      "en": "Wizard Insignia",
-      "es": "Insignia de bruja",
-      "pt": "Insígnia de Mago"
+      "id": 4548
     }
   },
   {
     "definition": {
-      "id": 5980
-    },
-    "title": {
-      "fr": "Ruine",
-      "en": "Ruin",
-      "es": "Ruina",
-      "pt": "Ruína"
+      "id": 6592
     }
   },
   {
     "definition": {
-      "id": 6825
+      "id": 7069
     },
     "title": {
-      "fr": "Destruction",
-      "en": "Destruction",
-      "es": "Destrucción",
-      "pt": "Destruição"
+      "fr": "Pacte d'Anathar I",
+      "en": "Anathar's Pact I",
+      "es": "Pacto de Anathar I",
+      "pt": "Pacto de Anathar I"
     }
   },
   {
     "definition": {
-      "id": 1609
+      "id": 2247
     },
     "title": {
-      "fr": "Emblème du Cra",
-      "en": "Cra Emblem",
-      "es": "Emblema de ocra",
-      "pt": "Emblema de Cra"
+      "fr": "Costume bien taillé",
+      "en": "Well-Tailored Costume",
+      "es": "Traje hispáÑico",
+      "pt": "Traje Bem Feito"
     }
   },
   {
     "definition": {
-      "id": 6830
+      "id": 6708
     },
     "title": {
-      "fr": "Nature",
-      "en": "Natural",
-      "es": "Naturaleza",
-      "pt": "Natural"
+      "fr": "Contrôle de l'espace",
+      "en": "Controlling Space",
+      "es": "Control del Espacio",
+      "pt": "Controle do Espaço"
     }
   },
   {
     "definition": {
-      "id": 2031
+      "id": 5450
     },
     "title": {
-      "fr": "Costume de Shilay Lyu",
-      "en": "Shilay Lyu Costume",
-      "es": "Traje de Shilay Lyu",
-      "pt": "Traje de Shilay Lyu"
+      "fr": "Stasification",
+      "en": "Stasification",
+      "es": "Stasificación",
+      "pt": "Estasificação"
+    }
+  },
+  {
+    "definition": {
+      "id": 6731
+    },
+    "title": {
+      "fr": "Dofus Turquoise",
+      "en": "Turquoise Dofus",
+      "es": "Dofus Turquesa",
+      "pt": "Dofus Turquesa"
+    }
+  },
+  {
+    "definition": {
+      "id": 1318
+    },
+    "title": {
+      "fr": "Insigne du Cucupidon",
+      "en": "Cupiddlypants Insignia",
+      "es": "Insignia de Cubeedo",
+      "pt": "Insígnia de Escúpilo"
+    }
+  },
+  {
+    "definition": {
+      "id": 6798
+    }
+  },
+  {
+    "definition": {
+      "id": 3603
+    },
+    "title": {
+      "fr": "Costume PVP",
+      "en": "PVP Costume",
+      "es": "Traje JcJ",
+      "pt": "Traje de JcJ"
+    }
+  },
+  {
+    "definition": {
+      "id": 4920
+    }
+  },
+  {
+    "definition": {
+      "id": 6011
+    },
+    "title": {
+      "fr": "Ruine cyclique",
+      "en": "Cyclical Ruin",
+      "es": "Ruina cíclica",
+      "pt": "Ruína Cíclica"
+    }
+  },
+  {
+    "definition": {
+      "id": 2463
+    },
+    "title": {
+      "fr": "Costume de Garde de Sufokia",
+      "en": "Sufokian Guard Costume",
+      "es": "Traje de Guarda de Sufokia",
+      "pt": "Traje de Guarda de Sufokia"
+    }
+  },
+  {
+    "definition": {
+      "id": 5983
+    },
+    "title": {
+      "fr": "Carnage",
+      "en": "Carnage",
+      "es": "Masacre",
+      "pt": "Carnificina"
+    }
+  },
+  {
+    "definition": {
+      "id": 4104
+    },
+    "title": {
+      "fr": "Costume Huppermage d'Amakna",
+      "en": "Amaknian Huppermage Costume",
+      "es": "Traje Hipermago de Amakna",
+      "pt": "Traje de Huppermago de Amakna"
+    }
+  },
+  {
+    "definition": {
+      "id": 6021
+    },
+    "title": {
+      "fr": "Persistance",
+      "en": "Persistence",
+      "es": "Persistencia",
+      "pt": "Persistência"
+    }
+  },
+  {
+    "definition": {
+      "id": 5413
+    }
+  },
+  {
+    "definition": {
+      "id": 5981
+    },
+    "title": {
+      "fr": "Dévastation",
+      "en": "Devastation",
+      "es": "Devastación",
+      "pt": "Devastação"
+    }
+  },
+  {
+    "definition": {
+      "id": 3342
+    },
+    "title": {
+      "fr": "Mercenaire de Bonta",
+      "en": "Bonta Mercenary",
+      "es": "Mercenario de Bonta",
+      "pt": "Mercenário de Bonta"
+    }
+  },
+  {
+    "definition": {
+      "id": 3199
+    }
+  },
+  {
+    "definition": {
+      "id": 5414
+    }
+  },
+  {
+    "definition": {
+      "id": 6942
+    }
+  },
+  {
+    "definition": {
+      "id": 3187
+    }
+  },
+  {
+    "definition": {
+      "id": 5982
+    },
+    "title": {
+      "fr": "Ravage",
+      "en": "Devastate",
+      "es": "Estragos",
+      "pt": "Assolação"
+    }
+  },
+  {
+    "definition": {
+      "id": 5216
+    },
+    "title": {
+      "fr": "Directives",
+      "en": "Directives",
+      "es": "Directivas",
+      "pt": "Diretivas"
+    }
+  },
+  {
+    "definition": {
+      "id": 6932
+    },
+    "title": {
+      "fr": "Abandon",
+      "en": "Abandon",
+      "es": "Abandono",
+      "pt": "Abandono"
+    }
+  },
+  {
+    "definition": {
+      "id": 6027
+    },
+    "title": {
+      "fr": "Fureur",
+      "en": "Fury",
+      "es": "Furor",
+      "pt": "Furor"
+    }
+  },
+  {
+    "definition": {
+      "id": 5908
+    }
+  },
+  {
+    "definition": {
+      "id": 2616
+    },
+    "title": {
+      "fr": "Costume de Bouftou Rose",
+      "en": "Pink Gobball Costume",
+      "es": "Traje de Jalató Rosa",
+      "pt": "Insígnia de Papatudo Rosa"
+    }
+  },
+  {
+    "definition": {
+      "id": 6328
+    },
+    "title": {
+      "fr": "Intégrité",
+      "en": "Integrity",
+      "es": "Integridad",
+      "pt": "Integridade"
+    }
+  },
+  {
+    "definition": {
+      "id": 4549
+    }
+  },
+  {
+    "definition": {
+      "id": 2411
+    },
+    "title": {
+      "fr": "Requinquage 50%",
+      "en": "Perk Up 50%",
+      "es": "Recuperación 50%",
+      "pt": "Estimular 50%"
+    }
+  },
+  {
+    "definition": {
+      "id": 6842
+    },
+    "title": {
+      "fr": "Courage",
+      "en": "Courage",
+      "es": "Valentía",
+      "pt": "Coragem"
+    }
+  },
+  {
+    "definition": {
+      "id": 2554
+    },
+    "title": {
+      "fr": "Costume d'Ocushus",
+      "en": "Ocushu Costume",
+      "es": "Traje de Okhlar",
+      "pt": "Insígnia de Ocushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 6816
+    },
+    "title": {
+      "fr": "Arme incurable",
+      "en": "Incurable Weapon",
+      "es": "Arma incurable",
+      "pt": "Arma Incurável"
+    }
+  },
+  {
+    "definition": {
+      "id": 5210
+    }
+  },
+  {
+    "definition": {
+      "id": 4239
+    },
+    "title": {
+      "fr": "Costume Infernal",
+      "en": "Infernal Costume",
+      "es": "Traje Infernal",
+      "pt": "Traje Infernal"
+    }
+  },
+  {
+    "definition": {
+      "id": 3146
+    },
+    "title": {
+      "fr": "Costume de Pirate",
+      "en": "Pirate Costume",
+      "es": "Traje de Pirata",
+      "pt": "Traje de Pirata"
     }
   },
   {
@@ -3887,24 +2834,1098 @@
   },
   {
     "definition": {
-      "id": 1902
+      "id": 6007
     },
     "title": {
-      "fr": "Insigne du Justicier Boucher",
-      "en": "Justice Butcher Insignia",
-      "es": "Insignia de justiciero carnicero",
-      "pt": "Insígnia do Justiceiro Açougueiro"
+      "fr": "Bonne action",
+      "en": "Good Deed",
+      "es": "Buena Acción",
+      "pt": "Boa Ação"
     }
   },
   {
     "definition": {
-      "id": 2571
+      "id": 1596
     },
     "title": {
-      "fr": "Berserk 75%",
-      "en": "75% Berserk",
-      "es": "Berserk 75%",
-      "pt": "Berserk 75%"
+      "fr": "Insigne Encapuchonné",
+      "en": "Hoodlum Insignia",
+      "es": "Insignia de encapuchado",
+      "pt": "Insígnia de Encapuzado"
+    }
+  },
+  {
+    "definition": {
+      "id": 4300
+    },
+    "title": {
+      "fr": "Costume de l'été",
+      "en": "Summer Costume",
+      "es": "Traje de Verano",
+      "pt": "Traje do Verão"
+    }
+  },
+  {
+    "definition": {
+      "id": 5361
+    }
+  },
+  {
+    "definition": {
+      "id": 5448
+    },
+    "title": {
+      "fr": "Force herculéenne",
+      "en": "Herculean Strength",
+      "es": "Fuerza Hercúlea",
+      "pt": "Força Hercúlea"
+    }
+  },
+  {
+    "definition": {
+      "id": 2460
+    },
+    "title": {
+      "fr": "Costume de Garde d'Amakna",
+      "en": "Amaknian Guard Costume",
+      "es": "Traje de Guarda de Amakna",
+      "pt": "Traje de Guarda de Amakna"
+    }
+  },
+  {
+    "definition": {
+      "id": 4791
+    },
+    "title": {
+      "fr": "Costume du Iop Noir",
+      "en": "Black Iop Costume",
+      "es": "Traje de Yopuka Negro",
+      "pt": "Traje do Iop Preto"
+    }
+  },
+  {
+    "definition": {
+      "id": 2064
+    },
+    "title": {
+      "fr": "Insigne des Mérydes",
+      "en": "Meridia Insignia",
+      "es": "Insignia de los santos",
+      "pt": "Insígnia dos Meridas"
+    }
+  },
+  {
+    "definition": {
+      "id": 3986
+    },
+    "title": {
+      "fr": "Costume de Moon",
+      "en": "Moon Costume",
+      "es": "Traje de Moon",
+      "pt": "Traje de Moon"
+    }
+  },
+  {
+    "definition": {
+      "id": 6199
+    }
+  },
+  {
+    "definition": {
+      "id": 2271
+    },
+    "title": {
+      "fr": "Costume de Lardevil",
+      "en": "Lardevil Costume",
+      "es": "Traje de Puerkevil",
+      "pt": "Traje de Diabanha"
+    }
+  },
+  {
+    "definition": {
+      "id": 4105
+    },
+    "title": {
+      "fr": "Costume Huppermage de Sufokia",
+      "en": "Sufokian Huppermage Costume",
+      "es": "Traje Hipermago de Sufokia",
+      "pt": "Traje de Huppermago de Sufokia"
+    }
+  },
+  {
+    "definition": {
+      "id": 3416
+    }
+  },
+  {
+    "definition": {
+      "id": 6801
+    }
+  },
+  {
+    "definition": {
+      "id": 6000
+    },
+    "title": {
+      "fr": "Théorie de la matière",
+      "en": "Theory of Matter",
+      "es": "Teoría de la Materia",
+      "pt": "Teoria da Matéria"
+    }
+  },
+  {
+    "definition": {
+      "id": 3602
+    },
+    "title": {
+      "fr": "Costume Facebook",
+      "en": "Facebook Costume",
+      "es": "Traje Facebook",
+      "pt": "Traje do Facebook"
+    }
+  },
+  {
+    "definition": {
+      "id": 2525
+    },
+    "title": {
+      "fr": "Costume de Cacterre",
+      "en": "Castuc Costume",
+      "es": "Traje de Cacterro",
+      "pt": "Insígnia de Cacterra"
+    }
+  },
+  {
+    "definition": {
+      "id": 6273
+    }
+  },
+  {
+    "definition": {
+      "id": 6033
+    },
+    "title": {
+      "fr": "Clameur",
+      "en": "Clamor",
+      "es": "Clamor",
+      "pt": "Clamor"
+    }
+  },
+  {
+    "definition": {
+      "id": 1348
+    },
+    "title": {
+      "fr": "Etoi Eskeutula",
+      "en": "Legwhat?",
+      "es": "Ytudondeta",
+      "pt": "Pernoquê?"
+    }
+  },
+  {
+    "definition": {
+      "id": 6706
+    },
+    "title": {
+      "fr": "Furie II",
+      "en": "Outrage II",
+      "es": "Furia II",
+      "pt": "Fúria II"
+    }
+  },
+  {
+    "definition": {
+      "id": 6588
+    }
+  },
+  {
+    "definition": {
+      "id": 5445
+    },
+    "title": {
+      "fr": "Anatomie",
+      "en": "Anatomy",
+      "es": "Anatomía",
+      "pt": "Anatomia"
+    }
+  },
+  {
+    "definition": {
+      "id": 1598
+    },
+    "title": {
+      "fr": "Insigne Encapuchonné",
+      "en": "Hoodlum Insignia",
+      "es": "Insignia de encapuchado",
+      "pt": "Insígnia de Encapuzado"
+    }
+  },
+  {
+    "definition": {
+      "id": 1478
+    },
+    "title": {
+      "fr": "Insigne de Sorcier",
+      "en": "Wizard Insignia",
+      "es": "Insignia de bruja",
+      "pt": "Insígnia de Mago"
+    }
+  },
+  {
+    "definition": {
+      "id": 6833
+    },
+    "title": {
+      "fr": "Pied ferme",
+      "en": "Firm Foot",
+      "es": "Pie firme",
+      "pt": "Pé Firme"
+    }
+  },
+  {
+    "definition": {
+      "id": 5363
+    }
+  },
+  {
+    "definition": {
+      "id": 2366
+    },
+    "title": {
+      "fr": "Costume d'Archaologue de Bonta",
+      "en": "Bontarian Archaosologist Costume",
+      "es": "Traje de Arcaólogo de Bonta",
+      "pt": "Traje de arcaólogo de Bonta"
+    }
+  },
+  {
+    "definition": {
+      "id": 2514
+    },
+    "title": {
+      "fr": "Vivacité 90%",
+      "en": "90% Vivacity",
+      "es": "Vivacidad 90%",
+      "pt": "90% de Vivacidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 5446
+    },
+    "title": {
+      "fr": "Brutalité",
+      "en": "Brutality",
+      "es": "Brutalidad",
+      "pt": "Brutalidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 4792
+    },
+    "title": {
+      "fr": "Costume du Iop Rouge",
+      "en": "Red Iop Costume",
+      "es": "Traje de Yopuka Rojo",
+      "pt": "Traje do Iop Vermelho"
+    }
+  },
+  {
+    "definition": {
+      "id": 6767
+    }
+  },
+  {
+    "definition": {
+      "id": 7005
+    }
+  },
+  {
+    "definition": {
+      "id": 2515
+    },
+    "title": {
+      "fr": "Berserk 50%",
+      "en": "50% Berserk",
+      "es": "Berserk 50%",
+      "pt": "Berserk 50%"
+    }
+  },
+  {
+    "definition": {
+      "id": 5370
+    },
+    "title": {
+      "fr": "Pacte Wakfu",
+      "en": "Wakfu Pact",
+      "es": "Pacto Wakfu",
+      "pt": "Pacto Wakfu"
+    }
+  },
+  {
+    "definition": {
+      "id": 1565
+    },
+    "title": {
+      "fr": "Guilde Presplak",
+      "en": "Presplak Guild",
+      "es": "Gremio prespika",
+      "pt": "Guilda Persplaca"
+    }
+  },
+  {
+    "definition": {
+      "id": 5250
+    },
+    "title": {
+      "fr": "Excès",
+      "en": "Excess",
+      "es": "Exceso",
+      "pt": "Excesso"
+    }
+  },
+  {
+    "definition": {
+      "id": 1620
+    },
+    "title": {
+      "fr": "Emblème du Steamer",
+      "en": "Foggernaut Emblem",
+      "es": "Emblema de steamer",
+      "pt": "Emblema de Steamer"
+    }
+  },
+  {
+    "definition": {
+      "id": 6812
+    },
+    "title": {
+      "fr": "Puissance brute",
+      "en": "Raw Power",
+      "es": "Potencia bruta",
+      "pt": "Potência Bruta"
+    }
+  },
+  {
+    "definition": {
+      "id": 6022
+    },
+    "title": {
+      "fr": "Opiniâtreté",
+      "en": "Obstinacy",
+      "es": "Terquedad",
+      "pt": "Insistência"
+    }
+  },
+  {
+    "definition": {
+      "id": 4462
+    }
+  },
+  {
+    "definition": {
+      "id": 6026
+    },
+    "title": {
+      "fr": "Influence",
+      "en": "Influence",
+      "es": "Influjo",
+      "pt": "Influência"
+    }
+  },
+  {
+    "definition": {
+      "id": 5074
+    },
+    "title": {
+      "fr": "Constant",
+      "en": "Constant",
+      "es": "Constante",
+      "pt": "Constante"
+    }
+  },
+  {
+    "definition": {
+      "id": 5994
+    },
+    "title": {
+      "fr": "Frénésie",
+      "en": "Frenzy",
+      "es": "Frenesí",
+      "pt": "Frenesi"
+    }
+  },
+  {
+    "definition": {
+      "id": 4241
+    },
+    "title": {
+      "fr": "Costume du Tofu",
+      "en": "Tofu Costume",
+      "es": "Traje de Tofu",
+      "pt": "Traje do Tofu"
+    }
+  },
+  {
+    "definition": {
+      "id": 6594
+    }
+  },
+  {
+    "definition": {
+      "id": 2413
+    },
+    "title": {
+      "fr": "Muraille 50%",
+      "en": "Walls 50%",
+      "es": "Muralla 50%",
+      "pt": "Muros 50%"
+    }
+  },
+  {
+    "definition": {
+      "id": 5449
+    },
+    "title": {
+      "fr": "Concentration élémentaire",
+      "en": "Elemental Concentration",
+      "es": "Concentración Elemental",
+      "pt": "Concentração Elementar"
+    }
+  },
+  {
+    "definition": {
+      "id": 3340
+    },
+    "title": {
+      "fr": "Mercenaire d'Astrub",
+      "en": "Astrubian Mercenary",
+      "es": "Mercenario de Astrub",
+      "pt": "Mercenário de Astrub"
+    }
+  },
+  {
+    "definition": {
+      "id": 5990
+    },
+    "title": {
+      "fr": "Fermeté",
+      "en": "Resolute",
+      "es": "Firmeza",
+      "pt": "Firmeza"
+    }
+  },
+  {
+    "definition": {
+      "id": 2615
+    },
+    "title": {
+      "fr": "Costume de Black Wabbit",
+      "en": "Black Wabbit Costume",
+      "es": "Traje de Black Wabbit",
+      "pt": "Insígnia do Black Wabbit"
+    }
+  },
+  {
+    "definition": {
+      "id": 4709
+    },
+    "title": {
+      "fr": "Costume de Flaqueux",
+      "en": "Puddly Costume",
+      "es": "Traje de Charcoso",
+      "pt": "Traje de Charcoso"
+    }
+  },
+  {
+    "definition": {
+      "id": 6005
+    },
+    "title": {
+      "fr": "Vélocité",
+      "en": "Swiftness",
+      "es": "Velocidad",
+      "pt": "Presteza"
+    }
+  },
+  {
+    "definition": {
+      "id": 6219
+    }
+  },
+  {
+    "definition": {
+      "id": 4783
+    },
+    "title": {
+      "fr": "Costume du Boufbowleur d'Amakna",
+      "en": "Amakna Gobbowler Costume",
+      "es": "Traje de Jalabolista de Amakna",
+      "pt": "Traje do Papabolista de Amakna"
+    }
+  },
+  {
+    "definition": {
+      "id": 5798
+    }
+  },
+  {
+    "definition": {
+      "id": 1798
+    },
+    "title": {
+      "fr": "Insigne du Mulmouth",
+      "en": "Boohemoth Insignia",
+      "es": "Insignia de mimut",
+      "pt": "Insígnia do Mimute"
+    }
+  },
+  {
+    "definition": {
+      "id": 6032
+    },
+    "title": {
+      "fr": "Prospérité",
+      "en": "Prosperity",
+      "es": "Prosperidad",
+      "pt": "Prosperidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 5411
+    }
+  },
+  {
+    "definition": {
+      "id": 5272
+    }
+  },
+  {
+    "definition": {
+      "id": 1610
+    },
+    "title": {
+      "fr": "Emblème du Sacrieur",
+      "en": "Sacrier Emblem",
+      "es": "Emblema de sacrógrito",
+      "pt": "Emblema de Sacrier"
+    }
+  },
+  {
+    "definition": {
+      "id": 3190
+    }
+  },
+  {
+    "definition": {
+      "id": 7095
+    }
+  },
+  {
+    "definition": {
+      "id": 7004
+    }
+  },
+  {
+    "definition": {
+      "id": 6090
+    },
+    "title": {
+      "fr": "Cicatrisation",
+      "en": "Healing",
+      "es": "Sanación",
+      "pt": "Cicatrização"
+    }
+  },
+  {
+    "definition": {
+      "id": 4302
+    }
+  },
+  {
+    "definition": {
+      "id": 5799
+    }
+  },
+  {
+    "definition": {
+      "id": 1609
+    },
+    "title": {
+      "fr": "Emblème du Cra",
+      "en": "Cra Emblem",
+      "es": "Emblema de ocra",
+      "pt": "Emblema de Cra"
+    }
+  },
+  {
+    "definition": {
+      "id": 2731
+    },
+    "title": {
+      "fr": "Dynaste de Jade",
+      "en": "Jade Dynast",
+      "es": "Dinasta jade",
+      "pt": "Dinastia de Jade"
+    }
+  },
+  {
+    "definition": {
+      "id": 5076
+    },
+    "title": {
+      "fr": "Précis",
+      "en": "Precise",
+      "es": "Preciso",
+      "pt": "Preciso"
+    }
+  },
+  {
+    "definition": {
+      "id": 5909
+    }
+  },
+  {
+    "definition": {
+      "id": 5986
+    },
+    "title": {
+      "fr": "Dérobade",
+      "en": "Evasion",
+      "es": "Escapatoria",
+      "pt": "Evasão"
+    }
+  },
+  {
+    "definition": {
+      "id": 2272
+    },
+    "title": {
+      "fr": "Costume de Megathon",
+      "en": "Decepticod Costume",
+      "es": "Traje de Megatún",
+      "pt": "Traje de Megatum"
+    }
+  },
+  {
+    "definition": {
+      "id": 4468
+    }
+  },
+  {
+    "definition": {
+      "id": 3142
+    },
+    "title": {
+      "fr": "Costume de Mercenaire",
+      "en": "Mercenary Costume",
+      "es": "Traje de Mercenario",
+      "pt": "Insígnia de Mercenário"
+    }
+  },
+  {
+    "definition": {
+      "id": 6933
+    },
+    "title": {
+      "fr": "Prétention",
+      "en": "Pretension",
+      "es": "Pretensión",
+      "pt": "Pretensão"
+    }
+  },
+  {
+    "definition": {
+      "id": 7072
+    },
+    "title": {
+      "fr": "Pacte d'Anathar IV",
+      "en": "Anathar's Pact IV",
+      "es": "Pacto de Anathar IV",
+      "pt": "Pacto de Anathar IV"
+    }
+  },
+  {
+    "definition": {
+      "id": 3990
+    },
+    "title": {
+      "fr": "Costume 1001 Griffes",
+      "en": "1001 Claws Costume",
+      "es": "Para todos los que deseen afilar sus mil y una patas.",
+      "pt": "Traje das Mil e Uma Garras"
+    }
+  },
+  {
+    "definition": {
+      "id": 2572
+    },
+    "title": {
+      "fr": "Requinquage 66%",
+      "en": "Perk Up 66%",
+      "es": "Recuperación 66%",
+      "pt": "Estimular 66%"
+    }
+  },
+  {
+    "definition": {
+      "id": 7071
+    },
+    "title": {
+      "fr": "Pacte d'Anathar III",
+      "en": "Anathar's Pact III",
+      "es": "Pacto de Anathar III",
+      "pt": "Pacto de Anathar III"
+    }
+  },
+  {
+    "definition": {
+      "id": 2367
+    },
+    "title": {
+      "fr": "Costume d'Archaologue d'Amakna",
+      "en": "Amaknian Archaosologist Costume",
+      "es": "Traje de Arcaólogo de Amakna",
+      "pt": "Traje de arcaólogo de Amakna"
+    }
+  },
+  {
+    "definition": {
+      "id": 5384
+    },
+    "title": {
+      "fr": "Costume de Twitch",
+      "en": "Twitch Costume",
+      "es": "Traje de Twitch",
+      "pt": "Traje de Twitch"
+    }
+  },
+  {
+    "definition": {
+      "id": 3193
+    }
+  },
+  {
+    "definition": {
+      "id": 5077
+    },
+    "title": {
+      "fr": "Dénouement",
+      "en": "Unraveling",
+      "es": "Desenlace",
+      "pt": "Desenlace"
+    }
+  },
+  {
+    "definition": {
+      "id": 6819
+    },
+    "title": {
+      "fr": "Contre-attaque",
+      "en": "Counterattack",
+      "es": "Contraataque",
+      "pt": "Contra-Ataque"
+    }
+  },
+  {
+    "definition": {
+      "id": 6828
+    },
+    "title": {
+      "fr": "Altruisme",
+      "en": "Altruism",
+      "es": "Altruismo",
+      "pt": "Altruísmo"
+    }
+  },
+  {
+    "definition": {
+      "id": 5364
+    }
+  },
+  {
+    "definition": {
+      "id": 6034
+    },
+    "title": {
+      "fr": "Focalisation",
+      "en": "Focalization",
+      "es": "Focalización",
+      "pt": "Focalização"
+    }
+  },
+  {
+    "definition": {
+      "id": 6198
+    }
+  },
+  {
+    "definition": {
+      "id": 4570
+    },
+    "title": {
+      "fr": "Dofus Prismatique",
+      "en": "Prismatic Dofus",
+      "es": "Dofus Prismático",
+      "pt": "Dofus Prismático"
+    },
+    "description": {
+      "fr": "Accorde +2 PA un tour sur deux",
+      "en": "Gives +2 AP every other turn",
+      "es": "Otorga +2 PA cada dos turnos.",
+      "pt": "Concede +2 PA em turnos alternados"
+    }
+  },
+  {
+    "definition": {
+      "id": 2732
+    },
+    "title": {
+      "fr": "Dynaste du Lotus",
+      "en": "Lotus Dynast",
+      "es": "Dinasta de loto",
+      "pt": "Dinastia de Lótus"
+    }
+  },
+  {
+    "definition": {
+      "id": 1317
+    },
+    "title": {
+      "fr": "Insigne du DarkVlad",
+      "en": "Dark Vlad Insignia",
+      "es": "Insignia de Dark Vlad",
+      "pt": "Insígnia do Dark Vlad"
+    }
+  },
+  {
+    "definition": {
+      "id": 2522
+    },
+    "title": {
+      "fr": "Costume de petit Paysan",
+      "en": "Little Farmer Costume",
+      "es": "Traje del Pequeño Campesino",
+      "pt": "Traje do pequeno Fazendeiro"
+    },
+    "description": {
+      "fr": "[default]",
+      "en": "[default]",
+      "es": "[default]",
+      "pt": "[default]"
+    }
+  },
+  {
+    "definition": {
+      "id": 2243
+    },
+    "title": {
+      "fr": "Costume de Chasseur de Monstre d'Halouine",
+      "en": "Al Howin Monster Hunter Costume",
+      "es": "Traje de Cazador de Monstruos de Haluín",
+      "pt": "Traje de Caçador de Monstro do Relouin"
+    }
+  },
+  {
+    "definition": {
+      "id": 5349
+    }
+  },
+  {
+    "definition": {
+      "id": 751
+    },
+    "title": {
+      "fr": "Enflammé",
+      "en": "Flaming",
+      "es": "Ardiente",
+      "pt": "Flamejante"
+    },
+    "description": {
+      "fr": "Lorsque vous commencez votre tour, les adversaires à votre corps à corps subissent des dégâts.",
+      "en": "When you start your turn, enemies next to you will take damage.",
+      "es": "Cuando comienzas tu turno, los enemigos que tengas cuerpo a cuerpo sufren daños.",
+      "pt": "Quando você iniciar o seu turno, os inimigos que estiverem por perto sofrerão dano."
+    }
+  },
+  {
+    "definition": {
+      "id": 4960
+    }
+  },
+  {
+    "definition": {
+      "id": 1614
+    },
+    "title": {
+      "fr": "Emblème du Xelor",
+      "en": "Xelor Emblem",
+      "es": "Emblema de xelor",
+      "pt": "Emblema de Xelor"
+    }
+  },
+  {
+    "definition": {
+      "id": 4915
+    }
+  },
+  {
+    "definition": {
+      "id": 1597
+    },
+    "title": {
+      "fr": "Insigne Encapuchonné",
+      "en": "Hoodlum Insignia",
+      "es": "Insignia de encapuchado",
+      "pt": "Insígnia de Encapuzado"
+    }
+  },
+  {
+    "definition": {
+      "id": 6025
+    },
+    "title": {
+      "fr": "Puits de Vitalité",
+      "en": "Vitality Well",
+      "es": "Pozo de Vitalidad",
+      "pt": "Poço de Vitalidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 5271
+    }
+  },
+  {
+    "definition": {
+      "id": 5390
+    }
+  },
+  {
+    "definition": {
+      "id": 4863
+    },
+    "title": {
+      "fr": "Kit de Refroidissement",
+      "en": "Cooling Kit",
+      "es": "Kit de Refrigeración",
+      "pt": "Kit de Resfriamento"
+    }
+  },
+  {
+    "definition": {
+      "id": 6031
+    },
+    "title": {
+      "fr": "Retour PM",
+      "en": "MP Return",
+      "es": "Devolución de PM",
+      "pt": "Volta PM"
+    }
+  },
+  {
+    "definition": {
+      "id": 5270
+    }
+  },
+  {
+    "definition": {
+      "id": 4547
+    }
+  },
+  {
+    "definition": {
+      "id": 1568
+    },
+    "title": {
+      "fr": "Guilde Samoussaï",
+      "en": "Samoussai Guild",
+      "es": "Gremio samusai",
+      "pt": "Guilda Samussai"
+    }
+  },
+  {
+    "definition": {
+      "id": 3588
+    },
+    "title": {
+      "fr": "Costume du Mulou Alpha",
+      "en": "Alpha Boowolf Costume",
+      "es": "Traje de Milubo Alfa",
+      "pt": "Traje de Milobo Alfa"
+    }
+  },
+  {
+    "definition": {
+      "id": 5993
+    },
+    "title": {
+      "fr": "Réprobation",
+      "en": "Condemnation",
+      "es": "Reprobación",
+      "pt": "Reprovação"
+    }
+  },
+  {
+    "definition": {
+      "id": 6830
+    },
+    "title": {
+      "fr": "Nature",
+      "en": "Natural",
+      "es": "Naturaleza",
+      "pt": "Natural"
+    }
+  },
+  {
+    "definition": {
+      "id": 6768
+    }
+  },
+  {
+    "definition": {
+      "id": 4839
+    },
+    "title": {
+      "fr": "Costume de Kali",
+      "en": "Kali Costume",
+      "es": "Traje de Kali",
+      "pt": "Traje de Kali"
+    }
+  },
+  {
+    "definition": {
+      "id": 2730
+    },
+    "title": {
+      "fr": "Dynaste de Grenat",
+      "en": "Garnet Dynast",
+      "es": "Dinasta granate",
+      "pt": "Dinastia Rubra"
+    }
+  },
+  {
+    "definition": {
+      "id": 6014
+    },
+    "title": {
+      "fr": "Dérobade lente",
+      "en": "Slow Evasion",
+      "es": "Escapatoria lenta",
+      "pt": "Evasão Lenta"
+    }
+  },
+  {
+    "definition": {
+      "id": 1567
+    },
+    "title": {
+      "fr": "Guilde Draconique",
+      "en": "Draconic Guild",
+      "es": "Gremio dracónico",
+      "pt": "Guida Dracônica"
     }
   }
 ]
