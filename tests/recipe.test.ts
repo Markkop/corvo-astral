@@ -88,7 +88,7 @@ describe('RecipeCommand', () => {
     const spy = await executeCommandAndSpyReply(RecipeCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       footer: {
-        text: 'Recipes found: Amakna Sword (Relic), Amakna Riktus Epaulettes (Mythical), Amakna Riktus Boots (Mythical), Amakna Root Beer, Amakna Riktus Epaulettes, Amakna Riktus Boots, Amakna Bench, Amakna Throne'
+        text: "Recipes found: Amakna Sword (Relic), Amakna Riktus Epaulettes (Mythical), Amakna Riktus Boots (Mythical), Amakna Root Beer, Amakna Riktus Epaulettes, Amakna Riktus Boots, Amakna Bench, Amakna Throne"
       }
     }))
   })
@@ -99,7 +99,7 @@ describe('RecipeCommand', () => {
     const spy = await executeCommandAndSpyReply(RecipeCommand, command)
     expect(spy).toHaveBeenCalledWith(embedContaining({
       footer: {
-        text: "Recipes found: Sufokia Sword (Relic), Bonta Sword (Relic), Brakmar Sword (Relic), Eternal Sword (Relic), Tot's Great Big Sword  (Legendary), Whirly Sword (Legendary), Homely Sword (Legendary), Cease Sword (Legendary), Millennium Sword (Legendary), Steel Beak Sword (Legendary), Relay Kamasword (Legendary), Sworden (Legendary), Infected Cawwot Sword (Legendary), The Spin Ache Sword (Legendary), Black Crow's Sword  (Legendary), Sword of Iop (Legendary), Emerasword (Legendary), Elite Riktus Sword (Legendary), Good Eye Sword (Legendary), Bad Aboum's Sword (Legendary) and other 51 results"
+        text: "Recipes found: Sufokia Sword (Relic), Bonta Sword (Relic), Brakmar Sword (Relic), Eternal Sword (Relic), Tot's Great Big Sword  (Legendary), Whirly Sword (Legendary), Homely Sword (Legendary), Cease Sword (Legendary), Millennium Sword (Legendary), Steel Beak Sword (Legendary), Relay Kamasword (Legendary), Sworden (Legendary), Infected Cawwot Sword (Legendary), The Spin Ache Sword (Legendary), Black Crow's Sword  (Legendary), Sword of Iop (Legendary), Emerasword (Legendary), Elite Riktus Sword (Legendary), Good Eye Sword (Legendary), Bad Aboum's Sword (Legendary) and other 52 results"
       }
     }))
   })

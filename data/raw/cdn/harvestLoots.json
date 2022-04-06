@@ -8138,12 +8138,12 @@
     "itemIsLootList": false
   },
   {
-    "id": 10081,
-    "itemId": 29582,
+    "id": 10168,
+    "itemId": 29647,
     "quantity": 1,
     "requiredProspection": 0,
     "dropRate": 1,
-    "listId": 3400,
+    "listId": 3414,
     "quantityPerItem": 3,
     "quantityMin": 1,
     "quantityMax": 1,

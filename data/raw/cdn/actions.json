@@ -209,10 +209,10 @@
       "effect": "Perte : Résistance Élémentaire"
     },
     "description": {
-      "fr": "-[#1] Résistance Élémentaire",
+      "fr": "-[#1] Résistance élémentaire",
       "en": "-[#1] Elemental Resistance",
       "es": "-[#1] resistencia elemental",
-      "pt": "-[#1] de resistência elementar"
+      "pt": "-[#1] Resistência elementar"
     }
   },
   {
@@ -257,10 +257,10 @@
       "effect": "Perte : Résistance Élémentaire (sans cap)"
     },
     "description": {
-      "fr": "-[#1] Résistance Élémentaire",
+      "fr": "-[#1] Résistance élémentaire",
       "en": "-[#1] Elemental Resistance",
       "es": "-[#1] resistencia elemental",
-      "pt": "-[#1] de resistência elementar"
+      "pt": "-[#1] Resistência elementar"
     }
   },
   {
@@ -417,18 +417,6 @@
       "en": "[#1] Wisdom",
       "es": "[#1] sabiduría",
       "pt": "[#1] de Sabedoria"
-    }
-  },
-  {
-    "definition": {
-      "id": 167,
-      "effect": "Perte : Sagesse"
-    },
-    "description": {
-      "fr": "-[#1] Sagesse",
-      "en": "-[#1]% Wisdom",
-      "es": "-[#1]% a la sabiduría",
-      "pt": "-[#1]% de Sabedoria"
     }
   },
   {
@@ -745,8 +733,8 @@
     "description": {
       "fr": "[#1] Maîtrise Mêlée",
       "en": "[#1] Melee Mastery",
-      "es": "[#1] dominio cuerpo a cuerpo",
-      "pt": "[#1] de Domínio de luta corpo a corpo"
+      "es": "[#1] dominio de melé",
+      "pt": "[#1] Domínio de curta distância"
     }
   },
   {

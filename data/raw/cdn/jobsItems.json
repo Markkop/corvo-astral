@@ -10118,7 +10118,7 @@
     "definition": {
       "id": 11080,
       "level": 1,
-      "rarity": 1,
+      "rarity": 0,
       "graphicParameters": {
         "gfxId": 54311080,
         "femaleGfxId": 54311080
@@ -10135,7 +10135,7 @@
     "definition": {
       "id": 11081,
       "level": 1,
-      "rarity": 2,
+      "rarity": 0,
       "graphicParameters": {
         "gfxId": 54311081,
         "femaleGfxId": 54311081
@@ -10152,7 +10152,7 @@
     "definition": {
       "id": 11082,
       "level": 1,
-      "rarity": 2,
+      "rarity": 0,
       "graphicParameters": {
         "gfxId": 54311082,
         "femaleGfxId": 54311082
@@ -10169,7 +10169,7 @@
     "definition": {
       "id": 11083,
       "level": 1,
-      "rarity": 3,
+      "rarity": 0,
       "graphicParameters": {
         "gfxId": 54311083,
         "femaleGfxId": 54311083
@@ -16816,7 +16816,7 @@
     "definition": {
       "id": 14207,
       "level": 1,
-      "rarity": 3,
+      "rarity": 0,
       "graphicParameters": {
         "gfxId": 54314207,
         "femaleGfxId": 54314207
@@ -20079,7 +20079,7 @@
   {
     "definition": {
       "id": 15217,
-      "level": 84,
+      "level": 80,
       "rarity": 2,
       "graphicParameters": {
         "gfxId": 11115217,
@@ -38619,8 +38619,8 @@
     "title": {
       "fr": "Métamorfo de Mêlée",
       "en": "Melee Metamorfo",
-      "es": "Metamorfo de cuerpo a cuerpo",
-      "pt": "Metaformo de Corpo a Corpo"
+      "es": "Metamorfo de melé",
+      "pt": "Metaformo de Curta Distância"
     }
   },
   {
@@ -106294,10 +106294,10 @@
       }
     },
     "title": {
-      "fr": "Épaulettes Hanche",
-      "en": "Hip Epaulettes",
-      "es": "Hombreras Guaterpruf",
-      "pt": "Dragonas Zerméticas"
+      "fr": "Epaulettes du Riktus masqué",
+      "en": "Masked Riktus Epaulettes",
+      "es": "Hombreras de Riktus enmascarado",
+      "pt": "Dragonas do Riktus Mascarado"
     }
   },
   {
@@ -106311,10 +106311,10 @@
       }
     },
     "title": {
-      "fr": "Épaulettes Hanche",
-      "en": "Hip Epaulettes",
-      "es": "Hombreras Guaterpruf",
-      "pt": "Dragonas Zerméticas"
+      "fr": "Epaulettes du Riktus masqué",
+      "en": "Masked Riktus Epaulettes",
+      "es": "Hombreras de Riktus enmascarado",
+      "pt": "Dragonas do Riktus Mascarado"
     }
   },
   {
@@ -106328,10 +106328,10 @@
       }
     },
     "title": {
-      "fr": "Épaulettes Hanche",
-      "en": "Hip Epaulettes",
-      "es": "Hombreras Guaterpruf",
-      "pt": "Dragonas Zerméticas"
+      "fr": "Epaulettes du Riktus masqué",
+      "en": "Masked Riktus Epaulettes",
+      "es": "Hombreras de Riktus enmascarado",
+      "pt": "Dragonas do Riktus Mascarado"
     }
   },
   {
@@ -111666,10 +111666,10 @@
       }
     },
     "title": {
-      "fr": "Épaulettes Hanche",
-      "en": "Hip Epaulettes",
-      "es": "Hombreras Guaterpruf",
-      "pt": "Dragonas Zerméticas"
+      "fr": "Epaulettes du Riktus masqué",
+      "en": "Masked Riktus Epaulettes",
+      "es": "Hombreras de Riktus enmascarado",
+      "pt": "Dragonas do Riktus Mascarado"
     }
   },
   {
@@ -132236,6 +132236,23 @@
   },
   {
     "definition": {
+      "id": 29121,
+      "level": 219,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 13329121,
+        "femaleGfxId": 13329121
+      }
+    },
+    "title": {
+      "fr": "Boucle Dentée",
+      "en": "Toothed Belt",
+      "es": "Cinturón dentado",
+      "pt": "Fivela Dentada"
+    }
+  },
+  {
+    "definition": {
       "id": 29122,
       "level": 222,
       "rarity": 3,
@@ -136809,6 +136826,23 @@
   },
   {
     "definition": {
+      "id": 29455,
+      "level": 230,
+      "rarity": 5,
+      "graphicParameters": {
+        "gfxId": 10329455,
+        "femaleGfxId": 10329455
+      }
+    },
+    "title": {
+      "fr": "Le Portail",
+      "en": "The Portal",
+      "es": "El portal",
+      "pt": "O Portal"
+    }
+  },
+  {
+    "definition": {
       "id": 29457,
       "level": 230,
       "rarity": 3,
@@ -137109,7 +137143,7 @@
     "title": {
       "fr": "Tatsus Shushu",
       "en": "Tatsus Shushu",
-      "es": "Tatsus fab'huritu",
+      "es": "Tatsu fab'huritu",
       "pt": "Tatsus Shushu"
     }
   },
@@ -138050,23 +138084,6 @@
   },
   {
     "definition": {
-      "id": 29582,
-      "level": 1,
-      "rarity": 3,
-      "graphicParameters": {
-        "gfxId": 80929569,
-        "femaleGfxId": 80929569
-      }
-    },
-    "title": {
-      "fr": "Bouture d'arbre Wakfu",
-      "en": "Wakfu Tree Cutting",
-      "es": "Esqueje de árbol Wakfu",
-      "pt": "Muda da Árvore Wakfu"
-    }
-  },
-  {
-    "definition": {
       "id": 29589,
       "level": 230,
       "rarity": 3,
@@ -138097,6 +138114,1468 @@
       "en": "The Constant",
       "es": "El constante",
       "pt": "O Constante"
+    }
+  },
+  {
+    "definition": {
+      "id": 29594,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729594,
+        "femaleGfxId": 31729594
+      }
+    },
+    "title": {
+      "fr": "Clef de la brèche ultime de la Shukrute",
+      "en": "Shustuft Crust Ultimate Rift Key",
+      "es": "Llave de la brecha definitiva de la Fab'hugruta",
+      "pt": "Chave da Falha Suprema da Shukrute"
+    }
+  },
+  {
+    "definition": {
+      "id": 29595,
+      "level": 215,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 32714559,
+        "femaleGfxId": 32714559
+      }
+    },
+    "title": {
+      "fr": "Bois démoniaque commun",
+      "en": "Common Demonic Wood",
+      "es": "Madera demoníaca común",
+      "pt": "Madeira Demoníaca Comum"
+    }
+  },
+  {
+    "definition": {
+      "id": 29597,
+      "level": 215,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 3962281,
+        "femaleGfxId": 3962281
+      }
+    },
+    "title": {
+      "fr": "Poudre intemporelle démoniaque",
+      "en": "Demonic Intemporal Dust",
+      "es": "Pólvora intemporal demoníaca",
+      "pt": "Poeira Intemporal Demoníaca"
+    }
+  },
+  {
+    "definition": {
+      "id": 29616,
+      "level": 200,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31729616,
+        "femaleGfxId": 31729616
+      }
+    },
+    "title": {
+      "fr": "Clef de la pointe du Mont Zinit",
+      "en": "Mount Zinit Peak Key",
+      "es": "Llave del Pico del Monte Zinit",
+      "pt": "Chave da Ponta do Monte Zinit"
+    }
+  },
+  {
+    "definition": {
+      "id": 29617,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729617,
+        "femaleGfxId": 31729617
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Blérox",
+      "en": "Badgerox Key Fragment",
+      "es": "Fragmento de llave de tejaroxor",
+      "pt": "Fragmento de Chave dos Texox"
+    }
+  },
+  {
+    "definition": {
+      "id": 29618,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729618,
+        "femaleGfxId": 31729618
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef du Dor'Mor",
+      "en": "Dor'Mor Key Fragment",
+      "es": "Fragmento de llave de Dor'Mor",
+      "pt": "Fragmento de Chave do Dor'Mor"
+    }
+  },
+  {
+    "definition": {
+      "id": 29619,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729619,
+        "femaleGfxId": 31729619
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Dragoeuf",
+      "en": "Dreggon Key Fragment",
+      "es": "Fragmento de llave de dragohuevo",
+      "pt": "Fragmento de Chave de Dragovo"
+    }
+  },
+  {
+    "definition": {
+      "id": 29620,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729620,
+        "femaleGfxId": 31729620
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Ethernel",
+      "en": "Ethernal Key Fragment",
+      "es": "Fragmento de llave de éterno",
+      "pt": "Fragmento de Chave de Éter-No"
+    }
+  },
+  {
+    "definition": {
+      "id": 29621,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 53129621,
+        "femaleGfxId": 53129621
+      }
+    },
+    "title": {
+      "fr": "Poils d'Ogrest",
+      "en": "Ogrest Hairs",
+      "es": "Pelos de Ogrest",
+      "pt": "Pelos de Ogrest"
+    }
+  },
+  {
+    "definition": {
+      "id": 29622,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11029622,
+        "femaleGfxId": 11029622
+      }
+    },
+    "title": {
+      "fr": "Epée séculaire",
+      "en": "Age-Old Sword",
+      "es": "Espada secular",
+      "pt": "Espada Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29623,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11029622,
+        "femaleGfxId": 11029622
+      }
+    },
+    "title": {
+      "fr": "Epée séculaire",
+      "en": "Age-Old Sword",
+      "es": "Espada secular",
+      "pt": "Espada Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29624,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 22329624,
+        "femaleGfxId": 22329624
+      }
+    },
+    "title": {
+      "fr": "Grande lame séculaire",
+      "en": "Great Age-Old Blade",
+      "es": "Gran hoja secular",
+      "pt": "Grande Lâmina Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29625,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 22329624,
+        "femaleGfxId": 22329624
+      }
+    },
+    "title": {
+      "fr": "Grande lame séculaire",
+      "en": "Great Age-Old Blade",
+      "es": "Gran hoja secular",
+      "pt": "Grande Lâmina Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29626,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10129626,
+        "femaleGfxId": 10129626
+      }
+    },
+    "title": {
+      "fr": "Hache séculaire",
+      "en": "Age-Old Ax",
+      "es": "Hacha secular",
+      "pt": "Machado Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29627,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10129626,
+        "femaleGfxId": 10129626
+      }
+    },
+    "title": {
+      "fr": "Hache séculaire",
+      "en": "Age-Old Ax",
+      "es": "Hacha secular",
+      "pt": "Machado Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29628,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11129628,
+        "femaleGfxId": 11129628
+      }
+    },
+    "title": {
+      "fr": "Pelle séculaire",
+      "en": "Age-Old Shovel",
+      "es": "Pala secular",
+      "pt": "Pá Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29629,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11129628,
+        "femaleGfxId": 11129628
+      }
+    },
+    "title": {
+      "fr": "Pelle séculaire",
+      "en": "Age-Old Shovel",
+      "es": "Pala secular",
+      "pt": "Pá Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29630,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11329630,
+        "femaleGfxId": 11329630
+      }
+    },
+    "title": {
+      "fr": "Sceptre séculaire",
+      "en": "Age-Old Scepter",
+      "es": "Cetro secular",
+      "pt": "Cetro Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29631,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11329630,
+        "femaleGfxId": 11329630
+      }
+    },
+    "title": {
+      "fr": "Sceptre séculaire",
+      "en": "Age-Old Scepter",
+      "es": "Cetro secular",
+      "pt": "Cetro Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29632,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11429632,
+        "femaleGfxId": 11429632
+      }
+    },
+    "title": {
+      "fr": "Marteau séculaire",
+      "en": "Age-Old Hammer",
+      "es": "Martillo secular",
+      "pt": "Martelo Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29633,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11429632,
+        "femaleGfxId": 11429632
+      }
+    },
+    "title": {
+      "fr": "Marteau séculaire",
+      "en": "Age-Old Hammer",
+      "es": "Martillo secular",
+      "pt": "Martelo Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29634,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 25329634,
+        "femaleGfxId": 25329634
+      }
+    },
+    "title": {
+      "fr": "Grand bâton séculaire",
+      "en": "Great Age-Old Staff",
+      "es": "Gran bastón secular",
+      "pt": "Grande Bastão Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29635,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 25329634,
+        "femaleGfxId": 25329634
+      }
+    },
+    "title": {
+      "fr": "Grand bâton séculaire",
+      "en": "Great Age-Old Staff",
+      "es": "Gran bastón secular",
+      "pt": "Grande Bastão Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29636,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11729636,
+        "femaleGfxId": 11729636
+      }
+    },
+    "title": {
+      "fr": "Arc séculaire",
+      "en": "Age-Old Bow",
+      "es": "Arco secular",
+      "pt": "Arco Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29637,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11729636,
+        "femaleGfxId": 11729636
+      }
+    },
+    "title": {
+      "fr": "Arc séculaire",
+      "en": "Age-Old Bow",
+      "es": "Arco secular",
+      "pt": "Arco Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29638,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 25429638,
+        "femaleGfxId": 25429638
+      }
+    },
+    "title": {
+      "fr": "Cartes séculaires",
+      "en": "Age-Old Cards",
+      "es": "Cartas seculares",
+      "pt": "Cartas Ancestrais"
+    }
+  },
+  {
+    "definition": {
+      "id": 29639,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 25429638,
+        "femaleGfxId": 25429638
+      }
+    },
+    "title": {
+      "fr": "Cartes séculaires",
+      "en": "Age-Old Cards",
+      "es": "Cartas seculares",
+      "pt": "Cartas Ancestrais"
+    }
+  },
+  {
+    "definition": {
+      "id": 29640,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 10829640,
+        "femaleGfxId": 10829640
+      }
+    },
+    "title": {
+      "fr": "Baguette séculaire",
+      "en": "Age-Old Wand",
+      "es": "Varita secular",
+      "pt": "Varinha Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29641,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 10829640,
+        "femaleGfxId": 10829640
+      }
+    },
+    "title": {
+      "fr": "Baguette séculaire",
+      "en": "Age-Old Wand",
+      "es": "Varita secular",
+      "pt": "Varinha Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29642,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11529642,
+        "femaleGfxId": 11529642
+      }
+    },
+    "title": {
+      "fr": "Aiguille séculaire",
+      "en": "Age-Old Clock Hand",
+      "es": "Aguja secular",
+      "pt": "Agulha Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29643,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11529642,
+        "femaleGfxId": 11529642
+      }
+    },
+    "title": {
+      "fr": "Aiguille séculaire",
+      "en": "Age-Old Clock Hand",
+      "es": "Aguja secular",
+      "pt": "Agulha Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29645,
+      "level": 230,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 11229645,
+        "femaleGfxId": 11229645
+      }
+    },
+    "title": {
+      "fr": "Dague séculaire",
+      "en": "Age-Old Dagger",
+      "es": "Daga secular",
+      "pt": "Adaga Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29646,
+      "level": 230,
+      "rarity": 4,
+      "graphicParameters": {
+        "gfxId": 11229645,
+        "femaleGfxId": 11229645
+      }
+    },
+    "title": {
+      "fr": "Dague séculaire",
+      "en": "Age-Old Dagger",
+      "es": "Daga secular",
+      "pt": "Adaga Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29647,
+      "level": 0,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 30626394,
+        "femaleGfxId": 30626394
+      }
+    },
+    "title": {
+      "fr": "Bouture de Sakoura Mystique (Havre-sac)",
+      "en": "Mystical Sakura Cutting (Haven Bag)",
+      "es": "Esqueje de sakura mística (merkasako)",
+      "pt": "Muda de Sacura Mística (Saco de Viagem)"
+    }
+  },
+  {
+    "definition": {
+      "id": 29662,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 21064,
+        "femaleGfxId": 21064
+      }
+    },
+    "title": {
+      "fr": "Mur de bois - gros",
+      "en": "Wooden Wall - Strut",
+      "es": "Pared de madera - robusta",
+      "pt": "Parede de Madeira - Grande"
+    }
+  },
+  {
+    "definition": {
+      "id": 29663,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 21065,
+        "femaleGfxId": 21065
+      }
+    },
+    "title": {
+      "fr": "Mur de bois",
+      "en": "Wooden Wall",
+      "es": "Pared de madera",
+      "pt": "Parede de Madeira"
+    }
+  },
+  {
+    "definition": {
+      "id": 29664,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 21066,
+        "femaleGfxId": 21066
+      }
+    },
+    "title": {
+      "fr": "Mur de bois - croix",
+      "en": "Wooden Wall - Cross",
+      "es": "Pared de madera - cruz",
+      "pt": "Parede de Madeira - Cruz"
+    }
+  },
+  {
+    "definition": {
+      "id": 29665,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 21067,
+        "femaleGfxId": 21067
+      }
+    },
+    "title": {
+      "fr": "Mur de bois - angle haut",
+      "en": "Wooden Wall - Top Angle",
+      "es": "Pared de madera - ángulo superior",
+      "pt": "Parede de Madeira - Ângulo Superior"
+    }
+  },
+  {
+    "definition": {
+      "id": 29666,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 21068,
+        "femaleGfxId": 21068
+      }
+    },
+    "title": {
+      "fr": "Mur de bois - angle côté",
+      "en": "Wooden Wall - Side Angle",
+      "es": "Pared de madera - ángulo lateral",
+      "pt": "Parede de Madeira - Ângulo Lateral"
+    }
+  },
+  {
+    "definition": {
+      "id": 29667,
+      "level": 1,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 21069,
+        "femaleGfxId": 21069
+      }
+    },
+    "title": {
+      "fr": "Mur de bois - angle bas",
+      "en": "Wooden Wall - Bottom Angle",
+      "es": "Pared de madera - ángulo inferior",
+      "pt": "Parede de Madeira - Ângulo Inferior"
+    }
+  },
+  {
+    "definition": {
+      "id": 29668,
+      "level": 66,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31729668,
+        "femaleGfxId": 31729668
+      }
+    },
+    "title": {
+      "fr": "Clef de l'Antre d'Excarnus",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29669,
+      "level": 81,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31729669,
+        "femaleGfxId": 31729669
+      }
+    },
+    "title": {
+      "fr": "Clef de l'Antre du Meulou",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29670,
+      "level": 96,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31729670,
+        "femaleGfxId": 31729670
+      }
+    },
+    "title": {
+      "fr": "Clef de l'Antre du Corbeau noir",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29671,
+      "level": 96,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31729671,
+        "femaleGfxId": 31729671
+      }
+    },
+    "title": {
+      "fr": "Clef de l'Antre du Boufrog",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29672,
+      "level": 111,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31729672,
+        "femaleGfxId": 31729672
+      }
+    },
+    "title": {
+      "fr": "Clef de l'Antre du Dragon-Cochon",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29673,
+      "level": 156,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31729673,
+        "femaleGfxId": 31729673
+      }
+    },
+    "title": {
+      "fr": "Clef du Plateau des Hauts-Vents",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29674,
+      "level": 171,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31729674,
+        "femaleGfxId": 31729674
+      }
+    },
+    "title": {
+      "fr": "Clef de la Cime du Grand Totem",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29675,
+      "level": 186,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31729675,
+        "femaleGfxId": 31729675
+      }
+    },
+    "title": {
+      "fr": "Clef de l'Antre de Nogord l'Ezarélé",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29676,
+      "level": 186,
+      "rarity": 2,
+      "graphicParameters": {
+        "gfxId": 31729676,
+        "femaleGfxId": 31729676
+      }
+    },
+    "title": {
+      "fr": "Clef de la Dimension-objet d'Ombrage",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29677,
+      "level": 66,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729677,
+        "femaleGfxId": 31729677
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de l'Antre oubliée",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29678,
+      "level": 66,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729678,
+        "femaleGfxId": 31729678
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Bwork",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29679,
+      "level": 66,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729679,
+        "femaleGfxId": 31729679
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef des Ratacombes",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29680,
+      "level": 66,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729680,
+        "femaleGfxId": 31729680
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef du Palais du Tsu",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29681,
+      "level": 81,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729681,
+        "femaleGfxId": 31729681
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de l'Autel de la Lune",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29682,
+      "level": 81,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729682,
+        "femaleGfxId": 31729682
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de Arakne",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29683,
+      "level": 81,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729683,
+        "femaleGfxId": 31729683
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de Trool",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29684,
+      "level": 81,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729684,
+        "femaleGfxId": 31729684
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de Slek",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29685,
+      "level": 96,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729685,
+        "femaleGfxId": 31729685
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Orrok",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29686,
+      "level": 96,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729686,
+        "femaleGfxId": 31729686
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de la Corbeau-Cave",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29687,
+      "level": 96,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729687,
+        "femaleGfxId": 31729687
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef des Magik Riktus",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29688,
+      "level": 96,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729688,
+        "femaleGfxId": 31729688
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de l'Arène dansante",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29689,
+      "level": 96,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729689,
+        "femaleGfxId": 31729689
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de la Scarrière abandonnée",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29690,
+      "level": 96,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729690,
+        "femaleGfxId": 31729690
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de la Nécroipoil de Morbax",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29691,
+      "level": 96,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729691,
+        "femaleGfxId": 31729691
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef du Château de Wagnar",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29692,
+      "level": 96,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729692,
+        "femaleGfxId": 31729692
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef du Sliptorium",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29693,
+      "level": 111,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729693,
+        "femaleGfxId": 31729693
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Truche",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29694,
+      "level": 111,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729694,
+        "femaleGfxId": 31729694
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef du Petit Groin",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29695,
+      "level": 111,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729695,
+        "femaleGfxId": 31729695
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Cacterre",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29696,
+      "level": 111,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729696,
+        "femaleGfxId": 31729696
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Smarre",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29697,
+      "level": 156,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729697,
+        "femaleGfxId": 31729697
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef des Riktus Elite",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29698,
+      "level": 156,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729698,
+        "femaleGfxId": 31729698
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef du Roub'bar",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29699,
+      "level": 156,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729699,
+        "femaleGfxId": 31729699
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef du Lampionaute",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29700,
+      "level": 156,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729700,
+        "femaleGfxId": 31729700
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Patapoutre",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29701,
+      "level": 171,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729701,
+        "femaleGfxId": 31729701
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Kanniboule",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29702,
+      "level": 171,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729702,
+        "femaleGfxId": 31729702
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef des Tropikes",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29703,
+      "level": 171,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729703,
+        "femaleGfxId": 31729703
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Crocodaille",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29704,
+      "level": 171,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729704,
+        "femaleGfxId": 31729704
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef Kannivore",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29705,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729705,
+        "femaleGfxId": 31729705
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de Srambad",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29706,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729706,
+        "femaleGfxId": 31729706
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef d'Enutrosor",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29707,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729707,
+        "femaleGfxId": 31729707
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef du Xelorium passé",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29708,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729708,
+        "femaleGfxId": 31729708
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef du Xelorium présent",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29709,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729709,
+        "femaleGfxId": 31729709
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de la brèche de Tainéla",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29710,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729710,
+        "femaleGfxId": 31729710
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de la brèche de Sufokia",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29711,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729711,
+        "femaleGfxId": 31729711
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de la brèche d'Amakna",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29712,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729712,
+        "femaleGfxId": 31729712
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de la brèche de Bonta",
+      "en": "",
+      "es": "",
+      "pt": ""
+    }
+  },
+  {
+    "definition": {
+      "id": 29713,
+      "level": 186,
+      "rarity": 3,
+      "graphicParameters": {
+        "gfxId": 31729713,
+        "femaleGfxId": 31729713
+      }
+    },
+    "title": {
+      "fr": "Fragment de clef de la brèche de Moon",
+      "en": "",
+      "es": "",
+      "pt": ""
     }
   }
 ]
