@@ -35,6 +35,24 @@ describe('getSublimation', () => {
           name: 'Effects',
           value: 'At the start of combat, if the state bearer has more Area Mastery than Melee Mastery:\n➥ +20% damage inflicted in melee and area of effect simultaneously',
           inline: false
+        },
+        {
+          "inline": true,
+          "name": "Profession",
+          "value": ":chair: Handyman",
+        },
+        {
+          "inline": true,
+          "name": "Level",
+          "value": "130",
+        },
+        {
+          "inline": false,
+          "name": "Ingredients",
+          "value": `:droplet: \`500x \` Ogrest's Tear
+:sparkles: \`1000x\` Powder
+:fish: \`75x  \` Divine Tiramisoup
+:white_small_square: \`1x   \` Adventure Stone`,
         }
       ]
     }))

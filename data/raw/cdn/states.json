@@ -1,711 +1,13 @@
 [
   {
     "definition": {
-      "id": 6714
+      "id": 6041
     },
     "title": {
-      "fr": "Paisible",
-      "en": "Peaceful",
-      "es": "Apacible",
-      "pt": "Pacífico"
-    }
-  },
-  {
-    "definition": {
-      "id": 7078
-    },
-    "title": {
-      "fr": "Temporisation",
-      "en": "Delay",
-      "es": "Temporización",
-      "pt": "Temporização"
-    }
-  },
-  {
-    "definition": {
-      "id": 6712
-    },
-    "title": {
-      "fr": "Renaissance",
-      "en": "Rebirth",
-      "es": "Resurrección",
-      "pt": "Renascimento"
-    }
-  },
-  {
-    "definition": {
-      "id": 5174
-    },
-    "title": {
-      "fr": "Alternance II",
-      "en": "Alternation II",
-      "es": "Alternancia II",
-      "pt": "Alternância II"
-    }
-  },
-  {
-    "definition": {
-      "id": 6039
-    },
-    "title": {
-      "fr": "Influence lente",
-      "en": "Slow Influence",
-      "es": "Influjo lento",
-      "pt": "Influência Lenta"
-    }
-  },
-  {
-    "definition": {
-      "id": 5445
-    },
-    "title": {
-      "fr": "Anatomie",
-      "en": "Anatomy",
-      "es": "Anatomía",
-      "pt": "Anatomia"
-    }
-  },
-  {
-    "definition": {
-      "id": 7077
-    },
-    "title": {
-      "fr": "Armure lourde",
-      "en": "Heavy Armor",
-      "es": "Armadura Pesada",
-      "pt": "Armadura Pesada"
-    }
-  },
-  {
-    "definition": {
-      "id": 6023
-    },
-    "title": {
-      "fr": "Aisance",
-      "en": "Poise",
-      "es": "Ligereza",
-      "pt": "Desenvoltura"
-    }
-  },
-  {
-    "definition": {
-      "id": 2572
-    },
-    "title": {
-      "fr": "Requinquage 66%",
-      "en": "Perk Up 66%",
-      "es": "Recuperación 66%",
-      "pt": "Estimular 66%"
-    }
-  },
-  {
-    "definition": {
-      "id": 6932
-    },
-    "title": {
-      "fr": "Abandon",
-      "en": "Abandon",
-      "es": "Abandono",
-      "pt": "Abandono"
-    }
-  },
-  {
-    "definition": {
-      "id": 6833
-    },
-    "title": {
-      "fr": "Pied ferme",
-      "en": "Firm Foot",
-      "es": "Pie firme",
-      "pt": "Pé Firme"
-    }
-  },
-  {
-    "definition": {
-      "id": 6926
-    },
-    "title": {
-      "fr": "Revigoration",
-      "en": "Reinvigoration",
-      "es": "Revigorización",
-      "pt": "Revigorada"
-    }
-  },
-  {
-    "definition": {
-      "id": 1615
-    },
-    "title": {
-      "fr": "Emblème d'Enutrof",
-      "en": "Enutrof Emblem",
-      "es": "Emblema de anutrof",
-      "pt": "Emblema de Enutrof"
-    }
-  },
-  {
-    "definition": {
-      "id": 6011
-    },
-    "title": {
-      "fr": "Ruine cyclique",
-      "en": "Cyclical Ruin",
-      "es": "Ruina cíclica",
-      "pt": "Ruína Cíclica"
-    }
-  },
-  {
-    "definition": {
-      "id": 2514
-    },
-    "title": {
-      "fr": "Vivacité 90%",
-      "en": "90% Vivacity",
-      "es": "Vivacidad 90%",
-      "pt": "90% de Vivacidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 6709
-    },
-    "title": {
-      "fr": "Longévité",
-      "en": "Longevity",
-      "es": "Longevidad",
-      "pt": "Longevidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 6813
-    },
-    "title": {
-      "fr": "Retour enflammé",
-      "en": "Flaming Return",
-      "es": "Respuesta ardiente",
-      "pt": "Retorno das Chamas"
-    }
-  },
-  {
-    "definition": {
-      "id": 1973
-    },
-    "title": {
-      "fr": "Costume de Wabbit",
-      "en": "Wabbit Costume",
-      "es": "Traje de Wabbit",
-      "pt": "Traje de Wabbit"
-    }
-  },
-  {
-    "definition": {
-      "id": 5076
-    },
-    "title": {
-      "fr": "Précis",
-      "en": "Precise",
-      "es": "Preciso",
-      "pt": "Preciso"
-    }
-  },
-  {
-    "definition": {
-      "id": 7079
-    },
-    "title": {
-      "fr": "Préparation critique ",
-      "en": "Critical Preparation ",
-      "es": "Preparación Crítica ",
-      "pt": "Preparação Crítica "
-    }
-  },
-  {
-    "definition": {
-      "id": 1354
-    },
-    "title": {
-      "fr": "Aura de l'Amour",
-      "en": "Love Aura",
-      "es": "Aura del Amor",
-      "pt": "Aura do Amor"
-    }
-  },
-  {
-    "definition": {
-      "id": 5249
-    },
-    "title": {
-      "fr": "Maniement : Dague",
-      "en": "Wield type: Dagger",
-      "es": "Manejo: Daga",
-      "pt": "Manejo: Adaga"
-    }
-  },
-  {
-    "definition": {
-      "id": 7069
-    },
-    "title": {
-      "fr": "Pacte d'Anathar I",
-      "en": "Anathar's Pact I",
-      "es": "Pacto de Anathar I",
-      "pt": "Pacto de Anathar I"
-    }
-  },
-  {
-    "definition": {
-      "id": 6930
-    },
-    "title": {
-      "fr": "Critique tactique",
-      "en": "Tactical Critical",
-      "es": "Crítico táctico",
-      "pt": "Crítico Estratégico"
-    }
-  },
-  {
-    "definition": {
-      "id": 1609
-    },
-    "title": {
-      "fr": "Emblème du Cra",
-      "en": "Cra Emblem",
-      "es": "Emblema de ocra",
-      "pt": "Emblema de Cra"
-    }
-  },
-  {
-    "definition": {
-      "id": 3416
-    }
-  },
-  {
-    "definition": {
-      "id": 6929
-    },
-    "title": {
-      "fr": "Parade offensive",
-      "en": "Offensive Block",
-      "es": "Anticipación ofensiva",
-      "pt": "Parada Ofensiva"
-    }
-  },
-  {
-    "definition": {
-      "id": 1617
-    },
-    "title": {
-      "fr": "Emblème du Pandawa",
-      "en": "Pandawa Emblem",
-      "es": "Emblema de pandawa",
-      "pt": "Emblema de Pandawa"
-    }
-  },
-  {
-    "definition": {
-      "id": 5992
-    },
-    "title": {
-      "fr": "Topologie",
-      "en": "Topology",
-      "es": "Topología",
-      "pt": "Topologia"
-    }
-  },
-  {
-    "definition": {
-      "id": 6033
-    },
-    "title": {
-      "fr": "Clameur",
-      "en": "Clamor",
-      "es": "Clamor",
-      "pt": "Clamor"
-    }
-  },
-  {
-    "definition": {
-      "id": 6007
-    },
-    "title": {
-      "fr": "Bonne action",
-      "en": "Good Deed",
-      "es": "Buena Acción",
-      "pt": "Boa Ação"
-    }
-  },
-  {
-    "definition": {
-      "id": 1616
-    },
-    "title": {
-      "fr": "Emblème du Roublard",
-      "en": "Rogue Emblem",
-      "es": "Emblema de tymador",
-      "pt": "Emblema de Ladino"
-    }
-  },
-  {
-    "definition": {
-      "id": 6822
-    },
-    "title": {
-      "fr": "Arcanes",
-      "en": "Arcana",
-      "es": "Arcanos",
-      "pt": "Arcanos"
-    }
-  },
-  {
-    "definition": {
-      "id": 7088
-    },
-    "title": {
-      "fr": "Poids plume",
-      "en": "Featherweight",
-      "es": "Peso Pluma",
-      "pt": "Peso-pena"
-    }
-  },
-  {
-    "definition": {
-      "id": 6036
-    },
-    "title": {
-      "fr": "Longueur",
-      "en": "Length",
-      "es": "Longitud",
-      "pt": "Extensão"
-    }
-  },
-  {
-    "definition": {
-      "id": 5982
-    },
-    "title": {
-      "fr": "Ravage",
-      "en": "Devastate",
-      "es": "Estragos",
-      "pt": "Assolação"
-    }
-  },
-  {
-    "definition": {
-      "id": 5079
-    },
-    "title": {
-      "fr": "Alternance",
-      "en": "Alternation",
-      "es": "Alternancia",
-      "pt": "Alternância"
-    }
-  },
-  {
-    "definition": {
-      "id": 1348
-    },
-    "title": {
-      "fr": "Etoi Eskeutula",
-      "en": "Legwhat?",
-      "es": "Ytudondeta",
-      "pt": "Pernoquê?"
-    }
-  },
-  {
-    "definition": {
-      "id": 5449
-    },
-    "title": {
-      "fr": "Concentration élémentaire",
-      "en": "Elemental Concentration",
-      "es": "Concentración Elemental",
-      "pt": "Concentração Elementar"
-    }
-  },
-  {
-    "definition": {
-      "id": 5988
-    },
-    "title": {
-      "fr": "Ténacité",
-      "en": "Tenacity",
-      "es": "Tenacidad",
-      "pt": "Tenacidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 1618
-    },
-    "title": {
-      "fr": "Emblème du Feca",
-      "en": "Feca Emblem",
-      "es": "Emblema de feca",
-      "pt": "Emblema de Feca"
-    }
-  },
-  {
-    "definition": {
-      "id": 6829
-    },
-    "title": {
-      "fr": "Manie",
-      "en": "Mania",
-      "es": "Manía",
-      "pt": "Mania"
-    }
-  },
-  {
-    "definition": {
-      "id": 5443
-    },
-    "title": {
-      "fr": "Santé de fer",
-      "en": "Robust Health",
-      "es": "Salud de hierro",
-      "pt": "Saúde de Ferro"
-    }
-  },
-  {
-    "definition": {
-      "id": 1610
-    },
-    "title": {
-      "fr": "Emblème du Sacrieur",
-      "en": "Sacrier Emblem",
-      "es": "Emblema de sacrógrito",
-      "pt": "Emblema de Sacrier"
-    }
-  },
-  {
-    "definition": {
-      "id": 5980
-    },
-    "title": {
-      "fr": "Ruine",
-      "en": "Ruin",
-      "es": "Ruina",
-      "pt": "Ruína"
-    }
-  },
-  {
-    "definition": {
-      "id": 6005
-    },
-    "title": {
-      "fr": "Vélocité",
-      "en": "Swiftness",
-      "es": "Velocidad",
-      "pt": "Presteza"
-    }
-  },
-  {
-    "definition": {
-      "id": 6927
-    },
-    "title": {
-      "fr": "Précaution",
-      "en": "Precaution",
-      "es": "Precaución",
-      "pt": "Precaução"
-    }
-  },
-  {
-    "definition": {
-      "id": 1613
-    },
-    "title": {
-      "fr": "Emblème du Sadida",
-      "en": "Sadida Emblem",
-      "es": "Emblema de sadida",
-      "pt": "Emblema de Sadida"
-    }
-  },
-  {
-    "definition": {
-      "id": 6812
-    },
-    "title": {
-      "fr": "Puissance brute",
-      "en": "Raw Power",
-      "es": "Potencia bruta",
-      "pt": "Potência Bruta"
-    }
-  },
-  {
-    "definition": {
-      "id": 2411
-    },
-    "title": {
-      "fr": "Requinquage 50%",
-      "en": "Perk Up 50%",
-      "es": "Recuperación 50%",
-      "pt": "Estimular 50%"
-    }
-  },
-  {
-    "definition": {
-      "id": 6030
-    },
-    "title": {
-      "fr": "Cyclothymie",
-      "en": "Cyclothymia",
-      "es": "Ciclotimia",
-      "pt": "Ciclotimia"
-    }
-  },
-  {
-    "definition": {
-      "id": 6815
-    },
-    "title": {
-      "fr": "Wakfu Berserk",
-      "en": "Berserk Wakfu",
-      "es": "Wakfu Berserker",
-      "pt": "Wakfu Berserk"
-    }
-  },
-  {
-    "definition": {
-      "id": 6034
-    },
-    "title": {
-      "fr": "Focalisation",
-      "en": "Focalization",
-      "es": "Focalización",
-      "pt": "Focalização"
-    }
-  },
-  {
-    "definition": {
-      "id": 5991
-    },
-    "title": {
-      "fr": "Légèreté",
-      "en": "Lightness",
-      "es": "Ligereza",
-      "pt": "Leveza"
-    }
-  },
-  {
-    "definition": {
-      "id": 6027
-    },
-    "title": {
-      "fr": "Fureur",
-      "en": "Fury",
-      "es": "Furor",
-      "pt": "Furor"
-    }
-  },
-  {
-    "definition": {
-      "id": 5446
-    },
-    "title": {
-      "fr": "Brutalité",
-      "en": "Brutality",
-      "es": "Brutalidad",
-      "pt": "Brutalidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 2932
-    },
-    "title": {
-      "fr": "Costume d'Adale",
-      "en": "Adal Costume",
-      "es": "Traje de Adal",
-      "pt": "Traje de Adal"
-    }
-  },
-  {
-    "definition": {
-      "id": 5253
-    },
-    "title": {
-      "fr": "Wé",
-      "en": "Yeah",
-      "es": "Seh",
-      "pt": "Nhé"
-    }
-  },
-  {
-    "definition": {
-      "id": 7076
-    },
-    "title": {
-      "fr": "Carapace",
-      "en": "Carapace",
-      "es": "Caparazón",
-      "pt": "Carapaça"
-    }
-  },
-  {
-    "definition": {
-      "id": 6830
-    },
-    "title": {
-      "fr": "Nature",
-      "en": "Natural",
-      "es": "Naturaleza",
-      "pt": "Natural"
-    }
-  },
-  {
-    "definition": {
-      "id": 5073
-    },
-    "title": {
-      "fr": "Inflexible",
-      "en": "Inflexible",
-      "es": "Inflexible",
-      "pt": "Inflexível"
-    }
-  },
-  {
-    "definition": {
-      "id": 7115
-    },
-    "title": {
-      "fr": "Ambition",
-      "en": "Ambition",
-      "es": "Ambición",
-      "pt": "Ambição"
-    }
-  },
-  {
-    "definition": {
-      "id": 6090
-    },
-    "title": {
-      "fr": "Cicatrisation",
-      "en": "Healing",
-      "es": "Sanación",
-      "pt": "Cicatrização"
-    }
-  },
-  {
-    "definition": {
-      "id": 6705
-    },
-    "title": {
-      "fr": "Furie",
-      "en": "Outrage",
-      "es": "Furia",
-      "pt": "Fúria"
-    }
-  },
-  {
-    "definition": {
-      "id": 2064
-    },
-    "title": {
-      "fr": "Insigne des Mérydes",
-      "en": "Meridia Insignia",
-      "es": "Insignia de los santos",
-      "pt": "Insígnia dos Meridas"
+      "fr": "Expert des Coups Critiques",
+      "en": "Critical Hit Expert",
+      "es": "Experto en Golpes Críticos",
+      "pt": "Especialista em Golpes Críticos"
     }
   },
   {
@@ -721,57 +23,13 @@
   },
   {
     "definition": {
-      "id": 6817
+      "id": 6090
     },
     "title": {
-      "fr": "Vol de Tacle",
-      "en": "Lock Steal",
-      "es": "Robo de placaje",
-      "pt": "Roubo de Bloqueio"
-    }
-  },
-  {
-    "definition": {
-      "id": 6825
-    },
-    "title": {
-      "fr": "Destruction",
-      "en": "Destruction",
-      "es": "Destrucción",
-      "pt": "Destruição"
-    }
-  },
-  {
-    "definition": {
-      "id": 5078
-    },
-    "title": {
-      "fr": "Fracass'carcasse",
-      "en": "Smashmouth",
-      "es": "Rompecarcasa",
-      "pt": "Kebra-Karkaça"
-    }
-  },
-  {
-    "definition": {
-      "id": 1480
-    },
-    "title": {
-      "fr": "Insigne de Jacko",
-      "en": "Jacko Insignia",
-      "es": "Insignia de Jacko",
-      "pt": "Insígnia de Aboborino"
-    }
-  },
-  {
-    "definition": {
-      "id": 7075
-    },
-    "title": {
-      "fr": "Combat rapproché ",
-      "en": "Brawling ",
-      "es": "Combate Cercano ",
-      "pt": "Combate Aproximado "
+      "fr": "Cicatrisation",
+      "en": "Healing",
+      "es": "Sanación",
+      "pt": "Cicatrização"
     }
   },
   {
@@ -787,6 +45,248 @@
   },
   {
     "definition": {
+      "id": 5158
+    },
+    "title": {
+      "fr": "Maniement : Deux mains",
+      "en": "Wield type: two-handed",
+      "es": "Manejo: Dos manos",
+      "pt": "Manejo: Duas mãos"
+    }
+  },
+  {
+    "definition": {
+      "id": 7076
+    },
+    "title": {
+      "fr": "Carapace",
+      "en": "Carapace",
+      "es": "Caparazón",
+      "pt": "Carapaça"
+    }
+  },
+  {
+    "definition": {
+      "id": 7069
+    },
+    "title": {
+      "fr": "Pacte d'Anathar I",
+      "en": "Anathar's Pact I",
+      "es": "Pacto de Anathar I",
+      "pt": "Pacto de Anathar I"
+    }
+  },
+  {
+    "definition": {
+      "id": 6812
+    },
+    "title": {
+      "fr": "Puissance brute",
+      "en": "Raw Power",
+      "es": "Potencia bruta",
+      "pt": "Potência Bruta"
+    }
+  },
+  {
+    "definition": {
+      "id": 2064
+    },
+    "title": {
+      "fr": "Insigne des Mérydes",
+      "en": "Meridia Insignia",
+      "es": "Insignia de los santos",
+      "pt": "Insígnia dos Meridas"
+    }
+  },
+  {
+    "definition": {
+      "id": 6712
+    },
+    "title": {
+      "fr": "Renaissance",
+      "en": "Rebirth",
+      "es": "Resurrección",
+      "pt": "Renascimento"
+    }
+  },
+  {
+    "definition": {
+      "id": 6331
+    },
+    "title": {
+      "fr": "Tolérance",
+      "en": "Tolerance",
+      "es": "Tolerancia",
+      "pt": "Tolerância"
+    }
+  },
+  {
+    "definition": {
+      "id": 5989
+    },
+    "title": {
+      "fr": "Solidité",
+      "en": "Solidity",
+      "es": "Solidez",
+      "pt": "Solidez"
+    }
+  },
+  {
+    "definition": {
+      "id": 5077
+    },
+    "title": {
+      "fr": "Dénouement",
+      "en": "Unraveling",
+      "es": "Desenlace",
+      "pt": "Desenlace"
+    }
+  },
+  {
+    "definition": {
+      "id": 6834
+    },
+    "title": {
+      "fr": "Volte-face",
+      "en": "About-Turn",
+      "es": "Media vuelta",
+      "pt": "Meia-Volta"
+    }
+  },
+  {
+    "definition": {
+      "id": 6016
+    },
+    "title": {
+      "fr": "Embuscade écartée",
+      "en": "Distant Ambush",
+      "es": "Emboscada alejada",
+      "pt": "Emboscada Afastada"
+    }
+  },
+  {
+    "definition": {
+      "id": 6021
+    },
+    "title": {
+      "fr": "Persistance",
+      "en": "Persistence",
+      "es": "Persistencia",
+      "pt": "Persistência"
+    }
+  },
+  {
+    "definition": {
+      "id": 5074
+    },
+    "title": {
+      "fr": "Constant",
+      "en": "Constant",
+      "es": "Constante",
+      "pt": "Constante"
+    }
+  },
+  {
+    "definition": {
+      "id": 7079
+    },
+    "title": {
+      "fr": "Préparation critique ",
+      "en": "Critical Preparation ",
+      "es": "Preparación Crítica ",
+      "pt": "Preparação Crítica "
+    }
+  },
+  {
+    "definition": {
+      "id": 6814
+    },
+    "title": {
+      "fr": "Influence du Wakfu",
+      "en": "Wakfu Influence",
+      "es": "Influjo del Wakfu",
+      "pt": "Influência do Wakfu"
+    }
+  },
+  {
+    "definition": {
+      "id": 6829
+    },
+    "title": {
+      "fr": "Manie",
+      "en": "Mania",
+      "es": "Manía",
+      "pt": "Mania"
+    }
+  },
+  {
+    "definition": {
+      "id": 1284
+    },
+    "title": {
+      "fr": "Makabrano Ksion",
+      "en": "Makabraktion Ring",
+      "es": "Makabranillo Ksión",
+      "pt": "Anel da Makabração"
+    }
+  },
+  {
+    "definition": {
+      "id": 6009
+    },
+    "title": {
+      "fr": "Critique Berserk",
+      "en": "Berserk Critical",
+      "es": "Crítico Berserker",
+      "pt": "Crítico Berserk"
+    }
+  },
+  {
+    "definition": {
+      "id": 6825
+    },
+    "title": {
+      "fr": "Destruction",
+      "en": "Destruction",
+      "es": "Destrucción",
+      "pt": "Destruição"
+    }
+  },
+  {
+    "definition": {
+      "id": 1609
+    },
+    "title": {
+      "fr": "Emblème du Cra",
+      "en": "Cra Emblem",
+      "es": "Emblema de ocra",
+      "pt": "Emblema de Cra"
+    }
+  },
+  {
+    "definition": {
+      "id": 6823
+    },
+    "title": {
+      "fr": "Relations sociales",
+      "en": "Social Relations",
+      "es": "Relaciones sociales",
+      "pt": "Relações Sociais"
+    }
+  },
+  {
+    "definition": {
+      "id": 7252
+    },
+    "title": {
+      "fr": "Excès II",
+      "en": "Excess II",
+      "es": "Exceso II",
+      "pt": "Excesso II"
+    }
+  },
+  {
+    "definition": {
       "id": 6000
     },
     "title": {
@@ -794,44 +294,6 @@
       "en": "Theory of Matter",
       "es": "Teoría de la Materia",
       "pt": "Teoria da Matéria"
-    }
-  },
-  {
-    "definition": {
-      "id": 6014
-    },
-    "title": {
-      "fr": "Dérobade lente",
-      "en": "Slow Evasion",
-      "es": "Escapatoria lenta",
-      "pt": "Evasão Lenta"
-    }
-  },
-  {
-    "definition": {
-      "id": 5082
-    },
-    "title": {
-      "fr": "Robuste",
-      "en": "Robust",
-      "es": "Robusto",
-      "pt": "Robusto"
-    }
-  },
-  {
-    "definition": {
-      "id": 4960
-    }
-  },
-  {
-    "definition": {
-      "id": 1614
-    },
-    "title": {
-      "fr": "Emblème du Xelor",
-      "en": "Xelor Emblem",
-      "es": "Emblema de xelor",
-      "pt": "Emblema de Xelor"
     }
   },
   {
@@ -847,112 +309,79 @@
   },
   {
     "definition": {
-      "id": 6012
+      "id": 5980
     },
     "title": {
-      "fr": "Tacle Berserk",
-      "en": "Berserk Lock",
-      "es": "Placaje Berserker",
-      "pt": "Bloqueio Berserk"
+      "fr": "Ruine",
+      "en": "Ruin",
+      "es": "Ruina",
+      "pt": "Ruína"
     }
   },
   {
     "definition": {
-      "id": 6818
+      "id": 6824
     },
     "title": {
-      "fr": "Vol d'Esquive",
-      "en": "Dodge Steal",
-      "es": "Robo de esquiva",
-      "pt": "Roubo de Esquiva"
+      "fr": "Retour vital",
+      "en": "Vital Return",
+      "es": "Vuelta vital",
+      "pt": "Volta Vital"
     }
   },
   {
     "definition": {
-      "id": 6928
+      "id": 5999
     },
     "title": {
-      "fr": "Critique technique",
-      "en": "Technical Critical",
-      "es": "Crítico técnico",
-      "pt": "Crítico Técnico"
+      "fr": "Dimensionnalité",
+      "en": "Dimensionality",
+      "es": "Dimensionalidad",
+      "pt": "Dimensionalidade"
     }
   },
   {
     "definition": {
-      "id": 5370
+      "id": 1608
     },
     "title": {
-      "fr": "Pacte Wakfu",
-      "en": "Wakfu Pact",
-      "es": "Pacto Wakfu",
-      "pt": "Pacto Wakfu"
+      "fr": "Emblème du Iop",
+      "en": "Iop Emblem",
+      "es": "Emblema de yopuka",
+      "pt": "Emblema de Iop"
     }
   },
   {
     "definition": {
-      "id": 6010
+      "id": 2513
     },
     "title": {
-      "fr": "Visibilité",
-      "en": "Visibility",
-      "es": "Visibilidad",
-      "pt": "Visibilidade"
+      "fr": "Requinquage 33%",
+      "en": "Perk Up 33%",
+      "es": "Recuperación 33%",
+      "pt": "Estimular 33%"
     }
   },
   {
     "definition": {
-      "id": 2413
+      "id": 5448
     },
     "title": {
-      "fr": "Muraille 50%",
-      "en": "Walls 50%",
-      "es": "Muralla 50%",
-      "pt": "Muros 50%"
+      "fr": "Force herculéenne",
+      "en": "Herculean Strength",
+      "es": "Fuerza Hercúlea",
+      "pt": "Força Hercúlea"
     }
   },
   {
     "definition": {
-      "id": 6024
+      "id": 5987
     },
     "title": {
-      "fr": "Parade Berserk",
-      "en": "Berserk Block",
-      "es": "Anticipación Berserker",
-      "pt": "Parada Berserk"
-    }
-  },
-  {
-    "definition": {
-      "id": 7073
-    },
-    "title": {
-      "fr": "Pacte d'Anathar V",
-      "en": "Anathar's Pact V",
-      "es": "Pacto de Anathar V",
-      "pt": "Pacto de Anathar V"
-    }
-  },
-  {
-    "definition": {
-      "id": 2512
-    },
-    "title": {
-      "fr": "Rage",
-      "en": "Fury",
-      "es": "Rabia",
-      "pt": "Raiva"
-    }
-  },
-  {
-    "definition": {
-      "id": 5158
-    },
-    "title": {
-      "fr": "Maniement : Deux mains",
-      "en": "Wield type: two-handed",
-      "es": "Manejo: Dos manos",
-      "pt": "Manejo: Duas mãos"
+      "fr": "Détermination",
+      "en": "Determination",
+      "es": "Determinación",
+      "pt": "Determinação"
     }
   },
   {
@@ -968,6 +397,671 @@
   },
   {
     "definition": {
+      "id": 7081
+    },
+    "title": {
+      "fr": "Verrouillage",
+      "en": "Locking",
+      "es": "Bloqueo",
+      "pt": "Trancamento"
+    }
+  },
+  {
+    "definition": {
+      "id": 2515
+    },
+    "title": {
+      "fr": "Berserk 50%",
+      "en": "50% Berserk",
+      "es": "Berserk 50%",
+      "pt": "Berserk 50%"
+    }
+  },
+  {
+    "definition": {
+      "id": 6033
+    },
+    "title": {
+      "fr": "Clameur",
+      "en": "Clamor",
+      "es": "Clamor",
+      "pt": "Clamor"
+    }
+  },
+  {
+    "definition": {
+      "id": 6929
+    },
+    "title": {
+      "fr": "Parade offensive",
+      "en": "Offensive Block",
+      "es": "Anticipación ofensiva",
+      "pt": "Parada Ofensiva"
+    }
+  },
+  {
+    "definition": {
+      "id": 6034
+    },
+    "title": {
+      "fr": "Focalisation",
+      "en": "Focalization",
+      "es": "Focalización",
+      "pt": "Focalização"
+    }
+  },
+  {
+    "definition": {
+      "id": 6832
+    },
+    "title": {
+      "fr": "Main forte",
+      "en": "Strong Hand",
+      "es": "Mano aliada",
+      "pt": "Mãozinha"
+    }
+  },
+  {
+    "definition": {
+      "id": 6032
+    },
+    "title": {
+      "fr": "Prospérité",
+      "en": "Prosperity",
+      "es": "Prosperidad",
+      "pt": "Prosperidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 1617
+    },
+    "title": {
+      "fr": "Emblème du Pandawa",
+      "en": "Pandawa Emblem",
+      "es": "Emblema de pandawa",
+      "pt": "Emblema de Pandawa"
+    }
+  },
+  {
+    "definition": {
+      "id": 1348
+    },
+    "title": {
+      "fr": "Etoi Eskeutula",
+      "en": "Legwhat?",
+      "es": "Ytudondeta",
+      "pt": "Pernoquê?"
+    }
+  },
+  {
+    "definition": {
+      "id": 2573
+    },
+    "title": {
+      "fr": "Requinquage 75%",
+      "en": "Perk Up 75%",
+      "es": "Recuperación 75%",
+      "pt": "Estimular 75%"
+    }
+  },
+  {
+    "definition": {
+      "id": 5983
+    },
+    "title": {
+      "fr": "Carnage",
+      "en": "Carnage",
+      "es": "Masacre",
+      "pt": "Carnificina"
+    }
+  },
+  {
+    "definition": {
+      "id": 7078
+    },
+    "title": {
+      "fr": "Temporisation",
+      "en": "Delay",
+      "es": "Temporización",
+      "pt": "Temporização"
+    }
+  },
+  {
+    "definition": {
+      "id": 5991
+    },
+    "title": {
+      "fr": "Légèreté",
+      "en": "Lightness",
+      "es": "Ligereza",
+      "pt": "Leveza"
+    }
+  },
+  {
+    "definition": {
+      "id": 1614
+    },
+    "title": {
+      "fr": "Emblème du Xelor",
+      "en": "Xelor Emblem",
+      "es": "Emblema de xelor",
+      "pt": "Emblema de Xelor"
+    }
+  },
+  {
+    "definition": {
+      "id": 6706
+    },
+    "title": {
+      "fr": "Furie II",
+      "en": "Outrage II",
+      "es": "Furia II",
+      "pt": "Fúria II"
+    }
+  },
+  {
+    "definition": {
+      "id": 6014
+    },
+    "title": {
+      "fr": "Dérobade lente",
+      "en": "Slow Evasion",
+      "es": "Escapatoria lenta",
+      "pt": "Evasão Lenta"
+    }
+  },
+  {
+    "definition": {
+      "id": 6027
+    },
+    "title": {
+      "fr": "Fureur",
+      "en": "Fury",
+      "es": "Furor",
+      "pt": "Furor"
+    }
+  },
+  {
+    "definition": {
+      "id": 6001
+    },
+    "title": {
+      "fr": "Retour PA",
+      "en": "AP Return",
+      "es": "Devolución de PA",
+      "pt": "Volta PA"
+    }
+  },
+  {
+    "definition": {
+      "id": 7106
+    },
+    "title": {
+      "fr": "Dofushu",
+      "en": "Dofushu",
+      "es": "Dofub'huritu",
+      "pt": "Dofushu"
+    }
+  },
+  {
+    "definition": {
+      "id": 6931
+    },
+    "title": {
+      "fr": "Neutralité",
+      "en": "Neutrality",
+      "es": "Neutralidad",
+      "pt": "Neutralidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 6037
+    },
+    "title": {
+      "fr": "Expert des Parades",
+      "en": "Blocking Expert",
+      "es": "Experto en Anticipación",
+      "pt": "Especialista em Paradas"
+    }
+  },
+  {
+    "definition": {
+      "id": 5445
+    },
+    "title": {
+      "fr": "Anatomie",
+      "en": "Anatomy",
+      "es": "Anatomía",
+      "pt": "Anatomia"
+    }
+  },
+  {
+    "definition": {
+      "id": 6038
+    },
+    "title": {
+      "fr": "Enveloppe rocheuse",
+      "en": "Rocky Envelope",
+      "es": "Envoltorio Rocoso",
+      "pt": "Invólucro Rochoso"
+    }
+  },
+  {
+    "definition": {
+      "id": 6023
+    },
+    "title": {
+      "fr": "Aisance",
+      "en": "Poise",
+      "es": "Ligereza",
+      "pt": "Desenvoltura"
+    }
+  },
+  {
+    "definition": {
+      "id": 1973
+    },
+    "title": {
+      "fr": "Costume de Wabbit",
+      "en": "Wabbit Costume",
+      "es": "Traje de Wabbit",
+      "pt": "Traje de Wabbit"
+    }
+  },
+  {
+    "definition": {
+      "id": 5175
+    },
+    "title": {
+      "fr": "Brise",
+      "en": "Breeze",
+      "es": "Brisa",
+      "pt": "Brisa"
+    }
+  },
+  {
+    "definition": {
+      "id": 1615
+    },
+    "title": {
+      "fr": "Emblème d'Enutrof",
+      "en": "Enutrof Emblem",
+      "es": "Emblema de anutrof",
+      "pt": "Emblema de Enutrof"
+    }
+  },
+  {
+    "definition": {
+      "id": 5988
+    },
+    "title": {
+      "fr": "Ténacité",
+      "en": "Tenacity",
+      "es": "Tenacidad",
+      "pt": "Tenacidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 5992
+    },
+    "title": {
+      "fr": "Topologie",
+      "en": "Topology",
+      "es": "Topología",
+      "pt": "Topologia"
+    }
+  },
+  {
+    "definition": {
+      "id": 7077
+    },
+    "title": {
+      "fr": "Armure lourde",
+      "en": "Heavy Armor",
+      "es": "Armadura Pesada",
+      "pt": "Armadura Pesada"
+    }
+  },
+  {
+    "definition": {
+      "id": 6830
+    },
+    "title": {
+      "fr": "Nature",
+      "en": "Natural",
+      "es": "Naturaleza",
+      "pt": "Natural"
+    }
+  },
+  {
+    "definition": {
+      "id": 1583
+    },
+    "title": {
+      "fr": "Le demi pay aime",
+      "en": "Glass Half Empee",
+      "es": "Medio peheme",
+      "pt": "Vidro Meio Vajio"
+    }
+  },
+  {
+    "definition": {
+      "id": 6708
+    },
+    "title": {
+      "fr": "Contrôle de l'espace",
+      "en": "Controlling Space",
+      "es": "Control del Espacio",
+      "pt": "Controle do Espaço"
+    }
+  },
+  {
+    "definition": {
+      "id": 6022
+    },
+    "title": {
+      "fr": "Opiniâtreté",
+      "en": "Obstinacy",
+      "es": "Terquedad",
+      "pt": "Insistência"
+    }
+  },
+  {
+    "definition": {
+      "id": 6017
+    },
+    "title": {
+      "fr": "Epines",
+      "en": "Spines",
+      "es": "Espinas",
+      "pt": "Espinhos"
+    }
+  },
+  {
+    "definition": {
+      "id": 7257
+    },
+    "title": {
+      "fr": "Sentinelle",
+      "en": "Sentinel",
+      "es": "Centinela",
+      "pt": "Sentinela"
+    }
+  },
+  {
+    "definition": {
+      "id": 6926
+    },
+    "title": {
+      "fr": "Revigoration",
+      "en": "Reinvigoration",
+      "es": "Revigorización",
+      "pt": "Revigorada"
+    }
+  },
+  {
+    "definition": {
+      "id": 7072
+    },
+    "title": {
+      "fr": "Pacte d'Anathar IV",
+      "en": "Anathar's Pact IV",
+      "es": "Pacto de Anathar IV",
+      "pt": "Pacto de Anathar IV"
+    }
+  },
+  {
+    "definition": {
+      "id": 3416
+    }
+  },
+  {
+    "definition": {
+      "id": 2512
+    },
+    "title": {
+      "fr": "Rage",
+      "en": "Fury",
+      "es": "Rabia",
+      "pt": "Raiva"
+    }
+  },
+  {
+    "definition": {
+      "id": 6816
+    },
+    "title": {
+      "fr": "Arme incurable",
+      "en": "Incurable Weapon",
+      "es": "Arma incurable",
+      "pt": "Arma Incurável"
+    }
+  },
+  {
+    "definition": {
+      "id": 5450
+    },
+    "title": {
+      "fr": "Stasification",
+      "en": "Stasification",
+      "es": "Stasificación",
+      "pt": "Estasificação"
+    }
+  },
+  {
+    "definition": {
+      "id": 6026
+    },
+    "title": {
+      "fr": "Influence",
+      "en": "Influence",
+      "es": "Influjo",
+      "pt": "Influência"
+    }
+  },
+  {
+    "definition": {
+      "id": 7115
+    },
+    "title": {
+      "fr": "Ambition",
+      "en": "Ambition",
+      "es": "Ambición",
+      "pt": "Ambição"
+    }
+  },
+  {
+    "definition": {
+      "id": 6007
+    },
+    "title": {
+      "fr": "Bonne action",
+      "en": "Good Deed",
+      "es": "Buena Acción",
+      "pt": "Boa Ação"
+    }
+  },
+  {
+    "definition": {
+      "id": 5449
+    },
+    "title": {
+      "fr": "Concentration élémentaire",
+      "en": "Elemental Concentration",
+      "es": "Concentración Elemental",
+      "pt": "Concentração Elementar"
+    }
+  },
+  {
+    "definition": {
+      "id": 6029
+    },
+    "title": {
+      "fr": "Muraille",
+      "en": "Wall",
+      "es": "Muralla",
+      "pt": "Muralha"
+    }
+  },
+  {
+    "definition": {
+      "id": 5080
+    },
+    "title": {
+      "fr": "Confiance",
+      "en": "Trust",
+      "es": "Confianza",
+      "pt": "Confiança"
+    }
+  },
+  {
+    "definition": {
+      "id": 5885
+    },
+    "title": {
+      "fr": "Inversion",
+      "en": "Inversion",
+      "es": "Inversión",
+      "pt": "Inversão"
+    }
+  },
+  {
+    "definition": {
+      "id": 3233
+    },
+    "title": {
+      "fr": "Emblème du Zobal",
+      "en": "Masqueraider Emblem",
+      "es": "Emblema de zobal",
+      "pt": "Emblema do Zobal"
+    }
+  },
+  {
+    "definition": {
+      "id": 5248
+    },
+    "title": {
+      "fr": "Maniement : Bouclier",
+      "en": "Wield type: Shield",
+      "es": "Manejo: Escudo",
+      "pt": "Manejo: Escudo"
+    }
+  },
+  {
+    "definition": {
+      "id": 2574
+    },
+    "title": {
+      "fr": "Requinquage 25%",
+      "en": "Perk Up 25%",
+      "es": "Recuperación 25%",
+      "pt": "Estimular 25%"
+    }
+  },
+  {
+    "definition": {
+      "id": 5250
+    },
+    "title": {
+      "fr": "Excès",
+      "en": "Excess",
+      "es": "Exceso",
+      "pt": "Excesso"
+    }
+  },
+  {
+    "definition": {
+      "id": 6002
+    },
+    "title": {
+      "fr": "Endurance",
+      "en": "Endurance",
+      "es": "Aguante",
+      "pt": "Resistência"
+    }
+  },
+  {
+    "definition": {
+      "id": 5075
+    },
+    "title": {
+      "fr": "Mesuré",
+      "en": "Measured",
+      "es": "Comedido",
+      "pt": "Comedido"
+    }
+  },
+  {
+    "definition": {
+      "id": 6010
+    },
+    "title": {
+      "fr": "Visibilité",
+      "en": "Visibility",
+      "es": "Visibilidad",
+      "pt": "Visibilidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 1620
+    },
+    "title": {
+      "fr": "Emblème du Steamer",
+      "en": "Foggernaut Emblem",
+      "es": "Emblema de steamer",
+      "pt": "Emblema de Steamer"
+    }
+  },
+  {
+    "definition": {
+      "id": 5453
+    },
+    "title": {
+      "fr": "Garde Levée",
+      "en": "Guard Up",
+      "es": "Guardia Levantada",
+      "pt": "Guarda Baixada"
+    }
+  },
+  {
+    "definition": {
+      "id": 5370
+    },
+    "title": {
+      "fr": "Pacte Wakfu",
+      "en": "Wakfu Pact",
+      "es": "Pacto Wakfu",
+      "pt": "Pacto Wakfu"
+    }
+  },
+  {
+    "definition": {
+      "id": 2413
+    },
+    "title": {
+      "fr": "Muraille 50%",
+      "en": "Walls 50%",
+      "es": "Muralla 50%",
+      "pt": "Muros 50%"
+    }
+  },
+  {
+    "definition": {
+      "id": 5081
+    },
+    "title": {
+      "fr": "Brasero",
+      "en": "Brazier",
+      "es": "Brasero",
+      "pt": "Braseiro"
+    }
+  },
+  {
+    "definition": {
       "id": 5886
     },
     "title": {
@@ -975,6 +1069,529 @@
       "en": "Eternity",
       "es": "Eternidad",
       "pt": "Eternidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 6842
+    },
+    "title": {
+      "fr": "Courage",
+      "en": "Courage",
+      "es": "Valentía",
+      "pt": "Coragem"
+    }
+  },
+  {
+    "definition": {
+      "id": 7070
+    },
+    "title": {
+      "fr": "Pacte d'Anathar II",
+      "en": "Anathar's Pact II",
+      "es": "Pacto de Anathar II",
+      "pt": "Pacto de Anathar II"
+    }
+  },
+  {
+    "definition": {
+      "id": 2932
+    },
+    "title": {
+      "fr": "Costume d'Adale",
+      "en": "Adal Costume",
+      "es": "Traje de Adal",
+      "pt": "Traje de Adal"
+    }
+  },
+  {
+    "definition": {
+      "id": 6714
+    },
+    "title": {
+      "fr": "Paisible",
+      "en": "Peaceful",
+      "es": "Apacible",
+      "pt": "Pacífico"
+    }
+  },
+  {
+    "definition": {
+      "id": 1354
+    },
+    "title": {
+      "fr": "Aura de l'Amour",
+      "en": "Love Aura",
+      "es": "Aura del Amor",
+      "pt": "Aura do Amor"
+    }
+  },
+  {
+    "definition": {
+      "id": 6036
+    },
+    "title": {
+      "fr": "Longueur",
+      "en": "Length",
+      "es": "Longitud",
+      "pt": "Extensão"
+    }
+  },
+  {
+    "definition": {
+      "id": 6709
+    },
+    "title": {
+      "fr": "Longévité",
+      "en": "Longevity",
+      "es": "Longevidad",
+      "pt": "Longevidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 7073
+    },
+    "title": {
+      "fr": "Pacte d'Anathar V",
+      "en": "Anathar's Pact V",
+      "es": "Pacto de Anathar V",
+      "pt": "Pacto de Anathar V"
+    }
+  },
+  {
+    "definition": {
+      "id": 6711
+    },
+    "title": {
+      "fr": "Énergie ancestrale",
+      "en": "Ancestral Energy",
+      "es": "Energía Ancestral",
+      "pt": "Energia Ancestral"
+    }
+  },
+  {
+    "definition": {
+      "id": 6008
+    },
+    "title": {
+      "fr": "Vivacité",
+      "en": "Vivacity",
+      "es": "Vivacidad",
+      "pt": "Vivacidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 6005
+    },
+    "title": {
+      "fr": "Vélocité",
+      "en": "Swiftness",
+      "es": "Velocidad",
+      "pt": "Presteza"
+    }
+  },
+  {
+    "definition": {
+      "id": 1478
+    },
+    "title": {
+      "fr": "Insigne de Sorcier",
+      "en": "Wizard Insignia",
+      "es": "Insignia de bruja",
+      "pt": "Insígnia de Mago"
+    }
+  },
+  {
+    "definition": {
+      "id": 4960
+    }
+  },
+  {
+    "definition": {
+      "id": 751
+    },
+    "title": {
+      "fr": "Enflammé",
+      "en": "Flaming",
+      "es": "Ardiente",
+      "pt": "Flamejante"
+    },
+    "description": {
+      "fr": "Lorsque vous commencez votre tour, les adversaires à votre corps à corps subissent des dégâts.",
+      "en": "When you start your turn, enemies adjacent to you will take damage.",
+      "es": "Cuando comienzas tu turno, los enemigos que tengas en cuerpo a cuerpo sufren daños.",
+      "pt": "Quando você começa o seu turno, os inimigos que estiverem no corpo a corpo com você sofrerão danos."
+    }
+  },
+  {
+    "definition": {
+      "id": 5444
+    },
+    "title": {
+      "fr": "Science du placement",
+      "en": "Positioning Knowledge",
+      "es": "Ciencia del Posicionamiento",
+      "pt": "Arte do posicionamento"
+    }
+  },
+  {
+    "definition": {
+      "id": 1612
+    },
+    "title": {
+      "fr": "Emblème d'Eniripsa",
+      "en": "Eniripsa Emblem",
+      "es": "Emblema de aniripsa",
+      "pt": "Emblema de Eniripsa"
+    }
+  },
+  {
+    "definition": {
+      "id": 2514
+    },
+    "title": {
+      "fr": "Vivacité 90%",
+      "en": "90% Vivacity",
+      "es": "Vivacidad 90%",
+      "pt": "90% de Vivacidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 6826
+    },
+    "title": {
+      "fr": "Être sensible",
+      "en": "Sensitivity",
+      "es": "Ser sensible",
+      "pt": "Sensibilidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 6013
+    },
+    "title": {
+      "fr": "Ravage secondaire",
+      "en": "Secondary Devastation",
+      "es": "Estragos secundarios",
+      "pt": "Assolação Secundária"
+    }
+  },
+  {
+    "definition": {
+      "id": 6039
+    },
+    "title": {
+      "fr": "Influence lente",
+      "en": "Slow Influence",
+      "es": "Influjo lento",
+      "pt": "Influência Lenta"
+    }
+  },
+  {
+    "definition": {
+      "id": 5079
+    },
+    "title": {
+      "fr": "Alternance",
+      "en": "Alternation",
+      "es": "Alternancia",
+      "pt": "Alternância"
+    }
+  },
+  {
+    "definition": {
+      "id": 6822
+    },
+    "title": {
+      "fr": "Arcanes",
+      "en": "Arcana",
+      "es": "Arcanos",
+      "pt": "Arcanos"
+    }
+  },
+  {
+    "definition": {
+      "id": 7256
+    },
+    "title": {
+      "fr": "Inflexibilité II",
+      "en": "Inflexibility II",
+      "es": "Inflexibilidad II",
+      "pt": "Inflexibilidade II"
+    }
+  },
+  {
+    "definition": {
+      "id": 5452
+    },
+    "title": {
+      "fr": "Aura de flammes",
+      "en": "Flame Aura",
+      "es": "Aura de Llamas",
+      "pt": "Aura de Chamas"
+    }
+  },
+  {
+    "definition": {
+      "id": 5976
+    },
+    "title": {
+      "fr": "Arme de Lumière",
+      "en": "Light Weapon",
+      "es": "Arma de Luz",
+      "pt": "Arma de Luz"
+    }
+  },
+  {
+    "definition": {
+      "id": 6042
+    },
+    "title": {
+      "fr": "Stupéfaction",
+      "en": "Stupefaction",
+      "es": "Estupefacción",
+      "pt": "Espanto"
+    }
+  },
+  {
+    "definition": {
+      "id": 6030
+    },
+    "title": {
+      "fr": "Cyclothymie",
+      "en": "Cyclothymia",
+      "es": "Ciclotimia",
+      "pt": "Ciclotimia"
+    }
+  },
+  {
+    "definition": {
+      "id": 7258
+    },
+    "title": {
+      "fr": "Assimilation",
+      "en": "Assimilation",
+      "es": "Asimilación",
+      "pt": "Assimilação"
+    }
+  },
+  {
+    "definition": {
+      "id": 5443
+    },
+    "title": {
+      "fr": "Santé de fer",
+      "en": "Robust Health",
+      "es": "Salud de hierro",
+      "pt": "Saúde de Ferro"
+    }
+  },
+  {
+    "definition": {
+      "id": 6025
+    },
+    "title": {
+      "fr": "Puits de Vitalité",
+      "en": "Vitality Well",
+      "es": "Pozo de Vitalidad",
+      "pt": "Poço de Vitalidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 5073
+    },
+    "title": {
+      "fr": "Inflexible",
+      "en": "Inflexible",
+      "es": "Inflexible",
+      "pt": "Inflexível"
+    }
+  },
+  {
+    "definition": {
+      "id": 1610
+    },
+    "title": {
+      "fr": "Emblème du Sacrieur",
+      "en": "Sacrier Emblem",
+      "es": "Emblema de sacrógrito",
+      "pt": "Emblema de Sacrier"
+    }
+  },
+  {
+    "definition": {
+      "id": 6818
+    },
+    "title": {
+      "fr": "Vol d'Esquive",
+      "en": "Dodge Steal",
+      "es": "Robo de esquiva",
+      "pt": "Roubo de Esquiva"
+    }
+  },
+  {
+    "definition": {
+      "id": 1613
+    },
+    "title": {
+      "fr": "Emblème du Sadida",
+      "en": "Sadida Emblem",
+      "es": "Emblema de sadida",
+      "pt": "Emblema de Sadida"
+    }
+  },
+  {
+    "definition": {
+      "id": 6011
+    },
+    "title": {
+      "fr": "Ruine cyclique",
+      "en": "Cyclical Ruin",
+      "es": "Ruina cíclica",
+      "pt": "Ruína Cíclica"
+    }
+  },
+  {
+    "definition": {
+      "id": 5986
+    },
+    "title": {
+      "fr": "Dérobade",
+      "en": "Evasion",
+      "es": "Escapatoria",
+      "pt": "Evasão"
+    }
+  },
+  {
+    "definition": {
+      "id": 4570
+    },
+    "title": {
+      "fr": "Dofus Prismatique",
+      "en": "Prismatic Dofus",
+      "es": "Dofus Prismático",
+      "pt": "Dofus Prismático"
+    },
+    "description": {
+      "fr": "Accorde +2 PA un tour sur deux",
+      "en": "Gives +2 AP every other turn",
+      "es": "Otorga +2 PA cada dos turnos.",
+      "pt": "Concede +2 PA em turnos alternados"
+    }
+  },
+  {
+    "definition": {
+      "id": 2572
+    },
+    "title": {
+      "fr": "Requinquage 66%",
+      "en": "Perk Up 66%",
+      "es": "Recuperación 66%",
+      "pt": "Estimular 66%"
+    }
+  },
+  {
+    "definition": {
+      "id": 6828
+    },
+    "title": {
+      "fr": "Altruisme",
+      "en": "Altruism",
+      "es": "Altruismo",
+      "pt": "Altruísmo"
+    }
+  },
+  {
+    "definition": {
+      "id": 6928
+    },
+    "title": {
+      "fr": "Critique technique",
+      "en": "Technical Critical",
+      "es": "Crítico técnico",
+      "pt": "Crítico Técnico"
+    }
+  },
+  {
+    "definition": {
+      "id": 6006
+    },
+    "title": {
+      "fr": "Sauvegarde",
+      "en": "Save",
+      "es": "Guardado",
+      "pt": "Salvaguarda"
+    }
+  },
+  {
+    "definition": {
+      "id": 6012
+    },
+    "title": {
+      "fr": "Tacle Berserk",
+      "en": "Berserk Lock",
+      "es": "Placaje Berserker",
+      "pt": "Bloqueio Berserk"
+    }
+  },
+  {
+    "definition": {
+      "id": 5082
+    },
+    "title": {
+      "fr": "Robuste",
+      "en": "Robust",
+      "es": "Robusto",
+      "pt": "Robusto"
+    }
+  },
+  {
+    "definition": {
+      "id": 7088
+    },
+    "title": {
+      "fr": "Poids plume",
+      "en": "Featherweight",
+      "es": "Peso Pluma",
+      "pt": "Peso-pena"
+    }
+  },
+  {
+    "definition": {
+      "id": 5216
+    },
+    "title": {
+      "fr": "Directives",
+      "en": "Directives",
+      "es": "Directivas",
+      "pt": "Diretivas"
+    }
+  },
+  {
+    "definition": {
+      "id": 5982
+    },
+    "title": {
+      "fr": "Ravage",
+      "en": "Devastate",
+      "es": "Estragos",
+      "pt": "Assolação"
+    }
+  },
+  {
+    "definition": {
+      "id": 6827
+    },
+    "title": {
+      "fr": "Longueur d'armure",
+      "en": "Armor Length",
+      "es": "Longitud de armadura",
+      "pt": "Extensão da Armadura"
     }
   },
   {
@@ -1001,685 +1618,13 @@
   },
   {
     "definition": {
-      "id": 1612
+      "id": 6930
     },
     "title": {
-      "fr": "Emblème d'Eniripsa",
-      "en": "Eniripsa Emblem",
-      "es": "Emblema de aniripsa",
-      "pt": "Emblema de Eniripsa"
-    }
-  },
-  {
-    "definition": {
-      "id": 6834
-    },
-    "title": {
-      "fr": "Volte-face",
-      "en": "About-Turn",
-      "es": "Media vuelta",
-      "pt": "Meia-Volta"
-    }
-  },
-  {
-    "definition": {
-      "id": 5077
-    },
-    "title": {
-      "fr": "Dénouement",
-      "en": "Unraveling",
-      "es": "Desenlace",
-      "pt": "Desenlace"
-    }
-  },
-  {
-    "definition": {
-      "id": 6041
-    },
-    "title": {
-      "fr": "Expert des Coups Critiques",
-      "en": "Critical Hit Expert",
-      "es": "Experto en Golpes Críticos",
-      "pt": "Especialista em Golpes Críticos"
-    }
-  },
-  {
-    "definition": {
-      "id": 3233
-    },
-    "title": {
-      "fr": "Emblème du Zobal",
-      "en": "Masqueraider Emblem",
-      "es": "Emblema de zobal",
-      "pt": "Emblema do Zobal"
-    }
-  },
-  {
-    "definition": {
-      "id": 5453
-    },
-    "title": {
-      "fr": "Garde Levée",
-      "en": "Guard Up",
-      "es": "Guardia Levantada",
-      "pt": "Guarda Baixada"
-    }
-  },
-  {
-    "definition": {
-      "id": 6006
-    },
-    "title": {
-      "fr": "Sauvegarde",
-      "en": "Save",
-      "es": "Guardado",
-      "pt": "Salvaguarda"
-    }
-  },
-  {
-    "definition": {
-      "id": 6731
-    },
-    "title": {
-      "fr": "Dofus Turquoise",
-      "en": "Turquoise Dofus",
-      "es": "Dofus Turquesa",
-      "pt": "Dofus Turquesa"
-    }
-  },
-  {
-    "definition": {
-      "id": 5986
-    },
-    "title": {
-      "fr": "Dérobade",
-      "en": "Evasion",
-      "es": "Escapatoria",
-      "pt": "Evasão"
-    }
-  },
-  {
-    "definition": {
-      "id": 5994
-    },
-    "title": {
-      "fr": "Frénésie",
-      "en": "Frenzy",
-      "es": "Frenesí",
-      "pt": "Frenesi"
-    }
-  },
-  {
-    "definition": {
-      "id": 5248
-    },
-    "title": {
-      "fr": "Maniement : Bouclier",
-      "en": "Wield type: Shield",
-      "es": "Manejo: Escudo",
-      "pt": "Manejo: Escudo"
-    }
-  },
-  {
-    "definition": {
-      "id": 6821
-    },
-    "title": {
-      "fr": "Expert des armes légères",
-      "en": "Light Weapons Expert",
-      "es": "Experto en armas ligeras",
-      "pt": "Especialista em Armas Leves"
-    }
-  },
-  {
-    "definition": {
-      "id": 6037
-    },
-    "title": {
-      "fr": "Expert des Parades",
-      "en": "Blocking Expert",
-      "es": "Experto en Anticipación",
-      "pt": "Especialista em Paradas"
-    }
-  },
-  {
-    "definition": {
-      "id": 7106
-    },
-    "title": {
-      "fr": "Dofushu",
-      "en": "Dofushu",
-      "es": "Dofub'huritu",
-      "pt": "Dofushu"
-    }
-  },
-  {
-    "definition": {
-      "id": 7071
-    },
-    "title": {
-      "fr": "Pacte d'Anathar III",
-      "en": "Anathar's Pact III",
-      "es": "Pacto de Anathar III",
-      "pt": "Pacto de Anathar III"
-    }
-  },
-  {
-    "definition": {
-      "id": 1620
-    },
-    "title": {
-      "fr": "Emblème du Steamer",
-      "en": "Foggernaut Emblem",
-      "es": "Emblema de steamer",
-      "pt": "Emblema de Steamer"
-    }
-  },
-  {
-    "definition": {
-      "id": 5216
-    },
-    "title": {
-      "fr": "Directives",
-      "en": "Directives",
-      "es": "Directivas",
-      "pt": "Diretivas"
-    }
-  },
-  {
-    "definition": {
-      "id": 2573
-    },
-    "title": {
-      "fr": "Requinquage 75%",
-      "en": "Perk Up 75%",
-      "es": "Recuperación 75%",
-      "pt": "Estimular 75%"
-    }
-  },
-  {
-    "definition": {
-      "id": 6931
-    },
-    "title": {
-      "fr": "Neutralité",
-      "en": "Neutrality",
-      "es": "Neutralidad",
-      "pt": "Neutralidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 6832
-    },
-    "title": {
-      "fr": "Main forte",
-      "en": "Strong Hand",
-      "es": "Mano aliada",
-      "pt": "Mãozinha"
-    }
-  },
-  {
-    "definition": {
-      "id": 7081
-    },
-    "title": {
-      "fr": "Verrouillage",
-      "en": "Locking",
-      "es": "Bloqueo",
-      "pt": "Trancamento"
-    }
-  },
-  {
-    "definition": {
-      "id": 5452
-    },
-    "title": {
-      "fr": "Aura de flammes",
-      "en": "Flame Aura",
-      "es": "Aura de Llamas",
-      "pt": "Aura de Chamas"
-    }
-  },
-  {
-    "definition": {
-      "id": 6827
-    },
-    "title": {
-      "fr": "Longueur d'armure",
-      "en": "Armor Length",
-      "es": "Longitud de armadura",
-      "pt": "Extensão da Armadura"
-    }
-  },
-  {
-    "definition": {
-      "id": 4570
-    },
-    "title": {
-      "fr": "Dofus Prismatique",
-      "en": "Prismatic Dofus",
-      "es": "Dofus Prismático",
-      "pt": "Dofus Prismático"
-    },
-    "description": {
-      "fr": "Accorde +2 PA un tour sur deux",
-      "en": "Gives +2 AP every other turn",
-      "es": "Otorga +2 PA cada dos turnos.",
-      "pt": "Concede +2 PA em turnos alternados"
-    }
-  },
-  {
-    "definition": {
-      "id": 1619
-    },
-    "title": {
-      "fr": "Emblème d'Osamodas",
-      "en": "Osamodas Emblem",
-      "es": "Emblema de osamodas",
-      "pt": "Emblema de Osamodas"
-    }
-  },
-  {
-    "definition": {
-      "id": 5993
-    },
-    "title": {
-      "fr": "Réprobation",
-      "en": "Condemnation",
-      "es": "Reprobación",
-      "pt": "Reprovação"
-    }
-  },
-  {
-    "definition": {
-      "id": 6708
-    },
-    "title": {
-      "fr": "Contrôle de l'espace",
-      "en": "Controlling Space",
-      "es": "Control del Espacio",
-      "pt": "Controle do Espaço"
-    }
-  },
-  {
-    "definition": {
-      "id": 6026
-    },
-    "title": {
-      "fr": "Influence",
-      "en": "Influence",
-      "es": "Influjo",
-      "pt": "Influência"
-    }
-  },
-  {
-    "definition": {
-      "id": 5252
-    },
-    "title": {
-      "fr": "Sang de la déchirure",
-      "en": "Heartbreaking Blood",
-      "es": "Sangre del Martirio",
-      "pt": "Sangue do Talho"
-    }
-  },
-  {
-    "definition": {
-      "id": 6022
-    },
-    "title": {
-      "fr": "Opiniâtreté",
-      "en": "Obstinacy",
-      "es": "Terquedad",
-      "pt": "Insistência"
-    }
-  },
-  {
-    "definition": {
-      "id": 2571
-    },
-    "title": {
-      "fr": "Berserk 75%",
-      "en": "75% Berserk",
-      "es": "Berserk 75%",
-      "pt": "Berserk 75%"
-    }
-  },
-  {
-    "definition": {
-      "id": 6933
-    },
-    "title": {
-      "fr": "Prétention",
-      "en": "Pretension",
-      "es": "Pretensión",
-      "pt": "Pretensão"
-    }
-  },
-  {
-    "definition": {
-      "id": 6029
-    },
-    "title": {
-      "fr": "Muraille",
-      "en": "Wall",
-      "es": "Muralla",
-      "pt": "Muralha"
-    }
-  },
-  {
-    "definition": {
-      "id": 6008
-    },
-    "title": {
-      "fr": "Vivacité",
-      "en": "Vivacity",
-      "es": "Vivacidad",
-      "pt": "Vivacidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 6013
-    },
-    "title": {
-      "fr": "Ravage secondaire",
-      "en": "Secondary Devastation",
-      "es": "Estragos secundarios",
-      "pt": "Assolação Secundária"
-    }
-  },
-  {
-    "definition": {
-      "id": 6016
-    },
-    "title": {
-      "fr": "Embuscade écartée",
-      "en": "Distant Ambush",
-      "es": "Emboscada alejada",
-      "pt": "Emboscada Afastada"
-    }
-  },
-  {
-    "definition": {
-      "id": 7072
-    },
-    "title": {
-      "fr": "Pacte d'Anathar IV",
-      "en": "Anathar's Pact IV",
-      "es": "Pacto de Anathar IV",
-      "pt": "Pacto de Anathar IV"
-    }
-  },
-  {
-    "definition": {
-      "id": 2515
-    },
-    "title": {
-      "fr": "Berserk 50%",
-      "en": "50% Berserk",
-      "es": "Berserk 50%",
-      "pt": "Berserk 50%"
-    }
-  },
-  {
-    "definition": {
-      "id": 2513
-    },
-    "title": {
-      "fr": "Requinquage 33%",
-      "en": "Perk Up 33%",
-      "es": "Recuperación 33%",
-      "pt": "Estimular 33%"
-    }
-  },
-  {
-    "definition": {
-      "id": 6002
-    },
-    "title": {
-      "fr": "Endurance",
-      "en": "Endurance",
-      "es": "Aguante",
-      "pt": "Resistência"
-    }
-  },
-  {
-    "definition": {
-      "id": 5987
-    },
-    "title": {
-      "fr": "Détermination",
-      "en": "Determination",
-      "es": "Determinación",
-      "pt": "Determinação"
-    }
-  },
-  {
-    "definition": {
-      "id": 5074
-    },
-    "title": {
-      "fr": "Constant",
-      "en": "Constant",
-      "es": "Constante",
-      "pt": "Constante"
-    }
-  },
-  {
-    "definition": {
-      "id": 6816
-    },
-    "title": {
-      "fr": "Arme incurable",
-      "en": "Incurable Weapon",
-      "es": "Arma incurable",
-      "pt": "Arma Incurável"
-    }
-  },
-  {
-    "definition": {
-      "id": 2636
-    },
-    "title": {
-      "fr": "Transfert Tellurique",
-      "en": "Terrestrial Transfer",
-      "es": "Transferencia Telúrica",
-      "pt": "Transferência Telúrica"
-    }
-  },
-  {
-    "definition": {
-      "id": 6017
-    },
-    "title": {
-      "fr": "Epines",
-      "en": "Spines",
-      "es": "Espinas",
-      "pt": "Espinhos"
-    }
-  },
-  {
-    "definition": {
-      "id": 5075
-    },
-    "title": {
-      "fr": "Mesuré",
-      "en": "Measured",
-      "es": "Comedido",
-      "pt": "Comedido"
-    }
-  },
-  {
-    "definition": {
-      "id": 6706
-    },
-    "title": {
-      "fr": "Furie II",
-      "en": "Outrage II",
-      "es": "Furia II",
-      "pt": "Fúria II"
-    }
-  },
-  {
-    "definition": {
-      "id": 5175
-    },
-    "title": {
-      "fr": "Brise",
-      "en": "Breeze",
-      "es": "Brisa",
-      "pt": "Brisa"
-    }
-  },
-  {
-    "definition": {
-      "id": 6018
-    },
-    "title": {
-      "fr": "Esquive Berserk",
-      "en": "Berserk Dodge",
-      "es": "Esquiva Berserker",
-      "pt": "Esquiva Berserk"
-    }
-  },
-  {
-    "definition": {
-      "id": 6328
-    },
-    "title": {
-      "fr": "Intégrité",
-      "en": "Integrity",
-      "es": "Integridad",
-      "pt": "Integridade"
-    }
-  },
-  {
-    "definition": {
-      "id": 5080
-    },
-    "title": {
-      "fr": "Confiance",
-      "en": "Trust",
-      "es": "Confianza",
-      "pt": "Confiança"
-    }
-  },
-  {
-    "definition": {
-      "id": 5983
-    },
-    "title": {
-      "fr": "Carnage",
-      "en": "Carnage",
-      "es": "Masacre",
-      "pt": "Carnificina"
-    }
-  },
-  {
-    "definition": {
-      "id": 6042
-    },
-    "title": {
-      "fr": "Stupéfaction",
-      "en": "Stupefaction",
-      "es": "Estupefacción",
-      "pt": "Espanto"
-    }
-  },
-  {
-    "definition": {
-      "id": 5989
-    },
-    "title": {
-      "fr": "Solidité",
-      "en": "Solidity",
-      "es": "Solidez",
-      "pt": "Solidez"
-    }
-  },
-  {
-    "definition": {
-      "id": 751
-    },
-    "title": {
-      "fr": "Enflammé",
-      "en": "Flaming",
-      "es": "Ardiente",
-      "pt": "Flamejante"
-    },
-    "description": {
-      "fr": "Lorsque vous commencez votre tour, les adversaires à votre corps à corps subissent des dégâts.",
-      "en": "When you start your turn, enemies adjacent to you will take damage.",
-      "es": "Cuando comienzas tu turno, los enemigos que tengas en cuerpo a cuerpo sufren daños.",
-      "pt": "Quando você começa o seu turno, os inimigos que estiverem no corpo a corpo com você sofrerão danos."
-    }
-  },
-  {
-    "definition": {
-      "id": 5081
-    },
-    "title": {
-      "fr": "Brasero",
-      "en": "Brazier",
-      "es": "Brasero",
-      "pt": "Braseiro"
-    }
-  },
-  {
-    "definition": {
-      "id": 6001
-    },
-    "title": {
-      "fr": "Retour PA",
-      "en": "AP Return",
-      "es": "Devolución de PA",
-      "pt": "Volta PA"
-    }
-  },
-  {
-    "definition": {
-      "id": 5448
-    },
-    "title": {
-      "fr": "Force herculéenne",
-      "en": "Herculean Strength",
-      "es": "Fuerza Hercúlea",
-      "pt": "Força Hercúlea"
-    }
-  },
-  {
-    "definition": {
-      "id": 6032
-    },
-    "title": {
-      "fr": "Prospérité",
-      "en": "Prosperity",
-      "es": "Prosperidad",
-      "pt": "Prosperidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 6826
-    },
-    "title": {
-      "fr": "Être sensible",
-      "en": "Sensitivity",
-      "es": "Ser sensible",
-      "pt": "Sensibilidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 1284
-    },
-    "title": {
-      "fr": "Makabrano Ksion",
-      "en": "Makabraktion Ring",
-      "es": "Makabranillo Ksión",
-      "pt": "Anel da Makabração"
+      "fr": "Critique tactique",
+      "en": "Tactical Critical",
+      "es": "Crítico táctico",
+      "pt": "Crítico Estratégico"
     }
   },
   {
@@ -1695,244 +1640,13 @@
   },
   {
     "definition": {
-      "id": 6814
+      "id": 2931
     },
     "title": {
-      "fr": "Influence du Wakfu",
-      "en": "Wakfu Influence",
-      "es": "Influjo del Wakfu",
-      "pt": "Influência do Wakfu"
-    }
-  },
-  {
-    "definition": {
-      "id": 6031
-    },
-    "title": {
-      "fr": "Retour PM",
-      "en": "MP Return",
-      "es": "Devolución de PM",
-      "pt": "Volta PM"
-    }
-  },
-  {
-    "definition": {
-      "id": 1583
-    },
-    "title": {
-      "fr": "Le demi pay aime",
-      "en": "Glass Half Empee",
-      "es": "Medio peheme",
-      "pt": "Vidro Meio Vajio"
-    }
-  },
-  {
-    "definition": {
-      "id": 1621
-    },
-    "title": {
-      "fr": "Emblème du Sram",
-      "en": "Sram Emblem",
-      "es": "Emblema de sram",
-      "pt": "Emblema de Sram"
-    }
-  },
-  {
-    "definition": {
-      "id": 5976
-    },
-    "title": {
-      "fr": "Arme de Lumière",
-      "en": "Light Weapon",
-      "es": "Arma de Luz",
-      "pt": "Arma de Luz"
-    }
-  },
-  {
-    "definition": {
-      "id": 5250
-    },
-    "title": {
-      "fr": "Excès",
-      "en": "Excess",
-      "es": "Exceso",
-      "pt": "Excesso"
-    }
-  },
-  {
-    "definition": {
-      "id": 6020
-    },
-    "title": {
-      "fr": "Barrière Mêlée",
-      "en": "Melee Barrier",
-      "es": "Barrera en Melé",
-      "pt": "Barreira Curta Distância"
-    }
-  },
-  {
-    "definition": {
-      "id": 6831
-    },
-    "title": {
-      "fr": "Dernier souffle",
-      "en": "Last Breath",
-      "es": "Último aliento",
-      "pt": "Último Suspiro"
-    }
-  },
-  {
-    "definition": {
-      "id": 6009
-    },
-    "title": {
-      "fr": "Critique Berserk",
-      "en": "Berserk Critical",
-      "es": "Crítico Berserker",
-      "pt": "Crítico Berserk"
-    }
-  },
-  {
-    "definition": {
-      "id": 6025
-    },
-    "title": {
-      "fr": "Puits de Vitalité",
-      "en": "Vitality Well",
-      "es": "Pozo de Vitalidad",
-      "pt": "Poço de Vitalidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 5999
-    },
-    "title": {
-      "fr": "Dimensionnalité",
-      "en": "Dimensionality",
-      "es": "Dimensionalidad",
-      "pt": "Dimensionalidade"
-    }
-  },
-  {
-    "definition": {
-      "id": 6823
-    },
-    "title": {
-      "fr": "Relations sociales",
-      "en": "Social Relations",
-      "es": "Relaciones sociales",
-      "pt": "Relações Sociais"
-    }
-  },
-  {
-    "definition": {
-      "id": 6021
-    },
-    "title": {
-      "fr": "Persistance",
-      "en": "Persistence",
-      "es": "Persistencia",
-      "pt": "Persistência"
-    }
-  },
-  {
-    "definition": {
-      "id": 6004
-    },
-    "title": {
-      "fr": "Ecailles de Lune",
-      "en": "Moon Scales",
-      "es": "Fragmentos de Luna",
-      "pt": "Escamas de Lua"
-    }
-  },
-  {
-    "definition": {
-      "id": 6331
-    },
-    "title": {
-      "fr": "Tolérance",
-      "en": "Tolerance",
-      "es": "Tolerancia",
-      "pt": "Tolerância"
-    }
-  },
-  {
-    "definition": {
-      "id": 6824
-    },
-    "title": {
-      "fr": "Retour vital",
-      "en": "Vital Return",
-      "es": "Vuelta vital",
-      "pt": "Volta Vital"
-    }
-  },
-  {
-    "definition": {
-      "id": 5985
-    },
-    "title": {
-      "fr": "Embuscade",
-      "en": "Ambush",
-      "es": "Emboscada",
-      "pt": "Emboscada"
-    }
-  },
-  {
-    "definition": {
-      "id": 6329
-    },
-    "title": {
-      "fr": "Loup Solitaire",
-      "en": "Lone Wolf",
-      "es": "Lobo Solitario",
-      "pt": "Lobo Solitário"
-    }
-  },
-  {
-    "definition": {
-      "id": 1478
-    },
-    "title": {
-      "fr": "Insigne de Sorcier",
-      "en": "Wizard Insignia",
-      "es": "Insignia de bruja",
-      "pt": "Insígnia de Mago"
-    }
-  },
-  {
-    "definition": {
-      "id": 7070
-    },
-    "title": {
-      "fr": "Pacte d'Anathar II",
-      "en": "Anathar's Pact II",
-      "es": "Pacto de Anathar II",
-      "pt": "Pacto de Anathar II"
-    }
-  },
-  {
-    "definition": {
-      "id": 6038
-    },
-    "title": {
-      "fr": "Enveloppe rocheuse",
-      "en": "Rocky Envelope",
-      "es": "Envoltorio Rocoso",
-      "pt": "Invólucro Rochoso"
-    }
-  },
-  {
-    "definition": {
-      "id": 2505
-    },
-    "title": {
-      "fr": "Fortification",
-      "en": "Fortification",
-      "es": "Fortificación",
-      "pt": "Fortificação"
+      "fr": "Costume de Passage",
+      "en": "Passenthru Costume",
+      "es": "Traje de Paso",
+      "pt": "Insígnia de Passagem"
     }
   },
   {
@@ -1948,24 +1662,57 @@
   },
   {
     "definition": {
-      "id": 1608
+      "id": 6031
     },
     "title": {
-      "fr": "Emblème du Iop",
-      "en": "Iop Emblem",
-      "es": "Emblema de yopuka",
-      "pt": "Emblema de Iop"
+      "fr": "Retour PM",
+      "en": "MP Return",
+      "es": "Devolución de PM",
+      "pt": "Volta PM"
     }
   },
   {
     "definition": {
-      "id": 1482
+      "id": 7254
     },
     "title": {
-      "fr": "Costume de Goule",
-      "en": "Ghoul Costume",
-      "es": "Traje de Ghul",
-      "pt": "Traje de Carniçal"
+      "fr": "Lunatique",
+      "en": "Lunatic",
+      "es": "Lunático",
+      "pt": "Lunático"
+    }
+  },
+  {
+    "definition": {
+      "id": 7075
+    },
+    "title": {
+      "fr": "Combat rapproché",
+      "en": "Brawling",
+      "es": "Combate Cercano",
+      "pt": "Combate Aproximado"
+    }
+  },
+  {
+    "definition": {
+      "id": 1619
+    },
+    "title": {
+      "fr": "Emblème d'Osamodas",
+      "en": "Osamodas Emblem",
+      "es": "Emblema de osamodas",
+      "pt": "Emblema de Osamodas"
+    }
+  },
+  {
+    "definition": {
+      "id": 5078
+    },
+    "title": {
+      "fr": "Fracass'carcasse",
+      "en": "Smashmouth",
+      "es": "Rompecarcasa",
+      "pt": "Kebra-Karkaça"
     }
   },
   {
@@ -1981,35 +1728,233 @@
   },
   {
     "definition": {
-      "id": 5885
+      "id": 1621
     },
     "title": {
-      "fr": "Inversion",
-      "en": "Inversion",
-      "es": "Inversión",
-      "pt": "Inversão"
+      "fr": "Emblème du Sram",
+      "en": "Sram Emblem",
+      "es": "Emblema de sram",
+      "pt": "Emblema de Sram"
     }
   },
   {
     "definition": {
-      "id": 6842
+      "id": 1616
     },
     "title": {
-      "fr": "Courage",
-      "en": "Courage",
-      "es": "Valentía",
-      "pt": "Coragem"
+      "fr": "Emblème du Roublard",
+      "en": "Rogue Emblem",
+      "es": "Emblema de tymador",
+      "pt": "Emblema de Ladino"
     }
   },
   {
     "definition": {
-      "id": 5984
+      "id": 1618
     },
     "title": {
-      "fr": "Cicatrisation",
-      "en": "Healing",
-      "es": "Sanación",
-      "pt": "Cicatrização"
+      "fr": "Emblème du Feca",
+      "en": "Feca Emblem",
+      "es": "Emblema de feca",
+      "pt": "Emblema de Feca"
+    }
+  },
+  {
+    "definition": {
+      "id": 6833
+    },
+    "title": {
+      "fr": "Pied ferme",
+      "en": "Firm Foot",
+      "es": "Pie firme",
+      "pt": "Pé Firme"
+    }
+  },
+  {
+    "definition": {
+      "id": 2571
+    },
+    "title": {
+      "fr": "Berserk 75%",
+      "en": "75% Berserk",
+      "es": "Berserk 75%",
+      "pt": "Berserk 75%"
+    }
+  },
+  {
+    "definition": {
+      "id": 5446
+    },
+    "title": {
+      "fr": "Brutalité",
+      "en": "Brutality",
+      "es": "Brutalidad",
+      "pt": "Brutalidade"
+    }
+  },
+  {
+    "definition": {
+      "id": 5985
+    },
+    "title": {
+      "fr": "Embuscade",
+      "en": "Ambush",
+      "es": "Emboscada",
+      "pt": "Emboscada"
+    }
+  },
+  {
+    "definition": {
+      "id": 6004
+    },
+    "title": {
+      "fr": "Ecailles de Lune",
+      "en": "Moon Scales",
+      "es": "Fragmentos de Luna",
+      "pt": "Escamas de Lua"
+    }
+  },
+  {
+    "definition": {
+      "id": 6933
+    },
+    "title": {
+      "fr": "Prétention",
+      "en": "Pretension",
+      "es": "Pretensión",
+      "pt": "Pretensão"
+    }
+  },
+  {
+    "definition": {
+      "id": 6024
+    },
+    "title": {
+      "fr": "Parade Berserk",
+      "en": "Berserk Block",
+      "es": "Anticipación Berserker",
+      "pt": "Parada Berserk"
+    }
+  },
+  {
+    "definition": {
+      "id": 2505
+    },
+    "title": {
+      "fr": "Fortification",
+      "en": "Fortification",
+      "es": "Fortificación",
+      "pt": "Fortificação"
+    }
+  },
+  {
+    "definition": {
+      "id": 6831
+    },
+    "title": {
+      "fr": "Dernier souffle",
+      "en": "Last Breath",
+      "es": "Último aliento",
+      "pt": "Último Suspiro"
+    }
+  },
+  {
+    "definition": {
+      "id": 7071
+    },
+    "title": {
+      "fr": "Pacte d'Anathar III",
+      "en": "Anathar's Pact III",
+      "es": "Pacto de Anathar III",
+      "pt": "Pacto de Anathar III"
+    }
+  },
+  {
+    "definition": {
+      "id": 5076
+    },
+    "title": {
+      "fr": "Précis",
+      "en": "Precise",
+      "es": "Preciso",
+      "pt": "Preciso"
+    }
+  },
+  {
+    "definition": {
+      "id": 6817
+    },
+    "title": {
+      "fr": "Vol de Tacle",
+      "en": "Lock Steal",
+      "es": "Robo de placaje",
+      "pt": "Roubo de Bloqueio"
+    }
+  },
+  {
+    "definition": {
+      "id": 5249
+    },
+    "title": {
+      "fr": "Maniement : Dague",
+      "en": "Wield type: Dagger",
+      "es": "Manejo: Daga",
+      "pt": "Manejo: Adaga"
+    }
+  },
+  {
+    "definition": {
+      "id": 6927
+    },
+    "title": {
+      "fr": "Précaution",
+      "en": "Precaution",
+      "es": "Precaución",
+      "pt": "Precaução"
+    }
+  },
+  {
+    "definition": {
+      "id": 6815
+    },
+    "title": {
+      "fr": "Wakfu Berserk",
+      "en": "Berserk Wakfu",
+      "es": "Wakfu Berserker",
+      "pt": "Wakfu Berserk"
+    }
+  },
+  {
+    "definition": {
+      "id": 6932
+    },
+    "title": {
+      "fr": "Abandon",
+      "en": "Abandon",
+      "es": "Abandono",
+      "pt": "Abandono"
+    }
+  },
+  {
+    "definition": {
+      "id": 6705
+    },
+    "title": {
+      "fr": "Furie",
+      "en": "Outrage",
+      "es": "Furia",
+      "pt": "Fúria"
+    }
+  },
+  {
+    "definition": {
+      "id": 7255
+    },
+    "title": {
+      "fr": "Contrôle de l'espace II",
+      "en": "Controlling Space II",
+      "es": "Control del Espacio II",
+      "pt": "Controle do Espaço II"
     }
   },
   {
@@ -2025,68 +1970,189 @@
   },
   {
     "definition": {
-      "id": 6828
+      "id": 6329
     },
     "title": {
-      "fr": "Altruisme",
-      "en": "Altruism",
-      "es": "Altruismo",
-      "pt": "Altruísmo"
+      "fr": "Loup Solitaire",
+      "en": "Lone Wolf",
+      "es": "Lobo Solitario",
+      "pt": "Lobo Solitário"
     }
   },
   {
     "definition": {
-      "id": 5450
+      "id": 5993
     },
     "title": {
-      "fr": "Stasification",
-      "en": "Stasification",
-      "es": "Stasificación",
-      "pt": "Estasificação"
+      "fr": "Réprobation",
+      "en": "Condemnation",
+      "es": "Reprobación",
+      "pt": "Reprovação"
     }
   },
   {
     "definition": {
-      "id": 2931
+      "id": 1480
     },
     "title": {
-      "fr": "Costume de Passage",
-      "en": "Passenthru Costume",
-      "es": "Traje de Paso",
-      "pt": "Insígnia de Passagem"
+      "fr": "Insigne de Jacko",
+      "en": "Jacko Insignia",
+      "es": "Insignia de Jacko",
+      "pt": "Insígnia de Aboborino"
     }
   },
   {
     "definition": {
-      "id": 6711
+      "id": 6018
     },
     "title": {
-      "fr": "Énergie ancestrale",
-      "en": "Ancestral Energy",
-      "es": "Energía Ancestral",
-      "pt": "Energia Ancestral"
+      "fr": "Esquive Berserk",
+      "en": "Berserk Dodge",
+      "es": "Esquiva Berserker",
+      "pt": "Esquiva Berserk"
     }
   },
   {
     "definition": {
-      "id": 2574
+      "id": 6813
     },
     "title": {
-      "fr": "Requinquage 25%",
-      "en": "Perk Up 25%",
-      "es": "Recuperación 25%",
-      "pt": "Estimular 25%"
+      "fr": "Retour enflammé",
+      "en": "Flaming Return",
+      "es": "Respuesta ardiente",
+      "pt": "Retorno das Chamas"
     }
   },
   {
     "definition": {
-      "id": 5444
+      "id": 2636
     },
     "title": {
-      "fr": "Science du placement",
-      "en": "Positioning Knowledge",
-      "es": "Ciencia del Posicionamiento",
-      "pt": "Arte do posicionamento"
+      "fr": "Transfert Tellurique",
+      "en": "Terrestrial Transfer",
+      "es": "Transferencia Telúrica",
+      "pt": "Transferência Telúrica"
+    }
+  },
+  {
+    "definition": {
+      "id": 5994
+    },
+    "title": {
+      "fr": "Frénésie",
+      "en": "Frenzy",
+      "es": "Frenesí",
+      "pt": "Frenesi"
+    }
+  },
+  {
+    "definition": {
+      "id": 2411
+    },
+    "title": {
+      "fr": "Requinquage 50%",
+      "en": "Perk Up 50%",
+      "es": "Recuperación 50%",
+      "pt": "Estimular 50%"
+    }
+  },
+  {
+    "definition": {
+      "id": 5174
+    },
+    "title": {
+      "fr": "Alternance II",
+      "en": "Alternation II",
+      "es": "Alternancia II",
+      "pt": "Alternância II"
+    }
+  },
+  {
+    "definition": {
+      "id": 6020
+    },
+    "title": {
+      "fr": "Barrière Mêlée",
+      "en": "Melee Barrier",
+      "es": "Barrera en Melé",
+      "pt": "Barreira Curta Distância"
+    }
+  },
+  {
+    "definition": {
+      "id": 5253
+    },
+    "title": {
+      "fr": "Wé",
+      "en": "Yeah",
+      "es": "Seh",
+      "pt": "Nhé"
+    }
+  },
+  {
+    "definition": {
+      "id": 1482
+    },
+    "title": {
+      "fr": "Costume de Goule",
+      "en": "Ghoul Costume",
+      "es": "Traje de Ghul",
+      "pt": "Traje de Carniçal"
+    }
+  },
+  {
+    "definition": {
+      "id": 5984
+    },
+    "title": {
+      "fr": "Cicatrisation",
+      "en": "Healing",
+      "es": "Sanación",
+      "pt": "Cicatrização"
+    }
+  },
+  {
+    "definition": {
+      "id": 6731
+    },
+    "title": {
+      "fr": "Dofus Turquoise",
+      "en": "Turquoise Dofus",
+      "es": "Dofus Turquesa",
+      "pt": "Dofus Turquesa"
+    }
+  },
+  {
+    "definition": {
+      "id": 5252
+    },
+    "title": {
+      "fr": "Sang de la déchirure",
+      "en": "Heartbreaking Blood",
+      "es": "Sangre del Martirio",
+      "pt": "Sangue do Talho"
+    }
+  },
+  {
+    "definition": {
+      "id": 6821
+    },
+    "title": {
+      "fr": "Expert des armes légères",
+      "en": "Light Weapons Expert",
+      "es": "Experto en armas ligeras",
+      "pt": "Especialista em Armas Leves"
+    }
+  },
+  {
+    "definition": {
+      "id": 6328
+    },
+    "title": {
+      "fr": "Intégrité",
+      "en": "Integrity",
+      "es": "Integridad",
+      "pt": "Integridade"
     }
   }
 ]

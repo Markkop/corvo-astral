@@ -4,7 +4,7 @@
       "id_shard": 27095,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213073",
+      "gfx_id": "81127095",
       "id_shard_type": 811,
       "id_color": 1,
       "name_shard": "Maîtrise Monocible",
@@ -30,7 +30,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485445,
+              "id_spell_effect_value": 549963,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -75,7 +75,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485446,
+              "id_spell_effect_value": 549964,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -120,7 +120,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485447,
+              "id_spell_effect_value": 549965,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -174,7 +174,7 @@
       "id_shard": 27096,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213073",
+      "gfx_id": "81127095",
       "id_shard_type": 811,
       "id_color": 1,
       "name_shard": "Maîtrise Zone",
@@ -200,7 +200,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485448,
+              "id_spell_effect_value": 549966,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -245,7 +245,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485449,
+              "id_spell_effect_value": 549967,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -290,7 +290,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485450,
+              "id_spell_effect_value": 549968,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -344,7 +344,7 @@
       "id_shard": 27097,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213073",
+      "gfx_id": "81127095",
       "id_shard_type": 811,
       "id_color": 1,
       "name_shard": "Maîtrise Mêlée",
@@ -370,7 +370,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485451,
+              "id_spell_effect_value": 549969,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -415,7 +415,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485452,
+              "id_spell_effect_value": 549970,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -460,7 +460,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485453,
+              "id_spell_effect_value": 549971,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -514,7 +514,7 @@
       "id_shard": 27098,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213073",
+      "gfx_id": "81127095",
       "id_shard_type": 811,
       "id_color": 1,
       "name_shard": "Maîtrise Distance",
@@ -540,7 +540,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485454,
+              "id_spell_effect_value": 549972,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -585,7 +585,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485455,
+              "id_spell_effect_value": 549973,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -630,7 +630,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485456,
+              "id_spell_effect_value": 549974,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -692,7 +692,7 @@
       "id_shard": 27099,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213073",
+      "gfx_id": "81127095",
       "id_shard_type": 811,
       "id_color": 1,
       "name_shard": "Maîtrise Berserk",
@@ -718,7 +718,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485457,
+              "id_spell_effect_value": 549975,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -763,7 +763,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485458,
+              "id_spell_effect_value": 549976,
               "offset": 0,
               "damage": -22,
               "ratio": 6,
@@ -808,7 +808,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485459,
+              "id_spell_effect_value": 549977,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -862,7 +862,7 @@
       "id_shard": 27107,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213073",
+      "gfx_id": "81127095",
       "id_shard_type": 811,
       "id_color": 1,
       "name_shard": "Résistance Terre",
@@ -888,7 +888,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485481,
+              "id_spell_effect_value": 549999,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -933,7 +933,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485482,
+              "id_spell_effect_value": 550000,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -978,7 +978,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485483,
+              "id_spell_effect_value": 550001,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1032,7 +1032,7 @@
       "id_shard": 27100,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213071",
+      "gfx_id": "81127100",
       "id_shard_type": 811,
       "id_color": 2,
       "name_shard": "Maîtrise Critique",
@@ -1058,7 +1058,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485460,
+              "id_spell_effect_value": 549978,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -1103,7 +1103,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485461,
+              "id_spell_effect_value": 549979,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -1148,7 +1148,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485462,
+              "id_spell_effect_value": 549980,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1210,7 +1210,7 @@
       "id_shard": 27101,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213071",
+      "gfx_id": "81127100",
       "id_shard_type": 811,
       "id_color": 2,
       "name_shard": "Maîtrise Dos",
@@ -1236,7 +1236,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485463,
+              "id_spell_effect_value": 549981,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -1281,7 +1281,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485464,
+              "id_spell_effect_value": 549982,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -1326,7 +1326,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485465,
+              "id_spell_effect_value": 549983,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1380,7 +1380,7 @@
       "id_shard": 27103,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213071",
+      "gfx_id": "81127100",
       "id_shard_type": 811,
       "id_color": 2,
       "name_shard": "Esquive",
@@ -1406,7 +1406,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485469,
+              "id_spell_effect_value": 549987,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1451,7 +1451,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485470,
+              "id_spell_effect_value": 549988,
               "offset": 0,
               "damage": -33,
               "ratio": 9,
@@ -1496,7 +1496,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485471,
+              "id_spell_effect_value": 549989,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -1550,7 +1550,7 @@
       "id_shard": 27104,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213071",
+      "gfx_id": "81127100",
       "id_shard_type": 811,
       "id_color": 2,
       "name_shard": "Initiative",
@@ -1576,7 +1576,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485472,
+              "id_spell_effect_value": 549990,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -1621,7 +1621,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485473,
+              "id_spell_effect_value": 549991,
               "offset": 0,
               "damage": -22,
               "ratio": 6,
@@ -1666,7 +1666,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485474,
+              "id_spell_effect_value": 549992,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -1720,7 +1720,7 @@
       "id_shard": 27105,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213071",
+      "gfx_id": "81127100",
       "id_shard_type": 811,
       "id_color": 2,
       "name_shard": "Résistance Feu",
@@ -1746,7 +1746,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485475,
+              "id_spell_effect_value": 549993,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1791,7 +1791,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485476,
+              "id_spell_effect_value": 549994,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -1836,7 +1836,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485477,
+              "id_spell_effect_value": 549995,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1890,7 +1890,7 @@
       "id_shard": 27094,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213074",
+      "gfx_id": "81127094",
       "id_shard_type": 811,
       "id_color": 3,
       "name_shard": "Maîtrise Elémentaire",
@@ -1916,7 +1916,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485442,
+              "id_spell_effect_value": 549960,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -1961,7 +1961,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485443,
+              "id_spell_effect_value": 549961,
               "offset": 0,
               "damage": -11,
               "ratio": 3,
@@ -2006,7 +2006,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485444,
+              "id_spell_effect_value": 549962,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -2060,7 +2060,7 @@
       "id_shard": 27102,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213074",
+      "gfx_id": "81127094",
       "id_shard_type": 811,
       "id_color": 3,
       "name_shard": "Tacle",
@@ -2086,7 +2086,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485466,
+              "id_spell_effect_value": 549984,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -2131,7 +2131,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485467,
+              "id_spell_effect_value": 549985,
               "offset": 0,
               "damage": -33,
               "ratio": 9,
@@ -2176,7 +2176,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485468,
+              "id_spell_effect_value": 549986,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -2230,7 +2230,7 @@
       "id_shard": 27106,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213074",
+      "gfx_id": "81127094",
       "id_shard_type": 811,
       "id_color": 3,
       "name_shard": "Résistance Eau",
@@ -2256,7 +2256,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485478,
+              "id_spell_effect_value": 549996,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2301,7 +2301,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485479,
+              "id_spell_effect_value": 549997,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -2346,7 +2346,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485480,
+              "id_spell_effect_value": 549998,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2400,7 +2400,7 @@
       "id_shard": 27108,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213074",
+      "gfx_id": "81127094",
       "id_shard_type": 811,
       "id_color": 3,
       "name_shard": "Résistance Air",
@@ -2426,7 +2426,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485484,
+              "id_spell_effect_value": 550002,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2471,7 +2471,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485485,
+              "id_spell_effect_value": 550003,
               "offset": 0,
               "damage": -13.75,
               "ratio": 3.75,
@@ -2516,7 +2516,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485486,
+              "id_spell_effect_value": 550004,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2570,7 +2570,7 @@
       "id_shard": 27109,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213074",
+      "gfx_id": "81127094",
       "id_shard_type": 811,
       "id_color": 3,
       "name_shard": "Vie",
@@ -2596,7 +2596,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485487,
+              "id_spell_effect_value": 550005,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -2641,7 +2641,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485488,
+              "id_spell_effect_value": 550006,
               "offset": 0,
               "damage": -44,
               "ratio": 12,
@@ -2686,7 +2686,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485489,
+              "id_spell_effect_value": 550007,
               "offset": 0,
               "damage": 0,
               "ratio": 8,
@@ -2748,7 +2748,7 @@
       "id_shard": 27110,
       "is_epic": null,
       "is_relic": null,
-      "gfx_id": "60213074",
+      "gfx_id": "81127094",
       "id_shard_type": 811,
       "id_color": 3,
       "name_shard": "Maîtrise Soin",
@@ -2774,7 +2774,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485490,
+              "id_spell_effect_value": 550008,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -2819,7 +2819,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485491,
+              "id_spell_effect_value": 550009,
               "offset": 0,
               "damage": -22,
               "ratio": 6,
@@ -2864,7 +2864,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485492,
+              "id_spell_effect_value": 550010,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -2944,7 +2944,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485313,
+              "id_spell_effect_value": 549829,
               "offset": 0,
               "damage": 0,
               "ratio": -7.5,
@@ -3011,7 +3011,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3021,7 +3021,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485314,
+              "id_spell_effect_value": 549830,
               "offset": 0,
               "damage": 0,
               "ratio": 12.5,
@@ -3088,7 +3088,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3098,7 +3098,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485315,
+              "id_spell_effect_value": 549831,
               "offset": 0,
               "damage": 0,
               "ratio": 200,
@@ -3175,7 +3175,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485316,
+              "id_spell_effect_value": 549832,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -3273,7 +3273,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3283,7 +3283,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485317,
+              "id_spell_effect_value": 549833,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -3374,7 +3374,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485318,
+              "id_spell_effect_value": 549834,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -3455,7 +3455,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3465,7 +3465,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485319,
+              "id_spell_effect_value": 549835,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -3532,7 +3532,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3542,7 +3542,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485320,
+              "id_spell_effect_value": 549836,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -3619,7 +3619,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485321,
+              "id_spell_effect_value": 549837,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -3686,7 +3686,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3696,7 +3696,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485322,
+              "id_spell_effect_value": 549838,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -3724,7 +3724,7 @@
               }
             },
             {
-              "id_spell_effect_value": 485323,
+              "id_spell_effect_value": 549839,
               "offset": 1,
               "damage": 0,
               "ratio": 1.5,
@@ -3752,7 +3752,7 @@
               }
             },
             {
-              "id_spell_effect_value": 485324,
+              "id_spell_effect_value": 549840,
               "offset": 2,
               "damage": 0,
               "ratio": 1.5,
@@ -3843,7 +3843,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485325,
+              "id_spell_effect_value": 549841,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -3920,7 +3920,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485326,
+              "id_spell_effect_value": 549842,
               "offset": 0,
               "damage": 0,
               "ratio": 30,
@@ -3997,7 +3997,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485327,
+              "id_spell_effect_value": 549843,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -4078,7 +4078,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4088,7 +4088,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485328,
+              "id_spell_effect_value": 549844,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -4165,7 +4165,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485329,
+              "id_spell_effect_value": 549845,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -4201,7 +4201,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4263,7 +4263,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4273,7 +4273,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485330,
+              "id_spell_effect_value": 549846,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -4301,7 +4301,7 @@
               }
             },
             {
-              "id_spell_effect_value": 485331,
+              "id_spell_effect_value": 549847,
               "offset": 1,
               "damage": 25,
               "ratio": 0,
@@ -4378,7 +4378,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485332,
+              "id_spell_effect_value": 549848,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -4414,7 +4414,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4424,7 +4424,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485333,
+              "id_spell_effect_value": 549849,
               "offset": 0,
               "damage": 0,
               "ratio": -7.5,
@@ -4491,7 +4491,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4501,7 +4501,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485339,
+              "id_spell_effect_value": 549855,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4592,7 +4592,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485340,
+              "id_spell_effect_value": 549856,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4686,7 +4686,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4696,7 +4696,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485341,
+              "id_spell_effect_value": 549857,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -4742,7 +4742,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485342,
+              "id_spell_effect_value": 549858,
               "offset": 0,
               "damage": 40,
               "ratio": -10,
@@ -4860,7 +4860,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485343,
+              "id_spell_effect_value": 549859,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4874,7 +4874,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485344,
+              "id_spell_effect_value": 549860,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -4992,7 +4992,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485345,
+              "id_spell_effect_value": 549861,
               "offset": 0,
               "damage": 0,
               "ratio": 15,
@@ -5086,7 +5086,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5096,7 +5096,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485346,
+              "id_spell_effect_value": 549862,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -5200,7 +5200,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485347,
+              "id_spell_effect_value": 549863,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -5304,7 +5304,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485348,
+              "id_spell_effect_value": 549864,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -5398,7 +5398,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5408,7 +5408,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485349,
+              "id_spell_effect_value": 549865,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -5502,7 +5502,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5512,7 +5512,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485350,
+              "id_spell_effect_value": 549866,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -5739,7 +5739,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485351,
+              "id_spell_effect_value": 549867,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -5861,7 +5861,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485352,
+              "id_spell_effect_value": 549868,
               "offset": 0,
               "damage": 0,
               "ratio": -5,
@@ -5955,7 +5955,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5965,7 +5965,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485353,
+              "id_spell_effect_value": 549869,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -6083,7 +6083,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485354,
+              "id_spell_effect_value": 549870,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -6129,7 +6129,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485355,
+              "id_spell_effect_value": 549871,
               "offset": 0,
               "damage": 30,
               "ratio": -10,
@@ -6224,7 +6224,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6234,7 +6234,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485356,
+              "id_spell_effect_value": 549872,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -6270,7 +6270,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6280,7 +6280,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485357,
+              "id_spell_effect_value": 549873,
               "offset": 0,
               "damage": 225,
               "ratio": -75,
@@ -6375,7 +6375,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6385,7 +6385,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485358,
+              "id_spell_effect_value": 549874,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -6503,7 +6503,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485359,
+              "id_spell_effect_value": 549875,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -6549,7 +6549,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485360,
+              "id_spell_effect_value": 549876,
               "offset": 0,
               "damage": 450,
               "ratio": -150,
@@ -6595,7 +6595,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485361,
+              "id_spell_effect_value": 549877,
               "offset": 0,
               "damage": 450,
               "ratio": -150,
@@ -6700,7 +6700,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485362,
+              "id_spell_effect_value": 549878,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -6794,7 +6794,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6804,7 +6804,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485363,
+              "id_spell_effect_value": 549879,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -6898,7 +6898,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6908,7 +6908,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485364,
+              "id_spell_effect_value": 549880,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -7018,7 +7018,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485365,
+              "id_spell_effect_value": 549881,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -7112,7 +7112,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7122,7 +7122,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485366,
+              "id_spell_effect_value": 549882,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -7216,7 +7216,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7226,7 +7226,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485367,
+              "id_spell_effect_value": 549883,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -7330,7 +7330,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485368,
+              "id_spell_effect_value": 549884,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7421,7 +7421,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485369,
+              "id_spell_effect_value": 549885,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7512,7 +7512,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485370,
+              "id_spell_effect_value": 549886,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7606,7 +7606,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7616,7 +7616,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485371,
+              "id_spell_effect_value": 549887,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7720,7 +7720,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485372,
+              "id_spell_effect_value": 549888,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -7838,7 +7838,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485373,
+              "id_spell_effect_value": 549889,
               "offset": 0,
               "damage": 0,
               "ratio": 150,
@@ -7942,7 +7942,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485374,
+              "id_spell_effect_value": 549890,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -7956,7 +7956,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485375,
+              "id_spell_effect_value": 549891,
               "offset": 1,
               "damage": 0,
               "ratio": 10,
@@ -8037,7 +8037,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8047,7 +8047,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485376,
+              "id_spell_effect_value": 549892,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -8141,7 +8141,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8151,7 +8151,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485377,
+              "id_spell_effect_value": 549893,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8245,7 +8245,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8255,7 +8255,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485378,
+              "id_spell_effect_value": 549894,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -8363,7 +8363,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8373,7 +8373,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485379,
+              "id_spell_effect_value": 549895,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -8467,7 +8467,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8477,7 +8477,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485380,
+              "id_spell_effect_value": 549896,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8571,7 +8571,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8581,7 +8581,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485381,
+              "id_spell_effect_value": 549897,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -8595,7 +8595,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485382,
+              "id_spell_effect_value": 549898,
               "offset": 1,
               "damage": 0,
               "ratio": 5,
@@ -8699,7 +8699,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485383,
+              "id_spell_effect_value": 549899,
               "offset": 0,
               "damage": 0,
               "ratio": 7,
@@ -8790,7 +8790,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485384,
+              "id_spell_effect_value": 549900,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8884,7 +8884,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8894,7 +8894,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485385,
+              "id_spell_effect_value": 549901,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -8988,7 +8988,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8998,7 +8998,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485386,
+              "id_spell_effect_value": 549902,
               "offset": 0,
               "damage": 0,
               "ratio": -5,
@@ -9089,7 +9089,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485387,
+              "id_spell_effect_value": 549903,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -9207,7 +9207,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485388,
+              "id_spell_effect_value": 549904,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -9294,7 +9294,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9304,7 +9304,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485389,
+              "id_spell_effect_value": 549905,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -9409,7 +9409,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485390,
+              "id_spell_effect_value": 549906,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -9423,7 +9423,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485391,
+              "id_spell_effect_value": 549907,
               "offset": 1,
               "damage": 0,
               "ratio": 100,
@@ -9527,7 +9527,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485392,
+              "id_spell_effect_value": 549908,
               "offset": 0,
               "damage": -25,
               "ratio": 5,
@@ -9627,7 +9627,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9637,7 +9637,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485393,
+              "id_spell_effect_value": 549909,
               "offset": 0,
               "damage": -10,
               "ratio": 0,
@@ -9651,7 +9651,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485394,
+              "id_spell_effect_value": 549910,
               "offset": 1,
               "damage": 0,
               "ratio": 15,
@@ -9755,7 +9755,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485395,
+              "id_spell_effect_value": 549911,
               "offset": 0,
               "damage": -10,
               "ratio": 0,
@@ -9769,7 +9769,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485396,
+              "id_spell_effect_value": 549912,
               "offset": 1,
               "damage": 0,
               "ratio": 15,
@@ -9873,7 +9873,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485397,
+              "id_spell_effect_value": 549913,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -9967,7 +9967,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9977,7 +9977,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485398,
+              "id_spell_effect_value": 549914,
               "offset": 0,
               "damage": 0,
               "ratio": 25,
@@ -9991,7 +9991,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485399,
+              "id_spell_effect_value": 549915,
               "offset": 1,
               "damage": 0,
               "ratio": 2,
@@ -10095,7 +10095,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485400,
+              "id_spell_effect_value": 549916,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -10189,7 +10189,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10199,7 +10199,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485401,
+              "id_spell_effect_value": 549917,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10293,7 +10293,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10303,7 +10303,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485402,
+              "id_spell_effect_value": 549918,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -10384,7 +10384,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10394,7 +10394,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485403,
+              "id_spell_effect_value": 549919,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -10408,7 +10408,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485404,
+              "id_spell_effect_value": 549920,
               "offset": 1,
               "damage": 0,
               "ratio": -2,
@@ -10512,7 +10512,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485405,
+              "id_spell_effect_value": 549921,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10616,7 +10616,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485406,
+              "id_spell_effect_value": 549922,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -10720,7 +10720,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485407,
+              "id_spell_effect_value": 549923,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10814,7 +10814,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10824,7 +10824,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485408,
+              "id_spell_effect_value": 549924,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -10838,7 +10838,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485409,
+              "id_spell_effect_value": 549925,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -10956,7 +10956,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485410,
+              "id_spell_effect_value": 549926,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -11050,7 +11050,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11060,7 +11060,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485411,
+              "id_spell_effect_value": 549927,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -11074,7 +11074,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485412,
+              "id_spell_effect_value": 549928,
               "offset": 1,
               "damage": 0,
               "ratio": 50,
@@ -11168,7 +11168,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11178,7 +11178,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485413,
+              "id_spell_effect_value": 549929,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11286,7 +11286,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11296,7 +11296,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485414,
+              "id_spell_effect_value": 549930,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11390,7 +11390,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11462,7 +11462,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485415,
+              "id_spell_effect_value": 549931,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -11476,7 +11476,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485416,
+              "id_spell_effect_value": 549932,
               "offset": 1,
               "damage": 0,
               "ratio": -2,
@@ -11580,7 +11580,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485417,
+              "id_spell_effect_value": 549933,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -11626,7 +11626,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485418,
+              "id_spell_effect_value": 549934,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -11730,7 +11730,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485419,
+              "id_spell_effect_value": 549935,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11824,7 +11824,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11834,7 +11834,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485420,
+              "id_spell_effect_value": 549936,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -11848,7 +11848,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485421,
+              "id_spell_effect_value": 549937,
               "offset": 1,
               "damage": 0,
               "ratio": -3,
@@ -11929,7 +11929,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11939,7 +11939,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485422,
+              "id_spell_effect_value": 549938,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -12044,7 +12044,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485423,
+              "id_spell_effect_value": 549939,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -12058,7 +12058,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485424,
+              "id_spell_effect_value": 549940,
               "offset": 1,
               "damage": 0,
               "ratio": -3,
@@ -12152,7 +12152,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12162,7 +12162,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485425,
+              "id_spell_effect_value": 549941,
               "offset": 0,
               "damage": 0,
               "ratio": 8,
@@ -12280,7 +12280,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485426,
+              "id_spell_effect_value": 549942,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -12308,7 +12308,7 @@
               }
             },
             {
-              "id_spell_effect_value": 485427,
+              "id_spell_effect_value": 549943,
               "offset": 1,
               "damage": 0,
               "ratio": 0.5,
@@ -12336,7 +12336,7 @@
               }
             },
             {
-              "id_spell_effect_value": 485428,
+              "id_spell_effect_value": 549944,
               "offset": 2,
               "damage": 0,
               "ratio": 5,
@@ -12454,7 +12454,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485429,
+              "id_spell_effect_value": 549945,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -12548,7 +12548,7 @@
       "id_shard": 29495,
       "is_epic": 0,
       "is_relic": 0,
-      "gfx_id": "81227111",
+      "gfx_id": "81228822",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Armure lourde I ",
@@ -12572,7 +12572,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485430,
+              "id_spell_effect_value": 549946,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -12608,7 +12608,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12618,7 +12618,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485431,
+              "id_spell_effect_value": 549947,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -12685,7 +12685,7 @@
       "id_shard": 29496,
       "is_epic": 0,
       "is_relic": 0,
-      "gfx_id": "81227111",
+      "gfx_id": "81228823",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Armure lourde II",
@@ -12709,7 +12709,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485430,
+              "id_spell_effect_value": 549946,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -12745,7 +12745,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12755,7 +12755,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485431,
+              "id_spell_effect_value": 549947,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -12822,7 +12822,7 @@
       "id_shard": 29497,
       "is_epic": 0,
       "is_relic": 0,
-      "gfx_id": "81227111",
+      "gfx_id": "81228822",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Carapace I",
@@ -12846,7 +12846,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485432,
+              "id_spell_effect_value": 549948,
               "offset": 0,
               "damage": 3,
               "ratio": -1,
@@ -12892,7 +12892,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485433,
+              "id_spell_effect_value": 549949,
               "offset": 0,
               "damage": 75,
               "ratio": 0,
@@ -12928,7 +12928,7 @@
           "id_shard": 29498,
           "is_epic": 0,
           "is_relic": 0,
-          "gfx_id": "81227111",
+          "gfx_id": "81228823",
           "id_shard_type": 812,
           "id_color": null,
           "name_shard": "Carapace II",
@@ -12973,7 +12973,7 @@
       "id_shard": 29499,
       "is_epic": 0,
       "is_relic": 0,
-      "gfx_id": "81227111",
+      "gfx_id": "81228822",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Combat rapproché I",
@@ -12997,7 +12997,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485434,
+              "id_spell_effect_value": 549950,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -13043,7 +13043,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485435,
+              "id_spell_effect_value": 549951,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -13065,7 +13065,7 @@
           "id_shard": 29500,
           "is_epic": 0,
           "is_relic": 0,
-          "gfx_id": "81227111",
+          "gfx_id": "81228823",
           "id_shard_type": 812,
           "id_color": null,
           "name_shard": "Combat rapproché II",
@@ -13110,7 +13110,7 @@
       "id_shard": 29504,
       "is_epic": 0,
       "is_relic": 0,
-      "gfx_id": "81227111",
+      "gfx_id": "81228822",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Préparation critique I",
@@ -13134,7 +13134,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485436,
+              "id_spell_effect_value": 549952,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -13162,7 +13162,7 @@
           "id_shard": 29505,
           "is_epic": 0,
           "is_relic": 0,
-          "gfx_id": "81227111",
+          "gfx_id": "81228823",
           "id_shard_type": 812,
           "id_color": null,
           "name_shard": "Préparation critique II",
@@ -13220,11 +13220,11 @@
       "id_shard": 29507,
       "is_epic": 0,
       "is_relic": 0,
-      "gfx_id": "81227111",
+      "gfx_id": "81228822",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Temporisation I",
-      "max_usage": 3,
+      "max_usage": 4,
       "level": 1,
       "parent_id": null,
       "effects": [
@@ -13244,10 +13244,10 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485437,
+              "id_spell_effect_value": 549953,
               "offset": 0,
               "damage": 0,
-              "ratio": 5,
+              "ratio": 4,
               "id_stats": 126,
               "id_effect": 323785,
               "will_calculate_damage": 0,
@@ -13272,10 +13272,10 @@
               }
             },
             {
-              "id_spell_effect_value": 485438,
+              "id_spell_effect_value": 549954,
               "offset": 1,
               "damage": 0,
-              "ratio": 5,
+              "ratio": 4,
               "id_stats": 1095,
               "id_effect": 323785,
               "will_calculate_damage": 0,
@@ -13308,11 +13308,11 @@
           "id_shard": 29508,
           "is_epic": 0,
           "is_relic": 0,
-          "gfx_id": "81227111",
+          "gfx_id": "81228823",
           "id_shard_type": 812,
           "id_color": null,
           "name_shard": "Temporisation II",
-          "max_usage": 3,
+          "max_usage": 4,
           "level": 2,
           "parent_id": 29507,
           "translations": []
@@ -13325,7 +13325,7 @@
           "id_shard_type": 812,
           "id_color": null,
           "name_shard": "Temporisation III",
-          "max_usage": 3,
+          "max_usage": 4,
           "level": 3,
           "parent_id": 29507,
           "translations": []
@@ -13366,7 +13366,7 @@
       "id_shard": 29510,
       "is_epic": 0,
       "is_relic": 0,
-      "gfx_id": "81227111",
+      "gfx_id": "81228822",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Verrouillage I",
@@ -13390,7 +13390,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485439,
+              "id_spell_effect_value": 549955,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -13412,7 +13412,7 @@
           "id_shard": 29511,
           "is_epic": 0,
           "is_relic": 0,
-          "gfx_id": "81227111",
+          "gfx_id": "81228823",
           "id_shard_type": 812,
           "id_color": null,
           "name_shard": "Verrouillage II",
@@ -13470,7 +13470,7 @@
       "id_shard": 29513,
       "is_epic": 0,
       "is_relic": 0,
-      "gfx_id": "81227111",
+      "gfx_id": "81228822",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Poids Plume I ",
@@ -13480,11 +13480,11 @@
       "effects": [
         {
           "id_effect": 323923,
-          "name_effect": "Au lancement du combat, par PM supérieur à 3 : \\n[pl]|[#1]% Dommages infligés*2|% Dommages infligés (maximum 24)",
+          "name_effect": "Au lancement du combat, par PM supérieur à 4 : \\n[pl]|[#1]% Dommages infligés*2|% Dommages infligés (maximum 24)",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13494,7 +13494,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485440,
+              "id_spell_effect_value": 549956,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -13561,7 +13561,7 @@
       "id_shard": 29514,
       "is_epic": 0,
       "is_relic": 0,
-      "gfx_id": "81227111",
+      "gfx_id": "81228823",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Poids Plume II",
@@ -13571,11 +13571,11 @@
       "effects": [
         {
           "id_effect": 323923,
-          "name_effect": "Au lancement du combat, par PM supérieur à 3 : \\n[pl]|[#1]% Dommages infligés*2|% Dommages infligés (maximum 24)",
+          "name_effect": "Au lancement du combat, par PM supérieur à 4 : \\n[pl]|[#1]% Dommages infligés*2|% Dommages infligés (maximum 24)",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13585,7 +13585,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485440,
+              "id_spell_effect_value": 549956,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -13662,11 +13662,11 @@
       "effects": [
         {
           "id_effect": 323923,
-          "name_effect": "Au lancement du combat, par PM supérieur à 3 : \\n[pl]|[#1]% Dommages infligés*2|% Dommages infligés (maximum 24)",
+          "name_effect": "Au lancement du combat, par PM supérieur à 4 : \\n[pl]|[#1]% Dommages infligés*2|% Dommages infligés (maximum 24)",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13676,7 +13676,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485440,
+              "id_spell_effect_value": 549956,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -13743,7 +13743,7 @@
       "id_shard": 29591,
       "is_epic": 0,
       "is_relic": 0,
-      "gfx_id": "81227111",
+      "gfx_id": "81228822",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Ambition I",
@@ -13757,7 +13757,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13767,7 +13767,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485441,
+              "id_spell_effect_value": 549957,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -13803,7 +13803,7 @@
           "id_shard": 29592,
           "is_epic": 0,
           "is_relic": 0,
-          "gfx_id": "81227111",
+          "gfx_id": "81228823",
           "id_shard_type": 812,
           "id_color": null,
           "name_shard": "Ambition II",
@@ -13863,7 +13863,7 @@
       "id_shard": 14186,
       "is_epic": 0,
       "is_relic": 1,
-      "gfx_id": "68324139",
+      "gfx_id": "81224135",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Robuste",
@@ -13873,11 +13873,11 @@
       "effects": [
         {
           "id_effect": 238216,
-          "name_effect": "50% du niveau en Barrière contre les dégâts reçus à distance (permanent).",
+          "name_effect": "100% du niveau en Barrière contre les dégâts reçus à distance (permanent).",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13895,7 +13895,7 @@
       "id_shard": 24130,
       "is_epic": 1,
       "is_relic": 0,
-      "gfx_id": "68324130",
+      "gfx_id": "81224130",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Inflexibilité",
@@ -13927,7 +13927,7 @@
       "id_shard": 24131,
       "is_epic": 1,
       "is_relic": 0,
-      "gfx_id": "68324131",
+      "gfx_id": "81224131",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Constance",
@@ -13951,9 +13951,9 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485305,
+              "id_spell_effect_value": 549821,
               "offset": 0,
-              "damage": 15,
+              "damage": 20,
               "ratio": 0,
               "id_stats": 126,
               "id_effect": 238177,
@@ -13988,7 +13988,7 @@
       "id_shard": 24132,
       "is_epic": 1,
       "is_relic": 0,
-      "gfx_id": "68324132",
+      "gfx_id": "81224132",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Dénouement",
@@ -13998,7 +13998,7 @@
       "effects": [
         {
           "id_effect": 238187,
-          "name_effect": "Convertit 75% de Maîtrise Critique en Maîtrise Élémentaire au lancement du combat.",
+          "name_effect": "Convertit 100% de Maîtrise Critique en Maîtrise Élémentaire au lancement du combat si le porteur de l'état possède au moins 40% Coup critique.",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
@@ -14020,7 +14020,7 @@
       "id_shard": 24133,
       "is_epic": 1,
       "is_relic": 0,
-      "gfx_id": "68324133",
+      "gfx_id": "81224133",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Précision chirurgicale",
@@ -14044,7 +14044,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485306,
+              "id_spell_effect_value": 549822,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -14081,7 +14081,7 @@
       "id_shard": 24134,
       "is_epic": 1,
       "is_relic": 0,
-      "gfx_id": "68324134",
+      "gfx_id": "81224134",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Mesure",
@@ -14091,11 +14091,11 @@
       "effects": [
         {
           "id_effect": 238166,
-          "name_effect": "Au lancement du combat, si le porteur de l'état a <b>40% Parade ou plus</b> :\\n[pl][#1]% Coup Critique",
+          "name_effect": "Au lancement du combat, si le porteur de l'état a <b>40% Parade ou plus</b> :\\n[pl][#1]% Coup Critique\\n[pl]10% Dommages infligés en Coup critique",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14105,7 +14105,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485307,
+              "id_spell_effect_value": 549823,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -14142,7 +14142,7 @@
       "id_shard": 24135,
       "is_epic": 0,
       "is_relic": 1,
-      "gfx_id": "68324135",
+      "gfx_id": "81224136",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Fracass'carcasse",
@@ -14174,7 +14174,7 @@
       "id_shard": 24136,
       "is_epic": 0,
       "is_relic": 1,
-      "gfx_id": "68324136",
+      "gfx_id": "81224137",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Alternance",
@@ -14184,11 +14184,11 @@
       "effects": [
         {
           "id_effect": 239120,
-          "name_effect": "Si le porteur n'a utilisé qu'un élément pour occasionner des dégâts durant son tour, il gagne +15% à sa Maîtrise Élémentaire dans ses autres éléments.",
+          "name_effect": "Si le porteur n'a utilisé qu'un élément pour occasionner des dégâts durant son tour, il gagne +20% à sa Maîtrise Élémentaire dans ses autres éléments.",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14206,7 +14206,7 @@
       "id_shard": 24137,
       "is_epic": 0,
       "is_relic": 1,
-      "gfx_id": "68324137",
+      "gfx_id": "81224138",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Confiance",
@@ -14220,7 +14220,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14230,7 +14230,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485308,
+              "id_spell_effect_value": 549824,
               "offset": 0,
               "damage": 30,
               "ratio": 0,
@@ -14267,7 +14267,7 @@
       "id_shard": 24138,
       "is_epic": 0,
       "is_relic": 1,
-      "gfx_id": "68324138",
+      "gfx_id": "81224139",
       "id_shard_type": 812,
       "id_color": null,
       "name_shard": "Brasero",
@@ -14277,7 +14277,7 @@
       "effects": [
         {
           "id_effect": 238223,
-          "name_effect": "+50% du niveau dans deux maîtrises secondaires (varient chaque tour).\\nTour 1 : Mêlée + Monocible\\nTour 2 : Distance + Monocible\\nTour 3 : Distance + Zone\\nTour 4 : Mêlée + Zone",
+          "name_effect": "+10% Dommages infligés dans deux maîtrises secondaires (varient chaque tour).\\nTour 1 : Mêlée + Monocible\\nTour 2 : Distance + Monocible\\nTour 3 : Distance + Zone\\nTour 4 : Mêlée + Zone",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
@@ -14313,7 +14313,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14355,7 +14355,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485309,
+              "id_spell_effect_value": 549825,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -14383,7 +14383,7 @@
               }
             },
             {
-              "id_spell_effect_value": 485310,
+              "id_spell_effect_value": 549826,
               "offset": 1,
               "damage": 200,
               "ratio": 0,
@@ -14466,7 +14466,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14526,7 +14526,7 @@
       "effects": [
         {
           "id_effect": 241163,
-          "name_effect": "Si le porteur inflige des dommages dans un élément, il gagne +10% Maîtrise Elémentaire dans les autres éléments pour le prochain sort.\\n\\nUniquement la première ligne de dégâts occasionnée par le sort est prise en compte.",
+          "name_effect": "Si le porteur inflige des dommages dans un élément, il gagne +15% Maîtrise Elémentaire dans les autres éléments pour le prochain sort.\\n\\nUniquement la première ligne de dégâts occasionnée par le sort est prise en compte.",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
@@ -14572,7 +14572,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485311,
+              "id_spell_effect_value": 549827,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -14623,7 +14623,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14655,7 +14655,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14665,7 +14665,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485312,
+              "id_spell_effect_value": 549828,
               "offset": 0,
               "damage": -30,
               "ratio": 0,
@@ -14698,11 +14698,11 @@
       "effects": [
         {
           "id_effect": 256077,
-          "name_effect": "[st751] (+15 Niv.) (cumulable) pour le porteur de l'état, à chaque sort de dommages qu'il reçoit en mêlée.",
+          "name_effect": "[st751] (+15 Niv.) (cumulable) pour le porteur de l'état, à chaque sort de dommages qu'il reçoit en mêlée.\\n\\n100% du niveau en [st751] en début de tour si aucun ennemi est au contact.",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14740,7 +14740,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14750,7 +14750,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485334,
+              "id_spell_effect_value": 549850,
               "offset": 0,
               "damage": 2,
               "ratio": 0,
@@ -14778,7 +14778,7 @@
               }
             },
             {
-              "id_spell_effect_value": 485335,
+              "id_spell_effect_value": 549851,
               "offset": 1,
               "damage": 2,
               "ratio": 0,
@@ -14829,7 +14829,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14839,8 +14839,22 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 485336,
+              "id_spell_effect_value": 549852,
               "offset": 0,
+              "damage": 25,
+              "ratio": 0,
+              "id_stats": 1093,
+              "id_effect": 243824,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": null
+            },
+            {
+              "id_spell_effect_value": 549853,
+              "offset": 1,
               "damage": 15,
               "ratio": 0,
               "id_stats": 1093,
@@ -14853,23 +14867,9 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 485337,
-              "offset": 1,
-              "damage": 10,
-              "ratio": 0,
-              "id_stats": 1093,
-              "id_effect": 243824,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": null
-            },
-            {
-              "id_spell_effect_value": 485338,
+              "id_spell_effect_value": 549854,
               "offset": 2,
-              "damage": -10,
+              "damage": -30,
               "ratio": 0,
               "id_stats": 1093,
               "id_effect": 243824,
@@ -14936,7 +14936,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14996,7 +14996,7 @@
       "effects": [
         {
           "id_effect": 280619,
-          "name_effect": "25% aux dommages des sorts de zone sur la cible directe du sort.\\n-50% aux dommages des sorts de zone sur les autres cibles.",
+          "name_effect": "25% aux dommages des sorts de zone sur la cible directe du sort.\\n-25% aux dommages des sorts de zone sur les autres cibles.",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
@@ -15028,11 +15028,11 @@
       "effects": [
         {
           "id_effect": 283072,
-          "name_effect": "10% Dommages Infligés des sorts de zone sur les cibles alignées avec le porteur de l'état",
+          "name_effect": "15% Dommages Infligés des sorts de zone sur les cibles alignées avec le porteur de l'état",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15064,7 +15064,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15092,11 +15092,11 @@
       "effects": [
         {
           "id_effect": 256067,
-          "name_effect": "Le porteur de l'état augmente de 2% ses dommages infligés par tour (permanent) (max 30)",
+          "name_effect": "Le porteur de l'état augmente de 2% ses dommages infligés par tour (permanent) (max 20)",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15128,7 +15128,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15166,7 +15166,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15326,7 +15326,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15364,7 +15364,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15408,6 +15408,273 @@
           "pivot": {
             "foreign_type": 28390,
             "id_effect": 309489
+          },
+          "translations": [],
+          "values": [],
+          "inner_states": []
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 29871,
+      "is_epic": 0,
+      "is_relic": 1,
+      "gfx_id": "68325799",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Excès II",
+      "max_usage": 0,
+      "level": null,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 330510,
+          "name_effect": "-[#1]% Dommages infligés\\nTous les 5 sorts lancés, le porteur de l'état gagne 50% Dommages infligés pour le prochain sort.\\n[pl]Les sorts lancés doivent coûter au moins 1 PA pour incrémenter Excès.\\n[pl]Une fois l'état niveau 5, le prochain sort bénéficie du bonus de Dommages, qu'il effectue des dommages ou non, quel que soit son coût.",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": -32513,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 29871,
+            "id_effect": 330510
+          },
+          "translations": [],
+          "values": [
+            {
+              "id_spell_effect_value": 549958,
+              "offset": 0,
+              "damage": 10,
+              "ratio": 0,
+              "id_stats": 129,
+              "id_effect": 330510,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": {
+                "id_stats": 129,
+                "name_stats": "-Dommages Infligés",
+                "image_stats": "damage.webp",
+                "base_stats": 0,
+                "order_stats": 1,
+                "id_stats_type": null,
+                "order": 43,
+                "element": null,
+                "search_display": 0,
+                "related_to": null,
+                "related_multiplier": null,
+                "parent_statistic_id": 126,
+                "is_negative": 1
+              }
+            }
+          ],
+          "inner_states": []
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 29872,
+      "is_epic": 0,
+      "is_relic": 1,
+      "gfx_id": "81224135",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Lunatique",
+      "max_usage": 0,
+      "level": null,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 330528,
+          "name_effect": "Tour impair, en début de tour :\\n[pl]25% Dommages infligés\\n[pl]-25% Soins réalisés et Armure donnée\\n\\nTour pair, en début de tour :\\n[pl]25% Soins réalisés et Armure donnée\\n[pl]-25% Dommages infligés",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": 32767,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 29872,
+            "id_effect": 330528
+          },
+          "translations": [],
+          "values": [],
+          "inner_states": []
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 29873,
+      "is_epic": 1,
+      "is_relic": 0,
+      "gfx_id": "81224130",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Contrôle de l'espace II",
+      "max_usage": 0,
+      "level": null,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 330548,
+          "name_effect": "Au lancement du combat, si le porteur de l'état a <b>au moins 3 Portée</b> :\\n[pl]30% dommages infligés indirects",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": 32767,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 29873,
+            "id_effect": 330548
+          },
+          "translations": [],
+          "values": [],
+          "inner_states": []
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 29874,
+      "is_epic": 1,
+      "is_relic": 0,
+      "gfx_id": "81224132",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Inflexibilité II",
+      "max_usage": 0,
+      "level": null,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 330558,
+          "name_effect": "Au lancement du combat, si les maîtrises secondaires sont inférieures ou égales à 0 :\\n[pl]+15% de maîtrises élémentaires",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": 32767,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 29874,
+            "id_effect": 330558
+          },
+          "translations": [],
+          "values": [],
+          "inner_states": []
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 29875,
+      "is_epic": 0,
+      "is_relic": 1,
+      "gfx_id": "81224137",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Sentinelle",
+      "max_usage": 0,
+      "level": null,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 330813,
+          "name_effect": "En début de tour :\\n[pl]3 Portée\\n[pl]15% Dommages infligés à distance\\n[pl]15% Soins réalisés\\n\\nLe bonus est perdu au premier déplacement (PM) ou à la fin du tour",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": -32513,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 29875,
+            "id_effect": 330813
+          },
+          "translations": [],
+          "values": [],
+          "inner_states": []
+        }
+      ],
+      "translations": []
+    },
+    {
+      "id_shard": 29876,
+      "is_epic": 0,
+      "is_relic": 1,
+      "gfx_id": "81224139",
+      "id_shard_type": 812,
+      "id_color": null,
+      "name_shard": "Assimilation",
+      "max_usage": 0,
+      "level": null,
+      "parent_id": null,
+      "effects": [
+        {
+          "id_effect": 330844,
+          "name_effect": "-[#1] Résistance élémentaire",
+          "ui_position": 0,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": -32513,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 29876,
+            "id_effect": 330844
+          },
+          "translations": [],
+          "values": [
+            {
+              "id_spell_effect_value": 549959,
+              "offset": 0,
+              "damage": 50,
+              "ratio": 0,
+              "id_stats": 100,
+              "id_effect": 330844,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0,
+              "base": null,
+              "evolution": null,
+              "random_number": 0,
+              "statistics": {
+                "id_stats": 100,
+                "name_stats": "-Résistance élémentaire",
+                "image_stats": "element_resistance.webp",
+                "base_stats": 0,
+                "order_stats": 0,
+                "id_stats_type": null,
+                "order": 33,
+                "element": null,
+                "search_display": 1,
+                "related_to": null,
+                "related_multiplier": null,
+                "parent_statistic_id": 80,
+                "is_negative": 1
+              }
+            }
+          ],
+          "inner_states": []
+        },
+        {
+          "id_effect": 330853,
+          "name_effect": "\\nSi le porteur de l'état subit des dommages d'un ennemi :\\n[pl]100 Résistance dans l'élément subi (1 tour)",
+          "ui_position": 1,
+          "from_evolution": 0,
+          "container_min_level": 0,
+          "container_max_level": -32513,
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "pivot": {
+            "foreign_type": 29876,
+            "id_effect": 330853
           },
           "translations": [],
           "values": [],

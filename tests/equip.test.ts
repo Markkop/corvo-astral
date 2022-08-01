@@ -34,7 +34,7 @@ describe('EquipmentCommand', () => {
         },
         {
           name: 'Equipped',
-          value: '286 HP\n47 Dodge\n30 Prospecting\n6% Critical Hit\n218 Mastery of 2 random element\n118 Distance Mastery\n47 <:FIRE:888826773352120331> Resistance\n47 <:EARTH:888826773410820116> Resistance',
+          value: '286 HP\n47 Dodge\n6% Critical Hit\n218 Mastery of 2 random element\n118 Distance Mastery\n47 <:FIRE:888826773352120331> Resistance\n47 <:EARTH:888826773410820116> Resistance',
           inline: false
         }
       ],
@@ -182,7 +182,7 @@ describe('EquipmentCommand', () => {
     const spy = await executeCommandAndSpyReply(EquipCommand, command)
     expect(spy).toHaveBeenLastCalledWith(embedContaining({
       footer: {
-        text: "Equipment found: Dazzling Belt (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Hazieff's Helmet (Epic), Wa Wabbit's Cwown (Epic), Genetically Modified Epaulettes (Epic), Claymore of Fhenris (Epic), Bax Stab Ax (Epic), Claymus Shushu (Epic), Emiwlet Amulet (Epic), Lenald Walm Pelt (Epic), Vizion Dagger (Epic), Trool Warrior Spikes (Epic), Sanefty Belt (Epic), Happy Sram Kimono (Epic), Durable Shield (Epic), Limited Edition Cape (Epic), Dora Lagoole (Epic), Welder Mask (Epic), Viktorious Rapier (Epic) and other 5020 results"
+        text: "Equipment found: Dazzling Belt (Epic), Ush's Cards (Epic), Cockabootsledo (Epic), Hazieff's Helmet (Epic), Wa Wabbit's Cwown (Epic), Genetically Modified Epaulettes (Epic), Claymore of Fhenris (Epic), Bax Stab Ax (Epic), Claymus Shushu (Epic), Emiwlet Amulet (Epic), Lenald Walm Pelt (Epic), Vizion Dagger (Epic), Ancient Trool Warrior Spikes (Epic), Old Sanefty Belt (Epic), Happy Sram Kimono (Epic), Durable Shield (Epic), Limited Edition Cape (Epic), Dora Lagoole (Epic), Welder Mask (Epic), Viktorious Rapier (Epic) and other 5095 results"
       }
     }))
   })

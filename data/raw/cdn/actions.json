@@ -593,10 +593,10 @@
       "effect": "Gain : Barda (Connaissance de l'Equipement)"
     },
     "description": {
-      "fr": "[#1] Art du Barda",
-      "en": "[#1] Kit Skill",
-      "es": "[#1] Instrucción Militar",
-      "pt": "[#1] de Instrução Militar"
+      "fr": "[#1] Art du Barda <b color=\"E12727\">(disparaît bientôt !)</b>",
+      "en": "[#1] Kit Skill <b color=\"E12727\">(going soon!)</b>",
+      "es": "[#1] Instrucción militar <b color=\"E12727\">(¡desaparece pronto!)</b>",
+      "pt": "[#1] Instrução Militar <b color=\"E12727\">(desaparecerá em breve!)</b>"
     }
   },
   {
