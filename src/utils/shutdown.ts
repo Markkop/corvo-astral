@@ -1,5 +1,5 @@
 export function getDaysUntilShutdown() {
-  const shutdownDate = new Date('09/30/2022')
+  const shutdownDate = new Date('11/30/2022')
   const diffTime = Number(shutdownDate) - Number(new Date(Date.now()))
   if (diffTime < 0) {
     return 0
