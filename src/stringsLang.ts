@@ -504,10 +504,10 @@ Découvrez comment contribuer sur /about`
   },
   donationExtraMessage(days: number) {
     return {
-      en: `\n\nThis bot might stop running in ${days} days, we\'re counting on your donation.\nTo find out more type \`.about\` or click [here](https://www.buymeacoffee.com/markkop)`,
-      fr: `\n\nCe bot pourrait cesser de fonctionner dans ${days} hours, nous comptons sur votre don.\nPour en savoir plus, tapez \`.about\` ou cliquez [ici](https://www.buymeacoffee.com/markkop)`,
-      pt: `\n\nEste bot pode parar de funcionar em ${days} dias, contamos com sua doação.\nPara saber mais digite \`.about\` ou clique [aqui](https://www.buymeacoffee.com/markkop)`,
-      es: `\n\nEste bot podría dejar de funcionar en ${days} días, contamos con su donación.\nPara obtener más información, escriba \`.about\` o haga clic [aquí](https://www.buymeacoffee.com/markkop)`,
+      en: `\n\nThis bot is not guaranteed to work unless we fund a dedicated hosting server.\nTo find out more type \`.about\` or click [here](https://www.buymeacoffee.com/markkop)`,
+      fr: `\n\nCe bot n'est pas garanti de fonctionner à moins que nous ne financions un serveur d'hébergement dédié.\nPour en savoir plus, tapez \`.about\` ou cliquez [ici](https://www.buymeacoffee.com/markkop)`,
+      pt: `\n\nEste bot não tem garantia de funcionamento, a menos que financiemos um servidor de hospedagem dedicado.\nPara saber mais digite \`.about\` ou clique [aqui](https://www.buymeacoffee.com/markkop)`,
+      es: `\n\nNo se garantiza que este bot funcione a menos que financiemos un servidor de alojamiento dedicado.\nPara obtener más información, escriba \`.about\` o haga clic [aquí](https://www.buymeacoffee.com/markkop)`,
     }
   },
   aboutText: {
