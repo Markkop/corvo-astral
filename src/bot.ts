@@ -61,6 +61,9 @@ class Bot {
 
   private listenTo8080() {
     const app = express()
+    app.get('/', (req, res) => {
+      res.send('Ok')
+    })
     app.listen(8080)
   }
 
