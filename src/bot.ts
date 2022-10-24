@@ -2,6 +2,7 @@ import 'module-alias/register'
 require('dotenv').config()
 import { Client, Interaction, Message, MessageReaction, TextChannel, User, Intents, Guild } from 'discord.js'
 import cron from 'node-cron'
+import express from 'express'
 import { handleInteractionError, handleMessageError, handleReactionError } from './utils/handleError'
 import { ConfigManager, MessageManager } from '@managers'
 import ReactionService from './services/ReactionService'
@@ -58,12 +59,18 @@ class Bot {
     this.client.login(this.token)
   }
 
+  private listenTo8080() {
+    const app = express()
+    app.listen(8080)
+  }
+
   private onReady() {
     const servers = this.client.guilds.cache.size
     console.log(`Online on ${servers} servers: ${this.client.guilds.cache.map(guild => guild.name).join(', ')}`)
     this.client.user.setActivity('/about or /help', { type: 'PLAYING' })
     saveServersNumber(servers)
     this.registerCommandsAfterLoadingConfigs()
+    this.listenTo8080()
   }
 
   private onGuildCreate(guild: Guild) {
