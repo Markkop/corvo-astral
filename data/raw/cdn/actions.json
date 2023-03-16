@@ -589,18 +589,6 @@
   },
   {
     "definition": {
-      "id": 234,
-      "effect": "Gain : Barda (Connaissance de l'Equipement)"
-    },
-    "description": {
-      "fr": "[#1] Art du Barda <b color=\"E12727\">(disparaît bientôt !)</b>",
-      "en": "[#1] Kit Skill <b color=\"E12727\">(going soon!)</b>",
-      "es": "[#1] Instrucción militar <b color=\"E12727\">(¡desaparece pronto!)</b>",
-      "pt": "[#1] Instrução Militar <b color=\"E12727\">(desaparecerá em breve!)</b>"
-    }
-  },
-  {
-    "definition": {
       "id": 304,
       "effect": "State : Applique un état"
     },
@@ -771,6 +759,18 @@
       "en": "-[#1] Critical Mastery",
       "es": "-[#1] dominio crítico",
       "pt": "-[#1] de Domínio de crítico"
+    }
+  },
+  {
+    "definition": {
+      "id": 1057,
+      "effect": "Perte : Maîtrise Monocible"
+    },
+    "description": {
+      "fr": "-[#1] Maîtrise Monocible",
+      "en": "-[#1] Single Target Mastery",
+      "es": "-[#1] dominio monobjetivo",
+      "pt": "-[#1] de Domínio de alvo único"
     }
   },
   {

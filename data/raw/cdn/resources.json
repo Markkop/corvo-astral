@@ -1833,8 +1833,8 @@
       "isBlocking": false,
       "idealRainRangeMin": 0,
       "idealRainRangeMax": 100,
-      "idealTemperatureRangeMin": 10,
-      "idealTemperatureRangeMax": 30,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
       "iconGfxId": 28118128,
       "lastEvolutionStep": 16,
       "usableByHeroes": false,
@@ -2822,7 +2822,7 @@
       "idealRainRangeMax": 0,
       "idealTemperatureRangeMin": 5,
       "idealTemperatureRangeMax": 25,
-      "iconGfxId": 26027852,
+      "iconGfxId": 30927852,
       "lastEvolutionStep": 1,
       "usableByHeroes": false,
       "idealRain": 2
@@ -3210,27 +3210,6 @@
       "en": "Wakfu Tree",
       "es": "Árbol Wakfu",
       "pt": "Árvore Wakfu"
-    }
-  },
-  {
-    "definition": {
-      "id": 804,
-      "resourceType": 1,
-      "isBlocking": true,
-      "idealRainRangeMin": 0,
-      "idealRainRangeMax": 0,
-      "idealTemperatureRangeMin": -5,
-      "idealTemperatureRangeMax": 25,
-      "iconGfxId": 30626395,
-      "lastEvolutionStep": 1,
-      "usableByHeroes": false,
-      "idealRain": 1
-    },
-    "title": {
-      "fr": "Sakoura Mystique",
-      "en": "Mystical Sakura",
-      "es": "Sakura mística",
-      "pt": "Sacura Mística"
     }
   }
 ]
