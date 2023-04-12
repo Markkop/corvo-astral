@@ -45,7 +45,8 @@ class Bot {
     this.client = client
     this.token = token
     this.configManager = configManager
-    cron.schedule('1 0 * * *', this.sendDailyAlmanaxBonus.bind(this))
+    // Disabled due to the new Almanax changes
+    // cron.schedule('1 0 * * *', this.sendDailyAlmanaxBonus.bind(this))
   }
 
   public listen(): void {
