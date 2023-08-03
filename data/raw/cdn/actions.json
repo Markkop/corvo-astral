@@ -109,6 +109,18 @@
   },
   {
     "definition": {
+      "id": 42,
+      "effect": "OLD - Deboost : PM"
+    },
+    "description": {
+      "fr": "-[#1] PM {[~2]?([#2]%):}",
+      "en": "-[#1] MP {[~2]?([#2]%):}",
+      "es": "-[#1] PM {[~2]?([#2]%):}",
+      "pt": "-[#1] PM {[~2]?([#2]%):}"
+    }
+  },
+  {
+    "definition": {
       "id": 56,
       "effect": "Deboost : PA"
     },

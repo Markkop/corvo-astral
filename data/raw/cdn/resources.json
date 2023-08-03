@@ -3211,5 +3211,41 @@
       "es": "Árbol Wakfu",
       "pt": "Árvore Wakfu"
     }
+  },
+  {
+    "definition": {
+      "id": 824,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 80929569,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Arbre de Wakfu",
+      "en": "Wakfu Tree",
+      "es": "Árbol de Wakfu",
+      "pt": "Árvore de Wakfu"
+    }
+  },
+  {
+    "definition": {
+      "id": 825,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31331006,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    }
   }
 ]
