@@ -1,8 +1,7 @@
 # :crescent_moon: Corvo Astral
 
-[![build](https://github.com/Markkop/corvo-astral/actions/workflows/production.yml/badge.svg)](https://github.com/Markkop/corvo-astral/actions/workflows/production.yml)
-![Repo status](https://www.repostatus.org/badges/latest/active.svg)
-[![servers](https://img.shields.io/endpoint?url=https://mark-nest.herokuapp.com/api/corvo-astral-servers)](https://discord.com/api/oauth2/authorize?client_id=750529201161109507&permissions=1342565456&scope=bot)
+[![https://img.shields.io/badge/host-koyeb-blue](https://img.shields.io/badge/host-koyeb-blue)](https://www.koyeb.com/)
+![https://img.shields.io/badge/repo%20status-maintenance-yellow](https://img.shields.io/badge/repo%20status-maintenance-yellow)
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
 Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that provides information about the [Wakfu MMORPG](https://www.wakfu.com/) game.
@@ -217,5 +216,5 @@ git add .
 git commit -m "<commit name>"
 git push origin <branch name>
 
-# Deploy is made automatically on master via Travis-CI to Heroku
+# Deploy is made automatically on master via Github Actions to Koyeb
 ```
