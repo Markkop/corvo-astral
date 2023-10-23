@@ -377,10 +377,10 @@
       "effect": "Gain : Coup Critique (%)"
     },
     "description": {
-      "fr": "[#1]% Coup Critique",
+      "fr": "[#1]% Coup critique",
       "en": "[#1]% Critical Hit",
-      "es": "[#1]% golpe crítico",
-      "pt": "[#1]% de Golpe crítico"
+      "es": "[#1]% de golpe crítico",
+      "pt": "[#1]% de golpe crítico"
     }
   },
   {
@@ -437,10 +437,10 @@
       "effect": "Perte : Coup Critique (%)"
     },
     "description": {
-      "fr": "-[#1]% Coup Critique",
+      "fr": "-[#1]% Coup critique",
       "en": "-[#1]% Critical Hit",
-      "es": "-[#1]% golpe crítico",
-      "pt": "-[#1]% de Golpe crítico"
+      "es": "-[#1]% de golpe crítico",
+      "pt": "-[#1]% de golpe crítico"
     }
   },
   {
@@ -703,30 +703,6 @@
   },
   {
     "definition": {
-      "id": 1050,
-      "effect": "Gain : Maîtrise Zone"
-    },
-    "description": {
-      "fr": "[#1] Maîtrise Zone",
-      "en": "[#1] Area Mastery",
-      "es": "[#1] dominio zona",
-      "pt": "[#1] de Domínio de zona"
-    }
-  },
-  {
-    "definition": {
-      "id": 1051,
-      "effect": "Gain : Maîtrise Monocible"
-    },
-    "description": {
-      "fr": "[#1] Maîtrise Monocible",
-      "en": "[#1] Single Target Mastery",
-      "es": "[#1] dominio monobjetivo",
-      "pt": "[#1] de Domínio de alvo único"
-    }
-  },
-  {
-    "definition": {
       "id": 1052,
       "effect": "Gain : Maîtrise Mêlée"
     },
@@ -775,14 +751,14 @@
   },
   {
     "definition": {
-      "id": 1057,
-      "effect": "Perte : Maîtrise Monocible"
+      "id": 1059,
+      "effect": "Perte : Maîtrise Mêlée"
     },
     "description": {
-      "fr": "-[#1] Maîtrise Monocible",
-      "en": "-[#1] Single Target Mastery",
-      "es": "-[#1] dominio monobjetivo",
-      "pt": "-[#1] de Domínio de alvo único"
+      "fr": "-[#1] Maîtrise Mêlée",
+      "en": "-[#1] Melee Mastery",
+      "es": "-[#1] dominio de melé",
+      "pt": "-[#1] Domínio de curta distância"
     }
   },
   {

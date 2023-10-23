@@ -3246,6 +3246,33 @@
       "lastEvolutionStep": 1,
       "usableByHeroes": false,
       "idealRain": 1
+    },
+    "title": {
+      "fr": "Fleur céleste",
+      "en": "Celestial Flower",
+      "es": "Flor celestial",
+      "pt": "Flor Celeste"
+    }
+  },
+  {
+    "definition": {
+      "id": 826,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 80931173,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Arbre d'Halouine",
+      "en": "Al Howin Tree",
+      "es": "Árbol de Haluín",
+      "pt": "Árvore de Relouin"
     }
   }
 ]

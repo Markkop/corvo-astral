@@ -1,346 +1,6 @@
 {
   "shards": [
     {
-      "id_shard": 27095,
-      "is_epic": null,
-      "is_relic": null,
-      "gfx_id": "81127095",
-      "id_shard_type": 811,
-      "id_color": 1,
-      "name_shard": "Maîtrise Monocible",
-      "max_usage": null,
-      "level": null,
-      "parent_id": null,
-      "image_color_empty": "shard_red_empty",
-      "image_color_full": "shard_red_full",
-      "effects": [
-        {
-          "id_effect": 283225,
-          "name_effect": "[#1] Maîtrise Monocible",
-          "ui_position": 0,
-          "from_evolution": 1,
-          "container_min_level": 1,
-          "container_max_level": 5,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 27095,
-            "id_effect": 283225
-          },
-          "translations": [],
-          "values": [
-            {
-              "id_spell_effect_value": 808114,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 1.5,
-              "id_stats": 1051,
-              "id_effect": 283225,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 1051,
-                "name_stats": "Maîtrise Monocible",
-                "image_stats": "singletarget_mastery.webp",
-                "base_stats": 0,
-                "order_stats": 7,
-                "id_stats_type": 5,
-                "order": 20,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 287118,
-          "name_effect": "[#1] Maîtrise Monocible",
-          "ui_position": 1,
-          "from_evolution": -1,
-          "container_min_level": 6,
-          "container_max_level": 9,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 27095,
-            "id_effect": 287118
-          },
-          "translations": [],
-          "values": [
-            {
-              "id_spell_effect_value": 808115,
-              "offset": 0,
-              "damage": -16.5,
-              "ratio": 4.5,
-              "id_stats": 1051,
-              "id_effect": 287118,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 1051,
-                "name_stats": "Maîtrise Monocible",
-                "image_stats": "singletarget_mastery.webp",
-                "base_stats": 0,
-                "order_stats": 7,
-                "id_stats_type": 5,
-                "order": 20,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 287119,
-          "name_effect": "[#1] Maîtrise Monocible",
-          "ui_position": 2,
-          "from_evolution": 1,
-          "container_min_level": 10,
-          "container_max_level": 11,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 27095,
-            "id_effect": 287119
-          },
-          "translations": [],
-          "values": [
-            {
-              "id_spell_effect_value": 808116,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 3,
-              "id_stats": 1051,
-              "id_effect": 287119,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 1051,
-                "name_stats": "Maîtrise Monocible",
-                "image_stats": "singletarget_mastery.webp",
-                "base_stats": 0,
-                "order_stats": 7,
-                "id_stats_type": 5,
-                "order": 20,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        }
-      ],
-      "double_bonus": [
-        {
-          "id_equipment_type": 134,
-          "image_equipment_type": "helmet.png",
-          "pivot": {
-            "id_shard": 27095,
-            "id_equipment_type": 134
-          }
-        },
-        {
-          "id_equipment_type": 119,
-          "image_equipment_type": "boots.png",
-          "pivot": {
-            "id_shard": 27095,
-            "id_equipment_type": 119
-          }
-        }
-      ],
-      "translations": []
-    },
-    {
-      "id_shard": 27096,
-      "is_epic": null,
-      "is_relic": null,
-      "gfx_id": "81127095",
-      "id_shard_type": 811,
-      "id_color": 1,
-      "name_shard": "Maîtrise Zone",
-      "max_usage": null,
-      "level": null,
-      "parent_id": null,
-      "image_color_empty": "shard_red_empty",
-      "image_color_full": "shard_red_full",
-      "effects": [
-        {
-          "id_effect": 283332,
-          "name_effect": "[#1] Maîtrise Zone",
-          "ui_position": 0,
-          "from_evolution": 1,
-          "container_min_level": 1,
-          "container_max_level": 5,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 27096,
-            "id_effect": 283332
-          },
-          "translations": [],
-          "values": [
-            {
-              "id_spell_effect_value": 808117,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 1.5,
-              "id_stats": 1050,
-              "id_effect": 283332,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 1050,
-                "name_stats": "Maîtrise Zone",
-                "image_stats": "area_mastery.webp",
-                "base_stats": 0,
-                "order_stats": 8,
-                "id_stats_type": 5,
-                "order": 23,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 287108,
-          "name_effect": "[#1] Maîtrise Zone",
-          "ui_position": 1,
-          "from_evolution": -1,
-          "container_min_level": 6,
-          "container_max_level": 9,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 27096,
-            "id_effect": 287108
-          },
-          "translations": [],
-          "values": [
-            {
-              "id_spell_effect_value": 808118,
-              "offset": 0,
-              "damage": -16.5,
-              "ratio": 4.5,
-              "id_stats": 1050,
-              "id_effect": 287108,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 1050,
-                "name_stats": "Maîtrise Zone",
-                "image_stats": "area_mastery.webp",
-                "base_stats": 0,
-                "order_stats": 8,
-                "id_stats_type": 5,
-                "order": 23,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        },
-        {
-          "id_effect": 287109,
-          "name_effect": "[#1] Maîtrise Zone",
-          "ui_position": 2,
-          "from_evolution": 1,
-          "container_min_level": 10,
-          "container_max_level": 11,
-          "is_critical": 0,
-          "is_use_effect": 0,
-          "pivot": {
-            "foreign_type": 27096,
-            "id_effect": 287109
-          },
-          "translations": [],
-          "values": [
-            {
-              "id_spell_effect_value": 808119,
-              "offset": 0,
-              "damage": 0,
-              "ratio": 3,
-              "id_stats": 1050,
-              "id_effect": 287109,
-              "will_calculate_damage": 0,
-              "will_calculate_heal": 0,
-              "base": null,
-              "evolution": null,
-              "random_number": 0,
-              "statistics": {
-                "id_stats": 1050,
-                "name_stats": "Maîtrise Zone",
-                "image_stats": "area_mastery.webp",
-                "base_stats": 0,
-                "order_stats": 8,
-                "id_stats_type": 5,
-                "order": 23,
-                "element": null,
-                "search_display": 1,
-                "related_to": null,
-                "related_multiplier": null,
-                "parent_statistic_id": null,
-                "is_negative": null
-              }
-            }
-          ]
-        }
-      ],
-      "double_bonus": [
-        {
-          "id_equipment_type": 120,
-          "image_equipment_type": "necklace.png",
-          "pivot": {
-            "id_shard": 27096,
-            "id_equipment_type": 120
-          }
-        },
-        {
-          "id_equipment_type": 133,
-          "image_equipment_type": "belt.png",
-          "pivot": {
-            "id_shard": 27096,
-            "id_equipment_type": 133
-          }
-        }
-      ],
-      "translations": []
-    },
-    {
       "id_shard": 27097,
       "is_epic": null,
       "is_relic": null,
@@ -370,7 +30,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808120,
+              "id_spell_effect_value": 941252,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -415,7 +75,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808121,
+              "id_spell_effect_value": 941253,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -460,7 +120,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808122,
+              "id_spell_effect_value": 941254,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -540,7 +200,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808123,
+              "id_spell_effect_value": 941255,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -585,7 +245,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808124,
+              "id_spell_effect_value": 941256,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -630,7 +290,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808125,
+              "id_spell_effect_value": 941257,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -718,10 +378,10 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808126,
+              "id_spell_effect_value": 941258,
               "offset": 0,
               "damage": 0,
-              "ratio": 2,
+              "ratio": 1.5,
               "id_stats": 1055,
               "id_effect": 283335,
               "will_calculate_damage": 0,
@@ -763,10 +423,10 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808127,
+              "id_spell_effect_value": 941259,
               "offset": 0,
-              "damage": -22,
-              "ratio": 6,
+              "damage": -16.5,
+              "ratio": 4.5,
               "id_stats": 1055,
               "id_effect": 287112,
               "will_calculate_damage": 0,
@@ -808,10 +468,10 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808128,
+              "id_spell_effect_value": 941260,
               "offset": 0,
               "damage": 0,
-              "ratio": 4,
+              "ratio": 3,
               "id_stats": 1055,
               "id_effect": 287113,
               "will_calculate_damage": 0,
@@ -888,7 +548,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808146,
+              "id_spell_effect_value": 941278,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -968,7 +628,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808129,
+              "id_spell_effect_value": 941261,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -1013,7 +673,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808130,
+              "id_spell_effect_value": 941262,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -1058,7 +718,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808131,
+              "id_spell_effect_value": 941263,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1146,7 +806,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808132,
+              "id_spell_effect_value": 941264,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -1191,7 +851,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808133,
+              "id_spell_effect_value": 941265,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -1236,7 +896,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808134,
+              "id_spell_effect_value": 941266,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1316,7 +976,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808138,
+              "id_spell_effect_value": 941270,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1361,7 +1021,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808139,
+              "id_spell_effect_value": 941271,
               "offset": 0,
               "damage": -33,
               "ratio": 9,
@@ -1406,7 +1066,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808140,
+              "id_spell_effect_value": 941272,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -1486,7 +1146,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808141,
+              "id_spell_effect_value": 941273,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -1531,7 +1191,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808142,
+              "id_spell_effect_value": 941274,
               "offset": 0,
               "damage": -22,
               "ratio": 6,
@@ -1576,7 +1236,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808143,
+              "id_spell_effect_value": 941275,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -1656,7 +1316,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808144,
+              "id_spell_effect_value": 941276,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1736,7 +1396,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808111,
+              "id_spell_effect_value": 941243,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -1781,7 +1441,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808112,
+              "id_spell_effect_value": 941244,
               "offset": 0,
               "damage": -11,
               "ratio": 3,
@@ -1826,7 +1486,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808113,
+              "id_spell_effect_value": 941245,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -1906,7 +1566,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808135,
+              "id_spell_effect_value": 941267,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1951,7 +1611,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808136,
+              "id_spell_effect_value": 941268,
               "offset": 0,
               "damage": -33,
               "ratio": 9,
@@ -1996,7 +1656,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808137,
+              "id_spell_effect_value": 941269,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -2076,7 +1736,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808145,
+              "id_spell_effect_value": 941277,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2156,7 +1816,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808147,
+              "id_spell_effect_value": 941279,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -2236,7 +1896,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808148,
+              "id_spell_effect_value": 941280,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -2281,7 +1941,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808149,
+              "id_spell_effect_value": 941281,
               "offset": 0,
               "damage": -44,
               "ratio": 12,
@@ -2326,7 +1986,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808150,
+              "id_spell_effect_value": 941282,
               "offset": 0,
               "damage": 0,
               "ratio": 8,
@@ -2414,10 +2074,10 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808151,
+              "id_spell_effect_value": 941283,
               "offset": 0,
               "damage": 0,
-              "ratio": 2,
+              "ratio": 1.5,
               "id_stats": 26,
               "id_effect": 283347,
               "will_calculate_damage": 0,
@@ -2459,10 +2119,10 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808152,
+              "id_spell_effect_value": 941284,
               "offset": 0,
-              "damage": -22,
-              "ratio": 6,
+              "damage": -16.5,
+              "ratio": 4.5,
               "id_stats": 26,
               "id_effect": 287116,
               "will_calculate_damage": 0,
@@ -2504,10 +2164,10 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808153,
+              "id_spell_effect_value": 941285,
               "offset": 0,
               "damage": 0,
-              "ratio": 4,
+              "ratio": 3,
               "id_stats": 26,
               "id_effect": 287117,
               "will_calculate_damage": 0,
@@ -2584,7 +2244,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807953,
+              "id_spell_effect_value": 941085,
               "offset": 0,
               "damage": 0,
               "ratio": -7.5,
@@ -2661,7 +2321,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807954,
+              "id_spell_effect_value": 941086,
               "offset": 0,
               "damage": 0,
               "ratio": 12.5,
@@ -2738,7 +2398,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807955,
+              "id_spell_effect_value": 941087,
               "offset": 0,
               "damage": 0,
               "ratio": 200,
@@ -2815,7 +2475,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807956,
+              "id_spell_effect_value": 941088,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -2851,7 +2511,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -2913,7 +2573,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -2923,7 +2583,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807957,
+              "id_spell_effect_value": 941089,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -3004,7 +2664,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3014,7 +2674,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807958,
+              "id_spell_effect_value": 941090,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -3105,7 +2765,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807959,
+              "id_spell_effect_value": 941091,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -3172,7 +2832,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3182,7 +2842,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807960,
+              "id_spell_effect_value": 941092,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -3249,7 +2909,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3259,7 +2919,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807961,
+              "id_spell_effect_value": 941093,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -3322,11 +2982,11 @@
       "effects": [
         {
           "id_effect": 283405,
-          "name_effect": "En début de combat :\\n<b>[#1]% Coup Critique</b>, <b>[#2]% Parade</b>, <b>[#3] Volonté</b>",
+          "name_effect": "En début de combat :\\n<b>[#1]% Coup critique</b>, <b>[#2]% Parade</b>, <b>[#3] Volonté</b>",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3336,7 +2996,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807962,
+              "id_spell_effect_value": 941094,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -3364,7 +3024,7 @@
               }
             },
             {
-              "id_spell_effect_value": 807963,
+              "id_spell_effect_value": 941095,
               "offset": 1,
               "damage": 0,
               "ratio": 1.5,
@@ -3392,7 +3052,7 @@
               }
             },
             {
-              "id_spell_effect_value": 807964,
+              "id_spell_effect_value": 941096,
               "offset": 2,
               "damage": 0,
               "ratio": 1.5,
@@ -3473,7 +3133,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3483,7 +3143,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807965,
+              "id_spell_effect_value": 941097,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -3560,7 +3220,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807966,
+              "id_spell_effect_value": 941098,
               "offset": 0,
               "damage": 0,
               "ratio": 30,
@@ -3637,7 +3297,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807967,
+              "id_spell_effect_value": 941099,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -3718,7 +3378,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3728,7 +3388,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807968,
+              "id_spell_effect_value": 941100,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -3795,7 +3455,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3805,7 +3465,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807969,
+              "id_spell_effect_value": 941101,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -3841,7 +3501,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3913,7 +3573,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807970,
+              "id_spell_effect_value": 941102,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -3941,7 +3601,7 @@
               }
             },
             {
-              "id_spell_effect_value": 807971,
+              "id_spell_effect_value": 941103,
               "offset": 1,
               "damage": 25,
               "ratio": 0,
@@ -4018,7 +3678,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807972,
+              "id_spell_effect_value": 941104,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -4064,7 +3724,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807973,
+              "id_spell_effect_value": 941105,
               "offset": 0,
               "damage": 0,
               "ratio": -7.5,
@@ -4141,7 +3801,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807979,
+              "id_spell_effect_value": 941111,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4232,7 +3892,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807980,
+              "id_spell_effect_value": 941112,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4326,7 +3986,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4336,7 +3996,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807981,
+              "id_spell_effect_value": 941113,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -4372,7 +4032,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4382,7 +4042,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807982,
+              "id_spell_effect_value": 941114,
               "offset": 0,
               "damage": 40,
               "ratio": -10,
@@ -4500,7 +4160,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807983,
+              "id_spell_effect_value": 941115,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4514,7 +4174,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 807984,
+              "id_spell_effect_value": 941116,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -4632,7 +4292,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807985,
+              "id_spell_effect_value": 941117,
               "offset": 0,
               "damage": 0,
               "ratio": 15,
@@ -4736,7 +4396,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807986,
+              "id_spell_effect_value": 941118,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4840,7 +4500,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807987,
+              "id_spell_effect_value": 941119,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -4944,7 +4604,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807988,
+              "id_spell_effect_value": 941120,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -5038,7 +4698,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5048,7 +4708,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807989,
+              "id_spell_effect_value": 941121,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -5152,7 +4812,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807990,
+              "id_spell_effect_value": 941122,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -5365,11 +5025,11 @@
       "effects": [
         {
           "id_effect": 283316,
-          "name_effect": "[#1]% Coup Critique",
+          "name_effect": "[#1]% Coup critique",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5379,7 +5039,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807991,
+              "id_spell_effect_value": 941123,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -5487,7 +5147,7 @@
       "effects": [
         {
           "id_effect": 283322,
-          "name_effect": "<b>[#1]</b>% aux malus de caractéristiques reçus.\\nConcerne tous les malus de caractéristiques (Maîtrises, Résistances, Armure, Coup Critique...) reçus en combat, lancés par une entité autre que le porteur de l'état.\\nLa valeur est toujours arrondie à l'inférieur.",
+          "name_effect": "<b>[#1]</b>% aux malus de caractéristiques reçus.\\nConcerne tous les malus de caractéristiques (Maîtrises, Résistances, Armure, Coup critique...) reçus en combat, lancés par une entité autre que le porteur de l'état.\\nLa valeur est toujours arrondie à l'inférieur.",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
@@ -5501,7 +5161,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807992,
+              "id_spell_effect_value": 941124,
               "offset": 0,
               "damage": 0,
               "ratio": -5,
@@ -5605,7 +5265,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807993,
+              "id_spell_effect_value": 941125,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -5713,7 +5373,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5723,7 +5383,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807994,
+              "id_spell_effect_value": 941126,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -5769,7 +5429,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807995,
+              "id_spell_effect_value": 941127,
               "offset": 0,
               "damage": 30,
               "ratio": -10,
@@ -5874,7 +5534,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807996,
+              "id_spell_effect_value": 941128,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -5910,7 +5570,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5920,7 +5580,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807997,
+              "id_spell_effect_value": 941129,
               "offset": 0,
               "damage": 225,
               "ratio": -75,
@@ -6011,7 +5671,7 @@
       "effects": [
         {
           "id_effect": 283386,
-          "name_effect": "Lorsque les PV sont inférieurs à 50% :\\n[pl]<b>[#1]% Coup Critique</b> ",
+          "name_effect": "Lorsque les PV sont inférieurs à 50% :\\n[pl]<b>[#1]% Coup critique</b> ",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
@@ -6025,7 +5685,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807998,
+              "id_spell_effect_value": 941130,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -6143,7 +5803,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807999,
+              "id_spell_effect_value": 941131,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -6189,7 +5849,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808000,
+              "id_spell_effect_value": 941132,
               "offset": 0,
               "damage": 450,
               "ratio": -150,
@@ -6235,7 +5895,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808001,
+              "id_spell_effect_value": 941133,
               "offset": 0,
               "damage": 450,
               "ratio": -150,
@@ -6330,7 +5990,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6340,7 +6000,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808002,
+              "id_spell_effect_value": 941134,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -6444,7 +6104,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808003,
+              "id_spell_effect_value": 941135,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -6538,7 +6198,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6548,7 +6208,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808004,
+              "id_spell_effect_value": 941136,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -6658,7 +6318,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808005,
+              "id_spell_effect_value": 941137,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -6762,7 +6422,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808006,
+              "id_spell_effect_value": 941138,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -6866,7 +6526,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808007,
+              "id_spell_effect_value": 941139,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -6960,7 +6620,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6970,7 +6630,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808008,
+              "id_spell_effect_value": 941140,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7051,7 +6711,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7061,7 +6721,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808009,
+              "id_spell_effect_value": 941141,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7152,7 +6812,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808010,
+              "id_spell_effect_value": 941142,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7256,7 +6916,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808011,
+              "id_spell_effect_value": 941143,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7346,11 +7006,11 @@
       "effects": [
         {
           "id_effect": 283474,
-          "name_effect": "<b>[#1]% Coup Critique</b>",
+          "name_effect": "<b>[#1]% Coup critique</b>",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7360,7 +7020,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808012,
+              "id_spell_effect_value": 941144,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -7478,7 +7138,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808013,
+              "id_spell_effect_value": 941145,
               "offset": 0,
               "damage": 0,
               "ratio": 150,
@@ -7572,7 +7232,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7582,7 +7242,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808014,
+              "id_spell_effect_value": 941146,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -7596,7 +7256,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808015,
+              "id_spell_effect_value": 941147,
               "offset": 1,
               "damage": 0,
               "ratio": 10,
@@ -7677,7 +7337,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7687,7 +7347,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808016,
+              "id_spell_effect_value": 941148,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -7781,7 +7441,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7791,7 +7451,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808017,
+              "id_spell_effect_value": 941149,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -7885,7 +7545,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7895,7 +7555,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808018,
+              "id_spell_effect_value": 941150,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -7999,11 +7659,11 @@
       "effects": [
         {
           "id_effect": 283540,
-          "name_effect": "<b>[#1]</b>% Coup Critique par tour (max 30)",
+          "name_effect": "<b>[#1]</b>% Coup critique par tour (max 30)",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8013,7 +7673,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808019,
+              "id_spell_effect_value": 941151,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -8096,7 +7756,7 @@
       "gfx_id": "81228822",
       "id_shard_type": 812,
       "id_color": null,
-      "name_shard": "Expert des Coups Critiques I",
+      "name_shard": "Expert des Coups critiques I",
       "max_usage": 4,
       "level": 1,
       "parent_id": null,
@@ -8117,7 +7777,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808020,
+              "id_spell_effect_value": 941152,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8142,7 +7802,7 @@
           "gfx_id": "81228823",
           "id_shard_type": 812,
           "id_color": null,
-          "name_shard": "Expert des Coups Critiques II",
+          "name_shard": "Expert des Coups critiques II",
           "max_usage": 4,
           "level": 2,
           "parent_id": 28884,
@@ -8155,7 +7815,7 @@
           "gfx_id": "81227111",
           "id_shard_type": 812,
           "id_color": null,
-          "name_shard": "Expert des Coups Critiques III",
+          "name_shard": "Expert des Coups critiques III",
           "max_usage": 4,
           "level": 3,
           "parent_id": 28884,
@@ -8207,11 +7867,11 @@
       "effects": [
         {
           "id_effect": 283562,
-          "name_effect": "En début de combat :\\n<b>[#1]% Coup Critique</b> (1 tour)\\n<b>[#2]</b>% du niveau en Maîtrise Critique (1 tour)",
+          "name_effect": "En début de combat :\\n<b>[#1]% Coup critique</b> (1 tour)\\n<b>[#2]</b>% du niveau en Maîtrise Critique (1 tour)",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8221,7 +7881,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808021,
+              "id_spell_effect_value": 941153,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -8235,7 +7895,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808022,
+              "id_spell_effect_value": 941154,
               "offset": 1,
               "damage": 0,
               "ratio": 5,
@@ -8339,7 +7999,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808023,
+              "id_spell_effect_value": 941155,
               "offset": 0,
               "damage": 0,
               "ratio": 7,
@@ -8420,7 +8080,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8430,7 +8090,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808024,
+              "id_spell_effect_value": 941156,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8534,7 +8194,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808025,
+              "id_spell_effect_value": 941157,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -8628,7 +8288,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8638,7 +8298,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808026,
+              "id_spell_effect_value": 941158,
               "offset": 0,
               "damage": 0,
               "ratio": -5,
@@ -8729,7 +8389,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808027,
+              "id_spell_effect_value": 941159,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -8847,7 +8507,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808028,
+              "id_spell_effect_value": 941160,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -8930,11 +8590,11 @@
       "effects": [
         {
           "id_effect": 315476,
-          "name_effect": "Lorsque le porteur de l'état commence son tour avec tous ses PW (ou toute sa BQ) :\\n[pl]<b>[#1]% Coup Critique</b> (1 tour)",
+          "name_effect": "Lorsque le porteur de l'état commence son tour avec tous ses PW (ou toute sa BQ) :\\n[pl]<b>[#1]% Coup critique</b> (1 tour)",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8944,7 +8604,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808029,
+              "id_spell_effect_value": 941161,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -9049,7 +8709,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808030,
+              "id_spell_effect_value": 941162,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -9063,7 +8723,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808031,
+              "id_spell_effect_value": 941163,
               "offset": 1,
               "damage": 0,
               "ratio": 100,
@@ -9157,7 +8817,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9167,7 +8827,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808032,
+              "id_spell_effect_value": 941164,
               "offset": 0,
               "damage": -25,
               "ratio": 5,
@@ -9277,7 +8937,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808033,
+              "id_spell_effect_value": 941165,
               "offset": 0,
               "damage": -10,
               "ratio": 0,
@@ -9291,7 +8951,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808034,
+              "id_spell_effect_value": 941166,
               "offset": 1,
               "damage": 0,
               "ratio": 15,
@@ -9395,7 +9055,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808035,
+              "id_spell_effect_value": 941167,
               "offset": 0,
               "damage": -10,
               "ratio": 0,
@@ -9409,7 +9069,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808036,
+              "id_spell_effect_value": 941168,
               "offset": 1,
               "damage": 0,
               "ratio": 15,
@@ -9503,7 +9163,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9513,7 +9173,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808037,
+              "id_spell_effect_value": 941169,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -9617,7 +9277,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808038,
+              "id_spell_effect_value": 941170,
               "offset": 0,
               "damage": 0,
               "ratio": 25,
@@ -9631,7 +9291,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808039,
+              "id_spell_effect_value": 941171,
               "offset": 1,
               "damage": 0,
               "ratio": 2,
@@ -9725,7 +9385,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9735,7 +9395,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808040,
+              "id_spell_effect_value": 941172,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -9829,7 +9489,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9839,7 +9499,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808041,
+              "id_spell_effect_value": 941173,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -9933,7 +9593,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9943,7 +9603,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808042,
+              "id_spell_effect_value": 941174,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -10024,7 +9684,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10034,7 +9694,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808043,
+              "id_spell_effect_value": 941175,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -10048,7 +9708,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808044,
+              "id_spell_effect_value": 941176,
               "offset": 1,
               "damage": 0,
               "ratio": -2,
@@ -10152,7 +9812,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808045,
+              "id_spell_effect_value": 941177,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10246,7 +9906,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10256,7 +9916,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808046,
+              "id_spell_effect_value": 941178,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -10364,7 +10024,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10374,7 +10034,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808047,
+              "id_spell_effect_value": 941179,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10468,7 +10128,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10478,7 +10138,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808048,
+              "id_spell_effect_value": 941180,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -10492,7 +10152,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808049,
+              "id_spell_effect_value": 941181,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -10600,7 +10260,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10610,7 +10270,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808050,
+              "id_spell_effect_value": 941182,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10714,7 +10374,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808051,
+              "id_spell_effect_value": 941183,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -10728,7 +10388,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808052,
+              "id_spell_effect_value": 941184,
               "offset": 1,
               "damage": 0,
               "ratio": 50,
@@ -10822,7 +10482,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10832,7 +10492,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808053,
+              "id_spell_effect_value": 941185,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -10950,7 +10610,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808054,
+              "id_spell_effect_value": 941186,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11116,7 +10776,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808055,
+              "id_spell_effect_value": 941187,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -11130,7 +10790,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808056,
+              "id_spell_effect_value": 941188,
               "offset": 1,
               "damage": 0,
               "ratio": -2,
@@ -11224,7 +10884,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11234,7 +10894,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808057,
+              "id_spell_effect_value": 941189,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -11280,7 +10940,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808058,
+              "id_spell_effect_value": 941190,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -11374,7 +11034,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11384,7 +11044,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808059,
+              "id_spell_effect_value": 941191,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11478,7 +11138,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11488,7 +11148,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808060,
+              "id_spell_effect_value": 941192,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -11502,7 +11162,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808061,
+              "id_spell_effect_value": 941193,
               "offset": 1,
               "damage": 0,
               "ratio": -3,
@@ -11583,7 +11243,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11593,7 +11253,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808062,
+              "id_spell_effect_value": 941194,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -11688,7 +11348,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11698,7 +11358,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808063,
+              "id_spell_effect_value": 941195,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -11712,7 +11372,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808064,
+              "id_spell_effect_value": 941196,
               "offset": 1,
               "damage": 0,
               "ratio": -3,
@@ -11806,7 +11466,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11816,7 +11476,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808065,
+              "id_spell_effect_value": 941197,
               "offset": 0,
               "damage": 0,
               "ratio": 8,
@@ -11924,7 +11584,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11934,7 +11594,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808066,
+              "id_spell_effect_value": 941198,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -11962,7 +11622,7 @@
               }
             },
             {
-              "id_spell_effect_value": 808067,
+              "id_spell_effect_value": 941199,
               "offset": 1,
               "damage": 0,
               "ratio": 0.5,
@@ -11990,7 +11650,7 @@
               }
             },
             {
-              "id_spell_effect_value": 808068,
+              "id_spell_effect_value": 941200,
               "offset": 2,
               "damage": 0,
               "ratio": 5,
@@ -12108,7 +11768,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808069,
+              "id_spell_effect_value": 941201,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -12226,7 +11886,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808070,
+              "id_spell_effect_value": 941202,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -12272,7 +11932,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808071,
+              "id_spell_effect_value": 941203,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -12363,7 +12023,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808070,
+              "id_spell_effect_value": 941202,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -12409,7 +12069,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808071,
+              "id_spell_effect_value": 941203,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -12490,7 +12150,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12500,7 +12160,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808072,
+              "id_spell_effect_value": 941204,
               "offset": 0,
               "damage": 3,
               "ratio": -1,
@@ -12546,7 +12206,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808073,
+              "id_spell_effect_value": 941205,
               "offset": 0,
               "damage": 75,
               "ratio": 0,
@@ -12641,7 +12301,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12651,7 +12311,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808074,
+              "id_spell_effect_value": 941206,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -12697,7 +12357,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808075,
+              "id_spell_effect_value": 941207,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -12788,7 +12448,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808076,
+              "id_spell_effect_value": 941208,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -12898,7 +12558,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808077,
+              "id_spell_effect_value": 941209,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -12926,7 +12586,7 @@
               }
             },
             {
-              "id_spell_effect_value": 808078,
+              "id_spell_effect_value": 941210,
               "offset": 1,
               "damage": 0,
               "ratio": 4,
@@ -13034,7 +12694,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13044,7 +12704,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808079,
+              "id_spell_effect_value": 941211,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -13138,7 +12798,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13148,7 +12808,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808080,
+              "id_spell_effect_value": 941212,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -13229,7 +12889,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13239,7 +12899,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808080,
+              "id_spell_effect_value": 941212,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -13320,7 +12980,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13330,7 +12990,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808080,
+              "id_spell_effect_value": 941212,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -13421,7 +13081,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808081,
+              "id_spell_effect_value": 941213,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -13529,7 +13189,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13539,7 +13199,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808084,
+              "id_spell_effect_value": 941216,
               "offset": 0,
               "damage": 0,
               "ratio": -6,
@@ -13553,7 +13213,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808085,
+              "id_spell_effect_value": 941217,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -13647,7 +13307,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13657,7 +13317,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808086,
+              "id_spell_effect_value": 941218,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -13751,7 +13411,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13761,7 +13421,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808087,
+              "id_spell_effect_value": 941219,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -13865,7 +13525,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808088,
+              "id_spell_effect_value": 941220,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -13959,7 +13619,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13969,7 +13629,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808089,
+              "id_spell_effect_value": 941221,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -13983,7 +13643,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 808090,
+              "id_spell_effect_value": 941222,
               "offset": 1,
               "damage": 0,
               "ratio": 4,
@@ -14087,7 +13747,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808091,
+              "id_spell_effect_value": 941223,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -14115,7 +13775,7 @@
               }
             },
             {
-              "id_spell_effect_value": 808092,
+              "id_spell_effect_value": 941224,
               "offset": 1,
               "damage": 20,
               "ratio": 0,
@@ -14233,7 +13893,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808093,
+              "id_spell_effect_value": 941225,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -14327,7 +13987,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14337,7 +13997,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808094,
+              "id_spell_effect_value": 941226,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -14441,7 +14101,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808095,
+              "id_spell_effect_value": 941227,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -14508,7 +14168,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14518,7 +14178,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808096,
+              "id_spell_effect_value": 941228,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -14595,7 +14255,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808097,
+              "id_spell_effect_value": 941229,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -14713,7 +14373,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808098,
+              "id_spell_effect_value": 941230,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -14790,11 +14450,11 @@
       "effects": [
         {
           "id_effect": 352951,
-          "name_effect": "Lorsque les PV sont supérieurs à 90% :\\n[pl]<b>[#1]% Coup Critique</b>",
+          "name_effect": "Lorsque les PV sont supérieurs à 90% :\\n[pl]<b>[#1]% Coup critique</b>",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14804,7 +14464,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808099,
+              "id_spell_effect_value": 941231,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -14922,7 +14582,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808100,
+              "id_spell_effect_value": 941232,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -15003,7 +14663,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15013,7 +14673,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808101,
+              "id_spell_effect_value": 941233,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -15107,7 +14767,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15117,7 +14777,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808102,
+              "id_spell_effect_value": 941234,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -15194,7 +14854,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808103,
+              "id_spell_effect_value": 941235,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -15298,7 +14958,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808104,
+              "id_spell_effect_value": 941236,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -15388,7 +15048,7 @@
       "effects": [
         {
           "id_effect": 353028,
-          "name_effect": "Si un coup non critique est effectué avec un sort élémentaire :\\n[pl]<b>[#1]% Coup Critique</b> au tour suivant",
+          "name_effect": "Si un coup non critique est effectué avec un sort élémentaire :\\n[pl]<b>[#1]% Coup critique</b> au tour suivant",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
@@ -15402,7 +15062,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808105,
+              "id_spell_effect_value": 941237,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -15512,7 +15172,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15572,11 +15232,11 @@
       "effects": [
         {
           "id_effect": 238177,
-          "name_effect": "Au lancement du combat, si le porteur de l'état a <b>10% Coup Critique ou moins</b> :\\n[pl][#1]% Dommages infligés\\n[pl]50 Résistance Critique",
+          "name_effect": "Au lancement du combat, si le porteur de l'état a <b>10% Coup critique ou moins</b> :\\n[pl][#1]% Dommages infligés\\n[pl]50 Résistance critique",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15586,7 +15246,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807945,
+              "id_spell_effect_value": 941077,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -15679,7 +15339,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807946,
+              "id_spell_effect_value": 941078,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -15726,7 +15386,7 @@
       "effects": [
         {
           "id_effect": 238166,
-          "name_effect": "Au lancement du combat, si le porteur de l'état a <b>40% Parade ou plus</b> :\\n[pl][#1]% Coup Critique\\n[pl]10% Dommages infligés en Coup critique",
+          "name_effect": "Au lancement du combat, si le porteur de l'état a <b>40% Parade ou plus</b> :\\n[pl][#1]% Coup critique\\n[pl]10% Dommages infligés en Coup critique",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
@@ -15740,7 +15400,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807947,
+              "id_spell_effect_value": 941079,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -15865,7 +15525,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807948,
+              "id_spell_effect_value": 941080,
               "offset": 0,
               "damage": 30,
               "ratio": 0,
@@ -15912,11 +15572,11 @@
       "effects": [
         {
           "id_effect": 238223,
-          "name_effect": "+10% Dommages infligés dans deux maîtrises secondaires (varient chaque tour).\\nTour 1 : Mêlée + Monocible\\nTour 2 : Distance + Monocible\\nTour 3 : Distance + Zone\\nTour 4 : Mêlée + Zone",
+          "name_effect": "+10% Dommages infligés lorsque le porteur respecte certaines conditions (varient chaque tour).\\nTour 1 : Le porteur est en Mêlée ou le sort est Monocible\\nTour 2 : Le porteur est à Distance ou le sort est en Monocible\\nTour 3 : Le porteur est à Distance ou le sort est en Zone\\nTour 4 : Le porteur est en Mêlée ou le sort est Zone",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15990,7 +15650,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807949,
+              "id_spell_effect_value": 941081,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -16018,7 +15678,7 @@
               }
             },
             {
-              "id_spell_effect_value": 807950,
+              "id_spell_effect_value": 941082,
               "offset": 1,
               "damage": 200,
               "ratio": 0,
@@ -16097,7 +15757,7 @@
       "effects": [
         {
           "id_effect": 256017,
-          "name_effect": "Au lancement du combat, si le porteur de l'état a <b>plus de Maîtrise Zone que de Maîtrise Mêlée</b> :\\n[pl]+20% Dommages infligés en mêlée et zone simultanément",
+          "name_effect": "Au lancement du combat, si le porteur a exactement 0 de Portée :\\n[pl]+20% Dommages infligés en mêlée et zone simultanément",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
@@ -16165,7 +15825,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16197,7 +15857,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16207,7 +15867,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807951,
+              "id_spell_effect_value": 941083,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -16258,7 +15918,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16300,7 +15960,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807952,
+              "id_spell_effect_value": 941084,
               "offset": 0,
               "damage": -30,
               "ratio": 0,
@@ -16337,7 +15997,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16375,7 +16035,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16385,7 +16045,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807974,
+              "id_spell_effect_value": 941106,
               "offset": 0,
               "damage": 2,
               "ratio": 0,
@@ -16413,7 +16073,7 @@
               }
             },
             {
-              "id_spell_effect_value": 807975,
+              "id_spell_effect_value": 941107,
               "offset": 1,
               "damage": 2,
               "ratio": 0,
@@ -16464,7 +16124,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16474,7 +16134,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 807976,
+              "id_spell_effect_value": 941108,
               "offset": 0,
               "damage": 25,
               "ratio": 0,
@@ -16488,7 +16148,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 807977,
+              "id_spell_effect_value": 941109,
               "offset": 1,
               "damage": 15,
               "ratio": 0,
@@ -16502,7 +16162,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 807978,
+              "id_spell_effect_value": 941110,
               "offset": 2,
               "damage": -30,
               "ratio": 0,
@@ -16603,7 +16263,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16635,7 +16295,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16667,7 +16327,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16731,7 +16391,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16763,7 +16423,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16801,7 +16461,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16833,7 +16493,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16929,7 +16589,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16961,7 +16621,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16999,7 +16659,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17033,7 +16693,7 @@
       "effects": [
         {
           "id_effect": 309489,
-          "name_effect": "À chaque mouvement, par PM utilisé :\\n[pl]+3% Parade (max 18) (1 tour)\\nSi le porteur de l'état effectue une parade hors de son tour :\\n[pl]Le bonus est transformé en Coup Critique au prochain tour",
+          "name_effect": "À chaque mouvement, par PM utilisé :\\n[pl]+3% Parade (max 18) (1 tour)\\nSi le porteur de l'état effectue une parade hors de son tour :\\n[pl]Le bonus est transformé en Coup critique au prochain tour",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
@@ -17069,7 +16729,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17079,7 +16739,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808082,
+              "id_spell_effect_value": 941214,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -17130,7 +16790,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17268,7 +16928,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808083,
+              "id_spell_effect_value": 941215,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -17304,7 +16964,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17332,11 +16992,11 @@
       "effects": [
         {
           "id_effect": 353090,
-          "name_effect": "Au lancement du combat, si le porteur de l'état a <b>10% Coup Critique ou moins</b> :\\n[pl][#1]% Dommages indirects",
+          "name_effect": "Au lancement du combat, si le porteur de l'état a <b>10% Coup critique ou moins</b> :\\n[pl][#1]% Dommages indirects",
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17346,7 +17006,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808106,
+              "id_spell_effect_value": 941238,
               "offset": 0,
               "damage": 40,
               "ratio": 0,
@@ -17479,7 +17139,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17489,7 +17149,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808107,
+              "id_spell_effect_value": 941239,
               "offset": 0,
               "damage": 30,
               "ratio": 0,
@@ -17550,7 +17210,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808108,
+              "id_spell_effect_value": 941240,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -17633,7 +17293,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17643,7 +17303,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 808109,
+              "id_spell_effect_value": 941241,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -17671,7 +17331,7 @@
               }
             },
             {
-              "id_spell_effect_value": 808110,
+              "id_spell_effect_value": 941242,
               "offset": 1,
               "damage": 10,
               "ratio": 0,
@@ -17722,7 +17382,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17786,7 +17446,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17818,7 +17478,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
