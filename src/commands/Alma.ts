@@ -40,17 +40,11 @@ class AlmaCommand extends BaseCommand {
   }
 
   public static mountAlmanaxBonusEmbed (bonus: AlmanaxBonus, lang: string): MessageEmbed {
-    const randomNumber = getRandomIntInclusive(1, 10)
-    let extraInfo = ''
-    if (randomNumber > 8) {
-      const days = getDaysUntilShutdown()
-      extraInfo = str.donationExtraMessage(days)[lang]
-    }
-
+ 
     const embed = {
       color: 0x40b2b5,
-      title: '<:alma:888871222648115261> Today\'s Almanax',
-      description: `**Bonus:** ${bonus.text[lang]}${extraInfo}`
+      title: '<:alma:888871222648115261> Today\'s Almanax [DEPRECATED]',
+      description: ` **Bonus:** ${bonus.text[lang]}\n(The Almanax Bonus was removed from the game)`,
     } as MessageEmbed
 
     return embed
