@@ -3,6 +3,7 @@ import { GuildConfig, PartialEmbed } from '@types'
 import commandsHelp from '@utils/helpMessages'
 import { handleInteractionError, handleMessageError } from '@utils/handleError'
 import stringsLang from '@stringsLang'
+import { openFile } from '@utils/files'
 
 export default abstract class BaseCommand {
   protected guildConfig: GuildConfig
@@ -21,6 +22,15 @@ export default abstract class BaseCommand {
     try {
       const interaction = this.interaction as CommandInteraction
       const messageContent = typeof content === 'string' ? { content } : content
+
+      // Add wakfu version to embeds
+      if (typeof content !== 'string' && messageContent?.embeds) {
+        const wakfuVersion = openFile('data/raw/cdn/version.json')
+        const embed = messageContent.embeds[0]
+        const fields = embed.fields || []
+        fields.push({ name: 'Wakfu Version', value: wakfuVersion, inline: false })
+        messageContent.embeds[0].fields = fields
+      }
       const sentContent = await interaction.reply({...messageContent, fetchReply: true })
       return sentContent as Message
     } catch (error) {
