@@ -30,7 +30,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941252,
+              "id_spell_effect_value": 1004667,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -75,7 +75,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941253,
+              "id_spell_effect_value": 1004668,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -120,7 +120,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941254,
+              "id_spell_effect_value": 1004669,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -200,7 +200,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941255,
+              "id_spell_effect_value": 1004670,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -245,7 +245,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941256,
+              "id_spell_effect_value": 1004671,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -290,7 +290,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941257,
+              "id_spell_effect_value": 1004672,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -378,7 +378,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941258,
+              "id_spell_effect_value": 1004673,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -423,7 +423,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941259,
+              "id_spell_effect_value": 1004674,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -468,7 +468,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941260,
+              "id_spell_effect_value": 1004675,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -548,7 +548,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941278,
+              "id_spell_effect_value": 1004693,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -628,7 +628,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941261,
+              "id_spell_effect_value": 1004676,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -673,7 +673,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941262,
+              "id_spell_effect_value": 1004677,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -718,7 +718,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941263,
+              "id_spell_effect_value": 1004678,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -806,7 +806,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941264,
+              "id_spell_effect_value": 1004679,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -851,7 +851,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941265,
+              "id_spell_effect_value": 1004680,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -896,7 +896,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941266,
+              "id_spell_effect_value": 1004681,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -976,7 +976,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941270,
+              "id_spell_effect_value": 1004685,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1021,7 +1021,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941271,
+              "id_spell_effect_value": 1004686,
               "offset": 0,
               "damage": -33,
               "ratio": 9,
@@ -1066,7 +1066,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941272,
+              "id_spell_effect_value": 1004687,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -1146,7 +1146,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941273,
+              "id_spell_effect_value": 1004688,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -1191,7 +1191,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941274,
+              "id_spell_effect_value": 1004689,
               "offset": 0,
               "damage": -22,
               "ratio": 6,
@@ -1236,7 +1236,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941275,
+              "id_spell_effect_value": 1004690,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -1316,7 +1316,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941276,
+              "id_spell_effect_value": 1004691,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1396,7 +1396,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941243,
+              "id_spell_effect_value": 1004658,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -1441,7 +1441,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941244,
+              "id_spell_effect_value": 1004659,
               "offset": 0,
               "damage": -11,
               "ratio": 3,
@@ -1486,7 +1486,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941245,
+              "id_spell_effect_value": 1004660,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -1566,7 +1566,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941267,
+              "id_spell_effect_value": 1004682,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -1611,7 +1611,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941268,
+              "id_spell_effect_value": 1004683,
               "offset": 0,
               "damage": -33,
               "ratio": 9,
@@ -1656,7 +1656,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941269,
+              "id_spell_effect_value": 1004684,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -1736,7 +1736,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941277,
+              "id_spell_effect_value": 1004692,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1816,7 +1816,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941279,
+              "id_spell_effect_value": 1004694,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -1896,7 +1896,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941280,
+              "id_spell_effect_value": 1004695,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -1941,7 +1941,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941281,
+              "id_spell_effect_value": 1004696,
               "offset": 0,
               "damage": -44,
               "ratio": 12,
@@ -1986,7 +1986,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941282,
+              "id_spell_effect_value": 1004697,
               "offset": 0,
               "damage": 0,
               "ratio": 8,
@@ -2074,7 +2074,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941283,
+              "id_spell_effect_value": 1004698,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -2119,7 +2119,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941284,
+              "id_spell_effect_value": 1004699,
               "offset": 0,
               "damage": -16.5,
               "ratio": 4.5,
@@ -2164,7 +2164,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941285,
+              "id_spell_effect_value": 1004700,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -2244,7 +2244,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941085,
+              "id_spell_effect_value": 1004500,
               "offset": 0,
               "damage": 0,
               "ratio": -7.5,
@@ -2321,7 +2321,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941086,
+              "id_spell_effect_value": 1004501,
               "offset": 0,
               "damage": 0,
               "ratio": 12.5,
@@ -2388,7 +2388,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -2398,7 +2398,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941087,
+              "id_spell_effect_value": 1004502,
               "offset": 0,
               "damage": 0,
               "ratio": 200,
@@ -2465,7 +2465,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -2475,7 +2475,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941088,
+              "id_spell_effect_value": 1004503,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -2583,7 +2583,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941089,
+              "id_spell_effect_value": 1004504,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -2674,7 +2674,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941090,
+              "id_spell_effect_value": 1004505,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -2755,7 +2755,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -2765,7 +2765,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941091,
+              "id_spell_effect_value": 1004506,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -2842,7 +2842,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941092,
+              "id_spell_effect_value": 1004507,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -2909,7 +2909,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -2919,7 +2919,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941093,
+              "id_spell_effect_value": 1004508,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -2986,7 +2986,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -2996,7 +2996,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941094,
+              "id_spell_effect_value": 1004509,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -3024,7 +3024,7 @@
               }
             },
             {
-              "id_spell_effect_value": 941095,
+              "id_spell_effect_value": 1004510,
               "offset": 1,
               "damage": 0,
               "ratio": 1.5,
@@ -3052,7 +3052,7 @@
               }
             },
             {
-              "id_spell_effect_value": 941096,
+              "id_spell_effect_value": 1004511,
               "offset": 2,
               "damage": 0,
               "ratio": 1.5,
@@ -3143,7 +3143,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941097,
+              "id_spell_effect_value": 1004512,
               "offset": 0,
               "damage": 0,
               "ratio": 1.5,
@@ -3210,7 +3210,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3220,7 +3220,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941098,
+              "id_spell_effect_value": 1004513,
               "offset": 0,
               "damage": 0,
               "ratio": 30,
@@ -3297,7 +3297,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941099,
+              "id_spell_effect_value": 1004514,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -3378,7 +3378,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3388,7 +3388,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941100,
+              "id_spell_effect_value": 1004515,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -3465,7 +3465,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941101,
+              "id_spell_effect_value": 1004516,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -3501,7 +3501,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3573,7 +3573,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941102,
+              "id_spell_effect_value": 1004517,
               "offset": 0,
               "damage": 15,
               "ratio": 0,
@@ -3601,7 +3601,7 @@
               }
             },
             {
-              "id_spell_effect_value": 941103,
+              "id_spell_effect_value": 1004518,
               "offset": 1,
               "damage": 25,
               "ratio": 0,
@@ -3678,7 +3678,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941104,
+              "id_spell_effect_value": 1004519,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -3724,7 +3724,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941105,
+              "id_spell_effect_value": 1004520,
               "offset": 0,
               "damage": 0,
               "ratio": -7.5,
@@ -3791,7 +3791,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3801,7 +3801,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941111,
+              "id_spell_effect_value": 1004526,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -3882,7 +3882,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3892,7 +3892,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941112,
+              "id_spell_effect_value": 1004527,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -3986,7 +3986,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -3996,7 +3996,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941113,
+              "id_spell_effect_value": 1004528,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -4032,7 +4032,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4042,7 +4042,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941114,
+              "id_spell_effect_value": 1004529,
               "offset": 0,
               "damage": 40,
               "ratio": -10,
@@ -4150,7 +4150,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4160,7 +4160,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941115,
+              "id_spell_effect_value": 1004530,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4174,7 +4174,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941116,
+              "id_spell_effect_value": 1004531,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -4282,7 +4282,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4292,7 +4292,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941117,
+              "id_spell_effect_value": 1004532,
               "offset": 0,
               "damage": 0,
               "ratio": 15,
@@ -4386,7 +4386,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4396,7 +4396,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941118,
+              "id_spell_effect_value": 1004533,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4490,7 +4490,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4500,7 +4500,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941119,
+              "id_spell_effect_value": 1004534,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -4594,7 +4594,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4604,7 +4604,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941120,
+              "id_spell_effect_value": 1004535,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -4698,7 +4698,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -4708,7 +4708,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941121,
+              "id_spell_effect_value": 1004536,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -4812,7 +4812,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941122,
+              "id_spell_effect_value": 1004537,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -5039,7 +5039,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941123,
+              "id_spell_effect_value": 1004538,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -5151,7 +5151,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5161,7 +5161,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941124,
+              "id_spell_effect_value": 1004539,
               "offset": 0,
               "damage": 0,
               "ratio": -5,
@@ -5255,7 +5255,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5265,7 +5265,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941125,
+              "id_spell_effect_value": 1004540,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -5383,7 +5383,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941126,
+              "id_spell_effect_value": 1004541,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -5419,7 +5419,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5429,7 +5429,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941127,
+              "id_spell_effect_value": 1004542,
               "offset": 0,
               "damage": 30,
               "ratio": -10,
@@ -5524,7 +5524,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5534,7 +5534,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941128,
+              "id_spell_effect_value": 1004543,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -5570,7 +5570,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5580,7 +5580,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941129,
+              "id_spell_effect_value": 1004544,
               "offset": 0,
               "damage": 225,
               "ratio": -75,
@@ -5675,7 +5675,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5685,7 +5685,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941130,
+              "id_spell_effect_value": 1004545,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -5803,7 +5803,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941131,
+              "id_spell_effect_value": 1004546,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -5849,7 +5849,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941132,
+              "id_spell_effect_value": 1004547,
               "offset": 0,
               "damage": 450,
               "ratio": -150,
@@ -5885,7 +5885,7 @@
           "ui_position": 2,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -5895,7 +5895,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941133,
+              "id_spell_effect_value": 1004548,
               "offset": 0,
               "damage": 450,
               "ratio": -150,
@@ -5990,7 +5990,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6000,7 +6000,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941134,
+              "id_spell_effect_value": 1004549,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -6104,7 +6104,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941135,
+              "id_spell_effect_value": 1004550,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -6208,7 +6208,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941136,
+              "id_spell_effect_value": 1004551,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -6308,7 +6308,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6318,7 +6318,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941137,
+              "id_spell_effect_value": 1004552,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -6422,7 +6422,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941138,
+              "id_spell_effect_value": 1004553,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -6526,7 +6526,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941139,
+              "id_spell_effect_value": 1004554,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -6620,7 +6620,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6630,7 +6630,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941140,
+              "id_spell_effect_value": 1004555,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -6721,7 +6721,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941141,
+              "id_spell_effect_value": 1004556,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -6812,7 +6812,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941142,
+              "id_spell_effect_value": 1004557,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -6906,7 +6906,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -6916,7 +6916,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941143,
+              "id_spell_effect_value": 1004558,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7010,7 +7010,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7020,7 +7020,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941144,
+              "id_spell_effect_value": 1004559,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -7128,7 +7128,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7138,7 +7138,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941145,
+              "id_spell_effect_value": 1004560,
               "offset": 0,
               "damage": 0,
               "ratio": 150,
@@ -7232,7 +7232,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7242,7 +7242,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941146,
+              "id_spell_effect_value": 1004561,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -7256,7 +7256,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941147,
+              "id_spell_effect_value": 1004562,
               "offset": 1,
               "damage": 0,
               "ratio": 10,
@@ -7347,7 +7347,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941148,
+              "id_spell_effect_value": 1004563,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -7441,7 +7441,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7451,7 +7451,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941149,
+              "id_spell_effect_value": 1004564,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -7555,7 +7555,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941150,
+              "id_spell_effect_value": 1004565,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -7673,7 +7673,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941151,
+              "id_spell_effect_value": 1004566,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -7767,7 +7767,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7777,7 +7777,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941152,
+              "id_spell_effect_value": 1004567,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -7871,7 +7871,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -7881,7 +7881,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941153,
+              "id_spell_effect_value": 1004568,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -7895,7 +7895,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941154,
+              "id_spell_effect_value": 1004569,
               "offset": 1,
               "damage": 0,
               "ratio": 5,
@@ -7999,7 +7999,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941155,
+              "id_spell_effect_value": 1004570,
               "offset": 0,
               "damage": 0,
               "ratio": 7,
@@ -8080,7 +8080,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8090,7 +8090,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941156,
+              "id_spell_effect_value": 1004571,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -8184,7 +8184,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8194,7 +8194,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941157,
+              "id_spell_effect_value": 1004572,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -8288,7 +8288,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8298,7 +8298,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941158,
+              "id_spell_effect_value": 1004573,
               "offset": 0,
               "damage": 0,
               "ratio": -5,
@@ -8389,7 +8389,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941159,
+              "id_spell_effect_value": 1004574,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -8497,7 +8497,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8507,7 +8507,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941160,
+              "id_spell_effect_value": 1004575,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -8594,7 +8594,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8604,7 +8604,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941161,
+              "id_spell_effect_value": 1004576,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -8699,7 +8699,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -8709,7 +8709,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941162,
+              "id_spell_effect_value": 1004577,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -8723,7 +8723,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941163,
+              "id_spell_effect_value": 1004578,
               "offset": 1,
               "damage": 0,
               "ratio": 100,
@@ -8827,7 +8827,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941164,
+              "id_spell_effect_value": 1004579,
               "offset": 0,
               "damage": -25,
               "ratio": 5,
@@ -8937,7 +8937,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941165,
+              "id_spell_effect_value": 1004580,
               "offset": 0,
               "damage": -10,
               "ratio": 0,
@@ -8951,7 +8951,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941166,
+              "id_spell_effect_value": 1004581,
               "offset": 1,
               "damage": 0,
               "ratio": 15,
@@ -9055,7 +9055,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941167,
+              "id_spell_effect_value": 1004582,
               "offset": 0,
               "damage": -10,
               "ratio": 0,
@@ -9069,7 +9069,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941168,
+              "id_spell_effect_value": 1004583,
               "offset": 1,
               "damage": 0,
               "ratio": 15,
@@ -9163,7 +9163,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9173,7 +9173,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941169,
+              "id_spell_effect_value": 1004584,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -9277,7 +9277,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941170,
+              "id_spell_effect_value": 1004585,
               "offset": 0,
               "damage": 0,
               "ratio": 25,
@@ -9291,7 +9291,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941171,
+              "id_spell_effect_value": 1004586,
               "offset": 1,
               "damage": 0,
               "ratio": 2,
@@ -9385,7 +9385,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9395,7 +9395,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941172,
+              "id_spell_effect_value": 1004587,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -9489,7 +9489,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9499,7 +9499,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941173,
+              "id_spell_effect_value": 1004588,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -9593,7 +9593,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9603,7 +9603,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941174,
+              "id_spell_effect_value": 1004589,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -9694,7 +9694,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941175,
+              "id_spell_effect_value": 1004590,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -9708,7 +9708,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941176,
+              "id_spell_effect_value": 1004591,
               "offset": 1,
               "damage": 0,
               "ratio": -2,
@@ -9812,7 +9812,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941177,
+              "id_spell_effect_value": 1004592,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -9906,7 +9906,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -9916,7 +9916,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941178,
+              "id_spell_effect_value": 1004593,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -10024,7 +10024,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10034,7 +10034,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941179,
+              "id_spell_effect_value": 1004594,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10138,7 +10138,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941180,
+              "id_spell_effect_value": 1004595,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -10152,7 +10152,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941181,
+              "id_spell_effect_value": 1004596,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -10270,7 +10270,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941182,
+              "id_spell_effect_value": 1004597,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10374,7 +10374,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941183,
+              "id_spell_effect_value": 1004598,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -10388,7 +10388,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941184,
+              "id_spell_effect_value": 1004599,
               "offset": 1,
               "damage": 0,
               "ratio": 50,
@@ -10492,7 +10492,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941185,
+              "id_spell_effect_value": 1004600,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -10610,7 +10610,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941186,
+              "id_spell_effect_value": 1004601,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -10776,7 +10776,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941187,
+              "id_spell_effect_value": 1004602,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -10790,7 +10790,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941188,
+              "id_spell_effect_value": 1004603,
               "offset": 1,
               "damage": 0,
               "ratio": -2,
@@ -10884,7 +10884,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -10894,7 +10894,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941189,
+              "id_spell_effect_value": 1004604,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -10940,7 +10940,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941190,
+              "id_spell_effect_value": 1004605,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -11034,7 +11034,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11044,7 +11044,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941191,
+              "id_spell_effect_value": 1004606,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11138,7 +11138,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11148,7 +11148,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941192,
+              "id_spell_effect_value": 1004607,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -11162,7 +11162,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941193,
+              "id_spell_effect_value": 1004608,
               "offset": 1,
               "damage": 0,
               "ratio": -3,
@@ -11253,7 +11253,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941194,
+              "id_spell_effect_value": 1004609,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -11348,7 +11348,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11358,7 +11358,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941195,
+              "id_spell_effect_value": 1004610,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -11372,7 +11372,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941196,
+              "id_spell_effect_value": 1004611,
               "offset": 1,
               "damage": 0,
               "ratio": -3,
@@ -11466,7 +11466,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11476,7 +11476,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941197,
+              "id_spell_effect_value": 1004612,
               "offset": 0,
               "damage": 0,
               "ratio": 8,
@@ -11584,7 +11584,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11594,7 +11594,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941198,
+              "id_spell_effect_value": 1004613,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -11622,7 +11622,7 @@
               }
             },
             {
-              "id_spell_effect_value": 941199,
+              "id_spell_effect_value": 1004614,
               "offset": 1,
               "damage": 0,
               "ratio": 0.5,
@@ -11650,7 +11650,7 @@
               }
             },
             {
-              "id_spell_effect_value": 941200,
+              "id_spell_effect_value": 1004615,
               "offset": 2,
               "damage": 0,
               "ratio": 5,
@@ -11758,7 +11758,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11768,7 +11768,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941201,
+              "id_spell_effect_value": 1004616,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -11876,7 +11876,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11886,7 +11886,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941202,
+              "id_spell_effect_value": 1004617,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -11922,7 +11922,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -11932,7 +11932,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941203,
+              "id_spell_effect_value": 1004618,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -12013,7 +12013,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12023,7 +12023,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941202,
+              "id_spell_effect_value": 1004617,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -12059,7 +12059,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12069,7 +12069,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941203,
+              "id_spell_effect_value": 1004618,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -12160,7 +12160,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941204,
+              "id_spell_effect_value": 1004619,
               "offset": 0,
               "damage": 3,
               "ratio": -1,
@@ -12196,7 +12196,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12206,7 +12206,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941205,
+              "id_spell_effect_value": 1004620,
               "offset": 0,
               "damage": 75,
               "ratio": 0,
@@ -12311,7 +12311,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941206,
+              "id_spell_effect_value": 1004621,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -12347,7 +12347,7 @@
           "ui_position": 1,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12357,7 +12357,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941207,
+              "id_spell_effect_value": 1004622,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -12438,7 +12438,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12448,7 +12448,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941208,
+              "id_spell_effect_value": 1004623,
               "offset": 0,
               "damage": 0,
               "ratio": 2,
@@ -12558,7 +12558,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941209,
+              "id_spell_effect_value": 1004624,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -12586,7 +12586,7 @@
               }
             },
             {
-              "id_spell_effect_value": 941210,
+              "id_spell_effect_value": 1004625,
               "offset": 1,
               "damage": 0,
               "ratio": 4,
@@ -12704,7 +12704,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941211,
+              "id_spell_effect_value": 1004626,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -12798,7 +12798,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12808,7 +12808,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941212,
+              "id_spell_effect_value": 1004627,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -12889,7 +12889,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12899,7 +12899,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941212,
+              "id_spell_effect_value": 1004627,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -12980,7 +12980,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -12990,7 +12990,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941212,
+              "id_spell_effect_value": 1004627,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -13071,7 +13071,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13081,7 +13081,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941213,
+              "id_spell_effect_value": 1004628,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -13189,7 +13189,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13199,7 +13199,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941216,
+              "id_spell_effect_value": 1004631,
               "offset": 0,
               "damage": 0,
               "ratio": -6,
@@ -13213,7 +13213,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941217,
+              "id_spell_effect_value": 1004632,
               "offset": 1,
               "damage": 0,
               "ratio": 3,
@@ -13307,7 +13307,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13317,7 +13317,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941218,
+              "id_spell_effect_value": 1004633,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -13421,7 +13421,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941219,
+              "id_spell_effect_value": 1004634,
               "offset": 0,
               "damage": 0,
               "ratio": 6,
@@ -13515,7 +13515,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13525,7 +13525,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941220,
+              "id_spell_effect_value": 1004635,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -13629,7 +13629,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941221,
+              "id_spell_effect_value": 1004636,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -13643,7 +13643,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941222,
+              "id_spell_effect_value": 1004637,
               "offset": 1,
               "damage": 0,
               "ratio": 4,
@@ -13737,7 +13737,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13747,7 +13747,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941223,
+              "id_spell_effect_value": 1004638,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -13775,7 +13775,7 @@
               }
             },
             {
-              "id_spell_effect_value": 941224,
+              "id_spell_effect_value": 1004639,
               "offset": 1,
               "damage": 20,
               "ratio": 0,
@@ -13883,7 +13883,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -13893,7 +13893,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941225,
+              "id_spell_effect_value": 1004640,
               "offset": 0,
               "damage": 0,
               "ratio": 10,
@@ -13997,7 +13997,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941226,
+              "id_spell_effect_value": 1004641,
               "offset": 0,
               "damage": 0,
               "ratio": 1,
@@ -14091,7 +14091,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14101,7 +14101,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941227,
+              "id_spell_effect_value": 1004642,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -14178,7 +14178,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941228,
+              "id_spell_effect_value": 1004643,
               "offset": 0,
               "damage": 0,
               "ratio": 2.5,
@@ -14255,7 +14255,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941229,
+              "id_spell_effect_value": 1004644,
               "offset": 0,
               "damage": 0,
               "ratio": 3,
@@ -14373,7 +14373,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941230,
+              "id_spell_effect_value": 1004645,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -14454,7 +14454,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14464,7 +14464,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941231,
+              "id_spell_effect_value": 1004646,
               "offset": 0,
               "damage": 0,
               "ratio": 4,
@@ -14582,7 +14582,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941232,
+              "id_spell_effect_value": 1004647,
               "offset": 0,
               "damage": 1,
               "ratio": 0,
@@ -14673,7 +14673,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941233,
+              "id_spell_effect_value": 1004648,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -14767,7 +14767,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -14777,7 +14777,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941234,
+              "id_spell_effect_value": 1004649,
               "offset": 0,
               "damage": 0,
               "ratio": 0.5,
@@ -14854,7 +14854,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941235,
+              "id_spell_effect_value": 1004650,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -14958,7 +14958,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941236,
+              "id_spell_effect_value": 1004651,
               "offset": 0,
               "damage": 0,
               "ratio": 50,
@@ -15052,7 +15052,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15062,7 +15062,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941237,
+              "id_spell_effect_value": 1004652,
               "offset": 0,
               "damage": 0,
               "ratio": 5,
@@ -15204,7 +15204,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15236,7 +15236,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15246,7 +15246,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941077,
+              "id_spell_effect_value": 1004492,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -15297,7 +15297,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15329,7 +15329,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15339,7 +15339,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941078,
+              "id_spell_effect_value": 1004493,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -15390,7 +15390,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15400,7 +15400,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941079,
+              "id_spell_effect_value": 1004494,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -15483,7 +15483,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15515,7 +15515,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15525,7 +15525,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941080,
+              "id_spell_effect_value": 1004495,
               "offset": 0,
               "damage": 30,
               "ratio": 0,
@@ -15650,7 +15650,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941081,
+              "id_spell_effect_value": 1004496,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -15678,7 +15678,7 @@
               }
             },
             {
-              "id_spell_effect_value": 941082,
+              "id_spell_effect_value": 1004497,
               "offset": 1,
               "damage": 200,
               "ratio": 0,
@@ -15729,7 +15729,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15761,7 +15761,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15867,7 +15867,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941083,
+              "id_spell_effect_value": 1004498,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -15950,7 +15950,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -15960,7 +15960,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941084,
+              "id_spell_effect_value": 1004499,
               "offset": 0,
               "damage": -30,
               "ratio": 0,
@@ -16045,7 +16045,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941106,
+              "id_spell_effect_value": 1004521,
               "offset": 0,
               "damage": 2,
               "ratio": 0,
@@ -16073,7 +16073,7 @@
               }
             },
             {
-              "id_spell_effect_value": 941107,
+              "id_spell_effect_value": 1004522,
               "offset": 1,
               "damage": 2,
               "ratio": 0,
@@ -16134,7 +16134,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941108,
+              "id_spell_effect_value": 1004523,
               "offset": 0,
               "damage": 25,
               "ratio": 0,
@@ -16148,7 +16148,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941109,
+              "id_spell_effect_value": 1004524,
               "offset": 1,
               "damage": 15,
               "ratio": 0,
@@ -16162,7 +16162,7 @@
               "statistics": null
             },
             {
-              "id_spell_effect_value": 941110,
+              "id_spell_effect_value": 1004525,
               "offset": 2,
               "damage": -30,
               "ratio": 0,
@@ -16231,7 +16231,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16295,7 +16295,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16359,7 +16359,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16461,7 +16461,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16493,7 +16493,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16525,7 +16525,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16557,7 +16557,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16621,7 +16621,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16697,7 +16697,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16739,7 +16739,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941214,
+              "id_spell_effect_value": 1004629,
               "offset": 0,
               "damage": 10,
               "ratio": 0,
@@ -16822,7 +16822,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16854,7 +16854,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16886,7 +16886,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16918,7 +16918,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -16928,7 +16928,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941215,
+              "id_spell_effect_value": 1004630,
               "offset": 0,
               "damage": 50,
               "ratio": 0,
@@ -17006,7 +17006,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941238,
+              "id_spell_effect_value": 1004653,
               "offset": 0,
               "damage": 40,
               "ratio": 0,
@@ -17043,7 +17043,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17107,7 +17107,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17139,7 +17139,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17149,7 +17149,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941239,
+              "id_spell_effect_value": 1004654,
               "offset": 0,
               "damage": 30,
               "ratio": 0,
@@ -17210,7 +17210,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941240,
+              "id_spell_effect_value": 1004655,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -17293,7 +17293,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17303,7 +17303,7 @@
           "translations": [],
           "values": [
             {
-              "id_spell_effect_value": 941241,
+              "id_spell_effect_value": 1004656,
               "offset": 0,
               "damage": 20,
               "ratio": 0,
@@ -17331,7 +17331,7 @@
               }
             },
             {
-              "id_spell_effect_value": 941242,
+              "id_spell_effect_value": 1004657,
               "offset": 1,
               "damage": 10,
               "ratio": 0,
@@ -17382,7 +17382,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": 32767,
+          "container_max_level": -32513,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {
@@ -17446,7 +17446,7 @@
           "ui_position": 0,
           "from_evolution": 0,
           "container_min_level": 0,
-          "container_max_level": -32513,
+          "container_max_level": 32767,
           "is_critical": 0,
           "is_use_effect": 0,
           "pivot": {

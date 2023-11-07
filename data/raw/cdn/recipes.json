@@ -41278,5 +41278,13 @@
     "xpRatio": 100,
     "isUpgrade": false,
     "upgradeItemId": 0
+  },
+  {
+    "id": 9448,
+    "categoryId": 79,
+    "level": 2,
+    "xpRatio": 3600,
+    "isUpgrade": false,
+    "upgradeItemId": 0
   }
 ]

@@ -191110,5 +191110,23 @@
     "itemId": 31174,
     "quantity": 10,
     "ingredientOrder": 0
+  },
+  {
+    "recipeId": 9448,
+    "itemId": 20590,
+    "quantity": 2,
+    "ingredientOrder": 0
+  },
+  {
+    "recipeId": 9448,
+    "itemId": 5407,
+    "quantity": 10,
+    "ingredientOrder": 1
+  },
+  {
+    "recipeId": 9448,
+    "itemId": 20605,
+    "quantity": 4,
+    "ingredientOrder": 2
   }
 ]
