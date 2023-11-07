@@ -33,14 +33,10 @@ export default class AboutCommand extends BaseCommand {
   }
 
   private mountAboutEmbed (): PartialEmbed {
-    const wakfuVersion = openFile('data/raw/cdn/version.json')
     return {
       color: 0xFFFF00,
       title: ':crescent_moon: About Corvo Astral',
       description: stringsLang.aboutText[this.lang],
-      footer: {
-        text: `Wakfu version: ${wakfuVersion}`
-      }
     }
   }
 }

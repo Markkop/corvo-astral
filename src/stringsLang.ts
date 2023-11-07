@@ -512,96 +512,65 @@ Découvrez comment contribuer sur /about`
   },
   aboutText: {
     fr: `**Corvo Astral** est un bot Discord qui fournit des informations sur le MMORPG Wakfu.
-Utilisez .help pour trouver la liste des commandes et leurs exemples d'utilisation.
-
-**Contribution:**
-Il en coûte 7$/mois pour que ce bot fonctionne 24h/24 et 7j/7 sur [Heroku](https://www.heroku.com/pricing).
-J'utilise actuellement des crédits Github Education qui expireront bientôt, je compte donc sur les dons pour le faire fonctionner les prochains mois.
-Si vous avez des conditions et que vous souhaitez aider, merci de contribuer <3
-
-Carte de crédit:
-https://www.buymeacoffee.com/markkop
-
-Pix (Brésil uniquement):
-me@markkop.dev
-
-Rejoignez le serveur discord du bot pour obtenir plus d'aide, signaler des bugs et découvrir de nouvelles fonctionnalités:
-https://discord.gg/aX6j3gM8HC
-
-**Crédits:**
-Ce projet est open source et il est disponible sur Github: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
-Auteur et maintaner: [Mark Kop](https://github.com/Markkop) (Markx - Rubilax)
-Le jeu WAKFU et les graphismes utilisés dans ce bot appartiennent à Ankama - tous droits réservés.
-Ce bot est un projet non officiel et n'a aucun lien avec Ankama.
-    `,
+  Utilisez /help pour trouver la liste des commandes et leurs exemples d'utilisation.
+  
+  **Contribution:**
+  Pour aider avec les coûts d'hébergement, envisagez de contribuer sur:
+  https://www.buymeacoffee.com/markkop
+  
+  Pour obtenir plus d'aide, signaler des bugs et découvrir de nouvelles fonctionnalités, rejoignez:
+  https://discord.gg/aX6j3gM8HC
+  
+  **Crédits:**
+  Ce projet est open source et il est disponible sur Github: https://github.com/Markkop/corvo-astral
+  Auteur et mainteneur: **Markx** - Ogrest/Rubilax
+  Le jeu WAKFU et les graphismes utilisés dans ce bot appartiennent à Ankama - tous droits réservés.
+  Ce bot est un projet non officiel et n'a aucun lien avec Ankama.`,
     es: `**Corvo Astral** es un bot de Discord que proporciona información sobre el MMORPG Wakfu.
-Utilice .help para encontrar la lista de comandos y sus ejemplos de uso.
-
-**Contribución:**
-Cuesta $7/mes mantener este bot funcionando 24 horas al día, 7 días a la semana en [Heroku](https://www.heroku.com/pricing).
-Actualmente estoy usando créditos de educación de Github que vencerán pronto, por lo que cuento con donaciones para que funcione durante los próximos meses.
-Si tiene condiciones y le gustaría ayudar, por favor contribuya <3
-
-Tarjeta de crédito:
-https://www.buymeacoffee.com/markkop
-
-Pix (solo Brasil):
-me@markkop.dev
-
-Únase al servidor de Discord del bot para obtener más ayuda, informar errores y descubrir nuevas funciones:
-https://discord.gg/aX6j3gM8HC
-
-**Créditos:**
-Este proyecto es de código abierto y está disponible en Github: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
-Autor y mantenedor: [Mark Kop](https://github.com/Markkop) (Markx - Rubilax)
-El juego WAKFU y los gráficos utilizados en este bot pertenecen a Ankama, todos los derechos reservados.
-Este bot es un proyecto no oficial y no tiene ninguna conexión con Ankama.
-    `,
+  Utilice /help para encontrar la lista de comandos y sus ejemplos de uso.
+  
+  **Contribución:**
+  Para ayudar con los costos de hospedaje, considere contribuir en:
+  https://www.buymeacoffee.com/markkop
+  
+  Para obtener más ayuda, informar errores y descubrir nuevas funciones, únase en:
+  https://discord.gg/aX6j3gM8HC
+  
+  **Créditos:**
+  Este proyecto es de código abierto y está disponible en Github: https://github.com/Markkop/corvo-astral
+  Autor y mantenedor: **Markx** - Ogrest/Rubilax
+  El juego WAKFU y los gráficos utilizados en este bot pertenecen a Ankama - todos los derechos reservados.
+  Este bot es un proyecto no oficial y no tiene ninguna conexión con Ankama.`,
     en: `**Corvo Astral** is a Discord bot that provides information about the Wakfu MMORPG.
-Use .help to find the command list and their usage examples.
-
-**Contribution:**
-It costs $7/month to keep this bot running 24/7 on [Heroku](https://www.heroku.com/pricing).  
-I'm currently using Github Education credits which will expire soon, so I'm counting on donations to have it working for the next months.
-If you have conditions and would like to help, please contribute <3
-
-Credit Card: 
-https://www.buymeacoffee.com/markkop
-
-Pix (Brazil only):
-me@markkop.dev
-
-Join the bot's discord server to get more help, report bugs and discover new features:
-https://discord.gg/aX6j3gM8HC
-
-**Credits:**
-This project is open source and it's available on Github: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
-Author and maintaner: [Mark Kop](https://github.com/Markkop) (Markx - Rubilax)
-The game WAKFU and the graphics used in this bot belongs to Ankama - all rights reserved.  
-This bot is an unnoficial project and doesn't have any connection with Ankama.
-    `,
+  Use /help to find the command list and their usage examples.
+  
+  **Contribution:**
+  To help with the hosting costs, consider contributing at:
+  https://www.buymeacoffee.com/markkop
+  
+  For more help, to report bugs, and to discover new features, join in:
+  https://discord.gg/aX6j3gM8HC
+  
+  **Credits:**
+  This project is open source and it's available on Github: https://github.com/Markkop/corvo-astral
+  Author and maintainer: **Markx** - Ogrest/Rubilax
+  The game WAKFU and the graphics used in this bot belong to Ankama - all rights reserved.
+  This bot is an unofficial project and doesn't have any connection with Ankama.`,
     pt: `**Corvo Astral** é um bot do Discord que fornece informações sobre o MMORPG Wakfu.
-Use .help para encontrar a lista de comandos e seus exemplos de uso.
-
-**Contribuição:**
-Custa US$7/mês para manter este bot funcionando 24 horas por dia, 7 dias por semana no [Heroku](https://www.heroku.com/pricing).
-No momento, estou usando os créditos do Github Education que irão expirar em breve, então estou contando com doações para tê-lo funcionando nos próximos meses.
-Se você tem condições e gostaria de ajudar, por favor contribua <3
-
-Cartão de crédito:
-https://www.buymeacoffee.com/markkop
-
-Pix (somente no Brasil):
-me@markkop.dev
-
-Junte-se ao servidor discord do bot para obter mais ajuda, relatar bugs e descobrir novos recursos:
-https://discord.gg/aX6j3gM8HC
-
-**Créditos:**
-Este projeto é de código aberto e está disponível no Github: [https://github.com/Markkop/corvo-astral](https://github.com/Markkop/corvo-astral)
-Autor e mantenedor: [Mark Kop](https://github.com/Markkop) (Markx - Rubilax)
-O jogo WAKFU e os gráficos usados ​​neste bot pertencem à Ankama - todos os direitos reservados.
-Este bot é um projeto não oficial e não tem nenhuma conexão com a Ankama.
-    `
+  Use /help para encontrar a lista de comandos e seus exemplos de uso.
+  
+  **Contribuição:**
+  Para ajudar com os custos de hospedagem, considere contribuir em:
+  https://www.buymeacoffee.com/markkop
+  
+  Para obter mais ajuda, relatar bugs e descobrir novos recursos, entre em:
+  https://discord.gg/aX6j3gM8HC
+  
+  **Créditos:**
+  Este projeto é de código aberto e está disponível no Github: https://github.com/Markkop/corvo-astral
+  Autor e mantenedor: **Markx** - Ogrest/Rubilax
+  O jogo WAKFU e os gráficos usados neste bot pertencem à Ankama - todos os direitos reservados.
+  Este bot é um projeto não oficial e não tem nenhuma conexão com a Ankama.`
   }
+  
 }

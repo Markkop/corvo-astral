@@ -12,9 +12,6 @@ describe('AboutCommand', () => {
       color: 0xFFFF00,
       title: ':crescent_moon: About Corvo Astral',
       description: stringsLang.aboutText.en,
-      footer: {
-        text: expect.stringContaining('Wakfu version')
-      }
     }))
   })
 })
