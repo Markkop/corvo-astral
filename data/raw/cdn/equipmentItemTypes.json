@@ -569,5 +569,23 @@
       "es": "Trajes",
       "pt": "Trajes"
     }
+  },
+  {
+    "definition": {
+      "id": 837,
+      "parentId": 525,
+      "equipmentPositions": [
+        "COSTUME"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": false,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "WIP",
+      "en": "Localisation failed. Error: 418 I'm a teapot.",
+      "es": "WIP",
+      "pt": "WIP"
+    }
   }
 ]

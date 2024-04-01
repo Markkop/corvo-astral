@@ -10,7 +10,7 @@
         "ui_position": 0,
         "from_evolution": 0,
         "container_min_level": 0,
-        "container_max_level": -32513,
+        "container_max_level": 32767,
         "is_critical": 0,
         "is_use_effect": 0,
         "pivot": {
@@ -19,34 +19,34 @@
         },
         "translations": [
           {
-            "id": 3757970,
+            "id": 4219175,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 151183,
             "locale": "pt",
             "value": "[#1]% de Danos causados no próximo feitiço de Danos",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:08.000000Z",
+            "updated_at": "2024-03-18T23:03:08.000000Z"
           },
           {
-            "id": 3757969,
+            "id": 4219174,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 151183,
             "locale": "es",
             "value": "[#1]% daños infligidos en el próximo hechizo de daños",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:08.000000Z",
+            "updated_at": "2024-03-18T23:03:08.000000Z"
           },
           {
-            "id": 3757968,
+            "id": 4219173,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 151183,
             "locale": "en",
             "value": "[#1]% Damage inflicted on next Damage spell",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:08.000000Z",
+            "updated_at": "2024-03-18T23:03:08.000000Z"
           }
         ],
         "inner_spells": [],
@@ -54,7 +54,7 @@
         "inner_states": [],
         "values": [
           {
-            "id_spell_effect_value": 1004753,
+            "id_spell_effect_value": 1134344,
             "offset": 0,
             "damage": 0,
             "ratio": 1,
@@ -72,34 +72,34 @@
     ],
     "translations": [
       {
-        "id": 3757967,
+        "id": 4219172,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 3462,
         "locale": "pt",
         "value": "Preparação",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:08.000000Z",
+        "updated_at": "2024-03-18T23:03:08.000000Z"
       },
       {
-        "id": 3757966,
+        "id": 4219171,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 3462,
         "locale": "es",
         "value": "Preparación",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:08.000000Z",
+        "updated_at": "2024-03-18T23:03:08.000000Z"
       },
       {
-        "id": 3757965,
+        "id": 4219170,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 3462,
         "locale": "en",
         "value": "Preparation",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:08.000000Z",
+        "updated_at": "2024-03-18T23:03:08.000000Z"
       }
     ]
   },
@@ -114,7 +114,7 @@
         "ui_position": 0,
         "from_evolution": 0,
         "container_min_level": 0,
-        "container_max_level": -32513,
+        "container_max_level": 32767,
         "is_critical": 0,
         "is_use_effect": 0,
         "pivot": {
@@ -123,34 +123,34 @@
         },
         "translations": [
           {
-            "id": 3757913,
+            "id": 4218776,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 151869,
             "locale": "pt",
             "value": "[#1] de Bloqueio",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:08.000000Z",
+            "updated_at": "2024-03-18T23:03:08.000000Z"
           },
           {
-            "id": 3757912,
+            "id": 4218775,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 151869,
             "locale": "es",
             "value": "[#1] placaje",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:08.000000Z",
+            "updated_at": "2024-03-18T23:03:08.000000Z"
           },
           {
-            "id": 3757911,
+            "id": 4218774,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 151869,
             "locale": "en",
             "value": "[#1] Lock",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:08.000000Z",
+            "updated_at": "2024-03-18T23:03:08.000000Z"
           }
         ],
         "inner_spells": [],
@@ -158,7 +158,7 @@
         "inner_states": [],
         "values": [
           {
-            "id_spell_effect_value": 1004750,
+            "id_spell_effect_value": 1134293,
             "offset": 0,
             "damage": 0,
             "ratio": 0.40000000596046,
@@ -193,7 +193,7 @@
         "ui_position": 1,
         "from_evolution": 0,
         "container_min_level": 0,
-        "container_max_level": 32767,
+        "container_max_level": -32513,
         "is_critical": 0,
         "is_use_effect": 0,
         "pivot": {
@@ -202,34 +202,34 @@
         },
         "translations": [
           {
-            "id": 3757916,
+            "id": 4218779,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 162662,
             "locale": "pt",
             "value": "No início do turno, ao redor do lançador:\\n[pl]Aos [enemy]: Dano [el6]: [#1][CIRCLERING]\\nSe o alvo morrer:\\n[pl][enemy] Dano [el6]: [#2][CIRCLERING]",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:08.000000Z",
+            "updated_at": "2024-03-18T23:03:08.000000Z"
           },
           {
-            "id": 3757915,
+            "id": 4218778,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 162662,
             "locale": "es",
             "value": "Al principio del turno, alrededor del lanzador:\\n[pl]A los [enemy]: Daño [el6]: [#1][CIRCLERING]\\nSi el objetivo muere:\\n[pl][enemy] Daño [el6]: [#2][CIRCLERING]",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:08.000000Z",
+            "updated_at": "2024-03-18T23:03:08.000000Z"
           },
           {
-            "id": 3757914,
+            "id": 4218777,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 162662,
             "locale": "en",
             "value": "At the start of the turn, around the caster:\\n[pl]To [enemy]: [el6] Damage: [#1][CIRCLERING]\\nIf the target dies:\\n[pl][enemy] [el6] Damage: [#2][CIRCLERING]",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:08.000000Z",
+            "updated_at": "2024-03-18T23:03:08.000000Z"
           }
         ],
         "inner_spells": [],
@@ -237,7 +237,7 @@
         "inner_states": [],
         "values": [
           {
-            "id_spell_effect_value": 1004751,
+            "id_spell_effect_value": 1134294,
             "offset": 0,
             "damage": 0,
             "ratio": 1,
@@ -251,7 +251,7 @@
             "statistics": null
           },
           {
-            "id_spell_effect_value": 1004752,
+            "id_spell_effect_value": 1134295,
             "offset": 1,
             "damage": 0,
             "ratio": 1,
@@ -269,34 +269,34 @@
     ],
     "translations": [
       {
-        "id": 3757910,
+        "id": 4218773,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 751,
         "locale": "pt",
         "value": "Flamejante",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:08.000000Z",
+        "updated_at": "2024-03-18T23:03:08.000000Z"
       },
       {
-        "id": 3757909,
+        "id": 4218772,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 751,
         "locale": "es",
         "value": "Ardiente",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:08.000000Z",
+        "updated_at": "2024-03-18T23:03:08.000000Z"
       },
       {
-        "id": 3757908,
+        "id": 4218771,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 751,
         "locale": "en",
         "value": "Flaming",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:08.000000Z",
+        "updated_at": "2024-03-18T23:03:08.000000Z"
       }
     ]
   },
@@ -311,7 +311,7 @@
         "ui_position": 0,
         "from_evolution": 0,
         "container_min_level": 0,
-        "container_max_level": 32767,
+        "container_max_level": -32513,
         "is_critical": 0,
         "is_use_effect": 0,
         "pivot": {
@@ -320,34 +320,34 @@
         },
         "translations": [
           {
-            "id": 3758003,
+            "id": 4219508,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 177975,
             "locale": "pt",
             "value": "[#1]% de Curas recebidas",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3758002,
+            "id": 4219507,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 177975,
             "locale": "es",
             "value": "[#1]% curas recibidas",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3758001,
+            "id": 4219506,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 177975,
             "locale": "en",
             "value": "[#1]% Heals received",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           }
         ],
         "inner_spells": [],
@@ -355,7 +355,7 @@
         "inner_states": [],
         "values": [
           {
-            "id_spell_effect_value": 1004760,
+            "id_spell_effect_value": 1134391,
             "offset": 0,
             "damage": 0,
             "ratio": -10,
@@ -373,34 +373,34 @@
     ],
     "translations": [
       {
-        "id": 3758000,
+        "id": 4219505,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 756,
         "locale": "pt",
         "value": "Incurável",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       },
       {
-        "id": 3757999,
+        "id": 4219504,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 756,
         "locale": "es",
         "value": "Incurable",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       },
       {
-        "id": 3757998,
+        "id": 4219503,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 756,
         "locale": "en",
         "value": "Incurable",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       }
     ]
   },
@@ -415,7 +415,7 @@
         "ui_position": 0,
         "from_evolution": 0,
         "container_min_level": 0,
-        "container_max_level": -32513,
+        "container_max_level": 32767,
         "is_critical": 0,
         "is_use_effect": 0,
         "pivot": {
@@ -424,34 +424,34 @@
         },
         "translations": [
           {
-            "id": 3758009,
+            "id": 4219706,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 323799,
             "locale": "pt",
             "value": "No começo do próximo turno: \\n[pl][st3462[#1]] (+[#1] nv.)",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3758008,
+            "id": 4219705,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 323799,
             "locale": "es",
             "value": "Al principio del próximo turno: \\n[pl][st3462[#1]] (+[#1] niv.)",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3758007,
+            "id": 4219704,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 323799,
             "locale": "en",
             "value": "At start of next turn: \\n[pl][st3462[#1]] (+[#1] Lvl.)",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           }
         ],
         "inner_spells": [],
@@ -462,41 +462,41 @@
             "id_state": 3462,
             "translations": [
               {
-                "id": 3757967,
+                "id": 4219172,
                 "table_name": "state",
                 "column_name": "name_state",
                 "foreign_key": 3462,
                 "locale": "pt",
                 "value": "Preparação",
-                "created_at": "2023-11-07T00:03:52.000000Z",
-                "updated_at": "2023-11-07T00:03:52.000000Z"
+                "created_at": "2024-03-18T23:03:08.000000Z",
+                "updated_at": "2024-03-18T23:03:08.000000Z"
               },
               {
-                "id": 3757966,
+                "id": 4219171,
                 "table_name": "state",
                 "column_name": "name_state",
                 "foreign_key": 3462,
                 "locale": "es",
                 "value": "Preparación",
-                "created_at": "2023-11-07T00:03:52.000000Z",
-                "updated_at": "2023-11-07T00:03:52.000000Z"
+                "created_at": "2024-03-18T23:03:08.000000Z",
+                "updated_at": "2024-03-18T23:03:08.000000Z"
               },
               {
-                "id": 3757965,
+                "id": 4219170,
                 "table_name": "state",
                 "column_name": "name_state",
                 "foreign_key": 3462,
                 "locale": "en",
                 "value": "Preparation",
-                "created_at": "2023-11-07T00:03:52.000000Z",
-                "updated_at": "2023-11-07T00:03:52.000000Z"
+                "created_at": "2024-03-18T23:03:08.000000Z",
+                "updated_at": "2024-03-18T23:03:08.000000Z"
               }
             ]
           }
         ],
         "values": [
           {
-            "id_spell_effect_value": 1004761,
+            "id_spell_effect_value": 1134436,
             "offset": 0,
             "damage": 0,
             "ratio": 1,
@@ -514,34 +514,34 @@
     ],
     "translations": [
       {
-        "id": 3758006,
+        "id": 4219703,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 7080,
         "locale": "pt",
         "value": "Preparação",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       },
       {
-        "id": 3758005,
+        "id": 4219702,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 7080,
         "locale": "es",
         "value": "Preparación",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       },
       {
-        "id": 3758004,
+        "id": 4219701,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 7080,
         "locale": "en",
         "value": "Preparation",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       }
     ]
   },
@@ -565,34 +565,34 @@
         },
         "translations": [
           {
-            "id": 3757976,
+            "id": 4219373,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 283080,
             "locale": "pt",
             "value": "No começo do turno:\\n[pl]Dano [el6]: [#1]",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757975,
+            "id": 4219372,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 283080,
             "locale": "es",
             "value": "Al principio del turno:\\n[pl]Daño [el6]: [#1]",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757974,
+            "id": 4219371,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 283080,
             "locale": "en",
             "value": "At start of turn:\\n[pl][el6] Damage: [#1]",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           }
         ],
         "inner_spells": [],
@@ -600,7 +600,7 @@
         "inner_states": [],
         "values": [
           {
-            "id_spell_effect_value": 1004754,
+            "id_spell_effect_value": 1134374,
             "offset": 0,
             "damage": 0,
             "ratio": 10,
@@ -618,34 +618,34 @@
     ],
     "translations": [
       {
-        "id": 3757973,
+        "id": 4219370,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 5977,
         "locale": "pt",
         "value": "Arma de Luz",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       },
       {
-        "id": 3757972,
+        "id": 4219369,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 5977,
         "locale": "es",
         "value": "Arma de Luz",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       },
       {
-        "id": 3757971,
+        "id": 4219368,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 5977,
         "locale": "en",
         "value": "Light Weapon",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       }
     ]
   },
@@ -669,34 +669,34 @@
         },
         "translations": [
           {
-            "id": 3757982,
+            "id": 4219439,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309460,
             "locale": "pt",
             "value": "[#1]% de Danos causados",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757981,
+            "id": 4219438,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309460,
             "locale": "es",
             "value": "[#1]% de daños infligidos",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757980,
+            "id": 4219437,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309460,
             "locale": "en",
             "value": "[#1]% Damage inflicted",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           }
         ],
         "inner_spells": [],
@@ -704,7 +704,7 @@
         "inner_states": [],
         "values": [
           {
-            "id_spell_effect_value": 1004755,
+            "id_spell_effect_value": 1134379,
             "offset": 0,
             "damage": 0,
             "ratio": 4,
@@ -739,7 +739,7 @@
         "ui_position": 1,
         "from_evolution": 0,
         "container_min_level": 0,
-        "container_max_level": -32513,
+        "container_max_level": 32767,
         "is_critical": 0,
         "is_use_effect": 0,
         "pivot": {
@@ -748,34 +748,34 @@
         },
         "translations": [
           {
-            "id": 3757985,
+            "id": 4219442,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309461,
             "locale": "pt",
             "value": "[#1] de resistência elementar",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757984,
+            "id": 4219441,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309461,
             "locale": "es",
             "value": "[#1] resistencia elemental",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757983,
+            "id": 4219440,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309461,
             "locale": "en",
             "value": "[#1] Elemental Resistance",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           }
         ],
         "inner_spells": [],
@@ -783,7 +783,7 @@
         "inner_states": [],
         "values": [
           {
-            "id_spell_effect_value": 1004756,
+            "id_spell_effect_value": 1134380,
             "offset": 0,
             "damage": 0,
             "ratio": 15,
@@ -815,34 +815,34 @@
     ],
     "translations": [
       {
-        "id": 3757979,
+        "id": 4219436,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 6710,
         "locale": "pt",
         "value": "Energia Ancestral - Bônus",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       },
       {
-        "id": 3757978,
+        "id": 4219435,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 6710,
         "locale": "es",
         "value": "Energía Ancestral - Bonus",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       },
       {
-        "id": 3757977,
+        "id": 4219434,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 6710,
         "locale": "en",
         "value": "Ancestral Energy - Bonus",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       }
     ]
   },
@@ -866,34 +866,34 @@
         },
         "translations": [
           {
-            "id": 3757991,
+            "id": 4219454,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309483,
             "locale": "pt",
             "value": "[#1] de PM",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757990,
+            "id": 4219453,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309483,
             "locale": "es",
             "value": "[#1] PM",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757989,
+            "id": 4219452,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309483,
             "locale": "en",
             "value": "[#1] MP",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           }
         ],
         "inner_spells": [],
@@ -901,7 +901,7 @@
         "inner_states": [],
         "values": [
           {
-            "id_spell_effect_value": 1004757,
+            "id_spell_effect_value": 1134381,
             "offset": 0,
             "damage": 1,
             "ratio": 0,
@@ -945,34 +945,34 @@
         },
         "translations": [
           {
-            "id": 3757994,
+            "id": 4219457,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309484,
             "locale": "pt",
             "value": "[#1]% de Danos causados",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757993,
+            "id": 4219456,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309484,
             "locale": "es",
             "value": "[#1]% de daños infligidos",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757992,
+            "id": 4219455,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309484,
             "locale": "en",
             "value": "[#1]% Damage inflicted",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           }
         ],
         "inner_spells": [],
@@ -980,7 +980,7 @@
         "inner_states": [],
         "values": [
           {
-            "id_spell_effect_value": 1004758,
+            "id_spell_effect_value": 1134382,
             "offset": 0,
             "damage": 15,
             "ratio": 0,
@@ -1024,34 +1024,34 @@
         },
         "translations": [
           {
-            "id": 3757997,
+            "id": 4219460,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309485,
             "locale": "pt",
             "value": "[#1] de resistência elementar",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757996,
+            "id": 4219459,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309485,
             "locale": "es",
             "value": "[#1] resistencia elemental",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           },
           {
-            "id": 3757995,
+            "id": 4219458,
             "table_name": "effects",
             "column_name": "name_effect",
             "foreign_key": 309485,
             "locale": "en",
             "value": "[#1] Elemental Resistance",
-            "created_at": "2023-11-07T00:03:52.000000Z",
-            "updated_at": "2023-11-07T00:03:52.000000Z"
+            "created_at": "2024-03-18T23:03:09.000000Z",
+            "updated_at": "2024-03-18T23:03:09.000000Z"
           }
         ],
         "inner_spells": [],
@@ -1059,7 +1059,7 @@
         "inner_states": [],
         "values": [
           {
-            "id_spell_effect_value": 1004759,
+            "id_spell_effect_value": 1134383,
             "offset": 0,
             "damage": 50,
             "ratio": 0,
@@ -1091,34 +1091,34 @@
     ],
     "translations": [
       {
-        "id": 3757988,
+        "id": 4219451,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 6713,
         "locale": "pt",
         "value": "Renascimento - Bônus",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       },
       {
-        "id": 3757987,
+        "id": 4219450,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 6713,
         "locale": "es",
         "value": "Resurrección - Bonus",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       },
       {
-        "id": 3757986,
+        "id": 4219449,
         "table_name": "state",
         "column_name": "name_state",
         "foreign_key": 6713,
         "locale": "en",
         "value": "Rebirth - Bonus",
-        "created_at": "2023-11-07T00:03:52.000000Z",
-        "updated_at": "2023-11-07T00:03:52.000000Z"
+        "created_at": "2024-03-18T23:03:09.000000Z",
+        "updated_at": "2024-03-18T23:03:09.000000Z"
       }
     ]
   }
