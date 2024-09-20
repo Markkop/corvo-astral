@@ -216,5 +216,6 @@ git add .
 git commit -m "<commit name>"
 git push origin <branch name>
 
-# Deploy is made automatically on master via Github Actions to Koyeb
+# Deploy is made automatically to Railway
+https://railway.app/project/64e147d3-7c3e-4ed2-a89e-1cbea68e225a/service/9d2b5ab2-d5c2-4e32-9f26-bf5ad922ab2f
 ```
