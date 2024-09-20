@@ -13,10 +13,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Hache (Deux mains)",
-      "en": "Ax (two hands)",
-      "es": "Hacha (dos manos)",
-      "pt": "Machado (duas mãos)"
+      "fr": "Hache{[~1]?s:} (Deux mains)",
+      "en": "Axe{[~1]?s:} (Two-handed)",
+      "es": "Hacha{[~1]?s:} (Dos manos)",
+      "pt": "Machado{[~1]?s:} (duas mãos)"
     }
   },
   {
@@ -32,10 +32,10 @@
       "isVisibleInAnimation": false
     },
     "title": {
-      "fr": "Anneau",
-      "en": "Ring",
-      "es": "Anillo",
-      "pt": "Anel"
+      "fr": "Anneau{[~1]?x:}",
+      "en": "Ring{[~1]?s:}",
+      "es": "Anillo{[~1]?s:}",
+      "pt": "An{[~1]?éis:el}"
     }
   },
   {
@@ -50,10 +50,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Baguette (Une main)",
-      "en": "Wand (one hand)",
-      "es": "Varita (una mano)",
-      "pt": "Varinha (uma mão)"
+      "fr": "Baguette{[~1]?s:} (Une main)",
+      "en": "Wand{[~1]?s:} (One-handed)",
+      "es": "Varita{[~1]?s:} (Una mano)",
+      "pt": "Varinha{[~1]?s:} (uma mão)"
     }
   },
   {
@@ -68,10 +68,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Epée (Une main)",
-      "en": "Sword (one hand)",
-      "es": "Espada (una mano)",
-      "pt": "Espada (uma mão)"
+      "fr": "Epée{[~1]?s:} (Une main)",
+      "en": "Sword{[~1]?s:} (One-handed)",
+      "es": "Espada{[~1]?s:} (Una mano)",
+      "pt": "Espada{[~1]?s:} (uma mão)"
     }
   },
   {
@@ -88,10 +88,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Pelle (Deux mains)",
-      "en": "Shovel (two hands)",
-      "es": "Pala (dos manos)",
-      "pt": "Pá (duas mãos)"
+      "fr": "Pelle{[~1]?s:} (Deux mains)",
+      "en": "Shovel{[~1]?s:} (Two-handed)",
+      "es": "Pala{[~1]?s:} (Dos manos)",
+      "pt": "Pá{[~1]?s:} (duas mãos)"
     }
   },
   {
@@ -106,10 +106,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Dague (Seconde main)",
-      "en": "Dagger (other hand)",
-      "es": "Daga (segunda mano)",
-      "pt": "Adaga (segunda mão)"
+      "fr": "Dague{[~1]?s:} (Seconde main)",
+      "en": "Dagger{[~1]?s:} (Second hand)",
+      "es": "Daga{[~1]?s:} (Segunda mano)",
+      "pt": "Adaga{[~1]?s:} (mão secundária)"
     }
   },
   {
@@ -124,10 +124,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Bâton (Une main)",
-      "en": "Staff (one hand)",
-      "es": "Bastón (una mano)",
-      "pt": "Bastão (uma mão)"
+      "fr": "Bâton{[~1]?s:} (Une main)",
+      "en": "Staff{[~1]?s:} (One-handed)",
+      "es": "Bast{[~1]?ones:ón} (Una mano)",
+      "pt": "Bast{[~1]?ões:ão} (uma mão)"
     }
   },
   {
@@ -144,10 +144,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Marteau (Deux mains)",
-      "en": "Hammer (two hands)",
-      "es": "Martillo (dos manos)",
-      "pt": "Martelo (duas mãos)"
+      "fr": "Marteau{[~1]?x:} (Deux mains)",
+      "en": "Hammer{[~1]?s:} (Two-handed)",
+      "es": "Martillo{[~1]?s:} (Dos manos)",
+      "pt": "Martelo{[~1]?s:} (duas mãos)"
     }
   },
   {
@@ -162,10 +162,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Aiguille (Une main)",
-      "en": "Clock Hand (one hand)",
-      "es": "Aguja (una mano)",
-      "pt": "Ponteiro (uma mão)"
+      "fr": "Aiguille{[~1]?s:} (Une main)",
+      "en": "Needle{[~1]?s:} (One-handed)",
+      "es": "Aguja{[~1]?s:} (Una mano)",
+      "pt": "Ponteiro{[~1]?s:} (uma mão)"
     }
   },
   {
@@ -182,10 +182,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Arc (Deux mains)",
-      "en": "Bow (two hands)",
-      "es": "Arco (dos manos)",
-      "pt": "Arco (duas mãos)"
+      "fr": "Arc{[~1]?s:} (Deux mains)",
+      "en": "Bow{[~1]?s:} (Two-handed)",
+      "es": "Arco{[~1]?s:} (Dos manos)",
+      "pt": "Arco{[~1]?s:} (duas mãos)"
     }
   },
   {
@@ -218,10 +218,10 @@
       "isVisibleInAnimation": false
     },
     "title": {
-      "fr": "Amulette",
-      "en": "Amulet",
-      "es": "Amuleto",
-      "pt": "Amuleto"
+      "fr": "Amulette{[~1]?s:}",
+      "en": "Amulet{[~1]?s:}",
+      "es": "Amuleto{[~1]?s:}",
+      "pt": "Amuleto{[~1]?s:}"
     }
   },
   {
@@ -236,10 +236,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Cape",
-      "en": "Cloak",
-      "es": "Capa",
-      "pt": "Capa"
+      "fr": "Cape{[~1]?s:}",
+      "en": "Cloak{[~1]?s:}",
+      "es": "Capa{[~1]?s:}",
+      "pt": "Capa{[~1]?s:}"
     }
   },
   {
@@ -254,10 +254,10 @@
       "isVisibleInAnimation": false
     },
     "title": {
-      "fr": "Ceinture",
-      "en": "Belt",
-      "es": "Cinturón",
-      "pt": "Cinto"
+      "fr": "Ceinture{[~1]?s:}",
+      "en": "Belt{[~1]?s:}",
+      "es": "Cintur{[~1]?ones:ón}",
+      "pt": "Cinto{[~1]?s:}"
     }
   },
   {
@@ -272,10 +272,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Casque",
-      "en": "Helmet",
-      "es": "Casco",
-      "pt": "Capacete"
+      "fr": "Casque{[~1]?s:}",
+      "en": "Helmet{[~1]?s:}",
+      "es": "Casco{[~1]?s:}",
+      "pt": "Capacete{[~1]?s:}"
     }
   },
   {
@@ -290,10 +290,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Plastron",
-      "en": "Breastplate",
-      "es": "Coraza",
-      "pt": "Peitoral"
+      "fr": "Plastron{[~1]?s:}",
+      "en": "Breastplate{[~1]?s:}",
+      "es": "Coraza{[~1]?s:}",
+      "pt": "Peitora{[~1]?is:l}"
     }
   },
   {
@@ -326,10 +326,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Bouclier (Seconde main)",
-      "en": "Shield (other hand)",
-      "es": "Escudo (segunda mano)",
-      "pt": "Escudo (segunda mão)"
+      "fr": "Bouclier{[~1]?s:} (Seconde main)",
+      "en": "Shield{[~1]?s:} (Second hand)",
+      "es": "Escudo{[~1]?s:} (Segunda mano)",
+      "pt": "Escudo{[~1]?s:} (mão secundária)"
     }
   },
   {
@@ -364,10 +364,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Epée (Deux mains)",
-      "en": "Sword (two hands)",
-      "es": "Espada (dos manos)",
-      "pt": "Espada (duas mãos)"
+      "fr": "Epée{[~1]?s:} (Deux mains)",
+      "en": "Sword{[~1]?s:} (Two-handed)",
+      "es": "Espada{[~1]?s:} (Dos manos)",
+      "pt": "Espada{[~1]?s:} (duas mãos)"
     }
   },
   {
@@ -384,10 +384,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Bâton (Deux mains)",
-      "en": "Staff (two hands)",
-      "es": "Bastón (dos manos)",
-      "pt": "Bastão (duas mãos)"
+      "fr": "Bâton{[~1]?s:} (Deux mains)",
+      "en": "Staff{[~1]?s:} (Two-handed)",
+      "es": "Bast{[~1]?ones:ón} (Dos manos)",
+      "pt": "Bast{[~1]?ões:ão} (duas mãos)"
     }
   },
   {
@@ -402,10 +402,10 @@
       "isVisibleInAnimation": true
     },
     "title": {
-      "fr": "Cartes (Une main)",
-      "en": "Cards (one hand)",
-      "es": "Cartas (una mano)",
-      "pt": "Cartas (uma mão)"
+      "fr": "Carte{[~1]?s:} (Une main)",
+      "en": "Card{[~1]?s:} (One-handed)",
+      "es": "Carta{[~1]?s:} (Una mano)",
+      "pt": "Carta{[~1]?s:} (uma mão)"
     }
   },
   {
@@ -420,10 +420,10 @@
       "isVisibleInAnimation": false
     },
     "title": {
-      "fr": "Torches",
-      "en": "Torches",
-      "es": "Antorchas",
-      "pt": "Tochas"
+      "fr": "Torche{[~1]?s:}",
+      "en": "Torch{[~1]?es:}",
+      "es": "Antorcha{[~1]?s:}",
+      "pt": "Tocha{[~1]?s:}"
     }
   },
   {
@@ -438,10 +438,10 @@
       "isVisibleInAnimation": false
     },
     "title": {
-      "fr": "Armes 1 Main",
-      "en": "One-Handed Weapons",
-      "es": "Armas de una mano",
-      "pt": "Armas de 1 mão"
+      "fr": "Arme{[~1]?s:} 1 Main",
+      "en": "One-Handed Weapon{[~1]?s:}",
+      "es": "Arma{[~1]?s:} a 1 mano",
+      "pt": "Arma{[~1]?s:} de 1 mão"
     }
   },
   {
@@ -458,10 +458,10 @@
       "isVisibleInAnimation": false
     },
     "title": {
-      "fr": "Armes 2 Mains",
-      "en": "Two-Handed Weapons",
-      "es": "Armas de dos manos",
-      "pt": "Armas de 2 mãos"
+      "fr": "Arme{[~1]?s:} 2 Mains",
+      "en": "Two-Handed Weapon{[~1]?s:}",
+      "es": "Arma{[~1]?s:} a 2 manos",
+      "pt": "Arma{[~1]?s:} de 2 mãos"
     }
   },
   {
@@ -491,13 +491,13 @@
       ],
       "equipmentDisabledPositions": [],
       "isRecyclable": false,
-      "isVisibleInAnimation": true
+      "isVisibleInAnimation": false
     },
     "title": {
-      "fr": "Outils",
-      "en": "Tools",
-      "es": "Herramientas",
-      "pt": "Ferramentas"
+      "fr": "Outil{[~1]?s:}",
+      "en": "Tool{[~1]?s:}",
+      "es": "Herramienta{[~1]?s:}",
+      "pt": "Ferramenta{[~1]?s:}"
     }
   },
   {
@@ -512,10 +512,10 @@
       "isVisibleInAnimation": false
     },
     "title": {
-      "fr": "Familiers",
-      "en": "Pets",
-      "es": "Mascotas",
-      "pt": "Mascotes"
+      "fr": "Familier{[~1]?s:}",
+      "en": "Pet{[~1]?s:}",
+      "es": "Mascota{[~1]?s:}",
+      "pt": "Mascote{[~1]?s:}"
     }
   },
   {
@@ -528,10 +528,10 @@
       "isVisibleInAnimation": false
     },
     "title": {
-      "fr": "Montures",
-      "en": "Mounts",
-      "es": "Monturas",
-      "pt": "Montarias"
+      "fr": "Monture{[~1]?s:}",
+      "en": "Mount{[~1]?s:}",
+      "es": "Montura{[~1]?s:}",
+      "pt": "Montaria{[~1]?s:}"
     }
   },
   {
@@ -546,10 +546,10 @@
       "isVisibleInAnimation": false
     },
     "title": {
-      "fr": "Emblème",
-      "en": "Emblem",
-      "es": "Emblema",
-      "pt": "Emblema"
+      "fr": "Emblème{[~1]?s:}",
+      "en": "Emblem{[~1]?s:}",
+      "es": "Emblema{[~1]?s:}",
+      "pt": "Emblema{[~1]?s:}"
     }
   },
   {
@@ -564,10 +564,10 @@
       "isVisibleInAnimation": false
     },
     "title": {
-      "fr": "Costumes",
-      "en": "Costumes",
-      "es": "Trajes",
-      "pt": "Trajes"
+      "fr": "Costume{[~1]?s:}",
+      "en": "Costume{[~1]?s:}",
+      "es": "Traje{[~1]?s:}",
+      "pt": "Traje{[~1]?s:}"
     }
   },
   {

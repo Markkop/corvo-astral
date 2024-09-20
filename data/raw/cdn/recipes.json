@@ -31128,62 +31128,6 @@
     "upgradeItemId": 0
   },
   {
-    "id": 8080,
-    "categoryId": 81,
-    "level": 30,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8081,
-    "categoryId": 81,
-    "level": 40,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8082,
-    "categoryId": 81,
-    "level": 50,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8083,
-    "categoryId": 81,
-    "level": 60,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8084,
-    "categoryId": 81,
-    "level": 70,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8085,
-    "categoryId": 81,
-    "level": 80,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8086,
-    "categoryId": 81,
-    "level": 90,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
     "id": 8087,
     "categoryId": 83,
     "level": 78,
@@ -35491,78 +35435,6 @@
     "id": 8643,
     "categoryId": 81,
     "level": 135,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8644,
-    "categoryId": 81,
-    "level": 30,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8645,
-    "categoryId": 81,
-    "level": 30,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8646,
-    "categoryId": 81,
-    "level": 90,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8647,
-    "categoryId": 81,
-    "level": 90,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8648,
-    "categoryId": 81,
-    "level": 40,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8649,
-    "categoryId": 81,
-    "level": 40,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8650,
-    "categoryId": 81,
-    "level": 70,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8651,
-    "categoryId": 81,
-    "level": 70,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 8652,
-    "categoryId": 81,
-    "level": 80,
     "xpRatio": 3000,
     "isUpgrade": false,
     "upgradeItemId": 0
@@ -40072,174 +39944,6 @@
     "upgradeItemId": 0
   },
   {
-    "id": 9253,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9254,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9255,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9256,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9257,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9258,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9259,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9260,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9261,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9262,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9263,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9264,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9265,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9266,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9267,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9268,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9269,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9270,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9271,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9272,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9273,
-    "categoryId": 81,
-    "level": 140,
-    "xpRatio": 2400,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
     "id": 9274,
     "categoryId": 83,
     "level": 150,
@@ -40660,214 +40364,6 @@
     "categoryId": 81,
     "level": 40,
     "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9343,
-    "categoryId": 81,
-    "level": 105,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9344,
-    "categoryId": 81,
-    "level": 105,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9345,
-    "categoryId": 81,
-    "level": 105,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9346,
-    "categoryId": 81,
-    "level": 105,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9347,
-    "categoryId": 81,
-    "level": 105,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9348,
-    "categoryId": 81,
-    "level": 105,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9349,
-    "categoryId": 81,
-    "level": 105,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9350,
-    "categoryId": 81,
-    "level": 105,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9351,
-    "categoryId": 81,
-    "level": 105,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9352,
-    "categoryId": 81,
-    "level": 115,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9353,
-    "categoryId": 81,
-    "level": 115,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9354,
-    "categoryId": 81,
-    "level": 115,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9355,
-    "categoryId": 81,
-    "level": 115,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9356,
-    "categoryId": 81,
-    "level": 115,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9358,
-    "categoryId": 81,
-    "level": 125,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9359,
-    "categoryId": 81,
-    "level": 125,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9360,
-    "categoryId": 81,
-    "level": 125,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9361,
-    "categoryId": 81,
-    "level": 125,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9362,
-    "categoryId": 81,
-    "level": 125,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9363,
-    "categoryId": 81,
-    "level": 125,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9364,
-    "categoryId": 81,
-    "level": 125,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9366,
-    "categoryId": 81,
-    "level": 135,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9368,
-    "categoryId": 81,
-    "level": 135,
-    "xpRatio": 3000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9369,
-    "categoryId": 81,
-    "level": 135,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9370,
-    "categoryId": 81,
-    "level": 135,
-    "xpRatio": 9000,
-    "isUpgrade": false,
-    "upgradeItemId": 0
-  },
-  {
-    "id": 9372,
-    "categoryId": 81,
-    "level": 135,
-    "xpRatio": 9000,
     "isUpgrade": false,
     "upgradeItemId": 0
   },
@@ -42360,17 +41856,369 @@
     "upgradeItemId": 0
   },
   {
-    "id": 9575,
-    "categoryId": 79,
-    "level": 0,
-    "xpRatio": 0,
+    "id": 9576,
+    "categoryId": 83,
+    "level": 100,
+    "xpRatio": 16200,
     "isUpgrade": false,
     "upgradeItemId": 0
   },
   {
-    "id": 9576,
-    "categoryId": 83,
+    "id": 9580,
+    "categoryId": 79,
+    "level": 148,
+    "xpRatio": 10800,
+    "isUpgrade": true,
+    "upgradeItemId": 31524
+  },
+  {
+    "id": 9581,
+    "categoryId": 79,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31525
+  },
+  {
+    "id": 9582,
+    "categoryId": 77,
+    "level": 148,
+    "xpRatio": 10800,
+    "isUpgrade": true,
+    "upgradeItemId": 31527
+  },
+  {
+    "id": 9583,
+    "categoryId": 77,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31528
+  },
+  {
+    "id": 9584,
+    "categoryId": 79,
+    "level": 149,
+    "xpRatio": 10800,
+    "isUpgrade": true,
+    "upgradeItemId": 31530
+  },
+  {
+    "id": 9585,
+    "categoryId": 79,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31531
+  },
+  {
+    "id": 9586,
+    "categoryId": 77,
+    "level": 148,
+    "xpRatio": 10800,
+    "isUpgrade": true,
+    "upgradeItemId": 31533
+  },
+  {
+    "id": 9587,
+    "categoryId": 77,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31534
+  },
+  {
+    "id": 9588,
+    "categoryId": 80,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31536
+  },
+  {
+    "id": 9589,
+    "categoryId": 78,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31538
+  },
+  {
+    "id": 9590,
+    "categoryId": 79,
+    "level": 148,
+    "xpRatio": 10800,
+    "isUpgrade": true,
+    "upgradeItemId": 31540
+  },
+  {
+    "id": 9591,
+    "categoryId": 79,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31541
+  },
+  {
+    "id": 9592,
+    "categoryId": 77,
+    "level": 149,
+    "xpRatio": 10800,
+    "isUpgrade": true,
+    "upgradeItemId": 31543
+  },
+  {
+    "id": 9593,
+    "categoryId": 77,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31544
+  },
+  {
+    "id": 9594,
+    "categoryId": 80,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31546
+  },
+  {
+    "id": 9595,
+    "categoryId": 80,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31548
+  },
+  {
+    "id": 9596,
+    "categoryId": 78,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31550
+  },
+  {
+    "id": 9597,
+    "categoryId": 78,
+    "level": 150,
+    "xpRatio": 16200,
+    "isUpgrade": true,
+    "upgradeItemId": 31552
+  },
+  {
+    "id": 9602,
+    "categoryId": 81,
+    "level": 150,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9603,
+    "categoryId": 81,
+    "level": 150,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9604,
+    "categoryId": 81,
+    "level": 150,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9605,
+    "categoryId": 81,
+    "level": 150,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9606,
+    "categoryId": 81,
+    "level": 150,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9607,
+    "categoryId": 81,
+    "level": 150,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9608,
+    "categoryId": 81,
+    "level": 150,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9611,
+    "categoryId": 81,
     "level": 100,
+    "xpRatio": 3000,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9612,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9613,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9614,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9615,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9616,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9617,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9618,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9619,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9620,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9621,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9622,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9623,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9624,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9625,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9626,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9627,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9628,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9629,
+    "categoryId": 81,
+    "level": 130,
+    "xpRatio": 2400,
+    "isUpgrade": false,
+    "upgradeItemId": 0
+  },
+  {
+    "id": 9630,
+    "categoryId": 78,
+    "level": 150,
     "xpRatio": 16200,
     "isUpgrade": false,
     "upgradeItemId": 0

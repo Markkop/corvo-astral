@@ -1,4 +1,4 @@
-import { saveFile, openFile } from '../utils/files'
+import { openFile, saveFile } from '../utils/files'
 
 export default class ZenithParser {
   private langs = ['fr', 'en', 'pt', 'es']
@@ -36,19 +36,36 @@ export default class ZenithParser {
     return replacedText
   }
 
-  private recursivelyAddItemTranslation(modifyArray, consultingArray, ) {
+  private recursivelyAddItemTranslation(modifyArray, consultingArray) {
+    if (!modifyArray.translations) {
+      modifyArray.translations = []
+    }
+
+    if (!consultingArray.translations) {
+      consultingArray.translations = []
+    }
+
     consultingArray.forEach(consultingItem => {
+      if (!consultingItem.translations) {
+        return
+      }
+
       const matchingItem = modifyArray.find(modifyItem => {
         const idProperty = Object.keys(consultingItem).find(prop => prop.includes('id_'))
         return modifyItem[idProperty] === consultingItem[idProperty]
       })
 
+      if (!matchingItem) {
+        return
+      }
+
+
       if (consultingItem.translations) {
         matchingItem.translations.push(...consultingItem.translations)
       }
-      
+
       Object.keys(consultingItem).forEach(key => {
-        if(Array.isArray(consultingItem[key])) {
+        if (Array.isArray(consultingItem[key])) {
           this.recursivelyAddItemTranslation(matchingItem[key], consultingItem[key])
         }
       })
@@ -64,21 +81,21 @@ export default class ZenithParser {
 
   private splitChildrenSublimations(sublimations) {
     return sublimations.reduce((splittedSublimations, sublimation) => {
-      
+
       if (sublimation.children?.length) {
         sublimation.children.forEach((childSubli) => {
           childSubli.effects = sublimation.effects
           splittedSublimations.push(childSubli)
         })
       }
-      
+
       splittedSublimations.push(sublimation)
       return splittedSublimations
     }, [])
   }
 
   private mapComputedEffectValues(values, level = null) {
-    return values.reduce((valuesMapping, {ratio, damage}, index) => {
+    return values.reduce((valuesMapping, { ratio, damage }, index) => {
       let computedValue = damage ? `${ratio.toFixed(2)} + ${damage}` : ratio.toFixed(2)
       if (level) {
         computedValue = (ratio * level) + damage
@@ -121,10 +138,10 @@ export default class ZenithParser {
 
               const stateEffectTranslation = stateEffect.translations.find(({ locale }) => locale === lang)
               const nameStateEffect = stateEffectTranslation ? stateEffectTranslation.value : stateEffect.name_effect
-              
+
               return stateDataInfo + '\n' + this.replaceValueCodes(nameStateEffect, stateEffectValuesMapping)
             }, '')
-  
+
             const stateInfo = `**${nameInnerState}**:${stateDataInfo}`
             aditionalStateInfo.push(stateInfo)
           })
@@ -135,7 +152,7 @@ export default class ZenithParser {
 
         return parsedEffects
       }, {})
-      return { 
+      return {
         ...subli,
         parsedEffects: parsedSubliEffects
       }

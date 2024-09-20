@@ -1,9 +1,9 @@
+import { performance } from 'perf_hooks';
+import { openFile } from '../utils/files';
 import Downloader from "./Downloader";
 import ItemsGenerator from "./ItemsGenerator";
 import RecipesGenerator from "./RecipesGenerator";
-import { openFile } from '../utils/files'
 import ZenithParser from "./ZenithParser";
-import { performance } from 'perf_hooks'
 
 const downloadFolder = 'data/raw'
 const generatedFolder = 'data/generated'
@@ -19,7 +19,8 @@ async function importData() {
     console.log('New version found: ', currentLiveVersion)
     await downloader.downloadAndSaveWakfuCdnData()
     await downloader.downloadSublimationDataFromZenith()
-    await downloader.downloadSublimationStatesFromZenith()
+    // Zenith's API is giving us 500 for states
+    // await downloader.downloadSublimationStatesFromZenith()
   }
 
   const recipesGenerator = new RecipesGenerator(downloadFolder, generatedFolder)

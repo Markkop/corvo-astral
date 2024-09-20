@@ -1,27 +1,25 @@
-import 'module-alias/register'
-require('dotenv').config()
-import { Client, Interaction, Message, MessageReaction, TextChannel, User, Intents, Guild } from 'discord.js'
-import cron from 'node-cron'
-import express from 'express'
-import { handleInteractionError, handleMessageError, handleReactionError } from './utils/handleError'
-import { ConfigManager, MessageManager } from '@managers'
-import ReactionService from './services/ReactionService'
 import {
-  EquipCommand,
-  AlmaCommand,
   AboutCommand,
+  AlmaCommand,
   CalcCommand,
-  RecipeCommand,
-  SubliCommand,
+  ConfigCommand,
+  EquipCommand,
+  HelpCommand,
   PartyCreateCommand,
   PartyUpdateCommand,
-  HelpCommand,
-  ConfigCommand
+  RecipeCommand,
+  SubliCommand
 } from '@commands'
-import { GuildConfig } from '@types'
-import { saveServersNumber } from '@utils/serversNumber'
-import { registerCommands } from '@utils/registerCommands'
+import { ConfigManager, MessageManager } from '@managers'
 import stringsLang from '@stringsLang'
+import { GuildConfig } from '@types'
+import { registerCommands } from '@utils/registerCommands'
+import { Client, Guild, Intents, Interaction, Message, MessageReaction, TextChannel, User } from 'discord.js'
+import express from 'express'
+import 'module-alias/register'
+import ReactionService from './services/ReactionService'
+import { handleInteractionError, handleMessageError, handleReactionError } from './utils/handleError'
+require('dotenv').config()
 
 const commandsMap = {
   equip: EquipCommand,
@@ -72,7 +70,7 @@ class Bot {
     const servers = this.client.guilds.cache.size
     console.log(`Online on ${servers} servers: ${this.client.guilds.cache.map(guild => guild.name).join(', ')}`)
     this.client.user.setActivity('/about or /help', { type: 'PLAYING' })
-    saveServersNumber(servers)
+    // saveServersNumber(servers)
     this.registerCommandsAfterLoadingConfigs()
     this.listenTo8080()
   }

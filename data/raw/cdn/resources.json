@@ -3274,5 +3274,47 @@
       "es": "Árbol de Haluín",
       "pt": "Árvore de Relouin"
     }
+  },
+  {
+    "definition": {
+      "id": 833,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 10,
+      "iconGfxId": 2751719,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Bouleau de test",
+      "en": "Test Birch",
+      "es": "Abedul de test",
+      "pt": "Bétula de teste"
+    }
+  },
+  {
+    "definition": {
+      "id": 834,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 15,
+      "iconGfxId": 2792504,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Ortie de test",
+      "en": "Test Nettles",
+      "es": "Ortiga de test",
+      "pt": "Urtiga de teste"
+    }
   }
 ]

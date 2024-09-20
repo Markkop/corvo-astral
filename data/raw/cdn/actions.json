@@ -6,9 +6,9 @@
     },
     "description": {
       "fr": "Dommage [el0] : [#1]{[+3]?% des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
-      "en": "[el0] Damage: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? lost:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of the caster:{[7<3]? of the target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
-      "es": "Daño [el0] : [#1]{[+3]?% de los PdV:}{[+3]?{[1=3]? máx.:{[2=3]? actuales:{[3=3]? faltantes:{[4=3]? máx.:{[5=3]? actuales:{[6=3]? faltantes:}}}}}}:}{[+3]?{[4<3]? del lanzador:{[7<3]? del objetivo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
-      "pt": "Dano [el0] : [#1]{[+3]?% dos PV:}{[+3]?{[1=3]? máx.:{[2=3]? atuais:{[3=3]? perdidos:{[4=3]? máx.:{[5=3]? atuais:{[6=3]? perdidos:}}}}}}:}{[+3]?{[4<3]? do lançador:{[7<3]? do alvo:}}:}{[-2]?{[0=2]?[ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+      "en": "[el0] Damage: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? current:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of caster:{[7<3]? of target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "es": "Daño [el0]: [#1]{[+3]?% de los PdV:}{[+3]?{[1=3]? máx:{[2=3]? corrientes:{[3=3]? faltantes:{[4=3]? máx:{[5=3]? corrientes:{[6=3]? faltantes:}}}}}}:}{[+3]?{[4<3]? del lanzador:{[7<3]? del objetivo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "pt": "Dano de [el0]: [#1]{[+3]?% dos PV:}{[+3]?{[1=3]? máx.:{[2=3]? atuais:{[3=3]? perdidos:{[4=3]? máx.:{[5=3]? atuais:{[6=3]? perdidos:}}}}}}:}{[+3]?{[4<3]? do lançador:{[7<3]? do alvo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
     }
   },
   {
@@ -589,6 +589,18 @@
   },
   {
     "definition": {
+      "id": 193,
+      "effect": "Gain : PW"
+    },
+    "description": {
+      "fr": "[#1] PW",
+      "en": "[#1] WP",
+      "es": "[#1] PW",
+      "pt": "[#1] de PW"
+    }
+  },
+  {
+    "definition": {
       "id": 194,
       "effect": "Perte : PW"
     },
@@ -840,9 +852,9 @@
     },
     "description": {
       "fr": "Dommage [el6] : [#1]{[+3]?% des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
-      "en": "[el6] Damage: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? current:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of the caster:{[7<3]? of the target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
-      "es": "Daño [el6]: [#1]{[+3]?% de los PdV:}{[+3]?{[1=3]? máx.:{[2=3]? actuales:{[3=3]? faltantes:{[4=3]? máx.:{[5=3]? actuales:{[6=3]? faltantes:}}}}}}:}{[+3]?{[4<3]? del lanzador:{[7<3]? del objetivo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
-      "pt": "Dano [el6]: [#1]{[+3]?% dos PV:}{[+3]?{[1=3]? máx.:{[2=3]? atuais:{[3=3]? perdidos:{[4=3]? máx.:{[5=3]? atuais:{[6=3]? perdidos:}}}}}}:}{[+3]?{[4<3]? do lançador:{[7<3]? do alvo:}}:}{[-2]?{[0=2]?[ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+      "en": "[el6] Damage: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? current:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of caster:{[7<3]? of target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "es": "Daños [el6]: [#1]{[+3]?% de los PdV:}{[+3]?{[1=3]? máx:{[2=3]? corrientes:{[3=3]? faltantes:{[4=3]? máx:{[5=3]? corrientes:{[6=3]? faltantes:}}}}}}:}{[+3]?{[4<3]? del lanzador:{[7<3]? del objetivo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "pt": "Dano de [el6]: [#1]{[+3]?% dos PV:}{[+3]?{[1=3]? máx.:{[2=3]? atuais:{[3=3]? perdidos:{[4=3]? máx.:{[5=3]? atuais:{[6=3]? perdidos:}}}}}}:}{[+3]?{[4<3]? do lançador:{[7<3]? do alvo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
     }
   },
   {
@@ -852,9 +864,9 @@
     },
     "description": {
       "fr": "Soin [el6] : [#1]{[+3]?% des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
-      "en": "[el6] Heal: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? current:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of the caster:{[7<3]? of the target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
-      "es": "Cura [el6]: [#1]{[+3]?% de los PdV:}{[+3]?{[1=3]? máx.:{[2=3]? actuales:{[3=3]? faltantes:{[4=3]? máx.:{[5=3]? actuales:{[6=3]? faltantes:}}}}}}:}{[+3]?{[4<3]? del lanzador:{[7<3]? del objetivo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
-      "pt": "Cura [el6]: [#1]{[+3]?% dos PV:}{[+3]?{[1=3]? máx.:{[2=3]? atuais:{[3=3]? perdidos:{[4=3]? máx.:{[5=3]? atuais:{[6=3]? perdidos:}}}}}}:}{[+3]?{[4<3]? do lançador:{[7<3]? do alvo:}}:}{[-2]?{[0=2]?[ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+      "en": "[el6] Healing: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? current:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of the caster:{[7<3]? of the target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "es": "Curas [el6]: [#1]{[+3]?% de los PdV:}{[+3]?{[1=3]? máx:{[2=3]? corrientes:{[3=3]? faltantes:{[4=3]? máx:{[5=3]? corrientes:{[6=3]? faltantes:}}}}}}:}{[+3]?{[4<3]? del lanzador:{[7<3]? del objetivo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+      "pt": "Cura de [el6]: [#1]{[+3]?% dos PV:}{[+3]?{[1=3]? máx.:{[2=3]? atuais:{[3=3]? perdidos:{[4=3]? máx.:{[5=3]? atuais:{[6=3]? perdidos:}}}}}}:}{[+3]?{[4<3]? do lançador:{[7<3]? do alvo:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
     }
   },
   {
