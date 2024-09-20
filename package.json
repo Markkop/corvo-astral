@@ -7,8 +7,8 @@
   },
   "main": "dist/bot.js",
   "scripts": {
-    "start": "npm run build && node dist/bot.js",
-    "dev": "npm run build && ts-node src/bot.ts",
+    "start": "npm run build && node -r ./dist/registerAlias.js dist/bot.js",
+    "dev": "ts-node src/bot.ts",
     "build": "tsc",
     "import": "npm run build && ts-node src/importers/import.ts",
     "lint": "eslint .",

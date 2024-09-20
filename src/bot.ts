@@ -17,6 +17,7 @@ import { registerCommands } from '@utils/registerCommands'
 import { Client, Guild, Intents, Interaction, Message, MessageReaction, TextChannel, User } from 'discord.js'
 import express from 'express'
 import 'module-alias/register'
+import './registerAlias'
 import ReactionService from './services/ReactionService'
 import { handleInteractionError, handleMessageError, handleReactionError } from './utils/handleError'
 require('dotenv').config()
