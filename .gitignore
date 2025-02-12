@@ -4,3 +4,4 @@ out
 node_modules
 coverage
 serversBadge.json
+.DS_Store

@@ -3316,5 +3316,215 @@
       "es": "Ortiga de test",
       "pt": "Urtiga de teste"
     }
+  },
+  {
+    "definition": {
+      "id": 835,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30831809,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Beaussu",
+      "en": "Sea Boss",
+      "es": "Jefesú",
+      "pt": "Anchefsu"
+    }
+  },
+  {
+    "definition": {
+      "id": 836,
+      "resourceType": 20,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 30831811,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Poissélène",
+      "en": "Lunafish",
+      "es": "Pecelenio",
+      "pt": "Peixelênico"
+    }
+  },
+  {
+    "definition": {
+      "id": 837,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30931814,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Sanguiflore",
+      "en": "Bloodiflower",
+      "es": "Sanguiflor",
+      "pt": "Sanguiflor"
+    }
+  },
+  {
+    "definition": {
+      "id": 838,
+      "resourceType": 2,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": 5,
+      "idealTemperatureRangeMax": 25,
+      "iconGfxId": 30931817,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 2
+    },
+    "title": {
+      "fr": "Racine grouilleuse",
+      "en": "Grambo Root",
+      "es": "Raíz esbirria",
+      "pt": "Raiz Gramba"
+    }
+  },
+  {
+    "definition": {
+      "id": 839,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28131819,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Zircomète",
+      "en": "Zircomet",
+      "es": "Zircometa",
+      "pt": "Zircometa"
+    }
+  },
+  {
+    "definition": {
+      "id": 840,
+      "resourceType": 7,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -25,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 28131821,
+      "lastEvolutionStep": 16,
+      "usableByHeroes": false,
+      "idealRain": 0
+    },
+    "title": {
+      "fr": "Fragmonnite",
+      "en": "Fragmonnite",
+      "es": "Fragmonita",
+      "pt": "Fragmonita"
+    }
+  },
+  {
+    "definition": {
+      "id": 841,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31331824,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Primaniola",
+      "en": "Primaniola",
+      "es": "Primaniola",
+      "pt": "Primaniola"
+    }
+  },
+  {
+    "definition": {
+      "id": 842,
+      "resourceType": 10,
+      "isBlocking": false,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -5,
+      "idealTemperatureRangeMax": 35,
+      "iconGfxId": 31331827,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 1
+    },
+    "title": {
+      "fr": "Rozen",
+      "en": "Rozen",
+      "es": "Rosen",
+      "pt": "Rozen"
+    }
+  },
+  {
+    "definition": {
+      "id": 843,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30631830,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Astracacia",
+      "en": "Astracacia",
+      "es": "Astracacia",
+      "pt": "Astracácia"
+    }
+  },
+  {
+    "definition": {
+      "id": 844,
+      "resourceType": 1,
+      "isBlocking": true,
+      "idealRainRangeMin": 0,
+      "idealRainRangeMax": 0,
+      "idealTemperatureRangeMin": -10,
+      "idealTemperatureRangeMax": 20,
+      "iconGfxId": 30631833,
+      "lastEvolutionStep": 1,
+      "usableByHeroes": false,
+      "idealRain": 3
+    },
+    "title": {
+      "fr": "Luzyl",
+      "en": "Luzyl",
+      "es": "Lucil",
+      "pt": "Luzyl"
+    }
   }
 ]

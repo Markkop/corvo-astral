@@ -33,5 +33,10 @@
     "id": 20,
     "name": "RELIC_GEMMABLE",
     "description": "Ajoute un slot de gemme relique à un objet "
+  },
+  {
+    "id": 23,
+    "name": "EXCLUDE_FROM_LISTS",
+    "description": "Objet exclus des listes d'objets comme l'auto complétion ou les offres d'achat"
   }
 ]

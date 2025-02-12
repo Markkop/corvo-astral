@@ -17,10 +17,10 @@
       "effect": "Boost : Point de vie (PV)"
     },
     "description": {
-      "fr": "[#1] PV",
-      "en": "[#1] HP",
-      "es": "[#1] PdV",
-      "pt": "[#1] PV"
+      "fr": "[#charac HP] [#1] PV",
+      "en": "[#charac HP] [#1] HP",
+      "es": "[#charac HP] [#1] PdV",
+      "pt": "[#charac HP] [#1] PV"
     }
   },
   {
@@ -29,10 +29,10 @@
       "effect": "Deboost : Point de vie (PV)"
     },
     "description": {
-      "fr": "-[#1] Point{[>1]?s:} de Vie",
-      "en": "-[#1] Health Point{[=1]?:s}",
-      "es": "-[#1] punto{[=1]?:s} de vida",
-      "pt": "-[#1] Ponto{[>1]?s:} de Vida"
+      "fr": "[#charac HP] -[#1] Point{[>1]?s:} de Vie",
+      "en": "[#charac HP] -[#1] Health Point{[>1]?s:}",
+      "es": "[#charac HP] -[#1] punto{[=1]?:s} de vida",
+      "pt": "[#charac HP] -[#1] Ponto{[>1]?s:} de Vida"
     }
   },
   {
@@ -53,10 +53,10 @@
       "effect": "Gain : Maîtrise Soin"
     },
     "description": {
-      "fr": "[#1] Maîtrise Soin",
-      "en": "[#1] Healing Mastery",
-      "es": "[#1] dominio cura",
-      "pt": "[#1] de Domínio de cura"
+      "fr": "[#charac HEAL_IN_PERCENT] [#1] Maîtrise Soin",
+      "en": "[#charac HEAL_IN_PERCENT] [#1] Healing Mastery",
+      "es": "[#charac HEAL_IN_PERCENT] [#1] Dominio cura",
+      "pt": "[#charac HEAL_IN_PERCENT] [#1] Domínio de cura"
     }
   },
   {
@@ -65,10 +65,10 @@
       "effect": "Boost : PA"
     },
     "description": {
-      "fr": "[#1] PA",
-      "en": "[#1] AP",
-      "es": "[#1] PA",
-      "pt": "[#1] PA"
+      "fr": "[#charac AP] [#1] PA",
+      "en": "[#charac AP] [#1] AP",
+      "es": "[#charac AP] [#1] PA",
+      "pt": "[#charac AP] [#1] PA"
     }
   },
   {
@@ -101,22 +101,10 @@
       "effect": "Boost : PM"
     },
     "description": {
-      "fr": "[#1] PM",
-      "en": "[#1] MP",
-      "es": "[#1] PM",
-      "pt": "[#1] de PM"
-    }
-  },
-  {
-    "definition": {
-      "id": 42,
-      "effect": "OLD - Deboost : PM"
-    },
-    "description": {
-      "fr": "-[#1] PM {[~2]?([#2]%):}",
-      "en": "-[#1] MP {[~2]?([#2]%):}",
-      "es": "-[#1] PM {[~2]?([#2]%):}",
-      "pt": "-[#1] PM {[~2]?([#2]%):}"
+      "fr": "[#charac MP] [#1] PM",
+      "en": "[#charac MP] [#1] MP",
+      "es": "[#charac MP] [#1] PM",
+      "pt": "[#charac MP] [#1] PM"
     }
   },
   {
@@ -125,10 +113,10 @@
       "effect": "Deboost : PA"
     },
     "description": {
-      "fr": "-[#1] PA max",
-      "en": "-[#1] max AP",
-      "es": "-[#1] PA máx.",
-      "pt": "-[#1] PA máximo"
+      "fr": "[#charac AP] -[#1] PA max",
+      "en": "[#charac AP] -[#1] max AP",
+      "es": "[#charac AP] -[#1] PA máx.",
+      "pt": "[#charac AP] -[#1] PA máx."
     }
   },
   {
@@ -137,10 +125,10 @@
       "effect": "Deboost : PM"
     },
     "description": {
-      "fr": "-[#1] PM max",
-      "en": "-[#1] max MP",
-      "es": "-[#1] PM máx.",
-      "pt": "-[#1] PM máximo"
+      "fr": "[#charac MP] -[#1] PM max",
+      "en": "[#charac MP] -[#1] max MP",
+      "es": "[#charac MP] -[#1] PM máx.",
+      "pt": "[#charac MP] -[#1] PM máx."
     }
   },
   {
@@ -149,10 +137,10 @@
       "effect": "Gain : Résistance Dos"
     },
     "description": {
-      "fr": "[#1] Résistance Dos",
-      "en": "[#1] Rear Resistance",
-      "es": "[#1] resistencia por la espalda",
-      "pt": "[#1] de Resistência de costas"
+      "fr": "[#charac RES_BACKSTAB] [#1] Résistance Dos",
+      "en": "[#charac RES_BACKSTAB] [#1] Rear Resistance",
+      "es": "[#charac RES_BACKSTAB] [#1] Resistencia por la espalda",
+      "pt": "[#charac RES_BACKSTAB] [#1] Resistência de costas"
     }
   },
   {
@@ -161,10 +149,10 @@
       "effect": "Gain : Résistance Élémentaire"
     },
     "description": {
-      "fr": "[#1] Résistance Élémentaire",
-      "en": "[#1] Elemental Resistance",
-      "es": "[#1] resistencia elemental",
-      "pt": "[#1] de resistência elementar"
+      "fr": "[#charac RES_IN_PERCENT] [#1] Résistance Élémentaire",
+      "en": "[#charac RES_IN_PERCENT] [#1] Elemental Resistance",
+      "es": "[#charac RES_IN_PERCENT] [#1] Resistencia elemental",
+      "pt": "[#charac RES_IN_PERCENT] [#1] Resistência elementar"
     }
   },
   {
@@ -173,10 +161,10 @@
       "effect": "Gain : Résistance Feu"
     },
     "description": {
-      "fr": "[#1] Résistance [el1]",
-      "en": "[#1] [el1] Resistance",
-      "es": "[#1] resistencia al [el1]",
-      "pt": "[#1] Resistência a [el1]"
+      "fr": "[#charac RES_FIRE_PERCENT] [#1] Résistance Feu",
+      "en": "[#charac RES_FIRE_PERCENT] [#1] Fire Resistance",
+      "es": "[#charac RES_FIRE_PERCENT] [#1] Resistencia al fuego",
+      "pt": "[#charac RES_FIRE_PERCENT] [#1] Resistência ao fogo"
     }
   },
   {
@@ -185,10 +173,10 @@
       "effect": "Gain : Résistance Eau"
     },
     "description": {
-      "fr": "[#1] Résistance [el2]",
-      "en": "[#1] [el2] Resistance",
-      "es": "[#1] resistencia al [el2]",
-      "pt": "[#1] Resistência a [el2]"
+      "fr": "[#charac RES_WATER_PERCENT] [#1] Résistance Eau",
+      "en": "[#charac RES_WATER_PERCENT] [#1] Water Resistance",
+      "es": "[#charac RES_WATER_PERCENT] [#1] Resistencia al agua",
+      "pt": "[#charac RES_WATER_PERCENT] [#1] Resistência à água"
     }
   },
   {
@@ -197,10 +185,10 @@
       "effect": "Gain : Résistance Terre"
     },
     "description": {
-      "fr": "[#1] Résistance [el3]",
-      "en": "[#1] [el3] Resistance",
-      "es": "[#1] resistencia a la [el3]",
-      "pt": "[#1] Resistência a [el3]"
+      "fr": "[#charac RES_EARTH_PERCENT] [#1] Résistance Terre",
+      "en": "[#charac RES_EARTH_PERCENT] [#1] Earth Resistance",
+      "es": "[#charac RES_EARTH_PERCENT] [#1] Resistencia a la tierra",
+      "pt": "[#charac RES_EARTH_PERCENT] [#1] Resistência à terra"
     }
   },
   {
@@ -209,10 +197,10 @@
       "effect": "Gain : Résistance Air"
     },
     "description": {
-      "fr": "[#1] Résistance [el4]",
-      "en": "[#1] [el4] Resistance",
-      "es": "[#1] resistencia al [el4]",
-      "pt": "[#1] Resistência a [el4]"
+      "fr": "[#charac RES_AIR_PERCENT] [#1] Résistance Air",
+      "en": "[#charac RES_AIR_PERCENT] [#1] Air Resistance",
+      "es": "[#charac RES_AIR_PERCENT] [#1] Resistencia al aire",
+      "pt": "[#charac RES_AIR_PERCENT] [#1] Resistência ao ar"
     }
   },
   {
@@ -221,10 +209,10 @@
       "effect": "Perte : Résistance Élémentaire"
     },
     "description": {
-      "fr": "-[#1] Résistance élémentaire",
-      "en": "-[#1] Elemental Resistance",
-      "es": "-[#1] resistencia elemental",
-      "pt": "-[#1] Resistência elementar"
+      "fr": "[#charac RES_IN_PERCENT] -[#1] Résistance élémentaire",
+      "en": "[#charac RES_IN_PERCENT] -[#1] Elemental Resistance",
+      "es": "[#charac RES_IN_PERCENT]-[#1] resistencia elemental",
+      "pt": "[#charac RES_IN_PERCENT]-[#1] Resistência elementar"
     }
   },
   {
@@ -233,10 +221,10 @@
       "effect": "Perte : Résistance Terre (sans cap)"
     },
     "description": {
-      "fr": "-[#1] Résistance [el3]",
-      "en": "-[#1] [el3] Resistance",
-      "es": "-[#1] resistencia a la [el3]",
-      "pt": "-[#1] Resistência a [el3]"
+      "fr": "[#charac RES_EARTH_PERCENT] -[#1] Résistance Terre",
+      "en": "[#charac RES_EARTH_PERCENT] -[#1] Earth Resistance",
+      "es": "[#charac RES_EARTH_PERCENT] -[#1] Resistencia a la tierra",
+      "pt": "[#charac RES_EARTH_PERCENT] -[#1] Resistência à terra"
     }
   },
   {
@@ -245,10 +233,10 @@
       "effect": "Perte : Résistance Feu (sans cap)"
     },
     "description": {
-      "fr": "-[#1] Résistance [el1]",
-      "en": "-[#1] [el1] Resistance",
-      "es": "-[#1] resistencia al [el1]",
-      "pt": "-[#1] Resistência a [el1]"
+      "fr": "[#charac RES_FIRE_PERCENT] -[#1] Résistance Feu",
+      "en": "[#charac RES_FIRE_PERCENT] -[#1] Fire Resistance",
+      "es": "[#charac RES_FIRE_PERCENT] -[#1] Resistencia al fuego",
+      "pt": "[#charac RES_FIRE_PERCENT] -[#1] Resistência ao fogo"
     }
   },
   {
@@ -257,10 +245,10 @@
       "effect": "Perte : Résistance Eau (sans cap)"
     },
     "description": {
-      "fr": "-[#1] Résistance [el2]",
-      "en": "-[#1] [el2] Resistance",
-      "es": "-[#1] resistencia al [el2]",
-      "pt": "-[#1] Resistência a [el2]"
+      "fr": "[#charac RES_WATER_PERCENT] -[#1] Résistance Eau",
+      "en": "[#charac RES_WATER_PERCENT] -[#1] Water Resistance",
+      "es": "[#charac RES_WATER_PERCENT] -[#1] Resistencia al agua",
+      "pt": "[#charac RES_WATER_PERCENT] -[#1] Resistência à água"
     }
   },
   {
@@ -269,10 +257,10 @@
       "effect": "Perte : Résistance Élémentaire (sans cap)"
     },
     "description": {
-      "fr": "-[#1] Résistance élémentaire",
-      "en": "-[#1] Elemental Resistance",
-      "es": "-[#1] resistencia elemental",
-      "pt": "-[#1] Resistência elementar"
+      "fr": "[#charac RES_IN_PERCENT] -[#1] Résistance élémentaire",
+      "en": "[#charac RES_IN_PERCENT] -[#1] Elemental Resistance",
+      "es": "[#charac RES_IN_PERCENT]-[#1] resistencia elemental",
+      "pt": "[#charac RES_IN_PERCENT]-[#1] Resistência elementar"
     }
   },
   {
@@ -281,10 +269,10 @@
       "effect": "Gain : Maîtrise Élémentaire"
     },
     "description": {
-      "fr": "[#1] Maîtrise Élémentaire",
-      "en": "[#1] Elemental Mastery",
-      "es": "[#1] dominio elemental",
-      "pt": "[#1] de domínio elementar"
+      "fr": "[#charac DMG_IN_PERCENT] [#1] Maîtrise Élémentaire",
+      "en": "[#charac DMG_IN_PERCENT] [#1] Elemental Mastery",
+      "es": "[#charac DMG_IN_PERCENT] [#1] Dominio elemental",
+      "pt": "[#charac DMG_IN_PERCENT] [#1] Domínio elementar"
     }
   },
   {
@@ -293,10 +281,10 @@
       "effect": "Gain : Maîtrise Feu"
     },
     "description": {
-      "fr": "[#1] Maîtrise [el1]",
-      "en": "[#1] [el1] Mastery",
-      "es": "[#1] dominio de [el1]",
-      "pt": "[#1] de domínio de [el1]"
+      "fr": "[#charac DMG_FIRE_PERCENT] [#1] Maîtrise Feu",
+      "en": "[#charac DMG_FIRE_PERCENT] [#1] Fire Mastery",
+      "es": "[#charac DMG_FIRE_PERCENT] [#1] Dominio de fuego",
+      "pt": "[#charac DMG_FIRE_PERCENT] [#1] Domínio de fogo"
     }
   },
   {
@@ -305,10 +293,10 @@
       "effect": "Gain : Maîtrise Terre"
     },
     "description": {
-      "fr": "[#1] Maîtrise [el3]",
-      "en": "[#1] [el3] Mastery",
-      "es": "[#1] dominio de [el3]",
-      "pt": "[#1] de domínio de [el3]"
+      "fr": "[#charac DMG_EARTH_PERCENT] [#1] Maîtrise Terre",
+      "en": "[#charac DMG_EARTH_PERCENT] [#1] Earth Mastery",
+      "es": "[#charac DMG_EARTH_PERCENT] [#1] Dominio de tierra",
+      "pt": "[#charac DMG_EARTH_PERCENT] [#1] Domínio de terra"
     }
   },
   {
@@ -317,10 +305,10 @@
       "effect": "Gain : Maîtrise Eau"
     },
     "description": {
-      "fr": "[#1] Maîtrise [el2]",
-      "en": "[#1] [el2] Mastery",
-      "es": "[#1] dominio de [el2]",
-      "pt": "[#1] de domínio de [el2]"
+      "fr": "[#charac DMG_WATER_PERCENT] [#1] Maîtrise Eau",
+      "en": "[#charac DMG_WATER_PERCENT] [#1] Water Mastery",
+      "es": "[#charac DMG_WATER_PERCENT] [#1] Dominio de agua",
+      "pt": "[#charac DMG_WATER_PERCENT] [#1] Domínio de água"
     }
   },
   {
@@ -329,10 +317,10 @@
       "effect": "Gain : Maîtrise Air"
     },
     "description": {
-      "fr": "[#1] Maîtrise [el4]",
-      "en": "[#1] [el4] Mastery",
-      "es": "[#1] dominio de [el4]",
-      "pt": "[#1] de domínio de [el4]"
+      "fr": "[#charac DMG_AIR_PERCENT] [#1] Maîtrise Air",
+      "en": "[#charac DMG_AIR_PERCENT] [#1] Air Mastery",
+      "es": "[#charac DMG_AIR_PERCENT] [#1] Dominio de aire",
+      "pt": "[#charac DMG_AIR_PERCENT] [#1] Domínio de ar"
     }
   },
   {
@@ -341,10 +329,10 @@
       "effect": "Perte : Maîtrise Élémentaire"
     },
     "description": {
-      "fr": "-[#1] Maîtrise Élémentaire",
-      "en": "-[#1] Elemental Mastery",
-      "es": "-[#1] dominio elemental",
-      "pt": "-[#1] de domínio elementar"
+      "fr": "[#charac DMG_IN_PERCENT] -[#1] Maîtrise Élémentaire",
+      "en": "[#charac DMG_IN_PERCENT] -[#1] Elemental Mastery",
+      "es": "[#charac DMG_IN_PERCENT] -[#1] Dominio elemental",
+      "pt": "[#charac DMG_IN_PERCENT] -[#1] Domínio elementar"
     }
   },
   {
@@ -353,10 +341,10 @@
       "effect": "Perte : Maîtrise Feu"
     },
     "description": {
-      "fr": "-[#1] Maîtrise [el1]",
-      "en": "-[#1] [el1] Mastery",
-      "es": "-[#1] dominio de [el1]",
-      "pt": "-[#1] de domínio de [el1]"
+      "fr": "[#charac DMG_FIRE_PERCENT] -[#1] Maîtrise Feu",
+      "en": "[#charac DMG_FIRE_PERCENT] -[#1] Fire Mastery",
+      "es": "[#charac DMG_FIRE_PERCENT] -[#1] dominio de fuego",
+      "pt": "[#charac DMG_FIRE_PERCENT] -[#1] Domínio de fogo"
     }
   },
   {
@@ -365,10 +353,10 @@
       "effect": "Gain : Maîtrise Critique"
     },
     "description": {
-      "fr": "[#1] Maîtrise Critique",
-      "en": "[#1] Critical Mastery",
-      "es": "[#1] dominio crítico",
-      "pt": "[#1] de Domínio de crítico"
+      "fr": "[#charac CRITICAL_BONUS] [#1] Maîtrise Critique",
+      "en": "[#charac CRITICAL_BONUS] [#1] Critical Mastery",
+      "es": "[#charac CRITICAL_BONUS] [#1] Dominio crítico",
+      "pt": "[#charac CRITICAL_BONUS] [#1] Domínio de crítico"
     }
   },
   {
@@ -377,10 +365,10 @@
       "effect": "Gain : Coup Critique (%)"
     },
     "description": {
-      "fr": "[#1]% Coup critique",
-      "en": "[#1]% Critical Hit",
-      "es": "[#1]% de golpe crítico",
-      "pt": "[#1]% de golpe crítico"
+      "fr": "[#charac FEROCITY] [#1]% Coup critique",
+      "en": "[#charac FEROCITY] [#1]% Critical Hit",
+      "es": "[#charac FEROCITY] [#1]% de golpe crítico",
+      "pt": "[#charac FEROCITY] [#1]% de golpe crítico"
     }
   },
   {
@@ -389,10 +377,10 @@
       "effect": "Gain : Portée"
     },
     "description": {
-      "fr": "[#1] Portée",
-      "en": "[#1] Range",
-      "es": "[#1] alcance",
-      "pt": "[#1] de Alcance"
+      "fr": "[#charac RANGE] [#1] Portée",
+      "en": "[#charac RANGE] [#1] Range",
+      "es": "[#charac RANGE] [#1] Alcance",
+      "pt": "[#charac RANGE] [#1] Alcance"
     }
   },
   {
@@ -401,10 +389,10 @@
       "effect": "Perte : Portée"
     },
     "description": {
-      "fr": "-[#1] Portée",
-      "en": "-[#1] Range",
-      "es": "-[#1] alcance",
-      "pt": "-[#1] de Alcance"
+      "fr": "[#charac RANGE] -[#1] Portée",
+      "en": "[#charac RANGE] -[#1] Range",
+      "es": "[#charac RANGE] -[#1] Alcance",
+      "pt": "[#charac RANGE] -[#1] Alcance"
     }
   },
   {
@@ -413,10 +401,10 @@
       "effect": "Gain : Prospection"
     },
     "description": {
-      "fr": "[#1] Prospection",
-      "en": "[#1] Prospecting",
-      "es": "[#1] prospección",
-      "pt": "[#1] de Prospecção"
+      "fr": "[#charac PROSPECTION] [#1] Prospection",
+      "en": "[#charac PROSPECTION] [#1] Prospecting",
+      "es": "[#charac PROSPECTION] [#1] Prospección",
+      "pt": "[#charac PROSPECTION] [#1] Prospecção"
     }
   },
   {
@@ -425,10 +413,10 @@
       "effect": "Gain : Sagesse"
     },
     "description": {
-      "fr": "[#1] Sagesse",
-      "en": "[#1] Wisdom",
-      "es": "[#1] sabiduría",
-      "pt": "[#1] de Sabedoria"
+      "fr": "[#charac WISDOM] [#1] Sagesse",
+      "en": "[#charac WISDOM] [#1] Wisdom",
+      "es": "[#charac WISDOM] [#1] Sabiduría",
+      "pt": "[#charac WISDOM] [#1] Sabedoria"
     }
   },
   {
@@ -437,10 +425,10 @@
       "effect": "Perte : Coup Critique (%)"
     },
     "description": {
-      "fr": "-[#1]% Coup critique",
-      "en": "-[#1]% Critical Hit",
-      "es": "-[#1]% de golpe crítico",
-      "pt": "-[#1]% de golpe crítico"
+      "fr": "[#charac FEROCITY] -[#1]% Coup critique",
+      "en": "[#charac FEROCITY] -[#1]% Critical Hit",
+      "es": "[#charac FEROCITY] -[#1]% de golpe crítico",
+      "pt": "[#charac FEROCITY] -[#1]% Golpe crítico"
     }
   },
   {
@@ -449,10 +437,10 @@
       "effect": "Gain : Initiative"
     },
     "description": {
-      "fr": "[#1] Initiative",
-      "en": "[#1] Initiative",
-      "es": "[#1] iniciativa",
-      "pt": "[#1] de Iniciativa"
+      "fr": "[#charac INIT] [#1] Initiative",
+      "en": "[#charac INIT] [#1] Initiative",
+      "es": "[#charac INIT] [#1] Iniciativa",
+      "pt": "[#charac INIT] [#1] Iniciativa"
     }
   },
   {
@@ -461,10 +449,10 @@
       "effect": "Perte : Initiative"
     },
     "description": {
-      "fr": "-[#1] Initiative",
-      "en": "-[#1] Initiative",
-      "es": "-[#1] iniciativa",
-      "pt": "-[#1] de Iniciativa"
+      "fr": "[#charac INIT] -[#1] Initiative",
+      "en": "[#charac INIT] -[#1] Initiative",
+      "es": "[#charac INIT] -[#1] Iniciativa",
+      "pt": "[#charac INIT] -[#1] Iniciativa"
     }
   },
   {
@@ -473,10 +461,10 @@
       "effect": "Gain : Tacle"
     },
     "description": {
-      "fr": "[#1] Tacle",
-      "en": "[#1] Lock",
-      "es": "[#1] placaje",
-      "pt": "[#1] de Bloqueio"
+      "fr": "[#charac TACKLE] [#1] Tacle",
+      "en": "[#charac TACKLE] [#1] Lock",
+      "es": "[#charac TACKLE] [#1] Placaje",
+      "pt": "[#charac TACKLE] [#1] Bloqueio"
     }
   },
   {
@@ -485,10 +473,10 @@
       "effect": "Perte : Tacle"
     },
     "description": {
-      "fr": "-[#1] Tacle",
-      "en": "-[#1] Lock",
-      "es": "-[#1] placaje",
-      "pt": "-[#1] de Bloqueio"
+      "fr": "[#charac TACKLE] -[#1] Tacle",
+      "en": "[#charac TACKLE] -[#1] Lock",
+      "es": "[#charac TACKLE] -[#1] Placaje",
+      "pt": "[#charac TACKLE] -[#1] Bloqueio"
     }
   },
   {
@@ -497,10 +485,10 @@
       "effect": "Gain : Esquive"
     },
     "description": {
-      "fr": "[#1] Esquive",
-      "en": "[#1] Dodge",
-      "es": "[#1] Esquiva",
-      "pt": "[#1] de esquiva"
+      "fr": "[#charac DODGE] [#1] Esquive",
+      "en": "[#charac DODGE] [#1] Dodge",
+      "es": "[#charac DODGE] [#1] Esquiva",
+      "pt": "[#charac DODGE] [#1] Esquiva"
     }
   },
   {
@@ -509,10 +497,10 @@
       "effect": "Perte : Esquive"
     },
     "description": {
-      "fr": "-[#1] Esquive",
-      "en": "-[#1] Dodge",
-      "es": "-[#1] esquiva",
-      "pt": "-[#1] de Esquiva"
+      "fr": "[#charac DODGE] -[#1] Esquive",
+      "en": "[#charac DODGE] -[#1] Dodge",
+      "es": "[#charac DODGE] -[#1] Esquiva",
+      "pt": "[#charac DODGE] -[#1] Esquiva"
     }
   },
   {
@@ -521,10 +509,10 @@
       "effect": "Gain : Volonté"
     },
     "description": {
-      "fr": "[#1] Volonté",
-      "en": "[#1] Force of Will",
-      "es": "[#1] voluntad",
-      "pt": "[#1] de Vontade"
+      "fr": "[#charac WILLPOWER] [#1] Volonté",
+      "en": "[#charac WILLPOWER] [#1] Force of Will",
+      "es": "[#charac WILLPOWER] [#1] Voluntad",
+      "pt": "[#charac WILLPOWER] [#1] Vontade"
     }
   },
   {
@@ -533,10 +521,10 @@
       "effect": "Gain : Maîtrise Dos"
     },
     "description": {
-      "fr": "[#1] Maîtrise Dos",
-      "en": "[#1] Rear Mastery",
-      "es": "[#1] dominio espalda",
-      "pt": "[#1] de Domínio de costas"
+      "fr": "[#charac BACKSTAB_BONUS] [#1] Maîtrise Dos",
+      "en": "[#charac BACKSTAB_BONUS] [#1] Rear Mastery",
+      "es": "[#charac BACKSTAB_BONUS] [#1] Dominio espalda",
+      "pt": "[#charac BACKSTAB_BONUS] [#1] Domínio de costas"
     }
   },
   {
@@ -545,10 +533,10 @@
       "effect": "Perte : Maîtrise Dos"
     },
     "description": {
-      "fr": "-[#1] Maîtrise Dos",
-      "en": "-[#1] Rear Mastery",
-      "es": "-[#1] dominio espalda",
-      "pt": "-[#1] de Domínio de costas"
+      "fr": "[#charac BACKSTAB_BONUS] -[#1] Maîtrise Dos",
+      "en": "[#charac BACKSTAB_BONUS] -[#1] Rear Mastery",
+      "es": "[#charac BACKSTAB_BONUS] -[#1] Dominio espalda",
+      "pt": "[#charac BACKSTAB_BONUS] -[#1] Domínio de costas"
     }
   },
   {
@@ -557,10 +545,10 @@
       "effect": "Gain : Contrôle"
     },
     "description": {
-      "fr": "[#1] Contrôle",
-      "en": "[#1] Control",
-      "es": "[#1] control",
-      "pt": "[#1] de Controle"
+      "fr": "[#charac LEADERSHIP] [#1] Contrôle",
+      "en": "[#charac LEADERSHIP] [#1] Control",
+      "es": "[#charac LEADERSHIP] [#1] Control",
+      "pt": "[#charac LEADERSHIP] [#1] Controle"
     }
   },
   {
@@ -569,10 +557,10 @@
       "effect": "Boost : PW"
     },
     "description": {
-      "fr": "[#1] PW",
-      "en": "[#1] WP",
-      "es": "[#1] PW",
-      "pt": "[#1] de PW"
+      "fr": "[#charac WP] [#1] PW",
+      "en": "[#charac WP] [#1] WP",
+      "es": "[#charac WP] [#1] PW",
+      "pt": "[#charac WP] [#1] PW"
     }
   },
   {
@@ -581,10 +569,10 @@
       "effect": "Deboost : PW"
     },
     "description": {
-      "fr": "-[#1] PW max",
-      "en": "-[#1] max WP",
-      "es": "-[#1] PW máx.",
-      "pt": "-[#1] de PW no máx."
+      "fr": "[#charac WP] -[#1] PW max",
+      "en": "[#charac WP] -[#1] max WP",
+      "es": "[#charac WP] -[#1] PW máx.",
+      "pt": "[#charac WP] -[#1] PW máx."
     }
   },
   {
@@ -593,10 +581,10 @@
       "effect": "Gain : PW"
     },
     "description": {
-      "fr": "[#1] PW",
-      "en": "[#1] WP",
-      "es": "[#1] PW",
-      "pt": "[#1] de PW"
+      "fr": "[#charac WP] [#1] PW",
+      "en": "[#charac WP] [#1] WP",
+      "es": "[#charac WP] [#1] PW",
+      "pt": "[#charac WP] [#1] PW"
     }
   },
   {
@@ -605,10 +593,10 @@
       "effect": "Perte : PW"
     },
     "description": {
-      "fr": "-[#1] PW",
-      "en": "-[#1] WP",
-      "es": "-[#1] PW",
-      "pt": "-[#1] PW"
+      "fr": "[#charac WP] -[#1] PW",
+      "en": "[#charac WP] -[#1] WP",
+      "es": "[#charac WP] -[#1] PW",
+      "pt": "[#charac WP] -[#1] PW"
     }
   },
   {
@@ -637,18 +625,6 @@
   },
   {
     "definition": {
-      "id": 832,
-      "effect": "Spell : Gain de niveaux de sorts dans une branche"
-    },
-    "description": {
-      "fr": "[#2] Niv. aux sorts [#1]",
-      "en": "[#2] Lvl. to [#1] spells",
-      "es": "[#2] niv. a hechizos [#1]",
-      "pt": "[#2] nv. aos feitiços [#1]"
-    }
-  },
-  {
-    "definition": {
       "id": 843,
       "effect": "Area : Retire une zone en sélectionnant la zone comme cible"
     }
@@ -665,10 +641,10 @@
       "effect": "Gain : Parade"
     },
     "description": {
-      "fr": "[#1]% Parade",
-      "en": "[#1]% Block",
-      "es": "[#1]% anticipación",
-      "pt": "[#1]% de Parada"
+      "fr": "[#charac BLOCK] [#1]% Parade",
+      "en": "[#charac BLOCK] [#1]% Block",
+      "es": "[#charac BLOCK] [#1]% de anticipación",
+      "pt": "[#charac BLOCK] [#1]% de Parada"
     }
   },
   {
@@ -677,22 +653,10 @@
       "effect": "Perte : Parade"
     },
     "description": {
-      "fr": "-[#1]% Parade",
-      "en": "-[#1]% Block",
-      "es": "-[#1]% anticipación",
-      "pt": "-[#1]% de Parada"
-    }
-  },
-  {
-    "definition": {
-      "id": 979,
-      "effect": "Spell : Gain de niveau de sort tous éléments (sauf support)"
-    },
-    "description": {
-      "fr": "[#1] Niv. aux sorts élémentaires",
-      "en": "[#1] Lvl. to elemental spells",
-      "es": "[#1] niv. a hechizos elementales",
-      "pt": "[#1] Niv. aos feitiços elementares"
+      "fr": "[#charac BLOCK] -[#1]% Parade",
+      "en": "[#charac BLOCK] -[#1]% Block",
+      "es": "[#charac BLOCK] -[#1]% de anticipación",
+      "pt": "[#charac BLOCK] -[#1]% Parada"
     }
   },
   {
@@ -701,10 +665,10 @@
       "effect": "Gain : Résistance Critique"
     },
     "description": {
-      "fr": "[#1] Résistance Critique",
-      "en": "[#1] Critical Resistance",
-      "es": "[#1] resistencia crítica",
-      "pt": "[#1] de Resistência a crítico"
+      "fr": "[#charac CRITICAL_RES] [#1] Résistance Critique",
+      "en": "[#charac CRITICAL_RES] [#1] Critical Resistance",
+      "es": "[#charac CRITICAL_RES] [#1] Resistencia crítica",
+      "pt": "[#charac CRITICAL_RES] [#1] Resistência crítica"
     }
   },
   {
@@ -719,10 +683,10 @@
       "effect": "Gain : Maîtrise Mêlée"
     },
     "description": {
-      "fr": "[#1] Maîtrise Mêlée",
-      "en": "[#1] Melee Mastery",
-      "es": "[#1] dominio de melé",
-      "pt": "[#1] Domínio de curta distância"
+      "fr": "[#charac MELEE_DMG] [#1] Maîtrise Mêlée",
+      "en": "[#charac MELEE_DMG] [#1] Melee Mastery",
+      "es": "[#charac MELEE_DMG] [#1] Dominio de melé",
+      "pt": "[#charac MELEE_DMG] [#1] Domínio de curta distância"
     }
   },
   {
@@ -731,10 +695,10 @@
       "effect": "Gain : Maîtrise Distance"
     },
     "description": {
-      "fr": "[#1] Maîtrise Distance",
-      "en": "[#1] Distance Mastery",
-      "es": "[#1] dominio distancia",
-      "pt": "[#1] de Domínio de distância"
+      "fr": "[#charac RANGED_DMG] [#1] Maîtrise Distance",
+      "en": "[#charac RANGED_DMG] [#1] Distance Mastery",
+      "es": "[#charac RANGED_DMG] [#1] Dominio distancia",
+      "pt": "[#charac RANGED_DMG] [#1] Domínio de distância"
     }
   },
   {
@@ -743,10 +707,10 @@
       "effect": "Gain : Maîtrise Berserk"
     },
     "description": {
-      "fr": "[#1] Maîtrise Berserk",
-      "en": "[#1] Berserk Mastery",
-      "es": "[#1] dominio berserker",
-      "pt": "[#1] de Domínio de Berserk"
+      "fr": "[#charac BERSERK_DMG] [#1] Maîtrise Berserk",
+      "en": "[#charac BERSERK_DMG] [#1] Berserk Mastery",
+      "es": "[#charac BERSERK_DMG] [#1] Dominio berserker",
+      "pt": "[#charac BERSERK_DMG] [#1] Domínio de Berserk"
     }
   },
   {
@@ -755,10 +719,10 @@
       "effect": "Perte : Maîtrise Critique"
     },
     "description": {
-      "fr": "-[#1] Maîtrise Critique",
-      "en": "-[#1] Critical Mastery",
-      "es": "-[#1] dominio crítico",
-      "pt": "-[#1] de Domínio de crítico"
+      "fr": "[#charac CRITICAL_BONUS] -[#1] Maîtrise Critique",
+      "en": "[#charac CRITICAL_BONUS] -[#1] Critical Mastery",
+      "es": "[#charac CRITICAL_BONUS] -[#1] Dominio crítico",
+      "pt": "[#charac CRITICAL_BONUS] -[#1] Domínio de crítico"
     }
   },
   {
@@ -767,10 +731,10 @@
       "effect": "Perte : Maîtrise Mêlée"
     },
     "description": {
-      "fr": "-[#1] Maîtrise Mêlée",
-      "en": "-[#1] Melee Mastery",
-      "es": "-[#1] dominio de melé",
-      "pt": "-[#1] Domínio de curta distância"
+      "fr": "[#charac MELEE_DMG] -[#1] Maîtrise Mêlée",
+      "en": "[#charac MELEE_DMG] -[#1] Melee Mastery",
+      "es": "[#charac MELEE_DMG] -[#1] dominio de melé",
+      "pt": "[#charac MELEE_DMG] -[#1] Domínio de curta distância"
     }
   },
   {
@@ -779,10 +743,10 @@
       "effect": "Perte : Maîtrise Distance"
     },
     "description": {
-      "fr": "-[#1] Maîtrise Distance",
-      "en": "-[#1] Distance Mastery",
-      "es": "-[#1] dominio distancia",
-      "pt": "-[#1] de Domínio de distância"
+      "fr": "[#charac RANGED_DMG] -[#1] Maîtrise Distance",
+      "en": "[#charac RANGED_DMG] -[#1] Distance Mastery",
+      "es": "[#charac RANGED_DMG] -[#1] Dominio distancia",
+      "pt": "[#charac RANGED_DMG] -[#1] Domínio de distância"
     }
   },
   {
@@ -791,10 +755,10 @@
       "effect": "Perte : Maîtrise Berserk"
     },
     "description": {
-      "fr": "-[#1] Maîtrise Berserk",
-      "en": "-[#1] Berserk Mastery",
-      "es": "-[#1] dominio berserker",
-      "pt": "-[#1] de Domínio de Berserk"
+      "fr": "[#charac BERSERK_DMG] -[#1] Maîtrise Berserk",
+      "en": "[#charac BERSERK_DMG] -[#1] Berserk Mastery",
+      "es": "[#charac BERSERK_DMG] -[#1] Dominio berserker",
+      "pt": "[#charac BERSERK_DMG] -[#1] Domínio de Berserk"
     }
   },
   {
@@ -803,10 +767,10 @@
       "effect": "Perte : Résistance Critique"
     },
     "description": {
-      "fr": "-[#1] Résistance Critique",
-      "en": "-[#1] Critical Resistance",
-      "es": "-[#1] resistencia crítica",
-      "pt": "-[#1] de Resistência a crítico"
+      "fr": "[#charac CRITICAL_RES] -[#1] Résistance Critique",
+      "en": "[#charac CRITICAL_RES] -[#1] Critical Resistance",
+      "es": "[#charac CRITICAL_RES] -[#1] Resistencia crítica",
+      "pt": "[#charac CRITICAL_RES] -[#1] Resistência crítica"
     }
   },
   {
@@ -815,10 +779,10 @@
       "effect": "Perte : Résistance Dos"
     },
     "description": {
-      "fr": "-[#1] Résistance Dos",
-      "en": "-[#1] Rear Resistance",
-      "es": "-[#1] resistencia por la espalda",
-      "pt": "-[#1] de Resistência de costas"
+      "fr": "[#charac RES_BACKSTAB] -[#1] Résistance Dos",
+      "en": "[#charac RES_BACKSTAB] -[#1] Rear Resistance",
+      "es": "[#charac RES_BACKSTAB] -[#1] de resistencia por la espalda",
+      "pt": "[#charac RES_BACKSTAB] -[#1] Resistência de costas"
     }
   },
   {
@@ -827,10 +791,10 @@
       "effect": "Gain : Maîtrise Élémentaire dans un nombre variable d'éléments"
     },
     "description": {
-      "fr": "{[~3]?[#1] Maîtrise [#3]:[#1] Maîtrise sur [#2] élément{[>2]?s:} aléatoire{[>2]?s:}}",
-      "en": "{[~3]?[#1] Mastery [#3]:[#1] Mastery of [#2] random{[=2]?:} element{[=2]?:s}}",
-      "es": "{[~3]?[#1] Dominio[#3]:[#1] Dominio de [#2] elemento{[>2]?s:} aleatorio{[>2]?s:}}",
-      "pt": "{[~3]?[#1] Domínio[#3]:[#1] Domínio sobre [#2] elemento{[>2]?s:} aleatório{[>2]?s:}}"
+      "fr": "[#charac DMG_IN_PERCENT] {[~3]?[#1] Maîtrise [#3]:[#1] Maîtrise sur [#2] élément{[>2]?s:} aléatoire{[>2]?s:}}",
+      "en": "[#charac DMG_IN_PERCENT] {[~3]?[#1] Mastery [#3]:[#1] Mastery with [#2] random{[>2]?:} element{[>2]?s:}}",
+      "es": "[#charac DMG_IN_PERCENT] {[~3]?[#1] Dominio [#3]:[#1] Dominio en [#2] elemento{[>2]?s:} aleatorio{[>2]?s:}}",
+      "pt": "[#charac DMG_IN_PERCENT] {[~3]?[#1] Domínio[#3]:[#1] Domínio sobre [#2] elemento{[>2]?s:} aleatório{[>2]?s:}}"
     }
   },
   {
@@ -839,10 +803,10 @@
       "effect": "Gain : Résistance Élémentaire dans un nombre variable d'éléments"
     },
     "description": {
-      "fr": "{[~3]?[#1] Résistance [#3]:[#1] Résistance sur [#2] élément{[>2]?s:} aléatoire{[>2]?s:}}",
-      "en": "{[~3]?[#1] Resistance [#3]:[#1] Resistance to [#2] random element{[>2]?s:}}",
-      "es": "{[~3]?[#1] Resistencia [#3]:[#1] Resistencia a [#2] elemento{[>2]?s:} aleatorio{[>2]?s:}}",
-      "pt": "{[~3]?[#1] de Resistência a [#3]:[#1] de Resistência a [#2] elemento{[>2]?s:} aleatório{[>2]?s:}}"
+      "fr": "[#charac RES_IN_PERCENT] {[~3]?[#1] Résistance [#3]:[#1] Résistance sur [#2] élément{[>2]?s:} aléatoire{[>2]?s:}}",
+      "en": "[#charac RES_IN_PERCENT] {[~3]?[#1] Resistance [#3]:[#1] Resistance to [#2] random{[>2]?:} element{[>2]?s:}}",
+      "es": "[#charac RES_IN_PERCENT] {[~3]?[#1] Resistencia [#3]:[#1] Resistencia en [#2] elemento{[>2]?s:} aleatorio{[>2]?s:}}",
+      "pt": "[#charac RES_IN_PERCENT] {[~3]?[#1] Resistência [#3]:[#1] Resistência a [#2] elemento{[>2]?s:} aleatório{[>2]?s:}}"
     }
   },
   {

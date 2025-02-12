@@ -1,3 +1,4 @@
+import console from 'console'
 import { openFile, saveFile } from '../utils/files'
 
 export default class ZenithParser {
@@ -113,7 +114,13 @@ export default class ZenithParser {
   }
 
   private parseSublimationsText(sublimations, states) {
+    if (!sublimations?.length) {
+      return []
+    }
     return sublimations.map(subli => {
+      if (!subli?.effects?.length) {
+        return []
+      }
       const parsedSubliEffects = subli.effects.reduce((parsedEffects, effect) => {
         const effectValuesMapping = this.mapComputedEffectValues(effect.values, subli.level)
 
@@ -133,6 +140,9 @@ export default class ZenithParser {
             parsedEffects[lang] = parsedEffects[lang].replace(new RegExp(`\\[st${state.id_state}]`, 'g'), `**${nameInnerState}**`)
 
             const stateData = states.find(({ id_state }) => state.id_state === id_state)
+            if (!stateData?.effects?.length) {
+              return []
+            }
             const stateDataInfo = stateData.effects.reduce((stateDataInfo, stateEffect) => {
               const stateEffectValuesMapping = this.mapComputedEffectValues(stateEffect.values)
 
