@@ -1,6 +1,6 @@
 # :crescent_moon: Corvo Astral
 
-⚠️ **This project is now achieved. Thank you for all 500+ discord servers that welcomed the bot!**
+⚠️ **This project is now archived. Thank you for all 500+ discord servers that welcomed the bot!**
 
 Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that provides information about the [Wakfu MMORPG](https://www.wakfu.com/) game.
 
