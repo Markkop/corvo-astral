@@ -1,8 +1,6 @@
 # :crescent_moon: Corvo Astral
 
-[![https://img.shields.io/badge/host-koyeb-blue](https://img.shields.io/badge/host-koyeb-blue)](https://www.koyeb.com/)
-![https://img.shields.io/badge/repo%20status-maintenance-yellow](https://img.shields.io/badge/repo%20status-maintenance-yellow)
-![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+⚠️ **This project is now achieved. Thank you for all 500+ discord servers that welcomed the bot!**
 
 Corvo Astral is a [Discord Bot](https://discord.js.org/#/) that provides information about the [Wakfu MMORPG](https://www.wakfu.com/) game.
 
@@ -13,8 +11,6 @@ Most features support Wakfu community languages: en, es, pt and fr.
 If you need help or want to report bugs, feel free to **join the bot's discord**: https://discord.gg/aX6j3gM8HC  
 
 This bot is now featured in **top.gg**: https://top.gg/bot/750529201161109507  
-
-To keep the bot running, please consider [donating](https://www.buymeacoffee.com/markkop) `<3`
 
 ## Commands
 
